@@ -3,22 +3,18 @@ from bs4 import BeautifulSoup
 import lxml
 import time
 
-#Get to the chopper! (choper = graphDB)
+#Get to the chopper! (chopper = graphDB)
 
 db = Database()
 passwd = input("Input password for the graph you are trying to connect to")
 myGraph = Graph(host="localhost", password="{}".format(passwd))
-delAll = input("Do you want to clear the database before you continue? Warning! All data will be deleted! Y/N?:")
-if delAll == "Y":
-    myGraph.delete_all()
-    print("All data deleted!")
-else:
-    print("OK! No data deleted.")
-time.sleep(1)
+myGraph.delete_all()
+
 
 #Get our stuff from somewhere and cook some soup.
 
-fileName = input("Specify file name:")
+fileName = 'DG-4at7-Pamph.xml'
+    # input("Specify file name:")
 def read_tei(tei_file):
     with open(tei_file, 'r', encoding="UTF-8") as tei:
         soup = BeautifulSoup(tei, from_encoding='UTF-8')
@@ -33,10 +29,12 @@ lemmatized = soup.get('lemma')
 
 
 print("We need to name our data!")
-nodeLabel = input("What label(s) do you want to assign to the nodes to be created?:")
+nodeLabel = "MTX3_Word_On_Page"
 edgeLabel = input("How do you want to label the edges connecting the words?")
 wIDprefix = input("Specify prefix for Label WordID")
+propInText = input("Specify name of textual entity to be used as TXP4_composes property:")
 #Lets get us some multiple representation layers out of this soup!
+myGraph.run("CREATE (a:MTX2_Textual_Entity {Name: 'Pamphilus saga'})")
 
 countFrom = 0
 countTo = 1
@@ -56,13 +54,16 @@ for theshit in thewords:
         normClean = normRaw.get_text()
     else:
         normClean = "-"
-    myGraph.run("Create (n:%s {Normalized: '%s', Diplomatic: '%s', Lemma: '%s', WordID: '%s%d'})" % (nodeLabel, normClean, diplClean, lemming, wIDprefix, countFrom))
+    myGraph.run('Create (n:%s {Normalized: "%s", Diplomatic: "%s", Lemma: "%s", WordID: "%s-%d", TXP4_Composes:"Pamphilus saga"})' % (nodeLabel, normClean, diplClean, lemming, wIDprefix, countFrom))
     myGraph.run(
         "MATCH (a:%s),(b:%s) WHERE a.WordID = '%s%d' AND b.WordID = '%s%d'  CREATE (a)-[r:%s]->(b)" % (
         nodeLabel, nodeLabel, wIDprefix, countFrom - 1, wIDprefix, countTo - 1, edgeLabel))
     countFrom += 1
     countTo += 1
     print("Node and edge created!")
+
+
+
 print("All done. Bye!")
 
 
