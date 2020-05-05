@@ -16,6 +16,7 @@ def read_tei(tei_file):
     with open(tei_file, 'r', encoding="UTF-8") as tei:
         soup = BeautifulSoup(tei, "lxml-xml", from_encoding='UTF-8')
         return soup
+        
 # Import the stop word list
 with open('exclusionlist.txt', 'r', encoding="UTF-8") as exclusionlist:
   stopWords = exclusionlist.read()
@@ -24,7 +25,7 @@ with open('exclusionlist.txt', 'r', encoding="UTF-8") as exclusionlist:
 safeHouse = Path('.')
 
 # Additional files
-resultsONP = open('pamph-lemmata-cooccurrences.html', 'r', encoding="UTF-8")
+resultsONP = open('rawfiles/pamph-lemmata-cooccurrences.html', 'r', encoding="UTF-8")
 
 
 # Prepare the database.
@@ -72,18 +73,18 @@ for ymir in safeHouse.glob(("*.xml")):
     countTotal = len(thewords)
     countFrom = 0
     countTo = 1
-    for theshit in thewords:
-        lemming = theshit.get('lemma')
+    for realtalk in thewords:
+        lemming = realtalk.get('lemma')
         if lemming is not None:
-            lemming = theshit.get('lemma')
+            lemming = realtalk.get('lemma')
         else:
             lemming = "-"
-        diplRaw = theshit.find('me:dipl')
+        diplRaw = realtalk.find('me:dipl')
         if diplRaw is not None:
             diplClean = diplRaw.get_text()
         else:
             diplClean = "-"
-        normRaw = theshit.find('me:norm')
+        normRaw = realtalk.find('me:norm')
         if normRaw is not None:
             normClean = normRaw.get_text()
         else:
