@@ -9,12 +9,19 @@ passwd = 12
 chopper = Graph(host="localhost", password="{}".format(passwd))
 matcher = NodeMatcher(chopper)
 
+# Prepare the database.
 chopper.delete_all()
-chopper.run('CREATE INDEX ON :MTX2_Textual_Entity(Name)')
-chopper.run('CREATE INDEX ON :MTX2_Textual_Entity(TXP4_Composes)')
+print("Importing ontology")
+#chopper.run('CREATE INDEX ON :Resource(uri)') # Required for neosemantics to work.
+#chopper.run('CREATE INDEX ON :MTX3_Word_On_Page(WordID)') #Increased speed by so much, the SSD can't keep up anymore. Jeez.
+#chopper.run('CREATE INDEX ON :MTX2_Textual_Entity(Name)')
+#chopper.run('CREATE INDEX ON :MTX2_Textual_Entity(TXP4_Composes)')
+chopper.run(
+    'CALL n10s.onto.import.fetch("https://raw.githubusercontent.com/svenakin/ONO/master/ontx-current.rdfs", "RDF/XML")')
+
 nodeLabel = "MTX3_Word_On_Page"
 
-resultsONP = open('pamph-lemmata-cooccurrences.html', 'r', encoding="UTF-8")
+resultsONP = open('C:/Users/Sven/switchdrive/codestuff/PhData/oldnorse2graph/pamph-lemmata-cooccurrences.html', 'r', encoding="UTF-8")
 
 dfs = pd.read_html(resultsONP, encoding="UTF-8")
 pandaTree = dfs[0]
@@ -46,7 +53,6 @@ for row in pandaForest.itertuples():
     onpLemming = row.lemma
     onpTextWitness = row.Text
     repeatCounter = row.count
-    #print(repeatCounter)
     if repeatCounter is None:
         pass
     else:
@@ -54,11 +60,8 @@ for row in pandaForest.itertuples():
             chopper.run(
                 'Create (n:%s {Normalized: "-", Diplomatic: "-", Lemma: "%s", WordID: "-", TXP4_Composes:"%s"})' % (
                 nodeLabel, onpLemming, onpTextWitness,))
-        textNode = len(matcher.match("MTX2_Textual_Entity", Name="%s" % (onpTextWitness)))
-        if textNode > 0:
-            pass
-        else:
-            chopper.run("CREATE (a:MTX2_Textual_Entity {Name: '%s'})" % (onpTextWitness))
+            chopper.run('MERGE (a:MTX2_Textual_Entity {Name: "%s"})' % (onpTextWitness))
+        
 
 chopper.run("MATCH (a:MTX3_Word_On_Page), (b:MTX2_Textual_Entity) WHERE a.TXP4_Composes = b.Name CREATE (a)-[r:TXP4_Composes {weight: '5'}]->(b)")
 chopper.run("MATCH (a:MTX3_Word_On_Page), (b:MTX2_Textual_Entity) WHERE a.TXP4_Composes = b.Name CREATE (b)-[r:TXP5_Is_Composed_Of{weight: '5'}]->(a)")
