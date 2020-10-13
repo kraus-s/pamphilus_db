@@ -7,11 +7,6 @@ import xlrd
 from multiprocessing.pool import ThreadPool
 
 
-# Prepare variables and functions.
-# First off, connect to the database.
-passwd = input("Input password for current DB:")
-chopper = Graph(host="localhost", password="{}".format(passwd))
-
 # Dataframe hatching chamber
 
 msBamboo = pd.DataFrame(columns=['Abbreviation', 'Signature', 'Current Location'])
@@ -112,30 +107,49 @@ safeHouse = Path('.')
 # resultsONP = open('rawfiles/pamph-lemmata-cooccurrences.html', 'r', encoding="UTF-8")
 
 # Prepare the database.
-chopper.delete_all()
-print("Importing ontology")
-try:
-    chopper.run('CREATE INDEX ON :Resource(uri)')  # Required for neosemantics to work.
-except:
-    print('Shut up')
-try:
-    chopper.run(
-    'CREATE INDEX ON :E33_Linguistic_Object(WordID)')  # Increased speed by so much, the SSD can't keep up anymore. Jeez.
-except:
-    print('Shut up')
-try:
-    chopper.run('CREATE INDEX ON :TX1_Written_Text(Name)')
-except:
-    print('Shut up')
-try:
-    chopper.run('CREATE INDEX ON :TX1_Written_Text(P56_Is_Found_On)')
-except:
-    print('Shut up')
-try:
-    chopper.run(
-    'CALL n10s.onto.import.fetch("https://raw.githubusercontent.com/Akillus/CRMtex/master/CRMtex_v1.0.rdfs", "RDF/XML")')
-except:
-    print('Shut up')
+remoteDB = "philhist-sven-1.philhist.unibas.ch"
+localDB = "localhost"
+
+# Select DB
+dbSelect = input("Connect to local or remote DB? 1: Local; 2: Remote")
+if dbSelect == "1":
+    selectedDB = localDB
+elif dbSelect == "2":
+    selectedDB = remoteDB
+else:
+    print("Invalid option!")
+
+# Connect to selected db
+passwd = input("Password for selected graph DB:")
+chopper = Graph(host=selectedDB, password=passwd)
+
+# Clear DB for rebuild or just update some stuff?
+delShit = input("Delete all or keep going? 1: Clear DB; 2: Keep stuff")
+if delShit == "1":
+    chopper.delete_all()
+    print("Importing ontology")
+    try:
+        chopper.run('CREATE INDEX ON :Resource(uri)')  # Required for neosemantics to work.
+    except:
+        print('Shut up')
+    try:
+        chopper.run(
+        'CREATE INDEX ON :E33_Linguistic_Object(WordID)')  # Increased speed by so much, the SSD can't keep up anymore. Jeez.
+    except:
+        print('Shut up')
+    try:
+        chopper.run('CREATE INDEX ON :TX1_Written_Text(Name)')
+    except:
+        print('Shut up')
+    try:
+        chopper.run('CREATE INDEX ON :TX1_Written_Text(P56_Is_Found_On)')
+    except:
+        print('Shut up')
+    try:
+        chopper.run(
+        'CALL n10s.onto.import.fetch("https://raw.githubusercontent.com/Akillus/CRMtex/master/CRMtex_v1.0.rdfs", "RDF/XML")')
+    except:
+        print('Shut up')
 
 
 
@@ -144,7 +158,7 @@ except:
 # Importing different manuscripts, their contained textworks and information about authors, if any.
 bowlIn1 = pd.read_excel("hss-txtwtns.xlsx")
 bowlin2 = pd.read_excel("pers.xlsx")
-
+print("Read Excel-sheets!")
 msInfoBamboo = pd.DataFrame(bowlIn1, columns=['Abbreviation', 'Signature', 'Current Location'])
 msInfoBamboo = msInfoBamboo.drop_duplicates()
 msBamboo = msBamboo.append(bowlIn1)
@@ -163,11 +177,13 @@ authBamboo.append(currAuthbamboo)
 currPeoplebamboo = pd.DataFrame(bowlin2, columns=['Name', 'URI'])
 peopleBamboo.append(currPeoplebamboo)
 
+print("Processed Excel-sheets!")
 # Now that we have a bowl, we can fill it with some soup
 
 for ymir in safeHouse.glob(("*.xml")):
     fileName = (ymir)
     menotaParse(ymir)
+    print("Done with one MS!")
 
 # Creating the edge list for the lemma matching
 
@@ -179,14 +195,14 @@ for index, row in wordonpageBamboo.iterrows():
     chopper.run('''
     MERGE(a:E33_Linguistic_Object{Lemma:$Lemma, Diplomatic:$Diplomatic, Normalized:$Normalized, WordID:$PositionalID, InText:$Name})
     ''', parameters = {'Lemma': row['Lemma'], 'Diplomatic': row['Diplomatic'], 'Normalized': row['Normalized'], 'PositionalID': row['PositionalID'], 'Name': row['InText']})
-
+print("Word on page done!")
 
 # Here go the manuscripts!
 for index, row in msBamboo.iterrows():
     chopper.run('''
         MERGE(a:E18_Physical_Thing{Abbreviation:$Abbreviation})
         ''', parameters={'Abbreviation': row['Abbreviation']})
-
+print("MSs done!")
 
 tx = chopper.begin() # Here go the text witnesses aka the physically written texts on the individual parchment leaves
 for index, row in txtwitBamboo.iterrows():
@@ -194,6 +210,7 @@ for index, row in txtwitBamboo.iterrows():
             MERGE(a:TX1_Written_Text{Name:$Name})
             ''', parameters={'Name': row['Name']})
 tx.commit()
+print("Witnesses done!")
 
 for index, row in wordconnectorBamboo.iterrows():
     chopper.run('''
@@ -201,6 +218,7 @@ for index, row in wordconnectorBamboo.iterrows():
                 WHERE a.WordID = $WordFirst AND b.WordID = $WordNext
                 CREATE (a)-[r:next_word]->(b)
                 ''', parameters={'WordFirst': row['WordFirst'], 'WordNext': row['WordNext']})
+print("Words on page chained!")
 
 tx = chopper.begin()
 for index, row in text2msBamboo.iterrows():
@@ -210,6 +228,7 @@ for index, row in text2msBamboo.iterrows():
                     CREATE (b)-[r:P56_Is_Found_On]->(a)
                     ''', parameters={'Name': row['TXTID'], 'Abbreviation': row['MSID']})
 tx.commit()
+print("Witnesses linked to MSs!")
 
 
 for index, row in word2txtwitBamboo.iterrows():
@@ -218,7 +237,7 @@ for index, row in word2txtwitBamboo.iterrows():
                         WHERE a.Name = $Name AND b.WordID = $WordID
                         CREATE (b)-[r:P56_Is_Found_On]->(a)
                         ''', parameters={'Name': row['TxtWitName'], 'WordID': row['PositionalID']})
-
+print("Words linked to witnesses!")
 
 for index, row in samediffbamboo.iterrows():
     chopper.run('''
@@ -228,7 +247,7 @@ for index, row in samediffbamboo.iterrows():
         AND NOT a.InText = b.InText
         CREATE (a)-[r:also_occurs_in]->(b)
     ''', parameters={'WordID': row['PositionalID']})
-
+print("Same same but different done!")
 
 
 print("All done. Bye!")
