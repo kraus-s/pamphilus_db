@@ -188,12 +188,12 @@ print("Processed Excel-sheets!")
 for ymir in safeHouse.glob(("*.xml")):
     fileName = (ymir)
     menotaParse(ymir)
-    msBamboo.append(currmsbamboo)
-    txtwitBamboo.append(currtxtwitbamboo)
-    text2msBamboo.append(currmapbamboo)
-    wordonpageBamboo.append(currentBamboo)
-    wordconnectorBamboo.append(currentBamboo1)
-    word2txtwitBamboo.append(currentBamboo2)
+    msBamboo = msBamboo.append(currmsbamboo)
+    txtwitBamboo = txtwitBamboo.append(currtxtwitbamboo)
+    text2msBamboo = text2msBamboo.append(currmapbamboo)
+    wordonpageBamboo = wordonpageBamboo.append(currentBamboo)
+    wordconnectorBamboo = wordconnectorBamboo.append(currentBamboo1)
+    word2txtwitBamboo = word2txtwitBamboo.append(currentBamboo2)
     print(wordonpageBamboo)
 
 # Creating the edge list for the lemma matching
