@@ -83,9 +83,9 @@ def menotaParse(inFile):
             'TxtWitName': [friendlyName]
         })
 
-        wordonpageBamboo = wordonpageBamboo.append(currentBamboo)
-        wordconnectorBamboo = wordconnectorBamboo.append(currentBamboo1)
-        word2txtwitBamboo = word2txtwitBamboo.append(currentBamboo2)
+        wordonpageBamboo.append(currentBamboo)
+        wordconnectorBamboo.append(currentBamboo1)
+        word2txtwitBamboo.append(currentBamboo2)
         countFrom += 1
         countTo += 1
     print("Fuck")
@@ -160,7 +160,7 @@ bowlIn1 = pd.read_excel("hss-txtwtns.xlsx")
 bowlin2 = pd.read_excel("pers.xlsx")
 print("Read Excel-sheets!")
 msInfoBamboo = pd.DataFrame(bowlIn1, columns=['Abbreviation', 'Signature', 'Current Location'])
-msInfoBamboo = msInfoBamboo.drop_duplicates()
+msInfoBamboo.drop_duplicates()
 msBamboo = msBamboo.append(bowlIn1)
 
 
