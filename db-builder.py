@@ -9,7 +9,7 @@ from multiprocessing.pool import ThreadPool
 
 # Prepare variables and functions.
 # First off, connect to the database.
-passwd = 12
+passwd = input("Input password for current DB:")
 chopper = Graph(host="localhost", password="{}".format(passwd))
 
 # Dataframe hatching chamber
