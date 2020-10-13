@@ -194,7 +194,8 @@ for ymir in safeHouse.glob(("*.xml")):
     wordonpageBamboo.append(currentBamboo)
     wordconnectorBamboo.append(currentBamboo1)
     word2txtwitBamboo.append(currentBamboo2)
-input("Shit")
+    print(wordonpageBamboo)
+
 # Creating the edge list for the lemma matching
 
 samediffbamboo = wordonpageBamboo[~wordonpageBamboo['Lemma'].isin(stopWords)]
