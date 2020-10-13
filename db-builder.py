@@ -12,7 +12,7 @@ from multiprocessing.pool import ThreadPool
 msBamboo = pd.DataFrame(columns=['Abbreviation', 'Signature', 'Current Location'])
 text2msBamboo = pd.DataFrame(columns=['MSID', 'TXTID'])
 txtwitBamboo = pd.DataFrame(columns=['Name', 'Signature'])
-wordonpageBamboo = pd.DataFrame(columns=['PositionalID', 'Lemma', 'Diplomatic', 'Normalized'])
+wordonpageBamboo = pd.DataFrame(columns=['PositionalID', 'Lemma', 'Diplomatic', 'Normalized', 'InText'])
 wordconnectorBamboo = pd.DataFrame(columns=['WordFirst', 'WordNext'])
 word2txtwitBamboo = pd.DataFrame(columns=['PositionalID', 'TxtWitName'])
 peopleBamboo = pd.DataFrame(columns=["Name", "Year Born", "Year Died", "URI"])
@@ -25,6 +25,8 @@ def read_tei(tei_file):
         return soup
 
 def menotaParse(inFile):
+    global currmsbamboo, currentBamboo, currentBamboo2, currentBamboo1, currtxtwitbamboo, currmapbamboo
+
     soup = read_tei('{}'.format(inFile))
     thewords = soup.findAll('w')
     msInfo = soup.find("sourceDesc")
@@ -35,10 +37,11 @@ def menotaParse(inFile):
     currmsbamboo = pd.DataFrame({'Abbreviation': [msAbbreviation]})
     currtxtwitbamboo = pd.DataFrame({'Name': [friendlyName]})
     currmapbamboo = pd.DataFrame({'MSID': [msAbbreviation], 'TXTID': [friendlyName]})
+    currentBamboo = pd.DataFrame(columns=['PositionalID', 'Lemma', 'Diplomatic', 'Normalized', 'InText'])
+    currentBamboo1 = pd.DataFrame(columns=['WordFirst', 'WordNext'])
+    currentBamboo2 = pd.DataFrame(columns=['PositionalID', 'TxtWitName'])
 
-    msBamboo.append(currmsbamboo)
-    txtwitBamboo.append(currtxtwitbamboo)
-    text2msBamboo.append(currmapbamboo)
+
 
     # Lets get us some multiple representation layers out of this soup!
     countFrom = 0
@@ -65,7 +68,7 @@ def menotaParse(inFile):
         else:
             normClean = "-"
 
-        currentBamboo = pd.DataFrame({
+        currentBambooFeeder = pd.DataFrame({
             'PositionalID': [currSource],
             'Lemma': [lemming],
             'Diplomatic': [diplClean],
@@ -73,22 +76,24 @@ def menotaParse(inFile):
             'InText': [friendlyName]
         })
 
-        currentBamboo1 = pd.DataFrame({
+
+        currentBamboo1Feeder = pd.DataFrame({
             'WordFirst': [currSource],
             'WordNext': [currTarget]
         })
 
-        currentBamboo2 = pd.DataFrame({
+        currentBamboo2Feeder = pd.DataFrame({
             'PositionalID': [currSource],
             'TxtWitName': [friendlyName]
         })
 
-        wordonpageBamboo.append(currentBamboo)
-        wordconnectorBamboo.append(currentBamboo1)
-        word2txtwitBamboo.append(currentBamboo2)
+        currentBamboo = currentBamboo.append(currentBambooFeeder, ignore_index= True)
+        currentBamboo1 = currentBamboo1.append(currentBamboo1Feeder, ignore_index= True)
+        currentBamboo2 = currentBamboo2.append(currentBamboo2Feeder, ignore_index= True)
+
         countFrom += 1
         countTo += 1
-    print("Fuck")
+    print("Done with" + msAbbreviation)
     return
 
 def runParse(inFiles):
@@ -183,8 +188,13 @@ print("Processed Excel-sheets!")
 for ymir in safeHouse.glob(("*.xml")):
     fileName = (ymir)
     menotaParse(ymir)
-    print("Done with one MS!")
-
+    msBamboo.append(currmsbamboo)
+    txtwitBamboo.append(currtxtwitbamboo)
+    text2msBamboo.append(currmapbamboo)
+    wordonpageBamboo.append(currentBamboo)
+    wordconnectorBamboo.append(currentBamboo1)
+    word2txtwitBamboo.append(currentBamboo2)
+input("Shit")
 # Creating the edge list for the lemma matching
 
 samediffbamboo = wordonpageBamboo[~wordonpageBamboo['Lemma'].isin(stopWords)]
