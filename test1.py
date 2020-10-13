@@ -3,25 +3,25 @@ import lxml
 import time
 from pathlib import Path
 import pandas as pd
-from py2neo import Graph, Node, Relationship, Database, NodeMatcher
-db = Database()
+from py2neo import Graph, Node, Relationship, NodeMatcher
+#db = Database()
 passwd = 12
 chopper = Graph(host="localhost", password="{}".format(passwd))
 matcher = NodeMatcher(chopper)
 
 # Prepare the database.
-chopper.delete_all()
+#chopper.delete_all()
 print("Importing ontology")
-#chopper.run('CREATE INDEX ON :Resource(uri)') # Required for neosemantics to work.
-#chopper.run('CREATE INDEX ON :MTX3_Word_On_Page(WordID)') #Increased speed by so much, the SSD can't keep up anymore. Jeez.
-#chopper.run('CREATE INDEX ON :MTX2_Textual_Entity(Name)')
-#chopper.run('CREATE INDEX ON :MTX2_Textual_Entity(TXP4_Composes)')
+chopper.run('CREATE INDEX ON :Resource(uri)') # Required for neosemantics to work.
+chopper.run('CREATE INDEX ON :MTX3_Word_On_Page(WordID)') #Increased speed by so much, the SSD can't keep up anymore. Jeez.
+chopper.run('CREATE INDEX ON :MTX2_Textual_Entity(Name)')
+chopper.run('CREATE INDEX ON :MTX2_Textual_Entity(TXP4_Composes)')
 chopper.run(
     'CALL n10s.onto.import.fetch("https://raw.githubusercontent.com/svenakin/ONO/master/ontx-current.rdfs", "RDF/XML")')
 
 nodeLabel = "MTX3_Word_On_Page"
 
-resultsONP = open('C:/Users/Sven/switchdrive/codestuff/PhData/oldnorse2graph/pamph-lemmata-cooccurrences.html', 'r', encoding="UTF-8")
+resultsONP = open('C:/Users/kraus0001/switchdrive/codestuff/PhData/oldnorse2graph/pamph-lemmata-cooccurrences.html', 'r', encoding="UTF-8")
 
 dfs = pd.read_html(resultsONP, encoding="UTF-8")
 pandaTree = dfs[0]
