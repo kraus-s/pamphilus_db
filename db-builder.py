@@ -235,7 +235,7 @@ tx = chopper.begin()
 for index, row in text2msBamboo.iterrows():
     tx.evaluate('''
                     MATCH (a:TX1_Written_Text), (b:E18_Physical_Thing)
-                    WHERE a.Name = $Name AND b.Abbreviation = Abbreviation
+                    WHERE a.Name = $Name AND b.Abbreviation = $Abbreviation
                     CREATE (b)-[r:P56_Is_Found_On]->(a)
                     ''', parameters={'Name': row['TXTID'], 'Abbreviation': row['MSID']})
 tx.commit()
