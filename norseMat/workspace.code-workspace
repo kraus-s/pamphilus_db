@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\switchdrive\\PhD\\docs\\Korpusmaterial\\lat-norse-para"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
