@@ -32354,6 +32354,8 @@ l&aeligacute;ik</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+            </para>
+            <para vn="422" var="a">
             <w lemma="ok" me:msa="xCC">
                 <choice>
                     <me:facs>
@@ -32400,6 +32402,8 @@ l&aeligacute;ik</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="None" var="xx">
             <w lemma="þá" me:msa="xAV rP">
                 <choice>
                     <me:facs>þa</me:facs>
@@ -32478,6 +32482,8 @@ l&aeligacute;ik</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="423" var="a">
             <w lemma="ek" me:msa="xPE p1 nS cN">
                 <choice>
                     <me:facs>ec</me:facs>
@@ -32553,6 +32559,8 @@ l&aeligacute;ik</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="424" var="a">
             <w lemma="ok" me:msa="xCC">
                 <choice>
                     <me:facs>
@@ -32634,6 +32642,8 @@ l&aeligacute;ik</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="425" var="a">
             <w lemma="því at" me:msa="xCS">
                 <choice>
                     <me:facs>þu&inodot;a&trot;</me:facs>
@@ -32686,6 +32696,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="426" var="a">
             <seg type="nb">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
@@ -32770,6 +32782,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="427" var="a">
             <w lemma="en" me:msa="xCC">
                 <choice>
                     <me:facs>en</me:facs>
@@ -32869,6 +32883,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="428" var="a">
             <w lemma="þá" me:msa="xAV rP">
                 <choice>
                     <me:facs>þa</me:facs>
@@ -32968,11 +32984,13 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+            </para>
         </p>
     </div>
     <lb ed="ms" n="21"/>
     <div type="reply">
         <p>
+        <para vn="429" var="a">
             <w lemma="efa" me:msa="xVB fF tPS mIN p3 nS vR">
                 <choice>
                     <me:facs>
@@ -33060,6 +33078,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+            </para>
+            <para vn="431" var="a">
             <w lemma="en" me:msa="xCC">
                 <choice>
                     <me:facs>en</me:facs>
@@ -33159,6 +33179,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="432" var="a">
             <w lemma="ok" me:msa="xCC">
                 <choice>
                     <me:facs>
@@ -33227,6 +33249,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="433" var="P3, W1">
             <w lemma="Pamphilus" me:msa="xFN">
                 <choice>
                     <me:facs>Pamph&inodot;lu&slong;</me:facs>
@@ -33262,6 +33286,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="434" var="a">
             <w lemma="en" me:msa="xCC">
                 <choice>
                     <me:facs>en</me:facs>
@@ -33328,6 +33354,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="435" var="a">
             <w lemma="en" me:msa="xCC">
                 <choice>
                     <me:facs>en</me:facs>
@@ -33436,6 +33464,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="437" var="P3, W1">
             <w lemma="en" me:msa="xCC">
                 <choice>
                     <me:facs>en</me:facs>
@@ -33514,6 +33544,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="438" var="a">
             <w lemma="en" me:msa="xCC">
                 <choice>
                     <me:facs>en</me:facs>
@@ -33599,6 +33631,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="439" var="a">
             <w lemma="en" me:msa="xCC">
                 <choice>
                     <me:facs>en</me:facs>
@@ -33713,6 +33747,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="440" var="a">
             <w lemma="ok" me:msa="xCC">
                 <choice>
                     <me:facs>
@@ -33827,11 +33863,13 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+            </para>
         </p>
     </div>
     <lb ed="ms" n="32"/>
     <div type="reply">
         <p>
+        <para vn="442" var="a">
             <w lemma="ást" me:msa="xNC gF nS cN sI">
                 <choice>
                     <me:facs>
@@ -33937,6 +33975,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="443" var="P3, To, W1">
             <w lemma="ek" me:msa="xPE p1 nS cN">
                 <choice>
                     <me:facs>ec</me:facs>
@@ -34008,6 +34048,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="444" var="B1, P3, W1">
             <w lemma="því at" me:msa="xCS">
                 <choice>
                     <me:facs>þu&inodot;a&trot;</me:facs>
@@ -34081,6 +34123,8 @@ veniu</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="445" var="B1, P3, W1">
             <w lemma="Galathea" me:msa="xFN">
                 <choice>
                     <me:facs>Gala&trot;hee</me:facs>
@@ -34168,6 +34212,8 @@ orð</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="446" var="a">
             <w lemma="ok" me:msa="xCC">
                 <choice>
                     <me:facs>
@@ -34245,6 +34291,8 @@ orð</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="447" var="a">
             <w lemma="víss" me:msa="xAJ rP gN nS cA sI">
                 <choice>
                     <me:facs>&vins;í&slong;&trot;</me:facs>
@@ -34325,6 +34373,8 @@ ta</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="448" var="B1, To, W1">
             <w lemma="en" me:msa="xCC">
                 <choice>
                     <me:facs>&Eunc;n</me:facs>
@@ -34395,6 +34445,8 @@ na</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="449" var="a">
             <w lemma="ok" me:msa="xCC">
                 <choice>
                     <me:facs>
@@ -34519,6 +34571,8 @@ na</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+        </para>
+        <para vn="450" var="a">
             <w lemma="ok" me:msa="xCC">
                 <choice>
                     <me:facs>
@@ -34647,6 +34701,7 @@ na</me:dipl>
                     <me:norm></me:norm>
                 </choice>
             </pc>
+            </para>
         </p>
     </div>
     <cb ed="ms" n="B"/>
