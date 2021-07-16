@@ -1,0 +1,525 @@
+,Verse,Order,Normalized,MSA,WordOrder,KlausTyp
+0,1,1.0,"Ek em sǽrðr ok ber ek gaflak
+ undir hjarta mínu",xPE p1 nS cN xVB fF tPS mIN p1 nS vA xVB fP tPT vA gM nS cN sI xCC xVB fF tPS mIN p1 nS vA xPE p1 nS cN xNC gN nS cA sI xAP xNC gN nS cD sI xDP gN nS cD,"['S', 'V', 'V', 'S', 'O', 'O']",Undefined
+1,10,9.0,Gnótt er eigi ráðs mér,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xNC gN nS cG sI xPE p1 nS cD,"['S', 'V', 'O']",Undefined
+2,100,97.0,ok ef þú mátt þá fǿð þú hana með orðum ok leik,xCC xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xAV rP xVB fF tPS mIP p2 nS vA xPE p2 nS cN xPE p3 gF nS cA xAP xNC gN nP cD sI xCC xNC gM nS cD sI,"['S', 'V', 'V', 'S', 'O', 'O', 'O']",Hypotaxe
+3,101,98.0,"því at ǿska elskar gleði jafnan ok leikblandin
+ mál",xCS xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xNC gF nS cA sI xAV rP xCC xAJ rP gN nP cA sI xNC gN nP cA sI,"['S', 'V', 'O']",Hypotaxe
+4,102,99.0,þá fýsir hug ǿskumanna til ástar,xAV rP xVB fF tPS mIN p3 nS vA xNC gM nS cA sI xNC gM nP cG sI xAP xNC gF nS cG sI,"['V', 'O', 'O', 'O']",Undefined
+5,103,100.0,sýn þik henni jafnan glaðan ok í hug góðum,xVB fF tPS mIP p2 nS vA xPE p2 nS cA xPE p3 gF nS cD xAV rP xAJ rP gM nS cA sI xCC xAP xNC gM nS cD sI xAJ rP gM nS cD sI,"['V', 'O', 'O', 'O']",Undefined
+6,104,101.0,"því at hverr maðr sýnisk konum
+ fegri glaðr en reiðr",xCS xDQ gM nS cN xNC gM nS cN sI xVB fF tPS mIN p3 nS vR xNC gF nP cD sI xAJ rC gM nS cN sD xAJ rP gM nS cN sI xCS xAJ rP gM nS cN sI,"['S', 'V', 'O']",Hypotaxe
+7,105,102.0,eigi skalt þú mjǫk þegja ok still þó rǿðu þinni,xAV rP xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rP xVB fI tPS vA xCC xVB fF tPS mIP p2 nS vA xAV rP xNC gF nS cD sI xDP gF nS cD,"['V', 'S', 'V', 'O']",Undefined
+8,106,105.0,Oft hafnar mǽr manni fyrir litla sǫk,xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xNC gM nS cD sI xAP xAJ rP gF nS cA sI xNC gF nS cA sI,"['V', 'S', 'O']",Undefined
+9,107,103.0,fǫgr rǿða nǿrir ást,xAJ rP gF nS cN sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xNC gF nS cA sI,"['S', 'V', 'O']",Undefined
+10,108,104.0,ok fǫgr rǿða stillir grimman hug,xCC xAJ rP gF nS cN sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gM nS cA sI xNC gM nS cA sI,"['S', 'V', 'O']",Parataxe
+11,109,106.0,ok ef staðr er til þá lát hana afls í leiki kenna,xCC xCS xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAP xAV rP xVB fF tPS mIP p2 nS vA xPE p3 gF nS cA xNC gN nS cG sI xAP xNC gM nS cD sI xVB fI tPS vA,"['S', 'V', 'V', 'O', 'O', 'O']",Hypotaxe
+12,11,10.0,sem þeim er margt er at meini Þǫrf gerir margs at freista,xCS xDD gM nS cD xCS xAJ rP gN nS cN sI xVB fF tPS mIN p3 nS vA xAP xNC gN nS cD sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gN nS cG sI xIM xVB fI tPS vA,"['O', 'V', 'O', 'S', 'V']",Hypotaxe
+13,110,107.0,Þá mun mǫrg þér þat veita er þik vǽnti eigi áðr,xAV rP xVB fF tPS mIN p3 nS vA xAJ rP gF nS cN sI xPE p2 nS cD xDD gN nS cA xVB fI tPS vA xCS xPE p2 nS cA xVB fF tPT mIN p3 nS vA xAV rP xAV rC,"['V', 'O', 'O', 'O', 'V']",Undefined
+14,110,108.0,skammask stundum konur at segja vilja sinn,xVB fF tPS mIN p3 nP vR xNC gF nP cD sI xNC gF nP cN sI xIM xVB fI tPS vA xNC gM nS cA sI xDP gM nS cA,"['V', 'O', 'S']",Undefined
+15,112,109.0,ok þat oft er þǽr vilja víst hafa þá munu þǽr þó nítta,xCC xDD gN nS cA xAV rP xCS xDD gF nP cN xVB fF tPS mIN p3 nP vA xAJ rP gN nS cA sI xVB fI tPS vA xAV rP xVB fF tPS mIN p3 nP vA xDD gF nP cN xAV rP xVB fI tPS vA,"['O', 'S', 'V', 'V', 'S']",Parataxe
+16,113,110.0,stundum fegra þykkir ok meydóm at láta með afli,xNC gF nP cD sI xAJ rC gN nS cN sD xVB fF tPS mIN p3 nS vA xAV rP xNC gM nS cA sI xIM xVB fI tPS vA xAP xNC gN nS cD sI,"['O', 'V', 'O', 'O']",Undefined
+17,114,111.0,en segja svá ger af mér vilja þinn,xCS xVB fI tPS vA xAV rP xVB fF tPS mIP p2 nS vA xAP xPE p1 nS cD xNC gM nS cA sI xDP gM nS cA,"['V', 'O', 'O']",Hypotaxe
+18,115,112.0,þetta skalt þú ok víst varask ef þú átt fé lítit,xDD gN nS cA xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rP xAJ rP gN nS cA sI xVB fI tPS vR xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xNC gN nS cA sI xAJ rP gN nS cA sI,"['O', 'V', 'S', 'S', 'V', 'O']",Undefined
+19,116,113.0,at þú leyn hana vesǫlð þinni ok fátǿkð,xCS xPE p2 nS cN xVB fF tPS mIP p2 nS vA xPE p3 gF nS cA xNC gF nS cD sI xDP gF nS cD xCC xNC gF nS cD sI,"['S', 'V', 'O']",Hypotaxe
+20,117,114.0,snotr hefir fagra meðferð þó at lítit eigi,xAJ rP gM nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gF nS cA sI xNC gF nS cA sI xCS xAJ rP gN nS cA sI xAV rP,"['V', 'O']",Undefined
+21,118,115.0,ok þó fram fǿrir gyllta rǿðu at í brjósti grát búi,xCC xAV rP xAV rP xVB fF tPS mIN p3 nS vA xVB fP tPT vA gF nS cA sI xNC gF nS cA sI xCS xAP xNC gN nS cD sI xNC gM nS cA sI xVB fF tPS mSU p3 nS vA,"['V', 'O', 'O', 'O', 'V']",Parataxe
+22,119,116.0,Seg þik með orðum auðgari vera,xVB fF tPS mIP p2 nS vA xPE p2 nS cA xAP xNC gN nP cD sI xAJ rC gM nS cA sD xVB fI tPS vA,"['V', 'O', 'O']",Undefined
+23,12,11.0,ok vél helpr oft sínum dróttni,xCC xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xDP gM nS cD xNC gM nS cD sI,"['S', 'V', 'O']",Parataxe
+24,120,117.0,"því at stórir
+ hlutir ǫðlask með athygli",xCS xAJ rP gM nP cN sI xNC gM nP cN sI xVB fF tPS mIN p3 nP vR xAP xNC gN nS cD sI,"['S', 'V', 'O']",Hypotaxe
+25,121,118.0,"ok verǫld hefir
+ marga hluti þá er allir vitu",xCC xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gM nP cA sI xNC gM nP cA sI xDD gM nP cA xCS xDQ gM nP cN xVB fF tPS mIN p3 nP vA,"['S', 'V', 'O', 'O', 'S', 'V']",Parataxe
+26,122,119.0,ok af slíku mǽtti henni margt segja,xCC xAP xAJ rP gN nS cD sI xVB fF tPT mSU p3 nS vA xPE p3 gF nS cD xAJ rP gN nS cA sI xVB fI tPS vA,"['V', 'O']",Parataxe
+27,123,120.0,trú þú því at mǫrgum stoðar mikit at ljúga,xVB fF tPS mIP p2 nS vA xPE p2 nS cN xDD gN nS cD xCS xAJ rP gU nP cD sI xVB fF tPS mIN p3 nS vA xAJ rP gN nS cA sI xIM xVB fI tPS vA,"['V', 'S', 'O', 'V']",Undefined
+28,124,121.0,stórum spillir manni stundum satt at segja,xAJ rP gU nP cD sI xVB fF tPS mIN p3 nS vA xNC gM nS cD sI xNC gF nP cD sI xAJ rP gN nS cA sI xIM xVB fI tPS vA,"['V', 'O', 'O']",Undefined
+29,125,122.0,finn þá er málvinir hennar eru,xVB fF tPS mIP p2 nS vA xDD gM nP cA xCS xNC gM nP cN sI xPE p3 gF nS cG xVB fF tPS mIN p3 nP vA,"['V', 'O', 'S', 'O', 'V']",Undefined
+30,126,123.0,þá skalt þú oft gjǫfum gǿla ok með fagrmǽli fǿða,xDD gM nP cA xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rP xNC gF nP cD sI xVB fI tPS vA xCC xAP xNC gN nS cD sI xVB fI tPS vA,"['O', 'V', 'S']",Undefined
+31,127,124.0,at þeir rǿði hverr við annan gott um þik,xCS xDD gM nP cN xVB fF tPS mSU p3 nP vA xDQ gM nS cN xAP xDQ gM nS cA xAJ rP gN nS cA sI xAP xPE p2 nS cA,"['S', 'V', 'O']",Hypotaxe
+32,128,125.0,ok þeir mǽli við meyna með lofi þínu,xCC xDD gM nP cN xVB fF tPS mSU p3 nP vA xAP xNC gF nS cA sD xAP xNC gN nS cD sI xDP gN nS cD,"['S', 'V', 'O']",Parataxe
+33,129,126.0,en þá er hon íhugar,xCC xAV rP xCS xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA,"['S', 'V']",Parataxe
+34,13,12.0,"En mitt sár birtir sik með réttri skipan
+",xCC xDP gN nS cN xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xPE cA xAP xAJ rP gF nS cD sI xNC gF nS cD sI,"['S', 'V', 'O']",Parataxe
+35,130,127.0,hvárt hon skal eða eigi þinn vilja gera,xCS xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xCC xAV rP xDP gM nS cA xNC gM nS cA sI xVB fI tPS vA,"['S', 'V', 'O']",Hypotaxe
+36,131,128.0,þá skalt þú helzt hana með orðum vaska,xAV rP xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rS xPE p3 gF nS cA xAP xNC gN nP cD sI xVB fI tPS vA,"['V', 'S', 'O']",Undefined
+37,132,129.0,at þú megir ástarsigr af henni fá,xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xNC gM nS cA sI xAP xPE p3 gF nS cD xVB fI tPS vA,"['S', 'V', 'O']",Hypotaxe
+38,133,130.0,Oft rennr hugr manns til ok frá,xAV rP xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xNC gM nS cG sI xAP xCC xAP,"['V', 'S', 'O']",Undefined
+39,134,131.0,af lítilli rǿðu þar er áðr var ifan á,xAP xAJ rP gF nS cD sI xNC gF nS cD sI xAV rP xCS xAV rC xVB fF tPT mIN p3 nS vA xNC gF nS cN sI xAP,"['O', 'V', 'S']",Undefined
+40,135,132.0,látið ykkr líka tulk at hafa,xVB fF tPS mIP p2 nP vA xPE p2 nD cD xVB fI tPS vA xNC gM nS cA sI xIM xVB fI tPS vA,"['V', 'O', 'O']",Undefined
+41,136,133.0,"þann er hvárttveggja kunni fyrst lǽvísliga
+ at segja",xDD gM nS cA xCS xDQ gN nS cN xVB fF tPT mIN p3 nS vA xAV rS xAV rP xIM xVB fI tPS vA,"['O', 'S', 'V']",Hypotaxe
+42,137,134.0,því at ǫfundsjúk elli fyrirdǿmir tiltǿki ǿskumanna,xCS xAJ rP gF nS cN sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xNC gN nP cA sI xNC gM nP cG sI,"['S', 'V', 'O']",Hypotaxe
+43,138,135.0,ok þat meinar vit at mǽla er til ósǽttar er,xCC xDD gN nS cN xVB fF tPS mIN p3 nS vA xNC gN nS cA sI xIM xVB fI tPS vA xCS xAP xNC gF nS cG sI xVB fF tPS mIN p3 nS vA,"['S', 'V', 'O', 'O', 'V']",Parataxe
+44,14,13.0,hvílíkt þat er eða hvaðan þat kom,xPI gN nS cN xDD gN nS cN xVB fF tPS mIN p3 nS vA xCC xAQ xDD gN nS cN xVB fF tPT mIN p3 nS vA,"['S', 'V', 'S', 'V']",Undefined
+45,141,137.0,en fátt mun ek fleira við þik mǽla,xCC xAJ rP gN nS cA sI xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAJ rC gN nS cA sD xAP xPE p2 nS cA xVB fI tPS vA,"['V', 'S', 'O']",Parataxe
+46,142,139.0,"er þúshundruð vega liggja breiddir
+ þegar þér til þíns máls",xCS xNC gN nP cN sI xNC gM nP cG sI xVB fF tPS mIN p3 nP vA xVB fP tPT vA gM nP cN sI xAV rP xPE p2 nS cD xAP xDP gN nS cG xNC gN nS cG sI,"['S', 'O', 'V']",Hypotaxe
+47,143,140.0,Réttliga veitir heil huggan gleði sjúkum manni,xAV rP xVB fF tPS mIN p3 nS vA xAJ rP gF nS cN sI xNC gF nS cN sI xNC gF nS cA sI xAJ rP gM nS cD sI xNC gM nS cD sI,"['V', 'S', 'O']",Undefined
+48,144,141.0,ok at minnr kennir hann sinnar sóttar,xCC xAV rP xAV rC xVB fF tPS mIN p3 nS vA xPE p3 gM nS cN xDP gF nS cG xNC gF nS cG sI,"['V', 'S', 'O']",Parataxe
+49,145,142.0,"harmr linar lítt með mér af góðrǽðum kvennagyðju
+",xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xAP xPE p1 nS cD xAP xNC gN nP cD sI xNC gF nS cG sI,"['S', 'V', 'O']",Undefined
+50,146,143.0,heldr ríkir í hryggu brjósti ást mín,xCC xVB fF tPS mIN p3 nS vA xAP xAJ rP gN nS cD sI xNC gN nS cD sI xNC gF nS cN sI xDP gF nS cN,"['V', 'O', 'S']",Parataxe
+51,147,144.0,ván var mér ǫll í hendr fengin sú sem til hjalpar lá,xNC gF nS cN sI xVB fF tPT mIN p3 nS vA xPE p1 nS cD xDQ gF nS cN xAP xNC gF nP cA sI xVB fP tPT vA gF nS cN sI xDD gF nS cN xCS xAP xNC gF nS cG sI xVB fF tPT mIN p3 nS vA,"['S', 'V', 'O', 'S', 'O', 'S', 'O', 'V']",Undefined
+52,148,145.0,En nú er folgin ván ok í brott farin ok harmr í stað kominn,xCC xAV rP xVB fF tPS mIN p3 nS vA xVB fP tPT vA gF nS cN sI xNC gF nS cN sI xCC xAP xAV rP xVB fP tPT vA gF nS cN sI xCC xNC gM nS cN sI xAP xNC gM nS cA sI xVB fP tPT vA gM nS cN sI,"['V', 'S', 'O']",Parataxe
+53,149,146.0,því mun ek eigi undan ganga Mik hefir skipari minn á firði fyrirlátit,xDD gN nS cD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xAP xVB fI tPS vA xPE p1 nS cA xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xDP gM nS cN xAP xNC gM nS cD sI xVB fP tPT vA gN nS cA sI,"['O', 'V', 'S', 'O', 'V', 'S', 'O']",Undefined
+54,15,14.0,Ok mun sár vaxa án lǽknis,xCC xVB fF tPS mIN p3 nS vA xNC gN nS cN sI xVB fI tPS vA xAP xNC gM nS cG sI,"['V', 'S', 'O']",Parataxe
+55,150,147.0,"ok ek hafnar
+ leita ok má ek ei finna",xCC xPE p1 nS cN xNC gF nS cG sI xVB fF tPS mIN p1 nS vA xCC xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xVB fI tPS vA,"['S', 'O', 'V', 'V', 'S']",Parataxe
+56,151,148.0,hvat skal ek til taka mín ván lítr nú til hennar,xPQ gN nS cA xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAP xVB fI tPS vA xDP gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xAP xPE p3 gF nS cG,"['O', 'V', 'S', 'S', 'V', 'O']",Undefined
+57,152,149.0,mér hǿfir brátt hana at finna,xPE p1 nS cD xVB fF tPS mIN p3 nS vA xAJ rP gN nS cA sI xPE p3 gF nS cA xIM xVB fI tPS vA,"['O', 'V', 'O']",Undefined
+58,153,150.0,O hosson hversu fǫgr hon sitr með beru hári,xUA xUA xAQ xAJ rP gF nS cN sI xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xAP xAJ rP gN nS cD sI xNC gN nS cD sI,"['S', 'V', 'O']",Undefined
+59,154,151.0,"ok hvé gott nú vǽri um þat at rǿða við hana
+",xCC xAQ xAJ rP gN nS cN sI xAV rP xVB fF tPT mSU p3 nS vA xAP xDD gN nS cA xIM xVB fI tPS vA xAP xPE p3 gF nS cA,"['V', 'O', 'O']",Parataxe
+60,156,152.0,hyggja engi er með mér né orð,xNC gF nS cN sI xDQ gF nS cN xVB fF tPS mIN p3 nS vA xAP xPE p1 nS cD xCC xNC gN nS cN sI,"['S', 'V', 'O']",Undefined
+61,157,153.0,hvárki afl ekki hendr skjalfa fǿtr bifask,xCC xNC gN nS cN sI xDQ gN nS cN xNC gF nP cN sI xVB fF tPS mIN p3 nP vA xNC gM nP cN sI xVB fF tPS mIN p3 nP vR,"['S', 'S', 'S', 'V', 'S', 'V']",Parataxe
+62,158,154.0,"mér hamstolnum
+ samir engi klǽðabúnaðr",xPE p1 nS cD xAJ rP gM nS cD sI xVB fF tPS mIN p3 nS vA xDQ gM nS cN xNC gM nS cN sI,"['O', 'V', 'S']",Undefined
+63,159,156.0,er áðr hugt hafða,xCS xAV rC xVB fP tPT vA gN nS cA sI xVB fF tPT mIN p1 nS vA,['V'],Hypotaxe
+64,160,155.0,hrǽzla níttar þat at mǽla,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xDD gN nS cA xIM xVB fI tPS vA,"['S', 'V', 'O']",Undefined
+65,161,157.0,eigi em ek sá er ek áðr var trautt kann ek sjalfan mik,xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xDD gM nS cN xCS xPE p1 nS cN xAV rC xVB fF tPT mIN p1 nS vA xAJ rP gN nS cA sI xVB fF tPS mIN p1 nS vA xPE p1 nS cN xDQ gM nS cA xPE p1 nS cA,"['V', 'S', 'S', 'S', 'V', 'V', 'S', 'O', 'O']",Undefined
+66,162,158.0,"eigi fylgir
+ rǫdd né raust en þó verð ek at rǿða",xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xCC xNC gF nS cN sI xCC xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xIM xVB fI tPS vA,"['V', 'S', 'S', 'V', 'S']",Undefined
+67,163,159.0,"Ein frǽndkona ór bǿ ǫðrum sendi þér þúsund
+ kveðju",xAJ rP gF nS cN sI xNC gF nS cN sI xAP xNC gM nS cD sI xDQ gM nS cD xVB fF tPT mIN p3 nS vA xPE p2 nS cD xNC gF nS cA sI xNC gF nS cG sI,"['S', 'O', 'V']",Undefined
+68,164,160.0,hon bauð þér með með mér þjónkan sína,xPE p3 gF nS cN xVB fF tPT mIN p3 nS vA xPE p2 nS cD xAP xAP xPE p1 nS cD xNC gF nS cA sI xDP gF nS cA,"['S', 'V', 'O']",Undefined
+69,165,161.0,ok kann hon þik at nafni ok sǫgn manna at eins,xCC xVB fF tPS mIN p3 nS vA xPE p3 gF nS cN xPE p2 nS cA xAP xNC gN nS cD sI xCC xNC gF nS cD sI xNC gM nP cG sI xAV rP,"['V', 'S', 'O']",Parataxe
+70,166,162.0,ok hon þik fýsisk at finna ef staðr vǽri til,xCC xPE p3 gF nS cN xPE p2 nS cA xVB fF tPS mIN p3 nS vR xIM xVB fI tPS vA xCS xNC gM nS cN sI xVB fF tPT mSU p3 nS vA xAP,"['S', 'O', 'V', 'S', 'V']",Parataxe
+71,167,163.0,ok þar vildu mínir frǽndr mik margir hefta,xCC xAV rP xVB fF tPT mIN p3 nP vA xDP gM nP cN xNC gM nP cA sI xPE p1 nS cA xAJ rP gM nP cN sI xVB fI tPS vA,"['V', 'O', 'O']",Parataxe
+72,168,164.0,þar var borg full minna beztu frǽnda,xAV rP xVB fF tPT mIN p3 nS vA xNC gF nS cA sI xAJ rP gF nS cN sI xDP gU nP cG xAJ rS gU nP sD xNC gM nP cG sI,"['V', 'O', 'O']",Undefined
+73,169,165.0,ok þeir hétu mér allfagri mey með miklu fé,xCC xDD gM nP cN xVB fF tPT mIN p3 nP vA xPE p1 nS cD xAJ rP gF nS cD sI xNC gF nS cD sI xAP xAJ rP gN nS cD sI xNC gN nS cD sI,"['S', 'V', 'O']",Parataxe
+74,17,15.0,En ef sár fellir með ǫllu ásjá sína ok nǿring harms síns,xCC xCS xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xAP xDQ gN nS cD xNC gF nS cA sI xDP gF nS cA xCC xNC gF nS cA sI xNC gM nS cG sI xDP gM nS cG,"['S', 'V', 'O']",Hypotaxe
+75,170,166.0,ok margt annat þat er eigi þarf nú at segja,xCC xAJ rP gN nS cA sI xDQ gN nS cA xDD gN nS cA xCS xAV rP xVB fF tPS mIN p3 nS vA xAV rP xIM xVB fI tPS vA,"['O', 'O', 'V']",Parataxe
+76,171,167.0,ok hvatvetna hafnaða ek þú ein líkar mér,xCC xPI gN nS cN xVB fF tPT mIN p1 nS vA xPE p1 nS cN xPE p2 nS cN xAJ rP gF nS cN sI xVB fF tPS mIN p2 nS vA xPE p1 nS cD,"['V', 'S', 'S', 'V', 'O']",Parataxe
+77,172,168.0,"hafna
+ mynda ek fyrir eina þik allt þat er í heimi er",xVB fI tPS vA xVB fF tPT mSU p1 nS vA xPE p1 nS cN xAP xAJ rP gF nS cA sI xPE p2 nS cA xDQ gN nS cA xDD gN nS cA xCS xAP xNC gM nS cD sI xVB fF tPS mIN p3 nS vA,"['V', 'S', 'O', 'O', 'O', 'O', 'V']",Undefined
+78,173,169.0,"mǽlum leikandi oft gerir ást svá leikblandit
+",xVB fF tPS mIP p1 nP vA xVB fP tPS vA gU nP cN sD xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xAV rP xAJ rP gN nS cA sI,"['V', 'V', 'S']",Undefined
+79,175,171.0,segi hvárt ǫðru hvat í hjarta býr,xVB fF tPS mSU p3 nS vA xDQ gN nS cN xDQ gN nS cD xPQ gN nS cN xAP xNC gN nS cD sI xVB fF tPS mIN p3 nS vA,"['V', 'S', 'O', 'S', 'O', 'V']",Undefined
+80,176,172.0,"en þat er vit rǿðum þat skal engi
+ annarr vita",xCC xDD gN nS cA xCS xPE p1 nD cN xVB fF tPS mIN p1 nP vA xDD gN nS cA xVB fF tPS mIN p3 nS vA xDQ gM nS cN xDQ gM nS cN xVB fI tPS vA,"['O', 'S', 'V', 'O', 'V', 'S', 'S']",Parataxe
+81,177,173.0,handseli hvárt okkart ǫðru þat þá mun ek segja,xVB fF tPS mSU p3 nS vA xDQ gN nS cN xDP gN nS cN xDQ gN nS cD xDD gN nS cA xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xVB fI tPS vA,"['V', 'S', 'O', 'O', 'V', 'S']",Undefined
+82,178,174.0,ek hóf upp ok mun ek fyrst um rǿða,xPE p1 nS cN xVB fF tPT mIN p1 nS vA xAV rP xCC xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rS xAP xVB fI tPS vA,"['S', 'V', 'V', 'S']",Undefined
+83,178,176.0,"Vit nú bǽði skulum samsátt
+ vera ok satt eitt rǿða",xPE p1 nD cN xAV rP xDQ gN nP cN xVB fF tPS mIN p1 nP vA xAJ rP gN nP cN sI xVB fI tPS vA xCC xAJ rP gN nS cA sI xAJ rP gN nS cA sI xVB fI tPS vA,"['S', 'S', 'V']",Undefined
+84,18,16.0,þá mun sár enga hjalp finna,xAV rP xVB fF tPS mIN p3 nS vA xNC gN nS cN sI xDQ gF nS cA xNC gF nS cA sI xVB fI tPS vA,"['V', 'S', 'O']",Undefined
+85,180,177.0,engi er sú í þeim heimi er mér betr líkar en þú,xDQ gF nS cN xVB fF tPS mIN p3 nS vA xDD gF nS cN xAP xDD gM nS cD xNC gM nS cD sI xCS xPE p1 nS cD xAV rC xVB fF tPS mIN p3 nS vA xCS xPE p2 nS cN,"['S', 'V', 'S', 'O', 'O', 'O', 'V', 'S']",Undefined
+86,181,178.0,"sjá er hinn þriði vetr síðan genginn er ek ást á þik lagða
+",xDD gM nS cN xVB fF tPS mIN p3 nS vA xDD gM nS cN xAJ rP gM nS cN sD xNC gM nS cN sI xCS xVB fP tPT vA gM nS cN sI xCS xPE p1 nS cN xNC gF nS cA sI xAP xPE p2 nS cA xVB fF tPT mIN p1 nS vA,"['S', 'V', 'S', 'S', 'S', 'O', 'O', 'V']",Undefined
+87,182,179.0,ok þorða eigi þér at segja vára ást,xCC xVB fF tPT mIN p1 nS vA xAV rP xPE p2 nS cD xIM xVB fI tPS vA xDP gF nS cA xNC gF nS cA sI,"['V', 'O', 'O']",Parataxe
+88,183,180.0,vitr kann skilja halfkveðit orð,xAJ rP gM nS cN sI xVB fF tPS mIN p3 nS vA xVB fI tPS vA xAJ rP gN nS cA sI xNC gN nS cA sI,"['V', 'O']",Undefined
+89,184,181.0,at sinni skulum vit þat eigi lengra rǿða,xAP xNC gN nS cD sI xVB fF tPS mIN p1 nP vA xPE p1 nD cN xDD gN nS cA xAV rP xAJ rC gN nS cA sD xVB fI tPS vA,"['O', 'V', 'S']",Undefined
+90,185,182.0,þér ann ek staðfastliga en nú vil ek þér eigi fleira segja,xPE p2 nS cD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xCC xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cD xAV rP xAJ rC gN nS cA sD xVB fI tPS vA,"['O', 'V', 'S', 'V', 'S', 'O']",Undefined
+91,186,183.0,fyrr en þú segir mér hvat um þat líkar þér,xAV rC xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xPE p1 nS cD xPQ gN nS cN xAP xDD gN nS cA xVB fF tPS mIN p3 nS vA xPE p2 nS cD,"['S', 'V', 'O', 'S', 'O', 'V', 'O']",Hypotaxe
+92,186,184.0,Svá hafa margir margar svikit með mikilli freistni,xAV rP xVB fF tPS mIN p3 nP vA xAJ rP gM nP cN sI xAJ rP gF nP cA sI xVB fP tPT vA gN nS cA sI xAP xAJ rP gF nS cD sI xNC gF nS cD sI,"['V', 'O']",Undefined
+93,188,185.0,"svá svíkr margr bragðsamr
+",xAV rP xVB fF tPS mIN p3 nS vA xAJ rP gM nS cN sI xAJ rP gM nS cN sI,['V'],Undefined
+94,189,186.0,þú hugðisk heimska gera mik með þinni vél eða rǿðu,xPE p2 nS cN xVB fF tPT mIN p2 nS vR xAJ rP gF nS cA sI xVB fI tPS vA xPE p1 nS cA xAP xDP gF nS cD xNC gF nS cD sI xCC xNC gF nS cD sI,"['S', 'V', 'O']",Undefined
+95,19,17.0,"Ok því øfra mun þat verra verða
+",xCC xDD gN nS cD xAJ rC gN nS cA sD xVB fF tPS mIN p3 nS vA xDD gN nS cN xAJ rC gN nS cN sD xVB fI tPS vA,"['O', 'V', 'S']",Parataxe
+96,190,187.0,þá er eigi hǿfir þér at svíkja,xAV rP xCS xAV rP xVB fF tPS mIN p3 nS vA xPE p2 nS cD xIM xVB fI tPS vA,"['V', 'O']",Hypotaxe
+97,191,188.0,Finn þér aðrar óspǫkum siðum hǿfiligar,xVB fF tPS mIP p2 nS vA xPE p2 nS cD xDQ gF nP cA xAJ rP gU nP cD sI xNC gM nP cD sI xAJ rP gF nP cA sI,"['V', 'O', 'O', 'O']",Undefined
+98,192,189.0,þǽr er þú megir með þinni flǽrðsamri trú heimska heimskar gera,xDD gF nP cA xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xAP xDP gF nS cD xAJ rP gF nS cD sI xNC gF nS cD sI xAJ rP gF nS cA sI xAJ rP gF nP cA sI xVB fI tPS vA,"['O', 'S', 'V']",Hypotaxe
+99,193,190.0,Oft spillir fyrir ǫðrum góðum mǫnnum synðir illra,xAV rP xVB fF tPS mIN p3 nS vA xAP xDQ gU nP cD xAJ rP gU nP cD sI xNC gM nP cD sI xNC gF nP cN sI xAJ rP gU nP cG sI,"['V', 'O', 'S']",Undefined
+100,194,191.0,"sem nú spillir fyrir mér annars
+ lǫstr en eigi minn",xCS xAV rP xVB fF tPS mIN p3 nS vA xAP xPE p1 nS cD xDQ gM nS cG xNC gM nS cN sI xCC xAV rP xDP gM nS cN,"['V', 'O', 'S']",Hypotaxe
+101,195,192.0,"heldr hlýði mér góðgjarnliga
+ miskunn yður",xAV rC xVB fF tPS mSU p3 nS vA xPE p1 nS cD xAV rP xNC gF nS cN sI xDP gF nS cN,"['V', 'O', 'S']",Undefined
+102,196,193.0,ok lofa mér at rǿða nǫkkut við lafddi mína,xCC xVB fF tPS mIP p2 nS vA xPE p1 nS cD xIM xVB fI tPS vA xDQ gN nS cA xAP xNC gF nS cA sI xDP gF nS cA,"['V', 'O', 'O', 'O']",Parataxe
+103,197,194.0,"ok þat sver ek við himnaguð
+ ok helga jǫrð",xCC xDD gN nS cA xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAP xNC gM nS cA sI xCC xAJ rP gF nS cA sI xNC gF nS cA sI,"['O', 'V', 'S']",Parataxe
+104,198,195.0,at eigi mǽli ek þetta við þik af svikum né vél,xCS xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xDD gN nS cA xAP xPE p2 nS cA xAP xNC gN nP cD sI xCC xNC gF nS cD sI,"['V', 'S', 'O']",Hypotaxe
+105,199,196.0,"engi er í þessi verǫld jafnkǽr
+ mér sem þú",xDQ gF nS cN xVB fF tPS mIN p3 nS vA xAP xDD gF nS cD xNC gF nS cD sI xAJ rP gF nS cN sI xPE p1 nS cD xCS xPE p2 nS cN,"['S', 'V', 'O']",Undefined
+106,2,2.0,Sár ok harmr vex mér jafnan,xNC gN nS cN sI xCC xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xPE p1 nS cD xAV rP,"['S', 'V', 'O']",Undefined
+107,20,18.0,ok þaðan af mun mér brátt bana fá,xCC xAV rP xAP xVB fF tPS mIN p3 nS vA xPE p1 nS cD xAJ rP gN nS cA sI xNC gM nS cA sI xVB fI tPS vA,"['V', 'O', 'O']",Parataxe
+108,200,197.0,ok er sú mín hugleiðing ok hyggja,xCC xVB fF tPS mIN p3 nS vA xDD gF nS cN xDP gF nS cN xNC gF nS cN sI xCC xNC gF nS cN sI,"['V', 'S', 'S', 'S']",Parataxe
+109,200,198.0,Ho ófyrirsynju rǿdda ek nú svá margt því at hyggja þín er svá bernsk ok aldr,xUA xNC gF nS cA sI xVB fF tPT mIN p1 nS vA xPE p1 nS cN xAV rP xAV rP xAJ rP gN nS cA sI xCS xNC gF nS cN sI xDP gF nS cN xVB fF tPS mIN p3 nS vA xAV rP xAJ rP gF nS cN sI xCC xNC gM nS cN sI,"['O', 'V', 'S', 'S', 'V', 'S']",Undefined
+110,202,199.0,at trautt kann skynja hvat þér hǿfir,xCS xAJ rP gN nS cA sI xVB fF tPS mIN p3 nS vA xVB fI tPS vA xPQ gN nS cN xPE p2 nS cD xVB fF tPS mIN p3 nS vA,"['V', 'S', 'O', 'V']",Hypotaxe
+111,203,200.0,því at ǿskualdr er ljósari hinum øfra,xCS xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAJ rC gM nS cN sD xDD gM nS cD xAJ rC gN nS cD sD,"['S', 'V', 'O']",Hypotaxe
+112,204,201.0,því at margt sjá ungir vel en fleira vitu gamlir vel,xCS xAJ rP gN nS cA sI xVB fF tPS mIN p3 nP vA xAJ rP gM nP cN sI xAV rP xCC xAJ rC gN nS cA sD xVB fF tPS mIN p3 nP vA xAJ rP gM nP cN sI xAV rP,"['V', 'V']",Hypotaxe
+113,205,202.0,ok þó at þú sér ung þá haga þó svá at þú kunnir skilja,xCC xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xAJ rP gF nS cN sI xAV rP xVB fF tPS mIP p2 nS vA xAV rP xAV rP xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xVB fI tPS vA,"['S', 'V', 'V', 'S', 'V']",Hypotaxe
+114,206,203.0,hverr ek em eða hvat ek á eða hver mín ást er til þín,xDQ gM nS cN xPE p1 nS cN xVB fF tPS mIN p1 nS vA xCC xPQ gN nS cA xPE p1 nS cN xVB fF tPS mIN p3 nS vA xCC xDQ gF nS cN xDP gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAP xPE p2 nS cG,"['S', 'S', 'V', 'O', 'S', 'V', 'S', 'S', 'V', 'O']",Undefined
+115,207,204.0,"því at
+ lǽvísi allra hluta nemsk með venju",xCS xNC gF nS cN sI xDQ gU nP cG xNC gM nP cG sI xVB fF tPS mIN p3 nS vR xAP xNC gF nS cD sI,"['S', 'O', 'V']",Hypotaxe
+116,208,205.0,ok venja kennir þér allt þat er maðr kann,xCC xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xPE p2 nS cD xDQ gN nS cA xDD gN nS cA xCS xNC gM nS cN sI xVB fF tPS mIN p3 nS vA,"['S', 'V', 'O', 'O', 'O', 'S', 'V']",Parataxe
+117,209,206.0,ganga mǽla koma ok rǿðask við,xVB fI tPS vA xVB fI tPS vA xVB fI tPS vA xCC xVB fI tPS vR xAP,[],Undefined
+118,210,207.0,ok vera saman þess bið ek þik at þú lofir,xCC xVB fI tPS vA xAV rP xDD gN nS cG xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cA xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA,"['O', 'V', 'S', 'O', 'S', 'V']",Parataxe
+119,211,208.0,því at af viðrǿðu veit hvárttveggja hvat í annars hjarta býr,xCS xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xDQ gN nS cN xPQ gN nS cN xAP xDQ gN nS cG xNC gN nS cD sI xVB fF tPS mIN p3 nS vA,"['O', 'V', 'S', 'S', 'O', 'O', 'V']",Hypotaxe
+120,212,209.0,þat mátt þú mér segja hvat er þér líkar af því,xDD gN nS cA xVB fF tPS mIN p2 nS vA xPE p2 nS cN xPE p1 nS cD xVB fI tPS vA xPQ gN nS cN xCS xPE p2 nS cD xVB fF tPS mIN p3 nS vA xAP xDD gN nS cD,"['O', 'V', 'S', 'O', 'S', 'O', 'V', 'O']",Undefined
+121,213,210.0,Ganga ok mǽla ok koma þat mun ek þér ok engum meina,xVB fI tPS vA xCC xVB fI tPS vA xCC xVB fI tPS vA xDD gN nS cA xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cD xCC xDQ gM nS cD xVB fI tPS vA,"['O', 'V', 'S']",Undefined
+122,214,211.0,hverr maðr á víða vegu,xDQ gM nS cN xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gM nP cA sI xNC gM nP cA sI,"['S', 'V', 'O']",Undefined
+123,215,212.0,þó hǿfir mér at svara hverjum þeim er orða krefr,xAV rP xVB fF tPS mIN p3 nS vA xPE p1 nS cD xIM xVB fI tPS vA xDQ gM nS cD xDD gM nS cD xCS xNC gN nP cG sI xVB fF tPS mIN p3 nS vA,"['V', 'O', 'O', 'O', 'O', 'V']",Undefined
+124,217,213.0,því játa ek at þú ok hverr er vill,xDD gN nS cD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xCS xPE p2 nS cN xCC xDQ gM nS cN xCS xVB fF tPS mIN p3 nS vA,"['O', 'V', 'S', 'S', 'S', 'V']",Undefined
+125,218,214.0,"komi
+ hingat ok þó svá at ek haldi sǿmð minni",xVB fF tPS mSU p3 nS vA xAV rP xCC xAV rP xAV rP xCS xPE p1 nS cN xVB fF tPS mSU p1 nS vA xNC gF nS cD sI xDP gF nS cD,"['V', 'S', 'V', 'O']",Undefined
+126,219,215.0,lofat er meyjum at hlýða orðum manna ok orðum svara,xVB fP tPT vA gN nS cN sI xVB fF tPS mIN p3 nS vA xNC gF nP cD sI xIM xVB fI tPS vA xNC gN nP cD sI xNC gM nP cG sI xCC xNC gN nP cD sI xVB fI tPS vA,"['V', 'O', 'O', 'O', 'O']",Undefined
+127,220,216.0,ok þó hǿfir at stilling sé á,xCC xAV rP xVB fF tPS mIN p3 nS vA xCS xNC gF nS cN sI xVB fF tPS mSU p3 nS vA xAP,"['V', 'S', 'V']",Parataxe
+128,221,217.0,"ef þú rǿðir gott til mín leikandi mun ek svara
+ þér",xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xAJ rP gN nS cA sI xAP xPE p1 nS cG xVB fP tPS vA gF nS cN sD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xVB fI tPS vA xPE p2 nS cD,"['S', 'V', 'O', 'V', 'S', 'O']",Hypotaxe
+129,222,218.0,en ef nǫkkut er meinsamt í þá man ek þat víst ei þola,xCC xCS xDQ gN nS cN xVB fF tPS mIN p3 nS vA xAJ rP gN nS cN sI xAP xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xDD gN nS cA xAJ rP gN nS cA sI xAV rP xVB fI tPS vA,"['S', 'V', 'V', 'S', 'O']",Hypotaxe
+130,223,219.0,en þú beiðisk at vit sém tvau einsaman því nítta ek,xCC xPE p2 nS cN xVB fF tPS mIN p2 nS vR xCS xPE p1 nD cN xVB fF tPS mSU p1 nP vA xDQ gN nP cN xAJ rP gN nP cN sI xDD gN nS cD xVB fF tPS mIN p1 nS vA xPE p1 nS cN,"['S', 'V', 'S', 'V', 'S', 'O', 'V', 'S']",Parataxe
+131,224,220.0,því at eigi dugir okkr tveim einum inni vera,xCS xAV rP xVB fF tPS mIN p3 nS vA xPE p1 nD cD xDQ gU nP cD xAJ rP gU nP cD sI xAV rP xVB fI tPS vA,"['V', 'O', 'O']",Hypotaxe
+132,225,221.0,því at af slíku vex meyjum ámǽli,xCS xAP xAJ rP gN nS cD sI xVB fF tPS mIN p3 nS vA xNC gF nP cD sI xNC gN nS cN sI,"['V', 'O', 'S']",Hypotaxe
+133,227,222.0,Eigi gaft þú mér nú smám því at stórar gjafir,xAV rP xVB fF tPT mIN p2 nS vA xPE p2 nS cN xPE p1 nS cD xAV rP xAJ rP gU nP cD sI xCS xAJ rP gF nP cN sI xNC gF nP cA sI,"['V', 'S', 'O']",Undefined
+134,228,223.0,þykki mér viðrmǽli þitt,xVB fF tPS mIN p3 nS vA xPE p1 nS cD xNC gN nS cN sI xDP gN nS cN,"['V', 'O', 'S']",Undefined
+135,229,225.0,get ek ei þér þakkat sem vert er,xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xPE p2 nS cD xVB fP tPT vA gN nS cA sI xCS xAJ rP gN nS cN sI xVB fF tPS mIN p3 nS vA,"['V', 'S', 'O', 'V']",Undefined
+136,23,21.0,Því man ek nú mǽla við Venerem kvennagyðju er bani er lífs míns,xDD gN nS cD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xVB fI tPS vA xAP xFN xNC gF nS cA sI xCS xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xNC gN nS cG sI xDP gN nS cG,"['O', 'V', 'S', 'O', 'S', 'V', 'O']",Undefined
+137,230,226.0,þessa virðing má ek eigi með orðum gjalda né með atburð,xDD gF nS cA xNC gF nS cA sI xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xAP xNC gN nP cD sI xVB fI tPS vA xCC xAP xNC gM nS cD sI,"['O', 'V', 'S']",Undefined
+138,231,227.0,þá mun tíð koma,xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xVB fI tPS vA,"['V', 'S']",Undefined
+139,232,228.0,er sýna mun þér sannan vin,xCS xVB fI tPS vA xVB fF tPS mIN p3 nS vA xPE p2 nS cD xAJ rP gM nS cA sI xNC gM nS cA sI,"['V', 'O', 'O']",Hypotaxe
+140,233,229.0,lát eigi nú þér fyrir þykkja því at eigi þori ek þér nú fleira at segja þó at ek vilda,xVB fF tPS mIP p2 nS vA xAV rP xAV rP xPE p2 nS cD xAP xVB fI tPS vA xCS xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cD xAV rP xAJ rC gN nS cA sD xIM xVB fI tPS vA xCS xPE p1 nS cN xVB fF tPT mSU p1 nS vA,"['V', 'O', 'V', 'S', 'O', 'S', 'V']",Undefined
+141,234,230.0,en þó vil ek þik nǫkkurs biðja,xCC xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cA xDQ gN nS cG xVB fI tPS vA,"['V', 'S', 'O']",Parataxe
+142,237,232.0,at faðman fǿði óleyfða ást,xCS xNC gF nS cN sI xVB fF tPS mSU p3 nS vA xAJ rP gF nS cA sI xNC gF nS cA sI,"['S', 'V', 'O']",Hypotaxe
+143,238,233.0,At oft svíki kossar ok faðman unga mey,xCS xAV rP xVB fF tPS mSU p3 nP vA xNC gM nP cN sI xCC xNC gF nS cN sI xAJ rP gF nS cA sI xNC gF nS cA sI,"['V', 'S', 'O']",Hypotaxe
+144,239,234.0,þá mun ek nú at eins þat þola þér en þú lát ei fleira fram koma,xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xAV rP xDD gN nS cA xVB fI tPS vA xPE p2 nS cD xCC xPE p2 nS cN xVB fF tPS mIP p2 nS vA xAV rP xAJ rC gN nS cA sD xAV rP xVB fI tPS vA,"['V', 'S', 'O', 'O', 'S', 'V']",Undefined
+145,240,235.0,ok þetta mynda ek ok øngum nema þér þola,xCC xDD gN nS cA xVB fF tPT mSU p1 nS vA xPE p1 nS cN xAV rP xDQ gM nS cD xCS xPE p2 nS cD xVB fI tPS vA,"['O', 'V', 'S']",Parataxe
+146,241,236.0,en nú mun frá kirkju koma faðir minn ok móðir,xCC xAV rP xVB fF tPS mIN p3 nS vA xAP xNC gF nS cD sI xVB fI tPS vA xNC gM nS cN sI xDP gM nS cN xCC xNC gF nS cN sI,"['V', 'O', 'S']",Parataxe
+147,242,237.0,ok hǿfir mér nú heim at ganga at ek verði eigi ásakað,xCC xVB fF tPS mIN p3 nS vA xPE p1 nS cD xAV rP xAV rP xIM xVB fI tPS vA xCS xPE p1 nS cN xVB fF tPS mSU p1 nS vA xAV rP xVB fP tPT vA gF nS cN sI,"['V', 'O', 'S', 'V']",Parataxe
+148,243,238.0,því at enn munu tíðir gnógar ganga er vit megum við rǿðask,xCS xAV rP xVB fF tPS mIN p3 nP vA xNC gF nP cN sI xAJ rP gF nP cN sI xVB fI tPS vA xCS xPE p1 nD cN xVB fF tPS mIN p1 nP vA xAP xVB fI tPS vR,"['V', 'S', 'S', 'V']",Hypotaxe
+149,245,239.0,Engi er ok engi var í ǫllum heimi jafnfeginn sem ek var,xDQ gM nS cN xVB fF tPS mIN p3 nS vA xCC xDQ gM nS cN xVB fF tPT mIN p3 nS vA xAP xDQ gM nS cD xNC gM nS cD sI xAJ rP gM nS cN sI xCS xPE p1 nS cN xVB fF tPT mIN p1 nS vA,"['S', 'V', 'S', 'V', 'O', 'O', 'S', 'V']",Undefined
+150,246,240.0,at fastr er orðinn vili várr í brjósti henni,xCS xAJ rP gM nS cN sI xVB fF tPS mIN p3 nS vA xVB fP tPT vA gM nS cN sI xNC gM nS cN sI xDP gM nS cN xAP xNC gN nS cD sI xPE p3 gF nS cD,"['V', 'S', 'O']",Hypotaxe
+151,247,241.0,mik hefir allbrátt nú sǽlan gǫrt,xPE p1 nS cA xVB fF tPS mIN p3 nS vA xAJ rP gN nS cA sI xAV rP xAJ rP gM nS cA sI xVB fP tPT vA gN nS cA sI,"['O', 'V']",Undefined
+152,248,242.0,því at ek fer nú sǽll heim en ek fór fátǿkr heiman,xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAV rP xAJ rP gM nS cN sI xAV rP xCC xPE p1 nS cN xVB fF tPT mIN p1 nS vA xAJ rP gM nS cN sI xAV rP,"['S', 'V', 'S', 'V']",Hypotaxe
+153,249,243.0,um þǫrf fram bað hon at ek skylda hennar minnask,xAP xNC gF nS cA sI xAV rP xVB fF tPT mIN p3 nS vA xPE p3 gF nS cN xCS xPE p1 nS cN xVB fF tPT mSU p1 nS vA xPE p3 gF nS cG xVB fI tPS vR,"['O', 'V', 'S', 'S', 'V', 'O']",Undefined
+154,25,22.0,Einkaván lífs míns dýrlig Venus heil sé þú,xNC gF nS cN sI xNC gN nS cG sI xDP gN nS cG xAJ rP gF nS cN sI xFN xAJ rP gF nS cN sI xVB fF tPS mIP p2 nS vA xPE p2 nS cN,"['S', 'O', 'V']",Undefined
+155,250,244.0,því at engi hlutr má henni ór mínum hug hrinda,xCS xDQ gM nS cN xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xPE p3 gF nS cD xAP xDP gM nS cD xNC gM nS cD sI xVB fI tPS vA,"['S', 'V', 'O']",Hypotaxe
+156,251,245.0,eigi kennir hon með mér ok eigi veit hon hversu mjǫk ek fýsumsk hana,xAV rP xVB fF tPS mIN p3 nS vA xPE p3 gF nS cN xAP xPE p1 nS cD xCC xAV rP xVB fF tPS mIN p3 nS vA xPE p3 gF nS cN xAQ xAV rP xPE p1 nS cN xVB fF tPS mIN p1 nS vR xPE p3 gF nS cA,"['V', 'S', 'O', 'V', 'S', 'S', 'V', 'O']",Undefined
+157,252,246.0,ok mun mér vera sem var,xCC xVB fF tPS mIN p3 nS vA xPE p1 nS cD xVB fI tPS vA xCS xVB fF tPT mIN p3 nS vA,"['V', 'O', 'V']",Parataxe
+158,253,247.0,"at meinar mér ok enn fleira
+ þrøngir",xCS xVB fF tPS mIN p3 nS vA xPE p1 nS cD xCC xAV rP xAJ rC gN nS cN sD xVB fF tPS mIN p3 nS vA,"['V', 'O', 'V']",Hypotaxe
+159,254,248.0,því kann ek eigi sjalfr ráð fyrir mér at sjá,xDD gN nS cD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xDQ gM nS cN xNC gN nS cA sI xAP xPE p1 nS cD xIM xVB fI tPS vA,"['O', 'V', 'S']",Undefined
+160,255,249.0,ef ek em íðinn á ok á ek oft við hana orð ok leik,xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAJ rP gM nS cN sI xVB fF tPS mIN p3 nS vA xCC xVB fF tPS mIN p3 nS vA xPE p1 nS cN xAV rP xAP xPE p3 gF nS cA xNC gN nS cA sI xCC xNC gM nS cA sI,"['S', 'V', 'V', 'V', 'S', 'O', 'O', 'O']",Hypotaxe
+161,256,250.0,þá mun fjǫlmǽlgi firra okkra fyndi,xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xVB fI tPS vA xDP gM nP cA xNC gM nP cA sI,"['V', 'S', 'O']",Undefined
+162,257,251.0,en ef engi oftsemi festir vára vináttu,xCC xCS xDQ gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xDP gF nS cA xNC gF nS cA sI,"['S', 'V', 'O']",Hypotaxe
+163,258,252.0,þá með atburð mun ást hrørna af hennar hendi,xAV rP xAP xNC gM nS cD sI xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xVB fI tPS vA xAP xPE p3 gF nS cG xNC gF nS cD sI,"['O', 'V', 'S']",Undefined
+164,259,254.0,ǫll ást vex með venju ok með venju þverr,xDQ gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAP xNC gF nS cD sI xCC xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA,"['S', 'S', 'V', 'O', 'O', 'V']",Undefined
+165,26,23.0,er lǽtr alla hluti vera undir þínu valdi,xCS xVB fF tPS mIN p2 nS vA xDQ gM nP cA xNC gM nP cA sI xVB fI tPS vA xAP xDP gN nS cD xNC gN nS cD sI,"['V', 'O', 'O', 'O']",Hypotaxe
+166,260,255.0,ok ǫll fyrnisk vanfest ást,xCC xDQ gF nS cN xVB fF tPS mIN p3 nS vR xAJ rP gF nS cN sI xNC gF nS cN sI,"['S', 'V', 'S']",Parataxe
+167,261,256.0,jafnan vex eldr at á lǫgnum viði,xAV rP xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xCS xAP xVB fP tPT vA gM nS cD sI xNC gM nS cD sI,"['V', 'S', 'O']",Undefined
+168,262,257.0,dreg við af eldi þá mun brátt eldr slokna,xVB fF tPS mIN p1 nS vA xNC gM nS cA sI xAP xNC gM nS cD sI xAV rP xVB fF tPS mIN p3 nS vA xAJ rP gN nS cA sI xNC gM nS cN sI xVB fI tPS vA,"['V', 'O', 'O', 'V', 'S']",Undefined
+169,265,259.0,í þeima hlut sé ek mér enga hógvǽri,xAP xDD gM nS cD xNC gM nS cD sI xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p1 nS cD xDQ gF nS cA xNC gF nS cA sI,"['O', 'V', 'S']",Undefined
+170,266,260.0,ok hyggja mín hefir engi ørugg tiltǿki,xCC xNC gF nS cN sI xDP gF nS cN xVB fF tPS mIN p3 nS vA xDQ gN nP cA xAJ rP gN nP cA sI xNC gN nP cA sI,"['S', 'V', 'O']",Parataxe
+171,267,261.0,því at í móti stendr stundum skepna karla verkum,xCS xAP xVB fF tPS mIN p3 nS vA xNC gF nP cD sI xNC gF nS cN sI xNC gM nP cG sI xNC gN nP cD sI,"['V', 'O', 'S']",Hypotaxe
+172,268,262.0,ok lǽtr ei ǽtlan í stað vera,xCC xVB fF tPS mIN p3 nS vA xAV rP xNC gF nS cA sI xAP xNC gM nS cD sI xVB fI tPS vA,"['V', 'O', 'O']",Parataxe
+173,269,263.0,svá hefir hon stundum meinsǫm verit en suma sǽla gǫrt,xAV rP xVB fF tPS mIN p3 nS vA xPE p3 gF nS cN xNC gF nP cD sI xAJ rP gF nS cN sI xVB fP tPT vA gN nS cA sI xCC xDQ gM nP cA xAJ rP gM nP cA sI xVB fP tPT vA gN nS cA sI,"['V', 'S', 'O']",Undefined
+174,27,24.0,Þik hrǽðisk háleitt konungaveldi ok þjóna þér,xPE p2 nS cA xVB fF tPS mIN p3 nS vR xAJ rP gN nS cN sI xNC gN nS cN sI xCC xVB fF tPS mIN p3 nP vA xPE p2 nS cD,"['O', 'V', 'S', 'V', 'O']",Undefined
+175,270,264.0,ok á þá lund lifir hverr maðr í verǫld þessi,xCC xAP xDD gF nS cA xNC gF nS cA sI xVB fF tPS mIN p3 nS vA xDQ gM nS cN xNC gM nS cN sI xAP xNC gF nS cD sI xDD gF nS cD,"['O', 'V', 'S']",Parataxe
+176,273,266.0,sé guð stjórn ok stýrimaðr starfs míns,xVB fF tPS mSU p3 nS vA xNC gM nS cN sI xNC gF nS cN sI xCC xNC gM nS cN sI xNC gN nS cG sI xDP gN nS cG,"['V', 'S', 'O']",Undefined
+177,274,267.0,ok hann stýri ǫllu verki mínu,xCC xPE p3 gM nS cN xVB fF tPS mSU p3 nS vA xDQ gN nS cD xNC gN nS cD sI xDP gN nS cD,"['S', 'V', 'O']",Parataxe
+178,275,268.0,tulkr minn skal eigi vera bróðir ok ei bróðursunr,xNC gM nS cN sI xDP gM nS cN xVB fF tPS mIN p3 nS vA xAV rP xVB fI tPS vA xNC gM nS cN sI xCC xAV rP xNC gM nS cN sI,"['S', 'V', 'S', 'S']",Undefined
+179,276,269.0,trautt finnsk sá er í slíku er trúr,xAJ rP gN nS cA sI xVB fF tPS mIN p3 nS vR xDD gM nS cN xCS xAP xAJ rP gN nS cD sI xVB fF tPS mIN p3 nS vA xAJ rP gM nS cN sI,"['V', 'S', 'V']",Undefined
+180,277,270.0,"með trú eða félagi kann eigi
+ gǽta frǽndi frǽnda",xAP xNC gF nS cD sI xCC xNC gN nS cD sI xVB fF tPS mIN p3 nS vA xAV rP xVB fI tPS vA xNC gM nS cN sI xNC gM nS cG sI,"['O', 'V', 'S']",Undefined
+181,278,271.0,né bróðir bróður þá er sú ǿði kømr,xCC xNC gM nS cN sI xNC gM nS cG sI xAV rP xCS xDD gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA,"['S', 'O', 'V']",Parataxe
+182,279,272.0,lítil sǫk spillir stundum nema vitr varisk þat er spells er ván,xAJ rP gF nS cN sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xNC gF nP cD sI xCS xAJ rP gM nS cN sI xVB fF tPS mSU p3 nS vR xDD gN nS cA xCS xNC gN nS cG sI xVB fF tPS mIN p3 nS vA xNC gF nS cN sI,"['S', 'V', 'O', 'V', 'O', 'O', 'V', 'S']",Undefined
+183,28,25.0,Vǽg þú hin milda lítillátliga mínum bǿnum,xVB fF tPS mIP p2 nS vA xPE p2 nS cN xDD gF nS cN xAJ rP gF nS cN sD xAV rP xDP gU nP cD xNC gF nP cD sI,"['V', 'S', 'O']",Undefined
+184,280,273.0,því hǿfir oss aðra gǫtu fara,xDD gN nS cD xVB fF tPS mIN p3 nS vA xPE p1 nP cD xDQ gF nS cA xNC gF nS cA sI xVB fI tPS vA,"['O', 'V', 'O', 'O', 'O']",Undefined
+185,281,274.0,ek veit at hér í nánd býr kerling ein vitsfull ok þó bragðsǫm,xPE p1 nS cN xVB fF tPS mIN p1 nS vA xCS xAV rP xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xAJ rP gF nS cN sI xAJ rP gF nS cN sI xCC xAV rP xAJ rP gF nS cN sI,"['S', 'V', 'O', 'V', 'S']",Undefined
+186,282,275.0,"ok vel fallinn losta at þjóna
+ kvennagyðju",xCC xAV rP xVB fP tPT vA gM nS cN sI xNC gM nS cD sI xIM xVB fI tPS vA xNC gF nS cG sI,"['O', 'O']",Parataxe
+187,283,276.0,"ok brott hrundit ǫllum sǫkum til hennar man ek nú snúa fótsporum
+ mínum",xCC xAV rP xVB fP tPT vA gN nS cA sI xDQ gU nP cD xNC gF nP cD sI xAP xPE p3 gF nS cG xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xVB fI tPS vA xNC gN nP cD sI xDP gU nP cD,"['O', 'V', 'S']",Parataxe
+188,284,277.0,ok henni man ek fá ráð mitt,xCC xPE p3 gF nS cD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xVB fI tPS vA xNC gN nS cA sI xDP gN nS cA,"['O', 'V', 'S']",Parataxe
+189,285,278.0,Frǽgð lofs þíns ok nafn gǿzku þinnar,xNC gF nS cN sI xNC gN nS cG sI xDP gN nS cG xCC xNC gN nS cN sI xNC gF nS cG sI xDP gF nS cG,"['S', 'O', 'S', 'O']",Undefined
+190,286,279.0,sendi mik hingat til þín fyrir ráðs sakar,xVB fF tPT mIN p3 nS vA xPE p1 nS cA xAV rP xAP xPE p2 nS cG xAP xNC gN nS cG sI xNC gF nP cA sI,"['V', 'O', 'O', 'O', 'O']",Undefined
+191,287,280.0,ok hlýðið því er ek mǽli mildi ok miskunn yður,xCC xVB fF tPS mIP p2 nP vA xDD gN nS cD xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xNC gF nS cN sI xCC xNC gF nS cN sI xDP gF nS cN,"['V', 'O', 'S', 'V', 'S', 'S']",Parataxe
+192,288,281.0,ok lát þú með þér engan nema mik vita,xCC xVB fF tPS mIP p2 nS vA xPE p2 nS cN xAP xPE p2 nS cD xDQ gM nS cA xCS xPE p1 nS cA xVB fI tPS vA,"['V', 'S', 'O']",Parataxe
+193,289,282.0,"ok ek ann vel grannkonu þinni þeiri er þú kannt Galatheam
+",xCC xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAV rP xNC gF nS cD sI xDP gF nS cD xDD gF nS cD xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xFN,"['S', 'V', 'O', 'O', 'S', 'V']",Parataxe
+194,29,26.0,"ok eigi vert þú hǫrð við mik ok eigi skalt þú móti standa minni nauðsyn
+",xCC xAV rP xVB fF tPS mIP p2 nS vA xPE p2 nS cN xAJ rP gF nP cN sI xAP xPE p1 nS cA xCC xAV rP xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAP xVB fI tPS vA xDP gF nS cD xNC gF nS cD sI,"['V', 'S', 'O', 'V', 'S', 'O']",Parataxe
+195,290,283.0,ok hon ann mér nema ek sé svikinn af hennar orðum,xCC xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xPE p1 nS cD xCS xPE p1 nS cN xVB fF tPS mSU p1 nS vA xVB fP tPT vA gM nS cN sI xAP xPE p3 gF nS cG xNC gN nP cD sI,"['S', 'V', 'O', 'S', 'V', 'O', 'O']",Parataxe
+196,291,284.0,"eigi mǽli ek sem ek vildi því at ek hrǽðumsk
+ þúshundrað háska",xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xCS xPE p1 nS cN xVB fF tPT mSU p1 nS vA xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vR xNC gN nS cA sI xNC gM nP cG sI,"['V', 'S', 'S', 'V', 'S', 'V', 'O', 'O']",Undefined
+197,292,285.0,ek sorgfullr hrǽðumsk hvatvetna þat er í heimi er,xPE p1 nS cN xAJ rP gM nS cN sI xVB fF tPS mIN p1 nS vR xPI gN nS cA xDD gN nS cA xCS xAP xNC gM nS cD sI xVB fF tPS mIN p3 nS vA,"['S', 'V', 'O', 'O', 'V']",Undefined
+198,293,286.0,því at af litlu vex oftsinnum frǽgð,xCS xAP xAJ rP gN nS cD sI xVB fF tPS mIN p3 nS vA xAV rP xNC gF nS cN sI,"['V', 'S']",Hypotaxe
+199,296,288.0,ok starf hins fátǿkja er í mǿðiligri ván,xCC xNC gN nS cN sI xDD gM nS cG xAJ rP gM nS cG sD xVB fF tPS mIN p3 nS vA xAP xAJ rP gF nS cD sI xNC gF nS cD sI,"['S', 'O', 'V']",Parataxe
+200,297,289.0,nú sér þú vanda minn ráð þvísa meðal beggja okkar ok,xAV rP xVB fF tPS mIN p2 nS vA xPE p2 nS cN xNC gM nS cA sI xDP gM nS cA xVB fF tPS mIP p2 nS vA xDD gN nS cD xAP xDQ gU nP cG xPE p1 nD cG xCC,"['V', 'S', 'O', 'V', 'O', 'O', 'O']",Undefined
+201,298,290.0,þess bið ek at þú leynir lǫst hvárstveggja,xDD gN nS cG xVB fF tPS mIN p1 nS vA xPE p1 nS cN xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xNC gM nS cA sI xDQ gN nS cG,"['O', 'V', 'S', 'S', 'V', 'O', 'O']",Undefined
+202,299,291.0,Annarr ann því er þú annt ok þess er þú biðr þá biðr annarr,xDQ gM nS cN xVB fF tPS mIN p3 nS vA xDD gN nS cD xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xCC xDD gN nS cG xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xAV rP xVB fF tPS mIN p3 nS vA xDQ gM nS cN,"['S', 'V', 'O', 'S', 'V', 'O', 'S', 'V', 'V', 'S']",Undefined
+203,3,3.0,"ok ei dirfumsk ek at segja nafn hǫggvanda
+",xCC xAV rP xVB fF tPS mIN p1 nS vR xPE p1 nS cN xIM xVB fI tPS vA xNC gN nS cA sI xVB fP tPS vA gM nS cG sD,"['V', 'S', 'O']",Parataxe
+204,30,27.0,Heldr ger þú þat er ek beiðumsk Eigi bið ek þik stórra hluta,xAV rC xVB fF tPS mIP p2 nS vA xPE p2 nS cN xDD gN nS cA xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vR xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cA xAJ rP gU nP cG sI xNC gM nP cG sI,"['V', 'S', 'O', 'S', 'V', 'V', 'S', 'O', 'O']",Undefined
+205,300,292.0,en enn hefir hann eigi til þess vilja minn,xCC xAV rP xVB fF tPS mIN p3 nS vA xPE p3 gM nS cN xAV rP xAP xDD gN nS cG xNC gM nS cA sI xDP gM nS cA,"['V', 'S', 'O']",Parataxe
+206,301,293.0,hann er vel reyndr ok verðugr er hann dýrrar konu,xPE p3 gM nS cN xVB fF tPS mIN p3 nS vA xAV rP xVB fP tPT vA gM nS cN sI xCC xAJ rP gM nS cN sI xVB fF tPS mIN p3 nS vA xPE p3 gM nS cN xAJ rP gF nS cG sI xNC gF nS cG sI,"['S', 'V', 'V', 'S', 'O']",Undefined
+207,302,294.0,en mǽr þekkðisk eigi þat er hann bauð mér,xCC xNC gF nS cN sI xVB fF tPT mIN p3 nS vR xAV rP xDD gN nS cA xCS xPE p3 gM nS cN xVB fF tPT mIN p3 nS vA xPE p1 nS cD,"['S', 'V', 'O', 'S', 'V', 'O']",Parataxe
+208,303,295.0,hann hét mér fornt skinn ok skinnrokk,xPE p3 gM nS cN xVB fF tPT mIN p3 nS vA xPE p1 nS cD xAJ rP gN nS cA sI xNC gN nS cA sI xCC xNC gM nS cA sI,"['S', 'V', 'O']",Undefined
+209,304,296.0,því dró herfilig gjǫf vilja minn frá honum,xDD gN nS cD xVB fF tPT mIN p1 nS vA xAJ rP gF nS cN sI xNC gF nS cN sI xNC gM nS cA sI xDP gM nS cA xAP xPE p3 gM nS cD,"['O', 'V', 'S']",Undefined
+210,305,298.0,at hon fǿrir ok frá tekr fullting manns,xCS xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xCC xAP xVB fF tPS mIN p3 nS vA xNC gN nS cA sI xNC gM nS cG sI,"['S', 'V', 'V', 'O', 'O']",Hypotaxe
+211,306,299.0,"ok niðr brýtr rétt lǫg ok fullting
+ manna með sínu athygli",xCC xAV rP xVB fF tPS mIN p3 nS vA xAJ rP gN nS cA sI xNC gN nP cA sI xCC xNC gN nS cA sI xNC gM nP cG sI xAP xDP gN nS cD xNC gN nS cD sI,"['V', 'O', 'O', 'O', 'O']",Parataxe
+212,307,300.0,"en þat er þú beiðisk
+ þá mun engi fá nema ek vili",xCC xDD gN nS cA xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vR xAV rP xVB fF tPS mIN p3 nS vA xDQ gM nS cN xVB fI tPS vA xCS xPE p1 nS cN xVB fF tPS mSU p1 nS vA,"['O', 'S', 'V', 'V', 'S', 'S', 'V']",Parataxe
+213,308,301.0,því at hon liggr undir mínu valdi,xCS xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xAP xDP gN nS cD xNC gN nS cD sI,"['S', 'V', 'O']",Hypotaxe
+214,309,302.0,"ok hon fylgir mér jafnan
+ ok ek veit allt með henni",xCC xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xPE p1 nS cD xAV rP xCC xPE p1 nS cN xVB fF tPS mIN p1 nS vA xDQ gN nS cA xAP xPE p3 gF nS cD,"['S', 'V', 'O', 'S', 'V', 'O', 'O']",Parataxe
+215,31,28.0,kveð þú ok eigi stóra vera en þó sýnask mér stórir vera,xVB fF tPS mIP p2 nS vA xPE p2 nS cN xAV rP xAV rP xAJ rP gM nP cA sI xVB fI tPS vA xCC xAV rP xVB fF tPS mIN p3 nP vR xPE p1 nS cD xAJ rP gM nP cN sI xVB fI tPS vA,"['V', 'S', 'V', 'O']",Undefined
+216,311,303.0,ok hon lǽtr mjǫk at mínu ráði,xCC xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xAV rP xAP xDP gN nS cD xNC gN nS cD sI,"['S', 'V', 'O']",Parataxe
+217,312,304.0,en eigi mun ek nú fleira rǿða,xCC xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xAJ rC gN nS cA sD xVB fI tPS vA,"['V', 'S']",Parataxe
+218,312,305.0,fari hverr þar er ráð þykkir,xVB fF tPS mSU p3 nS vA xDQ gM nS cN xAV rP xCS xNC gN nS cN sI xVB fF tPS mIN p3 nS vA,"['V', 'S', 'S', 'V']",Undefined
+219,313,306.0,Enn er mér ekki hǿgra ok ei þrøngvir mér annat starf,xAV rP xVB fF tPS mIN p3 nS vA xPE p1 nS cD xDQ gN nS cN xAJ rC gN nS cN sD xCC xAV rP xVB fF tPS mIN p3 nS vA xPE p1 nS cD xDQ gN nS cN xNC gN nS cN sI,"['V', 'O', 'S', 'V', 'O', 'S', 'S']",Undefined
+220,314,307.0,ef þú þetta veitir mér þá er sem þú gefir mér hvatvetna,xCS xPE p2 nS cN xDD gN nS cA xVB fF tPS mIN p2 nS vA xPE p1 nS cD xAV rP xVB fF tPS mIN p3 nS vA xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xPE p1 nS cD xPI gN nS cA,"['S', 'O', 'V', 'O', 'V', 'S', 'V', 'O']",Hypotaxe
+221,315,308.0,oft hǿfir með fé at kaupa annars starf,xAV rP xVB fF tPS mIN p3 nS vA xAP xNC gN nS cD sI xIM xVB fI tPS vA xDQ gM nS cG xNC gN nS cA sI,"['V', 'O', 'O', 'O']",Undefined
+222,316,309.0,"ok at keypt erfiði
+ hafi verðuga laun",xCC xCS xVB fP tPT vA gN nS cN sI xNC gN nS cN sI xVB fF tPS mSU p3 nS vA xAJ rP gF nS cA sI xNC gF nS cA sI,"['S', 'V', 'O']",Hypotaxe
+223,317,310.0,trú þú mér starf þitt skal ek þér launa,xVB fF tPS mIP p2 nS vA xPE p2 nS cN xPE p1 nS cD xNC gN nS cA sI xDP gN nS cA xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cD xVB fI tPS vA,"['V', 'S', 'O', 'O', 'V', 'S', 'O']",Undefined
+224,318,311.0,ef þú vilt sjá fyrir mér um þat sem ek þarf,xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xVB fI tPS vA xAP xPE p1 nS cD xAP xDD gN nS cA xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA,"['S', 'V', 'O', 'O', 'S', 'V']",Hypotaxe
+225,319,312.0,þat eina bið ek þik seg mér hvat þú vill þiggja,xDD gN nS cA xAJ rP gN nS sD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cA xVB fF tPS mIP p2 nS vA xPE p1 nS cD xPQ gN nS cA xPE p2 nS cN xVB fF tPS mIN p2 nS vA xVB fI tPS vA,"['O', 'V', 'S', 'O', 'V', 'O', 'O', 'S', 'V']",Undefined
+226,32,29.0,En þér er þó mér þetta at gefa ei alltorveldligt,xCC xPE p2 nS cD xVB fF tPS mIN p3 nS vA xAV rP xPE p1 nS cD xDD gN nS cA xIM xVB fI tPS vA xAV rP xAJ rP gN nS cN sI,"['O', 'V', 'O', 'O']",Parataxe
+227,321,313.0,Margt vilja ok fleira beiðask þeir er margs þurfu,xAJ rP gN nS cA sI xVB fF tPS mIN p3 nP vA xCC xAJ rC gN nS cG sD xVB fF tPS mIN p3 nP vR xDD gM nP cN xCS xAJ rP gN nS cG sI xVB fF tPS mIN p3 nP vA,"['V', 'V', 'S', 'V']",Undefined
+228,322,314.0,"svá margs sem ek þarf þá skǫmmumsk
+ ek at segja",xAV rP xAJ rP gN nS cG sI xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAV rP xVB fF tPS mIN p1 nS vR xPE p1 nS cN xIM xVB fI tPS vA,"['S', 'V', 'V', 'S']",Undefined
+229,323,315.0,ek átta fé mikit þá er ek var ung,xPE p1 nS cN xVB fF tPT mIN p1 nS vA xNC gN nS cA sI xAJ rP gN nS cA sI xAV rP xCS xPE p1 nS cN xVB fF tPT mIN p1 nS vA xAJ rP gF nS cN sI,"['S', 'V', 'O', 'S', 'V']",Undefined
+230,324,316.0,en nú er gnótt fjár brott farin ok þurft í stað komin,xCC xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xNC gN nS cG sI xAV rP xVB fP tPT vA gF nS cN sI xCC xNC gF nS cN sI xAP xNC gM nS cA sI xVB fP tPT vA gF nS cN sI,"['V', 'S', 'O']",Parataxe
+231,325,317.0,ok vanheilsa ok aldr hafa mik eydda,xCC xNC gF nS cN sI xCC xNC gM nS cN sI xVB fF tPS mIN p3 nP vA xPE p1 nS cA xVB fP tPT vA gF nS cA sI,"['S', 'V', 'O']",Parataxe
+232,326,318.0,en vél mín ok starf kømr ekki at haldi,xCC xNC gF nS cN sI xDP gF nS cN xCC xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xDQ gN nS cA xAP xNC gN nS cD sI,"['S', 'V', 'O']",Parataxe
+233,327,319.0,nú ef þú veizt orð mín duga,xAV rP xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xNC gN nP cA sI xDP gN nP cA xVB fI tPS vA,"['S', 'V', 'O']",Hypotaxe
+234,328,320.0,þá bið ek þik at hús þitt sé opit fyrir mér heðan í frá,xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cA xCS xNC gN nS cN sI xDP gN nS cN xVB fF tPS mSU p3 nS vA xAJ rP gN nS cN sI xAP xPE p1 nS cD xAV rP xAP,"['V', 'S', 'O', 'S', 'V', 'O']",Undefined
+235,329,321.0,Heðan í frá skal hús mitt þér opit vera ok allt várt þér í boði,xAV rP xAP xVB fF tPS mIN p3 nS vA xNC gN nS cN sI xDP gN nS cN xPE p2 nS cD xAJ rP gN nS cN sI xVB fI tPS vA xCC xDQ gN nS cN xDP gN nS cN xPE p2 nS cD xAP xNC gN nS cD sI,"['V', 'S', 'O']",Undefined
+236,33,30.0,"Seg at eins at ek játa ok þegar
+ mun ek sǽll vera",xVB fF tPS mIP p2 nS vA xAV rP xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xCC xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAJ rP gM nS cN sI xVB fI tPS vA,"['V', 'S', 'V', 'V', 'S']",Undefined
+237,330,322.0,ok ǫll mín eign undir þínu valdi,xCC xDQ gF nS cN xDP gF nS cN xNC gF nS cN sI xAP xDP gN nS cD xNC gN nS cD sI,"['S', 'S', 'O']",Parataxe
+238,331,323.0,með ǫllu hefir nú vinátta okkr samtengt ok okkr saman bundit,xAP xDQ gN nS cD xVB fF tPS mIN p3 nS vA xAV rP xNC gF nS cN sI xPE p1 nD cA xVB fP tPT vA gN nS cA sI xCC xPE p1 nD cA xAV rP xVB fP tPT vA gN nS cA sI,"['O', 'V', 'S']",Undefined
+239,333,324.0,"Ok þess bið ek þik at vél þín ok starf vekisk heðan
+ í frá",xCC xDD gN nS cG xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cA xCS xNC gF nS cN sI xDP gF nS cN xCC xNC gN nS cN sI xVB fF tPS mSU p3 nP vR xAV rP xAP,"['O', 'V', 'S', 'O', 'S', 'S', 'V']",Parataxe
+240,334,325.0,ok at vél þín sé mér til hugganar með þinni skynsemi,xCC xCS xNC gF nS cN sI xDP gF nS cN xVB fF tPS mSU p3 nS vA xPE p1 nS cD xAP xNC gF nS cG sI xAP xDP gF nS cD xNC gF nS cD sI,"['S', 'V', 'O']",Hypotaxe
+241,335,326.0,lǽvísi hlýtr bǽði upphaf ok enda,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xCC xNC gN nS cA sI xCC xNC gM nS cA sI,"['S', 'V', 'O']",Undefined
+242,336,327.0,ok þó hefir endalykð allra hluta lǫst ok allra sǿmð,xCC xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xDQ gU nP cG xNC gM nP cG sI xNC gM nS cA sI xCC xDQ gU nP cG xNC gF nS cA sI,"['V', 'S', 'O']",Parataxe
+243,337,328.0,lít á upphaf máls ok endalykð,xVB fF tPS mIP p2 nS vA xAP xNC gN nS cA sI xNC gN nS cG sI xCC xNC gF nS cA sI,"['V', 'O', 'O', 'O']",Undefined
+244,338,329.0,at þú megir þá betr rǿða fyrirǽtlat mál,xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xAV rP xAV rC xVB fI tPS vA xVB fP tPT vA gN nS cA sI xNC gN nS cA sI,"['S', 'V', 'O']",Hypotaxe
+245,339,330.0,Hér er í þeima bǿ eitt ungmenni allfagrt,xAV rP xVB fF tPS mIN p3 nS vA xAP xDD gM nS cD xNC gM nS cD sI xAJ rP gN nS cN sI xNC gN nS cN sI xAJ rP gN nS cN sI,"['V', 'O', 'S']",Undefined
+246,34,31.0,"Ok þá þegar munu mér koma
+ allir hógvǽrir hlutir",xCC xAV rP xAV rP xVB fF tPS mIN p3 nP vA xPE p1 nS cD xVB fI tPS vA xDQ gM nP cN xAJ rP gM nP cN sI xNC gM nP cN sI,"['V', 'O', 'S']",Parataxe
+247,340,331.0,ok þat vex í ǫllum sǿmiligum siðum,xCC xDD gN nS cN xVB fF tPS mIN p3 nS vA xAP xDQ gU nP cD xAJ rP gU nP cD sI xNC gM nP cD sI,"['S', 'V', 'O']",Parataxe
+248,341,332.0,ok engi var betri né kurteisari,xCC xDQ gM nS cN xVB fF tPT mIN p3 nS vA xAJ rC gM nS cN sD xCC xAJ rC gM nS cN sD,"['S', 'V']",Parataxe
+249,342,333.0,um vára daga,xAP xDP gM nP cA xNC gM nP cA sI,['O'],Undefined
+250,342,334.0,ok hann tók vel við várri fátǿkð,xCC xPE p3 gM nS cN xVB fF tPT mIN p3 nS vA xAV rP xAP xDP gF nS cD xNC gF nS cD sI,"['S', 'V', 'O']",Parataxe
+251,343,335.0,ok hann yfirstígr alla með lofi sínu jafnaldra sína,xCC xPE p3 gM nS cN xVB fF tPS mIN p3 nS vA xDQ gM nP cA xAP xNC gN nS cD sI xDP gN nS cD xNC gM nP cA sI xDP gM nP cA,"['S', 'V', 'O']",Parataxe
+252,344,336.0,Pamphilus yfirkømr alla sína félaga,xFN xVB fF tPS mIN p3 nS vA xDQ gM nP cA xDP gM nP cA xNC gM nP cA sI,"['V', 'O', 'O']",Undefined
+253,345,337.0,"hann er heimskr heimskum
+",xPE p3 gM nS cN xVB fF tPS mIN p3 nS vA xAJ rP gM nS cN sI xAJ rP gM nS cD sI,"['S', 'V']",Undefined
+254,345,338.0,ok hǿgvǽrr hógvǽrum sem lamb,xCC xAJ rP gM nS cN sI xAJ rP gM nS cD sI xCS xNC gN nS cN sI,['S'],Parataxe
+255,346,339.0,vitr maðr stendr í móti heimskum með réttu,xAJ rP gM nS cN sI xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAP xAJ rP gM nS cD sI xAP xAJ rP gN nS cD sI,"['S', 'V']",Undefined
+256,347,340.0,"engi ǿskumaðr
+ er jafnvel reyndr í borg þessi",xDQ gM nS cN xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xVB fP tPT vA gM nS cN sI xAP xNC gF nS cD sI xDD gF nS cD,"['S', 'V', 'O']",Undefined
+257,348,341.0,"hans afl eyðir
+ ei ofdrykkja",xPE p3 gM nS cG xNC gN nS cA sI xVB fF tPS mIN p3 nS vA xAV rP xNC gF nS cN sI,"['O', 'V', 'S']",Undefined
+258,349,342.0,hann er vel siðaðr því at góðr var uppruni hans,xPE p3 gM nS cN xVB fF tPS mIN p3 nS vA xAV rP xVB fP tPT vA gM nS cN sI xCS xAJ rP gM nS cN sI xVB fF tPT mIN p3 nS vA xNC gM nS cN sI xPE p3 gM nS cG,"['S', 'V', 'V', 'S', 'O']",Undefined
+259,35,32.0,Ein er sú í grennd við mik er ek vilda eigi at mǽr vǽri,xAJ rP gF nS cN sI xVB fF tPS mIN p3 nS vA xDD gF nS cN xAP xNC gF nS cD sI xAP xPE p1 nS cA xCS xPE p1 nS cN xVB fF tPT mSU p1 nS vA xAV rP xCS xNC gF nS cN sI xVB fF tPT mSU p3 nS vA,"['V', 'S', 'O', 'O', 'S', 'V', 'S', 'V']",Undefined
+260,350,343.0,sǿtt epli fellr af sǿtu tré,xAJ rP gN nS cN sI xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xAP xAJ rP gN nS cD sI xNC gN nS cD sI,"['S', 'V', 'O']",Undefined
+261,351,344.0,kynfylgja birtir oft hvaðan kominn er,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xAQ xVB fP tPT vA gM nS cN sI xVB fF tPS mIN p3 nS vA,"['S', 'V', 'V']",Undefined
+262,352,345.0,oft líkisk sonr feðr,xAV rP xVB fF tPS mIN p3 nS vR xNC gM nS cN sI xNC gM nS cD sI,"['V', 'S', 'O']",Undefined
+263,353,347.0,"ek sé Galatheam standa hjá garðshliði
+",xPE p1 nS cN xVB fF tPS mIN p1 nS vA xFN xVB fI tPS vA xAP xNC gN nS cD sI,"['S', 'V', 'O']",Undefined
+264,354,348.0,kann vera með atburð at hon hafi heyrt mína rǿðu,xVB fF tPS mIN p3 nS vA xVB fI tPS vA xAP xNC gM nS cD sI xCS xPE p3 gF nS cN xVB fF tPS mSU p3 nS vA xVB fP tPT vA gN nS cA sI xDP gF nS cA xNC gF nS cA sI,"['V', 'O', 'S', 'V', 'O']",Undefined
+265,355,349.0,vit þat Galathea at ek hugða engan í nánd vera,xVB fF tPS mIP p2 nS vA xDD gN nS cA xFN xCS xPE p1 nS cN xVB fF tPT mIN p1 nS vA xDQ gM nS cA xAP xNC gF nS cD sI xVB fI tPS vA,"['V', 'O', 'S', 'V', 'O', 'O']",Undefined
+266,356,350.0,en þó hefi ek ekki logit,xCC xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xDQ gN nS cA xVB fP tPT vA gN nS cA sI,"['V', 'S', 'O']",Parataxe
+267,357,351.0,Pamphilus birtisk víst yfir ǫllum mǫnnum í borg þessi,xFN xVB fF tPS mIN p3 nS vR xAJ rP gN nS cA sI xAP xDQ gU nP cD xNC gM nP cD sI xAP xNC gF nS cD sI xDD gF nS cD,"['V', 'O', 'O', 'O', 'O']",Undefined
+268,358,352.0,menn veit fagrliga varðveitir hann sína atferð,xNC gM nP cN sI xVB fF tPS mIN p3 nS vA xAV rP xVB fF tPS mIN p3 nS vA xPE p3 gM nS cN xDP gF nS cA xNC gF nS cA sI,"['S', 'V', 'V', 'S', 'O']",Undefined
+269,359,353.0,sína sǿmð ok dýrð ok lof vex með honum jafnan,xDP gF nS cA xNC gF nS cA sI xCC xNC gF nS cA sI xCC xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xAP xPE p3 gM nS cD xAV rP,"['O', 'S', 'V']",Undefined
+270,36,33.0,Ok ef eigi stoðar mér miskunn yður,xCC xCS xAV rP xVB fF tPS mIN p3 nS vA xPE p1 nS cD xNC gF nS cN sI xDP gF nS cN,"['V', 'O', 'S']",Hypotaxe
+271,360,354.0,ok með réttu má hann engi ǫfunda,xCC xAP xAJ rP gN nS cD sI xVB fF tPS mIN p3 nS vA xPE p3 gM nS cA xDQ gM nS cN xVB fI tPS vA,"['V', 'O', 'S']",Parataxe
+272,361,355.0,hann er vel maðr ok mikillǽtisk hann þó ekki af því,xPE p3 gM nS cN xVB fF tPS mIN p3 nS vA xAV rP xNC gM nS cN sI xCC xVB fF tPS mIN p3 nS vR xPE p3 gM nS cN xAV rP xDQ gN nS cA xAP xDD gN nS cD,"['S', 'V', 'S', 'V', 'S', 'O', 'O']",Undefined
+273,362,356.0,ok hans auðr hefir engan lǫst,xCC xPE p3 gM nS cG xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xDQ gM nS cA xNC gM nS cA sI,"['O', 'S', 'V']",Parataxe
+274,363,357.0,þat vilda ek Galathea at hann vǽri búandi þinn,xDD gN nS cA xVB fF tPT mSU p1 nS vA xPE p1 nS cN xFN xCS xPE p3 gM nS cN xVB fF tPT mSU p3 nS vA xNC gM nS cN sI xDP gM nS cN,"['O', 'V', 'S', 'S', 'V', 'S']",Undefined
+275,364,359.0,ok þat sama myndir þú vilja ef þú vissir sem ek,xCC xDD gN nS cA xAJ rP gN nS sD xVB fF tPT mSU p2 nS vA xPE p2 nS cN xVB fI tPS vA xCS xPE p2 nS cN xVB fF tPT mSU p2 nS vA xCS xPE p1 nS cN,"['O', 'V', 'S', 'S', 'V', 'S']",Parataxe
+276,365,360.0,ok vilja minn sagða ek en ei bað ek hann þess mik,xCC xNC gM nS cA sI xDP gM nS cA xVB fF tPT mIN p1 nS vA xPE p1 nS cN xCC xAV rP xVB fF tPT mIN p1 nS vA xPE p1 nS cN xPE p3 gM nS cN xDD gN nS cG xPE p1 nS cA,"['O', 'V', 'S', 'V', 'S', 'S', 'O', 'O']",Parataxe
+277,366,358.0,minn dómr dǿmir ykkr bǽði saman,xDP gM nS cN xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xPE p2 nD cA xDQ gN nP cA xAV rP,"['S', 'V', 'O']",Undefined
+278,367,361.0,kyn ok kostr hvárstveggja,xNC gN nS cN sI xCC xNC gM nS cN sI xDQ gN nS cG,"['S', 'S', 'O']",Undefined
+279,369,363.0,Nú hlýðum vit tómum orðum um stund,xAV rP xVB fF tPS mIP p1 nP vA xPE p1 nD cN xAJ rP gU nP cD sI xNC gN nP cD sI xAP xNC gF nS cA sI,"['V', 'S', 'O']",Undefined
+280,37,35.0,"því at
+ eldr þyngir meir þeim er á liggr",xCS xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAV rC xDD gM nS cD xCS xAP xVB fF tPS mIN p3 nS vA,"['S', 'V', 'O', 'V']",Hypotaxe
+281,370,364.0,"en oft koma
+ stórmǽli af litlum hlut",xCC xAV rP xVB fF tPS mIN p3 nP vA xNC gN nP cN sI xAP xAJ rP gM nS cD sI xNC gM nS cD sI,"['V', 'S', 'O']",Parataxe
+282,371,365.0,mikill eldr verðr oft af litlum gneista,xAJ rP gM nS cN sI xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xAP xAJ rP gM nS cD sI xNC gM nS cD sI,"['S', 'V', 'O']",Undefined
+283,372,366.0,lítit upphaf gerir stundum ágǽtt niðrlag,xAJ rP gN nS cN sI xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xNC gF nP cD sI xAJ rP gN nS cA sI xNC gN nS cA sI,"['S', 'V', 'O']",Undefined
+284,373,367.0,hugr minn ǽtlaði með sér þetta upphaf þessa máls,xNC gM nS cN sI xDP gM nS cN xVB fF tPT mIN p3 nS vA xAP xPE cD xDD gN nS cA xNC gN nS cA sI xDD gN nS cG xNC gN nS cG sI,"['S', 'V', 'O']",Undefined
+285,374,368.0,ok því sneri ek minni rǿðu til þín í gamni mínu,xCC xDD gN nS cD xVB fF tPT mIN p1 nS vA xPE p1 nS cN xDP gF nS cD xNC gF nS cD sI xAP xPE p2 nS cG xAP xNC gN nS cD sI xDP gN nS cD,"['O', 'V', 'S']",Parataxe
+286,375,369.0,en ef hugr þinn eða hugskot kømsk nǫkkut við þessa rǿðu,xCC xCS xNC gM nS cN sI xDP gM nS cN xCC xNC gN nS cN sI xVB fF tPS mIN p3 nS vR xDQ gN nS cA xAP xDD gF nS cA xNC gF nS cA sI,"['S', 'V', 'O']",Hypotaxe
+287,38,36.0,en hinum er fjarri er,xCS xDD gM nS cD xCS xAV rP xVB fF tPS mIN p3 nS vA,"['O', 'V']",Hypotaxe
+288,381,371.0,Eigi veldr ónǿfrleikr ok engi heimskleikr,xAV rP xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xCC xDQ gM nS cN xNC gM nS cN sI,"['V', 'S', 'S', 'S']",Undefined
+289,382,372.0,en hvaðan kom þér þessi rǿða,xCC xAQ xVB fF tPT mIN p3 nS vA xPE p2 nS cD xDD gF nS cN xNC gF nS cN sI,"['V', 'O', 'S']",Parataxe
+290,383,374.0,hví þú komt hér eða,xPQ gN nS cD xPE p2 nS cN xVB fF tPT mIN p2 nS vA xAV rP xCC,"['O', 'S', 'V']",Undefined
+291,384,375.0,"sendi Pamphilus þik hingat eða sér rǿða þín til nǫkkurra ambuna
+",xVB fF tPT mIN p3 nS vA xFN xPE p2 nS cA xAV rP xCC xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xDP gF nS cN xAP xDQ gU nP cG xNC gF nP cG sI,"['V', 'O', 'V', 'S', 'O', 'O']",Undefined
+292,385,376.0,Illska vándra manna spillir jafnan verkum góðra,xNC gF nS cN sI xAJ rP gU nP cG sI xNC gM nP cG sI xVB fF tPS mIN p3 nS vA xAV rP xNC gN nP cD sI xAJ rP gU nP cG sI,"['S', 'O', 'V']",Undefined
+293,386,377.0,ok oft geldr maðr þess er hann hefir ei gǫrt,xCC xAV rP xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xDD gN nS cG xCS xPE p3 gM nS cN xVB fF tPS mIN p3 nS vA xAV rP xVB fP tPT vA gN nS cA sI,"['V', 'S', 'O', 'S', 'V']",Parataxe
+294,387,378.0,en þó at ek sé fátǿk þá fǽ ek eigi þó svá mér fjár,xCC xCS xPE p1 nS cN xVB fF tPS mSU p1 nS vA xAJ rP gF nS cN sI xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xAV rP xAV rP xPE p1 nS cD xNC gN nS cG sI,"['S', 'V', 'V', 'S', 'O', 'O']",Hypotaxe
+295,388,379.0,því at ek á lítit þá er eigi mér lítit ǿrit,xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAJ rP gN nS cA sI xAV rP xVB fF tPS mIN p3 nS vA xAV rP xPE p1 nS cD xAJ rP gN nS cN sI xAJ rP gN nS cN sI,"['S', 'V', 'V', 'O']",Hypotaxe
+296,389,380.0,svá er þó sem ek sagða fyrst hugr minn hóf þetta,xAV rP xVB fF tPS mIN p3 nS vA xAV rP xCS xPE p1 nS cN xVB fF tPT mIN p1 nS vA xAV rS xNC gM nS cN sI xDP gM nS cN xVB fF tPT mIN p3 nS vA xDD gN nS cA,"['V', 'S', 'V', 'S', 'V', 'O']",Undefined
+297,39,38.0,"því at þat er sagt at hon sé ein fegri ǫllum
+ návistarkonum sínum",xCS xDD gN nS cN xVB fF tPS mIN p3 nS vA xVB fP tPT vA gN nS cN sI xCS xPE p3 gF nS cN xVB fF tPS mSU p3 nS vA xAJ rP gF nS cN sI xAJ rC gF nS cN sD xDQ gU nP cD xNC gF nP cD sI xDP gU nP cD,"['S', 'V', 'S', 'V', 'O', 'O']",Hypotaxe
+298,390,381.0,þú veizt með mér ok engi fleiri,xPE p2 nS cN xVB fF tPS mIN p2 nS vA xAP xPE p1 nS cD xCC xDQ gM nS cN xAJ rC gM nS cN sD,"['S', 'V', 'O']",Undefined
+299,391,382.0,Þá má vel vera at þit séð bǽði saman ef þit vilið,xAV rP xVB fF tPS mIN p3 nS vA xAV rP xVB fI tPS vA xCS xPE p2 nD cN xVB fF tPS mSU p2 nP vA xDQ gN nP cN xAV rP xCS xPE p2 nD cN xVB fF tPS mIN p2 nP vA,"['V', 'S', 'V', 'S', 'S', 'V']",Undefined
+300,392,383.0,"ok þá má hvárttveggja ykkart þola skammlaust
+",xCC xAV rP xVB fF tPS mIN p3 nS vA xDQ gN nS cN xDP gN nS cN xVB fI tPS vA xAJ rP gN nS cA sI,"['V', 'S']",Parataxe
+301,393,384.0,kyngǫfgaðr er hann ok eigi þú síðr,xAJ rP gM nS cN sI xVB fF tPS mIN p3 nS vA xPE p3 gM nS cN xCC xAV rP xPE p2 nS cN xAV rC,"['V', 'S', 'S']",Undefined
+302,394,385.0,"fyrirmenn
+ hvárstveggja eru mér kunnigir",xNC gM nP cN sI xDQ gN nS cG xVB fF tPS mIN p3 nP vA xPE p1 nS cD xAJ rP gM nP cN sI,"['S', 'O', 'V']",Undefined
+303,395,386.0,hann er fríðari félagum en þú leikum ljósari,xPE p3 gM nS cN xVB fF tPS mIN p3 nS vA xAJ rC gM nS cN sD xNC gM nP cD sI xCC xPE p2 nS cN xNC gM nP cD sI xAJ rC gF nS cN sD,"['S', 'V', 'O']",Undefined
+304,396,387.0,fagrt við fǫgru líkar,xAJ rP gN nS cN sI xAP xAJ rP gN nS cD sI xVB fF tPS mIN p3 nS vA,['V'],Undefined
+305,397,388.0,ok er auðr ǿrinn með yðr ok ok glǫð ǿska,xCC xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xAJ rP gM nS cN sI xAP xPE p2 nP cD xCC xCC xAJ rP gF nS cN sI xNC gF nS cN sI,"['V', 'S', 'O']",Parataxe
+306,398,389.0,ok sjǫlf myndi sanna fegrð frǽgð ef vissi,xCC xDQ gF nS cN xVB fF tPT mSU p3 nS vA xVB fI tPS vA xNC gF nS cN sI xNC gF nS cN sI xCS xVB fF tPT mSU p3 nS vA,"['S', 'V', 'S', 'S', 'V']",Parataxe
+307,399,390.0,ok með því at þit eruð jǫfn þá megu þit með réttu félag eiga,xCC xAP xDD gN nS cD xCS xPE p2 nD cN xVB fF tPS mIN p2 nP vA xAJ rP gN nP cN sI xAV rP xVB fF tPS mIN p2 nP vA xPE p2 nD cN xAP xAJ rP gN nS cD sI xNC gN nS cA sI xVB fI tPS vA,"['O', 'S', 'V', 'V', 'S', 'O']",Parataxe
+308,4,4.0,ok ei lǽtr sjalft sár sýnask,xCC xAV rP xVB fF tPS mIN p3 nS vA xDQ gN nS cN xNC gN nS cN sI xVB fI tPS vR,"['V', 'S', 'S']",Parataxe
+309,40,39.0,Annathvárt er at mik blekkir ást eða er hon ein yfir ǫllum,xCC xVB fF tPS mIN p3 nS vA xCS xPE p1 nS cA xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xCC xVB fF tPS mIN p3 nS vA xPE p3 gF nS cN xAJ rP gF nS cN sI xAP xDQ gU nP cD,"['V', 'O', 'V', 'S', 'V', 'S', 'O']",Parataxe
+310,400,391.0,ekki skortir með ykkr nema ást ein,xDQ gN nS cA xVB fF tPS mIN p3 nS vA xAP xPE p2 nD cD xCS xNC gF nS cN sI xAJ rP gF nS cN sI,"['O', 'V', 'S']",Undefined
+311,401,392.0,Þat er þú mǽlir við mik þat skyldi mǽlt vera við frǽndr mína,xDD gN nS cN xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xAP xPE p1 nS cA xDD gN nS cN xVB fF tPT mSU p3 nS vA xVB fP tPT vA gN nS cN sI xVB fI tPS vA xAP xNC gM nP cA sI xDP gM nP cA,"['S', 'S', 'V', 'O', 'S', 'V', 'O']",Hypotaxe
+312,402,393.0,ok með þeira ráði þá fýsumsk ek nú bónda hvílu,xCC xAP xDD gU nP cG xNC gN nS cD sI xAV rP xVB fF tPS mIN p1 nS vR xPE p1 nS cN xAV rP xNC gM nS cG sI xNC gF nS cG sI,"['O', 'V', 'S']",Parataxe
+313,403,394.0,mǽl þat við þá þú eða Pamphilus,xVB fF tPS mIP p2 nS vA xDD gN nS cA xAP xDD gM nP cA xPE p2 nS cN xCC xFN,"['V', 'O', 'S']",Undefined
+314,404,395.0,þá mun hlutr sjá fegri verða þó at hans vili verði,xAV rP xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xDD gM nS cN xAJ rC gM nS cN sD xVB fI tPS vA xCS xPE p3 gM nS cG xNC gM nS cN sI xVB fF tPS mSU p3 nS vA,"['V', 'S', 'S', 'O', 'S', 'V']",Undefined
+315,405,396.0,"Þat hǿfir at þitt ráð sé í samrǽði
+ við frǽndr þína",xDD gN nS cN xVB fF tPS mIN p3 nS vA xCS xDP gN nS cN xNC gN nS cN sI xVB fF tPS mSU p3 nS vA xAP xNC gM nS cD sI xAP xNC gM nP cA sI xDP gM nP cA,"['S', 'V', 'S', 'V', 'O', 'O']",Undefined
+316,406,397.0,ok þín ást leiki meðan við hans ást,xCC xDP gF nS cN xNC gF nS cN sI xVB fF tPS mSU p3 nS vA xCS xAP xPE p3 gM nS cG xNC gF nS cA sI,"['S', 'V', 'O']",Parataxe
+317,408,399.0,ok hverr með sínu athygli sannar þessa íðn,xCC xDQ gM nS cN xAP xDP gN nS cD xNC gN nS cD sI xVB fF tPS mIN p3 nS vA xDD gF nS cA xNC gF nS cA sI,"['S', 'O', 'V']",Parataxe
+318,409,400.0,losti vekr hugskot manna,xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xNC gN nS cA sI xNC gM nP cG sI,"['S', 'V', 'O']",Undefined
+319,41,40.0,Sjá hefir gjǫgnum lostit mín innyfli vísu gaflaki,xDD gF nS cN xVB fF tPS mIN p3 nS vA xAP xVB fP tPT vA gN nS cA sI xDP gN nP cA xNC gN nP cA sI xAJ rP gN nS cD sI xNC gN nS cD sI,"['S', 'V', 'O']",Undefined
+320,410,401.0,"ok sambundin ást fylgir gleði ok hatar hryggleik
+",xCC xVB fP tPT vA gF nS cN sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xNC gF nS cD sI xCC xVB fF tPS mIN p3 nS vA xNC gM nS cA sI,"['S', 'V', 'O', 'V', 'O']",Parataxe
+321,411,402.0,engi man talt fá harm hans ok hryggleik,xDQ gM nS cN xVB fF tPS mIN p3 nS vA xVB fP tPT vA gN nS cA sI xVB fI tPS vA xNC gM nS cA sI xPE p3 gM nS cG xCC xNC gM nS cA sI,"['S', 'V', 'O']",Undefined
+322,412,403.0,nema þú vǽgir elligar munt þú jafnan ónǿfr vera,xCS xPE p2 nS cN xVB fF tPS mSU p2 nS vA xAV rP xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rP xAJ rP gF nS cN sI xVB fI tPS vA,"['S', 'V', 'V', 'S']",Hypotaxe
+323,413,404.0,Með lostavenju tapar mǽr sama sínum brátt,xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xNC gM nS cD sI xDP gM nS cD xAJ rP gN nS cA sI,"['O', 'V', 'S']",Undefined
+324,414,405.0,því at sú eldlig ǿði kann eigi hóf hafa,xCS xDD gF nS cN xAJ rP gF nS cN sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xNC gN nS cA sI xVB fI tPS vA,"['S', 'V', 'O']",Hypotaxe
+325,415,406.0,grimm vápn ástargyðju hafa ei létt sár,xAJ rP gN nP cN sI xNC gN nP cN sI xNC gF nS cG sI xVB fF tPS mIN p3 nP vA xAV rP xVB fP tPT vA gN nS cA sI xNC gN nS cA sI,"['S', 'O', 'V']",Undefined
+326,416,407.0,þau vápn óttask hver mǽr illa at svíkjask,xDD gN nP cA xNC gN nP cA sI xVB fF tPS mIN p3 nS vR xDQ gF nS cN xNC gF nS cN sI xAV rP xIM xVB fI tPS vR,"['O', 'V', 'S']",Undefined
+327,417,408.0,oft rǿgir frǽgð með lygi óverðugar meyjar,xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xAP xNC gF nS cD sI xAJ rP gF nP cA sI xNC gF nS cG sI,"['V', 'S', 'O']",Undefined
+328,418,409.0,etandi ǫfund léttir ei allt at grípa,xVB fP tPS vA gF nS cN sD xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xDQ gN nS cA xIM xVB fI tPS vA,"['S', 'V', 'O']",Undefined
+329,419,410.0,játa mynda ek því er þú beiðisk ef ek hrǽddumsk ei vǫrðu,xVB fI tPS vA xVB fF tPT mSU p1 nS vA xPE p1 nS cN xDD gN nS cD xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vR xCS xPE p1 nS cN xVB fF tPT mSU p1 nS vR xAV rP xNC gM nP cA sI,"['V', 'S', 'O', 'S', 'V', 'S', 'V', 'O']",Undefined
+330,42,41.0,ok þau vápn má eigi þaðan fǿra með mínu afli,xCC xDD gN nP cA xNC gN nP cA sI xVB fF tPS mIN p3 nS vA xAV rP xAV rP xVB fI tPS vA xAP xDP gN nS cD xNC gN nS cD sI,"['O', 'O', 'V', 'O']",Parataxe
+331,421,411.0,Allmjǫk er slíkt orð látit ríkari sannendi,xAV rP xVB fF tPS mIN p3 nS vA xAJ rP gN nS cN sI xNC gN nS cN sI xVB fP tPT vA gN nS cN sI xAJ rC gN nS cN sD xNC gN nS cD sI,"['V', 'S', 'O']",Undefined
+332,422,412.0,ok ef sátt er uppi,xCC xCS xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP,"['S', 'V']",Hypotaxe
+333,423,414.0,ek mun með hófi frǽgð ok hrǽzlu leggja,xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAP xNC gN nS cD sI xNC gF nS cA sI xCC xNC gF nS cA sI xVB fI tPS vA,"['S', 'V', 'O']",Undefined
+334,424,415.0,ok ykkr með lǽvísi leyna ok ykkarn leik,xCC xPE p2 nD cA xAP xNC gF nS cD sI xVB fI tPS vA xCC xDP gM nS cA xNC gM nS cA sI,"['O', 'O', 'O']",Parataxe
+335,425,416.0,"því at vér kunnum vel hans lostavenju
+",xCS xPE p1 nP cN xVB fF tPS mIN p1 nP vA xAV rP xPE p3 gM nS cG xNC gF nS cA sI,"['S', 'V', 'O']",Hypotaxe
+336,426,417.0,ok sá mun hlutr øruggr vera með mínu ráði,xCC xDD gM nS cN xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xAJ rP gM nS cN sI xVB fI tPS vA xAP xDP gN nS cD xNC gN nS cD sI,"['S', 'V', 'O']",Parataxe
+337,427,418.0,en þá er ek sé hann ráð mér hvat ek skal segja,xCC xAV rP xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xPE p3 gM nS cA xVB fF tPS mIP p2 nS vA xPE p1 nS cD xPQ gN nS cA xPE p1 nS cN xVB fF tPS mIN p1 nS vA xVB fI tPS vA,"['S', 'V', 'O', 'V', 'O', 'O', 'S', 'V']",Parataxe
+338,428,419.0,þá mun ek djarfliga mǽla þat er þú hefir rǿtt fyrir mér,xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAV rP xVB fI tPS vA xDD gN nS cA xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xVB fP tPT vA gN nS cA sI xAP xPE p1 nS cD,"['V', 'S', 'O', 'S', 'V', 'O']",Undefined
+339,429,420.0,Ifask mjǫk vili minn leynda hluti mína þér at segja,xVB fF tPS mIN p3 nS vR xAV rP xNC gM nS cN sI xDP gM nS cN xVB fP tPT vA gM nP cA sI xNC gM nP cA sI xDP gM nP cA xPE p2 nS cD xIM xVB fI tPS vA,"['V', 'S', 'O']",Undefined
+340,43,42.0,fyrir sakar sárs míns Harmr vex ǽ jafnan í ǫllum tíðum,xAP xNC gF nP cA sI xNC gN nS cG sI xDP gN nS cG xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xAV rP xAP xDQ gU nP cD xNC gF nP cD sI,"['O', 'S', 'V']",Undefined
+341,431,421.0,en þó skal ek reyna hvárt tunga þín sé trú eða eigi,xCC xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xVB fI tPS vA xCS xNC gF nS cN sI xDP gF nS cN xVB fF tPS mSU p3 nS vA xAJ rP gF nS cN sI xCC xAV rP,"['V', 'S', 'S', 'V']",Parataxe
+342,432,422.0,ok svá til hvers dregr mik þín rǿða,xCC xAV rP xAP xDQ gN nS cG xVB fF tPS mIN p3 nS vA xPE p1 nS cA xDP gF nS cN xNC gF nS cN sI,"['O', 'V', 'S']",Parataxe
+343,433,423.0,Pamphilus beiðisk ástar minnar,xFN xVB fF tPS mIN p3 nS vR xNC gF nS cG sI xDP gF nS cG,"['V', 'O']",Undefined
+344,434,424.0,en hví skal okkr saman tengja sǫnn vinátta,xCC xPQ gN nS cD xVB fF tPS mIN p3 nS vA xPE p1 nD cA xAV rP xVB fI tPS vA xAJ rP gF nS cN sI xNC gF nS cN sI,"['O', 'V', 'S']",Parataxe
+345,435,425.0,en því skalt þú þó mjǫk leyna ok svá honum einum segja,xCC xDD gN nS cD xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rP xAV rP xVB fI tPS vA xCC xAV rP xPE p3 gM nS cD xAJ rP gM nS cD sI xVB fI tPS vA,"['O', 'V', 'S']",Parataxe
+346,437,426.0,en hans skalt þú þó fyrst með mikilli freistni freista,xCC xPE p3 gM nS cG xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rP xAV rS xAP xAJ rP gF nS cD sI xNC gF nS cD sI xVB fI tPS vA,"['O', 'V', 'S']",Parataxe
+347,438,427.0,en er ek sagða þá mun hann með atburð þér segja,xCC xCS xPE p1 nS cN xVB fF tPT mIN p1 nS vA xAV rP xVB fF tPS mIN p3 nS vA xPE p3 gM nS cN xAP xNC gM nS cD sI xPE p2 nS cD xVB fI tPS vA,"['S', 'V', 'V', 'S', 'O', 'O']",Hypotaxe
+348,439,428.0,en þú far nú brott með bǿn minni ok ger allt með lǽvísi,xCC xPE p2 nS cN xVB fF tPS mIP p2 nS vA xAV rP xAV rP xAP xNC gF nS cD sI xDP gF nS cD xCC xVB fF tPS mIP p2 nS vA xDQ gN nS cA xAP xNC gF nS cD sI,"['S', 'V', 'O', 'V', 'O', 'O']",Parataxe
+349,44,43.0,ok litr þverr ok afl minnkar ok mín fegrð,xCC xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xCC xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xCC xDP gF nS cN xNC gF nS cN sI,"['S', 'V', 'S', 'V', 'S']",Parataxe
+350,440,429.0,ok allt þat sem hann rǿðir fyrir þér þá seg mér á morgin,xCC xDQ gN nS cA xDD gN nS cA xCS xPE p3 gM nS cN xVB fF tPS mIN p3 nS vA xAP xPE p2 nS cD xAV rP xVB fF tPS mIP p2 nS vA xPE p1 nS cD xAP xNC gM nS cA sI,"['O', 'O', 'S', 'V', 'O', 'V', 'O', 'O']",Parataxe
+351,442,430.0,Ást þín ok starf mitt Pamphile er ei komit sem ek vilda,xNC gF nS cN sI xDP gF nS cN xCC xNC gN nS cN sI xDP gN nS cN xFN xVB fF tPS mIN p3 nS vA xAV rP xVB fP tPT vA gN nS cN sI xCS xPE p1 nS cN xVB fF tPT mIN p1 nS vA,"['S', 'S', 'V', 'S', 'V']",Undefined
+352,443,431.0,ek var kǫlluð of síðla þér til liðs,xPE p1 nS cN xVB fF tPT mIN p1 nS vA xVB fP tPT vA gN nP cN sI xAV rP xAV rP xPE p2 nS cD xAP xNC gN nS cG sI,"['S', 'V', 'O']",Undefined
+353,444,432.0,"því at hvárki mun nú stoða
+ þér starf né vél",xCS xCC xVB fF tPS mIN p3 nS vA xAV rP xVB fI tPS vA xPE p2 nS cD xNC gN nS cN sI xCC xNC gF nS cN sI,"['V', 'O', 'S']",Hypotaxe
+354,445,433.0,"Galatheae er nú giftarorð
+ búit svá sem ǫll þjóð segir",xFN xVB fF tPS mIN p3 nS vA xAV rP xNC gN nS cN sI xVB fP tPT vA gN nS cN sI xAV rP xCS xDQ gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA,"['V', 'S', 'S', 'S', 'V']",Undefined
+355,446,434.0,ok undra þann umbúnað er henni er búinn,xCC xVB fF tPS mIN p3 nP vA xDD gM nS cA xNC gM nS cA sI xCS xPE p3 gF nS cD xVB fF tPS mIN p3 nS vA xVB fP tPT vA gM nS cN sI,"['V', 'O', 'O', 'O', 'V']",Parataxe
+356,447,435.0,"víst hundrað hluta
+ standa í móti því er ek vǽnta",xAJ rP gN nS cA sI xNC gN nS cN sI xNC gM nP cG sI xVB fF tPS mIN p3 nP vA xAP xDD gN nS cD xCS xPE p1 nS cN xVB fF tPT mIN p1 nS vA,"['S', 'O', 'V', 'O', 'S', 'V']",Undefined
+357,448,436.0,"en þó leyna
+ þau faðir ok móðir",xCC xAV rP xVB fF tPS mIN p3 nP vA xDD gN nP cN xNC gM nS cN sI xCC xNC gF nS cN sI,"['V', 'S', 'S', 'S']",Parataxe
+358,449,437.0,ok þess bið ek þik at þú berr þetta vitrliga er ek segi þér,xCC xDD gN nS cG xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cA xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xDD gN nS cA xAV rP xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xPE p2 nS cD,"['O', 'V', 'S', 'O', 'S', 'V', 'O', 'S', 'V', 'O']",Parataxe
+359,45,44.0,ok þetta sagða ek engum ok ei nefnda ek þann er mik sǽrði,xCC xDD gN nS cA xVB fF tPT mIN p1 nS vA xPE p1 nS cN xDQ gM nS cD xCC xAV rP xVB fF tPT mIN p1 nS vA xPE p1 nS cN xDD gM nS cA xCS xPE p1 nS cA xVB fF tPT mIN p3 nS vA,"['O', 'V', 'S', 'O', 'V', 'S', 'O', 'O', 'V']",Parataxe
+360,450,438.0,ok lát laust þat er ekki má vera ok leita þess er vera má,xCC xVB fF tPS mIP p2 nS vA xAJ rP gN nS cA sI xDD gN nS cA xCS xDQ gN nS cA xVB fF tPS mIN p3 nS vA xVB fI tPS vA xCC xVB fF tPS mIP p2 nS vA xDD gN nS cG xCS xVB fI tPS vA xVB fF tPS mIN p3 nS vA,"['V', 'O', 'O', 'V', 'V', 'O', 'V']",Parataxe
+361,451,439.0,"Uæis sé mér hvar er afl mitt komit ok huggan
+ lífs míns",xUA xVB fF tPS mSU p3 nS vA xPE p1 nS cD xAQ xVB fF tPS mIN p3 nS vA xNC gN nS cN sI xDP gN nS cN xVB fP tPT vA gN nS cN sI xCC xNC gF nS cN sI xNC gN nS cG sI xDP gN nS cG,"['V', 'O', 'V', 'S', 'S', 'O']",Undefined
+362,453,440.0,væiss er mér veslum ekki er megin í limum mínum,xUA xVB fF tPS mIN p3 nS vA xPE p1 nS cD xAJ rP gM nS cD sI xDQ gN nS cN xVB fF tPS mIN p3 nS vA xNC gN nS cN sI xAP xNC gM nP cD sI xDP gU nP cD,"['V', 'O', 'S', 'V', 'S', 'O']",Undefined
+363,454,441.0,hverr limr níttar sinni þjónastu,xDQ gM nS cN xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xDP gF nS cD xNC gF nS cD sI,"['S', 'V', 'O']",Undefined
+364,455,443.0,ván hefir mik blekkðan ván hefir mik með angri ok ergi fluttan,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xPE p1 nS cA xVB fP tPT vA gM nS cA sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xPE p1 nS cA xAP xNC gM nS cD sI xCC xNC gF nS cD sI xVB fP tPT vA gM nS cA sI,"['S', 'V', 'O', 'S', 'V', 'O', 'O', 'O']",Undefined
+365,456,444.0,nú er ván langt í brott farin ok brennandi ást í stað komin,xAV rP xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xAJ rP gN nS cA sI xAP xAV rP xVB fP tPT vA gF nS cN sI xCC xVB fP tPS vA gF nS cN sD xNC gF nS cN sI xAP xNC gM nS cA sI xVB fP tPT vA gF nS cN sI,"['V', 'S', 'O']",Undefined
+366,457,445.0,Nú má várt segl enga hǫfn sjá,xAV rP xVB fF tPS mIN p3 nS vA xDP gN nS cN xNC gN nS cN sI xDQ gF nS cA xNC gF nS cA sI xVB fI tPS vA,"['V', 'S', 'O']",Undefined
+367,458,446.0,ok várt akkeri má hvergi land kenna,xCC xDP gN nS cN xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xNC gN nS cA sI xVB fI tPS vA,"['S', 'V', 'O']",Parataxe
+368,459,447.0,ok várr harmr veit sér hvergi hjalpar ván,xCC xDP gM nS cN xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xPE cD xAV rP xNC gF nS cG sI xNC gF nS cA sI,"['S', 'V', 'O']",Parataxe
+369,46,45.0,Ok rétt var sǫk ok sǫgn,xCC xAJ rP gF nS cN sI xVB fF tPT mIN p3 nS vA xNC gF nS cN sI xCC xNC gF nS cN sI,"['V', 'S', 'S']",Parataxe
+370,460,448.0,einsaman Galathea hefir huggan mína ok harms míns,xAJ rP gF nS cN sI xFN xVB fF tPS mIN p3 nS vA xNC gF nS cA sI xDP gF nS cA xCC xNC gM nS cG sI xDP gM nS cG,"['V', 'O', 'O']",Undefined
+371,461,449.0,ok hon er sǫk bana míns ok hon er ván heilsu minnar,xCC xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xNC gM nS cG sI xDP gM nS cG xCC xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xNC gF nS cG sI xDP gF nS cG,"['S', 'V', 'S', 'O', 'S', 'V', 'S', 'O']",Parataxe
+372,462,450.0,"því ef ek má eigi hennar njóta
+ þá líkar mér at deyja",xDD gN nS cD xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAV rP xPE p3 gF nS cG xVB fI tPS vA xAV rP xVB fF tPS mIN p3 nS vA xPE p1 nS cD xIM xVB fI tPS vA,"['O', 'S', 'V', 'O', 'V', 'O']",Hypotaxe
+373,463,451.0,Heyr þú fól hví ǿrðistu hverr ósløkkiligr harmr þrøngvir þér,xVB fF tPS mIP p2 nS vA xPE p2 nS cN xNC gN nS cN sI xPQ gN nS cD xVB fF tPT mIN p2 nS vR xDQ gM nS cN xAJ rP gM nS cN sI xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xPE p2 nS cD,"['V', 'S', 'S', 'O', 'V', 'S', 'S', 'V', 'O']",Undefined
+374,464,452.0,"þín aumkan aflar þér enga ambun
+",xDP gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xPE p2 nS cD xDQ gF nS cA xNC gF nS cA sI,"['S', 'V', 'O']",Undefined
+375,465,453.0,þú skalt stilla harmi þínum vél,xPE p2 nS cN xVB fF tPS mIN p2 nS vA xVB fI tPS vA xNC gM nS cD sI xDP gM nS cD xNC gF nS cD sI,"['S', 'V', 'O']",Undefined
+376,466,454.0,ok lǽvísi ok hygg at hvat þú skalt gera,xCC xNC gF nS cD sI xCC xVB fF tPS mIP p2 nS vA xAP xPQ gN nS cA xPE p2 nS cN xVB fF tPS mIN p2 nS vA xVB fI tPS vA,"['O', 'V', 'O', 'S', 'V']",Parataxe
+377,467,455.0,mikil fátǿkð gerir manni við margt at leita,xAJ rP gF nS cN sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xNC gM nS cD sI xAP xAJ rP gN nS cA sI xIM xVB fI tPS vA,"['S', 'V', 'O']",Undefined
+378,469,456.0,íðn ok vél manns sigrar mikinn háska,xNC gF nS cN sI xCC xNC gF nS cN sI xNC gM nS cG sI xVB fF tPS mIN p3 nS vA xAJ rP gM nS cA sI xNC gM nS cA sI,"['S', 'O', 'V']",Undefined
+379,47,46.0,ok þat er satt ok ek játa at hon er kyngǫfgari mér,xCC xDD gN nS cN xVB fF tPS mIN p3 nS vA xAJ rP gN nS cN sI xCC xPE p1 nS cN xVB fF tPS mIN p1 nS vA xCS xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xAJ rC gF nS cN sD xPE p1 nS cD,"['S', 'V', 'S', 'V', 'S', 'V', 'O']",Parataxe
+380,470,457.0,enn mǽtti með atburð starf okkart með vild endask ok með hjǫlp koma,xAV rP xVB fF tPT mSU p3 nS vA xAP xNC gM nS cD sI xNC gN nS cN sI xDP gN nS cN xAP xNC gF nS cD sI xVB fI tPS vR xCC xAP xNC gF nS cD sI xVB fI tPS vA,"['V', 'O', 'S']",Undefined
+381,471,458.0,Ho kvað hann hvert starf myndi sigra mega svá mikinn háska,xUA xVB fF tPT mIN p3 nS vA xPE p3 gM nS cN xDQ gN nS cN xNC gN nS cN sI xVB fF tPT mSU p3 nS vA xVB fI tPS vA xVB fI tPS vA xAV rP xAJ rP gM nS cA sI xNC gM nS cA sI,"['V', 'S', 'S', 'S', 'V', 'O']",Undefined
+382,472,459.0,ván mín er ǫll fyrir farin því at nú er komit giftarkveld,xNC gF nS cN sI xDP gF nS cN xVB fF tPS mIN p3 nS vA xDQ gF nS cN xAP xVB fP tPT vA gF nS cN sI xCS xAV rP xVB fF tPS mIN p3 nS vA xVB fP tPT vA gN nS cN sI xNC gN nS cN sI,"['S', 'V', 'S', 'V', 'S']",Undefined
+383,473,460.0,eigi mun hon mér giftask meðan búandi hennar lifir,xAV rP xVB fF tPS mIN p3 nS vA xPE p3 gF nS cN xPE p1 nS cD xVB fI tPS vR xCS xNC gM nS cN sI xPE p3 gF nS cG xVB fF tPS mIN p3 nS vA,"['V', 'S', 'O', 'S', 'O', 'V']",Undefined
+384,474,461.0,synð er mikil hvílu at saurga mundi keypta,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gF nS cN sI xNC gF nS cD sI xIM xVB fI tPS vA xNC gM nS cD sI xVB fP tPT vA gF nS cA sI,"['S', 'V', 'O']",Undefined
+385,475,462.0,"þetta mitt starf er ǫllungis
+ at engu orðit",xDD gN nS cA xDP gN nS cN xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xAP xDQ gN nS cD xVB fP tPT vA gN nS cN sI,"['O', 'S', 'V']",Undefined
+386,476,463.0,ok mín kunnasta hefir hjalp tapat sinna véla,xCC xDP gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xNC gF nS cD sI xVB fP tPT vA gN nS cA sI xDP gU nP cG xNC gF nP cG sI,"['S', 'V', 'O']",Parataxe
+387,477,464.0,dagr né nátt man sá engi koma er mér hǿgja hvíld gefi,xNC gM nS cN sI xCC xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xDD gM nS cN xDQ gM nS cN xVB fI tPS vA xCS xPE p1 nS cD xAJ rP gF nS cA sI xNC gF nS cA sI xVB fF tPS mSU p3 nS vA,"['S', 'S', 'V', 'S', 'S', 'O', 'O', 'V']",Undefined
+388,478,465.0,fá nytsemð mun ǽ með mér veslum liggja,xAJ rP gF nS cA sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xAP xPE p1 nS cD xAJ rP gM nS cD sI xVB fI tPS vA,"['S', 'V', 'O']",Undefined
+389,479,466.0,Oft fellr mikill harmr á lítilli stundu,xAV rP xVB fF tPS mIN p3 nS vA xAJ rP gM nS cN sI xNC gM nS cN sI xAP xAJ rP gF nS cD sI xNC gF nS cD sI,"['V', 'S', 'O']",Undefined
+390,480,467.0,ok mikit veðr fellr með litlu regni,xCC xAJ rP gN nS cN sI xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xAP xAJ rP gN nS cD sI xNC gN nS cD sI,"['S', 'V', 'O']",Parataxe
+391,481,468.0,ok bjartr dagr er miklu at þekkri at hann komi eftir mikit myrkr,xCC xAJ rP gM nS cN sI xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gN nS cD sI xAV rP xAJ rC gM nS cN sD xCS xPE p3 gM nS cN xVB fF tPS mSU p3 nS vA xAP xAJ rP gN nS cA sI xNC gN nS cA sI,"['S', 'V', 'S', 'V', 'O']",Parataxe
+392,482,469.0,ok sjǫlf heilsa er þekkri eftir langa sótt,xCC xDQ gF nS cN xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rC gF nS cN sD xAP xAJ rP gF nS cA sI xNC gF nS cA sI,"['S', 'V', 'O']",Parataxe
+393,483,470.0,Andvarpar þú nú ok harmr langt í brott fari,xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rP xCC xNC gM nS cN sI xAJ rP gN nS cA sI xAP xAV rP xVB fF tPS mSU p3 nS vA,"['V', 'S', 'S', 'V']",Undefined
+394,484,471.0,því at í nánd er stórligr fagnaðr þínum hryggleik,xCS xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xAJ rP gM nS cN sI xNC gM nS cN sI xDP gM nS cD xNC gM nS cD sI,"['O', 'V', 'S']",Hypotaxe
+395,485,472.0,Galathea þín man gera okkarn vilja,xFN xDP gF nS cN xVB fF tPS mIN p3 nS vA xVB fI tPS vA xDP gM nS cA xNC gM nS cA sI,"['V', 'O']",Undefined
+396,486,473.0,hon hefir gefit sik með ǫllu undir várt vald,xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xVB fP tPT vA gN nS cA sI xPE cA xAP xDQ gN nS cD xAP xDP gN nS cA xNC gN nS cA sI,"['S', 'V', 'O']",Undefined
+397,489,475.0,svá at sǫmu fǿðir þú mik með flǽrðsamligum hugganum,xAV rP xAP xAJ rP gN nS cD sI xVB fF tPS mIN p2 nS vA xPE p2 nS cN xPE p1 nS cA xAP xAJ rP gU nP cD sI xNC gF nP cD sI,"['V', 'S', 'O']",Undefined
+398,490,476.0,at hryggleikr ok harmr brott fari,xCS xNC gM nS cN sI xCC xNC gM nS cN sI xAV rP xVB fF tPS mSU p3 nS vA,"['S', 'S', 'V']",Hypotaxe
+399,50,48.0,En þat biðr þó hennar,xCC xDD gN nS cN xVB fF tPS mIN p3 nS vA xAV rP xPE p3 gF nS cG,"['S', 'V', 'O']",Parataxe
+400,51,47.0,Sǿmð ok tilgjǫf er eigi til með mér né gnótt fjár,xNC gF nS cN sI xCC xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAV rP xAP xAP xPE p1 nS cD xCC xNC gF nS cN sI xNC gN nS cG sI,"['S', 'V', 'O']",Undefined
+401,52,49.0,"eigi er annat með mér en ek afla með erfiði mínu
+",xAV rP xVB fF tPS mIN p3 nS vA xDQ gN nS cN xAP xPE p1 nS cD xCS xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAP xNC gN nS cD sI xDP gN nS cD,"['V', 'S', 'O', 'S', 'V', 'O']",Undefined
+402,53,50.0,Nú ef sǽl er orðin ein nautrekadóttir,xAV rP xCS xAJ rP gF nS cN sI xVB fF tPS mIN p3 nS vA xVB fP tPT vA gF nS cN sI xAJ rP gF nS cN sI xNC gF nS cN sI,"['V', 'S']",Hypotaxe
+403,54,51.0,kyss þann er líkar ór þúshundrað biðla,xVB fF tPS mIP p2 nS vA xDD gM nS cA xCS xVB fF tPS mIN p3 nS vA xAP xNC gN nS cA sI xNC gM nP cG sI,"['V', 'O', 'V', 'O', 'O']",Undefined
+404,55,52.0,"Ok af frǽgð fegrð hennar
+ titrar mitt hvert bein",xCC xAP xNC gF nS cD sI xNC gF nS cD sI xPE p3 gF nS cG xVB fF tPS mIN p3 nS vA xDP gN nS cN xDQ gN nS cN xNC gN nS cN sI,"['O', 'V', 'S']",Parataxe
+405,56,53.0,ok sǫk meinaði mér at segja þetta,xCC xNC gF nS cN sI xVB fF tPT mIN p3 nS vA xPE p1 nS cD xIM xVB fI tPS vA xDD gN nS cA,"['S', 'V', 'O']",Parataxe
+406,57,54.0,"Traust frǽgðar getr oft hughreysti mikla
+",xNC gN nS cN sI xNC gF nS cG sI xVB fF tPS mIN p3 nS vA xAV rP xNC gF nS cA sI xAJ rP gF nS cA sI,"['S', 'O', 'V']",Undefined
+407,58,55.0,ok eigi lǽtr í hǽtti sína dróttning,xCC xAV rP xVB fF tPS mIN p3 nS vA xAP xNC gM nS cD sI xDP gF nS cA xNC gF nS cA sI,"['V', 'O', 'O']",Parataxe
+408,59,56.0,Ok freistaða ek ok at hrinda mínu hjarta þessa rǿkð,xCC xVB fF tPT mIN p1 nS vA xPE p1 nS cN xAV rP xIM xVB fI tPS vA xDP gN nS cD xNC gN nS cD sI xDD gF nS cA xNC gF nS cA sI,"['V', 'S', 'O']",Parataxe
+409,60,57.0,en því heitari brennr ást í mér,xCC xDD gN nS cD xAJ rC gN nS cA sD xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xAP xPE p1 nS cD,"['O', 'V', 'S']",Parataxe
+410,61,59.0,"nú mátt þú sjá hversu illt ek þoli því at þér er kunnr háski
+ várr",xAV rP xVB fF tPS mIN p2 nS vA xPE p2 nS cN xVB fI tPS vA xAQ xAJ rP gN nS cA sI xPE p1 nS cN xVB fF tPS mIN p1 nS vA xCS xPE p2 nS cD xVB fF tPS mIN p3 nS vA xAJ rP gM nS cN sI xNC gM nS cN sI xDP gM nS cN,"['V', 'S', 'S', 'V', 'O', 'V', 'S']",Undefined
+411,62,60.0,Því bið ek þik ver þú hógvǽr bǿnum mínum,xDD gN nS cD xVB fF tPS mIN p1 nS vA xPE p1 nS cN xPE p2 nS cA xVB fF tPS mIP p2 nS vA xPE p2 nS cN xAJ rP gF nS cN sI xNC gF nP cD sI xDP gU nP cD,"['O', 'V', 'S', 'O', 'V', 'S', 'O']",Undefined
+412,63,61.0,ok eigi þú í móti mér mǽl,xCC xAV rP xPE p2 nS cN xAP xPE p1 nS cD xVB fF tPS mIP p2 nS vA,"['S', 'O', 'V']",Parataxe
+413,64,62.0,ok þín hin fǫgru augu hafi mína sýn,xCC xDP gN nP cN xDD gN nP cN xAJ rP gU nP sD xNC gN nP cN sI xVB fF tPS mSU p3 nP vA xDP gF nS cA xNC gF nS cA sI,"['S', 'V', 'O']",Parataxe
+414,65,63.0,"Annathvárt tak þú ǫrvar þínar
+ ór hjarta mínu",xCC xVB fF tPS mIP p2 nS vA xPE p2 nS cN xNC gF nP cA sI xDP gF nP cA xAP xNC gN nS cD sI xDP gN nS cD,"['V', 'S', 'O']",Parataxe
+415,66,64.0,eða fǿr þú grimmt sár með þínum háttum,xCC xVB fF tPS mIP p2 nS vA xPE p2 nS cN xAJ rP gN nS cA sI xNC gN nS cA sI xAP xDP gU nP cD xNC gM nP cD sI,"['V', 'S', 'O']",Parataxe
+416,67,65.0,Hverr mátti rǿkð þola svá mikils starfs,xDQ gM nS cN xVB fF tPT mIN p3 nS vA xNC gF nS cA sI xVB fI tPS vA xAV rP xAJ rP gN nS cG sI xNC gN nS cG sI,"['S', 'V', 'O']",Undefined
+417,68,66.0,er engi laun gǽfi grátandi dróttni,xCS xDQ gN nP cA xNC gN nP cA sI xVB fF tPT mSU p3 nS vA xVB fP tPS vA gM nS cD sD xNC gM nS cD sI,"['O', 'O', 'V', 'O']",Hypotaxe
+418,69,67.0,rétt biðjandi til þín því at angrsamt starf þrøngvir mér,xAJ rP gN nS cA sI xVB fP tPS vA gM nS cD sD xAP xPE p2 nS cG xCS xAJ rP gN nS cN sI xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xPE p1 nS cD,"['O', 'S', 'V']",Undefined
+419,7,6.0,"Hverja gatu
+ skal ek bezta grípa",xDQ gF nS cA xNC gF nS cA sI xVB fF tPS mIN p3 nS vA xPE p1 nS cN xAJ rS gF nS cA sI xVB fI tPS vA,"['O', 'V', 'S']",Undefined
+420,70,68.0,Ok sjalfr getr oft sǫmu bǿnar,xCC xDQ gM nS cN xVB fF tPS mIN p3 nS vA xAV rP xAJ rP gF nS cG sD xNC gF nS cG sI,"['S', 'V', 'O']",Parataxe
+421,71,69.0,Hǿfiligt starf sigrar alla hluti,xAJ rP gN nS cN sI xNC gN nS cN sI xVB fF tPS mIN p3 nS vA xDQ gM nP cA xNC gM nP cA sI,"['S', 'V', 'O']",Undefined
+422,72,70.0,ok þú skalt hafa hverja er þér líkar ef þú vilt starf á leggja,xCC xPE p2 nS cN xVB fF tPS mIN p2 nS vA xVB fI tPS vA xDQ gF nS cA xCS xPE p2 nS cD xVB fF tPS mIN p3 nS vA xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xNC gN nS cA sI xAP xVB fI tPS vA,"['S', 'V', 'O', 'O', 'V', 'S', 'V', 'O']",Parataxe
+423,73,71.0,Ok fyrir engarri skalt þú hrǽðask þitt skap at sýna,xCC xAP xDQ gF nS cD xVB fF tPS mIN p2 nS vA xPE p2 nS cN xVB fI tPS vR xDP gN nS cA xNC gN nS cA sI xIM xVB fI tPS vA,"['O', 'V', 'S']",Parataxe
+424,74,72.0,Trautt man finnask ein í þúshundraði sú er þér mun níttask,xAJ rP gN nS cA sI xVB fF tPS mIN p3 nS vA xVB fI tPS vR xAJ rP gF nS cN sI xAP xNC gN nS cD sI xDD gF nS cN xCS xPE p2 nS cD xVB fF tPS mIN p3 nS vA xVB fI tPS vR,"['V', 'O', 'S', 'O', 'V']",Undefined
+425,75,73.0,Ok þess er þú munt biðjandi leita ok með atburð þá mun hon fyrst snarliga nítta,xCC xDD gN nS cG xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xVB fP tPS vA gM nS cN sD xVB fI tPS vA xCC xAP xNC gM nS cD sI xAV rP xVB fF tPS mIN p3 nS vA xPE p3 gF nS cN xAV rS xAV rP xVB fI tPS vA,"['O', 'S', 'V', 'O', 'V', 'S']",Parataxe
+426,76,74.0,"En snarleikr
+ hennar hefir létta byrði",xCC xNC gM nS cN sI xPE p3 gF nS cG xVB fF tPS mIN p3 nS vA xAJ rP gF nS cA sI xNC gF nS cA sI,"['S', 'O', 'V']",Parataxe
+427,8,7.0,"eða hvat skal ek til taka
+ Hvergi má ek øruggr fara",xCC xPQ gN nS cA xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAP xVB fI tPS vA xAV rP xVB fF tPS mIN p1 nS vA xPE p1 nS cN xAJ rP gM nS cN sI xVB fI tPS vA,"['O', 'V', 'S', 'V', 'S']",Parataxe
+428,81,77.0,Nú fyrir því er hon játar eigi fyrst þinni rǿðu,xAV rP xAP xDD gN nS cD xCS xPE p3 gF nS cN xVB fF tPS mIN p3 nS vA xAV rP xAV rS xDP gF nS cD xNC gF nS cD sI,"['O', 'S', 'V']",Undefined
+429,81,78.0,þá haga svá með vél eða þjónkan at hon játi,xAV rP xVB fF tPS mIP p2 nS vA xAV rP xAP xNC gF nS cD sI xCC xNC gF nS cD sI xCS xPE p3 gF nS cN xVB fF tPS mSU p3 nS vA,"['V', 'O', 'O', 'S', 'V']",Undefined
+430,83,80.0,vél lǽgir harðan hug vél brýtr stórar borgir,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gM nS cA sI xNC gM nS cA sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gF nP cA sI xNC gF nP cA sI,"['S', 'V', 'O', 'S', 'V', 'O']",Undefined
+431,84,81.0,vél fellir stóra stǫpla vél lyftir þungri byrði,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gM nP cA sI xNC gM nP cA sI xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xAJ rP gF nS cD sI xNC gF nS cD sI,"['S', 'V', 'O', 'S', 'V', 'O']",Undefined
+432,85,82.0,ok með vél er fiskr tekinn er undir skírri báru er,xCC xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xVB fP tPT vA gM nS cN sI xCS xAP xAJ rP gF nS cD sI xNC gF nS cD sI xVB fF tPS mIN p3 nS vA,"['O', 'V', 'S', 'O', 'V']",Parataxe
+433,86,83.0,ok með vél ferr maðr þurrum fótum um haf,xCC xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xNC gM nS cN sI xAJ rP gU nP cD sI xNC gM nP cD sI xAP xNC gN nS cA sI,"['O', 'V', 'S']",Parataxe
+434,87,84.0,Ok í mǫrgum hlutum stoðar manni vél ok þjónkan,xCC xAP xAJ rP gU nP cD sI xNC gM nP cD sI xVB fF tPS mIN p3 nS vA xNC gM nS cD sI xNC gF nS cN sI xCC xNC gF nS cN sI,"['O', 'V', 'S']",Parataxe
+435,88,85.0,með vél fǿðir margr maðr,xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xAJ rP gM nS cN sI xNC gM nS cN sI,"['O', 'V', 'S']",Undefined
+436,89,86.0,vél lǽgir hǫfðingja reiði,xNC gF nS cN sI xVB fF tPS mIN p3 nS vA xNC gM nP cG sI xNC gF nS cA sI,"['S', 'V', 'O']",Undefined
+437,9,8.0,"Ek segi til meina
+ minna ok er sǫk til hin réttasta",xPE p1 nS cN xVB fF tPS mIN p1 nS vA xAP xNC gN nP cG sI xDP gU nP cG xCC xVB fF tPS mIN p3 nS vA xNC gF nS cN sI xAP xDD gF nS cN xAJ rS gF nS cN sD,"['S', 'V', 'O', 'V', 'S', 'S']",Undefined
+438,90,87.0,ok með vél gǽtir sekr maðr hǫfuðs síns ok fjár,xCC xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xAJ rP gM nS cN sI xNC gM nS cN sI xNC gN nS cG sI xDP gN nS cG xCC xNC gN nS cG sI,"['O', 'V', 'S']",Parataxe
+439,91,88.0,ok með vél glezk sǽll sá er vanr var at gráta vesall,xCC xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vR xAJ rP gM nS cN sI xDD gM nS cN xCS xAJ rP gM nS cN sI xVB fF tPT mIN p3 nS vA xIM xVB fI tPS vA xAJ rP gM nS cN sI,"['O', 'V', 'S', 'V']",Parataxe
+440,92,89.0,ok með vél ríðr nú sá prúðr er vanr var at ganga fátǿkliga,xCC xAP xNC gF nS cD sI xVB fF tPS mIN p3 nS vA xAV rP xDD gM nS cN xAJ rP gM nS cN sI xCS xAJ rP gM nS cN sI xVB fF tPT mIN p3 nS vA xIM xVB fI tPS vA xAV rP,"['O', 'V', 'S', 'V']",Parataxe
+441,93,90.0,ok þat er engi frǽndi má gefa,xCC xDD gN nS cA xCS xDQ gM nS cN xNC gM nS cN sI xVB fF tPS mIN p3 nS vA xVB fI tPS vA,"['O', 'S', 'V']",Parataxe
+442,94,91.0,þá gefr þat iðurliga íðn,xAV rP xVB fF tPS mIN p3 nS vA xDD gN nS cA xAV rP xNC gF nS cN sI,"['V', 'O', 'S']",Undefined
+443,95,92.0,ok þó at hon hafni fyrst þinni þjónkan,xCC xCS xPE p3 gF nS cN xVB fF tPS mSU p3 nS vA xAV rS xDP gF nS cD xNC gF nS cD sI,"['S', 'V', 'O']",Hypotaxe
+444,96,93.0,"þá vert þú búinn at þjóna
+ henni",xAV rP xVB fF tPS mIP p2 nS vA xPE p2 nS cN xVB fP tPT vA gM nS cN sI xIM xVB fI tPS vA xPE p3 gF nS cD,"['V', 'S', 'O']",Undefined
+445,97,94.0,"með þvísa mátt þú sigra hót heitsamrar
+ vinu",xAP xDD gN nS cD xVB fF tPS mIN p2 nS vA xPE p2 nS cN xVB fI tPS vA xNC gN nS cA sI xAJ rP gF nS cG sI xNC gF nS cA sI,"['O', 'V', 'S']",Undefined
+446,98,95.0,ok mun sú gerask vina þín er áðr var andskoti,xCC xVB fF tPS mIN p3 nS vA xDD gF nS cN xVB fI tPS vR xNC gF nS cN sI xDP gF nS cN xCS xAV rC xVB fF tPT mIN p3 nS vA xNC gM nS cN sI,"['V', 'S', 'S', 'V', 'S']",Parataxe
+447,99,96.0,til þess staðar skalt þú oft koma sem þú veizt hana vana vera,xAP xDD gM nS cG xNC gM nS cG sI xVB fF tPS mIN p2 nS vA xPE p2 nS cN xAV rP xVB fI tPS vA xCS xPE p2 nS cN xVB fF tPS mIN p2 nS vA xPE p3 gF nS cA xAJ rP gF nS cA sI xVB fI tPS vA,"['O', 'O', 'V', 'S', 'S', 'V', 'O']",Undefined
