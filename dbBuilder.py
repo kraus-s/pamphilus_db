@@ -216,7 +216,7 @@ def runParse(inFiles):
     return currmsbamboo, currmapbamboo, currtxtwitbamboo, currentBamboo, currentBamboo1, currentBamboo2
 
 
-def parsePamph1(inFile):
+def parsePamph1(inFile) -> pd.DataFrame:
     soup=read_tei(inFile)
     verses = soup.findAll("v")
     properIDSuff = "Pamph"

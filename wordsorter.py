@@ -80,19 +80,27 @@ def onMat():
     # simpleCount.to_csv(f"{outPath}vars.csv")
     return bamboozled
 
-def latMat():
+def latMat(outputDF: str = 'merged'):
+    '''Reads the parallelized XML and returns DF.
+    Args:
+    outputDF: if grouped returns all witnesses in one DF, column names reflecting MS abbrs.
+    if outputDF == 'dict' returns individual DFs for each witness '''
     Berlin1, Paris3, Toledo, Wien1 = latParse(latPara)
     Berlin1 = Berlin1.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
     Paris3 = Paris3.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
     Toledo = Toledo.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
     Wien1 = Wien1.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
-    Berlin1 = Berlin1.rename(columns={'Word': 'B1'})
-    Paris3 = Paris3.rename(columns={'Word': 'P3'})
-    Toledo = Toledo.rename(columns={'Word': 'To'})
-    Wien1 = Wien1.rename(columns={'Word': 'W1'})
-    zoo = [Berlin1, Paris3, Toledo, Wien1]
-    df_merged = red(lambda left,right: pd.merge(left,right, on=['Verse'], how='outer'), zoo)
-    return df_merged
+    if outputDF == 'dict':
+        zoo = {"B1": Berlin1,"P3": Paris3, "To": Toledo, "W1": Wien1}
+        return zoo
+    if outputDF == 'merged':
+        Berlin1 = Berlin1.rename(columns={'Word': 'B1'})
+        Paris3 = Paris3.rename(columns={'Word': 'P3'})
+        Toledo = Toledo.rename(columns={'Word': 'To'})
+        Wien1 = Wien1.rename(columns={'Word': 'W1'})
+        zoo = [Berlin1, Paris3, Toledo, Wien1]
+        df_merged = red(lambda left,right: pd.merge(left,right, on=['Verse'], how='outer'), zoo)
+        return df_merged
 
 
 def syntaxAnalyser(inDF: pd.DataFrame):
@@ -192,10 +200,17 @@ def findUpper(inDF: pd.DataFrame):
     outDF.to_csv(f"{outPath}on-UpperV.csv")
 
 
+def latin_norse_merger(latDF: pd.DataFrame, norseDF: pd.DataFrame) -> pd.DataFrame:
+    merged_DF = pd.merge(latDF, norseDF, how='outer')
+    return merged_DF
+
+
+def easy_bake_oven() -> pd.DataFrame:
+    return latin_norse_merger(latMat(), onMat())
+
 if __name__ == '__main__':
-    # shit = onMat()
+    shit = onMat()
     # syntaxAnalyser(shit)
     # doPROIEL()
     # sentVcomp()
     # findUpper(shit)
-    fuck = latMat()
