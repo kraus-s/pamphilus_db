@@ -1,4 +1,4 @@
-from py2neo import Graph
+# from py2neo import Graph
 from bs4 import BeautifulSoup
 import lxml
 from pathlib import Path
