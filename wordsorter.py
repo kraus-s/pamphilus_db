@@ -205,8 +205,18 @@ def latin_norse_merger(latDF: pd.DataFrame, norseDF: pd.DataFrame) -> pd.DataFra
     return merged_DF
 
 
-def easy_bake_oven() -> pd.DataFrame:
-    return latin_norse_merger(latMat(), onMat())
+def easy_bake_oven(cache: bool = True, use_cache: bool = True) -> pd.DataFrame:
+    muffin_file = Path("muffins.csv")
+    if use_cache:
+        if muffin_file.is_file():
+            easy_muffins = pd.read_csv("muffins.csv")
+            return easy_muffins
+    easy_muffins = latin_norse_merger(latMat(), onMat())
+    easy_muffins = easy_muffins[['Verse', 'B1', 'P3', 'To', 'W1', 'Normalized']]
+    if cache:
+        easy_muffins.to_csv("muffins.csv")
+    return easy_muffins
+
 
 if __name__ == '__main__':
     shit = onMat()
