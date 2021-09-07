@@ -1,7 +1,10 @@
 from bs4 import BeautifulSoup
+from numpy import index_exp
+from numpy.lib import index_tricks
 import pandas as pd
 from lxml import etree
 from pandas.core.frame import DataFrame
+from pandas.io import json
 from dbBuilder import parsePamph1 as latParse
 import requests
 from dbBuilder import read_tei
@@ -9,6 +12,7 @@ import typing
 from collections import Counter
 from pathlib import Path
 from functools import reduce as red
+import json
 
 
 latPara = "latMat/pamphLat.xml"
@@ -175,6 +179,7 @@ def doPROIEL():
     outDF = outDF.set_index('SentID', drop=False)
     return outDF
 
+
 def sentVcomp(pamphVers: DataFrame = None):
     proielSents = doPROIEL()
     if not pamphVers:
@@ -209,7 +214,7 @@ def easy_bake_oven(cache: bool = True, use_cache: bool = True) -> pd.DataFrame:
     muffin_file = Path("muffins.csv")
     if use_cache:
         if muffin_file.is_file():
-            easy_muffins = pd.read_csv("muffins.csv")
+            easy_muffins = pd.read_csv("muffins.csv", index_col=0)
             return easy_muffins
     easy_muffins = latin_norse_merger(latMat(), onMat())
     easy_muffins = easy_muffins[['Verse', 'B1', 'P3', 'To', 'W1', 'Normalized']]
@@ -218,9 +223,45 @@ def easy_bake_oven(cache: bool = True, use_cache: bool = True) -> pd.DataFrame:
     return easy_muffins
 
 
+def menota2cltk(inDF: pd.DataFrame) -> pd.DataFrame:
+    with open("mapCLTK2MENOTA.json") as f:
+        mappings = json.load(f)
+    menotaMap = {}
+    menotaMap = mappings[2]['tagmaps'][0]
+    
+    
+    def menota_replacer(menota_msa: str) -> list:
+        menota_list = menota_msa.split()
+        menota_list = [x for x in menota_list if x in menotaMap.keys()]
+        cltk_msa = [menotaMap[x] for x in menota_list]
+        return cltk_msa
+    
+    outDF = pd.DataFrame()
+    outDF['MSA'] = inDF.apply(lambda x: menota_replacer(x['MSA']), axis=1)
+    import pdb; pdb.set_trace()
+    return outDF    
+
+
+def syntaxComparison(cache: bool = True, use_cache: bool = True):
+    syntaxFile = Path("syntaxFile.csv")
+    if use_cache:
+        if syntaxFile.is_file():
+            syntcomp = pd.read_csv("syntaxFile.csv", index_col=0)
+            return syntcomp
+    B1 = pd.read_csv("B1-lemMSA.csv", index_col=0)
+    P3 = pd.read_csv("P3-lemMSA.csv", index_col=0)
+    To = pd.read_csv("To-lemMSA.csv", index_col=0)
+    W1 = pd.read_csv("W1-lemMSA.csv", index_col=0)
+    DG47 = onMat()
+    relevantShit = DG47[['Verse', 'Normalized', 'MSA', 'Lemma']]
+    onDF = menota2cltk(relevantShit)
+    return
+
+
 if __name__ == '__main__':
-    shit = onMat()
+    # shit = onMat()
     # syntaxAnalyser(shit)
     # doPROIEL()
     # sentVcomp()
     # findUpper(shit)
+    syntaxComparison()

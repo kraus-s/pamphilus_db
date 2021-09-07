@@ -15,7 +15,18 @@ if __name__ == '__main__':
     pamphSelect = list(df.columns)
     showWhat = st.multiselect(label="Spaltenauswahl", options=pamphSelect, default=pamphSelect)
     df2 = df[showWhat]
-    st.write(df2)
+    
+    fig = go.Figure(data=[go.Table(
+    header=dict(values=list(df2.columns),
+                fill_color='grey',
+                align='left'),
+    cells=dict(values=[df2[col] for col in df2.columns],
+               fill_color='lightgray',
+               align='left'))
+    ])
+
+    st.plotly_chart(fig)    
+
 
 
     

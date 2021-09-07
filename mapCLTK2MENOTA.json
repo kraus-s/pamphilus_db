@@ -1,0 +1,84 @@
+[
+    {"mapping_name": "MENOTA",
+    "tags": [
+        {
+        "xNC": "Noun, common",
+        "xNP": "Noun, proper",
+        "xAJ": "Adjective",
+        "xPE": "Pronoun, personal",
+        "xPQ": "Pronoun, interrogative",
+        "xPI": "Pronoun, indefinite",
+        "xDP": "Determiner, possessive",
+        "xDD": "Determiner, demonstrative",
+        "xDQ": "Determiner, quantifier",
+        "xPD": "Pronoun/Determiner",
+        "xNA": "Numeral, cardinal",
+        "xNO": "Numeral, ordinal",
+        "xVB": "Verb",
+        "xAV": "Adverb",
+        "xAT": "Articles",
+        "xAP": "Preposition (apposition)",
+        "xCC": "Conjunction, coordinating",
+        "xCS": "Conjunction, subordinating",
+        "xIT": "Interjection",
+        "xIM": "Infinitive marker",
+        "xRP": "Relative particle",
+        "xUA": "Unassigned"
+        }    
+    ]
+
+    },
+
+    {"mapping_name": "CLTK_basics",
+        "tags": [
+            {
+        "ADJ": "POS.adjective",
+        "ADP": "POS.adposition",
+        "ADV": "POS.adverb",
+        "AUX": "POS.auxiliary",
+        "CCONJ": "POS.coordinating_conjunction",
+        "DET": "POS.determiner",
+        "INTJ": "POS.interjection",
+        "NOUN": "POS.noun",
+        "NUM": "POS.numeral",
+        "PART": "POS.particle",
+        "PRON": "POS.pronoun",
+        "PROPN": "POS.proper_noun",
+        "PUNCT": "POS.punctuation",
+        "SCONJ": "POS.subordinating_conjunction",
+        "SYM": "POS.symbol",
+        "VERB": "POS.verb",
+        "X": "POS.other"
+            }
+        ]
+    },
+
+    {"mapping_name": "menota2cltk",
+    "tagmaps": [
+        {
+            "xNC": "NOUN",
+            "xNP": "PROPN",
+            "xAJ": "ADJ",
+            "xPE": "PRON",
+            "xPQ": "PRON",
+            "xPI": "PRON",
+            "xDP": "DET",
+            "xDD": "DET",
+            "xDQ": "DET",
+            "xPD": "DET",
+            "xNA": "NUM",
+            "xNO": "NUM",
+            "xVB": "VERB",
+            "xAV": "ADV",
+            "xAT": "DET",
+            "xAP": "ADP",
+            "xCC": "CCONJ",
+            "xCS": "SCONJ",
+            "xIT": "INTJ",
+            "xIM": "X",
+            "xRP": "PART",
+            "xUA": "X"
+        }
+        ]
+    }
+]
