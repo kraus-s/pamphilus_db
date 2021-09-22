@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body>
+        <v n="1">
+            <w>
+                <var variants="a">Vulneror</var>
+                <var variants="F">V</var>
+            </w>
+            <w>
+                <var variants="a">et</var>
+                <var variants="F">et</var>
+            </w>
+            <w>
+                <var variants="a">clausum</var>
+                <var variants="F">clausum</var>
+            </w>
+            <w>
+                <var variants="a">porto</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">sub</var>
+                <var variants="F">sub</var>
+            </w>
+            <w>
+                <var variants="a">pectore</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">telum</var>
+                <var variants="F">telum</var>
+            </w>
+            <p>,</p>
+        </v>
+        <v n="2">
+            <w>
+                <var variants="a">Crescit</var>
+                <var variants="F">Crescit</var>
+            </w>
+            <w>
+                <var variants="a">et</var>
+                <var variants="F">et</var>
+            </w>
+            <w>
+                <var variants="a">assidue</var>
+                <var variants="F">assidue</var>
+            </w>
+            <w>
+                <var variants="B1, W1, To">plaga</var>
+                <var variants="P3">pena</var>
+                <var variants="F">plaga</var>
+            </w>
+            <w>
+                <var variants="a">dolorque</var>
+                <var variants="F">dolorque</var>
+            </w>
+            <w>
+                <var variants="a">michi</var>
+                <var variants="F">michi</var>
+            </w>
+            <p>;</p>
+        </v>
+        <v n="3">
+            <w>
+                <var variants="B1, P3">Et</var>
+                <var variants="To, W1">Sed</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="B1, To, W1">ferientis</var>
+                <var variants="P3">feruentis</var>
+                <var variants="F">ferientis</var>
+            </w>
+            <w>
+                <var variants="a">adhuc</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">non</var>
+                <var variants="F">non</var>
+            </w>
+            <w>
+                <var variants="a">audeo</var>
+                <var variants="F">audeo</var>
+            </w>
+            <w>
+                <var variants="a">dicere</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">nomen</var>
+                <var variants="F">nomen</var>
+            </w>
+            <p>,</p>
+        </v>
+        <v n="4">
+            <w>
+                <var variants="a">Nec</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">sinit</var>
+                <var variants="F">sinit</var>
+            </w>
+            <w>
+                <var variants="a">aspectus</var>
+                <var variants="F">aspectus</var>
+            </w>
+            <w>
+                <var variants="a">plaga</var>
+                <var variants="F">plaga</var>
+            </w>
+            <w>
+                <var variants="a">uidere</var>
+                <var variants="F">uidere</var>
+            </w>
+            <w>
+                <var variants="a">suos</var>
+                <var variants="F">-</var>
+            </w>
+            <p>.</p>
+        </v>
+        <v n="5">
+            <w>
+                <var variants="a">Vnde</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">futura</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">meis</var>
+                <var variants="F">meis</var>
+            </w>
+            <w>
+                <var variants="a">maiora</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">pericula</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">dampnis</var>
+                <var variants="F">dampnis</var>
+            </w>
+        </v>
+        <v n="6">
+            <w>
+                <var variants="a">spero</var>
+                <var variants="F">-</var>
+            </w>
+            <p>,</p>
+            <w>
+                <var variants="a">salutis</var>
+                <var variants="F">salutis</var>
+            </w>
+            <w>
+                <var variants="a">opem</var>
+                <var variants="F">opem</var>
+            </w>
+            <w>
+                <var variants="a">nec</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">medicina</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">dabit</var>
+                <var variants="F">dabit</var>
+            </w>
+            <p>.</p>
+        </v>
+        <v n="7">
+            <w>
+                <var variants="a">Quam</var>
+                <var variants="F">Quam</var>
+            </w>
+            <w>
+                <var variants="a">prius</var>
+                <var variants="F">prius</var>
+            </w>
+            <w>
+                <var variants="a">ipse</var>
+                <var variants="F">ipse</var>
+            </w>
+            <w>
+                <var variants="a">uiam</var>
+                <var variants="F">uiam</var>
+            </w>
+            <w>
+                <var variants="a">meliorem</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="P3, To, W1">carpere</var>
+                <var variants="B1">capere</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="To, W1">possum</var>
+                <var variants="B1, P3">possim</var>
+                <var variants="F">possum</var>
+            </w>
+            <p>?</p>
+        </v>
+        <v n="8">
+            <w>
+                <var variants="a">Heu</var>
+                <var variants="F">Heu</var>
+            </w>
+            <w>
+                <var variants="a">michi</var>
+                <var variants="F">michi</var>
+            </w>
+            <p>,</p>
+            <w>
+                <var variants="a">quid</var>
+                <var variants="F">quid</var>
+            </w>
+            <w>
+                <var variants="a">faciam</var>
+                <var variants="F">faciam</var>
+            </w>
+            <p>?</p>
+            <w>
+                <var variants="a">Non</var>
+                <var variants="F">Non</var>
+            </w>
+            <w>
+                <var variants="a">bene</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="B1, To">certus</var>
+                <var variants="P3, W1">tutus</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">eo</var>
+                <var variants="F">-</var>
+            </w>
+            <p>.</p>
+        </v>
+        <v n="9">
+            <w>
+                <var variants="a">Conqueror</var>
+                <var variants="F">Cum queror</var>
+            </w>
+            <w>
+                <var variants="a">estque</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">mee</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">iustissima</var>
+                <var variants="F">iustissima</var>
+            </w>
+            <w>
+                <var variants="a">causa</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">querele</var>
+                <var variants="F">-</var>
+            </w>
+            <p>,</p>
+        </v>
+        <v n="10">
+            <w>
+                <var variants="a">Cum</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">sit</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">consilij</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">copia</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">nulla</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="B1, To">michi</var>
+                <var variants="P3, W1">mei</var>
+                <var variants="F">-</var>
+            </w>
+            <p>.</p>
+        </v>
+        <v n="11">
+            <w>
+                <var variants="a">Sed</var>
+                <var variants="F">Sed</var>
+            </w>
+            <w>
+                <var variants="a">quia</var>
+                <var variants="F">quia</var>
+            </w>
+            <w>
+                <var variants="a">multa</var>
+                <var variants="F">multa</var>
+            </w>
+            <w>
+                <var variants="a">nocent</var>
+                <var variants="F">nocent</var>
+            </w>
+            <p>,</p>
+            <w>
+                <var variants="a">opus</var>
+                <var variants="F">opus</var>
+            </w>
+            <w>
+                <var variants="a">est</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">michi</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">querere</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">multa</var>
+                <var variants="F">-</var>
+            </w>
+            <p>;</p>
+        </v>
+        <v n="12">
+            <w>
+                <var variants="a">Nam</var>
+                <var variants="F">Nam</var>
+            </w>
+            <w>
+                <var variants="a">solet</var>
+                <var variants="F">solet</var>
+            </w>
+            <w>
+                <var variants="a">ars</var>
+                <var variants="F">ars</var>
+            </w>
+            <w>
+                <var variants="a">dominum</var>
+                <var variants="F">dominum</var>
+            </w>
+            <w>
+                <var variants="a">sepe</var>
+                <var variants="F">sepe</var>
+            </w>
+            <w>
+                <var variants="a">iuuare</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">suum</var>
+                <var variants="F">-</var>
+            </w>
+            <p>.</p>
+        </v>
+        <v n="13">
+            <w>
+                <var variants="a">Si</var>
+                <var variants="F">Si</var>
+            </w>
+            <w>
+                <var variants="a">mea</var>
+                <var variants="F">mea</var>
+            </w>
+            <w>
+                <var variants="P3, To, W1">plaga</var>
+                <var variants="B1">pla</var>
+                <var variants="P3, To, W1">plaga</var>
+            </w>
+            <w>
+                <var variants="a">suos</var>
+                <var variants="F">suos</var>
+            </w>
+            <w>
+                <var variants="a">denudet</var>
+                <var variants="F">denudat</var>
+            </w>
+            <w>
+                <var variants="a">in</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">ordine</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">uultus</var>
+                <var variants="F">-</var>
+            </w>
+            <p>,</p>
+        </v>
+        <v n="14">
+            <w>
+                <var variants="To, W1">Que</var>
+                <var variants="B1">Qui</var>
+                <var variants="P3">Et</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="B1, To, W1">sit</var>
+                <var variants="P3">ferat</var>
+                <var variants="F">sit</var>
+            </w>
+            <w>
+                <var variants="B1, To, W1">et</var>
+                <var variants="P3">unde</var>
+                <var variants="F">et</var>
+            </w>
+            <w>
+                <var variants="B1, To, W1">unde</var>
+                <var variants="P3">uenit</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="B1, To, W1">uenit</var>
+                <var variants="P3">armaque</var>
+                <var variants="F">uenit</var>
+            </w>
+            <p>,</p>
+            <w>
+                <var variants="W1">armaque</var>
+                <var variants="B1">et</var>
+                <var variants="P3">quis</var>
+                <var variants="To">arma</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="W1">quis</var>
+                <var variants="P3">posuit</var>
+                <var variants="B1">quis</var>
+                <var variants="To">quis</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="W1">posuit</var>
+                <var variants="B1">arma</var>
+                <var variants="To">et</var>
+            </w>
+            <w>
+                <var variants="B1, To">posuit</var>
+                <var variants="F">-</var>
+            </w>
+            <p>,</p>
+        </v>
+        <v n="15">
+            <w>
+                <var variants="B1, P3, W1">Perdet</var>
+                <var variants="To">Perdit</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">et</var>
+                <var variants="F">et</var>
+            </w>
+            <w>
+                <var variants="B1, To">ipsa</var>
+                <var variants="P3, W1">ipse</var>
+                <var variants="F">ipsa</var>
+            </w>
+            <w>
+                <var variants="a">sue</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">fortassis</var>
+                <var variants="F">fortassis</var>
+            </w>
+            <w>
+                <var variants="a">spem</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">medicine</var>
+                <var variants="F">-</var>
+            </w>
+            <p>:</p>
+        </v>
+        <v n="16">
+            <w>
+                <var variants="To, W1, P3">Spes</var>
+                <var variants="B1">Opes</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">reficit</var>
+                <var variants="F">reficit</var>
+            </w>
+            <w>
+                <var variants="a">dominum</var>
+                <var variants="F">dominum</var>
+            </w>
+            <w>
+                <var variants="a">fallit</var>
+                <var variants="F">fallit</var>
+            </w>
+            <w>
+                <var variants="a">et</var>
+                <var variants="F">et</var>
+            </w>
+            <w>
+                <var variants="a">ipsa</var>
+                <var variants="F">ipsa</var>
+            </w>
+            <w>
+                <var variants="a">suum</var>
+                <var variants="F">suum</var>
+            </w>
+            <p>.</p>
+        </v>
+        <v n="17">
+            <w>
+                <var variants="a">Si</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">tegat</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">ex</var>
+                <var variants="F">ex</var>
+            </w>
+            <w>
+                <var variants="a">toto</var>
+                <var variants="F">toto</var>
+            </w>
+            <w>
+                <var variants="a">faciem</var>
+                <var variants="F">faciem</var>
+            </w>
+            <w>
+                <var variants="a">motusque</var>
+                <var variants="F">motusque</var>
+            </w>
+            <w>
+                <var variants="a">doloris</var>
+                <var variants="F">doloris</var>
+            </w>
+        </v>
+        <v n="18">
+            <w>
+                <var variants="a">Et</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="P3, To, W1">nunquam</var>
+                <var variants="B1">magnam</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">querat</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">plaga</var>
+                <var variants="F">-</var>
+            </w>
+            <w>
+                <var variants="a">salutis</var>
+                <var variants="F">salutis</var>
+            </w>
+            <w>
+                <var variants="a">opem</var>
+                <var variants="F">opem</var>
+            </w>
+            <p>,</p>
+        </v>
+</body>

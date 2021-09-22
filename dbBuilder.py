@@ -12,10 +12,13 @@ from multiprocessing.pool import ThreadPool
 
 
 # Create the TEI-reader function.
+
+
 def read_tei(tei_file):
     with open(tei_file, 'r', encoding="UTF-8") as tei:
         soup = BeautifulSoup(tei, "lxml-xml", from_encoding='UTF-8')
         return soup
+
 
 def regmenotaParse(inFile):
 
@@ -89,6 +92,7 @@ def regmenotaParse(inFile):
         countTo += 1
     print("Done with" + msAbbreviation)
     return currmsbamboo, currmapbamboo, currtxtwitbamboo, currentBamboo, currentBamboo1, currentBamboo2
+
 
 def paramenotaParse(inFile):
     soup = read_tei('{}'.format(inFile))
@@ -267,9 +271,7 @@ def parsePamph1(inFile) -> pd.DataFrame:
                         if "W1" in variantesConcretes:
                             witnessW1Bamboo = witnessW1Bamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
                             currVerseReps.append('W1')
-            # elif realtalk.name == 'p':
-            #     contVars = set(currVerseReps)
-            #     # if 'a' in contVars:
+
 
 
         countFrom += 1

@@ -13,7 +13,13 @@ from collections import Counter
 from pathlib import Path
 from functools import reduce as red
 import json
+import itertools
+from itertools import combinations
+from collections import Counter
 
+
+# Constants
+###########
 
 latPara = "latMat/pamphLat.xml"
 onPara = "paraMat/DG-4at7-Pamph-para.xml"
@@ -21,9 +27,16 @@ outPath = "outdata/"
 menotaEnt = "menota-ents-1.txt"
 proielData = Path('norsemat/PROIEL/').rglob('*.htm')
 pd.set_option('display.max_colwidth', None)
+B1lemmPath = "latMat/B1-lemMSA.csv"
+P3lemmPath = "latMat/P3-lemMSA.csv"
+TolemmPath = "latMat/To-lemMSA.csv"
+W1lemmPath = "latMat/W1-lemMSA.csv"
 
 
-def paramenotaParse(inFile):
+# Functions
+###########
+
+def paramenotaParse(inFile = onPara) -> pd.DataFrame:
     intro = "<!DOCTYPE TEI ["
     outro = " ]>"
     with open(inFile, 'r', encoding="UTF-8") as trash:
@@ -77,12 +90,12 @@ def paramenotaParse(inFile):
         counter += 1
     return pamphBamboo
 
+
 def onMat():
     bamboozled = paramenotaParse(onPara)
     bamboozled = bamboozled.groupby(['Verse', 'Order'])['Normalized', 'Facsimile', 'MSA', 'Lemma'].agg(" ".join).reset_index()
-    # simpleCount = bamboozled.groupby('Variant')['Verse'].nunique()
-    # simpleCount.to_csv(f"{outPath}vars.csv")
     return bamboozled
+
 
 def latMat(outputDF: str = 'merged'):
     '''Reads the parallelized XML and returns DF.
@@ -115,8 +128,7 @@ def syntaxAnalyser(inDF: pd.DataFrame):
         firstOrder = [x.strip() for x in firstOrder]
         wordOrder, clauseType = sentTypologizer(firstOrder)
         outDF = outDF.append({'Verse': row['Verse'], 'Order': row['Order'], 'Normalized': row['Normalized'], 'MSA': row['MSA'], 'WordOrder': wordOrder, 'KlausTyp': clauseType}, ignore_index=True)
-    outDF.to_csv(f"{outPath}on-syntax.csv")
-    
+    outDF.to_csv(f"{outPath}on-syntax.csv")  
 
 
 def sentTypologizer(inSent: typing.List):
@@ -184,8 +196,7 @@ def sentVcomp(pamphVers: DataFrame = None):
     proielSents = doPROIEL()
     if not pamphVers:
         pamphVers = onMat()
-    
-    
+  
 
 def findUpper(inDF: pd.DataFrame):
     initList = ['1', '25', '71', '143', '153', '163', '178', '186', '193', '213', 
@@ -236,10 +247,8 @@ def menota2cltk(inDF: pd.DataFrame) -> pd.DataFrame:
         cltk_msa = [menotaMap[x] for x in menota_list]
         return cltk_msa
     
-    outDF = pd.DataFrame()
-    outDF['MSA'] = inDF.apply(lambda x: menota_replacer(x['MSA']), axis=1)
-    import pdb; pdb.set_trace()
-    return outDF    
+    inDF['MSA'] = inDF['MSA'].apply(menota_replacer)
+    return inDF    
 
 
 def syntaxComparison(cache: bool = True, use_cache: bool = True):
@@ -248,14 +257,62 @@ def syntaxComparison(cache: bool = True, use_cache: bool = True):
         if syntaxFile.is_file():
             syntcomp = pd.read_csv("syntaxFile.csv", index_col=0)
             return syntcomp
-    B1 = pd.read_csv("B1-lemMSA.csv", index_col=0)
-    P3 = pd.read_csv("P3-lemMSA.csv", index_col=0)
-    To = pd.read_csv("To-lemMSA.csv", index_col=0)
-    W1 = pd.read_csv("W1-lemMSA.csv", index_col=0)
+    B1, P3, To, W1 = latLemLoader()
+    onDF = menota2cltk_loader()
+    return
+
+
+def latLemLoader():
+    B1lemmPD = pd.read_csv(B1lemmPath, index_col=0, converters={'lemmata': eval})
+    P3lemmPD = pd.read_csv(P3lemmPath, index_col=0, converters={'lemmata': eval})
+    TolemmPD = pd.read_csv(TolemmPath, index_col=0, converters={'lemmata': eval})
+    W1lemmPD = pd.read_csv(W1lemmPath, index_col=0, converters={'lemmata': eval})
+    return B1lemmPD, P3lemmPD, TolemmPD, W1lemmPD
+
+
+def menota2cltk_loader() -> pd.DataFrame:
     DG47 = onMat()
     relevantShit = DG47[['Verse', 'Normalized', 'MSA', 'Lemma']]
     onDF = menota2cltk(relevantShit)
+    return onDF
+
+
+def mergeonlat(latDF: pd.DataFrame, onDF: pd.DataFrame, variant: str):
+    
+    latVocab = []
+    onVocab = []
+    outList = []
+    for index, row in latDF.iterrows():
+        latlemList = row['lemmata']
+        latVocab.extend(latlemList)
+        onLemmings = onDF.loc[onDF['Verse'] == row['Verse'], ['Lemma', 'Variant']]
+        if variant in onLemmings['Variant'] or 'a' in onLemmings['Variant']:
+            onLemmstr = onLemmings['Lemma'].to_string(index=False)
+            onLemList = onLemmstr.split()
+            allLems = itertools.chain(latlemList, onLemList)
+            outList.append(allLems)
+            onVocab.extend(onLemList)
+        else:
+            outList.append(latlemList)
+    allvocab = set(itertools.chain(latVocab, onVocab))
+    # Citation: https://datascience.stackexchange.com/questions/40038/how-to-implement-word-to-word-co-occurence-matrix-in-python not needed?
+    co_occurence_dict = {}
+    for sent in outList:
+        for word in sent:
+            for i in range(len(sent)):
+                if not sent[i] == word:
+                    print(word)
+
+
+
     return
+
+
+def stable_word_pairs():
+    B1, P3, To, W1 = latLemLoader()
+    onDF = paramenotaParse()
+    B1_2 = mergeonlat(B1, onDF, 'B1')
+    
 
 
 if __name__ == '__main__':
@@ -264,4 +321,4 @@ if __name__ == '__main__':
     # doPROIEL()
     # sentVcomp()
     # findUpper(shit)
-    syntaxComparison()
+    stable_word_pairs()
