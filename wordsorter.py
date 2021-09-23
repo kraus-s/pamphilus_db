@@ -93,7 +93,7 @@ def paramenotaParse(inFile = onPara) -> pd.DataFrame:
 
 def onMat():
     bamboozled = paramenotaParse(onPara)
-    bamboozled = bamboozled.groupby(['Verse', 'Order'])['Normalized', 'Facsimile', 'MSA', 'Lemma'].agg(" ".join).reset_index()
+    bamboozled = bamboozled.groupby(['Verse', 'Order'])['Normalized', 'Facsimile', 'MSA', 'Lemma'].apply(lambda x: " ".join(x)).reset_index()
     return bamboozled
 
 
@@ -277,48 +277,9 @@ def menota2cltk_loader() -> pd.DataFrame:
     return onDF
 
 
-def mergeonlat(latDF: pd.DataFrame, onDF: pd.DataFrame, variant: str):
-    
-    latVocab = []
-    onVocab = []
-    outList = []
-    for index, row in latDF.iterrows():
-        latlemList = row['lemmata']
-        latVocab.extend(latlemList)
-        onLemmings = onDF.loc[onDF['Verse'] == row['Verse'], ['Lemma', 'Variant']]
-        if variant in onLemmings['Variant'] or 'a' in onLemmings['Variant']:
-            onLemmstr = onLemmings['Lemma'].to_string(index=False)
-            onLemList = onLemmstr.split()
-            allLems = itertools.chain(latlemList, onLemList)
-            outList.append(allLems)
-            onVocab.extend(onLemList)
-        else:
-            outList.append(latlemList)
-    allvocab = set(itertools.chain(latVocab, onVocab))
-    # Citation: https://datascience.stackexchange.com/questions/40038/how-to-implement-word-to-word-co-occurence-matrix-in-python not needed?
-    co_occurence_dict = {}
-    for sent in outList:
-        for word in sent:
-            for i in range(len(sent)):
-                if not sent[i] == word:
-                    print(word)
-
-
-
-    return
-
-
-def stable_word_pairs():
-    B1, P3, To, W1 = latLemLoader()
-    onDF = paramenotaParse()
-    B1_2 = mergeonlat(B1, onDF, 'B1')
-    
-
-
 if __name__ == '__main__':
-    # shit = onMat()
+    shit = onMat()
     # syntaxAnalyser(shit)
     # doPROIEL()
     # sentVcomp()
-    # findUpper(shit)
-    stable_word_pairs()
+    findUpper(shit)
