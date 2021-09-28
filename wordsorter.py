@@ -312,7 +312,11 @@ def stable_word_pairs():
     B1, P3, To, W1 = latLemLoader()
     onDF = paramenotaParse()
     B1_2 = mergeonlat(B1, onDF, 'B1')
-    
+
+
+def get_verse_order():
+    onDF = onMat()
+    onDF.to_csv("paraMat/pamph-VO.csv", columns=['Order', 'Verse'])
 
 
 if __name__ == '__main__':
@@ -321,4 +325,4 @@ if __name__ == '__main__':
     # doPROIEL()
     # sentVcomp()
     # findUpper(shit)
-    stable_word_pairs()
+    get_verse_order()

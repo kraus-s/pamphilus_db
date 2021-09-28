@@ -2646,7 +2646,7 @@
                 <var variants="a">semper</var>
             </w>
             <w>
-                <var variants="a">-</var>                <!-- B1 has one extra word here -->
+                <var variants="P3, To, W1">-</var>                <!-- B1 has one extra word here -->
                 <var variants="B1">semper</var>
             </w>
             <w>
@@ -2773,7 +2773,7 @@
                 <var variants="W1">illa</var>
             </w>
             <w>
-                <var variants="a">feros</var>
+                <var variants="P3, To, W1">feros</var>
             </w>
             <p>.</p>
         </v>
