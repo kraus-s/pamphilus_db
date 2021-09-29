@@ -93,7 +93,7 @@ def paramenotaParse(inFile = onPara) -> pd.DataFrame:
 
 def onMat():
     bamboozled = paramenotaParse(onPara)
-    bamboozled = bamboozled.groupby(['Verse', 'Order'])['Normalized', 'Facsimile', 'MSA', 'Lemma'].agg(" ".join).reset_index()
+    bamboozled = bamboozled.groupby(['Verse', 'Order'])['Normalized', 'Facsimile', 'MSA', 'Lemma'].apply(lambda x: " ".join(x)).reset_index()
     return bamboozled
 
 
@@ -320,7 +320,7 @@ def get_verse_order():
 
 
 if __name__ == '__main__':
-    # shit = onMat()
+    shit = onMat()
     # syntaxAnalyser(shit)
     # doPROIEL()
     # sentVcomp()
