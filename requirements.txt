@@ -1,0 +1,6 @@
+pandas
+streamlit
+neo4j
+st_aggrid
+networkx
+pyvis
