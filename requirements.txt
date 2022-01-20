@@ -1,6 +1,6 @@
 pandas
 streamlit
 neo4j
-st_aggrid
+streamlit-aggrid
 networkx
 pyvis
