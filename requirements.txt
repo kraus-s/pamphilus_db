@@ -4,3 +4,5 @@ neo4j
 streamlit-aggrid
 networkx
 pyvis
+lxml
+bs4

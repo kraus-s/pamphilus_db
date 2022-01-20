@@ -1,13 +1,8 @@
 from os import read
 from typing import Tuple
 from neo4j import GraphDatabase
-from bs4 import BeautifulSoup
-import lxml
 from pathlib import Path
 import pandas as pd
-from pandas.io.pytables import FrameFixed
-import xlrd
-from multiprocessing.pool import ThreadPool
 from utils.latin_parser import latin_neofyier as ln
 from utils.menota_parser import para_neofiyer as pn
 
