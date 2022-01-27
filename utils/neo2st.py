@@ -27,7 +27,6 @@ def draw_graph(nodes: List[Node], edges: List[Relationship]):
         G.add_edge(rel.start_node.id, rel.end_node.id, key=rel.id, type=rel.type, properties=rel._properties)
     fig, ax = plt.subplots()
     pos = nx.spring_layout(G)
-    print(color_map)
     nx.draw(G, pos, with_labels=True)
     return G
     
