@@ -28,14 +28,15 @@ def data_collector() -> Tuple[pd.DataFrame, pd.DataFrame]:
             allEdges(pd.DataFrame): Dataframe of all edges ready to be ingested"""
     latNodes, latEdges = ln(infile=f"{latMat}/pamphLat.xml")
     paraNodes, paraEdges = pn(infile=f"{paraMat}/DG-4at7-Pamph-para.xml")
-    allNodes = latNodes.append(paraNodes)
-    allEdges = latEdges.append(paraEdges)
+    allNodes = pd.concat([latNodes, paraNodes])
+    allEdges = pd.concat([latEdges, paraEdges])
     return allNodes, allEdges
 
 
 
 def db_commit(nodeDF: pd.DataFrame, edgeDF: pd.DataFrame):
     graph = GraphDatabase.driver("neo4j://localhost:7687", auth=('neo4j', '12'))
+    print("Dataframes going in")
     with graph.session() as session:
         tx = session.begin_transaction()
         for index, row in nodeDF.iterrows():
@@ -48,6 +49,7 @@ def db_commit(nodeDF: pd.DataFrame, edgeDF: pd.DataFrame):
             tx.run(f"MATCH (a), (b) WHERE a.nodeID = {row['FromNode']} AND b.nodeID = {row['ToNode']} AND NOT a.nodeID = b.nodeID CREATE (a)-[r:{row['EdgeLabels']}]->(b)")
         tx.commit()
         tx.close
+    print("Creating extra relationships")
     with graph.session() as session:
         tx = session.begin_transaction()
         tx.run("""MATCH (a:E33_Linguistic_Object), (b:E33_Linguistic_Object)
@@ -97,6 +99,8 @@ def db_commit(nodeDF: pd.DataFrame, edgeDF: pd.DataFrame):
                     AND a.paraVerse = b.VerseNorm
                     CREATE (a)-[r:translation_para_norm]->(b)
                 """)
+        tx.commit()
+        tx.close
     with graph.session() as session:
         tx = session.begin_transaction()
         tx.run("""MATCH (a:E33_Linguistic_Object), (b:E33_Linguistic_Object)
@@ -104,6 +108,30 @@ def db_commit(nodeDF: pd.DataFrame, edgeDF: pd.DataFrame):
                     AND a.paraVerse = b.VerseDipl
                     CREATE (a)-[r:translation_para_dipl]->(b)
                 """)
+        tx.commit()
+        tx.close
+    with graph.session() as session:
+        tx = session.begin_transaction()
+        tx.run(
+            """MATCH (a:ZZ1_Verse), (b:ZZ1_Verse)
+            WHERE a.VerseDipl = b.VerseDipl
+            AND NOT a.inMS = b.inMS
+            CREATE (a)-[r:verse_aligned_dipl]->(b)
+            """
+        )
+        tx.commit()
+        tx.close
+    with graph.session() as session:
+        tx = session.begin_transaction()
+        tx.run(
+            """MATCH (a:ZZ1_Verse), (b:ZZ1_Verse)
+            WHERE a.VerseNorm = b.VerseNorm
+            AND NOT a.inMS = b.inMS
+            CREATE (a)-[r:verse_aligned_norm]->(b)
+            """
+        )
+        tx.commit()
+        tx.close
     print("Done!")
     return
 

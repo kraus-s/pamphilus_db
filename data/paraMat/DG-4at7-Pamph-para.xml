@@ -133,7 +133,7 @@
                 </head> -->
                 <div type="reply">
                     <p>
-                        <para vn="1" var="a">
+                        <para vn="1" var="B1, P3, To, W1">
                             <w lemma="ek" me:msa="xPE p1 nS cN">
                                 <choice>
                                     <me:facs>
@@ -352,7 +352,7 @@ guanda</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="4" var="a">
+                        <para vn="4" var="B1, P3, To, W1">
                             <seg type="nb">
                                 <w lemma="ok" me:msa="xCC">
                                     <choice>
@@ -409,7 +409,7 @@ guanda</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="5, 6" var="a">
+                        <para vn="5, 6" var="B1, P3, To, W1">
                             <w lemma="sá" me:msa="xDD gN nS cD">
                                 <choice>
                                     <me:facs>þu&inodot;</me:facs>
@@ -786,7 +786,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="10" var="a">
+                        <para vn="10" var="B1, P3, To, W1">
                             <w lemma="gnótt" me:msa="xNC gF nS cN sI">
                                 <choice>
                                     <me:facs>Gno&trot;&trot;</me:facs>
@@ -831,7 +831,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="11" var="a">
+                        <para vn="11" var="B1, P3, To, W1">
                             <w lemma="sem" me:msa="xCS">
                                 <choice>
                                     <me:facs>&slong;em</me:facs>
@@ -934,7 +934,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="12" var="a">
+                        <para vn="12" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -990,7 +990,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="13" var="a">
+                        <para vn="13" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCC">
                                 <choice>
                                     <me:facs>En</me:facs>
@@ -1123,7 +1123,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="15" var="a">
+                        <para vn="15" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>oc</me:facs>
@@ -1175,7 +1175,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="17" var="a">
+                        <para vn="17" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCC">
                                 <choice>
                                     <me:facs>&Eunc;n</me:facs>
@@ -1332,7 +1332,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="19" var="a">
+                        <para vn="19" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -1397,7 +1397,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="20" var="a">
+                        <para vn="20" var="B1, P3, To, W1">
                             <seg type="nb">
                                 <w lemma="ok" me:msa="xCC">
                                     <choice>
@@ -1468,7 +1468,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="21, 22" var="a">
+                        <para vn="21, 22" var="B1, P3, To, W1">
                             <w lemma="því at" me:msa="xCS">
                                 <choice>
                                     <me:facs>þu&inodot; a&trot;</me:facs>
@@ -1547,7 +1547,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="19a">
+                        <para vn="19a" var="x">
                             <seg type="nb">
                                 <w lemma="ok" me:msa="xCC">
                                     <choice>
@@ -1614,7 +1614,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="23" var="a">
+                        <para vn="23" var="B1, P3, To, W1">
                             <w lemma="sá" me:msa="xDD gN nS cD">
                                 <choice>
                                     <me:facs>þu&inodot;</me:facs>
@@ -1736,7 +1736,7 @@ pan</me:dipl>
 
                     <lb ed="ms" n="22"/>
                     <p>
-                        <para vn="25" var="a">
+                        <para vn="25" var="B1, P3, To, W1">
                             <w lemma="einkaván" me:msa="xNC gF nS cN sI">
                                 <choice>
                                     <me:facs>
@@ -1817,7 +1817,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="26" var="a">
+                        <para vn="26" var="B1, P3, To, W1">
                             <lb ed="ms" n="23"/>
                             <w lemma="er" me:msa="xCS">
                                 <choice>
@@ -1883,7 +1883,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="27" var="a">
+                        <para vn="27" var="B1, P3, To, W1">
                             <w lemma="þú" me:msa="xPE p2 nS cA">
                                 <choice>
                                     <me:facs>þ&inodot;k</me:facs>
@@ -1946,7 +1946,7 @@ pan</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="28" var="a">
+                        <para vn="28" var="B1, P3, To, W1">
                             <w lemma="v&aeligacute;gja" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>&vins;&aeligacute;g</me:facs>
@@ -2154,7 +2154,7 @@ zyn</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="30" var="a">
+                        <para vn="30" var="B1, P3, To, W1">
                             <w lemma="heldr" me:msa="xAV rC">
                                 <choice>
                                     <me:facs>hæll&drot;r</me:facs>
@@ -2262,7 +2262,7 @@ zyn</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="31" var="a">
+                        <para vn="31" var="B1, P3, To, W1">
                             <w lemma="kveða" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>kueð</me:facs>
@@ -2367,7 +2367,7 @@ zyn</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="32" var="a">
+                        <para vn="32" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCC">
                                 <choice>
                                     <me:facs>&Eunc;n</me:facs>
@@ -2447,7 +2447,7 @@ zyn</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="33" var="a">
+                        <para vn="33" var="B1, P3, To, W1">
                             <w lemma="segja" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>Seg</me:facs>
@@ -2547,7 +2547,7 @@ gar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="34" var="a">
+                        <para vn="34" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -2741,7 +2741,7 @@ ma</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="36" var="a">
+                        <para vn="36" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -2850,7 +2850,7 @@ ma</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="37" var="a">
+                        <para vn="37" var="B1, P3, To, W1">
                             <w lemma="því at" me:msa="xCS">
                                 <choice>
                                     <me:facs>þu&inodot;<lb n="35"/>
@@ -2920,7 +2920,7 @@ at</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="38" var="a">
+                        <para vn="38" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCS">
                                 <choice>
                                     <me:facs>en</me:facs>
@@ -3044,7 +3044,7 @@ ri</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="39" var="a">
+                        <para vn="39" var="B1, P3, To, W1">
                             <w lemma="því at" me:msa="xCS">
                                 <choice>
                                     <me:facs>þu&inodot;a&trot;</me:facs>
@@ -3165,7 +3165,7 @@ lum</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="40" var="a">
+                        <para vn="40" var="B1, P3, To, W1">
                             <w lemma="annathvárt" me:msa="xCC">
                                 <choice>
                                     <me:facs>&aenl;n<am>&bar;</am>a&trot; huar&trot;</me:facs>
@@ -3341,7 +3341,7 @@ lum</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="42" var="a">
+                        <para vn="42" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>oc</me:facs>
@@ -3517,7 +3517,7 @@ lum</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="44" var="a">
+                        <para vn="44" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -3616,7 +3616,7 @@ lum</me:dipl>
                             </pc>
                             <lb ed="ms" n="2"/>
                         </para>
-                        <para vn="45" var="a">
+                        <para vn="45" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -3802,7 +3802,7 @@ lum</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="47" var="a">
+                        <para vn="47" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -3911,7 +3911,7 @@ lum</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="51" var="a">
+                        <para vn="51" var="B1, P3, To, W1">
                             <w lemma="s&oslashacute;mð" me:msa="xNC gF nS cN sI">
                                 <choice>
                                     <me:facs>S&ocurl;m&drot;</me:facs>
@@ -4016,7 +4016,7 @@ lum</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="50" var="a">
+                        <para vn="50" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCC">
                                 <choice>
                                     <me:facs>en</me:facs>
@@ -4157,7 +4157,7 @@ no</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="53" var="a">
+                        <para vn="53" var="B1, P3, To, W1">
                             <w lemma="nú" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>Nu</me:facs>
@@ -4217,7 +4217,7 @@ no</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="54" var="a">
+                        <para vn="54" var="B1, P3, To, W1">
                             <w lemma="kyssa" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>ky&slong;&slong;</me:facs>
@@ -4278,7 +4278,7 @@ no</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="55" var="a">
+                        <para vn="55" var="B1, P3, To, W1">
                             <seg type="nb">
                                 <w lemma="ok" me:msa="xCC">
                                     <choice>
@@ -4367,7 +4367,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="56" var="a">
+                        <para vn="56" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -4430,7 +4430,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="57" var="a">
+                        <para vn="57" var="B1, P3, To, W1">
                             <w lemma="traust" me:msa="xNC gN nS cN sI">
                                 <choice>
                                     <me:facs>&tscap;rau&slong;&trot;</me:facs>
@@ -4491,7 +4491,7 @@ kla</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="58" var="a">
+                        <para vn="58" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -4555,7 +4555,7 @@ kla</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="59" var="a">
+                        <para vn="59" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -4639,7 +4639,7 @@ kla</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="60" var="a">
+                        <para vn="60" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCC">
                                 <choice>
                                     <me:facs>en</me:facs>
@@ -4721,7 +4721,7 @@ kla</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="61" var="a">
+                        <para vn="61" var="B1, P3, To, W1">
                             <w lemma="nú" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>nu</me:facs>
@@ -4846,7 +4846,7 @@ ki</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="62" var="a">
+                        <para vn="62" var="B1, P3, To, W1">
                             <w lemma="sá" me:msa="xDD gN nS cD">
                                 <choice>
                                     <me:facs>þu&inodot;</me:facs>
@@ -5053,7 +5053,7 @@ ki</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="65" var="a">
+                        <para vn="65" var="B1, P3, To, W1">
                             <w lemma="annathvárt" me:msa="xCC">
                                 <choice>
                                     <me:facs>An<am>&bar;</am>a&trot; huar&trot;</me:facs>
@@ -5196,7 +5196,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="67" var="a">
+                        <para vn="67" var="B1, P3, To, W1">
                             <w lemma="hverr" me:msa="xDQ gM nS cN">
                                 <choice>
                                     <me:facs>huer</me:facs>
@@ -5255,7 +5255,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="68" var="a">
+                        <para vn="68" var="B1, P3, To, W1">
                             <w lemma="er" me:msa="xCS">
                                 <choice>
                                     <me:facs>er</me:facs>
@@ -5444,7 +5444,7 @@ nar</me:dipl>
                 <div type="reply">
                     <lb ed="ms" n="23"/>
                     <p>
-                        <para vn="71" var="a">
+                        <para vn="71" var="B1, P3, To, W1">
                             <w lemma="h&oslashacute;filigr" me:msa="xAJ rP gN nS cN sI">
                                 <choice>
                                     <me:facs>
@@ -5490,7 +5490,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="72" var="a">
+                        <para vn="72" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -5611,7 +5611,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="73" var="a">
+                        <para vn="73" var="B1, P3, To, W1">
                             <lb ed="ms" n="25"/>
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
@@ -5928,7 +5928,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="76" var="a">
+                        <para vn="76" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCC">
                                 <choice>
                                     <me:facs>en</me:facs>
@@ -6111,7 +6111,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="79, 80" var="a">
+                        <para vn="79, 80" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>Oc</me:facs>
@@ -6467,7 +6467,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="83" var="a">
+                        <para vn="83" var="B1, P3, To, W1">
                             <w lemma="vél" me:msa="xNC gF nS cN sI">
                                 <choice>
                                     <me:facs>&vins;él</me:facs>
@@ -6540,7 +6540,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="84" var="a">
+                        <para vn="84" var="B1, P3, To, W1">
                             <w lemma="vél" me:msa="xNC gF nS cN sI">
                                 <choice>
                                     <me:facs>&vins;él</me:facs>
@@ -6613,7 +6613,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="85" var="a">
+                        <para vn="85" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -6711,7 +6711,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="86" var="a">
+                        <para vn="86" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -6790,7 +6790,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="87" var="a">
+                        <para vn="87" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -6880,7 +6880,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="88" var="a">
+                        <para vn="88" var="B1, P3, To, W1">
                             <w lemma="með" me:msa="xAP">
                                 <choice>
                                     <me:facs>með</me:facs>
@@ -6924,7 +6924,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="89" var="a">
+                        <para vn="89" var="B1, P3, To, W1">
                             <lb ed="ms" n="41"/>
                             <w lemma="vél" me:msa="xNC gF nS cN sI">
                                 <choice>
@@ -7159,7 +7159,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="92" var="a">
+                        <para vn="92" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -7272,7 +7272,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="93" var="a">
+                        <para vn="93" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>Oc</me:facs>
@@ -7324,7 +7324,7 @@ læikr</me:dipl>
                             </w>
                             <lb ed="ms" n="4"/>
                         </para>
-                        <para vn="94" var="a">
+                        <para vn="94" var="B1, P3, To, W1">
                             <w lemma="þá" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>þa</me:facs>
@@ -7368,7 +7368,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="95" var="a">
+                        <para vn="95" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -7431,7 +7431,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="96" var="a">
+                        <para vn="96" var="B1, P3, To, W1">
                             <w lemma="þá" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>þa</me:facs>
@@ -7492,7 +7492,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="97" var="a">
+                        <para vn="97" var="B1, P3, To, W1">
                             <w lemma="með" me:msa="xAP">
                                 <choice>
                                     <me:facs>Me&trot;</me:facs>
@@ -7651,7 +7651,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="99" var="a">
+                        <para vn="99" var="B1, P3, To, W1">
                             <w lemma="til" me:msa="xAP">
                                 <choice>
                                     <me:facs>T&inodot;l</me:facs>
@@ -7759,7 +7759,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="100" var="a">
+                        <para vn="100" var="B1, P3, To, W1">
                             <seg type="nb">
                                 <w lemma="ok" me:msa="xCC">
                                     <choice>
@@ -7865,7 +7865,7 @@ na</me:dipl>
                                 </w>
                             </seg>
                         </para>
-                        <para vn="101" var="a">
+                        <para vn="101" var="B1, P3, To, W1">
                             <lb ed="ms" n="11"/>
                             <w lemma="því at" me:msa="xCS">
                                 <choice>
@@ -7999,7 +7999,7 @@ blandin</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="103" var="a">
+                        <para vn="103" var="B1, P3, To, W1">
                             <w lemma="sýna" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>Syn</me:facs>
@@ -8085,7 +8085,7 @@ blandin</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="104" var="a">
+                        <para vn="104" var="B1, P3, To, W1">
                             <w lemma="því at" me:msa="xCS">
                                 <choice>
                                     <me:facs>þu&inodot;a&trot;</me:facs>
@@ -8160,7 +8160,7 @@ nom</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="105" var="a">
+                        <para vn="105" var="B1, P3, To, W1">
                             <w lemma="eigi" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>&Eunc;&inodot;g&inodot;</me:facs>
@@ -8251,7 +8251,7 @@ nom</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="107" var="a">
+                        <para vn="107" var="B1, P3, To, W1">
                             <w lemma="fagr" me:msa="xAJ rP gF nS cN sI">
                                 <choice>
                                     <me:facs>&fins;ogr</me:facs>
@@ -8346,7 +8346,7 @@ nom</me:dipl>
                         </para>
                     </p>
                         <p>
-                            <para vn="106" var="a">
+                            <para vn="106" var="B1, P3, To, W1">
                                 <lb ed="ms" n="18"/>
                             <w lemma="oft" me:msa="xAV rP">
                                 <choice>
@@ -8516,7 +8516,7 @@ nom</me:dipl>
                     
                     
                         <p>
-                            <para vn="110" var="a">
+                            <para vn="110" var="B1, P3, To, W1">
                                 <lb ed="ms" n="20"/>
                             <w lemma="þá" me:msa="xAV rP">
                                 <choice>
@@ -8613,7 +8613,7 @@ nom</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="110" var="a">
+                        <para vn="110" var="B1, P3, To, W1">
                             <w lemma="skamma" me:msa="xVB fF tPS mIN p3 nP vR">
                                 <choice>
                                     <me:facs>Skam<am>&bar;</am>az</me:facs>
@@ -8674,7 +8674,7 @@ nom</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="112" var="a">
+                        <para vn="112" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -8779,7 +8779,7 @@ nom</me:dipl>
                                 </choice>
                             </w>
                         </para>
-                        <para vn="113" var="a">
+                        <para vn="113" var="B1, P3, To, W1">
                             <w lemma="stund" me:msa="xNC gF nP cD sI">
                                 <choice>
                                     <me:facs>&slong;&trot;un&drot;um</me:facs>
@@ -8852,7 +8852,7 @@ nom</me:dipl>
                                 </choice>
                             </w>
                         </para>
-                        <para vn="114" var="a">
+                        <para vn="114" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCS">
                                 <choice>
                                     <me:facs>en</me:facs>
@@ -9023,7 +9023,7 @@ nom</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="116" var="a">
+                        <para vn="116" var="B1, P3, To, W1">
                             <w lemma="at" me:msa="xCS">
                                 <choice>
                                     <me:facs>a&trot;</me:facs>
@@ -9102,7 +9102,7 @@ nom</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="117" var="a">
+                        <para vn="117" var="B1, P3, To, W1">
                             <w lemma="snotr" me:msa="xAJ rP gM nS cN sI">
                                 <choice>
                                     <me:facs>Sno&trot;r</me:facs>
@@ -9161,7 +9161,7 @@ nom</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="118" var="a">
+                        <para vn="118" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>Oc</me:facs>
@@ -9252,7 +9252,7 @@ nom</me:dipl>
                         </para>
                     </p>
                     <p>
-                        <para vn="119" var="a">
+                        <para vn="119" var="B1, P3, To, W1">
                             <lb ed="ms" n="30"/>
                             <w lemma="segja" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
@@ -9306,7 +9306,7 @@ nom</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="120" var="a">
+                        <para vn="120" var="B1, P3, To, W1">
                             <w lemma="því at" me:msa="xCS">
                                 <choice>
                                     <me:facs>þu&inodot;a&trot;</me:facs>
@@ -9360,7 +9360,7 @@ rir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="121" var="a">
+                        <para vn="121" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -9439,7 +9439,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="122" var="a">
+                        <para vn="122" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -9502,7 +9502,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="123" var="a">
+                        <para vn="123" var="B1, P3, To, W1">
                             <w lemma="trúa" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>Tru</me:facs>
@@ -9575,7 +9575,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="124" var="a">
+                        <para vn="124" var="B1, P3, To, W1">
                             <w lemma="stórr" me:msa="xAJ rP gU nP cD sI">
                                 <choice>
                                     <me:facs>S&trot;o&rrot;u<am>&bar;</am>
@@ -9636,7 +9636,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="125" var="a">
+                        <para vn="125" var="B1, P3, To, W1">
                             <w lemma="finna" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>&fins;&inodot;<am>&bar;</am>n</me:facs>
@@ -9688,7 +9688,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="126" var="a">
+                        <para vn="126" var="B1, P3, To, W1">
                             <w lemma="sá" me:msa="xDD gM nP cA">
                                 <choice>
                                     <me:facs>þa</me:facs>
@@ -9781,7 +9781,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="127" var="a">
+                        <para vn="127" var="B1, P3, To, W1">
                             <w lemma="at" me:msa="xCS">
                                 <choice>
                                     <me:facs>a&trot;</me:facs>
@@ -9847,7 +9847,7 @@ vir</me:dipl>
                                 </choice>
                             </w>
                         </para>
-                        <para vn="128" var="a">
+                        <para vn="128" var="B1, P3, To, W1">
                             <lb ed="ms" n="39"/>
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
@@ -9924,7 +9924,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="129" var="a">
+                        <para vn="129" var="B1, P3, To, W1">
                             <cb ed="ms" n="B"/>
                             <lb ed="ms" n="1"/>
                             <w lemma="en" me:msa="xCC">
@@ -10029,7 +10029,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="131" var="a">
+                        <para vn="131" var="B1, P3, To, W1">
                             <w lemma="þá" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>þa</me:facs>
@@ -10095,7 +10095,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="132" var="a">
+                        <para vn="132" var="B1, P3, To, W1">
                             <w lemma="at" me:msa="xCS">
                                 <choice>
                                     <me:facs>a&trot;</me:facs>
@@ -10150,7 +10150,7 @@ vir</me:dipl>
                     </p>
                     <lb ed="ms" n="4"/>
                     <p>
-                        <para vn="133" var="a">
+                        <para vn="133" var="B1, P3, To, W1">
                             <w lemma="oft" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>
@@ -10216,7 +10216,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="134" var="a">
+                        <para vn="134" var="B1, P3, To, W1">
                             <w lemma="af" me:msa="xAP">
                                 <choice>
                                     <me:facs>a&fins;</me:facs>
@@ -10296,7 +10296,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="135" var="a">
+                        <para vn="135" var="B1, P3, To, W1">
                             <w lemma="láta" me:msa="xVB fF tPS mIP p2 nP vA">
                                 <choice>
                                     <me:facs>la&trot;&inodot;ð</me:facs>
@@ -10348,7 +10348,7 @@ vir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="136" var="a">
+                        <para vn="136" var="B1, P3, To, W1">
                             <w lemma="sá" me:msa="xDD gM nS cA">
                                 <choice>
                                     <me:facs>þa<am>&bar;</am>n</me:facs>
@@ -10423,7 +10423,7 @@ ga</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="137" var="a">
+                        <para vn="137" var="B1, P3, To, W1">
                             <w lemma="því at" me:msa="xCS">
                                 <choice>
                                     <me:facs>þu&inodot;a&trot;</me:facs>
@@ -10484,7 +10484,7 @@ ga</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="138" var="a">
+                        <para vn="138" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -10575,7 +10575,7 @@ ga</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="139, 140" var="a">
+                        <para vn="139, 140" var="B1, P3, To, W1">
                             <w lemma="gera" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>Ger</me:facs>
@@ -10598,7 +10598,7 @@ ga</me:dipl>
                                 </choice>
                             </w>
                         </para>
-                        <para vn="141" var="a">
+                        <para vn="141" var="B1, P3, To, W1">
                             <lb ed="ms" n="10"/>
                             <w lemma="en" me:msa="xCC">
                                 <choice>
@@ -10702,7 +10702,7 @@ ga</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="142" var="a">
+                        <para vn="142" var="B1, P3, To, W1">
                             <w lemma="er" me:msa="xCS">
                                 <choice>
                                     <me:facs>er</me:facs>
@@ -10790,7 +10790,7 @@ dir</me:dipl>
                 <div type="reply">
                     <lb ed="ms" n="13"/>
                     <p>
-                        <para vn="143" var="a">
+                        <para vn="143" var="B1, P3, To, W1">
                             <w lemma="réttliga" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>
@@ -10860,7 +10860,7 @@ dir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="144" var="a">
+                        <para vn="144" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -10924,7 +10924,7 @@ dir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="145" var="a">
+                        <para vn="145" var="B1, P3, To, W1">
                             <w lemma="harmr" me:msa="xNC gM nS cN sI">
                                 <choice>
                                     <me:facs>harmr</me:facs>
@@ -11060,7 +11060,7 @@ io</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="147" var="a">
+                        <para vn="147" var="B1, P3, To, W1">
                             <w lemma="ván" me:msa="xNC gF nS cN sI">
                                 <choice>
                                     <me:facs>&vins;ón</me:facs>
@@ -11294,7 +11294,7 @@ io</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="149" var="a">
+                        <para vn="149" var="B1, P3, To, W1">
                             <w lemma="sá" me:msa="xDD gN nS cD">
                                 <choice>
                                     <me:facs>þu&inodot;</me:facs>
@@ -11406,7 +11406,7 @@ io</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="150" var="a">
+                        <para vn="150" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -11590,7 +11590,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="152" var="a">
+                        <para vn="152" var="B1, P3, To, W1">
                             <w lemma="ek" me:msa="xPE p1 nS cD">
                                 <choice>
                                     <me:facs>mer</me:facs>
@@ -11649,7 +11649,7 @@ nar</me:dipl>
                 <div type="reply">
                     <lb ed="ms" n="24"/>
                     <p>
-                        <para vn="153" var="a">
+                        <para vn="153" var="B1, P3, To, W1">
                             <w lemma="?" me:msa="xUA">
                                 <choice>
                                     <me:facs>
@@ -11725,7 +11725,7 @@ nar</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="154" var="a">
+                        <para vn="154" var="B1, P3, To, W1">
                             <lb ed="ms" n="25"/>
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
@@ -11819,7 +11819,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="156" var="a">
+                        <para vn="156" var="B1, P3, To, W1">
                             <w lemma="hyggja" me:msa="xNC gF nS cN sI">
                                 <choice>
                                     <me:facs>hygg&inodot;a</me:facs>
@@ -11870,7 +11870,7 @@ na</me:dipl>
                                 </choice>
                             </w>
                         </para>
-                        <para vn="157" var="a">
+                        <para vn="157" var="B1, P3, To, W1">
                             <w lemma="hvárki" me:msa="xCC">
                                 <choice>
                                     <me:facs>huar&trot;k&inodot;</me:facs>
@@ -11950,7 +11950,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="158" var="a">
+                        <para vn="158" var="B1, P3, To, W1">
                             <w lemma="ek" me:msa="xPE p1 nS cD">
                                 <choice>
                                     <me:facs>mer</me:facs>
@@ -11997,7 +11997,7 @@ num</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="160" var="a">
+                        <para vn="160" var="B1, P3, To, W1">
                             <w lemma="hr&aeligacute;zla" me:msa="xNC gF nS cN sI">
                                 <choice>
                                     <me:facs>ræzla</me:facs>
@@ -12044,7 +12044,7 @@ num</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="159" var="a">
+                        <para vn="159" var="B1, P3, To, W1">
                             <w lemma="er" me:msa="xCS">
                                 <choice>
                                     <me:facs>er</me:facs>
@@ -12081,7 +12081,7 @@ num</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="161" var="a">
+                        <para vn="161" var="B1, P3, To, W1">
                             <w lemma="eigi" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>æ&inodot;g&inodot;</me:facs>
@@ -12191,7 +12191,7 @@ num</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="162" var="a">
+                        <para vn="162" var="B1, P3, To, W1">
                             <w lemma="eigi" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>æ&inodot;g&inodot;</me:facs>
@@ -12292,7 +12292,7 @@ gir</me:dipl>
                 <div type="reply">
                     <lb ed="ms" n="32"/>
                     <p>
-                        <para vn="163" var="a">
+                        <para vn="163" var="B1, P3, To, W1">
                             <w lemma="einn" me:msa="xAJ rP gF nS cN sI">
                                 <choice>
                                     <me:facs>
@@ -12371,7 +12371,7 @@ gir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="164" var="a">
+                        <para vn="164" var="B1, P3, To, W1">
                             <w lemma="hon" me:msa="xPE p3 gF nS cN">
                                 <choice>
                                     <me:facs>hon</me:facs>
@@ -12439,7 +12439,7 @@ gir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="165" var="a">
+                        <para vn="165" var="B1, P3, To, W1">
                             <seg type="nb">
                                 <w lemma="ok" me:msa="xCC">
                                     <choice>
@@ -12536,7 +12536,7 @@ gir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="166" var="a">
+                        <para vn="166" var="B1, P3, To, W1">
                             <seg type="nb">
                                 <w lemma="ok" me:msa="xCC">
                                     <choice>
@@ -12622,7 +12622,7 @@ gir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="167" var="a">
+                        <para vn="167" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -12692,7 +12692,7 @@ gir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="168" var="a">
+                        <para vn="168" var="B1, P3, To, W1">
                             <w lemma="þar" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>þar</me:facs>
@@ -12743,7 +12743,7 @@ gir</me:dipl>
                                 </choice>
                             </w>
                         </para>
-                        <para vn="169" var="a">
+                        <para vn="169" var="B1, P3, To, W1">
                             <lb ed="ms" n="38"/>
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
@@ -12813,7 +12813,7 @@ gir</me:dipl>
                                 </choice>
                             </w>
                         </para>
-                        <para vn="170" var="a">
+                        <para vn="170" var="B1, P3, To, W1">
                             <lb ed="ms" n="39"/>
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
@@ -12897,7 +12897,7 @@ gir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="171" var="a">
+                        <para vn="171" var="B1, P3, To, W1">
                             <pb ed="ms" n="4r"/>
                             <cb ed="ms" n="A"/>
                             <lb ed="ms" n="1"/>
@@ -12978,7 +12978,7 @@ gir</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="172" var="a">
+                        <para vn="172" var="B1, P3, To, W1">
                             <w lemma="hafna" me:msa="xVB fI tPS vA">
                                 <choice>
                                     <me:facs>ha&fins;<lb n="2"/>
@@ -13084,7 +13084,7 @@ na</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="173" var="a">
+                        <para vn="173" var="B1, P3, To, W1">
                             <w lemma="m&aeligacute;la" me:msa="xVB fF tPS mIP p1 nP vA">
                                 <choice>
                                     <me:facs>mælom</me:facs>
@@ -13182,7 +13182,7 @@ dit</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="175" var="a">
+                        <para vn="175" var="B1, P3, To, W1">
                             <w lemma="segja" me:msa="xVB fF tPS mSU p3 nS vA">
                                 <choice>
                                     <me:facs>Seg&inodot;</me:facs>
@@ -13241,7 +13241,7 @@ dit</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="176" var="a">
+                        <para vn="176" var="B1, P3, To, W1">
                             <w lemma="en" me:msa="xCC">
                                 <choice>
                                     <me:facs>en</me:facs>
@@ -13330,7 +13330,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="177" var="a">
+                        <para vn="177" var="B1, P3, To, W1">
                             <w lemma="handselja" me:msa="xVB fF tPS mSU p3 nS vA">
                                 <choice>
                                     <me:facs>&henl;an&drot;&slong;el&inodot;</me:facs>
@@ -13403,7 +13403,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="178" var="a">
+                        <para vn="178" var="B1, P3, To, W1">
                             <w lemma="ek" me:msa="xPE p1 nS cN">
                                 <choice>
                                     <me:facs>ec</me:facs>
@@ -13586,7 +13586,7 @@ gi</me:dipl>
                 <div type="reply">
                     <lb ed="ms" n="9" rend="1"/>
                     <p>
-                        <para vn="179" var="a">
+                        <para vn="179" var="B1, P3, To, W1">
                             <w lemma="vit" me:msa="xPE p1 nD cN">
                                 <choice>
                                     <me:facs>
@@ -13683,7 +13683,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="180" var="a">
+                        <para vn="180" var="B1, P3, To, W1">
                             <w lemma="engi" me:msa="xDQ gF nS cN">
                                 <choice>
                                     <me:facs>eng&inodot;</me:facs>
@@ -13777,7 +13777,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="181" var="a">
+                        <para vn="181" var="B1, P3, To, W1">
                             <w lemma="þessi" me:msa="xDD gM nS cN">
                                 <choice>
                                     <me:facs>&slong;&inodot;a</me:facs>
@@ -13883,7 +13883,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="182" var="a">
+                        <para vn="182" var="B1, P3, To, W1">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>
@@ -13952,7 +13952,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="183" var="a">
+                        <para vn="183" var="B1, P3, To, W1">
                             <w lemma="vitr" me:msa="xAJ rP gM nS cN sI">
                                 <choice>
                                     <me:facs>&vins;&inodot;&trot;r</me:facs>
@@ -13999,7 +13999,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="184" var="a">
+                        <para vn="184" var="B1, P3, To, W1">
                             <w lemma="at" me:msa="xAP">
                                 <choice>
                                     <me:facs>a&trot;</me:facs>
@@ -14168,7 +14168,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="186" var="a">
+                        <para vn="186" var="B1, P3, To, W1">
                             <w lemma="fyrr" me:msa="xAV rC">
                                 <choice>
                                     <me:facs>&fins;yrr</me:facs>
@@ -14253,7 +14253,7 @@ gi</me:dipl>
                 <div type="reply">
                     <lb ed="ms" n="18"/>
                     <p>
-                        <para vn="187" var="a">
+                        <para vn="187" var="B1, P3, To, W1">
                             <w lemma="svá" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>
@@ -14321,7 +14321,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="188" var="a">
+                        <para vn="188" var="B1, P3, To, W1">
                             <w lemma="svá" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>&slong;ua</me:facs>
@@ -14495,7 +14495,7 @@ gi</me:dipl>
                     </p>
                     <lb ed="ms" n="22"/>
                     <p>
-                        <para vn="191" var="a">
+                        <para vn="191" var="B1, P3, To, W1">
                             <w lemma="finna" me:msa="xVB fF tPS mIP p2 nS vA">
                                 <choice>
                                     <me:facs>
@@ -14557,7 +14557,7 @@ gi</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="192" var="a">
+                        <para vn="192" var="B1, P3, To, W1">
                             <w lemma="sá" me:msa="xDD gF nP cA">
                                 <choice>
                                     <me:facs>þær</me:facs>
@@ -14671,7 +14671,7 @@ gi</me:dipl>
                 <div type="reply">
                     <lb ed="ms" n="24"/>
                     <p>
-                        <para vn="193" var="a">
+                        <para vn="193" var="B1, P3, To, W1">
                             <w lemma="oft" me:msa="xAV rP">
                                 <choice>
                                     <me:facs>
@@ -14830,7 +14830,7 @@ nar&slong;</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="195" var="a">
+                        <para vn="195" var="B1, P3, To, W1">
                             <w lemma="heldr" me:msa="xAV rC">
                                 <choice>
                                     <me:facs>hell&drot;r</me:facs>
@@ -14893,7 +14893,7 @@ giarn<ex>n</ex>liga</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="196" var="a">
+                <para vn="196" var="B1, P3, To, W1">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
                             <me:facs>
@@ -14970,7 +14970,7 @@ giarn<ex>n</ex>liga</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="197" var="a">
+                <para vn="197" var="B1, P3, To, W1">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
                             <me:facs>
@@ -15053,7 +15053,7 @@ na guð</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="198" var="a">
+                <para vn="198" var="B1, P3, To, W1">
                     <w lemma="at" me:msa="xCS">
                         <choice>
                             <me:facs>a&trot;</me:facs>
@@ -15217,7 +15217,7 @@ kær</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="200" var="a">
+                <para vn="200" var="B1, P3, To, W1">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
                             <me:facs>Oc</me:facs>
@@ -15280,7 +15280,7 @@ kær</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="201" var="a">
+                <para vn="201" var="B1, P3, To, W1">
                     <w lemma="?" me:msa="xUA">
                         <choice>
                             <me:facs>&henl;o</me:facs>
@@ -15460,7 +15460,7 @@ kær</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="203" var="a">
+                <para vn="203" var="B1, P3, To, W1">
                     <w lemma="því at" me:msa="xCS">
                         <choice>
                             <me:facs>þu&inodot;a&trot;</me:facs>
@@ -15512,7 +15512,7 @@ kær</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="204" var="a">
+                <para vn="204" var="B1, P3, To, W1">
                     <w lemma="því at" me:msa="xCS">
                         <choice>
                             <me:facs>þu&inodot;a&trot;</me:facs>
@@ -15592,7 +15592,7 @@ kær</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="205" var="a">
+                <para vn="205" var="B1, P3, To, W1">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
                             <me:facs>Oc</me:facs>
@@ -15869,7 +15869,7 @@ at</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="208" var="a">
+                <para vn="208" var="B1, P3, To, W1">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
                             <me:facs>Oc</me:facs>
@@ -15945,7 +15945,7 @@ at</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="209" var="a">
+                <para vn="209" var="B1, P3, To, W1">
                     <w lemma="ganga" me:msa="xVB fI tPS vA">
                         <choice>
                             <me:facs>&gscap;anga</me:facs>
@@ -16022,7 +16022,7 @@ at</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="210" var="a">
+                <para vn="210" var="B1, P3, To, W1">
                     <seg type="nb">
                         <w lemma="ok" me:msa="xCC">
                             <choice>
@@ -16115,7 +16115,7 @@ at</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="211" var="a">
+                <para vn="211" var="B1, P3, To, W1">
                     <w lemma="því at" me:msa="xCS">
                         <choice>
                             <me:facs>þu&inodot;a&trot;</me:facs>
@@ -16204,7 +16204,7 @@ at</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="212" var="a">
+                <para vn="212" var="B1, P3, To, W1">
                     <w lemma="sá" me:msa="xDD gN nS cA">
                         <choice>
                             <me:facs>þa&trot;</me:facs>
@@ -16303,7 +16303,7 @@ at</me:dipl>
         <div type="reply">
             <lb ed="ms" n="6"/>
             <p>
-                <para vn="213" var="a">
+                <para vn="213" var="B1, P3, To, W1">
                     <w lemma="ganga" me:msa="xVB fI tPS vA">
                         <choice>
                             <me:facs>
@@ -16432,7 +16432,7 @@ at</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="214" var="a">
+                <para vn="214" var="B1, P3, To, W1">
                     <w lemma="hverr" me:msa="xDQ gM nS cN">
                         <choice>
                             <me:facs>huerr</me:facs>
@@ -16470,7 +16470,7 @@ at</me:dipl>
                     </w>
                     <lb ed="ms" n="8"/>
                 </para>
-                <para vn="215" var="a">
+                <para vn="215" var="B1, P3, To, W1">
                     <w lemma="þó" me:msa="xAV rP">
                         <choice>
                             <me:facs>þo</me:facs>
@@ -16559,7 +16559,7 @@ at</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="217" var="a">
+                <para vn="217" var="B1, P3, To, W1">
                     <w lemma="sá" me:msa="xDD gN nS cD">
                         <choice>
                             <me:facs>þu&inodot;</me:facs>
@@ -16807,7 +16807,7 @@ mi</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="220" var="a">
+                <para vn="220" var="B1, P3, To, W1">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
                             <me:facs>
@@ -16869,7 +16869,7 @@ mi</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="221" var="a">
+                <para vn="221" var="B1, P3, To, W1">
                     <w lemma="ef" me:msa="xCS">
                         <choice>
                             <me:facs>e&fins;</me:facs>
@@ -16968,7 +16968,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="222" var="a">
+                <para vn="222" var="B1, P3, To, W1">
                     <w lemma="en" me:msa="xCC">
                         <choice>
                             <me:facs>&Eunc;n</me:facs>
@@ -17076,7 +17076,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="223" var="a">
+                <para vn="223" var="B1, P3, To, W1">
                     <w lemma="en" me:msa="xCC">
                         <choice>
                             <me:facs>En</me:facs>
@@ -17170,7 +17170,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="224" var="a">
+                <para vn="224" var="B1, P3, To, W1">
                     <w lemma="því at" me:msa="xCS">
                         <choice>
                             <me:facs>þu&inodot;a&trot;</me:facs>
@@ -17238,7 +17238,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="225" var="a">
+                <para vn="225" var="B1, P3, To, W1">
                     <w lemma="því at" me:msa="xCS">
                         <choice>
                             <me:facs>þu&inodot;a&trot;</me:facs>
@@ -17304,7 +17304,7 @@ ra</me:dipl>
             <lb ed="ms" n="19"/>
             <p>
 
-                <para vn="227" var="a">
+                <para vn="227" var="B1, P3, To, W1">
                     <w lemma="eigi" me:msa="xAV rP">
                         <choice>
                             <me:facs>
@@ -17379,7 +17379,7 @@ ra</me:dipl>
                         </choice>
                     </w>
                 </para>
-                <para vn="228" var="a">
+                <para vn="228" var="B1, P3, To, W1">
                     <w lemma="þykkja" me:msa="xVB fF tPS mIN p3 nS vA">
                         <choice>
                             <me:facs>þyck&inodot;</me:facs>
@@ -17468,7 +17468,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="229" var="a">
+                <para vn="229" var="B1, P3, To, W1">
                     <w lemma="geta" me:msa="xVB fF tPS mIN p1 nS vA">
                         <choice>
                             <me:facs>Ge&trot;</me:facs>
@@ -17534,7 +17534,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="230" var="a">
+                <para vn="230" var="B1, P3, To, W1">
                     <w lemma="þessi" me:msa="xDD gF nS cA">
                         <choice>
                             <me:facs>þe&slong;&slong;a</me:facs>
@@ -17635,7 +17635,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="231" var="a">
+                <para vn="231" var="B1, P3, To, W1">
                     <w lemma="þá" me:msa="xAV rP">
                         <choice>
                             <me:facs>þa</me:facs>
@@ -17673,7 +17673,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="232" var="a">
+                <para vn="232" var="B1, P3, To, W1">
                     <w lemma="er" me:msa="xCS">
                         <choice>
                             <me:facs>er</me:facs>
@@ -17717,7 +17717,7 @@ ra</me:dipl>
                         </choice>
                     </w>
                 </para>
-                <para vn="233" var="a">
+                <para vn="233" var="B1, P3, To, W1">
                     <lb ed="ms" n="25"/>
                     <w lemma="láta" me:msa="xVB fF tPS mIP p2 nS vA">
                         <choice>
@@ -17868,7 +17868,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="234" var="a">
+                <para vn="234" var="B1, P3, To, W1">
                     <w lemma="en" me:msa="xCC">
                         <choice>
                             <me:facs>en</me:facs>
@@ -17927,7 +17927,7 @@ ra</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="235, 236" var="a">
+                <para vn="235, 236" var="B1, P3, To, W1">
                     <w lemma="at" me:msa="xCS">
                         <choice>
                             <me:facs>a&trot;</me:facs>
@@ -18084,7 +18084,7 @@ liga</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="237" var="a">
+                <para vn="237" var="B1, P3, To, W1">
                     <w lemma="at" me:msa="xCS">
                         <choice>
                             <me:facs>a&trot;</me:facs>
@@ -18198,7 +18198,7 @@ liga</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="239" var="a">
+            <para vn="239" var="B1, P3, To, W1">
                 <lb ed="ms" n="32"/>
                 <w lemma="þá" me:msa="xAV rP">
                     <choice>
@@ -18321,7 +18321,7 @@ liga</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="240" var="a">
+            <para vn="240" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>Oc</me:facs>
@@ -18700,7 +18700,7 @@ liga</me:dipl>
         <lb ed="ms" n="39"/>
         <p>
 
-            <para vn="245" var="a">
+            <para vn="245" var="B1, P3, To, W1">
                 <w lemma="engi" me:msa="xDQ gM nS cN">
                     <choice>
                         <me:facs>
@@ -18882,7 +18882,7 @@ liga</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="247" var="a">
+            <para vn="247" var="B1, P3, To, W1">
                 <w lemma="ek" me:msa="xPE p1 nS cA">
                     <choice>
                         <me:facs>M&inodot;k</me:facs>
@@ -18934,7 +18934,7 @@ liga</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="248" var="a">
+            <para vn="248" var="B1, P3, To, W1">
                 <w lemma="því at" me:msa="xCS">
                     <choice>
                         <me:facs>þu&inodot;a&trot;</me:facs>
@@ -19023,7 +19023,7 @@ liga</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="249" var="a">
+            <para vn="249" var="B1, P3, To, W1">
                 <w lemma="um" me:msa="xAP">
                     <choice>
                         <me:facs>Vm</me:facs>
@@ -19428,7 +19428,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="254" var="a">
+            <para vn="254" var="B1, P3, To, W1">
                 <w lemma="sá" me:msa="xDD gN nS cD">
                     <choice>
                         <me:facs>þu&inodot;</me:facs>
@@ -19949,7 +19949,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="260" var="a">
+            <para vn="260" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -19997,7 +19997,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="261" var="a">
+            <para vn="261" var="B1, P3, To, W1">
                 <w lemma="jafnan" me:msa="xAV rP">
                     <choice>
                         <me:facs>&inodot;a&fins;nan</me:facs>
@@ -20056,7 +20056,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="262" var="a">
+            <para vn="262" var="B1, P3, To, W1">
                 <w lemma="draga" me:msa="xVB fF tPS mIN p1 nS vA">
                     <choice>
                         <me:facs>&drot;reg</me:facs>
@@ -20136,7 +20136,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="263, 264" var="a">
+            <para vn="263, 264" var="B1, P3, To, W1">
                 <w lemma="sorgfullr" me:msa="xAJ rP gM nS cN sI">
                     <choice>
                         <me:facs>&slong;o&rrot;g&fins;ullr</me:facs>
@@ -20279,7 +20279,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="265" var="a">
+            <para vn="265" var="B1, P3, To, W1">
                 <w lemma="í" me:msa="xAP">
                     <choice>
                         <me:facs>J</me:facs>
@@ -20345,7 +20345,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="266" var="a">
+            <para vn="266" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -20539,7 +20539,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="269" var="a">
+            <para vn="269" var="B1, P3, To, W1">
                 <w lemma="svá" me:msa="xAV rP">
                     <choice>
                         <me:facs>&slong;ua</me:facs>
@@ -20626,7 +20626,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="270" var="a">
+            <para vn="270" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -20750,7 +20750,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="273" var="a">
+            <para vn="273" var="B1, P3, To, W1">
                 <w lemma="vera" me:msa="xVB fF tPS mSU p3 nS vA">
                     <choice>
                         <me:facs>&slong;e</me:facs>
@@ -20815,7 +20815,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="274" var="a">
+            <para vn="274" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -20873,7 +20873,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="275" var="a">
+            <para vn="275" var="B1, P3, To, W1">
                 <w lemma="tulkr" me:msa="xNC gM nS cN sI">
                     <choice>
                         <me:facs>Tulkr</me:facs>
@@ -20957,7 +20957,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="276" var="a">
+            <para vn="276" var="B1, P3, To, W1">
                 <w lemma="trauðr" me:msa="xAJ rP gN nS cA sI">
                     <choice>
                         <me:facs>&trot;rau&trot;</me:facs>
@@ -21023,7 +21023,7 @@ ra</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="277" var="a">
+            <para vn="277" var="B1, P3, To, W1">
                 <w lemma="með" me:msa="xAP">
                     <choice>
                         <me:facs>Með</me:facs>
@@ -21107,7 +21107,7 @@ gi</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="278" var="a">
+            <para vn="278" var="B1, P3, To, W1">
                 <w lemma="né" me:msa="xCC">
                     <choice>
                         <me:facs>ne</me:facs>
@@ -21180,7 +21180,7 @@ gi</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="279" var="a">
+            <para vn="279" var="B1, P3, To, W1">
                 <w lemma="lítill" me:msa="xAJ rP gF nS cN sI">
                     <choice>
                         <me:facs>l&inodot;&trot;&inodot;l</me:facs>
@@ -21281,7 +21281,7 @@ gi</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="280" var="a">
+            <para vn="280" var="B1, P3, To, W1">
                 <w lemma="sá" me:msa="xDD gN nS cD">
                     <choice>
                         <me:facs>þu&inodot;</me:facs>
@@ -21333,7 +21333,7 @@ gi</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="281" var="a">
+            <para vn="281" var="B1, P3, To, W1">
                 <w lemma="ek" me:msa="xPE p1 nS cN">
                     <choice>
                         <me:facs>&Eunc;c</me:facs>
@@ -21455,7 +21455,7 @@ gi</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="282" var="a">
+            <para vn="282" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -21520,7 +21520,7 @@ na</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="283" var="a">
+            <para vn="283" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -21637,7 +21637,7 @@ na</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="284" var="a">
+            <para vn="284" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -21776,7 +21776,7 @@ na</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="286" var="a">
+            <para vn="286" var="B1, P3, To, W1">
                 <w lemma="senda" me:msa="xVB fF tPT mIN p3 nS vA">
                     <choice>
                         <me:facs>&slong;en&drot;&inodot;</me:facs>
@@ -21851,7 +21851,7 @@ na</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="287" var="a">
+            <para vn="287" var="B1, P3, To, W1">
                 <seg type="nb">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
@@ -21957,7 +21957,7 @@ na</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="288" var="a">
+            <para vn="288" var="B1, P3, To, W1">
                 <seg type="nb">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
@@ -22036,7 +22036,7 @@ na</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="289" var="a">
+            <para vn="289" var="B1, P3, To, W1">
                 <choice>
                     <sic>
                         <w lemma="ok" me:msa="xCC">
@@ -22252,7 +22252,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="291" var="a">
+            <para vn="291" var="B1, P3, To, W1">
                 <w lemma="eigi" me:msa="xAV rP">
                     <choice>
                         <me:facs>æ&inodot;g&inodot;</me:facs>
@@ -22341,7 +22341,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="292" var="a">
+            <para vn="292" var="B1, P3, To, W1">
                 <w lemma="ek" me:msa="xPE p1 nS cN">
                     <choice>
                         <me:facs>&Eunc;c</me:facs>
@@ -22421,7 +22421,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="293" var="a">
+            <para vn="293" var="B1, P3, To, W1">
                 <w lemma="því at" me:msa="xCS">
                     <choice>
                         <me:facs>þu&inodot;a&trot;</me:facs>
@@ -22473,7 +22473,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="294, 295" var="a">
+            <para vn="294, 295" var="B1, P3, To, W1">
                 <w lemma="þó at" me:msa="xCS">
                     <choice>
                         <me:facs>þoa&trot;</me:facs>
@@ -22517,7 +22517,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="296" var="a">
+            <para vn="296" var="B1, P3, To, W1">
                 <lb ed="ms" n="11"/>
                 <w lemma="ok" me:msa="xCC">
                     <choice>
@@ -22594,7 +22594,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="297" var="a">
+            <para vn="297" var="B1, P3, To, W1">
                 <w lemma="nú" me:msa="xAV rP">
                     <choice>
                         <me:facs>Nu</me:facs>
@@ -22770,7 +22770,7 @@ am</me:dipl>
     <div type="reply">
         <lb ed="ms" n="14"/>
         <p>
-            <para vn="299" var="a">
+            <para vn="299" var="B1, P3, To, W1">
                 <w lemma="annarr" me:msa="xDQ gM nS cN">
                     <choice>
                         <me:facs>
@@ -22886,7 +22886,7 @@ am</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="300" var="a">
+            <para vn="300" var="B1, P3, To, W1">
                 <del>
                     <w lemma="en" me:msa="xCC">
                         <choice>
@@ -22965,7 +22965,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="301" var="a">
+            <para vn="301" var="B1, P3, To, W1">
                 <w lemma="hann" me:msa="xPE p3 gM nS cN">
                     <choice>
                         <me:facs>han<am>&bar;</am>
@@ -23060,7 +23060,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="302" var="a">
+            <para vn="302" var="B1, P3, To, W1">
                 <w lemma="en" me:msa="xCC">
                     <choice>
                         <me:facs>en</me:facs>
@@ -23192,7 +23192,7 @@ am</me:dipl>
                     </w>
                 </seg>
             </para>
-            <para vn="304" var="a">
+            <para vn="304" var="B1, P3, To, W1">
                 <lb ed="ms" n="19"/>
                 <w lemma="sá" me:msa="xDD gN nS cD">
                     <choice>
@@ -23326,7 +23326,7 @@ am</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="305" var="a">
+            <para vn="305" var="B1, P3, To, W1">
                 <w lemma="at" me:msa="xCS">
                     <choice>
                         <me:facs>a&trot;</me:facs>
@@ -23507,7 +23507,7 @@ ting</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="307" var="a">
+            <para vn="307" var="B1, P3, To, W1">
                 <w lemma="en" me:msa="xCC">
                     <choice>
                         <me:facs>en</me:facs>
@@ -23610,7 +23610,7 @@ ting</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="308" var="a">
+            <para vn="308" var="B1, P3, To, W1">
                 <w lemma="því at" me:msa="xCS">
                     <choice>
                         <me:facs>þu&inodot;a&trot;</me:facs>
@@ -23655,7 +23655,7 @@ ting</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="309" var="a">
+            <para vn="309" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -23759,7 +23759,7 @@ nan</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="311" var="a">
+            <para vn="311" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -23822,7 +23822,7 @@ nan</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="312" var="a">
+            <para vn="312" var="B1, P3, To, W1">
                 <w lemma="en" me:msa="xCC">
                     <choice>
                         <me:facs>en</me:facs>
@@ -23873,7 +23873,7 @@ nan</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="312" var="a">
+            <para vn="312" var="B1, P3, To, W1">
                 <lb ed="ms" n="27"/>
                 <w lemma="fara" me:msa="xVB fF tPS mSU p3 nS vA">
                     <choice>
@@ -24034,7 +24034,7 @@ nan</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="314" var="a">
+            <para vn="314" var="B1, P3, To, W1">
                 <w lemma="ef" me:msa="xCS">
                     <choice>
                         <me:facs>e&fins;</me:facs>
@@ -24266,7 +24266,7 @@ nan</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="317" var="a">
+            <para vn="317" var="B1, P3, To, W1">
                 <w lemma="trúa" me:msa="xVB fF tPS mIP p2 nS vA">
                     <choice>
                         <me:facs>&trot;ru</me:facs>
@@ -24339,7 +24339,7 @@ nan</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="318" var="a">
+            <para vn="318" var="B1, P3, To, W1">
                 <w lemma="ef" me:msa="xCS">
                     <choice>
                         <me:facs>e&fins;</me:facs>
@@ -24423,7 +24423,7 @@ nan</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="319" var="a">
+            <para vn="319" var="B1, P3, To, W1">
                 <w lemma="sá" me:msa="xDD gN nS cA">
                     <choice>
                         <me:facs>þa&trot;</me:facs>
@@ -24515,7 +24515,7 @@ nan</me:dipl>
     <div type="reply">
         <lb ed="ms" n="36"/>
         <p>
-            <para vn="321" var="a">
+            <para vn="321" var="B1, P3, To, W1">
                 <w lemma="margr" me:msa="xAJ rP gN nS cA sI">
                     <choice>
                         <me:facs>
@@ -24690,7 +24690,7 @@ mumz</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="323" var="a">
+            <para vn="323" var="B1, P3, To, W1">
                 <w lemma="ek" me:msa="xPE p1 nS cN">
                     <choice>
                         <me:facs>&Eunc;c</me:facs>
@@ -24944,7 +24944,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="326" var="a">
+            <para vn="326" var="B1, P3, To, W1">
                 <w lemma="en" me:msa="xCC">
                     <choice>
                         <me:facs>en</me:facs>
@@ -25023,7 +25023,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="327" var="a">
+            <para vn="327" var="B1, P3, To, W1">
                 <w lemma="nú" me:msa="xAV rP">
                     <choice>
                         <me:facs>Nu</me:facs>
@@ -25081,7 +25081,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="328" var="a">
+            <para vn="328" var="B1, P3, To, W1">
                 <w lemma="þá" me:msa="xAV rP">
                     <choice>
                         <me:facs>þa</me:facs>
@@ -25205,7 +25205,7 @@ mumz</me:dipl>
     <div type="reply">
         <lb ed="ms" n="3" rend="1"/>
         <p>
-            <para vn="329" var="a">
+            <para vn="329" var="B1, P3, To, W1">
                 <w lemma="heðan" me:msa="xAV rP">
                     <choice>
                         <me:facs>
@@ -25326,7 +25326,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="330" var="a">
+            <para vn="330" var="B1, P3, To, W1">
                 <seg type="nb">
                     <w lemma="ok" me:msa="xCC">
                         <choice>
@@ -25391,7 +25391,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="331" var="a">
+            <para vn="331" var="B1, P3, To, W1">
                 <w lemma="með" me:msa="xAP">
                     <choice>
                         <me:facs>með</me:facs>
@@ -25485,7 +25485,7 @@ mumz</me:dipl>
         </p>
         <lb ed="ms" n="7"/>
         <p>
-            <para vn="333" var="a">
+            <para vn="333" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -25692,7 +25692,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="335" var="a">
+            <para vn="335" var="B1, P3, To, W1">
                 <w lemma="l&aeligacute;vísi" me:msa="xNC gF nS cN sI">
                     <choice>
                         <me:facs>l&aeligacute;u&inodot;&slong;&inodot;</me:facs>
@@ -25837,7 +25837,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="337" var="a">
+            <para vn="337" var="B1, P3, To, W1">
                 <w lemma="líta" me:msa="xVB fF tPS mIP p2 nS vA">
                     <choice>
                         <me:facs>lí&trot;</me:facs>
@@ -25892,7 +25892,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="338" var="a">
+            <para vn="338" var="B1, P3, To, W1">
                 <lb ed="ms" n="12"/>
                 <w lemma="at" me:msa="xCS">
                     <choice>
@@ -25963,7 +25963,7 @@ mumz</me:dipl>
     <div type="reply">
         <lb ed="ms" n="13"/>
         <p>
-            <para vn="339" var="a">
+            <para vn="339" var="B1, P3, To, W1">
                 <w lemma="hér" me:msa="xAV rP">
                     <choice>
                         <me:facs>
@@ -26023,7 +26023,7 @@ mumz</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="340" var="a">
+            <para vn="340" var="B1, P3, To, W1">
                 <lb ed="ms" n="14"/>
                 <w lemma="ok" me:msa="xCC">
                     <choice>
@@ -26088,7 +26088,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="341" var="a">
+            <para vn="341" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -26144,7 +26144,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="342" var="a">
+            <para vn="342" var="B1, P3, To, W1">
                 <w lemma="um" me:msa="xAP">
                     <choice>
                         <me:facs>um</me:facs>
@@ -26174,7 +26174,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="342" var="a">
+            <para vn="342" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -26237,7 +26237,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="343" var="a">
+            <para vn="343" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -26323,7 +26323,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="344" var="a">
+            <para vn="344" var="B1, P3, To, W1">
                 <w lemma="Pamphilus" me:msa="xFN">
                     <choice>
                         <me:facs>pamph&inodot;lu&slong;</me:facs>
@@ -26368,7 +26368,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="345" var="a">
+            <para vn="345" var="B1, P3, To, W1">
                 <w lemma="hann" me:msa="xPE p3 gM nS cN">
                     <choice>
                         <me:facs>ha<am>&bar;</am>n</me:facs>
@@ -26410,7 +26410,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="345" var="a">
+            <para vn="345" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -26474,7 +26474,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="346" var="a">
+            <para vn="346" var="B1, P3, To, W1">
                 <w lemma="vitr" me:msa="xAJ rP gM nS cN sI">
                     <choice>
                         <me:facs>&vins;&inodot;&trot;r</me:facs>
@@ -26540,7 +26540,7 @@ mumz</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="347" var="a">
+            <para vn="347" var="B1, P3, To, W1">
                 <w lemma="engi" me:msa="xDQ gM nS cN">
                     <choice>
                         <me:facs>&Eunc;ng&inodot;</me:facs>
@@ -26608,7 +26608,7 @@ maðr</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="348" var="a">
+            <para vn="348" var="B1, P3, To, W1">
                 <w lemma="hann" me:msa="xPE p3 gM nS cG">
                     <choice>
                         <me:facs>han&slong;</me:facs>
@@ -26655,7 +26655,7 @@ maðr</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="349" var="a">
+            <para vn="349" var="B1, P3, To, W1">
                 <w lemma="hann" me:msa="xPE p3 gM nS cN">
                     <choice>
                         <me:facs>han<am>&bar;</am>
@@ -26737,7 +26737,7 @@ maðr</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="350" var="a">
+            <para vn="350" var="B1, P3, To, W1">
                 <w lemma="s&oslashacute;tr" me:msa="xAJ rP gN nS cN sI">
                     <choice>
                         <me:facs>&slong;&ocurl;&trot;&trot;</me:facs>
@@ -26788,7 +26788,7 @@ maðr</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="351" var="a">
+            <para vn="351" var="B1, P3, To, W1">
                 <lb ed="ms" n="24"/>
                 <w lemma="kynfylgja" me:msa="xNC gF nS cN sI">
                     <choice>
@@ -26840,7 +26840,7 @@ maðr</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="352" var="a">
+            <para vn="352" var="B1, P3, To, W1">
                 <w lemma="oft" me:msa="xAV rP">
                     <choice>
                         <me:facs>o&fins;&trot;</me:facs>
@@ -26953,7 +26953,7 @@ maðr</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="353" var="a">
+            <para vn="353" var="B1, P3, To, W1">
                 <w lemma="ek" me:msa="xPE p1 nS cN">
                     <choice>
                         <me:facs>ec</me:facs>
@@ -27007,7 +27007,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="354" var="a">
+            <para vn="354" var="B1, P3, To, W1">
                 <w lemma="kunna" me:msa="xVB fF tPS mIN p3 nS vA">
                     <choice>
                         <me:facs>kan<am>&bar;</am>
@@ -27089,7 +27089,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="355" var="a">
+            <para vn="355" var="B1, P3, To, W1">
                 <w lemma="vita" me:msa="xVB fF tPS mIP p2 nS vA">
                     <choice>
                         <me:facs>&Vins;&inodot;&trot;</me:facs>
@@ -27171,7 +27171,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="356" var="a">
+            <para vn="356" var="B1, P3, To, W1">
                 <w lemma="en" me:msa="xCC">
                     <choice>
                         <me:facs>en</me:facs>
@@ -27222,7 +27222,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="357" var="a">
+            <para vn="357" var="B1, P3, To, W1">
                 <w lemma="Pamphilus" me:msa="xFN">
                     <choice>
                         <me:facs>Pamph&inodot;lu&slong;</me:facs>
@@ -27297,7 +27297,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="358" var="a">
+            <para vn="358" var="B1, P3, To, W1">
                 <w lemma="maðr" me:msa="xNC gM nP cN sI">
                     <choice>
                         <me:facs>me<am>&bar;</am>n</me:facs>
@@ -27356,7 +27356,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="359" var="a">
+            <para vn="359" var="B1, P3, To, W1">
                 <w lemma="sinn" me:msa="xDP gF nS cA">
                     <choice>
                         <me:facs>&slong;&inodot;na</me:facs>
@@ -27453,7 +27453,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="360" var="a">
+            <para vn="360" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -27518,7 +27518,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="361" var="a">
+            <para vn="361" var="B1, P3, To, W1">
                 <w lemma="hann" me:msa="xPE p3 gM nS cN">
                     <choice>
                         <me:facs>ha<am>&bar;</am>n</me:facs>
@@ -27611,7 +27611,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="362" var="a">
+            <para vn="362" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -27669,7 +27669,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="363" var="a">
+            <para vn="363" var="B1, P3, To, W1">
                 <w lemma="sá" me:msa="xDD gN nS cA">
                     <choice>
                         <me:facs>þa&trot;</me:facs>
@@ -27786,7 +27786,7 @@ liði</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="364" var="a">
+            <para vn="364" var="B1, P3, To, W1">
                 <lb ed="ms" n="37"/>
                 <w lemma="ok" me:msa="xCC">
                     <choice>
@@ -27993,7 +27993,7 @@ liði</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="367" var="a">
+            <para vn="367" var="B1, P3, To, W1">
                 <lb ed="ms" n="39"/>
                 <w lemma="kyn" me:msa="xNC gN nS cN sI">
                     <choice>
@@ -28193,7 +28193,7 @@ ma</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="371" var="a">
+            <para vn="371" var="B1, P3, To, W1">
                 <w lemma="mikill" me:msa="xAJ rP gM nS cN sI">
                     <choice>
                         <me:facs>mykyll</me:facs>
@@ -28253,7 +28253,7 @@ ma</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="372" var="a">
+            <para vn="372" var="B1, P3, To, W1">
                 <w lemma="lítill" me:msa="xAJ rP gN nS cN sI">
                     <choice>
                         <me:facs>l&inodot;&trot;&inodot;&trot;</me:facs>
@@ -28307,7 +28307,7 @@ ma</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="373" var="a">
+            <para vn="373" var="B1, P3, To, W1">
                 <w lemma="hugr" me:msa="xNC gM nS cN sI">
                     <choice>
                         <me:facs>hugr</me:facs>
@@ -28581,7 +28581,7 @@ ma</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="376, 377, 378, 379, 380" var="a">
+            <para vn="376, 377, 378, 379, 380" var="B1, P3, To, W1">
                 <w lemma="þá" me:msa="xAV rP">
                     <choice>
                         <me:facs>þa</me:facs>
@@ -29242,7 +29242,7 @@ ma</me:dipl>
     <div type="reply">
         <lb ed="ms" n="14"/>
         <p>
-            <para vn="381" var="a">
+            <para vn="381" var="B1, P3, To, W1">
                 <w lemma="eigi" me:msa="xAV rP">
                     <choice>
                         <me:facs>
@@ -29306,7 +29306,7 @@ ma</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="382" var="a">
+            <para vn="382" var="B1, P3, To, W1">
                 <w lemma="en" me:msa="xCC">
                     <choice>
                         <me:facs>en</me:facs>
@@ -29358,7 +29358,7 @@ ma</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="382, 383" var="a">
+            <para vn="382, 383" var="B1, P3, To, W1">
                 <w lemma="sá" me:msa="xDD gN nS cA">
                     <choice>
                         <me:facs>þa&trot;</me:facs>
@@ -29403,7 +29403,7 @@ ma</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="383" var="a">
+            <para vn="383" var="B1, P3, To, W1">
                 <w lemma="hvat" me:msa="xPQ gN nS cD">
                     <choice>
                         <me:facs>hu&inodot;</me:facs>
@@ -29447,7 +29447,7 @@ ma</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="384" var="a">
+            <para vn="384" var="B1, P3, To, W1">
                 <w lemma="senda" me:msa="xVB fF tPT mIN p3 nS vA">
                     <choice>
                         <me:facs>&slong;en&drot;&inodot;</me:facs>
@@ -29557,7 +29557,7 @@ buna</me:dipl>
     <div type="reply">
         <lb ed="ms" n="18" rend="1"/>
         <p>
-            <para vn="385" var="a">
+            <para vn="385" var="B1, P3, To, W1">
                 <w lemma="illska" me:msa="xNC gF nS cN sI">
                     <choice>
                         <me:facs>
@@ -29618,7 +29618,7 @@ buna</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="386" var="a">
+            <para vn="386" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -29819,7 +29819,7 @@ buna</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="388" var="a">
+            <para vn="388" var="B1, P3, To, W1">
                 <w lemma="því at" me:msa="xCS">
                     <choice>
                         <me:facs>þu&inodot;a&trot;</me:facs>
@@ -29906,7 +29906,7 @@ buna</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="389" var="a">
+            <para vn="389" var="B1, P3, To, W1">
                 <w lemma="svá" me:msa="xAV rP">
                     <choice>
                         <me:facs>Sua</me:facs>
@@ -30161,7 +30161,7 @@ buna</me:dipl>
                     </choice>
                 </w>
             </para>
-            <para vn="392" var="a">
+            <para vn="392" var="B1, P3, To, W1">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -30233,7 +30233,7 @@ laú&slong;t</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="393" var="a">
+            <para vn="393" var="B1, P3, To, W1">
                 <w lemma="kyng&oogon;fgaðr" me:msa="xAJ rP gM nS cN sI">
                     <choice>
                         <me:facs>kyngo&fins;guðr</me:facs>
@@ -30302,7 +30302,7 @@ laú&slong;t</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="394" var="a">
+            <para vn="394" var="B1, P3, To, W1">
                 <w lemma="fyrirmaðr" me:msa="xNC gM nP cN sI">
                     <choice>
                         <me:facs>&fins;&inodot;r&inodot;r<lb n="27"/>
@@ -30351,7 +30351,7 @@ men<ex>n</ex>
             </choice>
         </pc>
     </para>
-    <para vn="395" var="a">
+    <para vn="395" var="B1, P3, To, W1">
         <w lemma="hann" me:msa="xPE p3 gM nS cN">
             <choice>
                 <me:facs>han<am>&bar;</am>
@@ -30433,7 +30433,7 @@ men<ex>n</ex>
             </choice>
         </pc>
     </para>
-    <para vn="396" var="a">
+    <para vn="396" var="B1, P3, To, W1">
         <w lemma="fagr" me:msa="xAJ rP gN nS cN sI">
             <choice>
                 <me:facs>&fins;agr&trot;</me:facs>
@@ -30471,7 +30471,7 @@ men<ex>n</ex>
             </choice>
         </pc>
     </para>
-    <para vn="397" var="a">
+    <para vn="397" var="B1, P3, To, W1">
         <w lemma="ok" me:msa="xCC">
             <choice>
                 <me:facs>
@@ -30572,7 +30572,7 @@ men<ex>n</ex>
             </choice>
         </pc>
     </para>
-    <para vn="398" var="a">
+    <para vn="398" var="B1, P3, To, W1">
         <w lemma="ok" me:msa="xCC">
             <choice>
                 <me:facs>
@@ -30647,7 +30647,7 @@ men<ex>n</ex>
             </choice>
         </pc>
     </para>
-    <para vn="399" var="a">
+    <para vn="399" var="B1, P3, To, W1">
         <lb ed="ms" n="31"/>
         <w lemma="ok" me:msa="xCC">
             <choice>
@@ -30769,7 +30769,7 @@ men<ex>n</ex>
             </choice>
         </pc>
     </para>
-    <para vn="400" var="a">
+    <para vn="400" var="B1, P3, To, W1">
         <w lemma="engi" me:msa="xDQ gN nS cA">
             <choice>
                 <me:facs>eck&inodot;</me:facs>
@@ -30947,7 +30947,7 @@ men<ex>n</ex>
             </choice>
         </w>
     </para>
-    <para vn="402" var="a">
+    <para vn="402" var="B1, P3, To, W1">
         <lb ed="ms" n="35"/>
         <w lemma="ok" me:msa="xCC">
             <choice>
@@ -31104,7 +31104,7 @@ men<ex>n</ex>
             </choice>
         </pc>
     </para>
-    <para vn="404" var="a">
+    <para vn="404" var="B1, P3, To, W1">
         <lb ed="ms" n="37"/>
         <w lemma="þá" me:msa="xAV rP">
             <choice>
@@ -31206,7 +31206,7 @@ men<ex>n</ex>
 <div type="reply">
     <lb ed="ms" n="38" rend="1"/>
 <p>
-<para vn="405" var="a">
+<para vn="405" var="B1, P3, To, W1">
     <w lemma="sá" me:msa="xDD gN nS cN">
         <choice>
             <me:facs>
@@ -31290,7 +31290,7 @@ ræði</me:dipl>
         </choice>
     </w>
 </para>
-<para vn="406" var="a">
+<para vn="406" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -31428,7 +31428,7 @@ tura</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="408" var="a">
+<para vn="408" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -31500,7 +31500,7 @@ tura</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="409" var="a">
+<para vn="409" var="B1, P3, To, W1">
     <w lemma="losti" me:msa="xNC gM nS cN sI">
         <choice>
             <me:facs>lo&slong;&trot;&inodot;</me:facs>
@@ -31537,7 +31537,7 @@ tura</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="410" var="a">
+<para vn="410" var="B1, P3, To, W1">
     <lb ed="ms" n="2"/>
     <w lemma="ok" me:msa="xCC">
         <choice>
@@ -31621,7 +31621,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="411" var="a">
+<para vn="411" var="B1, P3, To, W1">
     <w lemma="engi" me:msa="xDQ gM nS cN">
         <choice>
             <me:facs>eng&inodot;</me:facs>
@@ -31690,7 +31690,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="412" var="a">
+<para vn="412" var="B1, P3, To, W1">
     <lb ed="ms" n="4"/>
     <w lemma="nema" me:msa="xCS">
         <choice>
@@ -31785,7 +31785,7 @@ l&aeligacute;ik</me:dipl>
 <div type="reply">
     <lb ed="ms" n="5" rend="1"/>
 <p>
-<para vn="413" var="a">
+<para vn="413" var="B1, P3, To, W1">
     <w lemma="með" me:msa="xAP">
         <choice>
             <me:facs>
@@ -31848,7 +31848,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="414" var="a">
+<para vn="414" var="B1, P3, To, W1">
     <w lemma="því at" me:msa="xCS">
         <choice>
             <me:facs>þu&inodot;a&trot;</me:facs>
@@ -31916,7 +31916,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="415" var="a">
+<para vn="415" var="B1, P3, To, W1">
     <w lemma="grimmr" me:msa="xAJ rP gN nP cN sI">
         <choice>
             <me:facs>Gr&inodot;<am>&bar;</am>m</me:facs>
@@ -31982,7 +31982,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="416" var="a">
+<para vn="416" var="B1, P3, To, W1">
     <w lemma="sá" me:msa="xDD gN nP cA">
         <choice>
             <me:facs>þau</me:facs>
@@ -32047,7 +32047,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="417" var="a">
+<para vn="417" var="B1, P3, To, W1">
     <lb ed="ms" n="9"/>
     <w lemma="oft" me:msa="xAV rP">
         <choice>
@@ -32113,7 +32113,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="418" var="a">
+<para vn="418" var="B1, P3, To, W1">
     <lb ed="ms" n="10"/>
     <w lemma="eta" me:msa="xVB fP tPS vA gF nS cN sD">
         <choice>
@@ -32172,7 +32172,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="419" var="a">
+<para vn="419" var="B1, P3, To, W1">
     <w lemma="játa" me:msa="xVB fI tPS vA">
         <choice>
             <me:facs>&inodot;a&trot;&trot;a</me:facs>
@@ -32287,7 +32287,7 @@ l&aeligacute;ik</me:dipl>
 <div type="reply">
     <lb ed="ms" n="12" rend="1"/>
 <p>
-<para vn="421" var="a">
+<para vn="421" var="B1, P3, To, W1">
     <w lemma="allmj&oogon;k" me:msa="xAV rP">
         <choice>
             <me:facs>
@@ -32355,7 +32355,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="422" var="a">
+<para vn="422" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -32483,7 +32483,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="423" var="a">
+<para vn="423" var="B1, P3, To, W1">
     <w lemma="ek" me:msa="xPE p1 nS cN">
         <choice>
             <me:facs>ec</me:facs>
@@ -32560,7 +32560,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="424" var="a">
+<para vn="424" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -32643,7 +32643,7 @@ l&aeligacute;ik</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="425" var="a">
+<para vn="425" var="B1, P3, To, W1">
     <w lemma="því at" me:msa="xCS">
         <choice>
             <me:facs>þu&inodot;a&trot;</me:facs>
@@ -32697,7 +32697,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="426" var="a">
+<para vn="426" var="B1, P3, To, W1">
     <seg type="nb">
         <w lemma="ok" me:msa="xCC">
             <choice>
@@ -32783,7 +32783,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="427" var="a">
+<para vn="427" var="B1, P3, To, W1">
     <w lemma="en" me:msa="xCC">
         <choice>
             <me:facs>en</me:facs>
@@ -32884,7 +32884,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="428" var="a">
+<para vn="428" var="B1, P3, To, W1">
     <w lemma="þá" me:msa="xAV rP">
         <choice>
             <me:facs>þa</me:facs>
@@ -32991,7 +32991,7 @@ veniu</me:dipl>
 <div type="reply">
     <lb ed="ms" n="21"/>
 <p>
-<para vn="429" var="a">
+<para vn="429" var="B1, P3, To, W1">
     <w lemma="efa" me:msa="xVB fF tPS mIN p3 nS vR">
         <choice>
             <me:facs>
@@ -33080,7 +33080,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="431" var="a">
+<para vn="431" var="B1, P3, To, W1">
     <w lemma="en" me:msa="xCC">
         <choice>
             <me:facs>en</me:facs>
@@ -33181,7 +33181,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="432" var="a">
+<para vn="432" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -33288,7 +33288,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="434" var="a">
+<para vn="434" var="B1, P3, To, W1">
     <w lemma="en" me:msa="xCC">
         <choice>
             <me:facs>en</me:facs>
@@ -33356,7 +33356,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="435" var="a">
+<para vn="435" var="B1, P3, To, W1">
     <w lemma="en" me:msa="xCC">
         <choice>
             <me:facs>en</me:facs>
@@ -33546,7 +33546,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="438" var="a">
+<para vn="438" var="B1, P3, To, W1">
     <w lemma="en" me:msa="xCC">
         <choice>
             <me:facs>en</me:facs>
@@ -33633,7 +33633,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="439" var="a">
+<para vn="439" var="B1, P3, To, W1">
     <w lemma="en" me:msa="xCC">
         <choice>
             <me:facs>en</me:facs>
@@ -33749,7 +33749,7 @@ veniu</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="440" var="a">
+<para vn="440" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -33870,7 +33870,7 @@ veniu</me:dipl>
 <div type="reply">
     <lb ed="ms" n="32"/>
 <p>
-<para vn="442" var="a">
+<para vn="442" var="B1, P3, To, W1">
     <w lemma="ást" me:msa="xNC gF nS cN sI">
         <choice>
             <me:facs>
@@ -34214,7 +34214,7 @@ orð</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="446" var="a">
+<para vn="446" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -34293,7 +34293,7 @@ orð</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="447" var="a">
+<para vn="447" var="B1, P3, To, W1">
     <w lemma="víss" me:msa="xAJ rP gN nS cA sI">
         <choice>
             <me:facs>&vins;í&slong;&trot;</me:facs>
@@ -34447,7 +34447,7 @@ na</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="449" var="a">
+<para vn="449" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -34573,7 +34573,7 @@ na</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="450" var="a">
+<para vn="450" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -34709,7 +34709,7 @@ na</me:dipl>
     <cb ed="ms" n="B"/>
 <lb ed="ms" n="1"/>
 <p>
-<para vn="451" var="a">
+<para vn="451" var="B1, P3, To, W1">
     <w lemma="?" me:msa="xUA">
         <choice>
             <me:facs>
@@ -34818,7 +34818,7 @@ gan</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="453" var="a">
+<para vn="453" var="B1, P3, To, W1">
     <w lemma="?" me:msa="xUA">
         <choice>
             <me:facs>&vins;æ&inodot;&slong;&slong;</me:facs>
@@ -34909,7 +34909,7 @@ gan</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="454" var="a">
+<para vn="454" var="B1, P3, To, W1">
     <w lemma="hverr" me:msa="xDQ gM nS cN">
         <choice>
             <me:facs>huerr</me:facs>
@@ -35130,7 +35130,7 @@ um</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="455" var="a">
+<para vn="455" var="B1, P3, To, W1">
     <w lemma="ván" me:msa="xNC gF nS cN sI">
         <choice>
             <me:facs>&vins;ón</me:facs>
@@ -35235,7 +35235,7 @@ um</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="456" var="a">
+<para vn="456" var="B1, P3, To, W1">
     <w lemma="nú" me:msa="xAV rP">
         <choice>
             <me:facs>nu</me:facs>
@@ -35398,7 +35398,7 @@ um</me:dipl>
         </choice>
     </w>
 </para>
-<para vn="458" var="a">
+<para vn="458" var="B1, P3, To, W1">
     <w lemma="ok" me:msa="xCC">
         <choice>
             <me:facs>
@@ -35531,7 +35531,7 @@ um</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="460" var="a">
+<para vn="460" var="B1, P3, To, W1">
     <w lemma="einnsaman" me:msa="xAJ rP gF nS cN sI">
         <choice>
             <me:facs>Æ&inodot;n&slong;aman</me:facs>
@@ -35710,7 +35710,7 @@ um</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="462" var="a">
+<para vn="462" var="B1, P3, To, W1">
     <w lemma="sá" me:msa="xDD gN nS cD">
         <choice>
             <me:facs>þuí</me:facs>
@@ -35818,7 +35818,7 @@ ta</me:dipl>
 <div type="reply">
     <lb ed="ms" n="15"/>
 <p>
-<para vn="463" var="a">
+<para vn="463" var="B1, P3, To, W1">
     <w lemma="heyra" me:msa="xVB fF tPS mIP p2 nS vA">
         <choice>
             <me:facs>
@@ -35907,7 +35907,7 @@ ta</me:dipl>
         </choice>
     </pc>
     </para>
-    <para vn="464" var="a">
+    <para vn="464" var="B1, P3, To, W1">
         <w lemma="þinn" me:msa="xDP gF nS cN">
             <choice>
                 <me:facs>þín</me:facs>
@@ -35961,7 +35961,7 @@ bun</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="465" var="a">
+    <para vn="465" var="B1, P3, To, W1">
         <w lemma="þú" me:msa="xPE p2 nS cN">
             <choice>
                 <me:facs>þu</me:facs>
@@ -36014,7 +36014,7 @@ bun</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="466" var="a">
+    <para vn="466" var="B1, P3, To, W1">
         <w lemma="ok" me:msa="xCC">
             <choice>
                 <me:facs>
@@ -36161,7 +36161,7 @@ bun</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="469" var="a">
+    <para vn="469" var="B1, P3, To, W1">
         <w lemma="íðn" me:msa="xNC gF nS cN sI">
             <choice>
                 <me:facs>&inodot;ðn</me:facs>
@@ -36219,7 +36219,7 @@ bun</me:dipl>
             </choice>
         </w>
     </para>
-    <para vn="470" var="a">
+    <para vn="470" var="B1, P3, To, W1">
         <w lemma="enn" me:msa="xAV rP">
             <choice>
                 <me:facs>en<am>&bar;</am>
@@ -36346,7 +36346,7 @@ bun</me:dipl>
 <div type="reply">
     <lb ed="ms" n="22"/>
 <p>
-    <para vn="471" var="a">
+    <para vn="471" var="B1, P3, To, W1">
         <w lemma="?" me:msa="xUA">
             <choice>
                 <me:facs>
@@ -36540,7 +36540,7 @@ bun</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="473" var="a">
+    <para vn="473" var="B1, P3, To, W1">
         <w lemma="eigi" me:msa="xAV rP">
             <choice>
                 <me:facs>æ&inodot;g&inodot;</me:facs>
@@ -36620,7 +36620,7 @@ bun</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="474" var="a">
+    <para vn="474" var="B1, P3, To, W1">
         <w lemma="synd" me:msa="xNC gF nS cN sI">            <!-- lemma corr. ex synð -->
             <choice>
                 <me:facs>Syn&drot;</me:facs>
@@ -36679,7 +36679,7 @@ bun</me:dipl>
             </choice>
         </w>
     </para>
-    <para vn="475" var="a">
+    <para vn="475" var="B1, P3, To, W1">
         <pc>
             <choice>
                 <me:facs>.</me:facs>
@@ -36761,7 +36761,7 @@ gi&slong;</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="476" var="a">
+    <para vn="476" var="B1, P3, To, W1">
         <w lemma="ok" me:msa="xCC">
             <choice>
                 <me:facs>
@@ -37014,7 +37014,7 @@ gi&slong;</me:dipl>
 <div type="reply">
     <lb ed="ms" n="30" rend="1"/>
 <p>
-    <para vn="479" var="a">
+    <para vn="479" var="B1, P3, To, W1">
         <w lemma="oft" me:msa="xAV rP">
             <choice>
                 <me:facs>
@@ -37139,7 +37139,7 @@ gi&slong;</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="481" var="a">
+    <para vn="481" var="B1, P3, To, W1">
         <lb ed="ms" n="32"/>
         <w lemma="ok" me:msa="xCC">
             <choice>
@@ -37319,7 +37319,7 @@ gi&slong;</me:dipl>
 </p>
 <lb ed="ms" n="34"/>
 <p>
-    <para vn="483" var="a">
+    <para vn="483" var="B1, P3, To, W1">
         <w lemma="andvarpa" me:msa="xVB fF tPS mIN p2 nS vA">
             <choice>
                 <me:facs>
@@ -37404,7 +37404,7 @@ gi&slong;</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="484" var="a">
+    <para vn="484" var="B1, P3, To, W1">
         <w lemma="því at" me:msa="xCS">
             <choice>
                 <me:facs>þu&inodot;a&trot;</me:facs>
@@ -37479,7 +37479,7 @@ gi&slong;</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="485" var="a">
+    <para vn="485" var="B1, P3, To, W1">
         <w lemma="Galathea" me:msa="xFN">
             <choice>
                 <me:facs>&gscap;ala&trot;hea</me:facs>
@@ -37619,7 +37619,7 @@ gi&slong;</me:dipl>
 <div type="reply">
     <lb ed="ms" n="38"/>
 <p>
-    <para vn="487, 488" var="a">
+    <para vn="487, 488" var="B1, P3, To, W1">
         <w lemma="svá" me:msa="xAV rP">
             <choice>
                 <me:facs>
@@ -37768,7 +37768,7 @@ gi&slong;</me:dipl>
         </w>
         <lb ed="ms" n="40"/>
     </para>
-    <para vn="489" var="a">
+    <para vn="489" var="B1, P3, To, W1">
         <w lemma="svá" me:msa="xAV rP">
             <choice>
                 <me:facs>sua</me:facs>
@@ -37850,7 +37850,7 @@ gi&slong;</me:dipl>
             </choice>
         </pc>
     </para>
-    <para vn="490" var="a">
+    <para vn="490" var="B1, P3, To, W1">
         <w lemma="at" me:msa="xCS">
             <choice>
                 <me:facs>a&trot;</me:facs>

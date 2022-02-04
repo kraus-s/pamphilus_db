@@ -193,15 +193,44 @@ def latin_neofyier(infile):
         updog = {key: msID}
         edgeHelperDict2.update(updog)
         nodeDF = nodeDF.append({'NodeID': f"'{msID}'",
-                                'NodeLabels': 'E18_Physical_Thing',
+                                'NodeLabels': 'E22_Human_Made_Object',
                                 'NodeProps': f"Signature: '{value}', Abbreviation: '{key}'"},
                                 ignore_index=True)
     for key, value in latDict.items():
         count1 = 0
         count2 = 1
         print(f"Now processing manuscript {key}")
+        voNorm = ""
+        voDipl = ""
+        notFirst = False
         for index, row in value.iterrows():
             words = row['Word'].split()
+            nodeDF = nodeDF.append({
+                                'NodeID': f"'v{key}-{row['Verse']}'",
+                                'NodeLabels': 'ZZ1_Verse', 
+                                'NodeProps': f"VerseDipl: '{row['Verse']}', VerseNorm: '{index}', inMS: '{key}'"},
+                                ignore_index=True)
+            edgeDF = edgeDF.append({'FromNode': f"'v{key}-{row['Verse']}'",
+                            'ToNode': f"'{edgeHelperDict2[key]}'",
+                            'EdgeLabels': 'ZZ3_VersinMS',
+                            'HRF': f"{key} - {row['Verse']} to MS {key}"},
+                            ignore_index=True)
+            if notFirst:
+                if notFirst:
+                    edgeDF = edgeDF.append({'FromNode': f"'v{key}-{voDipl}'",
+                                            'ToNode': f"'v{key}-{row['Verse']}'",
+                                            'EdgeLabels': 'vNext_dipl',
+                                            'HRF': f"{key} - Verse {voDipl} to next Verse {row['Verse']}"},
+                                            ignore_index=True)
+                    edgeDF = edgeDF.append({'FromNode': f"'v{key}-{voNorm}'",
+                                            'ToNode': f"'v{key}-{index}'",
+                                            'EdgeLabels': 'vNext_norm',
+                                            'HRF': f"{key} - Verse {voDipl} to next Verse {row['Verse']}"},
+                                            ignore_index=True)
+
+            notFirst = True
+            voNorm = index
+            voDipl = row['Verse']
             for word in words:
                 nodeDF = nodeDF.append({
                                 'NodeID': f"'{key}-{count2}'",
@@ -211,6 +240,11 @@ def latin_neofyier(infile):
                 edgeDF = edgeDF.append({'FromNode': f"'{key}-{count2}'",
                             'ToNode': f"'{edgeHelperDict2[key]}'",
                             'EdgeLabels': 'P56_Is_Found_On',
+                            'HRF': f"{key} - {word} to MS {key}"},
+                            ignore_index=True)
+                edgeDF = edgeDF.append({'FromNode': f"'{key}-{count2}'",
+                            'ToNode': f"'v{key}-{row['Verse']}'",
+                            'EdgeLabels': 'ZZ2_inVerse',
                             'HRF': f"{key} - {word} to MS {key}"},
                             ignore_index=True)
                 if count1 > 0:

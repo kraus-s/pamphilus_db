@@ -6,3 +6,7 @@ networkx
 pyvis
 lxml
 bs4
+numpy
+st-annotated-text
+matplotlib
+openpyxl

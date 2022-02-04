@@ -1,3 +1,4 @@
+from typing import Tuple
 from bs4 import BeautifulSoup
 from lxml import etree
 import os
@@ -271,24 +272,74 @@ def para_verse_sorter(inDF: pd.DataFrame) -> pd.DataFrame:
     return bamboozled
 
 
-def para_neofiyer(infile: str) -> pd.DataFrame:
+def para_neofiyer(infile: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
     paraDF = paramenotaParse(infile)
     nodeDF = pd.DataFrame(columns=['NodeID', 'NodeLabels', 'NodeProps'])
     edgeDF = pd.DataFrame(columns=['FromNode', 'ToNode', 'EdgeLabels', 'EdgeProps', 'HRF'])
+    nodeDF = nodeDF.append({'NodeID': "'DG4-7'",
+                                'NodeLabels': 'E22_Human_Made_Object',
+                                'NodeProps': "Signature: 'De La Gardie 4-7', Abbreviation: 'DG4-7'"},
+                                ignore_index=True)
     count1 = 0
     count2 = 1
     key = "DG4-7"
-    edgeHelperDict2 = {"DG4-7": "De-La-Gardie-4-7"}
+    edgeHelperDict2 = {"DG4-7": "De La Gardie 4-7"}
+    currV = ""
+    notFirst = False
     for index, row in paraDF.iterrows():
         nodeDF = nodeDF.append({
                         'NodeID': f"'{key}-{count2}'",
                         'NodeLabels': 'E33_Linguistic_Object', 
-                        'NodeProps': f"Normalized: '{row['Normalized']}', Verse: '{row['Verse']}', inMS: '{key}', pos: '{key}-{count2}', lemma: '{row['Lemma']}', paraMS: '{row['Variant']}', paraVerse: '{row['Verse']}'"},
+                        'NodeProps': f"Normalized: '{row['Normalized']}', Verse: '{row['Verse']}', inMS: '{key}', pos: '{key}-{count2}', lemma: '{row['Lemma']}', paraMS: '{row['Variant']}', paraVerse: '{row['Verse']}', VerseNorm: '{row['Verse']}'"},
                         ignore_index=True)
+        if not currV == row['Verse']:
+            if notFirst:
+                edgeDF = edgeDF.append({'FromNode': f"'v{key}-{currV}'",
+                                        'ToNode': f"'v{key}-{row['Verse']}'",
+                                        'EdgeLabels': 'vNext',
+                                        'HRF': f"{key} - Verse {currV} to next Verse {row['Verse']}"},
+                                        ignore_index=True)
+            notFirst = True
+            currV = row['Verse']
+            nodeDF = nodeDF.append({
+                                    'NodeID': f"'v{key}-{currV}'",
+                                    'NodeLabels': 'ZZ1_Verse',
+                                    'NodeProps': f"vno: '{currV}', inMS: '{key}'"},
+                                    ignore_index=True)
+            edgeDF = edgeDF.append({'FromNode': f"'v{key}-{currV}'",
+                                    'ToNode': f"'{edgeHelperDict2[key]}'",
+                                    'EdgeLabels': 'ZZ3_VersinMS',
+                                    'HRF': f"{key} - Verse {currV} to MS {key}"},
+                                    ignore_index=True)
+            variants = row['Variant'].split(',')
+            varClean = [x.strip() for x in variants]
+            for i in varClean:
+                if ',' in currV:
+                    indiVs = currV.split(',')
+                    cleanVs = [x.strip() for x in indiVs]
+                    for ii in cleanVs:
+                        edgeDF = edgeDF.append({'FromNode': f"'v{key}-{currV}'",
+                                        'ToNode': f"'v{i}-{ii}'",
+                                        'EdgeLabels': 'ZZ4_VersPara',
+                                        'HRF': f"{key} - Verse {currV} to MS {i}"},
+                                        ignore_index=True)
+                elif i == 'x':
+                    print(f'No parallel to V{currV}')
+                else:
+                    edgeDF = edgeDF.append({'FromNode': f"'v{key}-{currV}'",
+                                        'ToNode': f"'v{i}-{currV}'",
+                                        'EdgeLabels': 'ZZ4_VersPara',
+                                        'HRF': f"{key} - Verse {currV} to MS {i}"},
+                                        ignore_index=True)  
         edgeDF = edgeDF.append({'FromNode': f"'{key}-{count2}'",
                                     'ToNode': f"'{edgeHelperDict2[key]}'",
                                     'EdgeLabels': 'P56_Is_Found_On',
                                     'HRF': f"{key} - {row['Normalized']} to MS {key}"},
+                                    ignore_index=True)
+        edgeDF = edgeDF.append({'FromNode': f"'{key}-{count2}'",
+                                    'ToNode': f"'v{key}-{currV}'",
+                                    'EdgeLabels': 'ZZ2_inVerse',
+                                    'HRF': f"{key} - {row['Normalized']} to Verse {key}"},
                                     ignore_index=True)
         if count1 > 0:
             edgeDF = edgeDF.append({'FromNode': f"'{key}-{count1}'",

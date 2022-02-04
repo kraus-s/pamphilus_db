@@ -1,3 +1,4 @@
+import dis
 from turtle import color
 from neo4j.graph import Node, Relationship
 import networkx as nx
@@ -18,10 +19,17 @@ def draw_graph(nodes: List[Node], edges: List[Relationship]):
             coloringBook.append(node._properties['inMS'])
             displayLabel = node._properties['Normalized']
             displayColor = colorChoice[node._properties['inMS']]
-        elif cleanLabels == "E18_Physical_Thing":
+        elif cleanLabels == "E22_Human_Made_Object":
             coloringBook.append(node._properties['Abbreviation'])
             displayLabel = node._properties['Abbreviation']
             displayColor = colorChoice[node._properties['Abbreviation']]
+        elif cleanLabels == 'ZZ1_Verse':
+            coloringBook.append(node._properties['inMS'])
+            if node._properties['inMS'] in ['B1', 'P3', 'To', 'W1']:
+                displayLabel = node._properties['VerseNorm']
+            else:
+                displayLabel = node._properties['vno']
+            displayColor = colorChoice[node._properties['inMS']]
         G.add_node(node.id, label=displayLabel, color=displayColor, labels=cleanLabels, properties=node._properties)
     for rel in edges:
         G.add_edge(rel.start_node.id, rel.end_node.id, key=rel.id, type=rel.type, properties=rel._properties)
