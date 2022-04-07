@@ -1,0 +1,13 @@
+,A fragment of Konungs skuggsjá,Alexanders saga,"Ór lǽknisbók The fragment is unnamed, but Konráð Gíslason named his edition of the text
+                    Úr læknisbók, which is published in Fire og fyrretyve for en stor deel forhen
+                    utrykte prøver af oldnordisk sprog og literatur (1860)",Pamphilus saga,Völuspá in Codex Regius,Bǿjarlǫg ok Farmannalǫg Magnúss Hákonarsonar | Magnus Lagabøtes bylov og farmannslov,Landslǫg Magnúss Hákonarsonar | Magnus Lagabøtes landslov,The Kringla fragment of Óláfs saga helga
+A fragment of Konungs skuggsjá,0.0,0.9833836367125675,0.9864207505030345,0.94929161304386,0.9866046945228717,0.9369247449332656,0.9270829008110878,0.9743577388668695
+Alexanders saga,0.9833836367125675,0.0,0.9184366739773102,0.8982022841276829,0.9421886157769016,0.9279604928484424,0.939170612619163,0.4466239360502493
+"Ór lǽknisbók The fragment is unnamed, but Konráð Gíslason named his edition of the text
+                    Úr læknisbók, which is published in Fire og fyrretyve for en stor deel forhen
+                    utrykte prøver af oldnordisk sprog og literatur (1860)",0.9864207505030345,0.9184366739773102,0.0,0.9130534497224188,0.9793944826450364,0.9442808588785453,0.9412653365014804,0.8892514511619689
+Pamphilus saga,0.94929161304386,0.8982022841276829,0.9130534497224188,0.0,0.9405190737522788,0.8018340857552755,0.7727955842888179,0.889720291717611
+Völuspá in Codex Regius,0.9866046945228717,0.9421886157769016,0.9793944826450364,0.9405190737522788,0.0,0.9608028376193983,0.9664979392992149,0.9442147890013842
+Bǿjarlǫg ok Farmannalǫg Magnúss Hákonarsonar | Magnus Lagabøtes bylov og farmannslov,0.9369247449332656,0.9279604928484424,0.9442808588785453,0.8018340857552755,0.9608028376193983,0.0,0.17748183161588316,0.9047151015288084
+Landslǫg Magnúss Hákonarsonar | Magnus Lagabøtes landslov,0.9270829008110878,0.939170612619163,0.9412653365014804,0.7727955842888179,0.9664979392992149,0.17748183161588316,0.0,0.9078376327674971
+The Kringla fragment of Óláfs saga helga,0.9743577388668695,0.4466239360502493,0.8892514511619689,0.889720291717611,0.9442147890013842,0.9047151015288084,0.9078376327674971,0.0

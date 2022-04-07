@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			
+			<titleStmt>
+<title>Elegia</title>
+				<author ref="http://viaf.org/viaf/261873309">Henricus Septimellensis<date>fl.1193</date></author>
+</titleStmt>
+<editionStmt>
+				<editor>Print edition by: G. Cremaschi</editor>
+				<respStmt>
+					<resp key="ALIM2_0">esportazione in formato TEI XML livello 0 effettuata da </resp>
+					<name key="EB">EB</name>
+				</respStmt>
+				<respStmt>
+					<resp key="ALIM2_1">Edizione in formato TEI XML, livello ALIM2_1, a cura di </resp>
+					<name key="JC">Jan Ctibor</name>
+				</respStmt>
+			</editionStmt>
+			<extent>
+				<measure quantity="6395" unit="words">Parole: 6395</measure>
+				<measure quantity="35704" unit="characters_without_spaces">Caratteri (spazi esclusi): 35704</measure>
+				<measure quantity="41178" unit="characters_witht_spaces">Caratteri (spazi inclusi): 41178</measure>
+			</extent>
+			
+			<notesStmt>
+				<note>Genere: Poesia lirica</note>
+				<note>Tipo: Fonti letterarie</note>
+				<note>Note: Data di composizione dell&apos;opera: 1193&#13;&#10;Parole: 6557&#13;&#10;Caratteri: 36287&#13;&#10;GM</note>
+				<note>Livello di codifica: 1</note>
+			</notesStmt>
+			
+				<publicationStmt>
+					<monogr>
+						<author>Enrico da Settimello</author>
+						<title level="m">Elegia</title>
+						<editor>G. Cremaschi</editor>
+						<publicationStmt>
+							<publisher>Atlas</publisher>
+							<pubPlace>Bergamo</pubPlace>
+							<date>1949</date>
+							<biblScope unit="page">26-94</biblScope>
+						</publicationStmt>
+					</monogr>
+					<series>
+						<title level="s">Orbis Christianus</title>
+						<biblScope unit="volume">1</biblScope>
+					</series>
+				</publicationStmt>
+<seriesStmt>
+				<idno>HenSep.Elegia</idno>
+				<publisher>ALIM</publisher>
+				<date when="2002-11-25">25/11/2002</date>
+			</seriesStmt>
+<sourceDesc>
+<p></p>
+</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>This text's TEI xml encoding from ALIM (http://it.alim.unisi.it/) was improved for the University of Zurich's <hi>Corpus Corporum</hi> project (www.mlat.uzh.ch) by Jan Ctibor in 2018</p>
+			</projectDesc>
+			<editorialDecl>
+				<normalization>Mediaeval Latin orthography</normalization>
+          </editorialDecl>
+      </encodingDesc>
+ 	  <profileDesc>
+		<creation>
+ 		<date></date>
+  		</creation>
+  	  <langUsage>
+  		<language ident="lat">latin</language>
+  	  </langUsage>
+  	  <textClass>
+  		<keywords>
+ 		 <list>
+ 		  <item></item>
+		  <item></item>
+	  	 </list>
+  		</keywords>
+  		<keywords scheme='genre'>
+  		 <list>
+   			<item></item>
+  		</list>
+  		</keywords>
+  		<keywords scheme='period'>
+ 		 <list>
+   			<item></item>
+  		 </list>
+  		</keywords>
+ 	   </textClass>
+ 	</profileDesc>
+ </teiHeader>
+<text>
+ <body>
+		<pb n="26"/>
+		<div1 n="1">
+			<head>[1]</head>
+ <lg>
+				<l>Quomodo sola sedet probitas! Flet et ingemit, aleph!</l>
+				<l>facta velut vidua que prius uxor erat.</l>
+				<l>Cui de te, fortuna, querar? Cui? Nescio. Quare,</l>
+				<l>perfida, me cogis turpia probra pati?</l>
+				<l n="5">Gentibus obprobrium sum crebraque fabula vulgi;</l>
+				<l>dedecus agnoscit tota platea meum.</l>
+				<l>Me digito monstrant, subsannant dentibus omnes,</l>
+				<l>ut monstrum monstror dedecorosus ego.</l>
+				<l>Mordeor obprobriis: de me mala cantica cantat</l>
+				<l n="10">vulgus, et horrendus sum sibi psalmus ego.</l>
+				<l>Fama per antiphrasin cantat multumque cachinnum</l>
+				<l>de me ludificans impia turba movet.</l>
+				<l>Concutit a tergo michi multa ciconia rostrum,</l>
+				<l>hic aures asini fingit, et ille canem.</l>
+				<l n="15">Turba molendini, grex furni, concio templi</l>
+				<l>in mea facundis vocibus acta sonant.</l>
+				<l>Si me commendet Naso, si musa Maronis,</l>
+				<l>si tuba Lucani, vix bona fama foret.</l>
+				<l>Quem semel horrendis maculis infamia nigrat</l>
+				<l n="20">ad bene tergendum multa laborat aqua.</l>
+				<pb n="28"/>
+				<l>Fata neronizant in me: michi triste prophetant</l>
+				<l>Astra poli, michi dat tristia signa polus.</l>
+				<l>O dolor, o pudor, o gravitas, o tristia fata!</l>
+				<l>Sum miser et nulli sum miserandus ego.</l>
+				<l n="25">O bona prosperitas, ubi nunc es? Nunc mea versa est</l>
+				<l>in luctum cithara, fit lacrimosa lira.</l>
+				<l>O mala dulcedo, subito que sumpta venenas,</l>
+				<l>queve recompensas mellea felle gravi!</l>
+				<l>O felix qui non est usus prosperitate!</l>
+				<l n="30">Nam venit ex sola prosperitate dolor.</l>
+				<l>Non sine felle suo dulcet fortuna nec albet</l>
+				<l>absque nigredine, nec mons sine valle fuit.</l>
+				<l>Cui multum mellis, multum dedit ipsa veneni;</l>
+				<l>mel vomuit primum felleus ille sapor.</l>
+				<l n="35">Sic gravius cadit hic quem format forma gigantis</l>
+				<l>quam nanus cuius parvula forma sedet.</l>
+				<l>Ut plumbum, gravius pluma paleaque lapillus,</l>
+				<l>sic gravius cadit hic qui bona multa tulit.</l>
+				<l>Hic ego, qui fueram satur omni prosperitate,</l>
+				<l n="40">hoc verum fateor omnibus esse modis.</l>
+				<pb n="30"/>
+				<l>Numinis ambiguos vultus deprendo, novercam</l>
+				<l>sentio Fortunam, que modo mater erat.</l>
+				<l>Sum miser et miseri nullus miserans miseretur:</l>
+				<l>in peius veniunt omnia dira michi.</l>
+				<l n="45">Temperat assidue pro me Fortuna venenum,</l>
+				<l>quo sitit illa caput mortificare meum.</l>
+				<l>Nil agit. Infelix, perii! Nequit ergo nocere</l>
+				<l>amplius: extincto vulnera nulla nocent.</l>
+				<l>Heu, quid agam, quid agam? Plorabo. Sufficit istud?</l>
+				<l n="50">Non, quia fata michi deteriora parant.</l>
+				<l>Quid tibi, magne, tuli, quid, Jupiter? Unde nocendi</l>
+				<l>ista sitis? Celo fulmina nulla tuli,</l>
+				<l>Nec petii thalamos Junonis, nec volui, nec</l>
+				<l>seva giganteis fratribus arma dedi.</l>
+				<l n="55">Cur michi, seve, noces? Cur? Cur? Dic. - Nescio. - Nescis?</l>
+				<l>Ergo quid innocuo, Jupiter alte, noces?</l>
+				<l>Hic nimis insanum redolet, caret et Salomone,</l>
+				<l>qui nocet innocuo quique nocere cupit.</l>
+				<l>Nam nimis iratus, nimis superbus et ultra,</l>
+				<l n="60">qui ferit insontem, crimine dante locum.</l>
+				<l>Quid me persequeris igitur? Victoria parva</l>
+				<l>est miserum multis ledere posse malis.</l>
+				<l>Desine. Quid mirum si Davum vincat Achilles</l>
+				<l>et si Tersiten conterat Hector equo?</l>
+				<l n="65">Nam, quotiens miserum probus expugnare laborat,</l>
+				<l>se misero similem nititur esse probus.</l>
+				<l>Ad lacrimas redeo, quarum michi copia, quarum</l>
+				<l>excursus salsis potibus ora bibunt.</l>
+				<l>Est cibus anxietas, lacrime sunt pocula, pena</l>
+				<l n="70">panis, vina dolor, est mihi vita mori.</l>
+				<pb n="32"/>
+				<l>Quod patior, pallor loquitur maciesque figurat;</l>
+				<l>indicat exsanguis turpiter alba cutis;</l>
+				<l>nam facies habitum mentis studiumque fatetur,</l>
+				<l>mensque quod intus agit nuntiat illa foris;</l>
+				<l n="75">internique status liber est et pagina vultus;</l>
+				<l>exterior macies intus amara legit.</l>
+				<l>Heu miser, heu demens, heu cecus! Semina mundi</l>
+				<l>iratos animos in mea fata trahunt:</l>
+				<l>est mihi terra nocens, ignis gravis, unda nociva;</l>
+				<l n="80">aer tristitia perfidiore nocet.</l>
+				<l>Sic mihi septenis nocet impia turba planetis:</l>
+				<l>quilibet in nostra morte planeta furit.</l>
+				<l>Saturnus falcem, fulmen fert Jupiter, arma</l>
+				<l>Mars, sol fervorem, dira venena Venus,</l>
+				<l n="85">Mercurius virgam, cupidas fert Luna sagittas:</l>
+				<l>septem septena concitat arma cohors.</l>
+				<l>Quo fugiam, vel quid faciam? Mors undique claudit,</l>
+				<l>ne fugiam, cunctas imperiosa vias.</l>
+				<l>Ve michi, ve misero, ve prosperitate carenti!</l>
+				<l n="90">Ve cui scire datur quicquid in orbe nocet!</l>
+				<l>Ex quo prima parens vetito ieiunia fregit,</l>
+				<l>nullus in hoc misero tam fuit orbe miser:</l>
+				<l>nec Titius lacerus, refugis nec Tantalus undis,</l>
+				<l>nec male qui rexit lora paterna puer.</l>
+				<l n="95">Orbatus Niobes, Job vermes, sibila Cadmi,</l>
+				<pb n="34"/>
+				<l>hec collata michi prosperitate vigent.</l>
+				<l>Ergo quis infelix patitur peiora? Quis ille</l>
+				<l>Tristanus qui me tristia plura tulit?</l>
+				<l>Obruor oceano, sevisque reverberor undis,</l>
+				<l n="100">nesciet hinc reditum mersa carina suum.</l>
+				<l>Decidit in cautes incauta carina, procellas</l>
+				<l>sustinet innumeras invidiosa ratis.</l>
+				<l>Me si tanta pati natura volebat amara,</l>
+				<l>ponere debuerat perfidiore loco:</l>
+				<l n="105">aut gelida Sithia, nimio vel solis in ortu,</l>
+				<l>aut ubi soligeris concidit ardor equis,</l>
+				<l>aut ubi perfidior quadrangulus orbis habetur,</l>
+				<l>vel quo perpetuum torrida zona calet,</l>
+				<l>aut aliquo peiore loco qui gente vacaret,</l>
+				<l n="110">quo minus obprobrii cognita fama foret.</l>
+				<l>Dulcius est miseris aliena vivere terra</l>
+				<l>quam propria, male qua singula probra patent.</l>
+				<l>Malo meum sciri longinquis dedecus Indis</l>
+				<l>quam quos vicinos efficit ipse locus.</l>
+				<l n="115">Hic inter notos sotios, miser, inter amicos,</l>
+				<l>quod nugor querula fertilitate, premor.</l>
+				<l>Omnibus invideo melioribus: invida semper</l>
+				<l>mens tantum rodi pro meliore solet.</l>
+				<l>Quot sub sole vigent, fateor me tot meliores:</l>
+				<l n="120">sim licet Arturus, qualis habebor ero.</l>
+				<l>Omnibus invideo; nullus michi: mens dolet hinc quod</l>
+				<l>reciproca caret hinc transitione dolor.</l>
+				<l>Nam caret invidia miser, immo miserrimus ille</l>
+				<l>qui nimis omnimoda prosperitate caret.</l>
+				<l n="125">Quid sim, quid fuerim, cuias, ubi, quid vocer, unde</l>
+				<pb n="36"/>
+				<l>natus, homo vel humus nescio, mentis inops.</l>
+				<l>Me domini, sotii noti, quod maius, amici,</l>
+				<l>- pro scelus! - in medio deseruere mari.</l>
+				<l>Dum Zephyrus flabat, multis comitabar amicis;</l>
+				<l n="130">nunc omnes Aquilo, turbine flante, fugat.</l>
+				<l>Ut phylomena canens frondes sonitumque canorum,</l>
+				<l>et nemus et silvas, frigore tacta, fugit,</l>
+				<l>sic, hiemis casus horrendaque nubila vitans,</l>
+				<l>omnis in adversis rebus amicus abest;</l>
+				<l n="135">delicias veris sequitur; sed tempora brume</l>
+				<l>deserit, alato remige, falsus amor.</l>
+				<l>Vultur edax, corvusque niger, presagaque cornix</l>
+				<l>ventris ad ingluviem semper adesse parant.</l>
+				<l>Leccatrix mel musca, lupusque cadavera: sic nunc</l>
+				<l n="140">predam, non homines, gens parat ista sequi.</l>
+				<l>Vilis amicitie species, quam quelibet aura,</l>
+				<l>quam variis variat fluctibus orba dea.</l>
+				<l>Si tales olim Eurialus Nisusque fuissent,</l>
+				<l>non durasset eis ille perhennis amor.</l>
+				<l n="145">Verus amor miserum non dedignatur amicum:</l>
+				<l>vera fides tantum nescit amena sequi.</l>
+				<l>Participat flores et grandem grandinis iram</l>
+				<l>inconcussa fero turbine vera fides.</l>
+				<l>Taliter unanimes loquitur seriptura sodales</l>
+				<l n="150">quos strinxit vero vimine verus amor.</l>
+				<pb n="38"/>
+				<l>Prevalet hoc solo mala sors, quod monstrat amicos,</l>
+				<l>qui bene, qui male; sic monstrat utramque fidem.</l>
+				<l>Ut fornax aurum, navem mare, mucro catenas,</l>
+				<l>sic gravior corda casus amica probat.</l>
+				<l n="155">Nam citius sotiis sotiabitur unica phenix,</l>
+				<l>atque lupi citius pace fruetur ovis;</l>
+				<l>et prius Arthurus veniet vetus ille Britannis,</l>
+				<l>quam ferat adversis falsus amicus opem.</l>
+				<l>Job, collata meis, angustia vincitur, inde</l>
+				<l n="160">quod coniux fuit et trinus amicus ei;</l>
+				<l>ast ego desertus non illam cerno, nec illos:</l>
+				<l>me preter nichilum constat habere nichil.</l>
+				<l>Si Codrus foret hic, essem nunc codrior illo:</l>
+				<l>nam nichil hic habuit, ast ego plura nichil.</l>
+				<l n="165">Tot mea sunt quod non sine me regina iaceret:</l>
+				<l>si foret hoc verum: &quot; Pauper ubique iacet. &quot;</l>
+				<l>Temporibus cunctis ieiunus prosperitatis,</l>
+				<l>morte minante, minis asperiora gemo.</l>
+				<l>Ver dedit inditium, febrem mala contulit estas,</l>
+				<l n="170">nutriit autumpnus, frigida pascit hiems;</l>
+				<l>nocte dieque malum me sciphis potat amaris,</l>
+				<l>ut vigeant in me gaudia nulla mei.</l>
+				<l>Luce queror, lacrimas fundo, suspiria ructo,</l>
+				<l>scindo genas, plango pectora, rumpo comas.</l>
+				<l n="175">Colloquium turbe tamen est solatia luce,</l>
+				<l>et minuit penas lectio crebra meas.</l>
+				<l>Nocturna longe minor est angustia lucis,</l>
+				<l>que mea multimodo corda dolore ligat.</l>
+				<pb n="40"/>
+				<l>Nocte furit Furiis nimium Furor impius in me,</l>
+				<l n="180">qui mea maiori vulnere corda forat.</l>
+				<l>Nocte gemo, gemino gemitus cumulusque dolorum</l>
+				<l>crescit, corque coquit crebra gehenna meum.</l>
+				<l>Ve michi! Sermo meus mea fabula crebra dolenti,</l>
+				<l>dum tali mecum voce dolendo loquor.</l>
+				<l n="185">Sevit et innumeris cor lanceat ira sagittis</l>
+				<l>penarumque fero turbine turba furit.</l>
+				<l>Volvor et evolvor; lectus, bene mollis, acutis</l>
+				<l>urticat spinis tristia membra meus.</l>
+				<l>Nunc nimis est altum, nimium nunc decidit, unquam</l>
+				<l n="190">pulvinar medium nescit habere modum.</l>
+				<l>Nunc caput inclino, nunc elevo, parte sinistra</l>
+				<l>nunc ruo, nunc dextra, nunc cado nuncque levor,</l>
+				<l>nunc hac, nunc illac, nunc sursum, nunc rotor infra,</l>
+				<l>et modo volvo caput qua michi parte pedes.</l>
+				<l n="195">Non ita stare queo: surgo lectumque revolvo;</l>
+				<l>sic modo volvo pedes qua michi parte caput.</l>
+				<l>Nec sic esse queo: proprio maledico clienti</l>
+				<l>quod male cum lecto me facit esse meo.</l>
+				<l>Vocibus iratis insontem clamo ministrum:</l>
+				<l n="200">&quot; Huc, miser Ugo, miser, huc, maledicte, veni.</l>
+				<l>Quid facis, Ugo? Iaces? Lectus meus iste quid est hoc</l>
+				<l>quod male cotidie sternitur? Unde locus? &quot;</l>
+				<l>Tunc ipsum colaphis et pugnis verbero duris</l>
+				<l>et sibi quod patior verbere vendo malum</l>
+				<l n="205">Volvit et evolvit plumamque reverberat ulnis</l>
+				<l>et modo que tulerat vindicat acta puer.</l>
+				<l>Tunc iterum iaceo. Dormire puto. Nichil est quod</l>
+				<l>uno momento firmiter esse queam.</l>
+				<l>Sic solet arboreas Boreas evolvere frondes,</l>
+				<l n="210">sic rota mortales, sic aqua seva rotam.</l>
+				<pb n="42"/>
+				<l>Nunc calor ignitus, nunc frigus membra gelatum,</l>
+				<l>nunc, hostilis ei, sudor aquosus habet.</l>
+				<l>Tunc gemo, tunc oculi lacrimas, sua pocula, potant,</l>
+				<l>immo vomunt gemino fonte rigante genas.</l>
+				<l n="215">Si sopor irrepsit, quod rarum, sompnia ludunt</l>
+				<l>multimodis animos motibus egra meos.</l>
+				<l>Mergor in Oceano, tenuem taxillor in assum,</l>
+				<l>armatos video currere sepe deos.</l>
+				<l>Flumina parva fluunt, aret mare, corruit Athlas,</l>
+				<l n="220">et geminas fortes concutit orbis aves.</l>
+				<l>Sum velut implumis quam rodit in ilice cadmus,</l>
+				<l>que diro matrem carmine clamat avis.</l>
+				<l>Sum velut esuriens qui sompniat aurea tecta</l>
+				<l>usibus et vestes pauper habere suis.</l>
+				<l n="225">Sum velut expectans properantem rusticus amnem,</l>
+				<l>qui cupit excursis pergere siccus aquis.</l>
+				<l>Sum velut elusus quem detinet alea lusor,</l>
+				<l>qui cum perdiderit perdere plura parat.</l>
+				<l>Sum velut insanus qui, cum plus leditur, hic plus</l>
+				<l n="230">fustibus et iactu liberiore furit.</l>
+				<l>Ha nimis infelix qui sustinet innumeranda,</l>
+				<l>qui patitur numeris omnia plura suis.</l>
+				<l>Tot mala, tot penas patior, quod, si quis arenam</l>
+				<l>conferat in numero, cedet arena meis.</l>
+				<l n="235">Pagina sit celum, sint frondes scriba, sit unda</l>
+				<l>incaustrum, mala non nostra referre queant.</l>
+				<l>Tam gravibus ledor quod non peiora timesco:</l>
+				<pb n="44"/>
+				<l>Plange, miser, palmis, Henrice miserrime, plange,</l>
+				<l>et caput et dura pectora plange, miser.</l>
+				<l n="240">Me sibi privignum Rannusia, dira noverca,</l>
+				<l>ardet in horrendis perpetuare malis.</l>
+				<l>Est Fortuna michi serpente neronior omni;</l>
+				<l>nam serpens fugit, at sepius illa fugat.</l>
+				<l>Quando michi tribuet sors prospera prosperitatem ?</l>
+				<l n="245">Non hodie, nec cras, quod puto, forsan heri.</l>
+				<l>Cum me blandifero respexerit alea vultu,</l>
+				<l>Arne, retro properans fonte recurre tuo.</l>
+				<l>Quam male fructificat que numquam floruit arbor!</l>
+				<l>Spes quoque messis abit cum male germen obit.</l>
+				<l n="250">O pudor, o timor, o dolor, o mala tedia vite,</l>
+				<pb n="46"/>
+				<l>o comes assiduus plusque furore furor!</l>
+				<l>Quid faciam? Vos hoc mea dicite turba dolorum;</l>
+				<l>nam vos auxilium consiliumque meum.</l>
+				<l>O Deus, o quare subito Fortuna rotatu</l>
+				<l n="255">cuncta molendinat mobiliore rota?</l>
+				<l>Sors mala, sors peior, sors pessima, sorsque maligna</l>
+				<l>facturam turpi protheat arte tuam.</l>
+				<l>Hanc, Pater, hanc animam, misero quam carcere trudis,</l>
+				<l>hanc lacrimis plenam suscipe, redde polo.</l>
+				<l n="260">Alme parens, animam, quam pene turba flagellat,</l>
+				<l>suscipe quam stigiis tritat Erinis aquis,</l>
+				<l>quam ferit Alecto, quam Thesiphoneque fatigat,</l>
+				<l>cui Fortuna nocet quave Megera furit.</l>
+				<l>Ergo pium pietas te reddat, ut impia cesset</l>
+				<l n="265">Alecto, miserum que lacerare sitit.</l>
+				<l>Tu quoque, vesani promptissima causa doloris,</l>
+				<l>asculta et celerem, perfida, siste rotam.</l>
+				<l>Verberibus preceps diris, fortuna, quid est hoc</l>
+				<l>quod caput affligis, insidiosa, meum?</l>
+				<l n="270">Quo rapis, o fera, me? Cresum facis, impia, Codrum,</l>
+				<l>Nestora Tersitem, turpius ausa nefas.</l>
+				<l>Numquid ego Scarioth? Numquid sum Pontius, unde</l>
+				<l>tam graviter merui tanta flagella pati?</l>
+				<l>Stulta, quid insanis? Caput hoc, caput hoc quid acerbas?</l>
+				<l n="275">Pone modum sceleri, perfida, pone modum.</l>
+				<l>Deficiunt alii, me solum sola fatigas?</l>
+				<l>Sed videas quid agas, ultio rara perit.</l>
+				<l>Prospice ne tua te penarum turba sagittet:</l>
+				<l>nam ferit actorem sepe sagitta suum.</l>
+				<l n="280">Heu, quid agis, quid agis? Quid me, quid, perfida, perdis?</l>
+				<l>Pone modum sceleri, perfida, pone modum.</l>
+				<pb n="48"/>
+				<l>Dic mihi, quid feci? Responde, lingua dolosa,</l>
+				<l>responde per eum qui super astra sedet.</l>
+				<l>Si nobis, vesana, tui si copia detur,</l>
+				<l n="285">dilacerata feris turpiter esca fores.</l>
+				<l>Quis furor? Unde furis? Quid me, furiosa, lacessis?</l>
+				<l>Pone modum sceleri, perfida, pone modum. </l>
+				<l>Talibus orba suas dictis dea prebuit aures;</l>
+				<l>hec ait et celerem circinat ipsa rotam:</l>
+				<l n="290">&quot; Quid mea mordaci laceras vaga facta Camena;</l>
+				<l>quem fore plus misero plusque dolente dedi?</l>
+				<l>Nonne meo mundi clauduntur regna pugillo?</l>
+				<l>Nonne meum regnum climata cuncta tremunt?</l>
+				<l>Grecus et Ebreus, et Barbarus atque Latinus</l>
+				<l n="295">me timet, exhorret, me veneratur, amat.</l>
+				<l>Nonne potestates mundi mundique minora</l>
+				<l>imperio cogo subdere cuncta meo?</l>
+				<l>Nuper Alamannus, Siculam delatus in oram,</l>
+				<l>ludendo feri&#231;am perdidit ipse suam.</l>
+				<l n="300">Perdidit hic equites, rochos peditesque minores,</l>
+				<l>perdidit alphinos: vix bene tutus abit.</l>
+				<l>Meque Saladinus, nimium vexilla salutis</l>
+				<l>expugnans, hostem sentiet esse suam.</l>
+				<l>Quid referam veteres quorum fert fama ruinam?</l>
+				<l n="305">Mater Pompeio, deinde noverca fui.</l>
+				<pb n="50"/>
+				<l>Ubera sic Dario, post verbera, mellea Cyro,</l>
+				<l>fellea post, nutrix ingeniosa, dedi.</l>
+				<l>Tu quem fama silet, quem noscit dedecus, iram</l>
+				<l>obprobriis laceras, obprobriose, meam.</l>
+				<l n="310">Quidve minas agitas? Reus es pro crimine lese</l>
+				<l>Maiestatis, et hoc tota propago luet.</l>
+				<l>Prospice quid facias, nondum perit omne venenum,</l>
+				<l>et mea vis nondum desinit esse mea. &quot;</l>
+				<l>&quot; Que peiora potes, meretrix fortuna, noverca</l>
+				<l n="315">pessima, Medea dirior, Ydra ferox?</l>
+				<l>Deveni ad nichilum: restans michi spiritus ossa</l>
+				<l>non habet, in quo nil hec tua probra valent.</l>
+				<l>Morte nocere putas? Foret hec michi vita salubris:</l>
+				<l>duplicior mors est morte carere mihi.</l>
+				<l n="320">Quam letus, quacumque Deus donaverit hora,</l>
+				<l>suscipiam! Post hanc stercus in ore tuo.</l>
+				<l>Quid totiens varias sumis, furiosa, figuras?</l>
+				<l>Nunc alacris rides, nunc lacrimosa gemis,</l>
+				<l>Florida nunc, nunc sordida; nunc nigra, nunc rubicunda;</l>
+				<l n="325">Aurea nunc, nunc es sordida facta luto.</l>
+				<l>Protheus esne? Vagusne movet tua viscera ventus,</l>
+				<l>vel tua diabolus viscera crebra movet?</l>
+				<l>Semper es inconstans, vaga mobilis, aspera, ceca,</l>
+				<l>instabilis, levior, perfida, surda, fera. &quot;</l>
+				<l n="330">Tunc et subridens: &quot; O quanto pulvere noctis</l>
+				<l>humane mentis lumina ceca latent!</l>
+				<l>Nunquid obaudisti: &#171;Sermones ponderet unus</l>
+				<pb n="52"/>
+				<l>quisque suos: sapiens cogitat ante loqui&#187;?</l>
+				<l>Legibus indictis utor; si legibus, ergo</l>
+				<l n="335">iustis; si iustis, iure fit, ergo bene.</l>
+				<l>Nonne sua licite sic quilibet utitur arte?</l>
+				<l>Quod sibi sors dederit utitur omnis homo:</l>
+				<l>miles equis, piscator aquis et clericus hymnis,</l>
+				<l>nauta fretis, pugiles Marte, poeta metris.</l>
+				<l n="340">Rusticus asper arat, numerat mercator avarus,</l>
+				<l>virgo legit flores, stultus amator amat.</l>
+				<l>Ast ego, que dea sum, qua nulla potentior orbe,</l>
+				<l>quem ligat Occeani circulus orbe suo,</l>
+				<l>nonne meam licite, stultissime, prosequar artem?</l>
+				<l n="345">Sic opus est ut te precipitando rotem.</l>
+				<l>Ergo vide quid agas. Sapiens deliberat ante</l>
+				<l>quam faciat; sic tu premeditare, miser.</l>
+				<l>Ha, genus humanum mea quantis asperat acta</l>
+				<l>morsibus, atque meum dentibus occat opus !</l>
+				<l n="350">Si sibi divitias digitis porrexero laxis,</l>
+				<l>laudibus extollor imperialis ego:</l>
+				<l>tunc ego summa parens et tunc regina verenda,</l>
+				<l>tunc dea summa, deo preferor ipsa Iovi.</l>
+				<l>Sed si forte meam retinentem clausero dextram,</l>
+				<l n="355">morsibus et stimulis mordeor ipsa feris:</l>
+				<l>tunc ego periura, tunc turpis adultera dicor,</l>
+				<l>tuncque sacerdotem me vitiasse ferunt.</l>
+				<l>Tu modo; sed quare me dentibus asper acutis,</l>
+				<l>infelix, laceras colloquiisque tuis?</l>
+				<l n="360">Arbitrio loqueris: nam iuris pondus abhorres</l>
+				<l>et dedignaris de ratione loqui.</l>
+				<l>Se docet iniustam causam partemque tueri</l>
+				<l>qui solis probris certat iniqua loqui;</l>
+				<l>sic solet ignavus, cum desunt verba, sophysta</l>
+				<l n="365">garrulus, ut videant, voce tonare, sui.</l>
+				<l>Sic quoque, cum desunt tibi iura, recurris ad ipsam,</l>
+				<l>quam bene novisti, garrulitatis opem.</l>
+				<l>Ergo si qua tuis, quod non puto, mentibus herent</l>
+				<l>iusta, refer; vel tu, quod magis oro, sile. &quot;</l>
+				<l n="370">Tunc ego: &quot; Vesanum, meretrix Rannusia, monstrum,</l>
+				<pb n="54"/>
+				<l>num licet hoc solum verba referre michi?</l>
+				<l>Tu facis et dicis: laceras me, perfida, factis,</l>
+				<l>improperas post hec facta nefanda michi.</l>
+				<l>Nunc scio de facto quod semper culpa redundat</l>
+				<l n="375">in miserum, qui non unde tuetur habet;</l>
+				<l>lis quotiens oritur aquilas atque inter olores,</l>
+				<l>culpa solet minimis semper iniqua dari;</l>
+				<l>sic quotiens certant Acteon rexque ferarum,</l>
+				<l>pessima qui minor est iura fovere ferunt.</l>
+				<l n="380">Et quotiens rabies sevit Germanica Tuscis,</l>
+				<l>oppida testantur lenia, fracta, fidem.</l>
+				<l>Tu quoque me. Sed si vim vi depellere possem,</l>
+				<l>vel taceas, tua vel parcior ira foret.</l>
+				<l>Cautius ergo tuas satyras, inimica deorum,</l>
+				<l n="385">insere, vel tibi que sunt recitanda vide:</l>
+				<l>nam male castigat sotios quem crimen eadem</l>
+				<l>labe premit pariter quam removere studet.</l>
+				<l>Sic Paris Egidem, sic Lucius ille Cethegum,</l>
+				<l>sic quoque retrogradum mater aquosa suum &quot;.</l>
+				<l n="390">Non igitur studeas alios dampnare quod in te est,</l>
+				<l>ne cadat in barbam pena pudenda tuam.</l>
+				<l>Nam fatuum nimis est aliquem dampnare seipsum,</l>
+				<l>quod tibi ne facias, litigiosa, cave.</l>
+				<l>Tu levis et leva, tu preceps, tu furiosa,</l>
+				<l n="395">tu ratione carens nescis habere modum.</l>
+				<l>Me feris inque furis, laceras me meve lacessis,</l>
+				<l>et latus et latum destruis omne meum. &quot;</l>
+				<l>Tunc ea: &quot; Non unum mecum lucrabere nummum,</l>
+				<l>qui dominam queris dedecorare tuam.</l>
+				<pb n="56"/>
+				<l n="400">Namque suo servus domino luctando repugnans</l>
+				<l>calcitrat in stimulum perfidus ipse suum.</l>
+				<l>Discant mortales dominos proprios venerari:</l>
+				<l>nam qui fraude nocet, fraudibus ille perit.</l>
+				<l>Numquid Alexander, numquid tu Cesar es? Unde</l>
+				<l n="405">tanta superbia, vel tantus, inique, furor?</l>
+				<l>Tu quis es? Unde furis? Te scimus et unde fuisti,</l>
+				<l>que sit origo tui quique fuere patres.</l>
+				<l>Te decet horrendis versare ligonibus arva,</l>
+				<l>quod genus agresti postulat arte tuum,</l>
+				<l n="410">Et quis es? Unde venis? Cro, cro! Vesane, recede</l>
+				<l>et geme perpetuum perpetuumque late.</l>
+				<l>Quicquid agas, quicquid dicas, quicquid patiaris,</l>
+				<l>non facis ut retrahas quod mea dextra trahit.</l>
+				<l>Sic ego primatum venerandaque sceptra tenebo,</l>
+				<l n="415">et pro velle meo mel tibi felque dabo.</l>
+				<l>Tu formica brevis, mus parvus, nanus inanis;</l>
+				<l>quid michi, quid facies, nane pudende? Nichil.</l>
+				<l>Nil tua probra, minas, generalis yconoma rerum</l>
+				<l>curo, sed in cathedra glorior ipsa mea.</l>
+				<l n="420">Non minus unguipotens volucres leo papiliones,</l>
+				<l>nec Polis angustum Tibur avara minus,</l>
+				<l>nec minus archivolans tremulas generosa cicadas</l>
+				<l>quam tua, vaniloquax, verba minasque tremam.</l>
+				<pb n="58"/>
+				<l>Quid tua sanna potest? Si quis derisor, et ipse</l>
+				<l n="425">derisus turbis omnibus esse solet.</l>
+				<l>Nictimene sonitu deridet nocte volucres;</l>
+				<l>numquid eam lacerat cetera turba die?</l>
+				<l>Sic qui derident alios ridentur et ipsi:</l>
+				<l>nil magis in populis est generale nota.</l>
+				<l n="430">Ergo quiesce, miser: miser, ergo quiesce, quiesce!</l>
+				<l>Nam leve verba potes ferre, sed acta gravant. &quot;</l>
+				<l>Tunc ego: &quot; Deliris stomachor, Rannusia, dictis,</l>
+				<l>dum michi probra tuis obicis, orba, metris.</l>
+				<l>Dum mea veriloquis recitas convitia verbis,</l>
+				<l n="435">nil gravius vero sevior ira tenet.</l>
+				<l>Non opus est verbis, gladio qui percutit hostem:</l>
+				<l>nam satis ad vulnus sufficit ensis atrox.</l>
+				<l>Improperasne michi genus? Usuraria, monstrum,</l>
+				<l>fronte capillata sed retro rasa caput.</l>
+				<l n="440">Simia non es, turpior es, turpissima rerum</l>
+				<l>res es, nescio quid, quam nichil esse velim.</l>
+				<l>Sim licet agresti tenuique propagine natus,</l>
+				<l>non vacat omnimoda nobilitate genus:</l>
+				<l>non presigne genus, nec clarum nomen avorum,</l>
+				<l n="445">sed probitas vera nobilitate viget.</l>
+				<l>In tenui calamo latitat mel sepe suave,</l>
+				<l>et modici fontis temperat unda sitim.</l>
+				<l>Nil tremis. Unde locus? Bucifal sepissime muscis</l>
+				<l>et formicarum sepe fit esca lupus.</l>
+				<l n="450">Nil adeo validum, quod non quandoque teratur</l>
+				<l>hoc et ab invalido, sepe videre potes:</l>
+				<l>vomer humo, lapis unda, pollice gemma, quid ultra?</l>
+				<l>Sepe quod est solidum frangere molle solet.</l>
+				<l>Non semper Marium, nec semper sepe rotatum</l>
+				<l n="455">volvis Apollonium: fortior alter erit,</l>
+				<pb n="60"/>
+				<l>qui redimens mea probra fero pugnabit agone</l>
+				<l>et tibi forsan atrox auferet ille caput. &quot;</l>
+				<l>Tunc ea: &quot; Pacificis loquar ex ratione loquelis,</l>
+				<l>si placet et mecum pacificare velis.</l>
+				<l n="460">Despicerer nimium si starem semper eodem,</l>
+				<l>vel bona, vel mala, vel inter utrumque manens.</l>
+				<l>Omne quod est crebrum nimio vilescit in usu;</l>
+				<l>omne quod est rarum carius esse solet.</l>
+				<l>Pulegio piper est generosum vilius Indis,</l>
+				<l n="465">vilior herbicolor cautibus iaspis ibi.</l>
+				<l>Carior est grisea gelidis clamis aspera Gotis</l>
+				<l>qua fera carnificis dextera nudat ovem.</l>
+				<l>Bononie claro plus milite carus habetur</l>
+				<l>durus et horrendus, Marte furente, pedes.</l>
+				<l n="470">Non adeo potes ipse queri: tibi sepe benigna,</l>
+				<l>et quamvis nunquam prodiga, larga fui.</l>
+				<l>Nunc ego, nunc tibi proposui clementior esse,</l>
+				<l>si libet, et mecum pacificare velis. &quot;</l>
+				<l>&quot; Absit, iniqua canis, me tecum pacificare,</l>
+				<l n="475">sed tibi pacificet, seva, brunellus iners;</l>
+				<l>nam tibi nulla fides, nullus modus, ordine nullo</l>
+				<l>vivis, et est socius pro ratione furor. &quot;</l>
+				<l>Tunc ea: &quot; Iudicio non tecum stare recuso,</l>
+				<l>ut videat lex hoc iustiniana scelus.</l>
+				<l n="480">Si bene dicis, habes quod abest, ius et rationem;</l>
+				<l>si male, preceptis ergo quiesce meis. &quot;</l>
+				<l>&quot; Ni melius quam iura scias, ignara, rotatus,</l>
+				<l>staret quem giras orbis in orbe tuo</l>
+				<l>Sistere iudicio furiosi lege vetantur;</l>
+				<l n="485">ergo tibi ius, cum sis furiosa, vetat. &quot;</l>
+				<l>Tunc ea: &quot; Vade ferox; hostis meus esse memento. &quot;</l>
+				<l>&quot; Tu quoque vade; hostis esse memento mea. &quot;</l>
+				<pb n="62"/>
+				<l>Cum mea lamentans eleica facta referrem,</l>
+				<l>et eum Fortune verba inimica darem,</l>
+				<l n="490">ecce nitens proba, que salomonior est Salomone,</l>
+				<l>ante meum mulier lumen amena stetit,</l>
+				<l>quam facies helenat, variat quam forma vicissim:</l>
+				<l>nunc celum, nunc plus, nunc capit illa solum.</l>
+				<l>Hanc Fronesin dictam septena cohors comitatur;</l>
+				<l n="495">prebuit officium cuilibet illa suum.</l>
+				<l>Prima fovet pueros, alia silogizat, amenat</l>
+				<l>tertia colloquiis, perticat illa solum,</l>
+				<l>hec abacum monstrat, alia philomenat, et altum</l>
+				<l>erigit ad superos septima virgo caput.</l>
+				<l n="500">His predicta dea sedit comitata deabus,</l>
+				<l>et quasi compatiens mis patientis ait:</l>
+				<l>&quot; Que lethea tuus potavit pocula sensus?</l>
+				<l>Quo tua dormitat mens peregrina loco ?</l>
+				<l>Certe cecus es et tua mens exorbitat: illud</l>
+				<l n="505">tantillum nescis, quod scola docta dedit.</l>
+				<l>Heu quantum pateris! De sola mente dolesco,</l>
+				<l>quod tuus hoc peregre tempore sensus abit.</l>
+				<l>Si foret hic Ypocras et tota medela Salerni,</l>
+				<l>morbida non vel vix mens tua sana foret:</l>
+				<l n="510">nam nequit antiquum medicina repellere morbum,</l>
+				<l>quodque diu crevit durat in esse diu.</l>
+				<l>Heu, doleo super hoc, quod mentem perdis et omni</l>
+				<l>brutescis sensu, bestia factus homo.</l>
+				<l>Quid tibi cum lacrimis? Lacrimarum copia nullum</l>
+				<l n="515">participem voti debilis esse facit.</l>
+				<l>Qui gemit ingeminat sua dampna, dolore dolorem</l>
+				<l>ampliat et duplici funere vivus obit.</l>
+				<pb n="64"/>
+				<l>Quid tibi et iniuste Fortune? Multaque semper</l>
+				<l>passus es obprobriis vincula propter eam.</l>
+				<l n="520">Vis ipsam non esse vagam? natura repugnat,</l>
+				<l>que dedit instabilem semper et esse vagam.</l>
+				<l>Seminat in spinis nature iura retractans,</l>
+				<l>garrula divelli rana palude nequit.</l>
+				<l>Qui cupit auferre naturam seminat herbam,</l>
+				<l n="525">cuius in Arturi tempore fructus erit.</l>
+				<l>Te nimis aura rotat nimiumque moveris amaris,</l>
+				<l>et nimium stolidum te facit esse dolor.</l>
+				<l>Non hominem redolens hominis denigrat honorem,</l>
+				<l>qui nequit adversis prospera iuncta pati.</l>
+				<l n="530">Utitur ignare dulci, non usus amaro:</l>
+				<l>namque per oppositum noscitur omne bonum.</l>
+				<l>Disce gravanda pati: patientia temperat iram</l>
+				<l>et duros animos mentis oliva domat.</l>
+				<l>Nonne recordaris, veluti, stimulante tyrampno,</l>
+				<l n="535">moriger innocua Seneca morte perit?</l>
+				<l>Nonne meus Severinus inani iure peremptus</l>
+				<l>carcere Papie non patienda tulit?</l>
+				<l>Nonne cupidineus metrosus Naso magister</l>
+				<l>expulsus patria pauper et exul obit?</l>
+				<l n="540">Quid referam multos, quorum sine crimine vita</l>
+				<l>verbera Fortune non patienda tulit?</l>
+				<l>Silva capillorum numeratis cederet illis,</l>
+				<l>quos necis immunes inclita vita dedit.</l>
+				<l>Aspera ferre decet: maturant aspera mentem</l>
+				<l n="545">et bene matura plenius uva sapit.</l>
+				<l>Per nimios estus gelidas transitur ad umbras,</l>
+				<l>sicque per oppositum dulcia querit homo.</l>
+				<l>Laurea pro pena, pro morte corona resultat:</l>
+				<l>unde laborat homo, premiat inde labor.</l>
+				<l n="550">Quid facis, inmunde, mundique inmunda quid optas?</l>
+				<pb n="66"/>
+				<l>Inmundus mundus que tibi munda dabit ?</l>
+				<l>Vivere, stulte, putasne per omnia secula? Per fe&apos;!</l>
+				<l>Factus es insanus credulitate tua.</l>
+				<l>Insani sane capitis gravitate laborat</l>
+				<l n="555">qui putat hoc mundo vivere posse diu.</l>
+				<l>Sensus abit tuus et tuus intellectus oberrat,</l>
+				<l>et tua letheis mens peregrinat aquis.</l>
+				<l>Dic, ubi sunt que te docuit Bononia quondam?</l>
+				<l>Hec, ego, dic, ubi sunt que tibi sepe dedi?</l>
+				<l n="560">Te multum fovi, docui te, sepe rogavi,</l>
+				<l>et mea secreta sepe videre dedi.</l>
+				<l>Tu mea vitis eras, tu palmitis umbra novelli,</l>
+				<l>tu fructus validam spem michi sepe dabas.</l>
+				<l>Te rastris colui, te sepis vimine cinxi,</l>
+				<l n="565">et lapides ex te et cuncta nocenda tuli.</l>
+				<l>Tempus adest fructus, vitis dedit ipsa labruscas,</l>
+				<l>proque rosa crevit aspera spina diu.</l>
+				<l>Heu, cadit in spinis quod ego in te semino semen,</l>
+				<l>et mentem spina suffocat ipsa tuam!</l>
+				<l n="570">Quod loquor et moneo, quod semino, suscipit ipsa</l>
+				<l>que male multiplicat semen arena suum.</l>
+				<l>Tu nimium tuus es, nimis et tibi credis, inepte,</l>
+				<l>et solus credis providus esse Cato:</l>
+				<l>phylosophus nimis es nimiumque platonior ipso,</l>
+				<l n="575">ultra phylosophos mens tua sepe fluit.</l>
+				<l>Absque labore sequi (pitagorica cornua cerne)</l>
+				<l>virtutem dextro limite nemo potest.</l>
+				<l>Est alia furca facilis descensus Averni,</l>
+				<l>ut docet archiloqua voce poeta Maro.</l>
+				<l n="580">Non sine sudore probitatis scanditur arbor,</l>
+				<l>nec sine sudore martia palma venit.</l>
+				<l>Laudo te, sed in hoc non laudo quod ipsa caduca</l>
+				<pb n="68"/>
+				<l>aufugisse citis gressibus orbe gemis.</l>
+				<l>Pro dolor! Unde doles, dolor? Unde tumes, dolor? Unde</l>
+				<l n="585">ploras? Que tua sunt, o miseranda cinis?</l>
+				<l>Primitus in mundo tecum tua quanta tulisti?</l>
+				<l>Nudus eras primo et postea nudus eris. &quot;</l>
+				<l>Tunc ego: &quot; Mira refers. Quid et hoc est, vera sophya,</l>
+				<l>quod dicis? Nimis est hic mihi sermo gravis.</l>
+				<l n="590">Quis modo tam mitis, tam dulcis tamque benignus,</l>
+				<l>quem nimis hec ultra non ferat ira modum?</l>
+				<l>Non ego, eum videam paleis postponere grana,</l>
+				<l>cum superet molles nunc saliunca rosas,</l>
+				<l>cum fructus hodie ante suos paret edere flores</l>
+				<l n="595">arbor abortivis prodigiosa comis,</l>
+				<l>cum quod (grande nefas!) tolluntur ad alta nefandi</l>
+				<l>et premitur vita deteriore probus.</l>
+				<l>Dic michi, qui mores, que vita, quis ordo Neroni</l>
+				<l>Urbis et orbis opes imperiumque dedit?</l>
+				<l n="600">Ecce (sed id taceo) multi, probitate vetante,</l>
+				<l>nomen habent, quibus est nominis umbra pudor. &quot;</l>
+				<l>Tunc ea: &quot; Deciperis, nec te ignorantia iuris</l>
+				<l>excusat; nimis es, imperiose, rudis.</l>
+				<l>Quam gravis hic labor et quam magna industria mentis</l>
+				<l n="605">noscere veraci cognitione probos!</l>
+				<l>Sepe bonos mendax mentitur opinio pravos</l>
+				<l>atque e converso promovet ipsa malos.</l>
+				<l>Omnis que niveo volucris plumescit amictu,</l>
+				<l>non est, si simulet, vera columba tamen.</l>
+				<l n="610">Sepe sub agnina latet hirtus pelle Lycaon,</l>
+				<l>subque Catone pio perfidus ipse Nero.</l>
+				<l>Econtra, bene scis, inter latet hispida mollis</l>
+				<pb n="70"/>
+				<l>tegmina sanguineo tincta rubore rosa,</l>
+				<l>tamque duces claros, Itacum prolemque Philippi,</l>
+				<l n="615">membra per obscuros littera prisca refert.</l>
+				<l>Multa vides igitur, faleris circumdata fictis,</l>
+				<l>que se longe aliter quam videantur habent.</l>
+				<l>Iniustos habuisse doles fastigia rerum:</l>
+				<l>longa tibi status hic causa doloris erit.</l>
+				<l n="620">Quam sit ad alta trahi miserum mortalibus omen</l>
+				<l>nescis; si scires hoc, siluisse velis.</l>
+				<l>Promovet iniustos Fortuna volubilis, ut quos</l>
+				<l>scandere precipites fecit, ad ima rotet;</l>
+				<l>nam graviore ruit turris tumefacta ruina,</l>
+				<l n="625">et gravius pulsat alta cupressus humum.</l>
+				<l>Mens hominum quantis errorum ceca tenebris</l>
+				<l>mergitur, ut reputet sola nefanda bonum.</l>
+				<l>Non felix qui non ubi crescat honore, sed hic qui</l>
+				<l>non ubi decrescat, quo neque possit, habet.</l>
+				<l n="630">Ve tibi, ve, mortale genus, quod semper ad alta</l>
+				<l>niteris ut lapsu perfidiore cadas !</l>
+				<l>Hic gladios, hic pocula sevus et hostis et hospes</l>
+				<l>temperat, interitus dira venena sui.</l>
+				<l>Aspice, cui totiens Capitolia celsa triumphos</l>
+				<l n="635">obtulerant, famulum fata tulisse suum.</l>
+				<l>Aspice quem Babilon cupido potavit in auro</l>
+				<l>fataque quam tulerit Cesar acerba suis.</l>
+				<pb n="72"/>
+				<l>Nonne ferox Macedum protectus ab hoste tyrampnus</l>
+				<l>corda venenatus inter amica perit ?</l>
+				<l n="640">Quid Darium referam, quid Cyrum, quidve Neronem?</l>
+				<l>Nam tenui semper stamine pendet honor.</l>
+				<l>Ecce modernorum priscis exempla relictis:</l>
+				<l>paupertate nichil tutius esse potest.</l>
+				<l>Unicus ille leo, fidei vigor, unicus imo</l>
+				<l n="645">murus et hostilis unicus ille timor,</l>
+				<l>dux ferus et nostre Corradus causa salutis,</l>
+				<l>(Cur? Quia magnus erat.) proditione perit.</l>
+				<l>Qui modo regnantes et fortes fregerat arces,</l>
+				<l>cui genus et census robora dura dabant,</l>
+				<l n="650">nuper (ve misero!) sub paupertatis amictu</l>
+				<l>captus et inclusus Anglicus acta luit.</l>
+				<l>O cecum mortale genus, quid tutius ergo</l>
+				<l>paupertate? Fere nil: nichil absque fere.</l>
+				<l>Vade per Yspanos, et nigros vade per Indos,</l>
+				<l n="655">vade per insidias, vade per omne nemus,</l>
+				<l>vade per hostiles cuneos turmasque latronum,</l>
+				<l>dummodo sis verus, tutus, egenus, eris.</l>
+				<l>Quid faciet vacuus coram latrone viator?</l>
+				<l>Letus et intrepidus fundet ad astra melos.</l>
+				<l n="660">Quid rutili torques, quid prosunt ergo thiare,</l>
+				<l>quid sceptrum, quid honos, quid loculusve satur?</l>
+				<l>Quidve magistratus et quid pretiosa supellex?</l>
+				<l>Paupertate nichil tutius esse potest. &quot;</l>
+				<l>Tunc ego: &quot; Scire velim, si non nimis esset onustum:</l>
+				<pb n="74"/>
+				<l n="665">mundus an hic vene deterioris erit,</l>
+				<l>an proprium, quod amo, scelus exuet an magis isto</l>
+				<l>qui iacet infelix stabit in esse suo?</l>
+				<l>Dic tamen - unde supra memini bene - cur retulisti:</l>
+				<l>&#171;inmundus mundus que tibi munda dabit&#187;? &quot;</l>
+				<l n="670">Tunc ea: &quot; Vix umbram gerit hoc: preludia rerum</l>
+				<l>solvere propositum luciditate queunt.</l>
+				<l>Nunquid ad argentum puro devenimus ab auro?</l>
+				<l>alter ab argento cursus ad era fuit,</l>
+				<l>tertius in ferrum fit cursus ab ere, quod et nunc</l>
+				<l n="675">decidit in, cursu deteriore, lutum.</l>
+				<l>Deficiente luto, quid erit? Veniemus ad ipsum</l>
+				<l>stercus et in tali feteat omnis homo.</l>
+				<l>Ecce vides quantis putrescit sordibus iste</l>
+				<l>mundus, et hoc ipsum nomen habere nequit.</l>
+				<l n="680">Omnia degenerant, peioribus omnia currunt</l>
+				<l>cursibus, et, fracto remige, navis abit.</l>
+				<l>Mundus amat, spernit, tenuat, secatur, abhorret:</l>
+				<l>pessima, iustitiam, iura, nefanda, bonum.</l>
+				<l>Mundus alit fraudes, refovet scelus, arcet honesta,</l>
+				<l n="685">recta fugit, violat federa, fera cupit.</l>
+				<l>Ipsa, caput mundi, venalis curia pape</l>
+				<l>prostat et infirmat cetera membra caput.</l>
+				<l>Sacrum - cerne nefas nostroque pudentius evo -</l>
+				<l>venditur in, turpi conditione, foro:</l>
+				<l n="690">crisma sacrum, sacer ordo, altaria sacra, sacrata</l>
+				<l>dona; quid hec ultra? Venditur ipse Deus.</l>
+				<l>O sacra, que sacras maculant commertia sedes!</l>
+				<l>O sacra que faciunt celica templa forum!</l>
+				<l>Tale, tuus mundus, si mundus iure vocatur,</l>
+				<l n="695">tale frequentatum sudat habere forum.</l>
+				<l>Ecce - sed ista pudet - circumvaga turba, scolares</l>
+				<l>sectantur propria venditione forum.</l>
+				<pb n="76"/>
+				<l>Citra legis iter, pro, tam pretiosa propago</l>
+				<l>venit servili conditione, dolor!</l>
+				<l n="700">Libertas vitiata fugit: nunquanque vocari</l>
+				<l>ingenuum talem de ratione decet.</l>
+				<l>Ecce, nefas! sese, stimulante cupidine, nupta</l>
+				<l>vendit et innupte contingit illud idem.</l>
+				<l>Si foret, ut quondam Lucretia, casta, crumena</l>
+				<l n="705">cum sibi porrigitur, cedet avara tibi.</l>
+				<l>Penelope, vidue sue mercenaria vite,</l>
+				<l>ad nummi sonitus audiet illa preces.</l>
+				<l>Venditur, o dolor, omnificis sententia nummis,</l>
+				<l>iudiciumque pium copia frangit opum.</l>
+				<l n="710">Deviat a vero corruptus munere iudex,</l>
+				<l>falsilocumque facit ius pia gaza pium.</l>
+				<l>Luxus edax livorque macer, cocus ardor habendi</l>
+				<l>vastat opes, mordet optima, corda cremat.</l>
+				<l>Pestis adulatrix - pro! - ficto risula vultu,</l>
+				<l n="715">cuncta potest, satrapis delitiosa comes.</l>
+				<l>Ecce suo Pilades - scelus! - insidiatur Horesti,</l>
+				<l>nuptaque sub proprium sannat iniqua virum.</l>
+				<l>Clericus edoctus, miles rudis et leve vulgus</l>
+				<l>negligit, horret, alit: iura, modesta, malum.</l>
+				<l n="720">Migrat in exilium virtus vitiumque triumphat,</l>
+				<l>regnat et in populis grande tribunal habet.</l>
+				<l>Nescio quo ceco lenita papavere dormit</l>
+				<l>mensque Creatorem nescit iniqua suum.</l>
+				<l>En iterum toto lingua crucifigitur orbe,</l>
+				<l n="725">en iterum patitur dira flagella Deus !</l>
+				<l>Vespasiana manus iterum consurgat et omnem</l>
+				<l>diruat Occeanum qui scelerata patrat.</l>
+				<l>Factorem factura suum, stimulante tyrampno</l>
+				<l>delicti, factis despicit orba suis.</l>
+				<l n="730">Inde fames venit, inde gravis discordia regnis,</l>
+				<pb n="78"/>
+				<l>inde Cananeis preda cibusque sumus,</l>
+				<l>inde premit gladius carnalis spiritualem,</l>
+				<l>et vice conversa spiritualis eum.</l>
+				<l>Hinc subitos Atropos predatrix occupat artus,</l>
+				<l n="735">nec sinit ut doleat peniteatque miser.</l>
+				<l>Iure vides igitur quod recta ligatio nectit</l>
+				<l>&#171;inmundus mundus&#187; hec duo verba simul. &quot;</l>
+				<pb n="78"/>
+				<l>&quot; Hactenus unde dolor et que fomenta doloris</l>
+				<l>vidimus, inventa perfiditate mali:</l>
+				<l n="740">nunc opus est, morbum levis ut medicina refrenet</l>
+				<l>atque hostem faciat hostis abesse suum.</l>
+				<l>Primitus insanas lacrimarum pelle procellas,</l>
+				<l>quarum coniugio perditur omne bonum:</l>
+				<l>nam dolor accumulat vires, ubi planctus abundat,</l>
+				<l n="745">tristitiamque mali duplicat ipse sui.</l>
+				<l>Si mala dat planctus, malus est hic ergo, necesse;</l>
+				<l>si malus, ergo nocet; si nocet, ergo fuge.</l>
+				<l>Contra merorem, cape gaudia, velle refrena,</l>
+				<l>atque mali finem semper adesse puta.</l>
+				<l n="750">Grata superveniet que non sperabitur hora,</l>
+				<l>que compensabit fellea prisca favis.</l>
+				<l>Una serena dies multorum nubila pensat,</l>
+				<l>et lutcum, tergit quod facit unda, solum.</l>
+				<l>Fortunam dimitte vagam, permitte vagari,</l>
+				<l n="755">que nunquam stabili ludere fronte potest.</l>
+				<pb n="80"/>
+				<l>Contra Fortunam sis constans, sis patiens, sis</l>
+				<l>ferreus, adversi te neque frangat hiems.</l>
+				<l>Fortuna ridente gemas, plorante ioceris:</l>
+				<l>ipsa sit auspitium tempus in omne tuum.</l>
+				<l n="760">Cuncta rotat fortuna rota, qua cuncta rotantur;</l>
+				<l>sic tenui magnus orbis in orbe perit.</l>
+				<l>Firmus in adversis piger ad mala, tardus ad iram,</l>
+				<l>promptus ad obsequium, triste ad omne nefas.</l>
+				<l>Sis tibi discipulus aliisque magister, et intus</l>
+				<l n="765">sis tuus, extra sed totus alius eris.</l>
+				<l>Virtutem pete sed vitium fuge, quod sit honestum</l>
+				<l>quere, quod utile; quod turpe fugando fuge.</l>
+				<l>Amplexanda tibi, cleri thesaurus, honestas</l>
+				<l>et ratio, populis heu ! modo rara comes.</l>
+				<l n="770">Ne viscosa manus oleoque nec uncta sit, immo,</l>
+				<l>inter utrumque tenens, respuat omne nimis.</l>
+				<l>Inter Democritum tristemque Demostena curre,</l>
+				<l>inde statum libret virgo modesta tuum.</l>
+				<l>Stillet in ore favus, sed mente resultet oliva,</l>
+				<l n="775">et non sit totus sensus in ore tuo.</l>
+				<l>Respue multivagos, stabiles sectare, caduca</l>
+				<l>pensa, peccantes argue, siste leves.</l>
+				<l>Dicta minus sint, facta magis, sis parcus in hymnis,</l>
+				<l>parcus in obprobriis, largus ad omne decus.</l>
+				<l n="780">Factaque si desint, non desint verba benigna:</l>
+				<l>nam multos caros mellea lingua parit.</l>
+				<l>Maiores sectare, pares venerare, minores</l>
+				<l>instrue; vel iuvenes punge, vel unge senes.</l>
+				<l>Ebrietatis honus fuge, sperne Cupidinis antrum:</l>
+				<l n="785">exulat hinc virtus hec ubi iura tenent.</l>
+				<l>Sibila ne vulgi, nec dona retrograda cures;</l>
+				<l>extra virtutem sit tua cura nichil.</l>
+				<pb n="82"/>
+				<l>Si Petra sit glacies, quid ad hoc? Magis utilis esset</l>
+				<l>paganus tibi quam Clagiver, uncus homo.</l>
+				<l n="790">Aurum plumbescit, quid ad hoc? Et nectar acescit;</l>
+				<l>quodque Monarcha negat sepe tetrarcha facit.</l>
+				<l>Ergo Dei primo confidas in bonitate,</l>
+				<l>et tua virtutum iure secundet eam.</l>
+				<l>Natura contentus eris; mala scandala vita,</l>
+				<l n="795">et tua consilium quelibet acta probent.</l>
+				<l>Ad tempus lusor, nunquam delusor, amicus</l>
+				<l>semper sis minus in corpore, mente magis.</l>
+				<l>Sanctiloquos rimare libros, mansuesce rogatus;</l>
+				<l>legibus insuda, nil nisi iusta refer.</l>
+				<l n="800">Paucis dedecus, omnibus obsequium, caveas ne</l>
+				<l>frons rugosa neget quod manus ipsa facit.</l>
+				<l>Qui decus oblatum rugosa fronte venenat,</l>
+				<l>plus mihi diabolo displicet ille dator,</l>
+				<l>Dona serenus homo carumque serenat amicum,</l>
+				<l n="805">atque datum facie duplicat ipse suum.</l>
+				<l>Nil nisi quod dederis promittas; namque trutanam</l>
+				<l>esse facit linguam sepe ciragra manus.</l>
+				<l>Mallem te podagrum quam taliter esse ciragrum:</l>
+				<l>invalidis pedibus auxiliantur equi.</l>
+				<l n="810">Quod donare velis, dones sine spe redeundi,</l>
+				<l>ne quod aperta dedit, detrahat unca manus:</l>
+				<l>nam dator ablator cancrum gradiendo figurat,</l>
+				<l>quem cancrum faciat dedecus esse suum.</l>
+				<l>Nec circa famulos te pessima consiliatrix</l>
+				<l n="815">concitet iratis vocibus ira gravis:</l>
+				<l>maior enim virtus clementer habere clientes</l>
+				<l>quam quos maiores efficit ipse gradus.</l>
+				<l>Ne sis linguosus, nec in omni famine mutus,</l>
+				<pb n="84"/>
+				<l>sed sola studeas utilitate loqui.</l>
+				<l n="820">In te cognoscas alios: magis utile nil est,</l>
+				<l>et magis urbanum nullus in orbe potest.</l>
+				<l>Ne sit amica tibi pregnans extensio ventris:</l>
+				<l>nam nimis est miserum corpus hebere cibis.</l>
+				<l>Nulla minor virtus sotium quam vincere mensa,</l>
+				<l n="825">et sacco ventris equiparare peram.</l>
+				<l>Ipocrite vitium, Simonis contagia, que nunc</l>
+				<l>clericus omnis amat, sint inimica tibi.</l>
+				<l>Accusare cave, quem non accusat abusus,</l>
+				<l>ne, male procedens, tu patiaris idem.</l>
+				<l n="830">Prospera non semper, nec queras semper amena:</l>
+				<l>non semper dulcis lingitur ore favus.</l>
+				<l>Non omni pratum festivant tempore flores,</l>
+				<l>nec semper viridis purpurat herba solum.</l>
+				<l>Utere discretis, quibus inclita vita sit, unde</l>
+				<l n="835">iam nisi discretum sumere nemo potest:</l>
+				<l>namque bonis bona, sed de pravis prava trahuntur:</l>
+				<l>dulcia de dulci palmite vina fluunt.</l>
+				<l>Non rosa dat spinas, quamvit sit filia spine,</l>
+				<l>nec viole pungunt, nec paradisus obest.</l>
+				<l n="840">Plus tibi sit carum mundum quam mundus, amicus</l>
+				<l>quam sotius, quam sit sanguinis ipse gradus.</l>
+				<l>Ne nimium stolide te credas credulitati:</l>
+				<l>nam plus quam Scarioth traditat illa viros.</l>
+				<l>Non magis Yconium Fredericum tradidit olim</l>
+				<l n="845">quam nunc credulitas suspitiosa suos.</l>
+				<l>Plurima sustineas: iungo medicamina morbis,</l>
+				<l>ut multum morbum multa medela fuget.</l>
+				<l>Ut varias optant diversa negotia leges,</l>
+				<l>sic varias fisicas invaletudo tremens.</l>
+				<l n="850">Hee succos, hee semen amant, hee cortice gaudent,</l>
+				<l>his coma, radices, his medicina favet.</l>
+				<l>Freneticos malve, colicos absinthia curant,</l>
+				<pb n="86"/>
+				<l>empicus anetum, lac quoque spasmus amat.</l>
+				<l>Sic non offitium celebrat quinarius unum</l>
+				<l n="855">sensus, sed propria quilibet arte viget.</l>
+				<l>Ille colores, ille sonos, sapit ille sapores,</l>
+				<l>alter odoratus; alter amena sapit.</l>
+				<l>Tu quoque, quem nimio vitium deforme fatigat</l>
+				<l>pondere, virtutum pocula plura bibas.</l>
+				<l n="860">Sit tibi cara tui victoria plus aliena,</l>
+				<l>et te plus aliis vincere marte stude.</l>
+				<l>Crede mihi, magis est virtute domare teipsum,</l>
+				<l>quam vice Sansonis sternere mille viros.</l>
+				<l>Quemlibet offitiis - ne queras quis sit - honora:</l>
+				<l n="865">nam multos claros letus amicat honor.</l>
+				<l>Gressibus assiduis quisquis bene querit honorem</l>
+				<l>reciprocis gradibus hunc quoque querit honor.</l>
+				<l>Blandus adulator et proditor impius, equo</l>
+				<l>semper, dum vivis, sint in amore tibi:</l>
+				<l n="870">nam naturali blanditor iure tenetur</l>
+				<l>risibus et faleris proditor esse suis.</l>
+				<l>Fistula dulce canit, michi si non, crede Gatoni,</l>
+				<l>dum lira dulcisono carmine prodit aves.</l>
+				<l>Nec nimis astutis vulpescat lingua loquelis:</l>
+				<l n="875">nam dubiam pariunt vulpida verba fidem.</l>
+				<l>Neve tuum iactes alienum, deprecor, hymnum</l>
+				<l>ne volucrum sinodo nuda cachinnet avis.</l>
+				<l>Numquam cervicem sine cauda pingere temptes:</l>
+				<l>nam sine fine suo primitiare nocet.</l>
+				<l n="880">Mutus ad obprobrium, surdusque ad murmura, cecus</l>
+				<l>ad vanum, stolide claudus ad artis iter.</l>
+				<l>Hymnificet de te tua non, sed vox aliena:</l>
+				<l>nam bene festivos stercorat illa viros.</l>
+				<l>Sit tibi plus inimica noverca superbia morum,</l>
+				<l n="885">quam que Christicolas gens Saladina necat.</l>
+				<l>Sitque magis solito tibi gustus amoris amarus:</l>
+				<l>nam scio, quod scio, quod tu fere stultus amas.</l>
+				<l>Quid tibi cum ganea? Quid cum meretricis alumpno?</l>
+				<l>Credis tu Paridi? Stultus es atque Paris.</l>
+				<l n="890">Spurius ille puer nullum suadebit honestum:</l>
+				<pb n="88"/>
+				<l>natus adulterio, semper adulter erit.</l>
+				<l>Quos heremitat amor, potius deremitat; et ipse</l>
+				<l>fac amet Yppolitus, mente Priapus erit.</l>
+				<l>Est fugiendus ob ista, fide ieiunus ab omni,</l>
+				<l n="895">qui nimis orbiculat deque crumenat, amor.</l>
+				<l>Proscribas igitur gladiis et fustibus ipsum,</l>
+				<l>et fugiendo fuga quem fuga sola fugat.</l>
+				<l>Ne te pigritie consors dilatio tardet:</l>
+				<l>ad bona nam cupiens omnia tarda putat.</l>
+				<l n="900">Nam mora denigrat donum meritumque minorat;</l>
+				<l>sed cita grandificat munera parva manus.</l>
+				<l>Ne credas solos magnates esse timendos:</l>
+				<l>est fidus socius, est et amicus amans.</l>
+				<l>Maior honor Piladem carumque timere sodalem</l>
+				<l n="905">quam Sirie regem cesareosque duces.</l>
+				<l>Invidians fugias morsusque sororis iniquos</l>
+				<l>que rabido clarum dente caninat opus.</l>
+				<l>Nec te pretereat humane sortis origo,</l>
+				<l>terrea testa, luti gleba, miserque cinis.</l>
+				<l n="910">Heu, caro nostra, dolor, plus flore caduca caduco,</l>
+				<l>qui parvo spatio fit puer atque senex!</l>
+				<l>Quam fragilem textrix contexit aranea telam,</l>
+				<l>tam fragili tegitur tegmine vita brevis.</l>
+				<l>Quemlibet in propriis gradibus probitatis honora,</l>
+				<l n="915">optimitas tibi sit plus bonitate placens.</l>
+				<l>Simplicitate fruens, hic scotica fercula miscet</l>
+				<l>qui plus atque minus equat honore pari.</l>
+				<pb n="90"/>
+				<l>Fermentat claros numerosa pecunia mores,</l>
+				<l>que tibi si fuerit hospes, et hostis ego.</l>
+				<l n="920">Moribus excultus, sincerus mente, modestus</l>
+				<l>actibus, exemplum voce, rigore gravis.</l>
+				<l>Dura, modesta, probis; patiens, maturus, abundans:</l>
+				<l>perfer, ama, tribuas; mente, vigore, manu.</l>
+				<l>Contra ventosas rabies et fulminis ictus</l>
+				<l n="925">plus quercu solida lenis arundo potest.</l>
+				<l>Prevalet in cunctis discreta modestia rebus,</l>
+				<l>qua sine virtutum grande peribit opus:</l>
+				<l>nam pravis dare, nil aliud quam prava fovere;</l>
+				<l>unde probis tantum debet adesse manus.</l>
+				<l n="930">Sint licet obscuri, ne spernas corporis artus,</l>
+				<l>in quibus ingenium plus brevitate potest.</l>
+				<l>Lampadibus templum ditans, dulcore palatum,</l>
+				<l>est brevis et fructu duplice servit apis.</l>
+				<l>Est brevis accipiter, volucrum tamen obruit agmen,</l>
+				<l n="935">et fugat elatum vipera parva bovem.</l>
+				<l>Sit tibi perpetuum spolians derisio dentes</l>
+				<l>hostis, et insidie et dolus illud idem.</l>
+				<l>Discretus, sapiens, urbanus, largus, honorus,</l>
+				<l>providus, intentus, strenuus esto, vigil.</l>
+				<l n="940">Scripta legens veterum, rigidum sectare Catonem,</l>
+				<l>morigerum Senecam, pacificumque Probum;</l>
+				<l>Dulichium, Adrastum, Ciceronem, Nestora, Titum:</l>
+				<l>pectore, consilio, more, loquendo, manu.</l>
+				<l>Indue virtutum trabeam, mentemque trutanam</l>
+				<l n="945">exue, quere honum, despiciasque malum.</l>
+				<l>Non Ypocras, non ipse suis Podalirius herbis,</l>
+				<l>non (licet ingenium fundat Apollo suum)</l>
+				<l>omnia verbosis memorent medicamina linguis;</l>
+				<l>que si temptarem singula, tempus abit.</l>
+				<l n="950">Et michi Secaneos, ubi nostra palatia, muros</l>
+				<l>(sic stat propositum mentis) adire libet.</l>
+				<pb n="92"/>
+				<l>Ergo dicta tuis iungas medicamina morbis,</l>
+				<l>et quecunque vides proficienda tibi.</l>
+				<l>Litibus hostis, fraudibus hostis, criminis hostis,</l>
+				<l n="955">et que depravant omnibus hostis eris.</l>
+				<l>Iuris amicus, honoris amicus, amicus honesti</l>
+				<l>et que iustificant rebus amicus eris.</l>
+				<l>Hec precepta libens vigili trahe morbidus aure,</l>
+				<l>que permixta simul combibe, sanus eris.</l>
+				<l n="960">Et licet hec bona sint, multo potiora relinquo</l>
+				<l>que non sunt humeris offitiosa tuis.</l>
+				<l>Hec tibi sufficiant: non omnia possumus omnes;</l>
+				<l>tu quod habere vales, suscipe: velle sine.</l>
+				<l>Argento fruitur, rutilans cui deficit aurum,</l>
+				<l n="965">et violas carpit qui nequit ungue rosam. &quot;</l>
+				<l>Tunc iter arripiens ait: &quot; Hec, Henrice, reconde. &quot;</l>
+				<l>Et finem verbis hunc dedit illa: &quot; Vale. &quot;</l>
+				<l>O meus alter ego, probitatis alumpnus et hospes,</l>
+				<l>Lognepres, Henricum mente resume tuum.</l>
+				<l n="970">Nulla remota via solidum partitur amorem,</l>
+				<l>et quem partitur integritate caret.</l>
+				<l>Nec mons, nec planum, nec pars spatiosa marina,</l>
+				<l>disiungunt hos quos copulat unus amor.</l>
+				<l>Lognepres, unde locus quod amor dimittat amorem ?</l>
+				<l n="975">Talis ab oppositis dicitur esse locus.</l>
+				<l>Ergo, ut vivat amor, concordia donat et unum</l>
+				<l>Velle duos unum mentibus esse facit.</l>
+				<l>Tuque, nec inmerito, cui nomen floris adheret,</l>
+				<l>Florenti, famulum mente resume tuum.</l>
+				<l n="980">Pareo tibi, quia parco tuis, flos inclite, culpis,</l>
+				<l>ni tua vivifices risibus acta tuis.</l>
+				<l>Suscipe millenis citharam quam dirigo nervis,</l>
+				<pb n="94"/>
+				<l>Orpheus ignota carminis arte rudis.</l>
+				<l>Inclite, cui vivo, si vivo, provide presul</l>
+				<l n="985">Florentine, statum scito benigne meum.</l>
+				<l>Sum passus gravia, graviora, gravissima, quarto</l>
+				<l>passio, si velit ars, possit inesse gradu.</l>
+				<l>Ergo vale, presul; sum vester, spiritus iste</l>
+				<l>post mortem vester, credite, vester erit.</l>
+				<l n="990">Vivus et extinctus te semper amabo; sed esset</l>
+				<l>viventis melior quam morientis amor.</l>
+			</lg>
+		</div1>
+	</body>
+</text>
+</TEI>

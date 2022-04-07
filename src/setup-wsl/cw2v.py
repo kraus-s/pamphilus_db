@@ -82,9 +82,10 @@ def countvec():
         print(df)
     return
 
+
 def countResults(use_cache: bool = True, val: int = 2):
     """Will take the larger coocurrence matrices and throw out any values below the val paramter.
-    I.e. if any given word pair has a cooccurrence below the threshold, it gets delted.
+    I.e. if any given word pair has a cooccurrence below the threshold, it gets deleted.
     Results are stored as csv files.
     
     Args:

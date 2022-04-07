@@ -1,0 +1,13 @@
+,A fragment of Konungs skuggsjá,Alexanders saga,"Ór lǽknisbók The fragment is unnamed, but Konráð Gíslason named his edition of the text
+                    Úr læknisbók, which is published in Fire og fyrretyve for en stor deel forhen
+                    utrykte prøver af oldnordisk sprog og literatur (1860)",Pamphilus saga,Völuspá in Codex Regius,Bǿjarlǫg ok Farmannalǫg Magnúss Hákonarsonar | Magnus Lagabøtes bylov og farmannslov,Landslǫg Magnúss Hákonarsonar | Magnus Lagabøtes landslov,The Kringla fragment of Óláfs saga helga
+A fragment of Konungs skuggsjá,0.0,0.9306020982795301,0.9516298854737857,0.9574200243248442,0.9904528300006973,0.9196416517412581,0.8947791074691973,0.9767161102830455
+Alexanders saga,0.9306020982795301,0.0,0.7710270439070944,0.7023104474412474,0.9184433979038353,0.6101848582389084,0.5128349663220938,0.6290597830723426
+"Ór lǽknisbók The fragment is unnamed, but Konráð Gíslason named his edition of the text
+                    Úr læknisbók, which is published in Fire og fyrretyve for en stor deel forhen
+                    utrykte prøver af oldnordisk sprog og literatur (1860)",0.9516298854737857,0.7710270439070944,0.0,0.8672285569646121,0.9800578138531097,0.8800399083194638,0.851676177090652,0.900025887774995
+Pamphilus saga,0.9574200243248442,0.7023104474412474,0.8672285569646121,0.0,0.9511400060869566,0.8494347246891115,0.788947855005032,0.8787091762930618
+Völuspá in Codex Regius,0.9904528300006973,0.9184433979038353,0.9800578138531097,0.9511400060869566,0.0,0.949745712461575,0.941245006892307,0.9500206411223514
+Bǿjarlǫg ok Farmannalǫg Magnúss Hákonarsonar | Magnus Lagabøtes bylov og farmannslov,0.9196416517412581,0.6101848582389084,0.8800399083194638,0.8494347246891115,0.949745712461575,0.0,0.27790514385754483,0.797470958924278
+Landslǫg Magnúss Hákonarsonar | Magnus Lagabøtes landslov,0.8947791074691973,0.5128349663220938,0.851676177090652,0.788947855005032,0.941245006892307,0.27790514385754483,0.0,0.7538526137713611
+The Kringla fragment of Óláfs saga helga,0.9767161102830455,0.6290597830723426,0.900025887774995,0.8787091762930618,0.9500206411223514,0.797470958924278,0.7538526137713611,0.0
