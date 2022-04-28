@@ -10,7 +10,8 @@ import glob
 from cltk.text_reuse.text_reuse import TextReuse
 from cltk.stem.latin.j_v import JVReplacer
 from cltk.lemmatize.latin.backoff import BackoffLatinLemmatizer
-
+import sqlite3
+from fuzzywuzzy import fuzz
 
 
 # Helper functions latin
@@ -31,22 +32,17 @@ def get_pamph(inFile, versify: bool = False) -> dict:
     j = JVReplacer()
     if versify:
         for i in pamph:
-            doc = []
+            vcount = 1
             for ii in pamph[i].verses:
-                doc1 = []
-                for iii in ii.tokens:
-                    iii = j.replace(iii)
-                    doc1.append(latin_parser.enclitics(iii))
-                doc.append(doc1)
-                doc2 = " ".join([x for x in doc1])
-            res[i] = doc
+                vttl = f"{i}-{vcount}"
+                txt = " ".join([x for x in ii.tokens])
+                res[vttl] = txt                
     else:
         for i in pamph:
             doc = []
             for ii in pamph[i].verses:
                 for iii in ii.tokens:
-                    iii = j.replace(iii)
-                    doc.append(latin_parser.enclitics(iii))
+                    doc.append(iii)
             doc2 = " ".join([x for x in doc])
             res[i] = doc2
     return res
@@ -162,7 +158,34 @@ def cos_dist(w2varr, labels: list) -> pd.DataFrame:
 
 
 def leven_cit_verse(corpus: dict):
-    
+    corpsList = list(corpus.keys())
+    corpusCombinations = []
+    res0 = []
+    itnum = len(corpsList)
+    for doc in corpsList[:int(itnum/10)]:
+        docPairs = [(doc, n) for n in corpsList[:int(itnum/10)]]
+        corpusCombinations.append(docPairs)
+    print(f"There is a total of {len(corpusCombinations)} combinations to work with")
+    for i in corpusCombinations:
+        print(f"Comparing verse {i[0[0]]} to all the others")
+        for x, y in i:
+            hasVal = False
+            if x == y:
+                avgVal = 0
+                hasVal = True
+            elif len(res0) > 0:
+                for xx, yy, zz in res0:
+                    if xx == y and yy == x:
+                        avgVal = zz
+                        hasVal = True
+            if not hasVal:
+                lev = fuzz.ratio(corpus[x], corpus[y])
+                res0.append((x, y, lev))
+    db = sqlite3.connect("lev-mem.db")
+    with db.cursor() as curse:
+        curse.execute("CREATE TABLE IF NOT EXISTS scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, v1, v2, score)")
+        curse.executemany("INSERT OR IGNORE INTO scores(v1, v2, score) VALUES (?, ?, ?)")
+    import pdb; pdb.set_trace()        
     return
 
 def reuse_cltk(corpus: dict) -> pd.DataFrame:
@@ -213,7 +236,6 @@ def reuse_cltk(corpus: dict) -> pd.DataFrame:
             rowDict[y] = avgVal
         res1.append(rowDict)
         print(res1)
-    import pdb; pdb.set_trace()
     resx = pd.DataFrame(res1, index=corpsList)
     return resx
     
@@ -251,9 +273,16 @@ def analysis_coordinator():
     analysis_cycle(corpus=corpus, stops=on_stops, fName='norse-facs')
 
 
+def versified_lat_leven():
+    latStops = get_latin_stopwords()
+    corpus = corpus_collector_latin(versify=True)
+    leven_cit_verse(corpus)
+
+
 def run():
     analysis_coordinator()    
 
 
 if __name__ == '__main__':
-    run()
+    # run()
+    versified_lat_leven()

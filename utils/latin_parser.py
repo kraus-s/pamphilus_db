@@ -71,7 +71,7 @@ def enclitics(token: str) -> str:
 # -------
 
 
-def parse_pamphilus(infile) -> dict:
+def parse_pamphilus(infile: str) -> dict[str, latDoc]:
     soup = read_tei(infile)
     verses = soup.find_all('v')
     B1 = latDoc(abbreviation="B1", shelfmark="Ms Hamilton 390")
@@ -127,13 +127,21 @@ def parse_perseus(infile, versify: bool = False) -> dict:
             ttl = txt.find('head').get_text()
             lines = txt.find_all('l')
             docTxt = []
+            if versify:
+                vcount = 1
             for l in lines:
                 tokens = l.get_text()
                 tokens = tokens.split(" ")
-                for token in tokens:
-                    docTxt.append(token)
-            docTxt2 = " ".join([x for x in docTxt])
-            res[ttl] = docTxt2
+                if versify:
+                    vttl = f"{ttl}-{vcount}"
+                    res[vttl] = " ".join([x for x in tokens])
+                    vcount += 1
+                else:
+                    for token in tokens:
+                        docTxt.append(token)
+            if not versify:
+                docTxt2 = " ".join([x for x in docTxt])
+                res[ttl] = docTxt2
         return res
     else:
         ttl = soup.find('title').get_text()
@@ -143,8 +151,24 @@ def parse_perseus(infile, versify: bool = False) -> dict:
                 i.decompose()
         else:
             print("No notes, yay!")
-        txt = soup.find('body').get_text()
-        res[ttl] = txt
+        if versify:
+            try:
+                verses = soup.find_all('l')
+                hasVerse = True
+            except:
+                hasVerse = False
+            if not hasVerse:
+                txt = soup.find('body').get_text()
+                verses = txt.splitlines()
+            vcount = 1
+            for v in verses:
+                vtxt = v.get_text()
+                vttl = f"{ttl}-{vcount}"
+                res[vttl] = vtxt
+                vcount +=1
+        else:            
+            txt = soup.find('body').get_text()
+            res[ttl] = txt
         return res
 
         
@@ -152,6 +176,7 @@ def parse_perseus(infile, versify: bool = False) -> dict:
 
 # End Region
 # ----------
+
 
 # Region: For neo4j
 # -----------------
