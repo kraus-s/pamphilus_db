@@ -1,3 +1,4 @@
+import itertools
 from numpy import product, vectorize
 from utils import latin_parser
 from utils import menota_parser
@@ -12,7 +13,6 @@ from cltk.stem.latin.j_v import JVReplacer
 from cltk.lemmatize.latin.backoff import BackoffLatinLemmatizer
 import sqlite3
 from fuzzywuzzy import fuzz
-
 
 # Helper functions latin
 # ----------------------
@@ -159,32 +159,27 @@ def cos_dist(w2varr, labels: list) -> pd.DataFrame:
 
 def leven_cit_verse(corpus: dict):
     corpsList = list(corpus.keys())
-    corpusCombinations = []
+    corpusCombinations = list(itertools.combinations(corpsList, 2))
     res0 = []
-    itnum = len(corpsList)
-    for doc in corpsList[:int(itnum/10)]:
-        docPairs = [(doc, n) for n in corpsList[:int(itnum/10)]]
-        corpusCombinations.append(docPairs)
     print(f"There is a total of {len(corpusCombinations)} combinations to work with")
-    for i in corpusCombinations:
-        print(f"Comparing verse {i[0[0]]} to all the others")
-        for x, y in i:
-            hasVal = False
-            if x == y:
-                avgVal = 0
-                hasVal = True
-            elif len(res0) > 0:
-                for xx, yy, zz in res0:
-                    if xx == y and yy == x:
-                        avgVal = zz
-                        hasVal = True
-            if not hasVal:
-                lev = fuzz.ratio(corpus[x], corpus[y])
-                res0.append((x, y, lev))
-    db = sqlite3.connect("lev-mem.db")
-    with db.cursor() as curse:
-        curse.execute("CREATE TABLE IF NOT EXISTS scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, v1, v2, score)")
-        curse.executemany("INSERT OR IGNORE INTO scores(v1, v2, score) VALUES (?, ?, ?)")
+    itcnt = 0
+    svcnt = 0
+    for x, y in corpusCombinations:
+        lev = fuzz.ratio(corpus[x], corpus[y])
+        res0.append((x, y, lev))
+        if itcnt == 100000:
+            db = sqlite3.connect("lev-mem.db")
+            curse = db.cursor()
+            curse.execute("CREATE TABLE IF NOT EXISTS scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, v1, v2, score)")
+            curse.executemany("INSERT OR IGNORE INTO scores(v1, v2, score) VALUES (?, ?, ?)", res0)
+            db.commit()
+            db.close()
+            res0 = []
+            itcnt = 0
+            svcnt += 1
+            print(f"Done a total of {100000*svcnt} pairings, meaning we are {100000*svcnt//len(corpusCombinations)*100} % done.")
+        else:
+            itcnt += 1
     import pdb; pdb.set_trace()        
     return
 
