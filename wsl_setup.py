@@ -2,7 +2,7 @@ import itertools
 from numpy import product, vectorize
 from utils import latin_parser
 from utils import menota_parser
-from constants import *
+from utils.constants import *
 from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.spatial.distance import pdist, squareform
 from sklearn.metrics import pairwise_distances

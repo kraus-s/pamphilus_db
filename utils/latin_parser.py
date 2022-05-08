@@ -6,7 +6,7 @@ try:
     from cltk.tokenize.latin.word import WordTokenizer
 except:
     print("Is this windows?")
-from constants import *
+from utils.constants import *
 
 
 # Region: Class based for i dunno what

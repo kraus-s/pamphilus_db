@@ -3,7 +3,7 @@ from typing import Tuple
 from neo4j import GraphDatabase
 from pathlib import Path
 import pandas as pd
-from constants import *
+from utils.constants import *
 from utils.latin_parser import latin_neofyier as ln
 from utils.menota_parser import para_neofiyer as pn
 from utils import menota_parser as mp

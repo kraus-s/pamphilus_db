@@ -1,3 +1,4 @@
+# File paths
 PAMPHILUS_LATINUS = "data/latin/texts/pamphilus/pamphLat.xml"
 LATIN_STOP_WORDS = "data/latin/latinStops.txt"
 LATIN_CORPUS_FILES = "data/latin/texts/"
@@ -7,8 +8,12 @@ EXCELS = "data/ingest/"
 
 PSDG47 = "data/norseMat/texts/DG-4at7-Pamph-para.xml"
 VERSEORDER = "data/latin/texts/pamphilus/verseorder.xlsx"
+N2VMODEL_PATH = "data/models/n2v-model.n2v"
+SQLITE_PATH = "data/onp/onp_data.db"
 
-
+# For ONP crawling 
+# TODO: Integrate into database proper
+BASE_URL = "https://onp.ku.dk/onp/onp.php"
 
 # Onto ONO
 TXTWITDES = "ZZ02_TxtWit" # NodeLabel

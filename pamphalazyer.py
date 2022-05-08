@@ -20,6 +20,7 @@ from IPython.core.display import display, HTML
 import streamlit.components.v1 as components
 import random
 import string
+from utils import n2vmhandler as n2v
 
 
 # Helper functions
@@ -226,6 +227,14 @@ def words_of_interest() -> None:
     ag(onpWords)
 
 
+def onp_n2v():
+    model = n2v.load_n2v_model()
+    txt2fetch = st.text_input("ONP ID of textwitness")
+    nsims = int(st.text_input("Select top n most similar"))
+    sims = n2v.get_similars(model, conn=n2v.create_connection(), onpID=txt2fetch, nsimilars=nsims)
+    st.write(sims)
+
+
 def data_entry_helper():
     if Path("/data/ingest/nodes.csv").is_file():
         nodesDF = pd.read_csv("/data/ingest/nodes.csv")
@@ -261,16 +270,14 @@ def data_entry_helper():
                 apDict = {'NodeID': id, 'Labels': 'E22_Human-Made_Object'}
             
 
-
-
-
 def main():
     ON, Lat = data_loader()
     currentData = myData(ON, Lat)
     choices = {"Parallel text display": para_display,
                 "Lemmata of interest": words_of_interest,
                 "Word cooccurences": vcooc,
-                "Graph based paras": display_para}
+                "Graph based paras": display_para,
+                "Node2Vec similarities": onp_n2v}
     choice = st.sidebar.selectbox(label="Menu", options=choices.keys())
     if choice == 'Parallel text display':
         para_display(currentData)
@@ -279,7 +286,6 @@ def main():
         display()
     
     
-
 
 # Display part
 # -----------
