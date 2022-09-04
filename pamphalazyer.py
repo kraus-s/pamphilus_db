@@ -1,5 +1,3 @@
-from cProfile import label
-from numpy.lib.arraysetops import isin
 import streamlit as st
 import pandas as pd
 from utils import menota_parser
@@ -9,7 +7,6 @@ from utils import neo2st
 import pickle
 from pathlib import Path
 from st_aggrid import AgGrid as ag
-from annotated_text import annotated_text as at
 from neo4j import GraphDatabase
 from neo4j.graph import Node, Relationship
 import networkx as nx
