@@ -31,12 +31,9 @@ def get_similars(model: KeyedVectors, conn: sqlite3.Connection, onpID: str, nsim
     shit = model.most_similar(onpID, topn=nsimilars)
     res = []
     for i in shit:
-        page = get_onp_page_data(i[0]) # TODO: get all the names and stuff into the onp db
-        soup = BeautifulSoup(page.content, features="lxml")
-        subsoup = soup.find("article")
-        soupsoupsoup = subsoup.h2.a.get_text()
-        conn = create_connection()
         curse = conn.cursor()
+        curse.execute(f"SELECT name FROM witnesses WHERE onpID = '{i[0]}'")
+        name = curse.fetchall()
         curse.execute(f"SELECT a.shelfmark, a.postquem, a.antequem from msInfo as a, junctionMsxWitreal as b WHERE b.witID = '{i[0]}' AND b.msID = a.onpID")
         bla = curse.fetchall()
         if bla:
@@ -45,7 +42,7 @@ def get_similars(model: KeyedVectors, conn: sqlite3.Connection, onpID: str, nsim
         else:
             ms = "???"
             date = "???"
-        res.append((soupsoupsoup, i[0], ms, date))
+        res.append((name[0][0], i[0], ms, date))
     return res
 
 if __name__ == "__main__":
