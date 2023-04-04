@@ -12,7 +12,7 @@ from cltk.text_reuse.text_reuse import TextReuse
 from cltk.stem.latin.j_v import JVReplacer
 from cltk.lemmatize.latin.backoff import BackoffLatinLemmatizer
 import sqlite3
-from fuzzywuzzy import fuzz
+from thefuzz import fuzz
 
 # Helper functions latin
 # ----------------------
@@ -159,15 +159,14 @@ def cos_dist(w2varr, labels: list) -> pd.DataFrame:
 
 def leven_cit_verse(corpus: dict):
     corpsList = list(corpus.keys())
-    corpusCombinations = list(itertools.combinations(corpsList, 2))
+    corpus_combinations = itertools.combinations(corpsList, 2)
     res0 = []
-    print(f"There is a total of {len(corpusCombinations)} combinations to work with")
     itcnt = 0
     svcnt = 0
-    for x, y in corpusCombinations:
-        lev = fuzz.ratio(corpus[x], corpus[y])
+    for i in leven_worker(corpus_combinations, corpus):
+        x, y, lev = i
         res0.append((x, y, lev))
-        if itcnt == 100000:
+        if itcnt == 10000:
             db = sqlite3.connect("lev-mem.db")
             curse = db.cursor()
             curse.execute("CREATE TABLE IF NOT EXISTS scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, v1, v2, score)")
@@ -177,64 +176,18 @@ def leven_cit_verse(corpus: dict):
             res0 = []
             itcnt = 0
             svcnt += 1
-            print(f"Done a total of {100000*svcnt} pairings, meaning we are {100000*svcnt//len(corpusCombinations)*100} % done.")
+            print(f"Done a total of {10000*svcnt} pairings.")
         else:
-            itcnt += 1
-    import pdb; pdb.set_trace()        
-    return
+            itcnt += 1        
 
-def reuse_cltk(corpus: dict) -> pd.DataFrame:
-    compare = TextReuse(sanitize_input=True)
-    corpsList = list(corpus.keys())
-    corpusCombinations = []
-    for doc in corpsList:
-        docPairs = [(doc, n) for n in corpsList]
-        corpusCombinations.append(docPairs)
-    res0 = []
-    res1 = []
-    for row in corpusCombinations:
-        rowDict = {}
-        for x, y in row:
-            hasVal = False
-            if x == y:
-                print(f"No need to compare {x} & {y}")
-                avgVal = 0
-                hasVal = True
-            elif len(res0) > 0:
-                for xx, yy, zz in res0:
-                    if xx == y and yy == x:
-                        print(f"{x} and {y} -vs- {xx} and {yy} are the same thing")
-                        avgVal = zz
-                        hasVal = True
-            if not hasVal:
-                print(f"Comparing {x} and {y}")
-                
-                # Several texts in the corpus are so long that they will make the script go OOM
-                # Splitting them all in half alleviates this
 
-                x1 = corpus[x][:len(corpus[x])//2]
-                x2 = corpus[x][len(corpus[x])//2:]
-                y1 = corpus[y][:len(corpus[y])//2]
-                y2 = corpus[y][len(corpus[y])//2:]
-                choppedUp = [(x1, y1), (x1, y2), (x2, y1), (x2, y2)]
-                am1 = 0
-                am2 = 0
-                for slice in choppedUp:
-                    res = compare.compare_sliding_window(slice[0], slice[1], window_length=100, curse_forward=50)
-                    for i in res:
-                        for ii in i:
-                            am2 += ii.ratio
-                            am1 += 1
-                avgVal = am2/am1
-                print(f"Score {x} and {y}: {avgVal} ({am2}/{am1})")
-            res0.append((x, y, avgVal))
-            rowDict[y] = avgVal
-        res1.append(rowDict)
-        print(res1)
-    resx = pd.DataFrame(res1, index=corpsList)
-    return resx
+def leven_worker(combinations, corpus: dict):
+    for x,y in combinations:
+        leven = fuzz.ratio(corpus[x], corpus[y])
+        if leven > 50:
+            yield x, y, leven
+
     
-
 # Analysis functions
 # ------------------
 
