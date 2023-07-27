@@ -8,8 +8,11 @@ EXCELS = "data/ingest/"
 
 PSDG47 = "data/norseMat/texts/DG-4at7-Pamph-para.xml"
 VERSEORDER = "data/latin/texts/pamphilus/verseorder.xlsx"
-N2VMODEL_PATH = "data/models/n2v-model.n2v"
-SQLITE_PATH = "data/onp/onp_data.db"
+N2V_PARAMETER_PATH = "data/n2v/model-parameters.csv"
+N2V_MODELS_PATH = "data/n2v/models/"
+N2V_PLOT_PARAMETERS_PATH = "data/n2v/plot-parameters.csv"
+N2V_PLOTS_BASE_PATH = "data/n2v/plots/"
+SQLITE_PATH = "data/n2v/onp_data.db"
 
 # For ONP crawling 
 # TODO: Integrate into database proper

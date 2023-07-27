@@ -2,10 +2,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from functools import reduce as red
 from utils.util import read_tei
-try:
-    from cltk.tokenize.latin.word import WordTokenizer
-except:
-    print("Is this windows?")
+from cltk.tokenize.latin.word import WordTokenizer
 from utils.constants import *
 
 
@@ -75,10 +72,11 @@ def parse_pamphilus(infile: str) -> dict[str, latDoc]:
     soup = read_tei(infile)
     verses = soup.find_all('v')
     B1 = latDoc(abbreviation="B1", shelfmark="Ms Hamilton 390")
-    P3 = latDoc(abbreviation="P3", shelfmark="Lat----?")
+    P3 = latDoc(abbreviation="P3", shelfmark="BNF cod. lat. 8430")
     W1 = latDoc(abbreviation="W1", shelfmark="cod. 303")
     To = latDoc(abbreviation="To", shelfmark="cod. 102")
-    res = {"B1": B1, "P3": P3, "To": To, "W1": W1}
+    P5 = latDoc(abbreviation="P5", shelfmark="BNF cod. franc. 25405")
+    res = {"B1": B1, "P3": P3, "To": To, "W1": W1, "P5": P5}
     for indiVerse in verses:
         
         currVerse_ = indiVerse.get('n')
@@ -86,7 +84,8 @@ def parse_pamphilus(infile: str) -> dict[str, latDoc]:
         currVerseP3 = verse(versNumber=currVerse_)
         currVerseW1 = verse(versNumber=currVerse_)
         currVerseTo = verse(versNumber=currVerse_)
-        currVList = [currVerseB1, currVerseP3, currVerseW1, currVerseTo]
+        curr_verse_p5 = verse(versNumber=currVerse_)
+        currVList = [currVerseB1, currVerseP3, currVerseW1, currVerseTo, curr_verse_p5]
         words2beWorked = indiVerse.findAll()
         for realtalk in words2beWorked:
             if realtalk.name == 'w':
@@ -109,10 +108,13 @@ def parse_pamphilus(infile: str) -> dict[str, latDoc]:
                         currVerseTo.add_token(actualWord)
                     if "W1" in variantesConcretes:
                         currVerseW1.add_token(actualWord)
+                    if "P5" in variantesConcretes:
+                        curr_verse_p5.add_token(actualWord)
         B1.add_verse(currVerseB1)
         P3.add_verse(currVerseP3)
         To.add_verse(currVerseTo)
         W1.add_verse(currVerseW1)
+        P5.add_verse(curr_verse_p5)
     return res
 
 

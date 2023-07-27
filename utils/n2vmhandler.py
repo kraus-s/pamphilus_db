@@ -3,7 +3,8 @@ from gensim.models import KeyedVectors
 from utils.constants import *
 import requests
 import sqlite3
-
+import pandas as pd
+import ast
 
 def create_connection(db_file: str = SQLITE_PATH) -> sqlite3.Connection:
     """ create a database connection to the SQLite database
@@ -17,19 +18,47 @@ def create_connection(db_file: str = SQLITE_PATH) -> sqlite3.Connection:
     return conn
 
 
-def get_onp_page_data(onpID: str):
-    page = requests.get(f"{BASE_URL}{onpID}")
-    return page
+def load_model_metadata() -> pd.DataFrame:
+    # This will load the paths for all the models and all their parameters
+    df = pd.read_csv(N2V_PARAMETER_PATH)
+    return df
 
 
-def load_n2v_model(fname: str = N2VMODEL_PATH) -> KeyedVectors:
-    n2kv = KeyedVectors.load(fname)
+def get_plot(model_filename: str) -> list[str]:
+    # Pass the filename of a model, the path to the corresponding plots will be returned
+    df = pd.read_csv(N2V_PLOT_PARAMETERS_PATH)
+    relevant_df = df.loc[df["Model Filename"] == model_filename]
+    names_list = relevant_df["Plot Filename"].to_list()
+    res = [f"{N2V_PLOTS_BASE_PATH}{x}" for x in names_list]
+    return res
+
+
+def get_applicable_witnesses(date_range_init: str) -> dict[str, str]:
+    date_range = ast.literal_eval(date_range_init)
+    conn = create_connection()
+    curs = conn.cursor()
+    query = f'''
+                        SELECT w.name, w.onpID
+                        FROM msInfo AS m
+                        JOIN junctionMsxWitreal AS j ON m.onpID = j.msID
+                        JOIN witnesses AS w ON j.witID = w.onpID
+                        WHERE m.postquem > {date_range[0]} AND m.antequem < {date_range[1]}
+                    '''
+    curs.execute(query)
+    rows = curs.fetchall()
+    res = {row[0]:row[1] for row in rows}
+    return res
+
+
+def load_n2v_model(fname: str) -> KeyedVectors:
+    n2kv = KeyedVectors.load(f"{N2V_MODELS_PATH}{fname}")
     return n2kv
 
 
-def get_similars(model: KeyedVectors, conn: sqlite3.Connection, onpID: str, nsimilars: int) -> list[tuple[str, str, str, str]]:
+def get_similars(model: KeyedVectors, onpID: str, nsimilars: int) -> list[tuple[str, str, str, str]]:
     shit = model.most_similar(onpID, topn=nsimilars)
     res = []
+    conn = create_connection()
     for i in shit:
         curse = conn.cursor()
         curse.execute(f"SELECT name FROM witnesses WHERE onpID = '{i[0]}'")
@@ -46,5 +75,4 @@ def get_similars(model: KeyedVectors, conn: sqlite3.Connection, onpID: str, nsim
     return res
 
 if __name__ == "__main__":
-    test = get_similars(model=load_n2v_model(), conn=create_connection(), onpID="?r9559", nsimilars=10)
-    print(test)
+    pass

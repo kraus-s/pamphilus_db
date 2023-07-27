@@ -4,6 +4,7 @@ from utils import menota_parser
 from utils import latin_parser
 from utils import util as ut
 from utils import neo2st
+from utils.constants import *
 import pickle
 from pathlib import Path
 from st_aggrid import AgGrid as ag
@@ -18,6 +19,8 @@ import streamlit.components.v1 as components
 import random
 import string
 from utils import n2vmhandler as n2v
+from utils import similarities as sims
+from IPython.core.display import display, HTML
 
 
 # Helper functions
@@ -63,9 +66,26 @@ def get_id():
     return rID
 
 
-
 # Display functions
 # -----------------
+
+def onp_n2v():
+    all_models = n2v.load_model_metadata()
+    st.dataframe(all_models)
+    model_select = st.selectbox(label="Select a model to display and query", options=all_models["File Name"].to_list())
+    selected_model_metadata = all_models.loc[all_models["File Name"] == model_select].to_dict('records')[0]
+    model = n2v.load_n2v_model(model_select)
+    img_list = n2v.get_plot(model_select)
+    st.image(img_list)
+    query_options = n2v.get_applicable_witnesses(date_range_init=selected_model_metadata['Date Range'])
+    query_model = st.selectbox(label="Select a witnesses to retrieve learned similarities", options=list(query_options.keys()))
+    how_many = st.number_input(label="Load top n of the most similar witnesses", value=10)
+    similars = n2v.get_similars(model=model, onpID=query_options[query_model], nsimilars=how_many)
+    s = ''
+    for i in similars:
+        s += "- " + i[0] + "\n"
+    st.markdown(s)
+    
 
 
 def para_display(data: myData):
@@ -224,14 +244,6 @@ def words_of_interest() -> None:
     ag(onpWords)
 
 
-def onp_n2v():
-    model = n2v.load_n2v_model()
-    txt2fetch = st.text_input("ONP ID of textwitness")
-    nsims = int(st.text_input("Select top n most similar"))
-    sims = n2v.get_similars(model, conn=n2v.create_connection(), onpID=txt2fetch, nsimilars=nsims)
-    st.write(sims)
-
-
 def data_entry_helper():
     if Path("/data/ingest/nodes.csv").is_file():
         nodesDF = pd.read_csv("/data/ingest/nodes.csv")
@@ -265,7 +277,13 @@ def data_entry_helper():
             if submitted:
                 id = get_id()
                 apDict = {'NodeID': id, 'Labels': 'E22_Human-Made_Object'}
-            
+
+
+def get_all_stylo():
+    all_metrics = sims.get_csv_filenames()
+    selected_table = st.selectbox(label="Select a similarity type", options=all_metrics)
+    df = sims.get_similarity(f"data/similarities/{selected_table}")
+    st.dataframe(df)
 
 def main():
     ON, Lat = data_loader()
@@ -274,14 +292,14 @@ def main():
                 "Lemmata of interest": words_of_interest,
                 "Word cooccurences": vcooc,
                 "Graph based paras": display_para,
-                "Node2Vec similarities": onp_n2v}
+                "Node2Vec similarities": onp_n2v,
+                "Stylometrics and Similarities": get_all_stylo}
     choice = st.sidebar.selectbox(label="Menu", options=choices.keys())
     if choice == 'Parallel text display':
         para_display(currentData)
     else:
         display = choices[choice]
         display()
-    
     
 
 # Display part

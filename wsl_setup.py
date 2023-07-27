@@ -8,7 +8,6 @@ from scipy.spatial.distance import pdist, squareform
 from sklearn.metrics import pairwise_distances
 import pandas as pd
 import glob
-from cltk.text_reuse.text_reuse import TextReuse
 from cltk.stem.latin.j_v import JVReplacer
 from cltk.lemmatize.latin.backoff import BackoffLatinLemmatizer
 import sqlite3
@@ -36,7 +35,8 @@ def get_pamph(inFile, versify: bool = False) -> dict:
             for ii in pamph[i].verses:
                 vttl = f"{i}-{vcount}"
                 txt = " ".join([x for x in ii.tokens])
-                res[vttl] = txt                
+                res[vttl] = txt
+                vcount += 1               
     else:
         for i in pamph:
             doc = []
@@ -158,8 +158,8 @@ def cos_dist(w2varr, labels: list) -> pd.DataFrame:
 
 
 def leven_cit_verse(corpus: dict):
-    corpsList = list(corpus.keys())
-    corpus_combinations = itertools.combinations(corpsList, 2)
+    corps_list = list(corpus.keys())
+    corpus_combinations = itertools.combinations(corps_list, 2)
     res0 = []
     itcnt = 0
     svcnt = 0
