@@ -21,6 +21,7 @@ import string
 from utils import n2vmhandler as n2v
 from utils import similarities as sims
 from IPython.core.display import display, HTML
+import sqlite3
 
 
 # Helper functions
@@ -285,6 +286,15 @@ def get_all_stylo():
     df = sims.get_similarity(f"data/similarities/{selected_table}")
     st.dataframe(df)
 
+
+def display_leven():
+    db = sqlite3.connect("lev-mem_bak.db")
+    df = pd.read_sql("SELECT * FROM scores", db)
+    strings_to_check = ["B1", "P3", "W1", "To"]
+    filtered_df = df[df['v1'].str.contains('|'.join(strings_to_check))]
+    st.dataframe(filtered_df)
+
+
 def main():
     ON, Lat = data_loader()
     currentData = myData(ON, Lat)
@@ -293,7 +303,8 @@ def main():
                 "Word cooccurences": vcooc,
                 "Graph based paras": display_para,
                 "Node2Vec similarities": onp_n2v,
-                "Stylometrics and Similarities": get_all_stylo}
+                "Stylometrics and Similarities": get_all_stylo,
+                "Levenshtein similarities (Latin)": display_leven}
     choice = st.sidebar.selectbox(label="Menu", options=choices.keys())
     if choice == 'Parallel text display':
         para_display(currentData)

@@ -11,7 +11,7 @@ import glob
 from cltk.stem.latin.j_v import JVReplacer
 from cltk.lemmatize.latin.backoff import BackoffLatinLemmatizer
 import sqlite3
-from thefuzz import fuzz
+from fuzzywuzzy import fuzz
 
 # Helper functions latin
 # ----------------------
@@ -165,12 +165,12 @@ def leven_cit_verse(corpus: dict):
     svcnt = 0
     for i in leven_worker(corpus_combinations, corpus):
         x, y, lev = i
-        res0.append((x, y, lev))
+        res0.append((x, y, lev, corpus[x], corpus[y]))
         if itcnt == 10000:
             db = sqlite3.connect("lev-mem.db")
             curse = db.cursor()
-            curse.execute("CREATE TABLE IF NOT EXISTS scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, v1, v2, score)")
-            curse.executemany("INSERT OR IGNORE INTO scores(v1, v2, score) VALUES (?, ?, ?)", res0)
+            curse.execute("CREATE TABLE IF NOT EXISTS scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, v1, v2, score, v1_text, v2_text)")
+            curse.executemany("INSERT OR IGNORE INTO scores(v1, v2, score, v1_text, v2_text) VALUES (?, ?, ?, ?, ?)", res0)
             db.commit()
             db.close()
             res0 = []
@@ -203,7 +203,6 @@ def analysis_cycle(corpus: dict, stops: list, fName: str):
     print("Cosine")
     print(cosD)    
     cosD.to_csv(f"{fName}-cosine.csv")
-    return
 
 
 def analysis_coordinator():
