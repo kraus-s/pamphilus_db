@@ -11,7 +11,7 @@ import glob
 from cltk.stem.latin.j_v import JVReplacer
 from cltk.lemmatize.latin.backoff import BackoffLatinLemmatizer
 import sqlite3
-from fuzzywuzzy import fuzz
+from rapidfuzz import fuzz
 
 # Helper functions latin
 # ----------------------
@@ -31,12 +31,10 @@ def get_pamph(inFile, versify: bool = False) -> dict:
     j = JVReplacer()
     if versify:
         for i in pamph:
-            vcount = 1
             for ii in pamph[i].verses:
-                vttl = f"{i}-{vcount}"
+                vttl = f"{i}-{ii.vno}"
                 txt = " ".join([x for x in ii.tokens])
-                res[vttl] = txt
-                vcount += 1               
+                res[vttl] = txt              
     else:
         for i in pamph:
             doc = []
@@ -157,9 +155,19 @@ def cos_dist(w2varr, labels: list) -> pd.DataFrame:
         return cosine_distances
 
 
+def combinator(corpus: dict[str, str], pamph_only: bool = False) -> list[str]:
+    if pamph_only:
+        all_keys = corpus.keys()
+        pamph_mss = ["B1", "P3", "P5", "W1", "To"]
+        pamph_keys = [x for x in all_keys if any(ms in x for ms in pamph_mss)]
+        res = list(itertools.product(pamph_keys, all_keys))
+    else:
+        res = itertools.combinations(corpus.keys(), 2)
+    return res
+
+
 def leven_cit_verse(corpus: dict):
-    corps_list = list(corpus.keys())
-    corpus_combinations = itertools.combinations(corps_list, 2)
+    corpus_combinations = combinator(corpus)
     res0 = []
     itcnt = 0
     svcnt = 0

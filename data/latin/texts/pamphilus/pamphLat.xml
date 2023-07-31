@@ -1193,23 +1193,23 @@
                 <var variants="a">inde</var>
             </w>
             <w>
-                <var variants="P3, To, W1">mei</var>
+                <var variants="P3, To, W1, P5">mei</var>
                 <var variants="B1">crescit</var>
             </w>
             <w>
-                <var variants="P3, To, W1">crescit</var>
+                <var variants="P3, To, W1, P5">crescit</var>
                 <var variants="B1">dolor</var>
             </w>
             <w>
-                <var variants="P3, To, W1">dolor</var>
+                <var variants="P3, To, W1, P5">dolor</var>
                 <var variants="B1">annibus</var>
             </w>
             <w>
-                <var variants="P3, To, W1">annibus</var>
+                <var variants="P3, To, W1, P5">annibus</var>
                 <var variants="B1">horis</var>
             </w>
             <w>
-                <var variants="P3, To, W1">horis</var>
+                <var variants="P3, To, W1, P5">horis</var>
                 <var variants="B1">amanti</var>
             </w>
         </v>
@@ -10044,7 +10044,7 @@
         </v>
         <v n="390">
             <w>
-                <var variants="P3, W1">Altera</var>
+                <var variants="P3, W1, P5">Altera</var>
                 <var variants="To">Alter</var>
             </w>
             <w>
@@ -10058,13 +10058,13 @@
             </w>
             <p>,</p>
             <w>
-                <var variants="P3, To, W1">conscius</var>
+                <var variants="P3, To, W1, P5">conscius</var>
             </w>
             <w>
-                <var variants="P3, To, W1">omnis</var>
+                <var variants="P3, To, W1, P5">omnis</var>
             </w>
             <w>
-                <var variants="P3, To, W1">abest</var>
+                <var variants="P3, To, W1, P5">abest</var>
             </w>
             <p>.</p>
         </v>
@@ -11431,7 +11431,7 @@
             </w>
             <p>,</p>
             <w>
-                <var variants="a">Galthee</var>
+                <var variants="a">Galathee</var>
             </w>
             <w>
                 <var variants="a">teda</var>

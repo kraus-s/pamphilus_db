@@ -35,8 +35,8 @@ class latDoc:
         self.verses = []
         self.ordered_verses = {}
     
-    def add_verse(self, newVerse: verse):
-        self.verses.append(newVerse)
+    def add_verse(self, new_verse: verse):
+        self.verses.append(new_verse)
     
     def order_verses(self, versObj, verseOrder):
         self.ordered_verses[verseOrder] = versObj

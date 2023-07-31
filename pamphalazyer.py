@@ -287,11 +287,28 @@ def get_all_stylo():
     st.dataframe(df)
 
 
-def display_leven():
-    db = sqlite3.connect("lev-mem_bak.db")
+def splitsies(combined_name: str) -> str:
+    return combined_name.split("-")[1]
+
+
+def get_leven_dfs_ready() -> pd.DataFrame:
+    db = sqlite3.connect("lev-mem.db")
     df = pd.read_sql("SELECT * FROM scores", db)
-    strings_to_check = ["B1", "P3", "W1", "To"]
+    strings_to_check = ["B1", "P3", "W1", "To", "P5"]
     filtered_df = df[df['v1'].str.contains('|'.join(strings_to_check))]
+    filtered_df["v_number_v1"] = filtered_df["v1"].apply(splitsies)
+    filtered_df["v_number_v2"] = filtered_df["v2"].apply(splitsies)
+    filtered_df = filtered_df[filtered_df["v_number_v1"] != filtered_df["v_number_v2"]]
+    filtered_df = filtered_df[filtered_df["v1"] != ""]
+    filtered_df.drop(columns=["v_number_v1", "v_number_v2", "locID"], inplace=True)
+    return filtered_df
+
+
+def display_leven():
+    filtered_df = get_leven_dfs_ready()
+    leven_similarity = st.slider("Levenshtein lower threshold", min_value=50, max_value=100, value=60)
+    leven_similarity_upper = st.slider("Levenshtein upper threshold", min_value=50, max_value=100, value=99)
+    filtered_df = filtered_df.loc[(filtered_df["score"] >= leven_similarity) & (filtered_df["score"] <= leven_similarity_upper)]
     st.dataframe(filtered_df)
 
 
