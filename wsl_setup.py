@@ -177,8 +177,8 @@ def leven_cit_verse(corpus: dict):
         if itcnt == 10000:
             db = sqlite3.connect("lev-mem.db")
             curse = db.cursor()
-            curse.execute("CREATE TABLE IF NOT EXISTS scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, v1, v2, score, v1_text, v2_text)")
-            curse.executemany("INSERT OR IGNORE INTO scores(v1, v2, score, v1_text, v2_text) VALUES (?, ?, ?, ?, ?)", res0)
+            curse.execute("CREATE TABLE IF NOT EXISTS rat_scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, v1, v2, score, v1_text, v2_text)")
+            curse.executemany("INSERT OR IGNORE INTO rat_scores(v1, v2, score, v1_text, v2_text) VALUES (?, ?, ?, ?, ?)", res0)
             db.commit()
             db.close()
             res0 = []
@@ -229,7 +229,6 @@ def analysis_coordinator():
 
 
 def versified_lat_leven():
-    latStops = get_latin_stopwords()
     corpus = corpus_collector_latin(versify=True)
     leven_cit_verse(corpus)
 

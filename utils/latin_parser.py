@@ -194,6 +194,7 @@ def read_latin_xml(infile):
     witnessP3Bamboo = pd.DataFrame(columns=['Verse', 'Word'])
     witnessToBamboo = pd.DataFrame(columns=['Verse', 'Word'])
     witnessW1Bamboo = pd.DataFrame(columns=['Verse', 'Word'])
+    witnessP5Bamboo = pd.DataFrame(columns=['Verse', 'Word'])
   
     for indiVerse in verses:
         
@@ -349,6 +350,7 @@ def latin_neofyier(infile):
                 count1 +=1
                 count2 +=1
     return nodeDF, edgeDF
+
 
 def parse(inFile):
     return read_latin_xml(inFile)

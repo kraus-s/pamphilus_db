@@ -5,6 +5,7 @@ LATIN_CORPUS_FILES = "data/latin/texts/"
 OLD_NORSE_CORPUS_FILES = "data/norseMat/texts/"
 ON_STOPS = "data/norseMat/stopwords.txt"
 EXCELS = "data/ingest/"
+LEVEN_DB = "data/similarities/lev-mem.db"
 
 PSDG47 = "data/norseMat/texts/DG-4at7-Pamph-para.xml"
 VERSEORDER = "data/latin/texts/pamphilus/verseorder.xlsx"

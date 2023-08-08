@@ -54,7 +54,7 @@ def data_loader():
         with open("data/pickleLat.p", "rb") as f:
             latin = pickle.load(f)
     else:
-        latin = latin_parser.parse("data/latMat/pamphLat.xml")
+        latin = latin_parser.parse_pamphilus("data/latin/texts/pamphilus/pamphLat.xml")
         f = open("data/pickleLat.p", 'w+b')
         pickle.dump(latin, f)
         f.close()
@@ -291,9 +291,7 @@ def splitsies(combined_name: str) -> str:
     return combined_name.split("-")[1]
 
 
-def get_leven_dfs_ready() -> pd.DataFrame:
-    db = sqlite3.connect("lev-mem.db")
-    df = pd.read_sql("SELECT * FROM scores", db)
+def get_leven_dfs_ready(df: pd.DataFrame, leven_similarity: int, leven_similarity_upper: int, simplify: bool = False):
     strings_to_check = ["B1", "P3", "W1", "To", "P5"]
     filtered_df = df[df['v1'].str.contains('|'.join(strings_to_check))]
     filtered_df["v_number_v1"] = filtered_df["v1"].apply(splitsies)
@@ -301,14 +299,27 @@ def get_leven_dfs_ready() -> pd.DataFrame:
     filtered_df = filtered_df[filtered_df["v_number_v1"] != filtered_df["v_number_v2"]]
     filtered_df = filtered_df[filtered_df["v1"] != ""]
     filtered_df.drop(columns=["v_number_v1", "v_number_v2", "locID"], inplace=True)
-    return filtered_df
+    filtered_df = filtered_df.loc[(filtered_df["score"] >= leven_similarity) & (filtered_df["score"] <= leven_similarity_upper)]
+    if simplify:
+        filtered_df = filtered_df[~filtered_df['v2'].str.contains('|'.join(strings_to_check))]
+        filtered_df = filtered_df.groupby()
+        return filtered_df
+    else:
+        return filtered_df
+
+
+def get_leven_df() -> pd.DataFrame:
+    db = sqlite3.connect(LEVEN_DB)
+    df = pd.read_sql("SELECT * FROM scores", db)
+    return df
 
 
 def display_leven():
-    filtered_df = get_leven_dfs_ready()
+    df = get_leven_df()
+    simplify = st.checkbox("Simplify output by removing all entries, that show Levenshtein Scores between Verses of Pamphilus; group results by verses and sort.")
     leven_similarity = st.slider("Levenshtein lower threshold", min_value=50, max_value=100, value=60)
     leven_similarity_upper = st.slider("Levenshtein upper threshold", min_value=50, max_value=100, value=99)
-    filtered_df = filtered_df.loc[(filtered_df["score"] >= leven_similarity) & (filtered_df["score"] <= leven_similarity_upper)]
+    filtered_df = get_leven_dfs_ready(df, leven_similarity, leven_similarity_upper, simplify)
     st.dataframe(filtered_df)
 
 
