@@ -22,6 +22,7 @@ from utils import n2vmhandler as n2v
 from utils import similarities as sims
 from IPython.core.display import display, HTML
 import sqlite3
+from streamlit_image_select import image_select
 
 
 # Helper functions
@@ -71,22 +72,36 @@ def get_id():
 # -----------------
 
 def onp_n2v():
+    gallery_table = st.radio(label="Display gallery of clusterings or tabel of available models", options=["Gallery", "Table"])
     all_models = n2v.load_model_metadata()
-    st.dataframe(all_models)
-    model_select = st.selectbox(label="Select a model to display and query", options=all_models["File Name"].to_list())
+    name_resolution_dict = n2v.create_witness_lookup()
+    if gallery_table == "Table":
+        st.dataframe(all_models)
+        model_select = st.selectbox(label="Select a model to display and query", options=all_models["File Name"].to_list())
+        _show_model(all_models, model_select, name_resolution_dict)
+    elif gallery_table == "Gallery":
+        st.write("Hello")
+        model_meta = "asdf"
+        img = image_select("All available plots", n2v.get_all_plot_paths())
+        if st.button("Load model"):
+            model_select = n2v.get_model_from_plot_path(img)
+            _show_model(all_models, model_select, name_resolution_dict, name_resolution_dict)
+            
+
+def _show_model(all_models: pd.DataFrame, model_select: str, names_dict: dict[str, str]):
     selected_model_metadata = all_models.loc[all_models["File Name"] == model_select].to_dict('records')[0]
     model = n2v.load_n2v_model(model_select)
-    img_list = n2v.get_plot(model_select)
-    st.image(img_list)
-    query_options = n2v.get_applicable_witnesses(date_range_init=selected_model_metadata['Date Range'])
+    img_path = n2v.get_plot(model_select)
+    st.image(img_path)
+    query_options = n2v.get_applicable_witnesses(date_range_init=selected_model_metadata['Date Range'], name_lookup=names_dict)
     query_model = st.selectbox(label="Select a witnesses to retrieve learned similarities", options=list(query_options.keys()))
     how_many = st.number_input(label="Load top n of the most similar witnesses", value=10)
     similars = n2v.get_similars(model=model, onpID=query_options[query_model], nsimilars=how_many)
     s = ''
     for i in similars:
-        s += "- " + i[0] + "\n"
+        hs_serch_string = i[2].replace(" ", "+")
+        s += f"- [{names_dict[i[0]]}](https://onp.ku.dk/onp/onp.php{i[1]}) Search for MS on [handrit.is](https://handrit.is/search?q={hs_serch_string}) \n"
     st.markdown(s)
-    
 
 
 def para_display(data: myData):

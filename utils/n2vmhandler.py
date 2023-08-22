@@ -5,6 +5,7 @@ import requests
 import sqlite3
 import pandas as pd
 import ast
+import re
 
 def create_connection(db_file: str = SQLITE_PATH) -> sqlite3.Connection:
     """ create a database connection to the SQLite database
@@ -24,16 +25,65 @@ def load_model_metadata() -> pd.DataFrame:
     return df
 
 
-def get_plot(model_filename: str) -> list[str]:
+def get_all_plot_paths() -> list[str]:
+    df = pd.read_csv(N2V_PLOT_PARAMETERS_PATH)
+    all_plots = df["Plot Filename"].to_list()
+    return [f"{N2V_PLOTS_BASE_PATH}{x}" for x in all_plots]
+
+
+def get_plot(model_filename: str) -> str:
     # Pass the filename of a model, the path to the corresponding plots will be returned
     df = pd.read_csv(N2V_PLOT_PARAMETERS_PATH)
     relevant_df = df.loc[df["Model Filename"] == model_filename]
-    names_list = relevant_df["Plot Filename"].to_list()
-    res = [f"{N2V_PLOTS_BASE_PATH}{x}" for x in names_list]
-    return res
+    plot_name = relevant_df["Plot Filename"].to_list()
+    return f"{N2V_PLOTS_BASE_PATH}{plot_name[0]}"
 
 
-def get_applicable_witnesses(date_range_init: str) -> dict[str, str]:
+def get_model_from_plot_path(plot_path: str) -> str:
+    plot_fname = plot_path.split("/")[-1]
+    plot_name = plot_fname.split(".")[0]
+    model_name = plot_name.replace("kmeans-", "")
+    return f"{model_name}.n2v"
+
+
+def create_witness_lookup():
+    conn = create_connection()
+    cur = conn.cursor()
+
+    query = '''
+        SELECT
+            w.name AS work_name,
+            wt.name AS witness_name,
+            mw.shelfmark AS manuscript_shelfmark
+        FROM
+            junctionWorkxWit AS jww
+        JOIN
+            works AS w ON jww.workID = w.onpID
+        JOIN
+            witnesses AS wt ON jww.witID = wt.onpID
+        LEFT JOIN
+            junctionMsxWitreal AS jmw ON wt.onpID = jmw.witID
+        LEFT JOIN
+            msInfo AS mw ON jmw.msID = mw.onpID;
+    '''
+    
+    cur.execute(query)
+    lookup_dict = {}
+    for row in cur.fetchall():
+        work_name_raw = row[0]
+        work_name = re.sub(r'\d', '', work_name_raw)
+        manuscript_shelfmark = row[2]
+        witness_name = row[1]
+        combined_string = f"{work_name}-{manuscript_shelfmark}"
+        lookup_dict[witness_name] = combined_string
+
+    conn.close()
+    
+    return lookup_dict
+    
+
+
+def get_applicable_witnesses(date_range_init: str, name_lookup: dict[str, str]) -> dict[str, str]:
     date_range = ast.literal_eval(date_range_init)
     conn = create_connection()
     curs = conn.cursor()
@@ -46,7 +96,7 @@ def get_applicable_witnesses(date_range_init: str) -> dict[str, str]:
                     '''
     curs.execute(query)
     rows = curs.fetchall()
-    res = {row[0]:row[1] for row in rows}
+    res = {name_lookup[row[0]]:row[1] for row in rows}
     return res
 
 
