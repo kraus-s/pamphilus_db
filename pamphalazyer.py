@@ -85,7 +85,7 @@ def onp_n2v():
         img = image_select("All available plots", n2v.get_all_plot_paths())
         if st.button("Load model"):
             model_select = n2v.get_model_from_plot_path(img)
-            _show_model(all_models, model_select, name_resolution_dict, name_resolution_dict)
+            _show_model(all_models, model_select, name_resolution_dict)
             
 
 def _show_model(all_models: pd.DataFrame, model_select: str, names_dict: dict[str, str]):
@@ -102,6 +102,23 @@ def _show_model(all_models: pd.DataFrame, model_select: str, names_dict: dict[st
         hs_serch_string = i[2].replace(" ", "+")
         s += f"- [{names_dict[i[0]]}](https://onp.ku.dk/onp/onp.php{i[1]}) Search for MS on [handrit.is](https://handrit.is/search?q={hs_serch_string}) \n"
     st.markdown(s)
+    cluster_explanations = _get_cluster_docs(model_select, names_dict)
+    for i in cluster_explanations.keys():
+        with st.expander(f"Show items in cluster {i}"):
+            st.markdown(cluster_explanations[i])
+
+
+def _get_cluster_docs(model_filename: str, names_dict: dict[str, str]) -> dict[str, str]:
+    table_filename = model_filename.replace("n2v", "xlsx")
+    table_df = pd.read_excel(f"{N2V_TABLES_PATH}{table_filename}")
+    cluster_groups = table_df.groupby("kmeans")
+    res = {}
+    for name, group in cluster_groups:
+        s = ''
+        for i, row in group.iterrows():
+            s += f"- [{names_dict[row['hrf_names']]}](https://onp.ku.dk/onp/onp.php{row['node_ids']}) \n"
+        res[name] = s
+    return res
 
 
 def para_display(data: myData):
@@ -332,6 +349,8 @@ def get_leven_df() -> pd.DataFrame:
 def display_leven():
     df = get_leven_df()
     simplify = st.checkbox("Simplify output by removing all entries, that show Levenshtein Scores between Verses of Pamphilus; group results by verses and sort.")
+    st.write("Model subset selection: Select all models, models including all ONP data, or only models excluding diplomas and legal sources")
+    display_stop_docs = st.radio("Selection:", ["All models", "Models with all data", "Models exluding diplomas/legal sources"])
     leven_similarity = st.slider("Levenshtein lower threshold", min_value=50, max_value=100, value=60)
     leven_similarity_upper = st.slider("Levenshtein upper threshold", min_value=50, max_value=100, value=99)
     filtered_df = get_leven_dfs_ready(df, leven_similarity, leven_similarity_upper, simplify)

@@ -5,7 +5,7 @@ LATIN_CORPUS_FILES = "data/latin/texts/"
 OLD_NORSE_CORPUS_FILES = "data/norseMat/texts/"
 ON_STOPS = "data/norseMat/stopwords.txt"
 EXCELS = "data/ingest/"
-LEVEN_DB = "data/similarities/lev-mem.db"
+LEVEN_DB = "data/similarities/levenshtein/lev-mem.db"
 
 PSDG47 = "data/norseMat/texts/DG-4at7-Pamph-para.xml"
 VERSEORDER = "data/latin/texts/pamphilus/verseorder.xlsx"
@@ -14,6 +14,7 @@ N2V_MODELS_PATH = "data/n2v/models/"
 N2V_PLOT_PARAMETERS_PATH = "data/n2v/plot-parameters.csv"
 N2V_PLOTS_BASE_PATH = "data/n2v/plots/"
 SQLITE_PATH = "data/n2v/onp_data.db"
+N2V_TABLES_PATH ="data/n2v/tables/"
 
 # For ONP crawling 
 # TODO: Integrate into database proper

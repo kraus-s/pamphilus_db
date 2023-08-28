@@ -106,10 +106,11 @@ def load_n2v_model(fname: str) -> KeyedVectors:
 
 
 def get_similars(model: KeyedVectors, onpID: str, nsimilars: int) -> list[tuple[str, str, str, str]]:
-    shit = model.most_similar(onpID, topn=nsimilars)
+    """Returns the n most similar hits from the selected model. Will return a tuple FILL IN DOC"""
+    hits = model.most_similar(onpID, topn=nsimilars)
     res = []
     conn = create_connection()
-    for i in shit:
+    for i in hits:
         curse = conn.cursor()
         curse.execute(f"SELECT name FROM witnesses WHERE onpID = '{i[0]}'")
         name = curse.fetchall()
