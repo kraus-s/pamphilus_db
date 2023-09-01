@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-def get_csv_filenames(directory: str = "data/similarities") -> list[str]:
+def get_csv_filenames(directory: str = "data/similarities/stylo") -> list[str]:
     csv_files = []
     for filename in os.listdir(directory):
         if filename.endswith(".csv"):

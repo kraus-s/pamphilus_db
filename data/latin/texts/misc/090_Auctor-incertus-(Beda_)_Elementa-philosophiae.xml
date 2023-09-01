@@ -1,0 +1,3491 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+     <fileDesc>
+         <titleStmt>
+              <title>Elementa philosophiae</title>
+              <author>Auctor incertus (Beda?)<date/> </author>
+         </titleStmt>
+         <editionStmt>
+              <edition>early modern edition, no apparatus</edition>
+              <editor>Jacques-Paul Migne</editor>
+         </editionStmt>
+         <publicationStmt>
+                 <publisher>J. P. Migne</publisher>
+                 <pubPlace>Parisiis</pubPlace>
+                 <date>1850</date>
+              </publicationStmt>
+          <seriesStmt>
+           <title>Patrologia Latina, vol. 90</title>
+           <idno>AuInBe.ElePhi</idno>
+          </seriesStmt>
+          <notesStmt>
+  			<note/>
+ 		  </notesStmt>
+  		<sourceDesc>
+    		<p>Patrologia Latina</p>
+  		</sourceDesc>
+ 	</fileDesc>
+      <encodingDesc>
+         <projectDesc>
+        <p>this file was encoded in TEI xml for the University of Zurich's <emph>Corpus Corporum</emph> project (www.mlat.uzh.ch) by Ph. Roelli in 2019</p>
+      </projectDesc>
+          <editorialDecl>
+             <normalization>
+          <p>Classical Latin orthography</p>
+        </normalization>
+          </editorialDecl>
+      </encodingDesc>
+ 	  <profileDesc>
+		<creation>
+ 		<date/>
+  		</creation>
+  	  <langUsage>
+  		<language ident="lat">latin</language>
+  	  </langUsage>
+  	  <textClass>
+  		<keywords>
+ 		 <list>
+ 		  <item/>
+		  <item/>
+	  	 </list>
+  		</keywords>
+  		<keywords scheme="genre">
+  		 <list>
+   			<item/>
+  		</list>
+  		</keywords>
+  		<keywords scheme="period">
+ 		 <list>
+   			<item/>
+  		 </list>
+  		</keywords>
+ 	   </textClass>
+ 	</profileDesc>
+ </teiHeader>
+<text>
+ <body>	
+
+<div1>
+        <head>LIBER PRIMUS.</head>
+
+</div1>
+
+<div1>
+        <head>PROOEMIUM.</head>
+<p>
+          <pb n="1127A"/>Et ait Tullius in Prologo Rhetoricorum: Eloquentia
+sine sapientia nocet, sapientia vero sine eloquentia,
+etsi parum, tamen aliquid, cum eloquentia tamen,
+maxime prodest. Errant qui, postposito proficiente
+et non nocente, adhaerent nocenti et non proficienti.
+Id namque agere, est Mercurii et Philologiae
+conjugium, tanta cura virtutis et Apollinis quaesitum
+omni conventu deorum probatum solvere. Idem
+etiam est gladium semper acuere, sed nunquam in
+bello percutere. Multos tamen nomen magistri sibi
+usurpantes, non solum hoc agentes, sed etiam aliis
+sic esse agendum jurantes, nihil quippe de philosophia
+scientes, aliquid se nescire confiteri erubescentes,
+sive imperitiae solatium quaerentes, ea quae nesciunt
+esse utilitatis minus charius praedicant. Sed quia,
+ut ait Terentius, Non est mirum si mulier meretrix impudenter
+<pb n="1128A"/>
+agit, impudentia illorum postposita, de philosphia
+aliquid dicere proposuimus, ut diligentius ipsam
+pro posse nostro perficiamus, non diligentes ad diligentiam
+excitemus. Incipientes igitur a prima creatione
+rerum, usque ad hominem continuabimus, tractando
+de ipso homine multa dicentes: illud ante principium
+dictionis petentes, ut si aliquid in hoc opere
+imperfectum inveniatur, humanae imperfectioni deputent,
+nec ideo quod in eo utile erit vituperent.
+Neque enim propter unum male dictum bona sunt
+vituperanda, neque propter unum bene dictum mala
+laudanda. Quandoque enim vigilat Thersites, et dormit
+Ulysses, et longo operi fas est obrepere somnum.
+De philosophia igitur tractare incipientes, quid sit
+philosophia dicamus.</p>
+</div1>
+
+<div1>
+        <head>CATALOGUS LIBRI PRIMI.</head>
+
+<pb n="1127"/>
+<list>
+<item>
+<pb n="1127B"/>Quid sit philosophia.</item>
+<item>Quae sunt, et non videntur.</item>
+<item>Quae sunt, et videntur.</item>
+<item>Quibus rationibus probetur quod sit Deus.</item>
+<item>Quare potentia divina dicatur Pater.</item>
+<item>Quare sapientia Filius.</item>
+<item>Quare voluntas Spiritus sanctus.</item>
+<item>Utrum sint corpora vel spiritus.</item>
+<item>Qualiter Spiritus sanctus ab utroque procedat.</item>
+<item>Quare quaedam opera uni de personis attribuantur, cum
+una sine alia nihil operetur.</item>
+<item>Quare Filio attribuatur incarnatio.</item>
+        </list>
+
+<pb n="1128B"/>
+<list>
+<item>Quid sit et perfecte aliquid cognoscere.</item>
+<item>Quid perfecte ignorare.</item>
+<item>De daemonibus.</item>
+<item>Quare Spiritui sancto peccatorum remissio.</item>
+<item>De anima mundi.</item>
+<item>Quid sit coeleste animal.</item>
+<item>Quid aethereum.</item>
+<item>Quid aereum.</item>
+<item>Quid humectum.</item>
+<item>Qualiter Filius a Patre genitus, et tamen illi coaeternus.</item>
+<item>De elementis.</item>
+        </list>
+
+</div1>
+
+<div1>
+        <head>INCIPIT LIBER PRIMUS.</head>
+
+<pb n="1127"/>
+<p>
+          <pb n="1127C"/>Philosophia est eorum quae sunt, et non videntur,
+et eorum quae sunt et videntur, vera comprehensio.
+Sunt et esse non videntur incorporalia. Sensus enim
+extra subjectam materiam nihil potest. Sunt et esse
+videntur corporalia, seu divinum, seu caducum habeant
+corpus, corpora namque subjacent sensui. Cum
+ergo in utrorumque cognitione constet philosophia,
+de utrisque disseramus, ab eis quae sunt et non videntur
+inchoantes. Sunt autem haec: Creator, anima
+mundi, daemones, animae hominum; quibus omnibus
+quia Creator prior est, omnia enim ab ipso habent
+existere, sed ipse a nullo, ab ipso incipiamus.
+Sed quia dicunt sancti Deum in hac vita non posse
+perfecte cognosci, quid sit perfecte aliquid cognoscere
+ostendamus, ut quare Creator in hac vita perfecte
+non possit cognosci innotescat. Undecim sunt
+quae quaeruntur circa unumquodque: An sit, quid
+sit, quantum sit, ad quid sit, quale sit, quid agat,
+quid in ipsum agatur, ubi sit, qualiter in loco situm
+<pb n="1128C"/>
+sit, quando sit, quid habeat. Perfecte ergo aliquid
+cognoscere est ista undecim de illo scire. Sed quamvis
+sciamus Deum esse, quid tamen sit perfecte
+non comprehendimus. Quantitas vero ejusdem qui
+omnia implet angustias nostri pectoris excedit, relationi
+illius explicandae humana sapientia non sufficit,
+qualitates non comprehendit, actionibus ejus
+enarrandis infinitae linguae non sufficiunt. Quid in
+ipsum agatur, non potentia facientis, sed permissione
+patientis; ubi sit qui supra omnia, infra omnia,
+totus est et integer; qualiter in loco sit, qui
+localis non est; de tempore illius, qui ante omne
+est tempus; quid habeat, qui palmo omnia continet,
+nullus perfecte explicare potest. Nec ergo illum
+omnino ignoramus, quem esse scimus; nec perfecte
+scimus, de quo haec omnia ignoramus, et quem diximus
+in hac vita sciri Deum esse, rationes quibus
+etiam incredulis hoc possit probari aperiamus, scilicet,
+et per mundi creationem et quotidianam dispositionem.
+<pb n="1129A"/>
+Cum enim mundus ex contrariis factus
+sit elementis, calido, frigido, humido, sicco, vel
+natura operante, vel casu, vel aliquo artifice, in
+compositione mundi conjuncta sunt. Sed proprium
+est naturae contraria fugere, et simile appetere. Non
+ergo natura contraria conjunxit elementa; casu vero
+conjuncta non sunt. Si enim casus mundum operatus
+esset, quare domum vel aliquid tale quod levius est
+non faceret? Iterum si operatus esset mundum, aliquae
+causae praecessissent, quarum concursus operaretur
+casum. Est enim casus inopinatus eventus ex
+causis confluentibus. Cum ergo nihil praeter Creatorem
+praecessit mundum, ergo casu non est factus;
+igitur aliquo artifice. Artifex vero ille, vel homo,
+vel angelus, vel Deus fuit. Ante vero mundus
+factus est quam homo, angelus vero cum mundo.
+Ergo Deus solus mundum creavit. Per quotidianam
+dispositionem sic probatur: Ea quae disponuntur,
+sapienter disponuntur; ergo aliqua sapientia, nihil
+<pb n="1129B"/>
+enim sine sapientia sapienter disponitur. Est igitur
+sapientia qua omnia disponuntur. Sapientia vero
+illa, vel humana, vel angelica, vel divina. Humana
+vero non est, quae res facit vivere et loqui. Cumque
+suam humana sapientia formam, scilicet, hominis,
+vel alterius animalis, operetur, motum illi et vitam
+conferre non potest. Angelica vero sapientia, quomodo
+angelos ipsos disponeret? Divina ergo est sapientia,
+quae hoc agit. Omnis vero sapientia est
+alicujus sapientia. Est igitur cujus sapientia illa
+est, nec idem homo est, nec angelus. Deus ergo.
+Sic per quotidianam dispositionem pervenitur ad divinam
+sapientiam, per sapientiam ad divinam substantiam.
+Unde divina sapientia dicitur signaculum et
+imago divinitatis. In hac divinitate, omnium conditrice
+et omnia gubernante, dixerunt philosophi esse
+potentiam operandi sapientiam, voluntatem. Si enim
+non potuit et nesciunt, quomodo tam pulchrum fecit?
+Si iterum fecit et noluit, vel ignorans, vel coactus,
+hoc egit. Sed quid ignoraret, qui etiam novit
+<pb n="1129C"/>
+hominum cogitationes? Quis iterum illum cogeret,
+qui omnia potest? Est igitur in divinitate potentia,
+sapientia, voluntas. Qua sancti tres personas vocant,
+vocabula illis a vulgari per quamdam affinitatem
+transferentes, dicentes potentiam divinam
+Patrem, sapientiam Filium, voluntatem Spiritum
+sanctum. Potentia dicitur Pater, qua cuncta creat,
+et paterno affectu disponit. Sapientia vero dicitur
+Filius, a Patre ante saecula genitus, et tamen illi
+coaeternus, quia ut Filius temporaliter est a Patre,
+ita sapientia aeternaliter et consubstantialiter est a
+potentia. Sed diximus Filium gigni a Patre, et tamen
+illi coaeternum esse. De illa genitura aliquid
+dicamus, illud ante orantes, ne illud quod invenitur: #Generationem ejus quis enarrabit?@# 
+ putent nobis
+officere. Illud enim dictum est, non quia impossibile
+sit, sed quia difficile. Pater ergo genuit Filium,
+id est, divina potentia sapientiam, quando providit
+qualiter res crearet, et creata disponeret: et quia
+<pb n="1129D"/>
+ante saecula hoc providit, ante saecula Filium, id
+est, sapientiam genuit, et hoc ex se, non ex alio,
+quia neque alicujus doctrina, neque usus experientia,
+sed ex propria natura hoc scire habuit. Ex quo
+autem fuit (si fas est dicere) de aeterno, ex quo haec
+scivit, nec fuit qui ista sciret. Si ergo aeternus est,
+et sapientia ejus aeterna est. Hic Pater genuit Filium
+coaeternum sibi, et consubstantialem. Voluntas vero
+divina dicitur Spiritus. Est autem proprie spiritus anhelitus,
+in quo saepe voluntas hominis perpenditur.
+Aliter enim spirat laetus, aliter iratus; ideo divinam
+voluntatem translative dixerunt Spiritum, sed antonomastice
+sanctum. Spiritus iste a Patre et Filio
+procedit, quia voluntas divina bonitas, inde quod
+ita potens et sapiens est Deus, effectu ostenditur.
+Nihil enim aliud est Spiritum sanctum a Patre et
+Filio procedere, quam divinam voluntatem ex potentia
+et sapientia usque ad creationem et gubernationem
+rerum extendere. Haec bonitas et voluntas
+<pb n="1130A"/>
+Patri est coaeterna, et Filio. Non enim fuit potens
+et sapiens, quod non esset bonus et creare volens,
+quia idem est Deo esse, et bonum esse, et ante
+tempora voluit quod fecit, quia nulla in eo mutabilitas.
+Coaeterna est itaque praedicta voluntas et bonitas
+divina. Sed haec personarum trinitas est, essentiae
+unitas. Una enim substantia est potentia divina,
+sapientia et bonitas. Quae trinitas, quamvis in omnibus
+cooperetur, nunquam quippe agit aliquid potenter
+et non sapienter et benigne, nec sapienter et non
+potenter vel benigne, nec benigne et non sapienter
+vel potenter, tamen quaedam opera referuntur
+potentiae, et sic Patri; quaedam sapientiae, et ideo
+Filio; quaedam bonitati et voluntati, et ideo Spiritui
+sancto. Attribuitur potentiae, id est, Patri Filii
+missio, quam tamen operata est sapientia et voluntas:
+attribuitur sapientiae, id est, Filio, incarnatio,
+quam tamen operata est potentia et voluntas.
+Et merito sapientiae attribuitur. Cum enim tam potens
+<pb n="1130B"/>
+esset, qui de potestate diaboli humanum genus
+sola voluntate liberare posset, maluit tamen divinitatem
+conjungere humanitati, ut qui Deum et hominem
+reconciliaret in se, qui hominis est, et Dei
+haberet. Si enim tantum Deus esset, nunquam diabolus
+in eum manus mitteret, quippe quomodo servus
+in filium potentis domini cognitum manum mitteret?
+Unde scriptum est: #Si cognovissent, nunquam
+Filium Dei crucifixissent.@# Si iterum tantum homo esset,
+quomodo captivus captivum liberaret? #Omnes
+enim peccaverunt, et egent gratia Dei.@# Redemptor igitur
+noster Deus fuit, et homo, et adhuc est, ut ex
+divinitate salvare posset, et ex humanitate diabolum
+lateret, ut cum praeter jus et fas innocentem invaderet,
+potestatem sibi super nocentem a Deo commissam
+juste admitteret. Voluntati vero et bonitati
+divinae remissio peccatorum attribuitur, quia ex
+bonitate et voluntate condonat quod ex potentia et
+sapientia quam cito factum est punire posset. Sed
+quia dum de divinitate loquimur, angustias nostrae
+<pb n="1130C"/>
+scientiae transgressi sumus, de ea iterum tacentes,
+ad reliqua transeamus, illud orantes, ne si aliquid
+quod alibi scriptum non sit, hic reperiatur, haeresis
+judicetur. Non enim quia scripum non est, haeresis
+est, sed si contra fidem. In partitione superiori de
+eis quae sunt et non videntur, primum Creatorem,
+deinde de anima mundi posuimus. Finito igitur de
+Creatore tractatu, de anima mundi dicamus.</p>
+<p>Anima igitur mundi, secundum quosdam Spiritus
+sanctus est, divina enim voluntate et bonitate, quae
+Spiritus sanctus est, ut praediximus, omnia vivunt
+quae in mundo vivunt. Alii dicunt animam mundi
+esse naturalem vigorem, rebus a Deo insitum, quo
+quaedam vivunt tantum, quaedam vivunt nec sentiunt,
+quaedam vivunt, sentiunt et discernunt. Nec
+enim est aliquid quod vivat et sentiat, vel discernat,
+in quo non sit ille naturalis vigor. Tertii dicunt
+animam mundi esse quamdam incorpoream
+substantiam, quae tota est in singulis corporibus,
+<pb n="1130D"/>
+quamvis propter quorumdam corporum tarditatem,
+non idem in omnibus operetur, quod volens significare
+Virgilius ait:  « Quantum non noxia corpora
+tardant. »  In homine ergo propria et mundi anima,
+si quis concludat: Igitur in homine sunt duae animae.
+Dicimus enim, quia non dicimus animam mundi
+esse animam, sicut nec caput mundi esse caput.
+Hanc dicit Plato esse excogitatam ex divina et individua
+substantia, ex eadem natura et diversa, cujus
+exponere si quis quaerat, in aliis nostris scriptis
+illam inveniet. Tertium genus de his quae sunt, et
+non videntur, diximus esse daemones, de quibus tractare
+incipientes, dicamus quot illorum sint ordines,
+et quare vocati sint daemones. Tres igitur daemonum
+ordines voluit Plato esse, a superiori usque ad imum,
+nihil sine rationali creatura esse affirmans. Dicit
+enim in firmamento esse quoddam animal rationale,
+quod ita definit: Animal rationale, coeleste,
+immortale, impatibile, stellas, videlicet, de quibus
+<pb n="1131A"/>
+in loco suo dicemus; sunt enim de his quae sunt
+et videntur. Deinde dixit esse in aethere quoddam
+genus invisibilis animalis, a firmamento usque ad
+lunam primum ordinem daemonum, quod ita definitur:
+Animal rationale, immortale, patibile, aethereum:
+cujus dicit esse officium soli divinae contemplationi
+vacare, et de ejus contemplatione delectari.
+In inferiori vero loco, id est, circa superiorem
+partem aeris vicinae lunae dicit esse aliud genus,
+cujus est definitio: Animal rationale, immortale,
+patibile, diligentiam omnibus impartiens, cujus est,
+secundum eumdem officium, deferre preces homini,
+non Deo, et voluntatem Dei hominibus, vel per somnia,
+vel per signa, vel per intimam aspirationem,
+vel vocalem admonitionem. Quod dicitur patibile,
+quia diligit bonos, congaudet illorum prosperitati,
+compatitur adversitati. Tertius ordo est in hac humecta
+parte aeris, quod ita definitur: Animal humectum,
+rationale, immortale, patibile, cujus est officium
+<pb n="1131B"/>
+humanitati invidere, ex invidia insidiari, quia
+unde descendit per superbiam, ascendit humanitas
+per humilitatem. Est etiam ita luxuriosum, quod aliquando
+commiscet se mulieribus, et aliquos generat;
+unde et incubi, quia sic concumbunt, dicuntur; qui
+ab aliis differunt daemonibus, quia duo primi ordines
+dicuntur cacodaemones, id est, bonum scientes: <foreign xml:lang="greek">καλὸν</foreign> #bonum,@# 
+ <foreign xml:lang="greek">δαίμων</foreign> #sciens,@# dicitur. Isti vero dicuntur
+cacodaemones, id est, malum scientes; <foreign xml:lang="greek">κακόν</foreign> enim
+malum est; et non abhorreas nominis communitatem,
+qua et illi et isti dicuntur daemones, quasi scientes,
+cum et isti et illi angeli dicantur. Unde dicitur
+malus angelus. Inferiorem partem mundi homo habitat,
+id est, terram, animal rationale, mortale, de
+quo in suo loco dicemus. De praedictis daemonibus
+quaeritur utrum corpora habeant, an non, cum sint
+animalia; et omne animal corpus dicatur, an sint
+spiritus, ut ait propheta: #Qui facit angelos suos spiritus.@# 
+Inde dicunt quidam quod corpora sint, tamen
+ita subtilia, quod sensu percipi non possunt. Unde
+<pb n="1131C"/>
+respectu nostrorum corporum, quae spissa sunt et
+grossa, spiritus dicuntur, quemadmodum aer, quamvis
+corpus sit, tamen, propter subtilitatem sui,
+spiritus vocatur. Quod confirmat beatus Gregorius,
+qui in Moralibus loquens de angelis ait:  « Comparatione
+nostrorum corporum spiritus sunt, sed comparatione
+illius summi et incircumspecti spiritus,
+corpora sunt dicenda. »  Hoc iterum probant auctoritate
+beati Augustini, qui in Enchiridio quoddam
+ponit capitulum, qualia corpora angeli habeant.
+Alii dicunt illos non esse corpora, sed spiritus, scilicet,
+quia ubique non sunt, de loco ad locum moventur,
+comparatione summi Spiritus, qui ubique
+totus est et integer. A beato Gregorio corpora dicti
+sunt, nec inde sequitur quod corpora sint, sicut
+illud est: #Sapientia hujus mundi stultitia est apud
+Deum.@# Non quod Deus sapientiam hujus mundi stultitiam
+reputet, sed quod ad comparationem divinae
+sapientiae stultitia est; nec inde sequitur quod sit
+<pb n="1131D"/>
+stultitia. De illo vero capitulo beati Augustini, qualia
+corpora angeli habeant, dicunt beatum Augustinum
+ibi loqui de corporibus quae assumunt quando
+hominibus apparent, utrum vera sint corpora an
+non, nec tamen dicit illos esse corpora. Nos autem
+plus illorum sententiae concedimus qui dicunt illos
+esse spiritus; nec videatur alicui, esse inconveniens,
+quod Plato duo genera dicit esse cacodaemonum, cum
+divina Scriptura novem dicat esse ordines angelorum.
+Plato enim divisit secundum loca, sed divina
+pagina juxta officia. In duobus igitur illis generibus
+continentur novem ordines, et e converso.
+<pb n="1132A"/> </p>
+<p>
+          <pb n="1132B"/>Post tractatum de Creatore et anima mundi e
+daemonibus, restat tractare de anima hominis. Sed
+quia de homine locuti sumus usque ad illum locum,
+loqui de ejus anima differamus, ut sit unus et continuus
+de homine tractatus. Hactenus de illis quae
+sunt, et non videntur, nostra disseruit oratio, nunc
+ad ea quae videntur, stylus convertatur. Sed antequam
+initium loquendi de illis faciamus, petimus, ut
+si loquentes de visibilibus aliquid probabile et non
+necessarium dicimus, vel necessarium et non probabile
+ponimus, non inde vituperemur; ut physici
+enim tantum probabile ponimus, ut vero philosophi
+probabile, etsi non necessarium, adjungimus; sed
+illud videatur si aliquid probabilius inter modernos
+inde tractaverint. Tractaturi igitur de eis quae sunt
+et videntur, quod illa corpora sunt, et omnia corpora
+<pb n="1132C"/>
+ex elementis constant, ab elementis sumamus
+exordium, ostendendo quid sit elementum, quare
+quatuor sint elementa, nec pauciora, quod fuit chaos
+elementorum, qualiter solutum.</p>
+<p>Elementum vero, ut definiunt philosophi, est simpla
+et minima alicujus corporis particula: simpla
+ad qualitatem, minima ad quantitatem. Cujus exemplum
+tale est: Elementum est pars simpla, id est,
+cujus non sunt contrariae qualitates. Sed quia hoc
+totum videtur habere ossa et similia, ut removeat
+illa, addit #minima,@# id est, quae ita est pars alicujus,
+quod nihil est pars ejusdem. Unde litterae per simile
+dicuntur elementa, quia sunt partes simillimae, ita
+quod nihil est pars illarum. Volunt autem philosophi
+ex elementis quatuor constare humores, ex humoribus
+partes tam homiomeras, id est, consimiles,
+ut est caro et ossa, quam organicas, id est, officiales,
+ut sunt manus et pedes, etc. Ex utrisque vero
+partibus humana constare corpora. Ergo secundum
+<pb n="1132D"/>
+eum nullum ex his quatuor quae videntur, et a quibusdam
+elementa reputata sunt, est elementum simplum,
+videlicet, nec terra, nec aqua, nec aer, nec
+ignis. Nullum quippe eorum est simplum qualitate,
+nec minimum quantitate; et ut in terra aliquid est
+calidi, aliquid frigidi, aliquid sicci, aliquid humidi,
+quod quia cuilibet est patens, probationem illius
+praetermittamus. Neque enim aperte vera, neque
+aperte falsa sunt probanda, sed de quibus est aliqua
+dubitatio. Non est ergo terra simpla qualitate, nec
+minima quantitate, cum ex tam magnis partibus
+constet; sunt enim quatuor illius partes, vel quinque
+zonae, nec ergo est elementum. Similiter de
+aqua et igne et aere probari potest. Elementa ergo
+sunt simplae et minimae particulae, quibus haec quatuor
+constant quae videmus. Haec elementa nunquam
+videntur, sed ratione divisionis intelliguntur. Dividitur
+enim, ut figuraliter dicatur, humanum corpus in
+organica, ut in manus, etc., organica in homiomera,
+<pb n="1133A"/>
+id est, consimiles, scilicet, in partes carnis et ossa,
+homiomera autem in humores, melancholiam, etc.,
+humores autem in elementa, id est, in simplas et
+minimas particulas. Cujus divisionis pars actu, pars
+sola ratione et cogitatione fieri potest. Corpus enim
+humanum in membra, membra in homiomera, actu
+dividere potest, sed homiomera in humores, humores
+in elementa solus intellectus dividere potest,
+quia, ut ait Boetius in commento super Porphyrium,
+vis est intellectus conjuncta dividere, et divisa conjungere.
+Sed quaeret aliquis ubi sunt elementa. Nos
+dicimus in compositione humani corporis et aliorum,
+sicut littera in compositione syllabae, et si non
+per se. Sed quidam sunt qui, ut rustici, nesciunt aliquid
+esse, nisi sensu illud possint comprehendere,
+quia animal non percipit quae sunt spiritus, cum sapienti
+plus inquirenda sint insensibilia quam sensibilia.
+Cum ergo simplae et minimae particulae sint
+elementa, quae sunt frigidae et siccae, dicuntur terra;
+<pb n="1133B"/>
+quae frigidae et humidae, aqua; quae calidae et humidae,
+aer; quae calidae et siccae, ignis. Cum autem
+haec quatuor quae videntur ex illis composita sint, illud
+de his in quo duae particulae frigidae et siccae
+dominantur, nomine illarum dicitur terra; in quo
+frigidae et humidae, aqua; in quo calidae et humidae,
+aer; in quo calidae et siccae, ignis. Si ergo illis digna
+velimus imponere nomina particulas praedictas, dicamus
+elementa ista quatuor, quae videntur, elementa.
+Sunt quidam qui neque philosophorum scripta,
+nec physicorum unquam legerunt, ex superbia
+ab aliquo discere dedignantes, ex arrogantia quae
+nesciunt contingentes, nonnihil dicere videantur;
+dicunt esse istorum quatuor, quae videntur qualitates:
+calorem, frigiditatem, humiditatem, siccitatem.
+Sed istis physicam velut et partem pede detrahentibus,
+reclamat eodem ore Platonis, vocantes elementa
+materias, cum nullae qualitates materia alicujus
+esse possint. Est enim materia quae accepta forma
+<pb n="1133C"/>
+transit in aliud. Reclamat item ore illius philosophi,
+qui in Isagogis suis ait aliud esse elementa, aliud
+eorum commistiones, quae sunt calidae et siccae, et
+sic de aliis. Iterum reclamat ore Macrobii dicentis:
+ « Cum in singulis elementis diversae essent qualitates,
+talem unicuique dedit, ut in eo cui adhaeret,
+cognatam et similem reperiret, ut aqua cum terra
+frigiditatem, aer cum aqua humiditatem, ignis cum
+aere calorem. »  Vide ubi dixit elementa non esse
+qualitates, sed qualitates in elementis. Si ergo quod
+alicui inest diversum est ab eo cui inest, non est
+ipsum quod est ipsum cui inest. Sunt alii qui dicunt
+ista quae videntur esse elementa, auctoritate
+Juvenalis hoc probantes, qui de gulosis ait:  « Gustus
+per omnia elementa quaerunt, in terra venationes,
+in aqua pisces, in aere aves. »  Quae sententia quia
+vera est, nec sententiae philosophorum contraria,
+qualiter cum ista stare possit exponam. Philosophus
+igitur tanquam physicus de naturis corporum
+tractans, simplas illarum et minimas particulas elementa
+<pb n="1133D"/>
+quasi prima principia vocavit. Philosophi
+vero de creatione mundi agentes, non de singulorum
+corporum naturis, ista quatuor quae videntur
+elementa mundi esse dixerunt, quae ex istis constant;
+et ista primum creata sunt, deinde ex his ut
+ex elementis caetera omnia facta sunt, ut in sequentibus
+ostenditur. Nulla est ergo inter eos contrarietas.
+Sed dicunt contra: Nullum istorum elementum
+est, quia nullum est eorum quod ex quatuor elementis
+factum non sit. Quod sic probant: in terra
+est aliquid de aqua, quia aliquid humiditatis videmus
+exire. In eadem est aliquid aeris, quod probat
+fumus inde evaporans, et aliquid caloris, quod tactu
+percipimus. Similiter de aliis probant hoc idem
+auctoritate Platonis dicentis:  « Cum terra transeat
+in aquam, et aqua in terram, quare magis dicatur
+aqua quam terra. »  Nos vero contradicimus in unoquoque
+illorum de aliis aliquid esse, nec tamen ea
+inde esse facta, quia non substantialiter, sed accidentaliter
+<pb n="1134A"/>
+inest. Cum enim terra porosa sit, et aquis
+circumdata, aliquid humoris aquae subintrant, et
+aliquid aeris. Cum ergo in medio mundi sit, et ignis
+ab omni parte aequaliter distet terrae, quid mirum si
+aliquid caloris inde recipiat? Insunt ista terrae accidentaliter;
+non naturaliter, nec ex istis constat. Similiter
+de aliis licet probare; sed quia brevitatem in
+hoc opere sectamur, quid in aliis de aliis sit, et
+qualiter in eis accidat, ingeniis aliorum inquirere
+dimittamus. Etenim principium a magistro, perfectio
+autem debet esse ab ingenio et studio. Quoniam
+iterum Platonem dicunt quaesisse quare magis dicatur
+aqua quam terra, vel e converso, cum sic dissolvatur,
+sic intelligimus illum loqui non de elementis,
+quae sic dissolvuntur. Nunquam enim totum
+dissolvitur elementum. Dicit enim id quod dissolvitur
+non esse terram, sed terreum, id est, partem
+terrae, sed quod remanet retinens proprietatem
+terrae, dicit terram et elementum. Sed de hoc, Deo
+<pb n="1134B"/>
+annuente vitam, satis dicemus. Sunt ergo elementa
+praedictorum corporum particulae, ut dicunt philosophi.
+Sunt autem elementa mundi, ut dicunt philosophi,
+quae videntur, de quibus hujusmodi tractatus
+habendus erit.</p>
+<p>Quare unumquodque factum sit, quare quatuor,
+nec pauciora? Sed quia firmior est sententia quae
+auctoritate sapientis utitur, quid inde Plato senserit
+dicamus. Divini, inquit, decoris ratio postulabat
+talem fieri mundum, qui et visum pateretur et
+tactum. Ac si diceret: Cum Deus sola bonitate, non
+indigentia, quippe qui perfectum et summum bonum
+est, mundum creavit, talem voluit illum fieri,
+qui videretur et tangeretur, ut homo etiam oculis in
+rerum creatione et gubernatione divinam potentiam
+et bonitatem percipiens, potentiam timeret, sapientiam
+veneraretur, bonitatem imitaretur. Deinde subjungit:
+Constabat autem nihil posse videri nisi ignis
+beneficio, neque tangi sine solido, nec solidum esse
+<pb n="1134C"/>
+sine terra. Quomodo visus non possit esse sine igne,
+nec tangibile sine terra, loquentes de sensibus corporis
+ostendemus. Postea addit. Idcirco jecit Deus
+quasi fundamenta ignem et terram. Sed quoniam in
+eis sunt contrariae qualitates, quippe terra est corpulenta,
+obtusa, immobilis, ignis subtilis, acutus,
+mobilis, vidit Deus sine medio ea jungi non posse,
+ideoque inter ea medium creavit, de quorum conjunctione
+quia fecimus mentionem, dicamus quid
+sit conjunctio, quid commistio contrariorum. Commistio
+ergo contrariorum est, quando ex duobus ita
+fit unum, ut neutrum remaneat id quod ante fuerat,
+ut si calidissimum frigidissimo misceatur, fit tepidum,
+neque frigidissimo neque calidissimo remanente;
+conjunctio vero contrariorum est, quando ex
+duobus ita fit unum, quod utrumque remanet id
+quod ante. Quod in contrariis habentibus agentes
+qualitates sine medio esse non possunt. Sunt autem
+agentes qualitates, calor, frigiditas, sed quare? Loquentes
+de homine dicemus. Si enim alterum alteri
+<pb n="1134D"/>
+apponitur, repugnant, et alterum ab altero dissolvitur;
+ut ergo subsistant, oportet medium esse. Id si
+tale fuerit, quod plus ad unum quam ad aliud se habeat,
+paulatim in illud ad quod se plus habet transibit,
+sicque illa conjunctio dissolvetur, veluti si inter
+calidissimum et frigidissimum aliquid plus habens
+se ad calidum quam ad frigidum ponatur, illo
+in naturam calidi transeunte, et frigiditate pereunte,
+dissolvetur illa conjunctio. Sin autem tale fuerit medium,
+quod ad utrumque se aequaliter habeat, non
+plus in naturam unius quam alterius transiens, illorum
+observabis conjunctionem. Volens ergo praedicta
+duo elementa commisceri, sed conjungere, ut
+utrumque id quod est remanet, medium inter illa
+creavit, non unum tamen, sed duo, aquam, scilicet,
+et aera. Si enim solam aquam inter ea posuisset,
+tum plus ad terram quam ad ignem se haberet, habet
+enim commune cum terra corpulentiam, obtusitatem,
+cum igne mobilitatem, conjunctio illa non
+<pb n="1135A"/>
+duraret. Similiter si solum aera, habet enim commune
+subtilitatem et mobilitatem cum igne, cum
+terra obtusitatem. Sed dicet aliquis: Et si unum
+istorum non sufficit, potuit tamen Deus facere aliud
+quod sufficeret. Ad quod dicimus, nos non ponere
+terminum divinae potentiae, sed dicimus nullum de
+his quae sunt potuisse sufficere, nec juxta rerum
+posse esse aliquid quod sufficeret. Ostenso igitur
+quod unum de istis solum non sufficeret, quod nullum
+aliud quod ad hoc sufficeret esse non posset,
+aperiamus. Cum igitur inter aliqua duo duae sunt
+contrariae qualitates, quia binarius in duo aequa dividi
+non potest, aliquid inter illa poni potest, quod
+unam ab unoquoque proprietatem recipiens, inter
+illa sufficiat, ut cum terra et aer duas contrarias
+habeant qualitates. Est enim terra frigida et sicca,
+aer calidus et humidus, aqua habens commune cum
+terra frigiditatem, cum aere humiditatem, inter illa
+sola sufficit. Similiter ignis et aqua contrarias habent
+<pb n="1135B"/>
+qualitates, est quippe ignis calidus et siccus, aqua
+frigida et humida. Sed quia aer habet commune
+cum aqua humiditatem, cum igne calorem, inter
+utrumque solus sufficit. Si vero inter aliqua sunt tres
+contrariae qualitates, sicut nec ternarius in duo aequa
+dividi potest, nec medium quod ad ea aequaliter se
+habeat, potest inveniri. Oportet enim quod de uno
+accipiat unam, duas de altero, sic enim nec aliter
+potest in integrum dividi ternarius. </p>
+<p>
+          <pb n="1135C"/>Qualitas vero per media non dividitur, non ergo
+inter ea potest esse medium, nisi participans una et
+duabus. Iterum dicet aliquis: Et si secundum hanc
+syzygiam in tribus qualitatibus unum medium, quod
+ab utroque unam acciperet, esse non potuit, secundum
+illam quae fit in duabus, illud habere potuerunt.
+Si enim inter ignem et aquam est aer, qui una
+<pb n="1135D"/>
+unius, altera alterius participat, quare inter ignem
+et terram in syzygia duarum qualitatum unum medium,
+quod ab utroque unam acciperet, esse non
+potuit? Est enim calidus et siccus, terra frigida et
+sicca. Nos vero dicimus, nec secundum hunc medium
+fuisse necessarium, cum in aliquo conveniant,
+sed in siccitate nec esse potuit. Si enim aliquod tale
+medium esset, quod ab utroque aliquid acciperet,
+vel acciperet ab igne calorem, a terra siccitatem,
+idemque esset quod ignis, vel a terra siccitatem,
+idemque esset quod ignis, vel a terra frigiditatem,
+ab igne siccitatem, et sic idem esset quod terra, vel
+ab igne calorem, a terra frigiditatem, praeter haec
+(ut opinor) nihil potest confingi. Sed impossibile
+est aliquid esse calidum et frigidum. Cum enim sint
+quatuor elementa et quatuor illorum complexiones,
+inde fiunt sex complexiones, quarum quatuor sunt
+possibiles, duae impossibiles. Sunt autem quatuor
+possibiles, calidum et siccum, calidum et humidum,
+<pb n="1136A"/>
+frigidum et humidum, frigidum et siccum. Duae vero
+impossibiles, calidum et frigidum, humidum et siccum.
+Duo igitur elementa Creator in medio posuit,
+quia unum praedictis rationibus non sufficeret. Elementorum
+vero talis est dispositio, quod inferiorem
+locum obtinet terra, deinde est aqua, postea aer,
+superior est ignis. Si enim aliquid inferius terra esset,
+quia naturaliter gravis est, ad illud tenderet,
+gravia enim naturaliter deorsum tendunt. Si vero
+aliquid supra ignem esset, ex levitate sua ad illud
+tenderet, et dissolvi ab aliis contenderet. Juxta terram
+posita est aqua, quia naturaliter gravis est, et
+si non quantum terra, et secundum locum obtinere
+debuit. Deinde est aer gravior igne, et levior aqua,
+merito inter utrumque ponitur. Et quoniam quid sit
+elementum docuimus, et quot sint, et quare plura
+non sint, et causam ordinationis significavimus, de
+chao, quod in principio mundi fuit, dicamus, communem
+sententiam praeponentes, deinde illam improbantes,
+<pb n="1136B"/>
+ad ultimum nostram rationibus confirmantes.
+Dicunt omnes fere elementa in prima creatione
+certa loca non obtinuisse, imo in unam massam mista
+fuisse in qua erant gravia et levia, modo ascendebant,
+modo descendebant. Subjungunt etiam rationem
+quare tanta confusio rerum foret, nisi sua potentia,
+sapientia et bonitas res ordinaret. Deinde hoc probant
+auctoritate Platonis, qui in Timaeo ait, Deum
+ex inordinata jactatione elementa redegisse in ordinem.
+Nos vero dicimus falsam esse quam proponunt,
+nec convenientem esse rationem quam inducunt, nec
+bene esse intellectam auctoritatem quam praetendunt.
+Prius ergo probemus sententiam esse falsam,
+postea rationem non esse convenientem, deinde non
+bene esse intellectam auctoritatem. Dic ergo quisquis
+hoc affirmas: Massa illa quae constabat ex
+quatuor elementis major erat, vel minor, vel aequalis
+elementis quae modo sunt; si major erat, non
+ergo omne corporeum in quatuor elementis continetur,
+vel aliquid de ea periit; si minor, tunc Creator
+<pb n="1136C"/>
+post eam aliquam novam materiam creavit, ex
+qua elementa augmentavit; si aequalis, omnem locum,
+quae illa modo implent, implebat: non igitur
+quo ascenderet vel descenderet, habebat. Falsa est
+ergo sententia. Inconveniens est ratio quam inducunt,
+scilicet Deum ad hoc fecisse ut ostenderet
+quanta confusio rerum foret, nisi sua bonitas eas
+ordinaret. Cui ostenderet? Angelo? Sed angelus ex
+natura et gratia naturas rerum cognoscit. Homini?
+Sed nondum erat homo, et si ut homini ostenderetur
+facta esset, usque ad hominem servaretur. Sed
+ante hominis creationem ordinata sunt elementa.
+Auctoritas Platonis non bene est ab his intellecta.
+Cum enim dicit Plato ex inordinata jactatione Deum
+elementa reduxisse in ordinem, non ideo dicit quod
+unquam inordinate jactarentur (quis enim ullus locus
+relictus esset inordinationi, Deo cuncta disponente?);
+sed quia essent nisi sic, ut nunc sunt, a
+Deo essent ordinata. Cum enim terra naturaliter
+<pb n="1136D"/>
+deorsum tendat, ignisque sursum, nisi illa inferiorem
+locum obtineret, ille vero superiorem, haec semper
+quaereret inferiorem, hic superiorem, et sic esset
+inordinata jactatio. Hanc redegit Creator in ordinem,
+conferendo terrae locum, scilicet inferiorem,
+igni superiorem, ut haec non haberet quo descenderet,
+neque hic quo ascenderet. Ex inordinata igitur
+jactatione, quae fuit, sed quae esse potuit, Deus elementa
+in ordinem redegit: veluti si monitu alicujus
+nostri amici aliquid quod contingeret, nisi ipse moneret,
+fugiamus, dicimus, Iste liberavit nos ab hoc
+malo; non quia hoc malum prius fuisset, et postea
+nos inde liberasset, sed quia nisi iste fuisset, nobis
+accidisset. Fuerunt igitur in prima creatione ubi
+nunc sunt elementa, sed non qualia nunc sunt. Etenim
+terra omnino erat cooperta aquis, aqua vero
+spissior quam modo sit, et ad magnam partem aeris
+elevata; aer autem spissior quam modo sit, et obscurus,
+quippe cum neque sol neque luna, neque
+<pb n="1137A"/>
+aliae stellae essent, quibus illuminaretur. Ignis similiter
+spissior erat quam modo sit. Id autem quod
+terra erat omnino aquis cooperta, nec aliquo lumine
+illustrata, nec aedificiis distincta, nec suis animalibus
+cepleta, quod aqua et aer spissi et obscuri erant,
+quod in superioribus stellae non apparebant, chaos,
+id est confusionem elementorum vocaverunt. Unde
+Moses: #Terra erat inanis et vacua, et tenebrae erant
+super faciem abyssi.@# Hoc chaos sic dissolutum est,
+cum aqua usque ad maximam partem aeris esset
+elevata; aer vero spissus, et ignis similiter in illa
+spissitudine aliquid terreae et aqueae substantiae inerat,
+quae ex calore ignis et siccitate coagulata et
+durata, corpora stellarum visibilia et lucida creavit.
+Quod autem in compositione stellarum et de inferioribus
+et de superioribus elementis est, dominante
+tamen supremo, ex hoc potest probari quod visibilia
+sunt et splendida et mobilia. Quod enim visibilia
+sunt ex invisibili vel visibili habent; at ex invisibili
+<pb n="1137B"/>
+nihil potest esse visibile. Unde Lucretius: Ex insensibili
+ne credas sensibile nasci; et Macrobius:
+Omnis qualitas geminata crescit, nunquam contrarium
+operatur. Non ergo ex igne vel aere habent
+quod visibilia sunt, haec quippe sunt invisibilia; ex
+visibili ergo, id est ex terra et aqua. Similiter quod
+splendida sunt et mobilia, ex obscuro et immobili
+non habent; ergo ex splendido et mobili, scilicet
+aere et igne. Facta sunt ergo ex quatuor elementis,
+scilicet, de inferioribus dominatur in eis aqua, de
+superioribus ignis, quod effectu probari potest. Calorem
+enim terris conferunt, et ad nutrimentum sui
+humorem attrahunt. Similia namque similibus congaudent.
+Haec subjiciet aliquis: Cum in aere sit humor
+spissior quam in igne, et calor quamvis non
+tantus, quare in aere corpora stellarum facta non
+sunt? Nos vero dicimus quod quamvis aer sit calidus,
+est tamen et humidus: non ergo potuit desiccando
+spissare, et sic corpus lucidum et visibile
+<pb n="1137C"/>
+creare, veluti si aqua spissa superponatur igni,
+spissatur et in lapideam saepe transit substantiam:
+sin autem alicui calido et humido superponatur, ut
+aquae bullienti, ita ut ab illo solo calorem recipiat,
+non spissabitur. Vel secundum Constantinum: Cum
+in uno de istis quatuor duae sint qualitates, singillatim
+unam habet ex se, alteram ex alio. Ignis ex se
+calidus est, siccus ex motu vel ex terra. Aer est
+humidus ex se, calidus ex igne. Aqua humida ex
+aere, frigida ex se. Terra vero ex se sicca est, sed
+frigida ex aqua. Quod vero in unoquoque est ex se,
+plus in eo valet quam quod ex alio. Cum ergo in
+aere humiditas sit ex se, calor ex igne, praevaluit in
+eo humiditas, nec potuit desiccando corpora stellarum
+creare. Iterum quod majus est, non fuit divina
+voluntas stellas esse in aere. Cum enim aer terrae
+sit vicinus, si in eo essent stellae, ex vicinitate sua
+terram incenderent, nec aliquid in ea vivere posset.
+Corporibus stellarum sic creatis, quia igneae sunt
+naturae, coeperunt se movere, et ex motu subditum
+<pb n="1137D"/>
+aera calefacere. Quo mediante aqua calefacta est, ex
+aqua calefacta et spissata, diversa genera animalium
+sunt creata; quorum quaedam, quae plus habuerunt
+superiorum elementorum, aves sunt. Unde aves
+modo sunt in aere ex levitate superiorum, modo
+descendunt in terram ex gravedine inferiorum. Alia
+vero, quae plus aquae habuerunt, pisces sunt; inde
+est quod in hoc solo elemento vivere possunt. Sic
+igitur aves et pisces ex aqua creati sunt; unde scriptum
+est: Magnae Deus potentiae, qui ex aquis ortum
+genus partim remittis gurgiti, partim levas in
+aera. Istis sic creatis ex aqua effectu superiorum,
+ubi aqua tenuior fuit, ex calore et creatione praedictorum
+desiccata est. Apparentque in terra quasi
+quaedam maculae, in quibus homines et alia animalia
+habitabant. Sed cum terra ex superposita aqua
+esset lutosa, ex calore bulliens, ex se diversa genera
+animalium creavit, et si in aliqua parte terrae abundavit
+ignis, cholerica nata sunt animalia, ut leo; si
+<pb n="1138A"/>
+terra, melancholica, ut bos et asinus; si aqua, phlegmatica,
+ut porcus. Ex quadam vero parte, in qua
+elementorum qualitates aequaliter convenerunt, humanum
+corpus factum est. Et hoc est quod divina
+pagina dicit, Deum fecisse hominem ex limo terrae.
+Non enim credimus animam, quae spiritus est, et
+levis, et munda, ex limo esse factam, sed a Deo homini
+inspiratam. Unde ait Scriptura: #Formavit Deus
+hominem de limo terrae, et inspiravit in faciem ejus
+spiraculum vitae.@# Unde cum diversa melancholica
+animalia creata sunt, infinita phlegmatica et cholerica,
+unus solus homo creatus est; quia, ut ait
+Boetius: Omnis aequalitas pauca est et finita, inaequalitas
+vero numerosa et multiplex. Sed quoniam
+est proximum temperato, et si minus, tamen aliquanto
+est temperatum, ex vicino limo corpus mulieris
+esse creatum verisimile quibusdam videtur, et
+ideo nec penitus idem est quod homo, nec penitus
+diversum, nec ita temperata, quia calidissima frigidior
+<pb n="1138B"/>
+est frigidissimo viro. Et hoc est quod pagina dicit
+Deum fecisse feminam ex latere Adae. Non enim
+ad litteram volumus Deum primum hominem ex
+costa esse. Sed dicet aliquis, eadem ratione plures
+homines et feminas tunc posse creari, et adhuc
+posse. Nos dicimus verum esse, si divina voluntas
+esset, quia ut aliquid sit, natura operante, necesse est
+divinam voluntatem procedere. Iterum dicet, hoc
+esse divinae potestati derogare, sic esse factum hominem
+dicere. Quibus respondemus e contrario:
+Imo id est ei conferre, qui ei attribuimus, et talem
+rebus naturam dedisse, et sic per naturam operantem
+humidum corpus creasse: nam in quo divinae
+Scripturae contrarii sumus, si quod illa dicit factum,
+nos qualiter factum sit explicemus. Si enim modo
+unus sapiens dicat aliquid esse factum, et non explicet
+qualiter; alter vero hoc idem dicat et exponat,
+quae in hoc est contrarietas? Sed quoniam ipsi nesciunt
+vires naturae, ut ignorantiae suae omnes socios
+<pb n="1138C"/>
+habeant, nolunt aliquem eas inquirere, sed ut rusticos
+nos credere, nec rationem quaerere, ut jam illud
+propheticum impleatur: #Erit sacerdos sicut populus.@# 
+Nos autem dicimus in omnibus rationem esse quaerendam,
+si potest inveniri. Si enim alicui deficiat,
+quod divina pagina affirmat, Spiritui sancto et fidei
+est mandandum. Non enim ait Moses, Si agnus non
+potest comedi, statim igni comburatur: sed prius
+convocet vicinum qui conjunctus est domui suae, et
+si nec ita sufficiunt ad esum agni, tunc demum igni
+comburatur: quia cum de divinitate aliquid quaerimus,
+si ad illud comprehendendum non sufficimus,
+vicinum domui nostrae convocemus, id est manentem
+in eadem fide catholica inquiramus. Sin autem
+nos neque ille ad id comprehendendum sufficimus,
+tunc illud igne fidei comburamus. Sed isti multos habentes
+vicinos domui suae conjunctos, ex superbia
+nolunt aliquem convocare, maluntque nescire quam
+ab alio quaerere; et si aliquem inquirentem sciant,
+illum esse haereticum clamant, plus de suo caputio
+<pb n="1138D"/>
+praesumentes, quam sapientiae suae confidentes. Sed,
+quaeso, ne habitui credas, jam enim in eis impletum
+est, quod ait Satyricus:
+<l>Fronti nulla fides, quis enim non vicus abundat</l>
+<l>Tristibus obscoenis?</l> 
+Et iterum:
+<l>Rarus sermo est ille, et magna libido tacendi.</l> 
+<l>Atque supercilio brevior coma.</l> 
+Et quoniam de prima creatione rerum fecimus mentionem,
+quam diversi diversis temporibus dicunt
+esse factam, doceamus in quo tempore et quibus rationibus
+dicunt esse factam. Hebraei ergo et Latini
+dicunt in vere principium mundi fuisse. Unde Virgilius
+de diebus veris loquens ait:
+<l>Non alios . . . in prima origine mundi</l>
+<l>Illuxisse dies, aliumve habuisse tenorem.</l> 
+Deinde subjungit:
+<l>Ver illud erat, ver tempus agebat</l>
+
+<pb n="1139A"/>
+Horum talis est ratio: Quidquid creatur, aequalitate
+proportionum creatur; sed nullum tempus praeter
+ver temperatum est, in vere ergo creatio mundi
+facta est. Aegyptii vero in Julio illam esse factam
+dicunt. Quos secutus Macrobius, dicit in natali die
+mundi Cancrum gestasse lunam, Leonem solem.
+<pb n="1140A"/>
+Quorum haec est ratio: In prima creatione tantus
+fuit humor, quod terra erat aquis circumdata, tantus
+vero humor sine mixto calore temperari non potuit.
+Ergo in tempore anni in quo maximus calor est, id
+est in aestate, creatio mundi facta est.
+</p>
+      </div1>
+
+<div1>
+        <head>LIBER SECUNDUS.</head>
+<pb n="1139"/>
+
+
+</div1>
+<div1>
+        <head>PROOEMIUM.</head>
+<p>
+          <pb n="1139A"/> #In superiore particula de eis quae sunt et non videntur,
+et elementis, quae quidam visibilia, quidam invisibilia docuerunt,
+pro parvitate nostri ingenii summatim perstrinximus;
+nunc vero de unoquoque et ejus ornatu dicere satagamus.
+Sed quamvis multos ornatum verborum quaerere,
+paucos veritatem scientiae cognoscamus, nihil tamen
+de multitudine, sed de paucorum probitate gloriantes,
+soli veritati insudamus. Maluimus enim nudam veritatem
+praetendere, quam palliatam falsitatem. Sed quisnam
+est cui ariditas nostri sermonis displiceat, si nostri
+<pb n="1139B"/>
+animi occupationes cognoverit, ornatum sermonis non
+<pb n="1140A"/>
+quaesierit, sed de illo quod agimus stupebit. Quis enim
+ullus reliquus locus potest esse ornatui, cum oporteat
+quid et qualiter legamus cogitare: deinde legendo exponere,
+in disputationibus contra falsa declamare, de
+aliorum inventis judicare, contra invidorum detractiones
+linguam acuere; ut jam impletum sit in nobis illud
+de filiis Israel, qui reaedificantes templum, in una
+manu gladium, in altera lapidem habebant? Sed haec
+hactenus. Nunc de singulis elementorum et uniuscujusque
+<pb n="1140B"/>
+ornatu dicamus, a superiori, id est ab igne, incipientes.@# </p>
+</div1>
+
+<div1>
+        <head>CATALOGUS LIBRI II.</head>
+
+<pb n="1139"/>
+<p>
+          <pb n="1139B"/>Quid sit aether.--Unde aquae congelatae sint super
+aethera.--Quod non est bona ratio dicere hoc, quia Deus
+facere potest.--Quid sit quod in modum pellis extensae
+videtur.--Quot modis fiat sermo de superioribus.--Quare
+ignis dicatur firmamentum.--De infixis stellis.--Quot circuli
+dicantur esse in firmamento.--Qui visibiles: qui item
+invisibiles.--Unde incipiat galaxias, et quomodo extendatur.--Qualiter
+zodiacus distendatur, et quare sic sit
+nominatus.--Quomodo in zodiaco sint signa disposita.--De
+quinque parallelis.--De duobus coluris.--De horizonte
+et meridiano circulo.--De motu firmamenti.--De Saturno.--Quare
+aliqua stella dicatur frigida.--Quare non omne
+igneum sit calidum.--Quot modis nomina qualitatum rebus
+attribuant.--De Jove.--De Marte.--De Venere.--Quomodo
+eadem stella dicatur Lucifer et Hesperus.--De
+<pb n="1139C"/>
+Mercurio.--De Sole.--Quare retrogradae et stationariae
+<pb n="1140B"/>
+videantur.--Unde visum sit quibusdam quod Sol sit quartus,
+quibusdam quod secundus a Luna.--Quae sententia
+magis inde sit sequenda.--Utrum moveatur sol cum firmamento,
+vel contra.--Quae necessitas fuit, ut Sol oblique
+moveretur.--Quas diversitates operatur ascendendo vel
+descendendo.--Quae sint qualitates temporum, et quibus
+elementis, quibus aetatibus consimilia sint.--Quare citius
+moriantur infirmi in vere et autumno.--Quid sit naturalis
+dies, et de ejus partibus.--Quid sit dies usualis.--Unde
+inaequalitas et aequalitas dierum.--Unde eclipsis Solis.--Quare
+in singulis non contingat.--De Luna.--Quare Luna
+non habeat proprium splendorem et calorem.--Quare
+splendor in Luna crescat et decrescat.--De eclipsi Lunae.--Quare
+singulis mensibus non contingat.--Quae sit umbra
+conoides.--Quae cylindroides.--Quae calathoides.--Quid
+<pb n="1140C"/>
+sit ombrosum quod in medio Lunae apparet.</p>
+</div1>
+
+<div1>
+        <head>INCIPIT LIBER SECUNDUS.</head>
+
+<pb n="1139"/>
+<p>
+          <pb n="1139C"/>Ignis est spatium a luna sursum, quod idem aether
+dicitur, cujus ornatus est quidquid super lunam videtur,
+scilicet stellae tam infixae quam erraticae. Sed
+quaeret aliquis: Estne super lunam nisi aether et
+stellae et praetaxati spiritus, an ibi sunt aquae congelatae,
+supra quas sunt aliae? Dicunt inde quidam super
+aethera esse aquas congelatas, quae in modum
+pellis extensae oculis nostris occurrunt, super quas
+sunt aquae, auctoritate divinae paginae hoc confirmantes,
+quae ait: #Posuit Deus firmamentum in medio
+aquarum,@# et iterum: #Dimisit aquas quae erant sub firmamento,
+ab his quae sunt super firmamentum.@# Sed
+quoniam istud contra rationem est, quare sic esse
+non possit ostendamus, et qualiter divina pagina in
+praedictis intelligenda sit. Si ibi sunt aquae congelatae,
+ergo aliquid ponderosum et grave. Sed proprius locus
+ponderosorum et gravium terra est. Si iterum
+<pb n="1139D"/>
+sunt ibi aquae congelatae, conjunctae sunt igni, vel non.
+Si igni conjunctae sunt, cum ignis calidus sit et siccus,
+aqua vero congelata, frigida et humida, contrarium
+suo contrario sub medio est conjunctum;
+nunquam ergo ibi concordia, sed contrariorum est
+repugnantia amplius. Si aqua congelata conjuncta
+est igni, vel dissolvitur igne, vel exstinguit ignem.
+Cum ergo ignis et firmamentum maneant, non sunt
+aquae congelatae igni. Si non sunt igni conjunctae, est
+aliquid inter eas et ignem. Sed quid erit? Elementum.
+Sed nullum est superius igne, factum ex elementis.
+Visibile ergo. Unde igitur non videntur? Restat igitur
+ibi non esse aquas congelatas. Sed scio quid dicent:
+Nos nescimus qualiter hoc sit, sed scimus
+Deum hoc posse facere. Miseri, quid miserius quam
+dicere istud est, quia Deus illud facere potest, nec
+ostendere rationem quare hoc sit, nec utilitatem ad
+quam hoc sit. Non enim quidquid Deus facere potest,
+<pb n="1140C"/>
+facit. Ut enim verbis rustici utar, Potens est
+Deus de trunco facere vitulum. Fecitne unquam?
+Vel igitur ostendat rationem quare hoc sit, vel utilitatem
+ad quam hoc sit, vel desinat judicare sic esse.
+Si ergo nec aquae congelatae ibi sunt, nec super eas
+sunt aliae. Cum autem divina pagina dicit, #Divisit
+aquas quae sunt sub firmamento, ab his quae erant super
+firmamentum,@# aera firmamentum vocavit, quia
+firmat et temperat terrena. Super hunc sunt aquae
+vaporaliter, in nubibus suspensae, quemadmodum in
+sequentibus ostendetur, quae diversae sunt ab his quae
+sunt sub aere. Similiter exponatur, #Posuit firmamentum
+in medio aquarum.@# Quamvis hoc plus allegorice
+quam ad litteram dictum esse credamus. Iterum dicatur:
+Quid est quod ibi videmus spissum, et aquei
+coloris? ignis enim non est. Si enim aer ex nimia sui
+subtilitate videri non potest, multo minus ignis, qui
+<pb n="1140D"/>
+est subtilior, deinde talis color igneorum non est.
+Ad quod dicimus, nihil ibi videri, sed visum ibi deficere,
+et ex defectu visus, hominem ibi quoddam
+spissum confingere. Cum enim radius ille interior
+qui visum operatur ad superiora dirigitur, nec est ibi
+obstaculum quo repercutiatur, deficit, deficiendoque
+spissatur. Sed quia per oculum, in quo est aqueus
+humor, et cristalleidos transit, quod de compositione
+oculi loquentes ostendemus, cum deficit, nec alius
+color sibi occurrit, talem, id est aqueum sibi confingit.
+Hic subjicient: Si nihil ibi videtur, imo visus
+ibi deficit, quomodo dictum est: Coelum tegit omnia,
+stellas esse infixas in firmamento, in eodem undecim
+esse circulos, in uno quorum duodecim sunt signa,
+dicemusne eis? tarde respondeamus. Tribus igitur
+modis loquitur auctoritas de superioribus: fabulose,
+astrologice, astronomice. Fabulose loquitur inde
+Nemroth, Higinus, Aratus, Taurum illuc esse translatum,
+<pb n="1141A"/>
+et in signum mutatum dicentes, et sic de
+aliis. Quod genus tractandi maxime est necessarium.
+Non enim scimus de unoquoque signo, in qua parte
+coeli sit, et quot stellae in eo sint, et qualiter dispositae.
+Astrologice vero tractare, est ea quae videntur
+in superioribus dicere, sive ita sit, sive non, multa
+enim ibi videntur esse, quae non sunt, quia visus fallitur;
+sic tractat Marcianus, Hipparchus. Astronomice
+tractat Julius Firmicus, Ptolomaeus. Cum ergo
+dictum est: Coelum tegit omnia, astrologicum est,
+quia sic videtur; vel aether dicitur coelum, quia est
+diversis stellis caelatum. Dicitur firmamentum, quia
+suo effectu et calore stellarum, quae in eo sunt, firmat
+et temperat subdita. Coelum igitur tegit omnia, quia
+in aethere et sub aethere omnia continentur. In hoc
+dicuntur stellae infixae, non ut gemma in auro, sed
+quia in illo existentes, semper in eadem parte illius
+videntur, et quoniam de infixis fecimus mentionem,
+quaeramus utrum moveantur, an omnino careant
+motu; et si moventur, qualiter moveantur. Sunt qui
+<pb n="1141B"/>
+eas non moveri asserunt, sed a firmamento, et in eo
+fixas ad ortum et occasum referri. Alii dicunt eas
+proprio motu moveri, quia igneae sunt naturae, neque
+aliquid in aethere vel aere sine motu posse sustentari,
+sed semper in eodem loco et circum se moveri.
+Tertii dicunt eas etiam de loco ad locum moveri,
+nullum tamen earum motum oculis nostris sentire,
+quia tantum spatii in peragratione sui circuli consumunt,
+quod vita humana, quae brevis est, etiam ad
+breve punctum tam tardae accessionis comprehendendae
+non sufficit. Quamvis vero huic sententiae
+quod de loco ad locum moveantur, consentimus,
+aliam tamen rationem quare motus earum non sentiatur
+praetendimus, quae talis est. Omnis motus discernitur
+per immobile, vel per minus mobile. Cum
+enim aliquid movetur, si aliquid immobile vel minus
+mobile videatur, cum aliquid praeterire vel propinquare
+videmus, motum sentimus. Sin autem aliquid
+moveatur, neque aliquid extra ipsum, vel immobile
+<pb n="1141C"/>
+vel minus mobile videatur, motus non sentitur.
+<pb n="1142A"/>
+Quod per navem currentem in mari probari potest.
+Motus ergo stellarum per immobile vel minus mobile
+superpositum sentitur, nunquam superpositum, ut
+per signa motum planetarum discernimus, quia modo
+sub hoc signo, modo sub alio videntur. Super praedictas
+autem stellas nihil est visibile, nec ideo est
+quo motus earum discerni possit. Moventur ergo, sed
+infixae dicuntur, quia motus earum non sentitur. In
+eodem firmamento undecim dixerunt esse circulos,
+quorum duo sunt visibiles, alii invisibiles. De visibilibus
+ergo prius, deinde de invisibilibus disseramus.
+Duo ergo visibiles, galaxias, id est, lacteus circulus.
+Gala enim #lac,@# <foreign xml:lang="greek">χίος</foreign> #circulus,@# et zodiacus; et incipit
+galaxias juxta Septentrionem ex parte Orientis, et
+ab obliquo per Cancrum et Capricornum transiens,
+ad idem revertitur principium. Dicitur autem sic
+propter notabilem sui claritatem. Si quis vero unde
+sit ille in illa parte coeli notabilis splendor scire desiderat,
+Macrobium legat. Zodiacus vero a Capricorno
+per Arietem ad Cancrum ascendens, de Cancro
+<pb n="1142B"/>
+per Libram ad Capricornum descendit. Descendere
+vero et ascendere, juxta nostrum situm, intellige hic
+duodecim aequas partes, ut refert Macrobius, per
+fluxum aquae divisus est, quarum unaquaeque dicitur
+signum, quia eis signamus in qua parte coeli sit sol
+et alii planetae, et ad quam exierint, et ad quam debeant
+pervenire. Quae signa quia nominibus animalium
+titulata sunt, ut Aries, Taurus, etc., circulus
+qui ea continet, Zodiacus dicitur. <foreign xml:lang="greek">Ζωὴ</foreign> enim est #animal.@# 
+Si quis autem causas nominum quaerat, Helpericum
+legat. Signorum vero talis est dispositio, quod
+propinquus nobis est Cancer, scilicet, in confinio
+nostrae habitabilis et torridae. Deinde Leo aliquanto
+descendit versus Orientem, post Virgo; deinde Libra,
+in medio torridae zonae existens; ultra quam es
+Scorpius, deinde Sagittarius; post quem est Capricornus,
+a nobis remotissimus; deinde oblique descendendo
+est Aquarius, postea Pisces; deinde Aries,
+in medio torridae zonae Librae suppositus, supra est
+<pb n="1142C"/>
+Taurus, postea Gemini, deinde Cancer.</p>
+<p>
+          <emph>
+            <pb n="1141"/>DE ABSIDIBUS PLANETARUM.</emph>
+ 
+<pb n="1143"/> </p>
+<p>
+          <pb n="1143B"/>Hanc figuram dedimus, non ut obliquitatem signorum,
+vel ascensum, vel descensum, vel remotionem,
+vel propinquitatem notaremus, sed ut dispositionem
+illorum, et quod cujus planetae primum secundarum
+( #sic@# ) vel solum domicilium dicatur manifestaremus:
+quod signum cujus mensis sit, et quare,
+tractando de sole dicemus. Novem alii circuli invisibiles
+sunt, quorum quinque sunt paralleli: unus
+quorum aequinoctialis dicitur, hic est qui per medium
+torridae zonae vadens per Arietem et Libram, in duo
+hemisphaeria coelum dividit. Dictus aequinoctialis,
+quia quando sol ad ipsum vel ascendendo vel descendendo
+pervenit, dies et noctes aequat, de quo in sequentibus
+docebimus. Alter de parallelis dicitur
+conjunctio nostrae habitabilis et torridae. Tertius
+conjunctio ejusdem et frigidus. Quartus ex altera
+parte, conjunctio torridae et alterius habitabilis.
+Quintus ejusdem conjunctio et frigidus, ut hic apparet.
+Sed quia auctoritas dicit quinque zonas esse in
+<pb n="1143C"/>
+coelo, utrum in aethere vel in aere sint, tractantes de
+aere dicemus. Isti circuli paralleli, id est, aequi,
+distantes dicuntur, quia a medio, id est, aequinoctiali
+aequaliter distant. Tantum enim distant conjunctio
+nostrae habitabilis et frigidae alterius. Post hos duo
+coluri, quorum principium in medio Septentrionis
+est, sed alter inde ascendit per Cancrum, et, descendens
+per Capricornum, ad idem redit principium.
+Alter inde per Orientem revertitur, per Occidentem
+et Libram, ad idem principium; et ita in summo
+Septentrionis se intersecant, et coelum in quatuor
+quadrantes dividunt. Dicuntur autem coluri, quasi
+colon uri, id est, membrum bovis silvestris. Colon
+enim est #membrum,@# urus #bos silvestris:@# dicti sic propter
+imperfectionem, non quia in se sint imperfecti,
+sed quia illa pars alterius poli quam intersecant
+nunquam a nobis videtur. Duo qui ad praedictum numerum
+supersunt, meridianus est et horizon. Meridianus
+vero circulus est linea intelligibilis, illam partem
+coeli designans in qua sol existens aequaliter ab ortu
+<pb n="1143D"/>
+et occasu distat. Horizon vero ubi videtur coelum
+cum terra jungi: dictus horizon, quasi limitans. Isti
+duo ultimi non scribuntur in sphaera, quia pro diversitate
+habitantium, vel circumspicientium, variantur.
+Motus vero aetheris vel ignis, quod praedictis rationibus
+<pb n="1144B"/>
+dicitur firmamentum, vel coelum, talis est. Cum
+ignis naturaliter sit in motu, nec supra ipsum sit,
+quo ascendat, ut ostendimus, nec descendere potuit,
+quia hoc contra suam naturam est, et omnia inferiora
+loca ab inferioribus elementis occupata erant. Iterum
+inutile fuit illum descendere, descendendo nempe
+terram incenderet, nec aliquid in ea vivere posset.
+Ergo in quo potest et habet movetur, id est, in circuitu,
+et est in circuitu, non occupando diversa loca
+se movere est, partes aliter suas in eodem loco habere.
+Sic vero in circuitu se vertendo, ab ortu per
+occasum, ad ortum refert secum stellas tam erraticas
+quam infixas. Quamvis tamen sic super terram volvatur
+non recto modo, sed oblique circa nostram
+habitabilem movetur, quod per polos videri potest.
+Est autem polus stella immobilis, una in hoc capite,
+altera in alio. Axis vero est linea intelligibilis, de
+polo ad polum per medium terrae directa, circa quam
+volvitur firmamentum. Si ergo recto modo volveretur
+<pb n="1144C"/>
+firmamentum, unus de polis recto modo esset super
+terram, et alter sub terra, vel in lateribus terrae. Cum
+igitur unus sit inter medium coeli, et latus ex nostra
+parte, et similiter alter ex alia linea, quae dicitur
+axis obliquata est, et circa ipsam oblique volvitur
+firmamentum. Et quoniam falsam sententiam quorumdam
+de firmamento satis improbavimus, nostram
+vero ponentes probavimus, et de stellis fixis in eo,
+et de circulis et motu ejusdem non tacuimus, de planetis
+dicere incipiamus; et quia a summo elementorum
+incoepimus, a summo planetarum incipiamus.</p>
+<p>Summus itaque planetarum Saturnus dicitur in
+peragratione zodiaci, fere triginta annos consumens,
+unde in fabulis senex fingitur. Haec stella frigida et
+nociva dicitur esse, de cujus frigiditate primum,
+deinde de nocivitate disseramus. Stellam istam esse
+frigidam sic antiqui astrologi probaverunt: cum scirent
+solem existentem in Cancro terras adurere, videbant
+in aliquo anno hoc minus contingere; scientes
+autem ex natura solis hoc non esse, quaesierunt
+<pb n="1144D"/>
+quis planeta esset in eodem signo cum sole, reperientesque
+Saturnum, dixerunt in eo causam frigiditatis
+esse. At dicet aliquis: Cum omne corpus
+stellarum igneae sit naturae, quod probat motus et
+splendor, unde una stella dicitur frigida et alia calida?
+<pb n="1145A"/>
+Non enim illam probamus rationem, qua dicunt
+quidam ex vicinitate aquae et terrae. Probavimus
+enim aquas congelatas in superioribus esse non
+posse. Sunt qui inde dicunt plures esse qualitates
+ignis, quae in quibusdam corporibus sunt conjunctae,
+in quibusdam divisae. Ut igitur est quoddam igneum
+et calidum, et non splendidum, ita est quoddam
+splendidum, et non calidum. Dicunt quod ignea non
+sunt calida, nisi quae alicui spissae et humidae materiae,
+quam in sui substantiam transmutent, sunt vicina.
+Unde si alicui igneo desit vicinitas spissi humoris,
+in eo calor deficit. Hoc vero per solem probant,
+qui in convallibus, ubi aer spissior est, magnum
+exercet calorem, in altissimis vero montibus
+propter aeris subtilitatem non exercet. Cujus rei
+sunt indicium nives perpetuo ibi existentes, de quo
+loquentes de situ terrae satis dicemus. Volunt etiam
+isti super lunam nullum fervorem esse, prae nimia
+aeris subtilitate. Nos vero dicimus nomina qualitatum
+<pb n="1145B"/>
+tribus modis rebus attribui, vel propter effectum,
+ut vinum dicitur calidum, quia calorem efficit,
+etsi frigidus sentiatur; vel propter sensum, ut
+cum dicimus aquam bullientem esse calidam, etsi
+naturaliter sit frigida; vel propter signum, ut cum
+dicimus: Sanum est bene dormire, sine difficultate
+spirare. Cum igitur aliqua stella dicitur frigida, effectui
+deputetur. Quamvis ergo in se calida sit, si
+efficiat frigus, dicitur frigida. Inde quia Saturnus
+junctus soli minuit calorem, propter effectum dicitur
+frigidus, etsi in se sit calidus. Sed dicet aliquis:
+Si corpora stellarum sunt ignea, unde accidit quod
+quaedam de illis frigus efficiunt? Omnes non in omnibus
+posse inveniri rationem, sed in quibusdam recurrendum
+esse ad Creatorem, quamvis possimus
+hanc inde rationem reddere, quod diversa ignea ex
+propinquitate et remotione magis et minus calefaciunt.
+Unde Saturnus, quia a nobis est remotior
+non calefacit terram. Sol vero quia est terrae propinquus,
+<pb n="1145C"/>
+magis eam incendit. Vel dicamus, quod
+quamvis aliqua stella sit calida, sunt in ea aliquae
+qualitates nobis ignotae, propter quas calor non potest
+descendere; sed quia in medio quaestionem proposuimus,
+nec omnia possumus omnes, erit ingenii
+uniuscujusque inquirere quid pro solvenda hac quaestione
+possit invenire. Haec eadem stella ex frigiditate
+dicitur nociva, maxime quando est retrograda.
+Inde in fabulis falcem deferre dicitur. Deferens
+enim falcem, plus nocet recedendo quam accedendo.</p>
+<p>Post Saturnum est Jupiter in peragratione zodiaci,
+duodecim annos consumens. Haec stella est
+benevola, quippe ut temperata in qualitatibus, quod
+per conjunctionem ejus cum sole probatum est. Sed
+quoniam inter Saturnum et Martem est media, si in
+superiori vel inferiori abside sui circuli existat,
+temperatur eorum nocivitas, sed minoratur ejus benevolentia.
+Inde est quod in fabulis dicitur Jovem
+patrem Saturnum regno expulisse, quia Saturno vicinior
+<pb n="1145D"/>
+factus, naturalem aufert ei nocivitatem. Dicicitur
+etiam adulterando diversos genuisse, quia
+conjungendo se praedictis, diversa in terrenis efficit.</p>
+<p>Tertius est Mars; stella, scilicet, calida et sicca,
+et inde nociva, in biennio zodiacum peragrans; sed
+inter Jovem et Venerem positus, quae stellae sunt
+benevolae, ex eorum vicinitate suam minuit nocivitatem,
+et illorum benevolentiam. In praeliis dicitur
+dominari, quia calorem et siccitatem, ex quibus est
+animositas, confert, calidi enim et sicci sunt animosi.</p>
+<p>Quartus autem secundum Platonicos est Venus;
+stella calida et humida, et inde benevola, in anno
+fere zodiacum circuiens. Dicitur adulterata cum
+Marte, quia in superiore abside sui circuli existens,
+facta vicina Marti, minus est benevola. Dicitur dea
+luxuriae esse, quia confert calorem et humorem, ex
+quibus est luxuria. Ut enim propter Venerem breviter
+dicamus, quod prolixius loquentes de homine
+<pb n="1146A"/>
+exponemus, calidi et sicci multum appetunt ex calore
+luxuriam, sed ex siccitate non sustinent effectum.
+Frigidi vero et sicci nec appetitum, nec effectum
+habent, nisi raro, et si faciunt, maxime eis
+nocet. Frigidi vero et humidi e contrario male appetunt,
+sed sustinent effectum; calidi vero et humidi
+appetitum et effectum habent, maximeque corporibus
+illorum prodest. Haec eadem stella Lucifer et
+Hesperus dicitur. Sed Lucifer tantum in mane ante
+solem videtur, Hesperus quandoque potest in vespere.
+Unde est quaestio, an in eodem anni tempore
+possit esse Lucifer et Hesperus. Dicunt quidam hoc
+esse non posse. Cum enim paris est velocitatis cum
+sole, et fere in eodem spatio temporis cursum suum
+perficiens, quomodo in una eademque nocte, in vespere
+sequetur solem, et in mane praecedet? In uno
+igitur tempore anni praecedet solem, et tunc est
+Lucifer; in altero sequetur, et tunc est Hesperus.
+Alii dicunt illum ante solis ortum videri, et post occasum
+<pb n="1146B"/>
+ejusdem, non tamen illum praecedere et subsequi,
+hoc namque impossibile est. Dicunt autem
+stellam illam altiorem esse sole, unde diutius videtur
+in vespere, etsi non sequatur solem, citius in
+mane, etsi non praecedat. In eodem igitur tempore
+anni Lucifer et Hesperus dicitur, non quia praecedat
+solem, et subsequatur solem, sed quia ante ipsum,
+et post ex sui altitudine videtur. Tertii dicunt Venerem
+et Mercurium esse fere ejusdem coloris et
+quantitatis, semperque solem comitari. Cum ergo
+sic illum comitantur, quod altera praecedit et altera
+sequitur, praecedens in vespere propter splendorem
+solis non videtur, sed subsequens post ejus occasum
+apparet. Contra autem est in mane, praecedens etenim
+videtur, sed sequens splendore diei occulitur;
+sed quia unius coloris sunt et quantitatis, una et
+eadem stella reputatae sunt.</p>
+<p>Quintus est Mercurius, fere in anno similiter cursum
+suum perficiens, cum quo Venus adulterata dicitur,
+quia quando est in inferiori abside sui circuli,
+<pb n="1146C"/>
+qualitatibus illius se commiscet.</p>
+<p>Sextus est sol; sed antequam de eo dicamus, de
+statu et retrogradatione omnium praedictorum doceamus:
+deinde cum Chaldaei et eorum sequaces
+dixerint solem esse in medio planetarum, super Venerem
+et Mercurium, Aegyptii vero, quos secutus
+est Plato, eumdem sextum dixerunt, Mercurioque
+et Veneri suppositum. Dicunt igitur quidam solem
+esse attractivae naturae. Si igitur illae praecedant solem,
+si propinquae sunt, attrahit eas ad se; si autem
+remotae, saltem cogit eas stare, donec eas transierit:
+quod ostendunt per similitudinem adamantis et ferri.
+Alii dicunt eas nunquam stare, sed tamen videri
+quod stent, quia cum sint igneae naturae, necesse est
+quod semper sint in motu. Videntur tamen aliquando
+ex arsi et thesi stare. Constat enim inter omnes astrologos
+unumquemque de praedictis planetis plus
+solito removeri a terra, et tunc elevatur. Aliquando
+plus solito versus terram descendere, quod primi
+<pb n="1146D"/>
+dicimus. Cum ergo elevantur et deprimuntur, si recto
+modo hoc fiat, quia dum elevantur, sub eadem parte
+signi videntur, et stare credunt; sin autem retro aliquando,
+retro ire videntur. </p>
+<p>
+          <pb n="1147A"/>Hujus elevationis et depressionis causa est sol. Cum
+enim sit fons totius caloris, aliquando plus solito
+desiccat superiora et inferiora. Unde corpora stellarum
+desiccata, plus solito levia ascendunt. Si iterum
+ad nutrimentum sui plus solito attrahant humorem,
+plus solito humida et gravia reddit ea, unde plus solito
+descendunt. Quod ergo dicuntur stare, astrologicum
+est, quia sic videtur. Deinde dicendum est cur
+Chaldaei dicant solem quartum, Aegyptii vero et Plato
+sextum. Verum est solem esse sub Venere et Mercurio
+juxta lunam. Cum enim luna sit frigida et humida, necesse
+fuit ut sol, qui est calidus et siccus, esset ei vicinus,
+quatenus ex calore solis frigiditas lunae, et ex
+siccitate humiditas temperaretur, ne cum vicina sit
+terrae, et inde magis ei dominans, si distemperata ad
+eam veniret, distemperatam eam redderet. Iterum
+cum luna proprio careat splendore (ut ostendimus) et
+a sole accipiat, necesse fuit ut fonti sui luminis, sine
+medio sit subjecta. Sed quamvis hoc ita esse verum
+sit, Chaldaeis tamen aliter visum est, ex hoc quod
+<pb n="1147B"/>
+dicemus. Sol et Mercurius et Venus ita conjuncti
+<pb n="1148A"/>
+sint, quod fere in eodem spatio temporis suos perficiunt
+cursus, scilicet, in anno. Fere ergo aequales
+sunt circuli eorum, si juxta quantitatem circulorum
+planetae brevius vel prolixius tempus in peragratione
+zodiaci consumunt Cum ergo fere aequales
+sint, unus ab alio totus non continetur. Intersecant
+ergo sese ita, quod circulus Veneris in inferiori sui
+parte intersecat superiores partes circulorum Mercurii
+et Solis, plus comprehendens de Mercuriali
+quam de solari. Circulus vero Mercurii superiori
+parte sui intersecat Venereum, inferiori solarem.
+Circulus autem solis superiori parte sui intersecat
+Mercurialem et Venereum, plus Mercurialem, minus
+Venereum. Sed quia facilius elabitur animo, oculis
+subjecta descriptione, intersecationem illam ostendimus,
+circulos aliorum planetarum et zodiacum
+adjungentes, hos omnes in duodecim partes dividendos,
+ut appareat cum signa sint ejusdem quantitatis,
+quare plus moveatur sol in geminis quam in
+<pb n="1148B"/>
+aliis.</p>
+<p>
+          <emph>
+            <pb n="1147"/>DE DISCURSU PLANETARUM PER ZODIACUM.</emph>
+ </p>
+<p>
+          <pb n="1147C"/>Cum igitur circulus solis in superioribus partibus
+illorum circulorum ambiatur, juste inferior illis dicitur.
+Sed quia contingit aliquando solem per superiora
+sui circuli currere, illas vero stellas per inferiora
+suorum, et tunc liberius apparent. Sol enim
+non tantum obscurat subjecta, quantum superposita
+reputatus est illis superior. Sed jam tractatum ad
+solem transferamus. Sed quoniam caeteri planetae,
+quemadmodum sol moventur, de motu solis dicamus,
+ut de aliis similia intelligantur. Generalis ergo
+<pb n="1148C"/>
+sententia fere omnium philosophorum fuit, firmamentum
+ab ortu ad occasum volvi; solem vero et
+alios planetas contrario motu ab occasu ad ortum
+moveri, quod ostendunt oculis per signorum dispositionem.
+Cum enim Aries sic sit positus, quod quando
+in medio coeli est, inter illum et Orientem est Taurus,
+deinde Gemini, post Cancer, inter eumdem et Occidentem
+sunt Pisces, post Aquarius, deinde Capricornus,
+ut in figura apparet paginae sequentis.
+<pb n="1149"/> </p>
+<p>
+          <pb n="1149B"/>Si ergo sol versus Occidentem tenderet de Ariete
+in signum versus Occidentem positum, id est, in
+Pisces transiret, deinde in caetera. Cum ergo sol in
+signa versus Orientem posita, scilicet, in Taurum,
+etc., de Ariete transeat, sine dubio de occidente in
+orientem moveretur. Subnectunt etiam rationem
+quare sit necesse sic esse. Cum firmamentum ab ortu
+in occasum volvitur, si planetae similiter moverentur,
+tantus esset impetus, quod in terra nihil stare
+nec vivere posset. Ut ergo rapido motui firmamenti
+obviarent, impetumque illius temperarent, in contrarietatem
+motu retorti sunt. Sed quamvis contra
+firmamentum deferantur, firmamentum tamen refert
+eos secum ad ortum et occasum, ut si aliquis existens
+in navi, contra quam navis currat, se moveat,
+tamen a navi quocunque vadit refertur, non ideo a
+contrario motu quiescens. Ergo quod paulatim vadit
+ad Orientem, naturalis est motus; quod quotidie ad
+ortum et occasum, ex firmamenti impetu. Quidam
+<pb n="1149C"/>
+tamen aiunt hoc esse non posse. Cum enim sol non
+sit de infixis stellis in firmamento, qualiter refertur
+ab ipso? Si enim aliquis extra navem est, qualiter a
+navi defertur? De eo vero quod dicunt, solem ad
+signa adversus Occidentem posita transire, dicit sic
+videri, non tamen ita esse. Cum enim ait firmamentum
+et sol naturali motu ab ortu ad occasum tendant,
+ita quod sol est sub prima parte Arietis, quia
+firmamentum aliquanto velocius est sole, transit
+cum in tricesima parte unius signi. Cum igitur sol
+venit ad ortum, non illa pars signi, quae ante videbatur,
+super solem videtur, sed posterior, et ita
+per singulos dies transeundo videtur, quod ad signa
+posteriora eat, cum tamen non eat. Quod per simile
+lunae probari potest. Cum enim certum sit lunam
+ad Septentrionem non currere, si super ipsam nubes
+currant, quando transeunt lunam, videtur contra
+nubes ad Septentrionem currere. Sed quia priori
+sententiae doctissimus omnium philosophorum consentit,
+et vera est, illi concedamus, contraque hoc
+<pb n="1149D"/>
+quod ille dicit solem a firmamento non posse referri,
+cum in eo non sit. Et si possumus dicere, quod est
+in firmamento juxta nostram sententiam, quia dicimus
+aethera firmamentum vocari, tamen dicimus, et
+si non sit in firmamento, posse referri ab eo. Ut
+enim in eodem exemplo de navi persistamus, si aliquid
+leve juxta navem sit, impetu illius refertur, etsi
+in ea non sit. Ergo sol cum levis et igneae sit naturae,
+a firmamento, et si in eo non sit, potest relerri.
+<pb n="1150B"/>
+Moventur ergo sol et alii planetae ab Occidente
+in Orientem non recto modo, sed obliquando, sed
+modo descendendo ad Australia, modo ad nostram
+habitabilem, ascendendo juxta praedictam signorum
+dispositionem. Sed dicet aliquis: Quae necessitas
+fuit quod sol obliquando, et non recto modo, volveretur?</p>
+<p>Responsio. Magna quam ut ostendamus, praedoceamus
+quas diversitates oblique meando operetur,
+a remotiori, id est, a Capricorno incipientes. Cum
+ergo sol intrat Capricornum, quod in medio Decembris
+contingit, semper enim sol in medio mensis intrat
+signum, et in medio sequentis mensis exit,
+eique mensi attribuitur, in quo sol illud intrat, quia
+tunc remotissimus est a nobis, et nostra habitabilis
+frigore astringitur. Terra enim et aqua naturaliter
+sunt frigida, nisi a sole calefiant. Iterum cum non
+sit quo arescat aer, spissatur in nubes, quae in pluvias
+dissolvuntur; inde fit quaedam anni varietas,
+<pb n="1150C"/>
+quae hiems vocatur. Est autem hiems frigida et humida,
+extenditurque donec sol transeat Aquarium
+et Pisces, quorum primum intrat medio Januarii, secundum
+medio Februarii; constat ergo in tribus
+mensibus, et hoc est verum de quatuor anni temporibus.
+In hoc constringuntur pori superficiei terrae,
+nec potest calor evaporare, qui remanens nutrit radices
+herbarum et arborum, vicemque matris praegnantis
+obtinet, crementum autem non confert, quia
+nec calor nec humor, ex quibus est augmentum, potest
+ascendere propter frigoris constrictionem. Sed
+unde gelu, unde nives, unde grandines, unde pluviae,
+unde tonitrua et fulmina contingant, tractantes de
+aere dicemus. Huic tempori consimilia sunt, aqua,
+phlegma, decrepita aetas. Haec etenim frigida sunt
+et humida. In eodem se melius habent cholerici, pejus
+phlegmatici, melius juvenes, pejus decrepiti.
+Pessima est infirmitas, quae est ex phlegmate, ut febris
+quotidiana minus mala, quae est ex cholera, ut
+tertiana. Utile est in eodem augmentare cibum. Pori
+<pb n="1150D"/>
+enim humani corporis ex frigiditate constringuntur,
+nec potest calor evaporare qui intus remanens plus
+consumit; contra igitur interiorem decoctionem necesse
+est infundere exteriorem refectionem. Inde est
+quod apud antiquos deus hiemis pinguis ventre pingebatur,
+et ab immunditia paludis Spurius appellabatur.
+In eodem bonum est uti calidis et siccis.</p>
+<p>Tunc igitur sol ascendendo usque ad Arietem pervenit,
+qui in medio Martii intrat, nec nimis remotus,
+<pb n="1151A"/>
+nec propinquus, utpote in medio torridae zonae positus.
+Unde aer nostrae habitabilis nec nimis calidus
+est, nec frigidus, nec nimis humidus, nec siccus, sed
+inter quatuor qualitates temperatus. Ex qua temperie
+pori aperiuntur, evaporatque fumus humidus,
+per radices herbarum et arborum conscendens, confert
+eis augmentum et vegetationem. Unde quidam
+mensis hujus temporis dicitur Aprilis, quasi aperilis,
+quia tunc terra aperitur in flores. Estque proprium
+ejus, quod inconstans sit, modo, scilicet, pluviosum
+ex vicinitate hiemis, modo siccum ex vicinitate aestatis,
+modo eadem ratione calidus, modo frigidus. Inde
+est quod in Martio saepe infirmantur homines, quia
+cum corpora humana modo aperta sunt ex calore,
+statim corrumpuntur subito frigore. Sed si quis in
+hoc tempore se conservaret tardius, prius in illo
+quam in aliis infirmitatem incurreret. Hic subjiciet
+aliquis: Unde ergo est quod si aliquis intret hiemem
+cum aliqua infirmitate, non tam saepe moritur
+in hieme quam in vere? Cum infirmitates oriuntur
+<pb n="1151B"/>
+ex malo humore, per membra se diffundente, ex frigiditate
+hiemis confringuntur humores, nec possunt
+diffluere; ex calore autem veris idem dissolvuntur,
+quibus discurrentibus per membra, succumbit homo
+et moritur. Haec temperies ab Ariete incipiens, extenditur
+dum sol est in Tauro, et in Geminis primum,
+quorum intrat medio Aprilis, secundum medio Maii.
+Huic tempori consimiles sunt aer, sanguis, pueritia,
+quia calidi et humidi sunt. In eodem melius habent
+melancholici, pejus sanguinei; melius senes, pejus
+pueri. Pessima est infirmitas quae venit ex sanguine,
+ut synoca; minus mala quae est ex melancholia, ut
+quartana. In eodem est conveniens uti frigidis et
+siccis.</p>
+<p>Cum autem sol usque ad Cancrum ascendit, ex
+propinquitate sui terram incendit et desiccat. Unde
+est aestas calida et sicca, quae incipiens in medio Junii,
+quando sol intrat Cancrum, extenditur dum sol est
+in Leone, quem medio Julii intrat; dumque est in
+<pb n="1151C"/>
+Virgine, quam intrat medio Augusti. Hujus temporis
+est herbarum et arborum radices desiccare. Consimile
+est igni, cholerae, juventuti, haec etenim calida
+et sicca sunt. In eo se melius habent phlegmatici,
+pejus cholerici; melius decrepiti, pejus juvenes.
+Pessima est infirmitas quae venit ex cholera, ut tertiana;
+minus mala, quae est ex phlegmate. In eodem
+utile est uti frigidis et humidis. Augmentandus est
+potus, cibus minuendus. Etenim ex calore aperti
+sunt pori corporis, evaporat calor naturalis; unde
+non ita cibus digeritur. Sed quia potus cito transit
+in sanguinem, augmentandus est. Hic oritur quaestio:
+Cum istae diversitates in praedictis temporibus,
+ex propinquitate et remotione solis habeant contingere,
+sol vero existens in Leone tantum distat a nostra
+habitabili, quantum exis ens in Geminis, in Virgine
+quantum in Tauro, in Libra quantum in Ariete,
+quare in illis temporibus operetur calorem et humorem,
+in duobus istorum calorem et siccitatem, in
+<pb n="1151D"/>
+tertio frigiditatem et siccitatem? Cui respondendum
+est quod existens in tribus vernalibus, ex quo propinquus
+est, operatur calorem, ex vicinitate hiemis
+praecedentis humorem. Cum vero est in Leone et
+Virgine, ex propinquitate operatur calorem; sed
+quoniam ex calore veris et aestatis jam est humor
+desiccatus, non est quo temperetur calor, nec est
+unde sit humiditas; unde est tempus calidum et siccum.
+Cum vero est in Libra, quia jam omnino desiccatus
+est humor, et exstinctus calor, oritur
+autumnus frigidus et siccus, in quo fructus intus habentes
+humorem, ut racemi, ex gemina siccitate,
+scilicet, autumni, maturi colliguntur. Incipit autem
+autumnus medio Septembri sole intrante Libram, durans
+dum sol est in Scorpione et Sagittario, primum
+quorum intrat medio Octobris, secundum medio Novembris.
+Assimilatur huic tempori terra, melancholia,
+senectus, quia frigidae et siccae sunt. In eo se melius
+habent sanguinei, pejus melancholici; pueri
+<pb n="1152A"/>
+melius, pejus senes. Pessima est infirmitas quae nascitur
+ex melancholia; minus mala, quae ex sanguine.
+Ut enim generaliter dicamus, in omni tempore
+anni pessima est infirmitas quae fit ex humore
+simili tempori. Qualitatibus enim temporis augetur
+materia morbi. Minus est mala quae fit ex humore
+contrario tempori, minuitur nempe qualitate temporis
+materia morbi. In eodem est utile, uti calidis et
+humidis. Inaequale est hoc tempus ex vicinitate praecedentis
+aestatis, et subsequentis hiemis. Ex quo et
+ex succis fructuum tunc abundantium, periclitantur
+indiscreti homines. Hic oritur quaestio similis
+praecedenti: Cum sol existens in Scorpione tantum
+distet a nobis quantum in Piscibus, in Sagittario
+quantum in Aquario, quare alias in istis operetur
+qualitates, alias in istis? Hujus facilis est solutio.
+In praecedentibus, id est, in Scorpione et Sagittario,
+quia ex aestate desiccatus est humor, jamque sol
+medium torridae transiit, est frigus et siccitas. In
+aliis similiter remotus est, ex quo est frigiditas;
+<pb n="1152B"/>
+sed quia jamdudum defecit calor, qui aera desiccat,
+paulisper spissatur aer in nubes, fitque tempus humidum.
+Quamvis ergo, ut praedictum est, hiems sit
+frigida nimis et humida, in fine magis humida, minus
+frigida, in medio aequaliter. Ver autem in principio
+magis humidum, minus calidum, in fine magis
+calidum, minus humidum, in medio aequaliter.
+Notandum vero est quod quamvis istae sint quatuor
+temporum proprietates ex accidente, tamen variantur,
+ut si cum sole in hiemalibus signis sit aliquis
+calidus et siccus planeta, ut Mars, est praeter naturam
+calida et sicca; similiter si in aestate sit aliquis
+frigidus et humidus cum sole, id est, praeter naturam
+frigida et humida. Ideo prudenti physico semper
+providendum est quae signa obtineat sol, et quis
+planeta cum eo sit in eodem signo, ut sciat qualis
+futura sit aestas, vel alia tempora, ut contra futuram
+qualitatem praesto sit medicamen. Cum igitur has
+diversitates operetur sol oblique ascendendo et descendendo,
+<pb n="1152C"/>
+videamus quid mali sequeretur, si semper
+recto modo volveretur. Sed de hoc nullus dubitat
+quod si semper ita propinquus nobis volveretur
+ut est in aestate, semper aestum haberemus, nec aliquid
+crescere posset. Similiter si semper remotus ut
+est in hieme, rigor frigoris semper esset, nec ex
+terra fructus et herbae nascerentur. Sed dicit aliquis:
+Si ita se moveret ut est in Ariete, quod aequaliter
+semper a nobis distaret, semper temperiem veris faceret,
+nec aliquid mali inde proveniret. Nos vero
+contra dicimus pessimum malum inde provenire,
+nunquam enim terra intus conciperet, quod agit in
+hieme; neque fructus, si aliqui nascerentur, ad maturitatem
+tenderent, sine quibus nullus animantium
+vivere posset. Sed quia diximus elementa, tempora
+anni, humores, complexiones, aetates similes esse,
+sub oculis in figura ( #Vide primam figuram pag. seq.@# ),
+quod cui sit simile, ostendamus.</p>
+<p>Quoniam de naturali motu solis et de eis quod agit
+<pb n="1152D"/>
+oblique ascendendo et descendendo satis docuimus,
+consequens est quatenus de eis quae agit relatus a
+firmamento dicamus. Cum igitur sol naturali motu
+ab Occidente in Orientem contra firmamentum nitatur,
+quotidie tamen a firmamento ad occasum refertur,
+existensque super terram, agit splendorem, qui
+dicitur dies. Eodem vero existente sub terra, in superiori
+parte est obscuritas, quae nox vocatur. Attendendumque
+est quod dies alius naturalis, alius
+usualis: de naturali ergo prius, deinde de usuali
+disseramus. Naturalis vero dies est spatium viginti
+quatuor horarum, continens usualem diem et noctem.
+Unde dicimus triginta dies in mense, cum in eo sint
+dies et noctes. Hunc philosophi in quatuor diviserunt,
+a nona parte noctis usque ad tertiam diei usualis,
+calidum et humidum dicentes; a tertia diei
+usualis usque ad nonam, calidum et siccum; a nona
+ejusdem usque ad tertiam noctis, frigidum et siccum;
+a tertia noctis usque ad nonam, frigidum et
+<pb n="1153A"/>
+humidum. Inde contingit quod quaedam infirmitates
+in diversis partibus ejusdem pejus et melius, secundum
+<pb n="1154A"/>
+praedictam rationem de temporibus, se habent.
+Usualis vero dies est spatium quo sol ab ortu ad
+ 
+
+<pb n="1153B"/>
+occasum refertur, hunc vero naturalem in quatuor
+diviserunt. Prima enim parte illius sol rubet, deinde
+splendet, postea calet, ad ultimum descendit et temperatur.
+Inde est quod in fabulis quatuor equi Phoebo
+attribuuntur, nomina praedictis proprietatibus convenientia
+obtinentes. Primus nempe Erytheus, id
+est, rubeus dicitur; secundus Acteus, id est, splendens;
+tertius lampas, id est, ardens; quartus Philogeus,
+id est, amans terram. In istis usualibus diebus
+tres in anno contingunt diversitates. Aliquando
+namque sunt aequales noctibus, aliquando prolixiores,
+aliquando breviores, quarum diversitatum haec
+est causa. Cum sol est in hiemalibus signis, tumor
+terrae, qui est in medio torridae zonae inter nos et
+ipsum positus, aufert nobis illum, ne cito videamus,
+et causa est quare cito ab oculis nostris auferatur;
+inde brevis est splendor apud nos super terram, et
+<pb n="1154B"/>
+sic dies brevis; umbra prolixa, et sic nox. Sed
+quando est in Cancro et in aliis aestivalibus signis,
+quia citra tumorem nascitur, cito in mane videtur,
+et tarde ab oculis nostris aufertur. Inde prolixus est
+splendor super terram, et brevis umbra. Eodem vero
+in Ariete vel Libra existente, quia aequaliter distat a
+nobis, aequaliter super terram et sub terra est. Inde
+aequalis est splendor, et aequalis obscuritas. Enumeratis
+effectibus solis tam ex naturali quam ex accidentali
+motu, de eclypsi ejusdem dicamus, unde et
+quoquo tempore contingat: ad cujus evidentiam
+praedicamus quod quemadmodum longitudo zodiaci
+in duodecim partes, quae signa dicuntur, divisa est,
+ita et latitudo in duodecim, quae dicuntur evaginationes.
+Has duodecim partes latitudinis tangit luna,
+sol vero per medium transit. ut monstrat subjecta
+descriptio. </p>
+<p>
+          <pb n="1153B"/>Cum ergo sol per medium latitudinis semper currat,
+si in die conjunctionalis gradus hoc contingat,
+luna fit in medietate ejusdem latitudinis, tunc est,
+<pb n="1154B"/>
+si recto modo posito inter terram et solem; quod si
+linea a terra dirigeretur, et per medium lunaris et
+solaris corporis iret, ut in figura pag. seq.</p>
+<p>
+          <emph>
+            <pb n="1155A"/>DE ECLIPSI SOLIS FIGURA UTILIS.</emph>
+ </p>
+<p>
+          <pb n="1155C"/>Si igitur luna interposita, facit radios solis elidi,
+quod objectu ejusdem ad terram non possunt descendere.
+Inde est quod nunquam nisi in tricesima
+luna, vel vigesima nona hoc contingit, quia
+alia die non est cum sole in conjunctionali gradu;
+non tamen in omni tricesima vel vigesima nona
+hoc contingit, sed quando fit, in eis contingit. Si
+enim inde conjunctionali luna non sit in medio latitudinis
+zodiaci, sed citra vel ultra (non monstrat subjecta
+descriptio), non potest luna visum vel descensum
+radiorum nobis auferre. Sed quia de sole pro
+posse nostro disserimus, deinceps de luna disseramus.</p>
+<p>
+          <pb n="1155D"/>Luna igitur ex propinquitate aquae et terrae spissius
+habet corpus quam caeterae stellae; unde
+non habet proprium splendorem neque calorem,
+sed a sole accenditur. Si enim proprium haberet
+calorem, cum vicina sit terrae, et per singulos menses
+ascendat ad Cancrum, descendatque ad Capricornum,
+per singulos menses aestum caloris et
+frigus hiemis in terram ageret, tamque continuis
+inaequalitatibus nihil vivere posset. Caruit ergo splendore
+et calore; a sole tamen superposito illustratur,
+non tamen semper aequaliter, quantum ad nos, sed
+modo est novilunium, modo plenilunium, modo interlunium.
+Unde ergo hoc contingat videamus. Quidam
+dicunt, quod quando est supposita soli in eodem
+signo, prae nimio splendore solis eam obscurari, nec
+posse apparere; sed quando elongatur a sole, in
+parte incipit splendor apparere. Unde cum plus removetur
+a sole, major in ea splendor apparet; quanto
+illi propinquior, est minor. Sed si inde, quia propinquior
+<pb n="1156A"/>
+est soli, minor in ea splendor apparet; quanto
+remotior, major in parte opposita soli prius apparet
+splendor. Cum ergo primum appareat ex parte
+solis, falsa videtur illorum sententia. Nobis vero videtur
+quod omne luminosum corpus supposito aliquo
+obscuro, in opposita parte sui jacit umbram, in parte
+sui splendorem. Cum ergo luna, quae (ut praediximus)
+naturaliter est obscura, soli est supposita in parte
+sui, id est, supra ponit sol splendorem in opposita
+parte, id est, versus terram jacit umbram, unde a
+nobis non videtur luna. Sed quando elongatur a sole,
+incipit parum splendoris ad modum gracilis cornu
+apparere, diciturque monoides; quanto plus elongatur
+a sole, plus splendor descendit, ita quod septimo
+die dichotomos, id est, divisa per medium videtur.
+Et notandum est quod quantum splendor descendit,
+tantum umbra ascendit, et e converso. Post septimam
+vero diem usque ad decimam quartam est amphicirtus,
+id est, minor plena, major dimidia. Quarta
+<pb n="1156B"/>
+decima vero die, quia per diametrum remota est a
+sole, quod potest probari ex hoc, quod sole occidente,
+illa oritur, jam tota umbra ascendit, totusque splendor
+descendit, estque panselenos, id est, plenilunium.
+Postea vero incipit soli propinquare, et umbra descendere,
+splendorque ascendere; et fit primum descendendo
+amphicirtos, deinde dichotomos, deinde
+monoides. Haec omnia apertiora erunt tali figura
+posita ante oculos.</p>
+<p>Eclipsis lunae talis est ratio. Sole et luna in praedicta
+ecliptica linea sic dispositis, quod sol est in
+inferiori hemisphaerio, luna in superiori, terra in
+medio sic, quod si dirigeretur linea a medio lunaris
+corporis, transiret per medium terrae et solaris corporis
+ad hunc modum, tunc tumor terrae interpositus
+alicujus dirigeret umbram, scilicet, usque ad ipsam
+lunam; unde solis radii eam non possunt accendere,
+patiturque eclipsim donec, movendo se, tumorem
+transierit, splendorque in ea apparere coeperit. Inde
+est quod non deficit, nisi decima quinta vel decima
+<pb n="1156C"/>
+quarta luna, quia tunc soli opponitur, non tamen in
+omni quinta decima hoc contingit, sed quando fit, in
+ea contingit. Unde ergo in omni non contingat, doceamus.
+Sed hoc contingit ex figura umbrae terrae.
+De figuris umbrarum, quae ex aliquo rotundo corpore
+opposito splendido ejusdem quantitatis fiunt,
+praedoceamus.</p>
+<p>Omnis ergo talis umbra corporis, vel est cylindroides,
+vel calathoides, vel conoides. Et est cylindrus
+figura longa, vel teres, aequaliter crescens, neque
+lineas in summum contingens. Inde dicitur cylindroides
+umbra, quae talis est figurae, quae fit quoties luminosum
+corpus et obscurum ejusdem quantitatis ad
+hunc modum.</p>
+<p>Cum ergo corpus et luna aequalia non sint, quippe
+cum sol octies major sit terra, umbra terrae cylindroides
+esse non potest. Calathus vero est figura ab
+acuto in latum tendens. Unde calathoides dicitur
+hujusmodi figurae umbra: haec fit, quando luminosum
+<pb n="1156D"/>
+corpus minus est obscuro. Sic figura umbrae
+terrae calathoides esse non potest, quia, ut probat
+Macrobius, sol est major terra. Conus vero est figura,
+a lato in acutum tendens, contraria in calatho. Conoides
+vero umbra dicitur, quae ex lato in acutum tendit;
+quae fit quando luminosum corpus majus est
+terra, umbra illius est conoides. Cum ergo sol et
+luna ut praediximus sunt disposita, conus umbrae
+terrae, recto modo ad lunam tendit, eamque inficit,
+nec radios a sole recipit, donec conum umbrae terrae
+transierit. Si autem 15 luna non sic sit disposita, sed
+ 
+
+<pb n="1157A"/>
+alterum sit aliquantulum versus septentrionem,
+alterum versus Austrum, conus umbrae non recto
+<pb n="1158A"/>
+modo ad lunam dirigitur, nec eam inficit, sed juxta
+illam est in hunc modum.</p>
+<p>
+          <emph>
+            <pb n="1157A"/>DE ECLIPSI LUNAE</emph>
+ </p>
+<p>
+          <emph>
+            <pb n="1158A"/>DE LUNA SOLE ET TERRA</emph>
+ </p>
+<p>
+          <emph>
+            <pb n="1159"/>DE ECLIPSI OMIUM PLANETARUM.</emph>
+ </p>
+<p>
+          <pb n="1159A"/>Viso unde eclipsis lunae contingat, et quare non
+in singulis mensibus de umbra, quae semper in medio
+ejus videtur, quid nobis inde videatur dicamus.
+Quamvis corpus lunae naturaliter sit obscurum, tamen
+in quibusdam partibus suis est tunsum et politum
+<pb n="1160A"/>
+ad modum speculi, in quibusdam scabrosum et
+rubiginosum. Ubi igitur politum est, ex radiis solis
+splendet; sed ubi scabrosum, naturalem obscuritatem
+retinet.
+</p>
+      </div1>
+
+<div1>
+        <head>LIBER TERTIUS.</head>
+<pb n="1159"/>
+
+
+</div1>
+<div1>
+        <head>PROOEMIUM.</head>
+<p>
+          <pb n="1159A"/>Etsi studiis docendi occupati, parum spatii ad
+scribendum habeamus, quoniam tamen multos vestes
+philosophiae abscindentes, et cum panniculis arreptis,
+totam sibi eam cessisse credentes, abiisse cognoscimus,
+voce ipsius reclamantis excitati, ne nuda
+remaneat, particulas abscissas stylo nostrae parvitatis
+consuimus, non ignari morsibus invidiae nos
+subjacere, quia hodie est periculum et nosse et habere:
+Sed quoniam, ut ait quidam:
+<l>Justius invidia nihil est quae protinus ipsum</l>
+<l>Actorem rodit, excrucians animum et horum;</l>
+<l>
+<pb n="1160A"/>Invidia Siculi non invenere tyranni</l>
+<l>Tormentum majus.</l> 
+de tormento illorum certi, etsi de multis morsibus
+venenatorum non dubitantes, quasi Catonem per
+aestum Libyae, veritatem sectantes, rationibus diversis,
+ut linguis pusillorum muniti, ad sequentia transeamus.
+Et quoniam de aethere, et ornatu ejusdem
+satis docuimus, de aere illi conjuncto et subdito
+doceamus, quae et unde in illo contingant ostendentes.</p>
+</div1>
+
+<div1>
+        <head>CATALOGUS LIBRI III.</head>
+
+<pb n="1159"/>
+<p>
+          <pb n="1159B"/>De aere.--Quare quinque zonae sint in aere, et non in
+aethere.--Quare superior ignis non sit fervens.--Unde
+sint pluviae.--Quare sol calefaciat terram, ignis superior
+non.--Qualiter sursum elevet humorem.--Unde videatur
+quod sanguis pluat.--De arcu coeli.--Unde grando.--Unde
+nix.--Quare nives in aestate non contingant, sed
+grando.--De tonitruis et fulminibus.--Quare in aestate
+contingant fulmina.--De hoc quod stellae videntur cadere.--De
+<pb n="1160B"/>
+cometa.--De situ aquae.--De refluxionibus Oceani.--Unde
+fluctus maris.--De ortu ventorum.--Unde quaedam
+aqua dulcis, quaedam salsa.--Unde sint fontes.--Unde
+putei.--Unde aqua putei et fontis sit in aestate frigida,
+in hieme non.--Unde exustio.--Unde diluvium.--Unde
+sit quod in lunatione crescunt humores, et decrescunt.</p>
+</div1>
+
+<div1>
+        <head>INCIPIT LIBER III.</head>
+
+<pb n="1159"/>
+<p>
+          <pb n="1159C"/>Aer igitur est luna usque ad terram, qui quanto
+est terrae propinquior, tanto humidior et spissior:
+quanto remotior, siccior, et splendidior. Hic cum sit
+suppositus soli, ex eo calorem et lucem accipit. Sed
+quoniam sol terminos torridae zonae nunquam excedit,
+illam partem aeris ex vicinitate sui accendit; remotas
+vero expertes sui fervoris relinquit, fiuntque ex
+vicinitate aquae et terrae frigidae. Positae vero in medio,
+ex utraque parte intemperie hinc et illinc temperantur.
+Sunt ergo in aere quinque diversitates,
+quae ab antiquis quinque zonae dictae sunt, non ut
+quidam aestimant, super lunam. Ibi nempe sunt omnia
+<pb n="1160C"/>
+immutabilia, quia ibi nulla est contrarietas. Cum
+enim ibi sit aether, qui ignis dicitur, corporaque
+stellarum ignea, unde in aliqua parte erit frigus?
+Sed scio istos ex verbis philosophorum errasse, qui
+quinque zonas esse in coelo pronuntiant, ut Virgilius:
+ « Quinque tenent coelum zonae. »  Contra haec geminam
+habemus defensionem. Prima est, quod aer
+saepe vocatur coelum. Unde dicitur: Aves coeli. Secunda
+est, quod quinque partes aetheris quinque partibus
+aeris superpositae sunt, vocaturque pars aetheris.
+nomine partis aeris sibi suppositae, diciturque pars
+supposita frigidae frigida, quamvis in ea nullum sit
+<pb n="1161A"/>
+frigus. Pars supposita torridae torrida, non quia in
+aethere sit aliquis fervor caloris. Est enim superior
+tam subtilis, quod accendere aliquid non potest,
+donec humido se misceat et spisso. Istae eaedem diversitates
+ex aere supposito in terra sunt, qualitas
+quippe aeris terram inficit. Sunt ergo quinque in
+terra, quinque zonae in aere. De aere igitur nostrae
+habitabili superposito disseramus, ostendentes quae
+in eo et unde sint diversitates, a pluvia quae omni
+tempori est communis incipientes.</p>
+<p>Pluviarum aliquando diversae sunt causae. Aliquando
+namque spissus fumus evaporat, et humidus
+qui ut ascendit, minutissimae guttae se involvunt,
+quae grossiores et graves factae cadunt, fitque pluvia.
+Aliquando vero aer ex frigiditate terrae et aquae spissatur,
+transitque in aqueam substantiam, quae calore
+solis, ut glacies igne, dissoluta, per minutas cadit
+particulas. Aliquando ad nutrimentum sui solem attrahere
+humorem contingit, et quod in eo liquidius
+<pb n="1161B"/>
+est in igneam transit substantiam, quod vero gravius
+deorsum cadit. Unde post acutissimum calorem
+videmus contingere pluviae inundationem. Habetur
+autem quaestio, cum sit proprium ignis tendere sursum,
+unde sit quod radii solis et calor ad terram
+tendunt. Ad quod dicimus quod sol igneae naturae,
+non quia ex solo igne constet, sed quia in eo dominatur.
+Praedocuimus enim corpora stellarum ex quatuor
+elementis facta, dominante tamen igne. Cum ergo
+ex quatuor constent elementis, quamvis igne dominante,
+quod in eo ex aqua et terra est ad simile
+tendit. Sed quia a caloris fonte procedit, secum defert
+aliquid caloris, quo terra et aqua calefiunt; et
+quoniam natura est caloris ascendere, calor qui praedicto
+modo descenderat, revertens, aliquid humoris
+secum trahit, quod bulliendo in sui substantiam
+transmutat. Si ergo proprie velimus loqui, dicemus
+quod sol humorem sursum elevat, non attrahit. Ideoque
+fons dicitur caloris, quia sic subdita calefacit,
+<pb n="1161C"/>
+ignis vero superior non. Cum enim sit elementum
+non ex elementis factum, nihil est in eo quod ad inferiora
+descendat. Inde vero est quod pars aeris et
+terrae soli subdita est fervida, remotae autem frigidae,
+etsi sint aetheri subjectae. Sed dicet aliquis: Nonne
+ignis, ubicunque est, calidus est? Cui dicimus: Non
+nisi spisso et humido mistus. Quamvis igitur super
+lunam sit ignis, non est inferior; defecit enim humida
+et spissa materia qua ignis accendatur, neque frigus
+neque obscuritas, sed unus et continuus splendor, neque
+aliqua mutabilitas. Sed dicent quod Aristoteles: Impossibile
+est ignem non calere. Dicimus Aristotelem
+ibi locutum esse de hoc inferiori igne, qui semper
+alicui spissae materiae mistus, nunquam calere desinit.
+Vel dicamus quod dicit ignem calere non actu,
+sed natura. Quarta causa pluviarum est ventus elevans
+humorem de stagnis, et fluviis, et lacubus.
+Inde est quod ranunculi et pisces a multis visi sunt
+de aere cadere. Cum enim, ut praediximus, aqua
+<pb n="1161D"/>
+vento sustollatur, contingit quod ranunculos et pisces
+secum elevat, quibus ex naturali gravedine descendentibus,
+stupent ignorantes. Nullum ergo tempus
+anni immune est a pluvia. In omni namque vel fumus
+humidus evaporat, vel aer ex frigiditate spissatur,
+vel humor calore vel vento elevantur. Haec pluvia
+quandoque plus solito spissata, et ex nimio calore
+incensa, fit ad modum sanguinis rubea et spissa:
+quod videntes physicam ignorantes, dicunt sanguinem
+pluere. Inde verisimile dictum est, quod ante
+finem hujus saeculi guttae sanguinis cadent, quia cum
+debeat exustione finiri, ut testatur Scriptura, quae dicit: #Ignis in conspectu exardescet.@# 
+ Aqua enim ex
+calore in nubibus suspensa ex fervore spissabitur,
+quae incensa, rubeaque effecta ad similitudinem sanguinis
+cadet; et quoniam in pluvioso tempore arcus
+discolor in nubibus apparet, unde existat, et unde
+tot in eo appareant colores doceamus. Cum diximus:
+calor solis humorem elevat, vel fumus humidus evaporat,
+aqua in nube illustrata ut in vitreo vase ex
+<pb n="1162A"/>
+splendore solis, ubi est tenuior et calidior, rubeum
+ostendit colorem; ubi spissior, purpureum, vel nigrum.
+Inde est quod arcus ille nunquam nisi in opposita
+parte solis relucet. Aer enim vicinus soli ex
+ejus splendore ita irradiatur, quod diversi colores in
+eo non apparent. Visis ergo pluviarum causis, et
+arcus coelestis, de grandinibus disseramus. Cum ergo
+praedicto modo humor elevatur, contingit saepe in
+superioribus esse ventum frigidum et siccum, qui,
+guttas aquae ex siccitate et frigiditate congelans,
+transmutat eas in lapideam substantiam; et quia
+guttae rotundae sunt, quod potest probari per rotunda
+foramina, quae agunt in lapide assiduitate cadendi,
+grando rotunda descendit. Nives vero fiunt, si praedictae
+guttae, antequam grossae sint, spissantur et
+congelantur. Hic subjicient: Cum in aestate grando
+saepe contingat, quare in eadem circa inferiora montium
+nunquam nives contingunt? Contra hoc dicimus
+in aestate humorem ex calore alterius elevari,
+<pb n="1162B"/>
+elevandoque guttas involvi, quae grossiores factae,
+frigoreque congelatae, grandinem gignunt. In hieme
+vero frigus circa terram est, et contingit guttas
+aquae antequam grossae factae sint, ex frigiditate
+temporis astringi, et in nivem transmutari; in aestate
+vero, quia frigus circa terram non est, donec elevatae
+in altum grossae et spissae fiant, non congelantur.
+Nunquam ergo nix est in aestate, licet in ea
+saepe sint grandines. De tonitruis et fulminibus, unde
+et qualiter contingant, disseramus. Fumo ergo humido,
+ut praediximus, ad superiora ascendente, cum
+ad summum aeris pervenit, ex ponderatione humoris
+movetur summitas aeris, cujus particulae ad modum
+undarum aquae sibi occurrentes fragorem tonitrui
+faciunt. Ex motu vero aer calefactus, in igneam
+transit substantiam, fitque coruscatio; quae quamvis
+cum fragore fiat, citius ad nos pervenit, quia visus
+velocior est auditu. Cum ergo fit praedictarum particularum
+occursus, generatur impetus, qui si ascenderit
+sursum, est fragor sine fulmine; sin autem
+<pb n="1162C"/>
+impetus ille deorsum tendat, tamen tantus non sit,
+quod usque ad obstaculum perveniat, nondum est
+fulmen; cum vero ad obstaculum pervenit, obstantia
+findit. Sed quia proprium est motus aeris tendere
+sursum, nulla materia exire vetante, revertitur,
+sparsosque recolligit ignes. Si vero in hac inferiori
+parte aeris multus sit humor, aer existens in illo
+impetu urere non potest, fitque fulmen findens et
+non urens. Est ergo fulmen pars aeris aliqua collisione
+usque ad obstaculum cum impetu veniens.
+Tonitruum vero est partium aeris diversa incursio.
+Non est ergo fulmen lapidea substantia, ut quidam
+asserunt. Si enim lapidea esset substantia, non huc
+et illuc discurreret, nec rursum reverteretur, et cum
+aliquid feriret, carnem et ossa comminueret. Ideo
+fulmen saepius alta sternit, quia cum oblique aliquando
+descendit, citius alta repetit. Sed quia quorumdam
+est sententia quoddam fulmen lapideam esse
+substantiam, ne ex ignorantia vel invidia videamur
+<pb n="1162D"/>
+eam vituperasse, vel tacuisse, breviter eam ponemus.
+Aiunt isti quod cum fumus humidus ad superiora
+ascendit, cum eo elevatur aliquid terrenae substantiae,
+quod ex calore solis in lapideam spissatur
+substantiam, contineturque in nubium concavitate,
+donec impetu aliquo nubes dividitur, unde lapis ille
+impulsus, altum aliquid percutit. Hic dicit aliquis:
+Cum in omni tempore anni fumus humidus, ut praediximus,
+ascendat, quare in omni non contingunt
+fulmina et tonitrua? Cui dicimus: Etsi ex humido
+fumo ascendente habeant fieri, non fiunt tamen
+inde, donec ad summum aeris perveniunt, quod per
+simile maris probari potest. Cum enim mari ex fumo
+terrae ascendente in fundo removetur ex spissitudine,
+tamen non potest huc et illuc impelli; sed cum usque
+summum commotio illa pervenerit, huc et illuc undae
+impelluntur, fitque tempestas. Quod vero a fundo
+maris tempestas incipiat, ex hoc potest probari
+quod phocas undas agitantes ante videmus. Ut enim
+<pb n="1163A"/>
+Plinius, naturae sunt dormitoriae, fumo tamen, ut
+praediximus, fundum maris commovente, excitati ad
+summum ascendunt: quod videntes nautae, experimento
+certi, etsi de physica incerti, tempestatem
+futuram praedicunt, quippe jam incipit tempestas in
+fundo. Simile vero est in aere. Dum enim aeris inferiores
+partes obtinet fumus, ex spissitudine non
+potest huc et illuc impellere aera, sed cum ad summum
+pervenit, huc et illud ex labilitate ejus impellit,
+fiuntque tonitrua et fulmina. In hieme vero etsi
+aer spissus sit, non est tantus calor, quia spissus
+fumus usque ad summum possit erigi, nec etiam in
+vere. Remanens ergo in superiori parte aeris, ventos
+et pluvias gignit. In aestate vero cum maximus est
+fervor, usque ad summum elevatur, fitque partium
+aeris diversa incursio, unde contingunt tonitrua et
+fulmina. In autumno vero, quia frigidus et siccus,
+neque humor est qui elevetur, neque calor qui
+elevet.</p>
+<p>
+          <pb n="1163B"/>In eodem aere videntur stellae cadere, nulla cadente.
+Cum enim igneae sint naturae, et prius locus
+stellarum sit aether, nunquam ad terram descendunt.
+Iterum cum maximae sint, etsi ex remotione parvae
+videantur, si aliqua ex illis caderet, totam terram,
+vel maximam partem ejusdem occuparet. Non cadunt
+ergo, sed cadere videntur. Saepe etenim in superioribus
+partibus aeris est ventus et commotio,
+etsi non sit in inferioribus, ex qua commotione aer
+ignitus et splendens per aera discurrit; qui cum
+juxta aliquam stellam splendere incipit, splendore
+suo visum illius stellae nobis aufert, videturque quod
+stella ceciderit. Sed dicet aliquis: Unde ergo quod
+postea stellam ipsam non videmus? Huic dicimus
+stellam eamdem postea a nobis videri, sed eam esse
+nesciri. Cum enim, ut praediximus, aer ignitus decurrat,
+aer spissior, et inde tarde subsequitur, qui
+inter nos et stellam illam positus, visum ejusdem
+nobis aufert; sed ante transeat stella illa, et appareat
+firmamentum, quod semper ad occasum tendit, et
+<pb n="1163C"/>
+stellam illam ad ulteriora secum detulit, cumque
+apparet, quia in alio loco quam ante esset videtur,
+alia stella putatur.</p>
+<p>De cometa vero, quae in mutatione imperii apparet,
+hoc sentimus, quod stella non est, quia neque
+de infixis est, neque aliquis planeta; quod vero de
+infixis non est, ex hoc apparet, quod motus illius
+sentitur. Planeta vero non est, cum extra zodiacum
+saepe videtur, nec motum planetarum sequitur. Si
+iterum stella esset, in aliquo hemisphaerio esset.
+Cum ergo stellae ejusdem hemisphaerii apparent,
+unde ista quae major videtur, non apparet? Non est
+ergo stella, sed ignis juxta voluntatem Creatoris accensus,
+ad aliquid designandum.</p>
+<p>Quoniam de aere, et his quae in aere contingunt,
+pro affectata brevitate transcurrimus, de aqua et situ
+ejusdem dicere incipiamus. Sapientia igitur divina
+nihil posse vivere sine calore et humore percipiens,
+terram et aquam frigidas esse, ut aliquid in eis vivere
+<pb n="1163D"/>
+posset, fontem totius caloris, id est, solem, ut
+aequaliter hinc et illinc terram calefaceret, super
+medium terrae posuit; sed quia ex solo calore nihil
+vivere posset, in medio ejusdem fonti caloris,
+fontem humoris supposuit, ex quibus hinc et illinc
+terra temperatur. Est ergo fons humoris in
+medio torridae zonae in modum aequinoctialis circuli
+terram circumdans, verumque mare appellatur; hoc
+vero mare cum ad Occidentem venerit, duas refluxiones
+ibi agit: quarum una ad Austrum, altera ad
+Septentrionem vergit, latera terrae sequentes. Similiter
+in Oriente facit duas ad praedicta se vergentes;
+cum vero haec Occidentalis refluxio, et illa Orientalis
+ad Septentrionem se vergentes sibimet occurrunt,
+ex repercussione ingurgitatur mare retro, fitque famosa
+accessio et recessio Oceani, quae fluctus maris
+dicitur. Similiter aliae duae in alio capite terrae sibi
+occurrentes. Sunt alii qui dicunt fluctus maris causam
+esse montes subditos mari. Cum enim usque ad
+<pb n="1164A"/>
+ipsos mare pervenit, retro cadit et insurgitatur, impleturque
+retro alveus, sed ante expletur; cum iterum
+revertitur, expletur retro, sed impletur ante.
+Praedicta Occidentalis refluxio ad Septentrionem
+vergens, cum juxta latera terrae, tangens Africam,
+ad finem ejus pervenit, inter Calpen et Atlanta usque
+Jerusalem Mediterraneum mare vocatur, diversa ex
+diversis regionibus nomina accipiens. Qualiter vero
+ascendat et descendat, si quis scire desiderat, et quae
+nomina ex quibus regionibus contrahat, mappam
+mundi consulat. Sed quia facilius illabitur animo,
+oculis subjecta descriptione (id quod dicimus) subjiciamus.</p>
+<p>Praedicta Occidentalis refluxio ad Septentrionem se
+vergens, ex Atlante monte adjacente, vocatur Atlanticum
+mare, in qua est Anglia, et vicinae insulae. Ex
+Orientali refluxione ad Septentrionem se vergente
+nascitur Indicum mare, similiter in aliis refluxionibus
+ad Austrum se vergentibus, credendum est diversa
+<pb n="1164B"/>
+maria nasci. Sed haec describi nostra attestatione non
+debuerunt, quia per torridam interjectam situs illarum
+nobis incognitus perseverat. Et quia nostra sententia
+est, ex illis refluxionibus ventos nasci, de ortu
+ventorum disseramus, tam cardinalium quam collateralium.
+Cum igitur (ut praediximus) in Occidente
+ex fonte totius humoris duae refluxiones, una ad
+Austrum, altera ad Septentrionem dividantur, illa
+separatione aquarum movetur aer; sed si tantus fuerit
+impulsus, quod usque ad nos pervenerit, generat
+ventum qui Zephyrus appellatur. Duae vero Orientales
+sua divisione et motu generant ventum qui Eurus
+nominatur. Cum vero Orientalis et Occidentalis
+ad Austrum vergentes in medio sibi occurrunt, movetur
+aer, fitque ventus Septentrionalis qui Boreas
+dicitur, qui ideo frigidus est, quia in frigida zona
+oritur; siccus vero, quia nubes de hoc angulo terrae
+ad medium fugat; estque inde pluviosus juxta fines
+torridae zonae. Cum vero transit torridam zonam,
+calefit; et si nobis sit frigidus, ibi tamen est calidus.
+<pb n="1164C"/>
+Similiter cum duae vergentes ad Austrum in medio
+sibi occurrunt, Auster generatur, qui etsi ultra torridam
+zonam frigidus et siccus, ut apud nos Boreas,
+quippe cum in frigida zona oriatur, quia tamen per
+torridam zonam transit, calefactus ad nos pervenit
+calidus, fugandoque ante se nubes usque ad angulum
+terrae in quo habitamus, generat nobis pluvias, estque
+nobis ex accidente calidus et humidus, etsi in
+sua regione frigidus et siccus. Viso unde quatuor
+cardinales venti oriantur, videamus unde sint quatuor
+collaterales. Si in duabus praedictis refluxionibus ad
+Septentrionem vergentibus, Boreamque praedicto
+modo generantibus, hoc contingat, quod Orientalis,
+ex aliquo accidente velocior, ultra medium Septentrionis
+Occidentali occurrit, nascitur ventus collateralis
+inter Boream et Zephyrum. Si vero Occidentalis
+ultra medium, modo hinc, modo illinc, sibi occurrant,
+duos collaterales ventos generant, unum inter
+Eurum et Austrum, alterum inter Eurum et Zephyrum.
+<pb n="1164D"/>
+Sed quia oculis subjiciendo figuram, minuemus
+laborem, unam similem praecedenti faciamus, in
+qua non in medio refluxiones sibi occurrant, ut in
+illa cardinales, ex hac collaterales intelligamus. Sed
+quia non in una figura plus quam duos potuimus
+ostendere, per simile istorum de aliis intelligatur.
+Quare si ex praedictis contingant venti, cum quotidie
+refluxiones dividantur, sibi occurrant, quod testantur
+quotidiani fluctus maris, quare quotidie venti
+non contingant? Cui dicimus quod etsi quotidie contingant,
+non tamen impetum faciunt, quod usque ad
+nos perveniat. Saepe vero contingit quod non putamus
+ventum esse, cum in aliis regionibus vel in
+superioribus aeris partibus sit, non tamen a nobis
+sentitur. Sunt tamen qui dicunt cavernas causas
+esse ventorum. Cum enim eas subintrant partes
+aeris ex labilitate, una intrante, alia nititur exire,
+fitque conflictus quo aer commotus generat ventum.
+Inde est, quod Aeolia, quae cavernosa est, regio ventorum
+<pb n="1165A"/>
+dicitur. Alii dicunt fumum humidum ascendentem
+ex ponderatione sua aera movere, ventumque
+generare; nos vero et secundum, et primum,
+et tertium, causam esse ventorum dicimus.</p>
+<p>Postquam de fonte totius humoris, et ortu ventorum
+docuimus, unde aqua salsa sit doceamus. Naturaliter
+ergo sapor aquae insipidus est, unde naturale
+phlegma insipidum est, ex accidente tamen fit
+salsum. Cujus ratio talis est: Cum mare, ut praediximus,
+torridae zonae sit suppositum, ex calore spissatur,
+fitque salsum. Certum nempe est per ebullitionem
+aquam transire in salem. Sed dicet aliquis:
+Cum hoc principio salso nascantur omnes aquae, et
+ad id revertantur, testante Salomone, qui ait: #Ad
+loca unde exeunt aquae revertuntur:@# neque enim annihilari
+credendum est aquas, sed circulariter reverti;
+unde est quod quaedam aquae sunt dulces,
+quaedam salsae. Hujus haec est solutio: Cum terra
+cavernosa sit, aqua ex labilitate sua subintrat, quae
+per cataractas transiens, colatur et tenuatur, salsumque
+<pb n="1165B"/>
+amittit saporem, quae ad terrae superficiem
+erumpens, fontes et rivulos dulcis saporis gignit.</p>
+<p>Sed de puteis unde humorem habeant, dissensio
+est. Si enim a cataractis haberent principium, implerentur
+et decurrerent. Contra quod dicimus:
+Etsi a cataractis habeant principium, non implentur
+tamen. Contingit enim cataractas ibi non finiri, sed
+hinc et illinc esse. Unde ultra transit aqua putei, sed
+non sursum ebullit. Ubi vero est fons, finitur cataracta.
+Inde aqua putei propter spissitudinem terrae
+non valens ultra defluere, cogitur superebullire.
+Sunt alii qui dicunt non esse ex cataractis principium
+putei, sed ex sudoribus terrae. Cum enim terra
+aliquid humoris contineat, si perforata est, descendunt
+guttae aquae ad modum sudoris hominis; inde
+est aqua putei. Nobis vero videtur ex utroque esse
+causam putei; quod enim ex cataractis sint, ex hoc
+probatur, quod juxta flumina statim reperitur aqua
+putei, et quod saepe contingit uno puteo post alterum
+<pb n="1165C"/>
+facto, aquam de primo auferri. Quod vero ex sudoribus
+terrae sint, probatur quod in siccis et editis locis
+aqua putei reperitur.</p>
+<p>Quod vero aqua putei et fontis in hieme sit calida,
+in aestate frigida, sic contingit. Cum hiems
+naturaliter sit frigida, ex frigiditate pori terrae constringuntur,
+nec potest calor evaporare, qui, remanens
+intus, terram calefacit et aquam. In aestate vero
+poris superficiei terrae ex calore apertis, fumus evaporat,
+minuiturque calor, inde aqua ab intus erumpens
+exit frigida. Est ergo aqua putei in aestate
+frigidissima, aqua vero fontis, quia propinquior calido
+aeri, minus est frigida, minus adhuc aqua fluviorum,
+<pb n="1166A"/>
+minus pluviarum. Si ergo dulcis aqua colando
+per cataractas terrae fitt, sed aquae illae quae
+praedicto humoris fonte exeunt per superficiem
+terrae, non per cataractas, spissae sunt et salsae,
+mariaque vocantur.</p>
+<p>Et quoniam communis fuit sententia philosophorum,
+terrena modo diluvio, modo exustione finiri,
+unde utrumque contingat videamus. Cum aqua, ut
+praediximus, fonti caloris sit supposita, contingit
+humorem paulisper crescere, caloremque superare,
+donec ad id creverit, quod, nullis littoribus detentus,
+per terram se diffundens, terrena submergit. Qui
+cum ex calore solis et siccitate terrae desiccatus sit,
+contingit calorem paulisper crescere, humoremque
+superare, donec ad id creverit, quod per terras diffusus
+eas adurat. Sunt qui dicunt ex communi planetarum
+elevatione vel depressione hoc contingere. Si
+enim omnes planetae simul eleventur, plus solito a
+terra remoti, minus de humore consumunt. Unde
+humor crescens per terras se diffundit, fitque diluvium.
+<pb n="1166B"/>
+Sed si unus, vel duo, vel tres, sine aliis eleventur,
+non tamen humor excrescit. Quod enim crescit
+ex ipsorum elevatione, desiccatur ex aliorum
+propinquitate. Si vero omnes simul deprimantur, ex
+vicinitate adurunt terras, fitque exustio, quia quod
+isti ex propinquitate magis faciunt, alii remoti minus.</p>
+<p>Et est attendendum quod diluvium aliud commune,
+aliud particulare. Commune vero continuum esse
+non potest, aliud esse potest, sicque alternatim pereunt
+temporalia. Unde quia in tempore Noe per diluvium
+fuit mundi destructio, per exustionem mundus
+iste finietur.</p>
+<p>Sed quoniam in fine hujus voluminis de mari habitus
+est tractatus, unde in primis septem diebus lunationis
+fluctus illius decrescant, in aliis septem crescant,
+in tertia septimana decrescant, in quarta crescant,
+videamus. Cum ergo interlunium est, quia totus
+splendor solis qui eam accendit est super aera, subditum
+<pb n="1166C"/>
+non potest attenuare neque humorem desiccare;
+est ergo tunc plenus fluctus. Sed cum splendor
+incipit descendere, accenditur luna, desiccatque
+aera, minuitque humorem; quantoque plus descendit
+splendor, desiccatur humor, et hoc usque ad
+septimum diem; septimo vero die quia tota medietate
+accensa est, mediante aere calefacit humorem,
+qui bulliens superelevatur, et sic usque ad decimam
+quartam diem crescit fluctus; sed quia in tertia
+hebdomada calor elevans in ea minuitur, fluctus maris
+minoratur; in quarta vero quia splendore ascendente
+calor deficit, spissatur aer, humorque crescit,
+et inde fluctus maris usque ad novilunium.
+</p>
+      </div1>
+
+<div1>
+        <head>LIBER QUARTUS.</head>
+<pb n="1165"/>
+
+
+</div1>
+<div1>
+        <head>PROOEMIUM</head>
+<p>
+          <pb n="1165D"/>Superiorum voluminum series a prima causa rerum
+orta usque ad terram fluxit, pruritum aurium
+non continens, sed utilitati legentium deserviens,
+atque ideo animis stultorum minus cedens. Jam
+enim illud Apostoli impletum est: #Erit cum sanam
+doctrinam non sustinebunt, sed ad desideria sua coacervabunt
+sibi magistros prurientes auribus.@# Quae igitur
+studii reliqua libertas potest, cum magistros discipulorum
+palpones, discipulos magistrorum judices,
+legemque loquendi et tacendi imponentes, cognoscamus.
+In paucis enim frontem magistri, sed adulantis
+vultum et voces percipies, et si sit aliquis qui magistri
+severitatem sequatur, ut insanus a meretricibus
+<pb n="1166D"/>
+scholarium fugitur, crudelis et innumanus vocatur, ut
+jam verbis Umbecii possit uti. Atque ideo nulli
+comes ex eo tanquam mancus exstinctae corpus non
+utile dexterae. Unde ergo deberentur diligi, fugiuntur
+magistri, secundum illud Ovidii:
+<l>Per quas nos petitis saepe fugatis opes.</l> 
+Sed quoniam probi est animum ad pejora non flectere,
+sed melioribus conformare, remoto animo a
+pejoribus, conformatoque melioribus, ad caetera
+transcurramus; et quia in aliis elementis et ornatu
+illorum sectantes compendia satis diximus, de terra
+et ejus ornatu dicere incipiamus.</p>
+</div1>
+
+<div1>
+        <head>CATALOGUS LIBRI IV.</head>
+
+<pb n="1167"/>
+<list>
+<item>
+<pb n="1167A"/>De terra Africae.</item>
+<item>De habitatoribus ejus</item>
+<item>De diversis qualitatibus terrae.</item>
+<item>De terminis Asiae et Europae.</item>
+<item>Unde in quibusdam montibus sint perpetuae nives.</item>
+<item>Quas qualitates contrahat terra ex diversis ventis.</item>
+<item>De insertis arboribus.</item>
+<item>De spermate.</item>
+<item>De tempore conveniente coitui.</item>
+<item>De matrice.</item>
+<item>De causa sterilitatis.</item>
+<item>Utrum virile sperma solum conceptioni sufficiat.</item>
+<item>De menstruo.</item>
+<item>Unde cum animalia ex quo nata sunt vadant, homo vero
+non.</item>
+<item>Ubi concipiatur masculus, ubi femina.</item>
+<item>De operationibus.</item>
+<item>Qualiter puer pascatur in utero.</item>
+<item>De nativitate.</item>
+<item>Quare nati in septimo mense vivant, in octavo non.</item>
+<item>De infantia.</item>
+<item>De naturali virtute.</item>
+        </list>
+
+<pb n="1167B"/>
+<list>
+<item>De spirituali virtute.</item>
+<item>De animali virtute.</item>
+        </list>
+
+<pb n="1168A"/>
+<list>
+<item>Unde sit incrementum.</item>
+<item>De somno.</item>
+<item>Unde somnia.</item>
+<item>De capite.</item>
+<item>De cerebro.</item>
+<item>De oculis.</item>
+<item>Qualiter visus fiat.</item>
+<item>De contuitione.</item>
+<item>De intuitione.</item>
+<item>De detuitione.</item>
+<item>De auditu.</item>
+<item>Quid sit anima.</item>
+<item>Quae actiones sint animae, quae item corporis.</item>
+<item>Qualiter anima sit in compositione hominis.</item>
+<item>De virtutibus illius.</item>
+<item>De tempore conjunctionis ejus cum corpore.</item>
+<item>Quare puer non discernat et intelligat.</item>
+<item>De juventute.</item>
+<item>De senectute.</item>
+<item>De senio.</item>
+<item>Qualiter quaerendus sit magister.</item>
+<item>Qualiter discipulus.</item>
+<item>Quae complexio, cujus doctrinae, quae aetas.</item>
+        </list>
+
+<pb n="1168B"/>
+<list>
+<item>Quis ordo discendi.</item>
+        </list>
+
+</div1>
+
+<div1>
+        <head>INCIPIT LIBER QUARTUS.</head>
+
+<pb n="1167"/>
+<p>
+          <pb n="1167B"/>Est ergo terra elementum in medio mundi posisitum,
+atque ideo infimum, mundus nempe ad similitudinem
+ovi dispositus est. Namque terra est in medio,
+ut meditullium est in ovo; circa hanc est aqua,
+ut circa meditullium est albumen: circa quam est
+aer, ut panniculus continens albumen. Extra vero
+caetera concludens est ignis, ad modum testae ovi:
+haec terra in medio mundi sic posita, et inde omnia
+<pb n="1167C"/>
+recipiens pondera: etsi naturaliter sit frigida et sicca
+in diversis partibus suis, ex accidente diversas continet
+qualitates. Pars enim illius torridae parti aeris
+subjecta, ex fervore solis torrida est, et inhabitabilis;
+sed duo ejusdem capita duabus frigidis partibus
+subdita, frigida sunt, et inhabitabilia; pars vero
+temperatae parti aeris subjecta, temperata est et habitabilis.
+Sed quia, ut praediximus, duae partes illius
+temperatae sunt, duae in terra sunt temperatae, et habitationes
+patientes: una citra torridam zonam, altera
+ultra; sed quamvis sint habitabiles, unam tamen
+tantum ab hominibus habitari credimus, sed tamen
+nec totam. Sed quia philosophi de habitatoribus
+utriusque non quia ibi sint, sed quia esse possint,
+loquuntur, de illis quos nos credimus esse per intellectum
+lectionis philosophicae dicamus.</p>
+<p>Pars ergo terrae habitabilis, in qua sumus, in duo
+dividitur. Cum enim temperies aeris ex omni parte
+terrae sit, ex omni parte terrae quaedam pars temperata
+est et habitabilis; sed quoniam refluxiones
+<pb n="1167D"/>
+Oceani latera terrae juxta quantitatem horizontis
+cingunt, in duo illam dividunt. Cujus superiorem inhabitamus
+partem, antipodes nostri inferiorem; nullus
+tamen nostrum ad illos, neque illorum ad nos
+pervenire potest. Ex parte enim septentrionis frigus
+et refluxiones transitum perhibent, ex parte vero
+orientis et occidentis solae refluxiones. Similiter alia
+habitabilis in duo dividitur: superius quorum obtinent
+nostri anthei, et antipodes illorum inferius.
+Sunt ergo in duabus habitabilibus quatuor habitationes,
+quarum habitatores alii cum aliis in quibusdam
+temporibus conveniunt, in quibusdam differunt:
+nos enim et nostri antipodes simul habemus aestatem
+et hiemem, et alia anni tempora; sed quando habemus
+diem, et illi noctem, et e converso. Si enim ex
+propinquitate solis est aestas, ex remotione hiems, ex
+mediocri distantia ver et autumnus. Signa vero nobis
+aequaliter et illis distant, quippe terram servantia naturalem
+locum obeuntia, in quocunque signo sit sol,
+<pb n="1168B"/>
+aequaliter nobis erit et illis, idque efficiet. Merito ergo
+habemus simul anni diversitates, non tamen simul
+diem et noctem. Cum enim ex splendore solis sit
+dies, ex umbra terrae nox, umbra vero semper est in
+parte splendori solis opposita, cum in inferiori parte
+terrae est splendor diei, in superiori umbra; et cum
+in superiori est splendor, in inferiori est umbra.
+Nulla est ergo hora qua in aliqua parte terrae non sit
+<pb n="1168C"/>
+dies, et in aliqua nox. Sed quare si nos et ipsi simul
+habeamus aestatem simul hiemem, sed quando nos
+diem, et ipsi noctem. In aestate vero dies nobis sunt
+longissimi, breves autem noctes, habebunt ergo ipsi
+sua aestate dies breves et noctes longas, quod contra
+naturam aestatis est. Contra quod dicimus, Etsi nos
+habemus diem et ipsi noctem, non tamen quam cito
+habemus diem, illi noctem, imo in quodam tempore
+dies est nobis et illis communis, sed alteri in vespere,
+alteri in mane. Cum enim sol est nobis in ortu,
+adhuc illis est in occasu; habemusque mane et illi
+vespere, ut circa primam nondum eis sit nox. Similiter
+in occasu postquam sol incipit nobis descendere,
+et incipit illis apparere, et tunc est illis mane, et nobis
+vespere. Inde est ergo quod habemus et nos et illi
+dies aequales et noctes, etsi non simul. Similiter et
+in hieme, sed qualiter hoc sit, animis legentium discutiendum
+permittimus. Nos vero et anthei, simul
+habemus splendorem, simul umbram; sed quando
+sol est nobis propinquus, illis est remotus: quando
+<pb n="1168D"/>
+nos habemus aestatem, et illi hiemem, et e converso.
+Sed hic oritur quaestio similis priori, ad quam si
+quis superioribus instructus accesserit, illius solutionem
+facile inveniet. Nos vero et antipodes antheorum
+neque simul aestatem neque hiemem, neque diem
+vel noctem habemus. Anthetici vero et sui antipodes
+se habent ut nos et nostri anthei, et nostri antipodes
+ut nos et sui. Et quoniam de tribus habitationibus,
+et eorum habitatoribus satis docuimus, de
+nostra dicere incipiamus. Nostra ergo habitatio ab
+oriente ad occidentem, a meridie ad septentrionem
+extenditur. Quamvis temperata dicatur, non aequaliter
+tamen in omnibus suis partibus temperata est.
+Pars enim torridae zonae propinquior est libra, Aethiopia
+calida est et sicca; vicina frigidae, frigida est et
+humida; orientalis vero, calida et humida; occidentalis
+frigida et sicca; aequaliter vero distans, aequaliter
+est temperata. Hujus iterum tres sunt partes
+principales, Asia, Africa, Europa: et incipit Asia ab
+<pb n="1169A"/>
+oriente, extenditurque lateraliter usque ad septentrionem,
+et usque ad torridam zonam, terminaturque
+Tanai et Nilo, mediam partem habitabilis obtinens.
+Europa vero et Africa duas alias obtinent. Sunt autem
+termini Africae, Nilus ex parte orientis, a meridie torrida
+zona, a septentrione Mediterraneum mare, ab
+occidente refluxio, a septentrione frigida zona hoc
+modo. </p>
+<p>In hac igitur sunt montes,
+in quorum summitatibus
+sunt perpetuae nives,
+in convallibus maximus
+calor. Sed quare cum calor
+sit ex sole et superioribus,
+montes vero qui sunt
+illi propinquiores, quam
+suae convalles: quare in
+superioribus illorum sunt
+nives, in convallibus non? Contra hoc dicimus
+<pb n="1169B"/>
+quod in superioribus breviter tetigimus, quod
+quamvis ex sole sit calor, qui idem est calidae naturae,
+donec tamen humido, quod in sui naturam
+transmutet, sed commisceat, nihil calefacere potest:
+unde in praedictis montibus quia aer subtilis est
+ex remotione a terra, a sole non potest accendi:
+sed ex sui levitate huc et illuc impulsus, frigidus
+efficitur. In convallibus vero quia aer est spissus, et
+inde fertur immobilis, cito incenditur et calefit:
+quod per hanc similitudinem potest probari, quia si
+aer in aestate sit immobilis, accenditur, et est calidus;
+sed si ventus veniat, qui illum moveat, frigidus
+sentitur. Hic oritur quaestio: Si aer in superioribus
+montium est ita subtilis, unde ergo spissatur
+in nubes et in nives? Nos vero dicimus quod ille non
+spissatur, sed fumus humidus, qui ex convallibus
+ascendit, ex frigiditate superiorum spissatur in nubes,
+et constringitur in nives. Haec eadem habitabilis
+diversis ventis exposita, diversas contrahit qualitates.
+<pb n="1169C"/>
+Si enim aliqua pars ejusdem montibus oppositis
+orienti, septentrioni clausa sit, et occidenti, exposita
+vero meridiei, est calida et sicca: in hieme habitationi
+bona, in aestate pessima; si vero ex contrario,
+in hieme mala, in aestate bona: pars vero orienti exposita
+et aliis clausa, est calida et humida, et inde
+bona. E contrario frigida et sicca, in autumno mala,
+in vere bona. Quod vero de partibus terrae dicimus,
+probari potest per fenestras domus. Austrinae namque
+in aestate sunt malae, in hieme bonae; septentrionales
+e contrario. Inde erat quod antiqui inter limina
+australia et borealia faciebant, ut in australi in hieme,
+in boreali aestate discumberent. Et quoniam de hoc
+elemento et partibus suis satis diximus, de herbis et
+fructibus arborum consequens est ut dicamus: sed
+quoniam Macer et Dioscorides satis de illis aperte
+docent, de illis taceamus, unam solam quaestionem
+cum sua solutione de incertis ponentes, quae talis est.
+Cum alterius sit truncus, alterius surculus, causaque
+<pb n="1169D"/>
+crescendi de terra per radices et truncum ascendit,
+quomodo transeunt in naturam surculi, rami et fructus?
+Hujus talis est solutio: Ex terra fumus calidus
+et humidus ascendit per poros radicis, secum aliquid
+terreae naturae et aqueae substantiae trahens, causamque
+vivendi, augmentandi fructusque conferens. Hic
+per truncum ascendit, truncus quod suae naturae est
+congruum retinet, naturalique calore illud digerens,
+in medullam truncum et corticem transmutat: quod
+vero ad surculum ascendit, similiter in sui naturam
+digerit. Restat ergo ut de terreno animali dicamus,
+quod cum omne sit mortale, quoddam tamen rationale,
+quoddam irrationale. Sed quoniam irrationalia
+infinita sunt, nec lectioni philosophorum multum
+pertinentia, de naturis illorum, et unde quaedam ruminent,
+quaedam non: quaedam mugiant, quaedam
+non, dicere postponamus, et de rationali et mortali
+scilicet homine, quod dignius est, disseramus: quod
+ex duobus, id est, anima et corpore constat; prius
+de humano corpore, quod prius cogitationi nostrae
+<pb n="1170A"/>
+occurrit, deinde de anima et ejus virtutibus doceamus.
+Sed quoniam de compositione orimi hominis et
+feminae, qualiter ex limo terrae homo factus sit, in
+primo volumine docuimus, de quotidiana hominis
+creatione, formatione, nativitate, aetatibus, membris,
+de officiis et utilitatibus membrorum doceamus. Cum
+igitur ex spermate conceptio hominis fiat, de ipso aliquid
+dicamus.</p>
+<p>Sperma igitur est virile semen, ex ipsa substantia
+omnium membrorum compositum. Quod vero ex
+substantia omnium membrorum illud sit compositum,
+ex hoc apparet, quod omnia membra inde formantur,
+naturaque est ut similia ex similibus nascantur. Aliud
+ad hoc argumentum: quod si pater in aliquo membro
+aliquam incurabilem infirmitatem obtineat, ut
+chiragram vel podagram, filius in eodem membro
+eamdem obtinebit infirmitatem: et quia de spermate
+fecimus mentionem, quod in matrice recipitur pro
+tempore conveniente coitui, et de matrice parum dicamus.
+<pb n="1170B"/>
+A decimo quarto anno tempus coitus incipit.
+Sed quare cum ex calore et humore sperma causam
+contrahat, pueritia vero calida sit et humida, quare
+in ea coitus non contingat. Cui dicimus quod in illa
+aetate stricti sunt pori meatus, huic ad hoc deservientes,
+unde sperma exire non potest: in aliis vero
+aperti sunt, et apti coitui. In senectute vero et senio
+coitus vix contingit propter frigiditatem. Post comestionem
+vero ante somnum, molestum est, et minuitur
+hoc opus. Minuitur enim calor naturalis, qui cibum
+debet digerere: post somnum vero, quia cibus
+digestus est in sanguinem, tempus illius est. Quae
+vero complexio huic operi conveniat, secunda particula
+quaeratur.</p>
+<p>Matrix vero est cista seminis susceptrix, intus villosa,
+ut melius semen recipiat, septem obtinens cellulas,
+humana figura ut moneta impressa sunt. Inde
+est quod septem nec unquam plures mulier uno lecto
+parere potest. Et quia ex matrice aliquando causa
+<pb n="1170C"/>
+sterilitatis contingit, de illa aliquid dicamus. Causa
+ergo sterilitatis est nimia siccitas, nimia humiditas,
+nimius calor, nimium frigus. Cum enim sperma ex
+temperata, id est ex sanguine constat, ut inde aliquid
+sit consimile, requirit. Aliquando nimia pinguedo est
+causa quare nihil concipiatur, ex ea enim omnes folliculi
+obtruduntur, ne semen intrare possit. Unde
+Virgilius dicit in tempore coitus equas macie esse
+extenuandas, deinde subjungit Physicam, ne pinguior
+usus sulcos oblimet inhaerentes. Iterum frequentia
+coitus ejusdem rei causa est. Delinitur enim matrix
+intus ad modumque marmoris juncti, nihil potest retinere.
+Si vero in muliere nulla sit causa sterilitatis,
+veniatque sperma geniturae conveniens in matricem,
+clauditur statim matrix, ita ut dicat Hippocrates
+quod nec etiam acus posset jungi, facta est conceptio.
+Ideo conveniens geniturae diximus, quia si minus sit
+frigidum, vel calidum, vel siccum, vel humidum,
+non est aptum geniturae. Sed quaeritur si solum
+sperma sit utile si non muliebri ac geniturae sufficiat.
+<pb n="1170D"/>
+Dicunt quidam illud solum sufficere, cujus rei haec
+est probatio, quod saepe homo aliquis cum aliqua
+nolente concumbit, eaque flente aliquando gignit, ubi
+nullum semen mulieris potest esse. Non est enim
+sine voluntate seminis emissio. Nos vero dicimus
+etiam muliebre in conceptione esse, quod per infirmitatem
+quam puer contrahit in simili membro a
+matre probari potest. Quod vero dicunt aliqua nolente
+puerum concipi, dicimus quod si in principio
+displicet, in fine tamen ex carnis concupiscentialis
+fragilitate placet. Sed quia facta conceptione menstruum
+cessare solet, unde contingat, et quare tunc
+cesset, edisseramus. Cum mulier omnis calidissima
+naturaliter sit, frigidior frigidissimo viro, cibum non
+bene potest digerere, remanent superfluitates quae
+per singulos menses purgantur, menstruumque inde
+vocatur: conceptione vero facta geminatur calor ex
+fetu. Unde melius cibus digeritur, nec tantae superfluitates
+oriuntur. Iterum quia ex sanguine matris
+<pb n="1171A"/>
+nutritur fetus, non indiget purgatione. Inde est quod
+caetera animalia ex quo nata sunt gradiuntur, homo
+non graditur, quia ex sanguine menstruato in utero
+nutritur. Sed unde mulieres post conceptionem ferventiores
+sunt libidine, bruta vero animalia ab ea
+cessant. Unde cum mulieres sunt frigidiores viris,
+luxuriosiores tamen illis sunt. Unde post coitum leprosi
+mulier non laedatur, antecedens vero vir leprosus
+efficiatur, dicere proposuimus, ne corda religiosorum
+si forte hoc opus nostrum in manus acceperint,
+diu loquendo de tali re offendamus, omittimus. Spermate
+igitur in matrice locato, oreque clauso, ejusdem
+si in dextera parte maneat, quia hepar est in dextera
+parte matrici vicinum, meliori et calido sanguine nutritur
+fetus, masculusque efficitur; si autem in sinistra,
+quae a fonte caloris est remota, id est ab
+epate, est femina. Si vero non bene in sinistra, sed
+aliquantulum versus dexteram mulier, est virilis. Cum
+igitur in una praedictarum trium partium semen est
+<pb n="1171B"/>
+locatum, incipit virtus digestiva operari, quae calefaciendo
+a calore matris illud spissat, sed ex siccitate
+folliculum intra se continentem conceptum creat, ne
+aliquae superfluitates illi se commiscentes illum corrumpant.
+Hic folliculus cum puero crescit et oritur.
+Septimo die conceptus, ut refert Macrobius, guttae
+sanguinis in superficie folliculi incipiunt apparere,
+tertia septimana ad ipsum conceptionis humorem demergunt,
+quarta in quadam liquida soliditate, velut
+inter carnem et sanguinem, coagulatur; quinta si
+puer septimo mense nasci debeat, sin autem in nona
+septimana incipit virtus formativa, cujus est officium
+humanam figuram conferre: hanc sequitur virtus assimilativa,
+cujus est officium, quod frigidum et siccum
+est, in frigida et sicca membra mutare, ut sunt
+ossa; quod frigidum et humidum in phlegmatica, ut
+est pulmo; quod est calidum et siccum, in cholerica,
+ut cor; quod calidum et humidum in sanguinea, ut
+est hepar. Deinde sequitur virtus concavativa: hujus
+<pb n="1171C"/>
+est manus concavare, nares perforare, etc. Formatis
+vero membris, assimilatis et concavatis, incipit fumus
+humidus per venas et arterias discurrere, motumque
+et vitam conferre. Hic motus septuagesimo die a conceptu
+incipit, si puer septimo mense nasci debeat: si
+in nono, nonagesimo. Sed quia omnia quae temporaliter
+vivunt, indigent cibo aliquo, sequitur ultimo pascuativa,
+quae usque ad mortem extenditur. Sed quaeritur
+quomodo puer in utero pascatur. Dicimus quod
+quidam nervi qui in umbilico sunt, matrici conjunguntur,
+per quos puro sanguine ab hepate matris descendente
+nutritur puer, et crescit. Unde quia digestum
+recipit, non indiget egestione superfluitatis. Has
+praedictas virtutes sequitur nativitas, cujus duo termini
+sunt septimus mensis et nonus. Quaeritur cur
+ante septimum mensem puer natus vivere non potest,
+et cur in septimo mense natus vivat, in octavo non.
+Dicunt inde physici quod ante septimum mensem non
+est in puero tantus motus, quod si nasceretur, vivere
+posset. In septimo est motus vitae sufficiens, unde
+<pb n="1171D"/>
+puer se movens, si debiles nervos, quibus matrici
+conjungitur habeat, frangens illos nascitur vitae idoneus.
+In octavo mense motu septimi debilitatus, si
+nascitur, vivere non potest, donec refectus, et in parte
+noni incipit moveri, rumpensque nervos idoneos vitae
+nascitur: et quia in calido et humido nutritus est, nascens
+et ad dissimile prodiens, contrarietatem sentit,
+vocemque ululationis emittit, et ideo prima hominis vox
+est doloris. A nativitate vero usque ad septimum annum
+est infantia, quia in quadam parte illius fari non potest;
+in altera vero, si loquitur, imperfecte loquitur. In
+hac aetate sensum habere potest, rationem tamen atque
+intellectum, non. De sensu igitur aliquid dicamus. De
+ratione vero atque intellectu qualiter in tali aetate
+habere non possunt, quia sunt de virtutibus, deinde
+loquendo de anima ostendemus; et quia ex animali
+virtute, quam praecedit naturalis et spiritalis sensus,
+habet principium, de istis virtutibus, a naturali, quae
+prior est, inchoando, aliquid praelibemus. Cum igitur
+<pb n="1172A"/>
+homo ex quatuor constet elementis, ex calore et humiditate,
+contingit fumum humidum nasci et calidum,
+qui diffusus per membra, movens illa, trinam
+digestionem operatur, virtusque naturalis vocatur.
+Et quia de tribus digestionibus facta est mentio, inquiramus
+quid sit et ubi sit, et qualiter fiat digestio.
+Digestio igitur est alicujus rei per ebullitionem facta
+mutatio. Prima vero digestio fit in stomacho, secunda
+in hepate, tertia in omnibus membris. Ergo de prima
+primum dicamus. Cum humanum corpus incremento
+indigeat in quadam aetate, in omni vero restauratione,
+quippe interiori et exteriore calore vel frigore devastantibus,
+necesse fuit cibum et potum, ex quibus
+esset nutritio et incrementum, subintrare. Sed quia
+cibus grossus est, necesse fuit ut, priusquam intraret
+stomachum, tenuis et delicatus redderetur. Ad hoc
+enim dentes parati sunt, nati ex phlegmate per gingivas
+descendente, ex frigiditate spissato et durato,
+ut cibum conterant. Lingua vero ut ad modum manus
+<pb n="1172B"/>
+molendinarii illum vertat, et sub dentes reducat;
+quae ad hoc spongiosa est, ut cibi succum recipiens
+saporem discernat. Fit ergo mola quadam istius comminutionis
+comparatio: cibus vero sic praeparatus
+cum potu per aesophagum in stomachum, per portam
+cujus amplius est os, motus descendit, ibique decoquitur,
+et in speciem ptisanae transmutatur, et haec
+est prima digestio. De stomacho vero utrum sit calidae
+naturae, est quaestio. Aiunt quidam: Oportet
+quod calidae sit naturae, aliter enim cibum non posset
+concoquere; cum ergo cibum coquat et transmutet,
+calidus est. Nos vero dicimus stomachum frigidum
+esse naturaliter, calidum accidentaliter. Est
+enim nervosae naturae, ut quando nimis solito homo
+comedat, extendatur; quando minus, contrahatur.
+Iterum necesse fuit, quod esset nervosae naturae, ne,
+cum aliquid durum nec commasticatum reciperet,
+laederetur. Cum igitur omne nervosum frigidae sit
+naturae, ergo et stomachus; sed ut melius cibum retineat,
+et idonee decoquatur, intus est villosus; quamvis
+<pb n="1172C"/>
+tamen naturaliter sit frigidus, ex accidente tamen
+calefit, suppositus est enim hepati, ita quod fere totus
+ab eo includitur. Ex dextera vero parte ejusdem est
+fel, ex sinistra cor, quae calida sunt et sicca, et inde
+fit calidus stomachus, ut igne supposito coquitur
+cibus. Si ergo proprie velimus loqui, in stomacho,
+non a stomacho, cibum dicamus coqui. Cibus igitur
+sic in modum ptisanae mutatus per inferius foramen,
+quod porta dicitur, exiens intrat duodecimum intestium,
+sic dictum, quod quantitatem duodecim digitorum,
+quales sunt digiti ejusdem, in uno quoque obtinet.
+Relicto vero in eo quod ejus naturae vel nutriturae
+est conveniens, transit in aliud, quod jejunum
+dicitur, quod nihil inde retinet. Huic jejuno venae
+quaedam ab hepate venientes, sese conjungunt, per
+quas quod liquidius est transit in infima hepatis, meseriacae,
+quia succum mittunt dictae; quod vero feculentum
+est in longitudinem, id est, in secessum
+descendit, et primae superfluitates digestionis. Illud
+<pb n="1172D"/>
+vero liquidum quod in infima hepatis transit, calore
+ejusdem digeritur: quod quia in eo calidum et siccum
+est, transit in choleram, et per quasdam venas
+ad cistam fellis transmittitur, et haec est sedes cholerae.
+Inde quaedam pars ad confortandam vim appetitivam
+in stomachum transit. Quod vero frigidum et
+siccum est in melancholiam transit, et ad splenem
+sedem melancholiae descendit; sed quaedam pars ad
+stomachum ascendit, ad vim retentivam confortandam.
+Quod frigidum et humidum in phlegma mutatur,
+et ad pulmonem sedem phlegmatis transit, quadam
+parte expulsiva vi in stomachum transmissa;
+quod vero calidum et humidum in sanguinem versum
+remanet in hepate, quae sedes est sanguinis.
+In hepate ergo quatuor gignuntur humores proprias
+sedes habitantes. Cholera fel, melancholia splenem,
+sanguis hepar, phlegma pulmonem; quamvis dicant
+quidam phlegma propriam sedem non habere, sed
+cum sanguine, ut melius possit per membra discurrere,
+<pb n="1173A"/>
+remanere, et haec est secunda digestio. Quod
+ibi superfluum est, per ilim venam, quae spleni adjacet,
+ad renes descendit; quod ibi liquidum est, ad
+sui nutrimentum retinentes, reliquum per uritides
+poros ad vesicam transmittunt. Idem per virile
+membrum exiens, urina dicitur, et haec est superfluitas
+secundae digestionis; sed quia pueri habent
+poros uritides strictos, quod ibi spissum est, in lapideam
+transit substantiam. In aliis vero aetatibus quia
+pori aperti sunt, non generatur ibi lapis, sed circa
+renes. Ergo pueris nascitur lapis in collo vesicae,
+senibus circa renes. Sanguine vero praedicto modo
+in hepate generato, per venas ad omnia transit membra,
+calore quorum digestus, in eorum similitudinem
+transit; superfluitas vero partim per sudorem
+exit, alia vero pars ad hepar revertitur, ibi decocta
+cum urina exit descendens, sedimenque vocatur; sed
+si in fundo sit urinae, dicitur hypostasis; si in medio,
+encortim; si in summo, nephile. Sed quid significat,
+<pb n="1173B"/>
+et in diversis locis existens, quid quando est continuum,
+quando divulsum, quid ex substantia et calore,
+dicere non est nostrum. Si quis vero hoc scire
+desiderat, Galenum, de urinis, legat. Hujus iterum
+naturalis virtutis est augmentum conferre, quod
+contingit ex humore et calore. Quod enim aliquando
+ascendit, est caloris; quod vero spissatur, humoris.
+Sed dicent: Si ex calido et humido est incrementum,
+unde cholerici et melancholici, quorum alteri
+frigidi sunt et sicci, et alteri calidi et sicci, tantum
+crescunt? Nos vero dicimus nullum esse hominem
+qui calidus non sit et humidus, sed tamen quidam
+plus, quidam minus. Verbi gratia, homo naturaliter
+est calidus et humidus, et in quatuor qualitates temperatus;
+sed quia corrumpitur natura, contingit
+illas in aliquo intendi et remitti; si vero in aliquo
+intendatur calor, et remittatur humiditas, dicitur
+cholericus, id est, calidus et siccus, non tamen est
+sine humiditate. Si vero in aliquo intensus sit humor,
+et remissus calor, dicitur phlegmaticus; si
+<pb n="1173C"/>
+autem intensa sit siccitas, remissus calor, dicitur
+melancholicus; si vero aequaliter insunt, dicitur
+sanguineus. Sunt ergo omnes naturaliter calidi et
+humidi, sed propter diversas qualitates intensas et
+remissas, incipiunt inter se, et nomen contrarii remisse.
+In omni ergo complexione potest homo crescere,
+plus tamen in una, minus in alia; in quadam
+in longum, in quadam in latum. Cholerici namque
+graciles et longi sunt: longi ex calore, cujus est
+ascendere, graciles ex siccitate. Sanguinei vero longi
+propter calorem, pingues propter humiditatem;
+phlegmatici vero propter frigiditatem parvi, propter
+humiditatem pingues. Melancholici vero propter frigiditatem
+parvi, propter siccitatem graciles. Saepe
+tamen naturales proprietates ex accidente variantur.
+Nam cholerici et melancholici ex otio vel comestione
+sunt pingues, sanguinei et phlegmatici ex abstinentia
+et labore graciles. Quod vero sanguinei et phlegmatici,
+etc., praeter naturam breves sunt, ex parvitate
+<pb n="1173D"/>
+matricis vel spermatis contingit. Haec naturalis
+virtus habet quaedam principalia membra, quaedam
+deservientia et adjuvantia, quaedam alterum, quaedam
+neutrum. Sed quia hoc a physico, in Isagogis,
+satis dictum est, illo postposito, ad somnum, qui ad
+naturalem virtutem pertinet, transeamus.</p>
+<p>Somnus est quies animalium virtutum, cum intentione
+naturalium. Contingit autem sic. Fumo humido
+ad superiora ascendente implentur nervi, quibus
+animalis virtus solet descendere. Desinit ergo animal
+videre, audire, etc., donec naturali calore illo desiccato,
+naturalis spiritus incipiat descendere, et ad
+aliquid sensum animalis excitari. Somnia vero ex
+reliquiis cogitationum, ex cibo, et potu, et tempore,
+ex complexione, ex jacendi qualitate, habent existere,
+et haec nihil significant. Alia ex ministerio
+angelorum, alia ex mundi causa et libertate animae,
+quorum omnium prolationes in promptu habemus.
+Sed quoniam hoc nostro proposito multum non attinet,
+<pb n="1174A"/>
+ad finem voluminis tendimus, illo praetermisso,
+ad splenis virtutem transeamus. Praedictus igitur
+fumus per diversa foramina transeundo, subtilior ad
+cor veniens, attrahendum aera illud dilatat, ut interior
+calor temperetur; ad expellendas vero superfluitates,
+idem constringit, et tunc dicitur spiritalis
+virtus, cui arteriae deserviunt. Sed ad animalem virtutem
+veniamus. Praedictus ergo fumus per nervos
+ascendens, colando efficitur ita subtilis, quod perveniens
+ad cerebrum spiritus dicitur; descendens per
+diversa instrumenta, diversas animales virtutes operatur,
+ut ostendemus. Quaeque a cerebro prodeunt,
+de ipso ante dicamus; deinde qualiter sensus inde
+prodeant, et quoniam in capite continetur, de illo
+exordiamur.</p>
+<p>Caput est quaedam sphaerica substantia, quae in
+duobus digitis ante et retro est expressa. Rotunda,
+ut melius in ea cerebrum moveatur, et ne superfluitates
+in angulis sibi remanentes illud corrumpant.
+<pb n="1174B"/>
+Ante et retro expressa per nervos inde procedentes,
+quorum priores sensus operantur, posteriores vero
+motum corporis voluntarium. In ejus exteriori parte
+ex cranunculis pelliculae adhaerent capilli, et ex fumo
+ascendente, et per poros exeunte nati. Fumus etenim
+ille exiens ex frigiditate sicci aeris constringitur, et
+in corpulentam substantiam transit. Alio vero fumo
+exeunte impellitur sursum, et sic crescunt capilli.
+Sed quia naturale est ponderum descendere, curvantur
+et descendunt. Unde quia nulli aetati desunt superfluitates,
+neque alicui capillorum deest incrementum,
+neque unguium, quia ex superfluitatibus cordis,
+per digitorum summitates exeuntibus, a frigiditate
+durati fiunt. Sed pili barbae et pectoris cuidam aetati
+desunt, barbae vero femineo sexui. Cum enim barba
+ex calore habeat existere in homine, propter geminum
+calorem cordis et testiculorum potest esse. In
+muliere vero propter frigiditatem esse non potest,
+nisi sit aliqua praeter naturam calida. Eadem ratione
+non est barba in spadonibus. In pueritia vero esse
+<pb n="1174C"/>
+non potest propter strictitatem pororum; et quoniam
+ex fumo ascendente fiunt capilli, juxta complexiones
+uniuscujusque diversi contrahuntur colores. De quibus
+quia in physica satis dicitur, ad caetera transeamus.
+Sub cranio duae sunt pelliculae mineae dictae,
+quarum prior cerebro durior est, duraque mater dicitur.
+Quae propinquior vero cerebro, ne laedat ipsum,
+tenuior est, diciturque pia mater. Sub istis est cerebrum,
+cujus talis a Constantino dicitur definitio: Cerebrum
+est liquida et alba substantia, sine sanguine.
+De quo quaeritur an sit frigidum an calidum. Dicimus
+quod naturaliter est frigidum, ne continuo motu desiccetur.
+Hujus in capite tres sunt cellulae: in prora,
+in medio, in puppe. Prima vero cellula est calida et
+sicca, diciturque phantastica, id est, visualis, quia
+in ea est vis videndi et intelligendi. Haec calida et
+sicca est, ut formas rerum et colores attrahat. Media
+vero dicitur logistica, id est, rationalis, quia in ea
+est vis discernendi. Quod enim phantastica attrahit,
+<pb n="1174D"/>
+ad hanc transit, ibique anima discernit, estque calida
+et humida, ut melius discernendo proprietatibus rerum
+se conformet. Tertia vero memorialis dicitur,
+quia in ea est vis retinendi memoriam. Quod enim
+in logistica cella discretum est, transit ad memorialem
+per quoddam foramen, quod claudit quidam
+panniculus, donec aperiatur, quando aliquid tradere
+memoriae vel ad memoriam volumus reducere. Ista
+est frigida et sicca, ut melius retineat, frigidi enim
+et sicci est constringere. Sed dicent: Quomodo hoc
+unquam potuit probari? Dicimus: Per vulnera in illis
+partibus accepta. Cum enim aliquis esset bonae memoriae,
+rationis et intelligentiae, viderunt physici
+quod accepto vulnere in aliqua illarum cellularum,
+vim illius amittebat, vires aliarum retinens. Unde
+Solinus, in Polyhistoriis, narrat de quodam qui, accepto
+vulnere in occipitio, ad tantam devenit ignorantiam,
+quod nesciebat se habuisse nomen. Ergo
+merito antiqui dixerunt in capite sedem esse sapientiae.
+<pb n="1175A"/>
+In capite enim habent sedem quae faciunt hominem
+sapientem, scilicet, intellectus, ratio, memoria.
+Ab hoc cerebro prodeunt nervi ad oculos, per quos
+animalis spiritus exiens visum operatur, ut ostendimus.
+Sed prius de substantia oculorum aliquid dicamus.
+Oculus igitur est quaedam orbiculata et clara
+substantia, sed in superficie aliquantulum plana, ex
+tribus humoribus et septem tunicis constans. Orbiculata
+est, ut huc et illic verti possit. In superficie
+plana, ut melius formas rerum in se possit recipere.
+Lucens, ex humoribus constans, ut a visuali spiritu
+possit penetrari. Ex tunicis septem, ut superfluitates
+expellat, ne illum laedant. Sed si quis nomen humorum
+et tunicarum dispositiones scire desiderat, Galenum
+legat. Duos vero oculos constituit natura, ut
+si unus laederetur, alter remaneret. Deinde de visu
+dicamus. Cum igitur animalis spiritus, per nervos a
+cerebro prodeuntes, et ad oculos usque pervenerit,
+exiens si aliquem exteriorem splendorem, vel solis,
+<pb n="1175B"/>
+vel alterius, receperit, usque ad obstaculum dirigitur,
+quod offendens per ipsum se diffundit, formisque illius
+et coloribus informatur per oculos, et per phantasticam
+cellam ad logisticam cellam transit, visusque
+efficitur. Inde est quod visu figuras et colores
+rerum discernimus. Stoici tamen dicunt visualem
+spiritum usque ad rem non pervenire, sed oculum
+figuras rerum in se recipere, ad quas perveniens ille
+radius, similiterque informatus, visum operatur.
+Sunt alii qui dicunt neque illum usque ad obstaculum
+pervenire, neque oculo informari, sed medium aera
+inter videntem et obstaculum, formis et coloribus
+informari, ad quem radius perveniens, informatusque
+revertens, visum operatur. Nobis vero illa placet
+sententia, quod visualis spiritus usque ad rem perveniat.
+Cujus rei haec est probatio, quod ex visu lippientis
+alicujus saepe eamdem contrahimus infirmitatem.
+Et unde hoc, nisi quod visuali spiritu ad corruptum
+oculum perveniente corrumpitur, revertensque
+<pb n="1175C"/>
+oculos corrumpit? Ejusdem rei probatio est,
+quod sic contingit: Cum homines sint contrariarum
+complexionum, alii enim sunt frigidi, alii calidi, alii
+humidi, alii sicci, visualis spiritus ab aliquo exiens,
+qualitates illius secum trahens, diffusus per faciem
+alterius complexionis contrariae, illum corrumpit.
+Contraria namque contrariis laeduntur. Inde est quod
+vetulae lingentes faciem, et expuentes, illo curantur,
+quod enim est ibi nocivum expuunt. Ut igitur visus efficiatur,
+tria sunt necessaria: interior radius, exterior
+splendor, obstaculum rei. His igitur concurrentibus
+est visus; aliquo autem istorum deficiente, deficit.
+Visus autem species sint tres: detuitio, contuitio,
+intuitio. Et est intuitio quando aliquid videmus in eo
+occurrente simulacro; sed ostendentes qualiter visus
+fiat, de ea satis diximus. Contuitio est quando aliquid
+videmus, in cujus superficie aliquod occurrit
+simulacrum. Detuitio est quando non in superficie,
+sed in profundo apparet, ut in aqua; diciturque detuitio,
+quasi deorsum tuitio. Restat ergo de intuitione
+<pb n="1175D"/>
+et de tuitione dicere, quarum quia eadem est
+causa, de intuitione disputemus, ut quod de ea ostenderimus,
+de tuitione intelligatur. Cum igitur visualis
+spiritus ad aliquid videndum dirigitur, ex labilitate
+huc et illuc impellitur, informatusque formis circumstantium,
+si ad aliquid obscurum pervenerit, ex sui
+subtilitate videri non potest. Si autem ad aliquod
+radiosum, ex splendore illius apparet. Aristoteles
+vero dixit nullum ibi apparere simulacrum, sed hominem
+se et posteriora videre tali modo: Cum praedictus
+spiritus aliquod radiosum offendat, radiis illius
+elisus repercutitur, reversusque ad faciem videntis,
+ipsum et posteriora percipit. Sed quia mediante
+speculo hoc contingit, videtur hoc in speculo
+apparere. Sunt qui dicunt aera inter hominem et
+speculum diversis formis insignitum et coloribus,
+unde si aliquid opponatur, splendidum appareat, sive
+contrario, non. Contingit autem sic auditus: Cum aer
+naturalibus instrumentis percussus formam vocis acceperit,
+<pb n="1176A"/>
+exiens, primam partem aeris quam reperit,
+simili informat forma, et illa aliam, donec ad aures
+perveniatur ad modum tympani sicci et concavi; cui
+resonanti excitatur ille spiritus animalis, descendensque
+ad aures per quosdam nervos, informat se
+simili forma, sicque informatus ad logisticam cellam
+revertens, auditum operatur. Similiter alii sensus
+fiunt eodem animali spiritu ad illorum instrumenta,
+per nervos a cerebro descendente. His itaque perceptis,
+de anima et ejus virtutibus tempus est disserere.</p>
+<p>Anima est quidam spiritus conjunctus corpori,
+idoneitatem discernendi et intelligendi conferens.
+Quod enim ex anima sit discernere et intelligere, sic
+probatur: quod crescente cura corporis, oriuntur
+illae virtutes; decrescente illa et crescente cura animae,
+crescunt illae. Si enim ex natura corporis essent,
+crescente cura corporis crescerent. Augmentata namque
+cura, augmentatur effectus. Iterum cum omnis
+<pb n="1176B"/>
+creatura corporea vel spiritus sit, conveniens fuit ut
+homo ex corpore et spiritu constaret, ut cum utroque
+aliquam affinitatem haberet. Habet enim cum corporibus
+vita carentibus, commune existere, cum herbis
+et arboribus vivere, cum brutis animalibus sentire,
+cum spiritibus discernere. Inde est quod in
+divina pagina dicitur homo omnis creatura. Cum
+ergo ex corpore et anima constet homo, dominante
+tamen anima, in qua quippe similis est Creatori, inconveniens
+esset si hominis corpus suas haberet
+actiones, anima vero non. Sed dicet aliquis: Quomodo
+discernam quae actiones in homine debeant judicari
+animae, quae corpori? Dicimus quod illae actiones,
+quae sunt communes homini cum bruto animali, vel
+corporibus vita carentibus, etsi illas in homine anima
+operetur, non debent dici animae, sed corporis; quae
+vero inveniuntur in homine, et in nullo alio corpore
+esse possunt, animae sunt. Discernere ergo et intelligere,
+animae est; sentire vero, et similia, corporis.
+Sed dicet aliquis: Si actiones animae non sunt, debentne
+<pb n="1176C"/>
+dici vel virtutes vel vitia animae, et quare
+propter illa damnatur vel remuneratur anima? Nos
+vero dicimus: Etsi illius non sunt actiones, ejus possunt
+esse vitia. Cum enim ad hoc sit homini anima
+data ut illicitos motus corporis corrigat, ignorantia
+vel negligentia ejus contingit. Sicut ergo discipulus
+vel servus negligentia doctoris vel domini peccet,
+magister et dominus extra culpam non est; sic nec
+anima illis contingentibus non est extra culpam, etsi
+illius actiones non sint. Cum igitur homo ex anima
+et corpore constet, quaeritur an sit apposita corpori,
+an concreta, an commixta, an conjuncta. Uni quippe
+istorum insunt, quae insunt in alicujus compositione.
+Apposita non est, quia tunc extra corpus anima esset,
+nec aequaliter illud moveret. Omne enim appositum
+extra illud est cui est appositum, et majores
+vires habet in proximo, ut ignis alicui appositus.
+Concreta non est: concretum est id quod ex sua
+substantia transit in alterius substantiam, ut aqua per
+<pb n="1176D"/>
+ebullitionem in salem. Cum ergo anima non transeat
+in corporis substantiam, sed semper spiritus sit,
+concreta illi non est. Commixta non est illi; nullum
+enim commixtorum esse suum retinet, non sunt ergo
+commixta corpus et anima. Ergo sunt conjuncta,
+sed ita quod tota anima in omnibus corporis partibus
+est esse suum retinens, tota et integra. Hic subjicient:
+Si in omnibus partibus tota est, abscissa
+una parte corporis, ablata est tota anima a corpore.
+Nos vero dicimus animam non esse in aliqua parte
+corporis, nisi dum est conjuncta corpori idoneo vitae.
+Separata igitur a corporis parte, remanet anima in
+aliis partibus in quibus ante tota erat. Iterum quaeritur
+an anima et corpus sint ex eodem, an ex alio.
+Nos vero dicimus nullam esse illius causam, praeter
+solum Creatorem, qui omnibus dat esse. Unde
+Plato, omnium philosophorum doctissimus, dicit
+Deum creatorem stellis a se creatis et spiritibus causam
+formandi hominem injecisse, ipsum vero animam
+<pb n="1177A"/>
+fecisse et illi tradidisse: quia ministerio spirituum,
+et effectu stellarum humana corpora existunt
+et crescunt, sed sola voluntate Creatoris anima existit.
+Iterum quaeritur an anima humana ante existat
+quam corpus, et quando illi conjungatur. Dicimus
+illam non ante existere, quod probari potest ratione
+et auctoritate. Si enim ante esset, vel in miseria vel
+in beatitudine esset, nullo praecedente merito. Auctoritate
+beati Augustini hoc probatur, qui dicit: Quotidie
+creat Deus novas animas, tempus vero conjunctionis
+illius cum corpore a nullo definitur. Nobis
+tamen post operationem formativae et concavativae
+virtutis videtur: tunc non naturalis virtus per umbram
+potest discurrere, sine qua vita non potest esse,
+nec anima in corpore. Hujus autem diversae sunt
+potentiae; intelligentia, ratio, memoria. Et est intelligentia
+vis animae qua percipit homo corporalia cum
+certa ratione, quare ita sit; ratio vero est quaedam
+vis animae, qua percipit homo quid sit res, et in quo
+<pb n="1177B"/>
+conveniat cum aliis, et in quo differat; memoria vero
+est vis, qua firme retinet homo ante cognita. Sed
+quaeritur, cum istae sint proprietates animae, quare
+infans, in quo est anima, non discernit, etc. Ad hoc
+dicimus quod anima hominis a Creatore habens principium,
+ex quo est perfecta in suo genere, sciret
+quae ab homine sciri possunt, nisi gravitas carnis
+esset, quod per primum hominem qui ante corruptionem
+humanitatis, ex quo fuit, perfectam habuit
+scientiam humanam, probari potest. Sed modo corrupta
+humanitate, ex quo conjungitur corrupto,
+corrumpitur: nec proprietates suas potest exercere,
+donec usus experientia, vel alicujus doctrina excitata,
+incipit discernere, velut cum aliquis subtili acie
+oculorum, tenebroso carceri deputatur, videre tamen
+non potest nisi assuescat tenebris, vel lumen accendatur.
+Unde Virgilius:
+<l>. . . Quantum nos noxia corpora tardant.</l> 
+In prima vero aetate nec praecessit usus experientia,
+<pb n="1177C"/>
+nec est tempus doctrinae conveniens. Cum enim illa
+aetas calida sit et humida tantum, statim cibum digerit
+et appetit: unde frequenti influxione indiget
+et effluxione, spissusque fumus generatur, qui ascendens
+cerebrum, in quo est vis discernendi et intelligendi,
+turbat. Hanc aetatem sequitur juventus, quae
+est calida et sicca. Desiccatus est enim ille naturalis
+humor, quem contrahit homo ex matris utero. Unde
+non ita spissus fumus generatur, neque cerebrum ita
+turbatur, estque aetas conveniens ad discendum, et
+maxime, si lampas diligentis doctrinae accendatur.
+Sequitur senectus frigida et sicca. Exstinctus est enim
+ille naturalis calor, unde in hac aetate viget memoria,
+sed vires corporis deficiunt, ex siccitate enim et
+frigiditate, cujus est constringere, est memoria. Ex
+calore, cujus est impetum facere, vires corporis eo
+deficiente deficiunt; hanc sequitur senium, frigidum
+et humidum. Exstincto enim naturali calore, crescit
+frigidum phlegma; unde in illa aetate deficit memoria,
+<pb n="1177D"/>
+fiuntque homines pueriles: est enim a phlegmate
+vis expulsiva. Hanc sequitur animae et corporis
+<pb n="1178A"/>
+dissolutio. Non enim exstincto naturali calore diu
+potest vivere homo. Et quia de homine satis diximus,
+cujus est doceri dicamus, quales ut doceant quaerendi
+sint, quales ut doceantur, qualis complexio
+conveniens sit doctrinae, in qua aetate sint incipienda,
+et quando finienda, quis sit ordo discendi. Talis
+igitur ut doceat quaerendus est, qui neque causa
+laudis, nec spe temporalis indumenti, sed solo amore
+sapere doceat. Si enim propriam laudem diligit,
+nunquam discipulum ad sui perfectionem venire volet.
+Subtrahit enim doctrinam, ne in eo quod plus
+diligit aequetur vel superetur. Si iterum temporalis
+commodi spe inductus doceat, non curabit quid dicat,
+dum nimium extorqueat. Saepe enim placent
+nugae magis quam utilia. Sed si amore scientiae ad
+docendum accesserit, nec propter invidiam doctrinam
+subtrahet: nec ut aliquid extorqueat, veritatem
+cognitam fugiet; nec si deficiat multitudo sociorum,
+deficiet, sed ad instructionem sui et aliorum vigil et
+<pb n="1178B"/>
+diligens fiet. Ut doceatur ergo, talis diligendus est,
+qui non sit doctrinae strepens, nec superbus, ne
+videatur aliquid esse, cum nihil sit; qui magistrum
+ut patrem diligat, vel etiam plus patre. A quo enim
+majora et digniora accipimus, magis diligere debemus.
+A patre enim rudes esse coepimus, a magistro
+vero esse sapientes, quod majus est et dignius. Plus
+ergo diligendi sunt boni doctores quam parentes,
+nec tamen est justum quod magis diligantur doctores,
+sed utile ut scientiae illius verba nobis placeant,
+quia in eo quem non diligimus saepe etiam nobis
+bona displicent, illaque fugimus dum studemus non
+imitari illos quos non diligimus. Quamvis enim sanguinea
+complexio habilis sit ad doctrinam, quippe
+in omnibus temperata, tamen in omni aliquis perfectus
+esse potest, etsi cum labore; quia, ut narrat
+Pamphilus: Labor improbus omnia vincit. Principium
+vero doctrinae ab adolescentia est conveniens,
+quia, ut ait Plato: Aetas hominis similis est cerae,
+quae si nimis mollis sit, nec figuram recipit; nec
+<pb n="1178C"/>
+retinet similiter, si sit dura: ergo nec nimis tenera,
+nec nimis dura, conveniens est doctrinae. Terminus
+doctrinae est mors. Unde quidam sapiens, cum ab eo
+sic quaereretur: Ubi est terminus discendi? respondet:
+Ubi et vitae. Quidam philosophus cum nonagenarius
+moreretur, et quaesitus a quodam discipulo
+suo si de morte doleret? sic interroganti respondet:
+Quia nunc incipiebat discere. Ordo vero discendi
+talis est, ut quia per eloquentiam omnis fit doctrina,
+prius instruantur in eloquentia. Cujus tres sunt
+partes: recte scribere et recte scripta pronuntiare,
+probare id quod est probandum, quod docet dialectica;
+ornare verba et sententias, quod tradit rhetorica.
+Initiandi ergo sumus in grammatica, deinde in
+dialectica, postea in rhetorica. Quibus instructi ut
+armis, ad studium philosophiae debemus accedere.
+Cujus hic est ordo, ut prius in quadruvio et in ipso
+prius in arithmetica, secundo in musica, tertio in
+geometria, quarto in astronomia, deinde in divina
+<pb n="1178D"/>
+pagina, quippe ut per cognitionem creaturae, ad cognitionem
+Creatoris perveniamus.
+
+</p>
+      </div1>
+</body>
+  </text>
+</TEI>

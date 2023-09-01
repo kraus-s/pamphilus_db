@@ -23,6 +23,7 @@ from utils import similarities as sims
 from IPython.core.display import display, HTML
 import sqlite3
 from streamlit_image_select import image_select
+from pyvis import network as net
 
 
 # Helper functions
@@ -67,6 +68,19 @@ def get_id():
             + string.digits) for n in range(48)])
     return rID
 
+
+def _create_stylo_network(stylo_df: pd.DataFrame, metric: str):
+    if metric == "cosine":
+        stylo_df = stylo_df.applymap(lambda x: (1-x)*100)
+    if metric == "eucl":
+        stylo_df = stylo_df.applymap(lambda x: x*100)
+    fig, ax = plt.subplots()
+    G = nx.from_pandas_adjacency(stylo_df)
+    self_loop_edges = list(nx.selfloop_edges(G))
+    G.remove_edges_from(self_loop_edges)
+    pos = nx.spring_layout(G, scale=5)  # Position nodes using Fruchterman-Reingold force-directed algorithm
+    nx.draw(G, pos, with_labels=True, node_size=80, font_size=8, font_color='black', edge_color="limegreen", width=0.8)
+    st.pyplot(fig)
 
 # Display functions
 # -----------------
@@ -315,8 +329,19 @@ def data_entry_helper():
 def get_all_stylo():
     all_metrics = sims.get_csv_filenames()
     selected_table = st.selectbox(label="Select a similarity type", options=all_metrics)
-    df = sims.get_similarity(f"data/similarities/{selected_table}")
+    df = sims.get_similarity(f"{STYLO_FOLDER}{selected_table}")
     st.dataframe(df)
+    if "euclid" in selected_table:
+        metric = "eucl"
+    elif "cosine" in selected_table:
+        metric = "cosine"
+    else:
+        metric = "leven"
+    if metric != "leven" and st.button("Show as graph"):
+        if "norse" in selected_table:
+            df = df.drop(labels=["A fragment of Thómass saga erkibyskups", "A fragment of Rimbegla", "Virgin Mary’s complaint"])
+            df = df.drop(columns=["A fragment of Thómass saga erkibyskups", "A fragment of Rimbegla", "Virgin Mary’s complaint"])
+        _create_stylo_network(df, metric)
 
 
 def splitsies(combined_name: str) -> str:

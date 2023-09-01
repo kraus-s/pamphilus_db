@@ -9,9 +9,9 @@ from sklearn.metrics import pairwise_distances
 import pandas as pd
 import glob
 from cltk.stem.latin.j_v import JVReplacer
-from cltk.lemmatize.latin.backoff import BackoffLatinLemmatizer
 import sqlite3
 from rapidfuzz import fuzz
+import spacy
 
 # Helper functions latin
 # ----------------------
@@ -28,7 +28,6 @@ def get_latin_stopwords():
 def get_pamph(inFile, versify: bool = False) -> dict:
     pamph = latin_parser.parse_pamphilus(inFile)
     res = {}
-    j = JVReplacer()
     if versify:
         for i in pamph:
             for ii in pamph[i].verses:
@@ -61,24 +60,15 @@ def corpus_collector_latin(lemmatize: bool = False, versify: bool = False) -> di
 
 
 def corpus_cleaner(corps: dict, lemmatize: bool = False, versify: bool = False) -> dict:
-    j = JVReplacer()
     res = {}
-    for i in corps.keys():
-        ii = corps[i].split()
-        doc = []
-        for iii in ii:
-            iii = j.replace(iii)
-            doc.append(latin_parser.enclitics(iii))
+    nlp = spacy.load('la_core_web_lg')
+    nlp.max_length = 10000000
+    text_tuples = [(corps[x], {"text_id": x}) for x in corps.keys()]
+    for doc, context in nlp.pipe(text_tuples, as_tuples=True, batch_size=5):
         if lemmatize:
-            doc = latin_lemmatizer(doc)
-        doc2 = " ".join([x for x in doc])
-        res[i] = doc2
-    return res
-
-
-def latin_lemmatizer(tokens: list) -> list:
-    lemmatizer = BackoffLatinLemmatizer()
-    res = lemmatizer.lemmatize(tokens)
+            res[context["text_id"]] = ' '.join(tok.lemma_ for tok in doc if not tok.is_punct)
+        else:
+            res[context["text_id"]] = ' '.join(tok.norm_ for tok in doc if not tok.is_punct)
     return res
 
 
@@ -139,8 +129,8 @@ def get_on_stopwords():
 # -------------
 
 
-def get_vector(corpus: dict, stops: list):
-    vectorizer = TfidfVectorizer(stop_words=stops, ngram_range=(1,3))
+def get_vector(corpus: dict):
+    vectorizer = TfidfVectorizer(ngram_range=(1,3))
     w2varr = vectorizer.fit_transform(corpus.values()).toarray()
     return w2varr, corpus.keys()
 
@@ -151,8 +141,8 @@ def euclid_dist(w2varr, labels: list) -> pd.DataFrame:
 
 
 def cos_dist(w2varr, labels: list) -> pd.DataFrame:
-        cosine_distances = pd.DataFrame(pairwise_distances(w2varr, metric='cosine'), index=labels, columns=labels) 
-        return cosine_distances
+    cosine_distances = pd.DataFrame(pairwise_distances(w2varr, metric='cosine'), index=labels, columns=labels) 
+    return cosine_distances
 
 
 def combinator(corpus: dict[str, str], pamph_only: bool = False) -> list[str]:
@@ -200,32 +190,30 @@ def leven_worker(combinations, corpus: dict):
 # ------------------
 
 
-def analysis_cycle(corpus: dict, stops: list, fName: str):
+def analysis_cycle(corpus: dict, fName: str):
     print(f"Now processing {fName}")
-    vecCorps, diagLabels = get_vector(corpus, stops)
+    vecCorps, diagLabels = get_vector(corpus)
     eucD = euclid_dist(vecCorps, diagLabels)
-    eucD.to_csv(f"{fName}-euclid.csv")  
+    eucD.to_csv(f"{STYLO_FOLDER}{fName}-euclid.csv")  
     print("Euclidian")
     print(eucD)
     cosD = cos_dist(vecCorps, diagLabels)
     print("Cosine")
     print(cosD)    
-    cosD.to_csv(f"{fName}-cosine.csv")
+    cosD.to_csv(f"{STYLO_FOLDER}{fName}-cosine.csv")
 
 
 def analysis_coordinator():
-    latStops = get_latin_stopwords()
-    on_stops = get_on_stopwords()
     corpus = corpus_collector_latin()
-    analysis_cycle(corpus, latStops, "latin-basic")
-    corpus = corpus_collector_latin()
-    analysis_cycle(corpus, latStops, "latinLemmatized")
+    analysis_cycle(corpus, "latin-basic")
+    corpus = corpus_collector_latin(lemmatize=True)
+    analysis_cycle(corpus, "latinLemmatized")
     corpus = corpus_collector_norse('normalized')
-    analysis_cycle(corpus, on_stops, "norse-basic")
+    analysis_cycle(corpus, "norse-basic")
     corpus = corpus_collector_norse(level='lemma')
-    analysis_cycle(corpus, on_stops, "norse-lemmatized")
+    analysis_cycle(corpus, "norse-lemmatized")
     corpus = corpus_collector_norse('facs')
-    analysis_cycle(corpus=corpus, stops=on_stops, fName='norse-facs')
+    analysis_cycle(corpus=corpus, fName='norse-facs')
 
 
 def versified_lat_leven():

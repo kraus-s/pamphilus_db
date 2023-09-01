@@ -1,0 +1,2903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.menota.org/menotaP5.rng" type="xml" ?>
+<!DOCTYPE TEI 
+[
+<!ENTITY % Menota_entities SYSTEM 'http://www.menota.org/menota-entities.txt'>
+%Menota_entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:me="http://www.menota.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title>Vǫluspá (Hauksbók version) : AM 544 4to : A digital edition</title>
+             <editor>
+                 <name>
+                    <persName>
+                       <forename>Karl</forename>
+                        <forename>Gunnar</forename>
+                       <surname>Johansson</surname>
+                    </persName>
+                    <orgName type="affiliation">University of Oslo</orgName>
+                 </name>
+             </editor>
+            </titleStmt>
+<editionStmt>
+             <edition n="0.9.8">Version 0.9.8, <date when="2016-03-27">27 March 2016</date>.</edition>               
+            </editionStmt>
+
+ <extent n="1262">1262 words</extent>
+
+            <publicationStmt>
+                <distributor>Medieval Nordic Text Archive</distributor>
+                <idno type="Menota">Ms. 12</idno>
+            	<date when="2008-10-16">16 October 2008</date>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</licence>
+                    <p>Licence accepted by the editor Karl G. Johansson in a mail to Odd Einar Haugen 2 November 2015.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country key="DK">Denmark</country>
+                        <settlement>Copenhagen</settlement>
+                        <repository>The Arnamagnæan Collection</repository>
+                        <idno>AM 544 4to</idno>
+                        <msName>Vǫluspá in Hauksbók</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem n="1">
+                            <locus from="20r" to="21r">fols. 20r-21r</locus>
+                            <title>Vǫluspá</title>
+                            <title type="abbreviated">Vsp</title>
+                            <textLang mainLang="isl">Icelandic</textLang>
+                            </msItem>
+                            
+
+                    </msContents>
+                    <physDesc><objectDesc>
+                        <supportDesc>
+                                <support>
+                                    <p><material>Parchment</material>.</p>
+
+                                </support>
+                                <extent>?? leaves; ??? mm (height) by ??? mm (width).</extent>
+                                
+                                <foliation>
+                                    <p>The manuscript is paginated ????.</p>
+                                </foliation>
+                        </supportDesc>
+                    </objectDesc>
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <p>Written in <origPlace>Iceland</origPlace> in <origDate notBefore="1300" notAfter="1350">c. 1300–1350</origDate>.</p>
+                        </origin>
+                    </history>
+                </msDesc>
+
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This manuscript text has been encoded according to the standard set out in <title>The Menota handbook</title> 
+                    (version 2.0 beta), at <ref target="http://www.menota.org/guidelines"> http://www.menota.org/guidelines</ref> 
+                    as of <date>2007-01-30</date>.</p>
+
+            </projectDesc>
+            <editorialDecl>
+                <correction status="high">
+                    <p>This text has been proofread by <name>Karl G. Johansson</name>, <orgName type="affiliation">University of Oslo</orgName>.</p>
+                </correction>
+<normalization me:level="facs dipl">
+                    <p>This text has been encoded on two levels: facsimile and diplomatic.</p>
+                </normalization>
+                <interpretation me:lemmatized="none" me:morphAnalyzed="none">
+                    <p>This text has not been lemmatised or morphologically analysed.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="isl">Icelandic</language>
+            </langUsage>
+            <handNotes>
+            	<handNote xml:id="h1"/>
+            	<handNote xml:id="h2"/>
+            	<handNote xml:id="h3"/>
+            	<handNote xml:id="h4"/>
+            	<handNote xml:id="h5"/>
+            	<handNote xml:id="h6"/>
+            	<handNote xml:id="h7"/>
+            	<handNote xml:id="h8"/>
+            </handNotes>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>2016-07-19</date>
+                <name>
+                    <persName>Odd Einar Haugen</persName>
+                    <orgName type="affiliation">University of Bergen</orgName>
+                </name>: Changed the Menota ms. number from 14 to 12, did not change the version number of the file
+            </change>
+            
+            <change>
+                <date>2016-03-27</date>
+                <name>
+                    <persName>Odd Einar Haugen</persName>
+                    <orgName type="affiliation">University of Bergen</orgName>
+                </name>: (1) Revised the line numbering scheme in the file, so that lines simply are 
+                numbered "1" and upwards rather than e.g. "2or1";
+                (2) Made the file v. 0.9.8
+            </change>
+            
+            <change>
+                <date>2016-02-21</date>
+                <name>
+                    <persName>Odd Einar Haugen</persName>
+                    <orgName type="affiliation">University of Bergen</orgName>
+                </name>: (1) Revised the "availability" element in the header with a CC-BY-SA 4.0 licence;
+                (2) Made the file v. 0.9.7
+            </change>
+            <change>
+                <date>2016-01-19</date>
+                <name>
+                    <persName>Odd Einar Haugen</persName>
+                    <orgName type="affiliation">University of Bergen</orgName>
+                </name>: (1) Changed the title from "Völuspá" to "Vǫluspá"; 
+                (2) Made the file v. 0.9.6
+            </change>
+            <change>
+                <date>2016-01-12</date>
+                <name>
+                    <persName>Odd Einar Haugen</persName>
+                    <orgName type="affiliation">University of Bergen</orgName>
+                </name>: (1) Added the attribute ed="ms" to all "pb" and "lb" elements;
+                (2) Replaced all "abbr" elemenst with "am", and all "expan" elements with "ex"; 
+                (3) Made the file v. 0.9.5
+            </change>
+        	<change>
+        		<date>2008-10-16</date>
+        		<name>Tone Merete Bruvik</name>: Change into using Relax NG schema, new version.
+        	</change>  
+        	<change>
+        		<date>2008-01-18</date>
+        		<name>Tone Merete Bruvik</name>: 
+        		Updated the text to Menota 2.0, which is based on TEI P5 1.0. Changes in the header.
+        	</change>   
+        	<change>
+        		<date>2007-03-27</date>
+        		<name>Tone Merete Bruvik</name>: 
+        		entity 'dunc' - > 'drot'.
+        	</change><change>
+        		<date>2007-03-26</date>
+        		<name>Tone Merete Bruvik</name>: 
+        		Corrected a few minor errors to make the file wellformed and valid.
+        	</change>   
+        	
+             <change>
+                <date>2007-03-23</date>
+                    <name>Odd Einar Haugen</name>: 
+                        Made a few changes to the header.
+            </change>            
+
+
+             <change>
+                <date>2007-02-22</date>
+                    <name>Karl G. Johansson</name>: 
+                        Worked on the file to make it valid according to v. 2.0 of the Menota handbook.
+            </change>
+
+
+            <change>
+                <date>2007-02-22</date>
+
+                    <name>Karl G. Johansson</name>:
+Revised the transcription in accordance with v. 1.1 of the Menota handbook and the corresponding Document Type Definition.
+            </change>
+        </revisionDesc>
+
+    </teiHeader>   
+
+<text xml:lang="isl">
+<body>
+<div n="1"><head>VspHb</head>
+    <lg n="1">
+<pb ed="ms" n="20r"/>
+<lb ed="ms" n="1"/>
+<l n="1.1">
+<w><me:facs>Hlioðſ</me:facs><me:dipl> Hlioðſ</me:dipl></w>
+<w><me:facs>bið</me:facs><me:dipl> bið</me:dipl></w>
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<w><me:facs>allar</me:facs><me:dipl>allar</me:dipl></w>
+</l>
+<l n="1.2">
+<w><me:facs>helgar</me:facs><me:dipl>helgar</me:dipl></w>
+<w><me:facs>kinꝺ<am>&er;</am></me:facs><me:dipl>kinꝺ<ex>er</ex></me:dipl></w>
+</l>
+<l n="1.3">
+<w><me:facs>meiri</me:facs><me:dipl>meiri</me:dipl></w>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>min<am>&bar;</am>i</me:facs><me:dipl>min<ex>n</ex>i</me:dipl></w>
+</l>
+<l n="1.4">
+<w><me:facs>mǫgu</me:facs><me:dipl>mǫgu</me:dipl></w>
+<name>
+<w><me:facs>hei<am>&bar;</am>ꝺallar</me:facs><me:dipl>hei<ex>m</ex>ꝺallar</me:dipl></w>
+</name>
+</l>
+<l n="1.5">
+<w><me:facs>vill</me:facs><me:dipl>vill</me:dipl></w><w><me:facs>tu</me:facs><me:dipl>tu</me:dipl></w>
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<w><me:facs>vaꝼǫðꝛſ</me:facs><me:dipl>vaꝼǫðꝛſ</me:dipl></w>
+</l>
+<l n="1.6">
+<w><me:facs>vel</me:facs><me:dipl>vel</me:dipl></w>
+<lb ed="ms" n="2"/>
+<w><me:facs>ꝼram<am>&bar;</am></me:facs><me:dipl>ꝼram<ex>m</ex></me:dipl></w>
+<w><me:facs>telia</me:facs><me:dipl>telja</me:dipl></w>
+</l>
+<l n="1.7">
+<w><me:facs>ꝼoꝛn</me:facs><me:dipl>ꝼoꝛn</me:dipl></w>
+<w><me:facs>ſpiǫll</me:facs><me:dipl>ſpiǫll</me:dipl></w>
+<w><me:facs>ꝼira</me:facs><me:dipl>ꝼira</me:dipl></w>
+</l>
+<l n="1.8">
+<w><me:facs>þau</me:facs><me:dipl>þau</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<w><me:facs>ꝼremz</me:facs><me:dipl>ꝼremz</me:dipl></w>
+<w><me:facs>u<am>&bar;</am></me:facs><me:dipl>u<ex>m</ex></me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+</l>
+</lg>
+<lg n="2">
+<l n="2.1">
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>iǫtna</me:facs><me:dipl>iǫtna</me:dipl></w>
+</l>
+<l n="2.2">
+<w><me:facs>ꜳr</me:facs><me:dipl>ꜳr</me:dipl></w>
+<w><me:facs>v<am>&bar;</am></me:facs><me:dipl>v<ex>m</ex></me:dipl></w>
+<w><me:facs>boꝛna</me:facs><me:dipl>boꝛna</me:dipl></w>
+</l>
+<l n="2.3">
+<w><me:facs>þa</me:facs><me:dipl>þa</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<lb ed="ms" n="3"/>
+<w><me:facs>ꝼoꝛðu<am>&bar;</am></me:facs><me:dipl>ꝼoꝛðu<ex>m</ex></me:dipl></w>
+</l>
+<l n="2.4">
+<w><me:facs>mik</me:facs><me:dipl>mik</me:dipl></w>
+<w><me:facs>ꝼæꝺꝺa</me:facs><me:dipl>ꝼæꝺꝺa</me:dipl></w>
+<w><me:facs>hǫꝼðu</me:facs><me:dipl>hǫꝼðu</me:dipl></w>
+</l>
+<l n="2.5">
+<w><me:facs>niu</me:facs><me:dipl>niu</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<w><me:facs>heima</me:facs><me:dipl>heima</me:dipl></w>
+</l>
+<l n="2.6">
+<w><me:facs>niu</me:facs><me:dipl>niu</me:dipl></w>
+<w><me:facs>i uiðiur</me:facs><me:dipl>i uiðiur</me:dipl></w>
+</l>
+<l n="2.7">
+<w><me:facs>miǫtvið</me:facs><me:dipl>miǫtvið</me:dipl></w>
+<w><me:facs>męran</me:facs><me:dipl>męran</me:dipl></w>
+</l>
+<l n="2.8">
+<w><me:facs>ꝼyr<am>&er;</am></me:facs><me:dipl>ꝼyr<ex>er</ex></me:dipl></w>
+<w><me:facs>mollꝺ</me:facs><me:dipl>mollꝺ</me:dipl></w>
+<w><me:facs>ne<lb ed="ms" n="4"/>ðan</me:facs><me:dipl>ne<lb ed="ms" n="4"/>ðan</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="3">
+<l n="3.1">
+<w><me:facs>Aar</me:facs><me:dipl>Aar</me:dipl></w>
+<w><me:facs>uar</me:facs><me:dipl>uar</me:dipl></w>
+<w><me:facs>allꝺa</me:facs><me:dipl>allꝺa</me:dipl></w>
+</l>
+<l n="3.2">
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl></me:dipl></w>
+<name>
+<w><me:facs>ym<am>&er;</am></me:facs><me:dipl>ym<ex>er</ex></me:dipl></w>
+</name>
+<w><me:facs>bygði</me:facs><me:dipl>bygði</me:dipl></w>
+</l>
+<l n="3.3">
+<w><me:facs>vara</me:facs><me:dipl>vara</me:dipl></w>
+<w><me:facs>ſanꝺꝛ</me:facs><me:dipl>ſanꝺꝛ</me:dipl></w>
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>ſioꝛ</me:facs><me:dipl>ſioꝛ</me:dipl></w>
+</l>
+<l n="3.4">
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>ſualar</me:facs><me:dipl>ſualar</me:dipl></w>
+<w><me:facs>vnn<am>&er;</am></me:facs><me:dipl>vnn<ex>er</ex></me:dipl></w>
+</l>
+<l n="3.5">
+<w><me:facs>iǫꝛð</me:facs><me:dipl>iǫꝛð</me:dipl></w>
+<w><me:facs>ꝼan<am>&bar;</am>z</me:facs><me:dipl>ꝼan<ex>n</ex>z</me:dipl></w>
+<w><me:facs>ęꝼa</me:facs><me:dipl>ęꝼa</me:dipl></w>
+</l>
+<lb ed="ms" n="5"/>
+<l n="3.6">
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>vpp himin<am>&bar;</am></me:facs><me:dipl>vpp himin<ex>n</ex></me:dipl></w>
+</l>
+<l n="3.7">
+<w><me:facs>gap</me:facs><me:dipl>gap</me:dipl></w>
+<w><me:facs>var</me:facs><me:dipl>var</me:dipl></w>
+<w><me:facs>gin<am>&bar;</am>unga</me:facs><me:dipl>gin<ex>n</ex>unga</me:dipl></w>
+</l>
+<l n="3.8">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>g<am>&rabar;</am>ſ</me:facs><me:dipl>g<ex>ra</ex>ſ</me:dipl></w>
+<w><me:facs>ekki</me:facs><me:dipl>ekki</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="4">
+<l n="4.1">
+<w><me:facs>Aaðꝛ</me:facs><me:dipl>Aaðꝛ</me:dipl></w>
+<name>
+<w><me:facs>boꝛſ</me:facs><me:dipl>boꝛſ</me:dipl></w>
+</name>
+<w><me:facs>ſyn<am>&er;</am></me:facs><me:dipl>ſyn<ex>er</ex></me:dipl></w>
+</l>
+<l n="4.2">
+<w><me:facs>biǫðum</me:facs><me:dipl>biǫðum</me:dipl></w>
+<w><me:facs>oꝼ</me:facs><me:dipl>oꝼ</me:dipl></w>
+<w><me:facs>yptu</me:facs><me:dipl>yptu</me:dipl></w>
+</l>
+<l n="4.3">
+<w><me:facs>þ<am>&bar;</am>r</me:facs><me:dipl>þ<ex>ei</ex>r</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<lb ed="ms" n="6"/>
+<w><me:facs>męran</me:facs><me:dipl>męran</me:dipl></w>
+</l>
+<l n="4.4">
+<w><me:facs>miðgarð</me:facs><me:dipl>miðgarð</me:dipl></w>
+<w><me:facs>ſkopu</me:facs><me:dipl>ſkopu</me:dipl></w>
+</l>
+<l n="4.5">
+<w><me:facs>ſol</me:facs><me:dipl>ſol</me:dipl></w>
+<w><me:facs>ſkein<am>&bar;</am></me:facs><me:dipl>ſkein<ex>n</ex></me:dipl></w>
+<w><me:facs>ſun<am>&bar;</am>an</me:facs><me:dipl>ſun<ex>n</ex>an</me:dipl></w>
+</l>
+<l n="4.6">
+<w><me:facs>ꜳ</me:facs><me:dipl>aa</me:dipl></w>
+<w><me:facs>ſalar</me:facs><me:dipl>ſalar</me:dipl></w>
+<w><me:facs>ſteina</me:facs><me:dipl>ſteina</me:dipl></w>
+</l>
+<l n="4.7">
+<w><me:facs>þa</me:facs><me:dipl>þa</me:dipl></w>
+<w><me:facs>v<am>&rsup;</am></me:facs><me:dipl>v<ex>ar</ex></me:dipl></w>
+<w><me:facs>grunꝺ</me:facs><me:dipl>grunꝺ</me:dipl></w>
+<w><me:facs>groin</me:facs><me:dipl>groin</me:dipl></w>
+</l>
+<l n="4.8">
+<w><me:facs>grænum</me:facs><me:dipl>grænum</me:dipl></w>
+<lb ed="ms" n="7"/>
+<w><me:facs>lauki</me:facs><me:dipl>lauki</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="5">
+<l n="5.1">
+<w><me:facs>Sol</me:facs><me:dipl>Sol</me:dipl></w>
+<w><me:facs>u<am>&rsup;</am>p</me:facs><me:dipl>u<ex>ar</ex>p</me:dipl></w>
+<w><me:facs>ſun<am>&bar;</am>an</me:facs><me:dipl>ſun<ex>n</ex>an</me:dipl></w>
+</l>
+<l n="5.2">
+<w><me:facs>ſin<am>&bar;</am>i</me:facs><me:dipl>ſin<ex>n</ex>i</me:dipl></w>
+<w><me:facs>mꜳna</me:facs><me:dipl>mꜳna</me:dipl></w>
+</l>
+<l n="5.3">
+<w><me:facs>henꝺin<am>&bar;</am>i</me:facs><me:dipl>henꝺin<ex>n</ex>i</me:dipl></w>
+<w><me:facs>hægri</me:facs><me:dipl>hægri</me:dipl></w>
+</l>
+<l n="5.4">
+<w><me:facs>oꝼ</me:facs><me:dipl>oꝼ</me:dipl></w>
+<w><me:facs>ioður</me:facs><me:dipl>ioður</me:dipl></w>
+</l>
+<l n="5.5">
+<w><me:facs>ſol</me:facs><me:dipl>ſol</me:dipl></w>
+<w><me:facs>þ<am>&bar;</am></me:facs><me:dipl>þ<ex>at</ex></me:dipl></w>
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>uiſſi</me:facs><me:dipl>uiſſi</me:dipl></w>
+</l>
+<l n="5.6">
+<w><me:facs>hu<am>&rsup;</am></me:facs><me:dipl>hu<ex>ar</ex></me:dipl></w>
+<w><me:facs>h<am>&osup;</am></me:facs><me:dipl>h<ex>on</ex></me:dipl></w>
+<w><me:facs>ſali</me:facs><me:dipl>ſali</me:dipl></w>
+<lb ed="ms" n="8"/>
+<w><me:facs>ꜳtti</me:facs><me:dipl>ꜳtti</me:dipl></w>
+</l>
+<l n="5.7">
+<w><me:facs>ſtiǫꝛnur</me:facs><me:dipl>ſtiǫꝛnur</me:dipl></w>
+<w><me:facs>þ<am>&bar;</am></me:facs><me:dipl>þ<ex>at</ex></me:dipl></w>
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>uiſſu</me:facs><me:dipl>uiſſu</me:dipl></w>
+</l>
+<l n="5.8">
+<w><me:facs>huar</me:facs><me:dipl>huar</me:dipl></w>
+<w><me:facs>þær</me:facs><me:dipl>þær</me:dipl></w>
+<w><me:facs>ſtæði</me:facs><me:dipl>ſtæði</me:dipl></w>
+<w><me:facs>ꜳttu</me:facs><me:dipl>ꜳttu</me:dipl></w>
+</l>
+<l n="5.9">
+<w><me:facs>mꜳni</me:facs><me:dipl>mꜳni</me:dipl></w>
+<w><me:facs>þ<am>&bar;</am></me:facs><me:dipl>þ<ex>at</ex></me:dipl></w>
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>uiſſi</me:facs><me:dipl>uiſſi</me:dipl></w>
+</l>
+<l n="5.10">
+<w><me:facs>huat</me:facs><me:dipl>huat</me:dipl></w>
+<w><me:facs>h<am>&bar;</am>n</me:facs><me:dipl>h<ex>an</ex>n</me:dipl></w>
+<w><me:facs>meginſ</me:facs><me:dipl>meginſ</me:dipl></w>
+<lb ed="ms" n="9"/>
+<w><me:facs>atti</me:facs><me:dipl>atti</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="6">
+<l n="6.1">
+<w><me:facs>Þa</me:facs><me:dipl>Þa</me:dipl></w>
+<w><me:facs>g<am>&bar;</am>gu</me:facs><me:dipl>g<ex>en</ex>gu</me:dipl></w>
+<w><me:facs>regin<am>&bar;</am></me:facs><me:dipl>regin<ex>n</ex></me:dipl></w>
+<w><me:facs>ǫll</me:facs><me:dipl>ǫll</me:dipl></w>
+</l>
+<l n="6.2">
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>rǫkſtola</me:facs><me:dipl>rǫkſtola</me:dipl></w>
+</l>
+<l n="6.3">
+<w><me:facs>gin<am>&bar;</am>heilog</me:facs><me:dipl>gin<ex>n</ex>heilog</me:dipl></w>
+<w><me:facs>goð</me:facs><me:dipl>goð</me:dipl></w>
+</l>
+<l n="6.4">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>u<am>&bar;</am></me:facs><me:dipl>u<ex>m</ex></me:dipl></w>
+<w><me:facs>þ<am>&bar;</am></me:facs><me:dipl>þ<ex>at</ex></me:dipl></w>
+<w><me:facs>giettuz</me:facs><me:dipl>giettuz</me:dipl></w>
+</l>
+<l n="6.5">
+<w><me:facs>nott</me:facs><me:dipl>nott</me:dipl></w>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>niðiu<am>&bar;</am></me:facs><me:dipl>iðiu<ex>m</ex></me:dipl></w>
+</l>
+<l n="6.6">
+<w><me:facs>nǫꝼn</me:facs><me:dipl>nǫꝼn</me:dipl></w>
+<lb ed="ms" n="10"/>
+<w><me:facs>um</me:facs><me:dipl>um</me:dipl></w>
+<w><me:facs>gꜳꝼu</me:facs><me:dipl>gꜳꝼu</me:dipl></w>
+</l>
+<l n="6.7">
+<w><me:facs>moꝛgin</me:facs><me:dipl>moꝛgin</me:dipl></w>
+<w><me:facs>hetu</me:facs><me:dipl>hetu</me:dipl></w>
+</l>
+<l n="6.8">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>miðian</me:facs><me:dipl>miðian</me:dipl></w>
+<w><me:facs>ꝺag</me:facs><me:dipl>ꝺag</me:dipl></w>
+</l>
+<l n="6.9">
+<w><me:facs>vnꝺurn</me:facs><me:dipl>vnꝺurn</me:dipl></w>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>aptan</me:facs><me:dipl>aptan</me:dipl></w>
+</l>
+<l n="6.10">
+<w><me:facs>ꜳru<am>&bar;</am></me:facs><me:dipl>ꜳru<ex>m</ex></me:dipl></w>
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<w><me:facs>telia</me:facs><me:dipl>telia</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="7">
+<l n="7.1">
+<w><me:facs>Hittuz</me:facs><me:dipl>Hittuz</me:dipl></w>
+<w><me:facs>æſir</me:facs><me:dipl>æſir</me:dipl></w>
+</l>
+<lb ed="ms" n="11"/>
+<l n="7.2">
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>iða uelli</me:facs><me:dipl>iða uelli</me:dipl></w>
+</l>
+<l n="7.3">
+<w><me:facs>aꝼlſ</me:facs><me:dipl>aꝼlſ</me:dipl></w>
+<w><me:facs>koſtoðu</me:facs><me:dipl>koſtoðu</me:dipl></w>
+</l>
+<l n="7.4">
+<w><me:facs>allz</me:facs><me:dipl>allz</me:dipl></w>
+<w><me:facs>ꝼreiſtuðu</me:facs><me:dipl>ꝼreiſtuðu</me:dipl></w>
+</l>
+<l n="7.5">
+<w><me:facs>aꝼla</me:facs><me:dipl>aꝼla</me:dipl></w>
+<w><me:facs>lǫgðu</me:facs><me:dipl>lǫgðu</me:dipl></w>
+</l>
+<l n="7.6">
+<w><me:facs>auð</me:facs><me:dipl>auð</me:dipl></w>
+<w><me:facs>ſmiðuðu</me:facs><me:dipl>ſmiðuðu</me:dipl></w>
+</l>
+<lb ed="ms" n="12"/>
+<l n="7.7">
+<w><me:facs>tang<am>&er;</am></me:facs><me:dipl>tang<ex>er</ex></me:dipl></w>
+<w><me:facs>ſkopu</me:facs><me:dipl>ſkopu</me:dipl></w>
+</l>
+<l n="7.8">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>tol</me:facs><me:dipl>tol</me:dipl></w>
+<w><me:facs>giǫꝛðu</me:facs><me:dipl>giǫꝛðu</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="8">
+<l n="8.1">
+<w><me:facs>Teꝼlðu</me:facs><me:dipl>Teꝼlðu</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w><w><me:facs>tvni</me:facs><me:dipl>tvni</me:dipl></w>
+</l>
+<l n="8.2">
+<w><me:facs>teit<am>&er;</am></me:facs><me:dipl>teit<ex>er</ex></me:dipl></w>
+<w><me:facs>uoꝛv</me:facs><me:dipl>uoꝛv</me:dipl></w>
+</l>
+<l n="8.3">
+<w><me:facs>v<am>&rsup;</am></me:facs><me:dipl>v<ex>ar</ex></me:dipl></w>
+<w><me:facs>þ<am>&bar;</am>m</me:facs><me:dipl>þ<ex>ei</ex>m</me:dipl></w>
+<w><me:facs>uettugiſ</me:facs><me:dipl>uettugiſ</me:dipl></w>
+</l>
+<lb ed="ms" n="13"/>
+<l n="8.4">
+<w><me:facs>vant</me:facs><me:dipl>vant</me:dipl></w>
+<w><me:facs>oꝛ</me:facs><me:dipl>oꝛ</me:dipl></w>
+<w><me:facs>gulli</me:facs><me:dipl>gulli</me:dipl></w>
+</l>
+<l n="8.5">
+<w><me:facs>unz</me:facs><me:dipl>unz</me:dipl></w>
+<w><me:facs>þriar</me:facs><me:dipl>þriar</me:dipl></w>
+<w><me:facs>komv</me:facs><me:dipl>komv</me:dipl></w>
+</l>
+<l n="8.6">
+<w><me:facs>þuſſa</me:facs><me:dipl>þuſſa</me:dipl></w>
+<w><me:facs>meyjar</me:facs><me:dipl>meyjar</me:dipl></w>
+</l>
+<l n="8.7">
+<w><me:facs>ꜳmatkar</me:facs><me:dipl>ꜳmatkar</me:dipl></w>
+<w><me:facs>miǫk</me:facs><me:dipl>miǫk</me:dipl></w>
+</l>
+<l n="8.8">
+<w><me:facs>oꝛ</me:facs><me:dipl>oꝛ</me:dipl></w>
+<w><me:facs>iǫtvn heimvm</me:facs><me:dipl>iǫtvn heimvm</me:dipl></w>
+</l>
+</lg>
+<lb ed="ms" n="14"/>
+<lg n="9">
+<l n="9.1">
+<w><me:facs>Þa</me:facs><me:dipl>Þa</me:dipl></w>
+<w><me:facs>g<am>&bar;</am>gu</me:facs><me:dipl>g<ex>en</ex>gu</me:dipl></w>
+<w><me:facs>regin</me:facs><me:dipl>regin</me:dipl></w>
+<w><me:facs>ǫll</me:facs><me:dipl>ǫll</me:dipl></w>
+</l>
+<l n="9.2">
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>rǫkſtola</me:facs><me:dipl>rǫkſtola</me:dipl></w>
+</l>
+<l n="9.3">
+<w><me:facs>gin<am>&bar;</am>heilug</me:facs><me:dipl>gin<ex>n</ex>heilug</me:dipl></w>
+<w><me:facs>goð</me:facs><me:dipl>goð</me:dipl></w>
+</l>
+<l n="9.4">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>v<am>&bar;</am></me:facs><me:dipl>v<ex>m</ex></me:dipl></w>
+<w><me:facs>þ<am>&bar;</am></me:facs><me:dipl>þ<ex>at</ex></me:dipl></w>
+<w><me:facs>giættuz</me:facs><me:dipl>giættuz</me:dipl></w>
+</l>
+<l n="9.5">
+<w><me:facs>hu<am>&er;</am>er</me:facs><me:dipl>hu<ex>er</ex>er</me:dipl></w>
+<w><me:facs>ſkyllꝺu</me:facs><me:dipl>ſkyllꝺu</me:dipl></w>
+<w><me:facs>ꝺu<am>&er;</am>gar</me:facs><me:dipl>ꝺu<ex>er</ex>gar</me:dipl></w>
+</l>
+<lb ed="ms" n="15"/>
+<l n="9.6">
+<w><me:facs>ꝺꝛott<am>&er;</am></me:facs><me:dipl>ꝺꝛott<ex>er</ex></me:dipl></w>
+<w><me:facs>ſkepia</me:facs><me:dipl>ſkepia</me:dipl></w>
+</l>
+<l n="9.7">
+<w><me:facs>oꝛ</me:facs><me:dipl>oꝛ</me:dipl></w>
+<w><me:facs>bꝛimi</me:facs><me:dipl>bꝛimi</me:dipl></w>
+<w><me:facs>bloðgv</me:facs><me:dipl>bloðgv</me:dipl></w>
+</l>
+<l n="9.8">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>oꝛ</me:facs><me:dipl>oꝛ</me:dipl></w>
+<w><me:facs>blamſ</me:facs><me:dipl>blamſ</me:dipl></w>
+<w><me:facs>leggiv<am>&bar;</am></me:facs><me:dipl>leggiv<ex>m</ex></me:dipl></w>
+</l>
+</lg>
+<lg n="10">
+<l n="10.1">
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>u<am>&rsup;</am></me:facs><me:dipl>u<ex>ar</ex></me:dipl></w>
+<name>
+<w><me:facs>moðſogn<am>&er;</am></me:facs><me:dipl>moðſogn<ex>er</ex></me:dipl></w>
+</name>
+</l>
+<l n="10.2">
+<w><me:facs>męztr</me:facs><me:dipl>męztr</me:dipl></w>
+<w><me:facs>oꝼ</me:facs><me:dipl>oꝼ</me:dipl></w>
+<lb ed="ms" n="16"/>
+<w><me:facs>oꝛðin<am>&bar;</am></me:facs><me:dipl>oꝛðin<ex>n</ex></me:dipl></w>
+</l>
+<l n="10.3">
+<w><me:facs>ꝺu<am>&er;</am>ga</me:facs><me:dipl>ꝺu<ex>er</ex>g</me:dipl></w>
+<w><me:facs>allra</me:facs><me:dipl>allra</me:dipl></w>
+</l>
+<l n="10.4">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<name>
+<w><me:facs>ꝺurin<am>&bar;</am></me:facs><me:dipl>ꝺurin<ex>n</ex></me:dipl></w>
+</name>
+<w><me:facs>an<am>&bar;</am>aʀ</me:facs><me:dipl>an<ex>n</ex>aʀ</me:dipl></w>
+</l>
+<l n="10.5">
+<w><me:facs>þ<am>&bar;</am>r</me:facs><me:dipl>þ<ex>ei</ex>r</me:dipl></w>
+<w><me:facs>manlikan</me:facs><me:dipl>manlikan</me:dipl></w>
+</l>
+<l n="10.6">
+<w><me:facs>mǫꝛg</me:facs><me:dipl>mǫꝛg</me:dipl></w>
+<w><me:facs>oꝼ</me:facs><me:dipl>oꝼ</me:dipl></w>
+<w><me:facs>gioꝛðv</me:facs><me:dipl>gioꝛðv</me:dipl></w>
+</l>
+<l n="10.7">
+<w><me:facs>ꝺu<am>&er;</am>ga</me:facs><me:dipl>ꝺu<ex>er</ex>ga</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>iǫꝛðu</me:facs><me:dipl>iǫꝛðu</me:dipl></w>
+</l>
+<l n="10.8">
+<w><me:facs>ſe<am>&bar;</am></me:facs><me:dipl>ſe<ex>m</ex></me:dipl></w>
+<lb ed="ms" n="17"/>
+<name>
+<w><me:facs>ꝺurin<am>&bar;</am></me:facs><me:dipl>ꝺurin<ex>n</ex></me:dipl></w>
+</name>
+<w><me:facs>ſagði</me:facs><me:dipl>ſagði</me:dipl></w>
+</l>
+</lg>
+<lg n="11">
+<l n="11.1">
+<name>
+<w><me:facs>Nyi</me:facs><me:dipl>Nyi</me:dipl></w>
+</name>
+<name>
+<w><me:facs>niði</me:facs><me:dipl>niði</me:dipl></w>
+</name>
+</l>
+<l n="11.2">
+<name>
+<w><me:facs>noꝛðꝛi</me:facs><me:dipl>noꝛðꝛi</me:dipl></w>
+</name>
+<name>
+<w><me:facs>ſuðꝛi</me:facs><me:dipl>ſuðꝛi</me:dipl></w>
+</name>
+</l>
+<l n="11.3">
+<name>
+<w><me:facs>auſtri</me:facs><me:dipl>auſtri</me:dipl></w>
+</name>
+<name>
+<w><me:facs>veſtri</me:facs><me:dipl>veſtri</me:dipl></w>
+</name>
+</l>
+<l n="11.4">
+<name>
+<w><me:facs>alþioꝼr</me:facs><me:dipl>alþioꝼr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>ꝺualin<am>&bar;</am></me:facs><me:dipl>ꝺualin<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="11.5">
+<name>
+<w><me:facs>naar</me:facs><me:dipl>naar</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>nain<am>&bar;</am></me:facs><me:dipl>nain<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<lb ed="ms" n="18"/>
+<l n="11.6">
+<name>
+<w><me:facs>nipingr</me:facs><me:dipl>nipingr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>ꝺain<am>&bar;</am></me:facs><me:dipl>ꝺain<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="11.7">
+<name>
+<w><me:facs>ueggr</me:facs><me:dipl>ueggr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>ganꝺ alꝼr</me:facs><me:dipl>ganꝺ alꝼr</me:dipl></w>
+</name>
+</l>
+<l n="11.8">
+<name>
+<w><me:facs>uinꝺꜳlꝼr</me:facs><me:dipl>uinꝺꜳlꝼr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>þoꝛin<am>&bar;</am></me:facs><me:dipl>þoꝛin<ex>n</ex></me:dipl></w>
+</name>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="12">
+<l n="12.1">
+<name>
+<w><me:facs>Biꝼvʀ</me:facs><me:dipl>Biꝼvʀ</me:dipl></w>
+</name>
+<name>
+<w><me:facs>baꝼvʀ</me:facs><me:dipl>baꝼvʀ</me:dipl></w>
+</name>
+</l>
+<l n="12.2">
+<name>
+<w><me:facs>bǫmbuʀ</me:facs><me:dipl>bǫmbuʀ</me:dipl></w>
+</name>
+<name>
+<w><me:facs>noꝛi</me:facs><me:dipl>noꝛi</me:dipl></w>
+</name>
+</l>
+<l n="12.3">
+<name>
+<w><me:facs>ꜳn</me:facs><me:dipl>ꜳn</me:dipl></w>
+</name>
+<lb ed="ms" n="19"/>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>onaʀ</me:facs><me:dipl>onaʀ</me:dipl></w>
+</name>
+</l>
+<l n="12.4">
+<name>
+<w><me:facs>ai</me:facs><me:dipl>ai</me:dipl></w>
+</name>
+<name>
+<w><me:facs>miǫðvitn<am>&er;</am></me:facs><me:dipl>miǫðvitn<ex>er</ex></me:dipl></w>
+</name>
+</l>
+<l n="12.5">
+<name>
+<w><me:facs>þrar</me:facs><me:dipl>þrar</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>þrain<am>&bar;</am></me:facs><me:dipl>þrain<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="12.6">
+<name>
+<w><me:facs>þroꝛ</me:facs><me:dipl>þroꝛ</me:dipl></w>
+</name>
+<name>
+<w><me:facs>litr</me:facs><me:dipl>litr</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>vitr</me:facs><me:dipl>vitr</me:dipl></w>
+</name>
+</l>
+<l n="12.7">
+<name>
+<w><me:facs>nyr</me:facs><me:dipl>nyr</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>nyrꜳðꝛ</me:facs><me:dipl>nyrꜳðꝛ</me:dipl></w>
+</name>
+</l>
+<l n="12.8">
+<w><me:facs>nv</me:facs><me:dipl>nv</me:dipl></w>
+<w><me:facs>heꝼi</me:facs><me:dipl>heꝼi</me:dipl></w>
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<lb ed="ms" n="20"/>
+<w><me:facs>rekka</me:facs><me:dipl>rekka</me:dipl></w>
+</l>
+<l n="12.9">
+<name>
+<w><me:facs>regin<am>&bar;</am></me:facs><me:dipl>regin<ex>n</ex></me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>rꜳðſviðꝛ</me:facs><me:dipl>rꜳðſviðꝛ</me:dipl></w>
+</name>
+</l>
+<l n="12.10">
+<w><me:facs>rett</me:facs><me:dipl>rett</me:dipl></w>
+<w><me:facs>v<am>&bar;</am></me:facs><me:dipl>v<ex>m</ex></me:dipl></w>
+<w><me:facs>talða</me:facs><me:dipl>talða</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="13">
+<l n="13.1">
+<name>
+<w><me:facs>Fili</me:facs><me:dipl>Fili</me:dipl></w>
+</name>
+<name>
+<w><me:facs>kili</me:facs><me:dipl>kili</me:dipl></w>
+</name>
+</l>
+<l n="13.2">
+<name>
+<w><me:facs>ꝼun<am>&bar;</am>ꝺin</me:facs><me:dipl>ꝼun<ex>n</ex>ꝺin</me:dipl></w>
+</name>
+<name>
+<w><me:facs>nali</me:facs><me:dipl>nali</me:dipl></w>
+</name>
+</l>
+<l n="13.3">
+<name>
+<w><me:facs>heꝼti</me:facs><me:dipl>heꝼti</me:dipl></w>
+</name>
+<name>
+<w><me:facs>ꝼili</me:facs><me:dipl>ꝼili</me:dipl></w>
+</name>
+</l>
+<l n="13.4">
+<name>
+<w><me:facs>hanaʀ</me:facs><me:dipl>hanaʀ</me:dipl></w>
+</name>
+<lb ed="ms" n="21"/>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>ſuiꝺʀ</me:facs><me:dipl>ſuiꝺʀ</me:dipl></w>
+</name>
+</l>
+<l n="13.5">
+<name>
+<w><me:facs>nꜳr</me:facs><me:dipl>nꜳr</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>nain<am>&bar;</am></me:facs><me:dipl>nain<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="13.6">
+<name>
+<w><me:facs>nipingr</me:facs><me:dipl>nipingr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>ꝺáin<am>&bar;</am></me:facs><me:dipl>ꝺáin<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="13.7">
+<name>
+<w><me:facs>billingr</me:facs><me:dipl>billingr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>bꝛuni</me:facs><me:dipl>bꝛuni</me:dipl></w>
+</name>
+</l>
+<l n="13.8">
+<name>
+<w><me:facs>billꝺꝛ</me:facs><me:dipl>billꝺꝛ</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>buri</me:facs><me:dipl>buri</me:dipl></w>
+</name>
+</l>
+<l n="13.9">
+<name>
+<w><me:facs>ꝼroꝛ</me:facs><me:dipl>ꝼroꝛ</me:dipl></w>
+</name>
+<name>
+<w><me:facs>ꝼoꝛn<lb ed="ms" n="22"/>bogi</me:facs><me:dipl>ꝼoꝛn<lb ed="ms" n="22"/>bogi</me:dipl></w>
+</name>
+</l>
+<l n="13.10">
+<name>
+<w><me:facs>ꝼreg</me:facs><me:dipl>ꝼreg</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>loni</me:facs><me:dipl>loni</me:dipl></w>
+</name>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="14">
+<l n="14.1">
+<name>
+<w><me:facs>Auruangr</me:facs><me:dipl>Auruangr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>iari</me:facs><me:dipl>iari</me:dipl></w>
+</name>
+</l>
+<l n="14.2">
+<name>
+<w><me:facs>eikin ſkiallꝺi</me:facs><me:dipl>eikin ſkiallꝺi</me:dipl></w>
+</name>
+</l>
+<l n="14.3">
+<w><me:facs>mꜳl</me:facs><me:dipl>mꜳl</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>ꝺu<am>&er;</am>ga</me:facs><me:dipl>ꝺu<ex>er</ex>ga</me:dipl></w>
+</l>
+<l n="14.4">
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<name>
+<w><me:facs>ꝺualinſ</me:facs><me:dipl>ꝺualinſ</me:dipl></w>
+</name>
+<w><me:facs>liði</me:facs><me:dipl>liði</me:dipl></w>
+</l>
+<lb ed="ms" n="23"/>
+<l n="14.5">
+<w><me:facs>liona</me:facs><me:dipl>liona</me:dipl></w>
+<w><me:facs>kinꝺu<am>&bar;</am></me:facs><me:dipl>kinꝺu<ex>m</ex></me:dipl></w>
+</l>
+<l n="14.6">
+<w><me:facs>t<am>&isup;</am></me:facs><me:dipl>t<ex>il</ex></me:dipl></w>
+<name>
+<w><me:facs>loꝼarſ</me:facs><me:dipl>loꝼarſ</me:dipl></w>
+</name>
+<w><me:facs>telia</me:facs><me:dipl>telia</me:dipl></w>
+</l>
+<l n="14.7">
+<w><me:facs>þ<am>&bar;</am>m</me:facs><me:dipl>þ<ex>ei</ex>m</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>ſottu</me:facs><me:dipl>ſottu</me:dipl></w>
+</l>
+<l n="14.8">
+<w><me:facs>ꝼ<am>&rabar;</am></me:facs><me:dipl>ꝼ<ex>ra</ex></me:dipl></w>
+<name>
+<w><me:facs>ſalar ſteini</me:facs><me:dipl>ſalar ſteini</me:dipl></w>
+</name>
+</l>
+<l n="14.9">
+<w><me:facs>ǫꝛvanga</me:facs><me:dipl>ǫꝛvanga</me:dipl></w>
+<w><me:facs>ſiǫt</me:facs><me:dipl>ſiǫt</me:dipl></w>
+</l>
+<l n="14.10">
+<w><me:facs>t<am>&isup;</am></me:facs><me:dipl>t<ex>il</ex></me:dipl></w>
+<name>
+<w><me:facs>iǫꝛv valla</me:facs><me:dipl>iǫꝛv valla</me:dipl></w>
+</name>
+</l>
+</lg>
+<lb ed="ms" n="24"/>
+<lg n="15">
+<l n="15.1">
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>var</me:facs><me:dipl>var</me:dipl></w>
+<name>
+<w><me:facs>ꝺꝛauꝼn<am>&er;</am></me:facs><me:dipl>ꝺꝛauꝼn<ex>er</ex></me:dipl></w>
+</name>
+</l>
+<l n="15.2">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>ꝺolgþ<add place="supralinear">r</add>aſer</me:facs><me:dipl>ꝺolgþ<add place="supralinear">r</add>aſer</me:dipl></w>
+</name>
+</l>
+<l n="15.3">
+<name>
+<w><me:facs>hꜳr</me:facs><me:dipl>hꜳr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>haugſpoꝛi</me:facs><me:dipl>haugſpoꝛi</me:dipl></w>
+</name>
+</l>
+<l n="15.4">
+<name>
+<w><me:facs>hlevargr</me:facs><me:dipl>hlevargr</me:dipl></w>
+</name>
+<name>
+<w><me:facs>gloin<am>&bar;</am></me:facs><me:dipl>gloin<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="15.5">
+<name>
+<w><me:facs>ſkirꝼ<am>&er;</am></me:facs><me:dipl>ſkirꝼ<ex>er</ex></me:dipl></w>
+</name>
+<name>
+<w><me:facs>uirv<am>&er;</am></me:facs><me:dipl>uirv<ex>er</ex></me:dipl></w>
+</name>
+</l>
+<l n="15.6">
+<name>
+<w><me:facs>ſka<lb ed="ms" n="25"/>ꝼiðꝛ</me:facs><me:dipl>ſka<lb ed="ms" n="25"/>ꝼiðꝛ</me:dipl></w>
+</name>
+<name>
+<w><me:facs>ai</me:facs><me:dipl>ai</me:dipl></w>
+</name>
+</l>
+<l n="15.7">
+<name>
+<w><me:facs>aalꝼr</me:facs><me:dipl>aalꝼr</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>yngvi</me:facs><me:dipl>yngvi</me:dipl></w>
+</name>
+</l>
+<l n="15.8">
+<name>
+<w><me:facs>eikinſkiallꝺi</me:facs><me:dipl>eikinſkiallꝺi</me:dipl></w>
+</name>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="16">
+<l n="16.1">
+<w><me:facs>Þat</me:facs><me:dipl>Þat</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>æ</me:facs><me:dipl>æ</me:dipl></w>
+<w><me:facs>vppi</me:facs><me:dipl>vppi</me:dipl></w>
+</l>
+<l n="16.2">
+<w><me:facs>meðan</me:facs><me:dipl>meðan</me:dipl></w>
+<w><me:facs>ǫllꝺ</me:facs><me:dipl>ǫllꝺ</me:dipl></w>
+<w><me:facs>liꝼ<am>&er;</am></me:facs><me:dipl>liꝼ<ex>er</ex></me:dipl></w>
+</l>
+<l n="16.3">
+<w><me:facs>lang<lb ed="ms" n="26"/>niðia</me:facs><me:dipl>lang<lb ed="ms" n="26"/>niðia</me:dipl></w>
+<w><me:facs>tal</me:facs><me:dipl>tal</me:dipl></w>
+</l>
+<l n="16.4">
+<name>
+<w><me:facs>loꝼarſ</me:facs><me:dipl>loꝼarſ</me:dipl></w>
+</name>
+<w><me:facs>haꝼat</me:facs><me:dipl>haꝼat</me:dipl></w>
+</l>
+</lg>
+<lg n="17">
+<l n="17.1">
+<!--NB att detta m&aring;ste kontrolleras-->
+<w><me:facs>vnꝺz</me:facs><me:dipl>vnꝺz</me:dipl></w>
+<w><me:facs>þꝛiar</me:facs><me:dipl>þꝛiar</me:dipl></w>
+<w><me:facs>komu</me:facs><me:dipl>komu</me:dipl></w>
+</l>
+<l n="17.2">
+<w><me:facs>þvſſa</me:facs><me:dipl>þvſſa</me:dipl></w>
+<w><me:facs>mey<am>&rsup;</am></me:facs><me:dipl>mey<ex>ar</ex></me:dipl></w>
+</l>
+<l n="17.3">
+<w><me:facs>ꜳſtk<am>&er;</am></me:facs><me:dipl>ꜳſtk<ex>er</ex></me:dipl></w>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>ǫꝼlg<am>&er;</am></me:facs><me:dipl>ǫꝼlg<ex>er</ex></me:dipl></w>
+</l>
+<l n="17.4">
+<w><me:facs>æſer</me:facs><me:dipl>æſer</me:dipl></w>
+<lb ed="ms" n="27"/>
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<w><me:facs>hvſi</me:facs><me:dipl>hvſi</me:dipl></w>
+</l>
+<l n="17.5">
+<w><me:facs>ꝼvnꝺu</me:facs><me:dipl>ꝼvnꝺu</me:dipl></w>
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>l<am>&bar;</am>ꝺi</me:facs><me:dipl>l<ex>an</ex>ꝺi</me:dipl></w>
+</l>
+<l n="17.6">
+<w><me:facs>litt</me:facs><me:dipl>litt</me:dipl></w>
+<w><me:facs>meganꝺi</me:facs><me:dipl>meganꝺi</me:dipl></w>
+</l>
+<l n="17.7">
+<name>
+<w><me:facs>aſk</me:facs><me:dipl>aſk</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>emblv</me:facs><me:dipl>emblv</me:dipl></w>
+</name>
+</l>
+<l n="17.8">
+<w><me:facs>oꝛluglauſa</me:facs><me:dipl>oꝛluglauſa</me:dipl></w>
+</l>
+</lg>
+<!--Notera att jag avviker fr&aring; Bugges strofnumrering h&auml;r-->
+<lg n="18">
+<l n="18.1">
+<w><me:facs>ǫnꝺ</me:facs><me:dipl>ǫnꝺ</me:dipl></w>
+<w><me:facs>þau</me:facs><me:dipl>þau</me:dipl></w>
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<lb ed="ms" n="28"/>
+<w><me:facs>ꜳttu</me:facs><me:dipl>ꜳttu</me:dipl></w>
+</l>
+<l n="18.2">
+<w><me:facs>oð</me:facs><me:dipl>oð</me:dipl></w>
+<w><me:facs>þau</me:facs><me:dipl>þau</me:dipl></w>
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>hǫꝼðu</me:facs><me:dipl>hǫꝼðu</me:dipl></w>
+</l>
+<l n="18.3">
+<w><me:facs>lꜳ</me:facs><me:dipl>lꜳ</me:dipl></w>
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>læti</me:facs><me:dipl>læti</me:dipl></w>
+</l>
+<l n="18.4">
+<w><me:facs>ne</me:facs><me:dipl>ne</me:dipl></w>
+<w><me:facs>litv</me:facs><me:dipl>litv</me:dipl></w>
+<w><me:facs>goða</me:facs><me:dipl>goða</me:dipl></w>
+</l>
+<l n="18.5">
+<w><me:facs>ǫnꝺ</me:facs><me:dipl>ǫnꝺ</me:dipl></w>
+<w><me:facs>gaꝼ</me:facs><me:dipl>gaꝼ</me:dipl></w>
+<name>
+<w><me:facs>oðin<am>&bar;</am></me:facs><me:dipl>oðin<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="18.6">
+<w><me:facs>oð</me:facs><me:dipl>oð</me:dipl></w>
+<w><me:facs>gaꝼ</me:facs><me:dipl>gaꝼ</me:dipl></w>
+<lb ed="ms" n="29"/>
+<name>
+<w><me:facs>hen<am>&er;</am></me:facs><me:dipl>hen<ex>er</ex></me:dipl></w>
+</name>
+</l>
+<l n="18.7">
+<w><me:facs>lꜳ</me:facs><me:dipl>lꜳ</me:dipl></w>
+<w><me:facs>gaꝼ</me:facs><me:dipl>gaꝼ</me:dipl></w>
+<name>
+<w><me:facs>loðuʀ</me:facs><me:dipl>loðuʀ</me:dipl></w>
+</name>
+</l>
+<l n="18.8">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>litu</me:facs><me:dipl>litu</me:dipl></w>
+<w><me:facs>goða</me:facs><me:dipl>goða</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="19">
+<l n="19.1">
+<w><me:facs>Aſk</me:facs><me:dipl>Aſk</me:dipl></w>
+<w><me:facs>ueit</me:facs><me:dipl>ueit</me:dipl></w>
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<w><me:facs>ſtanꝺa</me:facs><me:dipl>ſtanꝺa</me:dipl></w>
+</l>
+<l n="19.2">
+<w><me:facs>heit<am>&er;</am></me:facs><me:dipl>heit<ex>er</ex></me:dipl></w>
+<name>
+<w><me:facs>yggꝺꝛaſill</me:facs><me:dipl>yggꝺꝛaſill</me:dipl></w>
+</name>
+<lb ed="ms" n="30"/>
+</l>
+<l n="19.3">
+<w><me:facs>haar</me:facs><me:dipl>haar</me:dipl></w>
+<w><me:facs>baðmr</me:facs><me:dipl>baðmr</me:dipl></w>
+<w><me:facs>auſin<am>&bar;</am></me:facs><me:dipl>auſin<ex>n</ex></me:dipl></w>
+</l>
+<l n="19.4">
+<w><me:facs>huita</me:facs><me:dipl>huita</me:dipl></w>
+<w><me:facs>auri</me:facs><me:dipl>auri</me:dipl></w>
+</l>
+<l n="19.5">
+<w><me:facs>þaðan</me:facs><me:dipl>þaðan</me:dipl></w>
+<w><me:facs>koma</me:facs><me:dipl>koma</me:dipl></w>
+<w><me:facs>ꝺǫggvar</me:facs><me:dipl>ꝺǫggvar</me:dipl></w>
+</l>
+<l n="19.6">
+<w><me:facs>þęrſ</me:facs><me:dipl>þęrſ</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w><w><me:facs>ꝺala</me:facs><me:dipl>ꝺala</me:dipl></w>
+<w><me:facs>ꝼalla</me:facs><me:dipl>ꝼalla</me:dipl></w>
+</l>
+<lb ed="ms" n="31"/>
+<l n="19.7">
+<w><me:facs>ſtenꝺꝛ</me:facs><me:dipl>ſtenꝺꝛ</me:dipl></w>
+<w><me:facs>æ</me:facs><me:dipl>æ</me:dipl></w>
+<w><me:facs>yꝼ<am>&er;</am></me:facs><me:dipl>yꝼ<ex>er</ex></me:dipl></w>
+<w><me:facs>græn<am>&bar;</am></me:facs><me:dipl>græn<ex>n</ex></me:dipl></w>
+</l>
+<l n="19.8">
+<name>
+<w><me:facs>vrðar</me:facs><me:dipl>vrðar</me:dipl></w>
+</name>
+<w><me:facs>brun<am>&bar;</am>i</me:facs><me:dipl>brun<ex>n</ex>i</me:dipl></w>
+</l>
+</lg>
+<lg n="20">
+<l n="20.1">
+<w><me:facs>þaðan</me:facs><me:dipl>þaðan</me:dipl></w>
+<w><me:facs>koma</me:facs><me:dipl>koma</me:dipl></w>
+<w><me:facs>meyiar</me:facs><me:dipl>meyiar</me:dipl></w>
+</l>
+<l n="20.2">
+<w><me:facs>margſ</me:facs><me:dipl>margſ</me:dipl></w>
+<w><me:facs>vitan<lb ed="ms" n="32"/>ꝺi</me:facs><me:dipl>vitan<lb ed="ms" n="32"/>ꝺi</me:dipl></w>
+</l>
+<l n="20.3">
+<w><me:facs>þriar</me:facs><me:dipl>þriar</me:dipl></w>
+<w><me:facs>oꝛ</me:facs><me:dipl>oꝛ</me:dipl></w>
+<w><me:facs>þ<am>&bar;</am>m</me:facs><me:dipl>þ<ex>ei</ex>m</me:dipl></w>
+<w><me:facs>ſal</me:facs><me:dipl>ſal</me:dipl></w>
+</l>
+<l n="20.4">
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>a</me:facs><me:dipl>a</me:dipl></w>
+<w><me:facs>þolli</me:facs><me:dipl>þolli</me:dipl></w>
+<w><me:facs>ſtenꝺꝛ</me:facs><me:dipl>ſtenꝺꝛ</me:dipl></w>
+</l>
+<l n="20.5">
+<name>
+<w><me:facs>urð</me:facs><me:dipl>urð</me:dipl></w>
+</name>
+<w><me:facs>hetv</me:facs><me:dipl>hetv</me:dipl></w>
+<w><me:facs>eina</me:facs><me:dipl>eina</me:dipl></w>
+</l>
+<l n="20.6">
+<w><me:facs>aðꝛa</me:facs><me:dipl>aðꝛa</me:dipl></w>
+<name>
+<w><me:facs>u<am>&er;</am>ðanꝺi</me:facs><me:dipl><ex>er</ex>ðanꝺi</me:dipl></w>
+</name>
+</l>
+<l n="20.7">
+<w><me:facs>ſkꜳ<lb ed="ms" n="33"/>ru</me:facs><me:dipl>ſkꜳ<lb ed="ms" n="33"/>ru</me:dipl></w>
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>ſkiði</me:facs><me:dipl>ſkiði</me:dipl></w>
+</l>
+<l n="20.8">
+<name>
+<w><me:facs>ſkullꝺ</me:facs><me:dipl>ſkullꝺ</me:dipl></w>
+</name>
+<w><me:facs>hina</me:facs><me:dipl>hina</me:dipl></w>
+<w><me:facs>þriðiu</me:facs><me:dipl>þriðiu</me:dipl></w>
+</l>
+</lg>
+<lg n="21">
+<l n="21.1">
+<w><me:facs>þær</me:facs><me:dipl>þær</me:dipl></w>
+<w><me:facs>log</me:facs><me:dipl>log</me:dipl></w>
+<w><me:facs>logðu</me:facs><me:dipl>logðu</me:dipl></w>
+</l>
+<l n="21.2">
+<w><me:facs>þær</me:facs><me:dipl>þær</me:dipl></w>
+<w><me:facs>liꝼ</me:facs><me:dipl>liꝼ</me:dipl></w>
+<w><me:facs>kuru</me:facs><me:dipl>kuru</me:dipl></w>
+</l>
+<l n="21.3">
+<w><me:facs>all<lb ed="ms" n="34"/>ꝺa</me:facs><me:dipl>all<lb ed="ms" n="34"/>ꝺa</me:dipl></w>
+<w><me:facs>bǫꝛnum</me:facs><me:dipl>bǫꝛnum</me:dipl></w>
+</l>
+<l n="21.4">
+<w><me:facs>ǫꝛlǫg</me:facs><me:dipl>ǫꝛlǫg</me:dipl></w>
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<w><me:facs>ſegia</me:facs><me:dipl>ſegia</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="22">
+<l n="22.1">
+<w><me:facs>Þa</me:facs><me:dipl>Þa</me:dipl></w>
+<w><me:facs>g<am>&bar;</am>gu</me:facs><me:dipl>g<ex>en</ex>gu</me:dipl></w>
+<w><me:facs>regin</me:facs><me:dipl>regin</me:dipl></w>
+<w><me:facs>ǫll</me:facs><me:dipl>ǫll</me:dipl></w>
+</l>
+<l n="22.2">
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>rǫkſtola</me:facs><me:dipl>rǫkſtola</me:dipl></w>
+</l>
+<l n="22.3">
+<w><me:facs>gin<am>&bar;</am>heilugh</me:facs><me:dipl>gin<ex>n</ex>heilugh</me:dipl></w>
+<lb ed="ms" n="35"/>
+<w><me:facs>guð</me:facs><me:dipl>guð</me:dipl></w>
+</l>
+<l n="22.4">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>um</me:facs><me:dipl>um</me:dipl></w>
+<w><me:facs>þ<am>&bar;</am></me:facs><me:dipl>þ<ex>at</ex></me:dipl></w>
+<w><me:facs>gięttuz</me:facs><me:dipl>gięttuz</me:dipl></w>
+</l>
+<l n="22.5">
+<w><me:facs>hv<am>&er;</am>r</me:facs><me:dipl>hv<ex>er</ex>r</me:dipl></w>
+<w><me:facs>heꝼði</me:facs><me:dipl>heꝼði</me:dipl></w>
+<w><me:facs>loꝼt</me:facs><me:dipl>loꝼt</me:dipl></w>
+<w><me:facs>allt</me:facs><me:dipl>allt</me:dipl></w>
+</l>
+<l n="22.6">
+<w><me:facs>lęui</me:facs><me:dipl>lęui</me:dipl></w>
+<w><me:facs>blanꝺit</me:facs><me:dipl>blanꝺit</me:dipl></w>
+</l>
+<l n="22.7">
+<w><me:facs><am>ę</am></me:facs><me:dipl>ę<ex>ða</ex></me:dipl></w>
+<w><me:facs>ætt</me:facs><me:dipl>ætt</me:dipl></w>
+<w><me:facs>iǫ<lb ed="ms" n="36"/>tunſ</me:facs><me:dipl>iǫ<lb ed="ms" n="36"/>tunſ</me:dipl></w>
+</l>
+<l n="22.8">
+<w><me:facs>oðſ</me:facs><me:dipl>oðſ</me:dipl></w>
+<w><me:facs>mey</me:facs><me:dipl>mey</me:dipl></w>
+<w><me:facs>geꝼna</me:facs><me:dipl>geꝼna</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="23">
+<l n="23.1">
+<name>
+<w><me:facs>Þoꝛr</me:facs><me:dipl>Þoꝛr</me:dipl></w>
+</name>
+<w><me:facs>ein<am>&bar;</am></me:facs><me:dipl>ein<ex>n</ex></me:dipl></w>
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>uꜳ</me:facs><me:dipl>uꜳ</me:dipl></w>
+</l>
+<l n="23.2">
+<w><me:facs>þrungin<am>&bar;</am></me:facs><me:dipl>rungin<ex>n</ex></me:dipl></w>
+<w><me:facs>moði</me:facs><me:dipl>moði</me:dipl></w>
+</l>
+<l n="23,3">
+<w><me:facs>han<am>&bar;</am></me:facs><me:dipl>han<ex>n</ex></me:dipl></w>
+<w><me:facs>ſiallꝺan</me:facs><me:dipl>ſiallꝺan</me:dipl></w>
+<lb ed="ms" n="37"/>
+<w><me:facs>ſitr</me:facs><me:dipl>ſitr</me:dipl></w>
+</l>
+<l n="23.4">
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>h<am>&bar;</am>n</me:facs><me:dipl>h<ex>an</ex>n</me:dipl></w>
+<w><me:facs>ſlikt</me:facs><me:dipl>ſlikt</me:dipl></w>
+<w><me:facs>oꝼ</me:facs><me:dipl>oꝼ</me:dipl></w>
+<w><me:facs>ꝼregn</me:facs><me:dipl>ꝼregn</me:dipl></w>
+</l>
+<l n="23.5">
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>g<am>&bar;</am>guz</me:facs><me:dipl>g<ex>en</ex>guz</me:dipl></w>
+<w><me:facs>eiðar</me:facs><me:dipl>eiðar</me:dipl></w>
+</l>
+<l n="23.6">
+<w><me:facs>oꝛð</me:facs><me:dipl>oꝛð</me:dipl></w>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>ok </me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>ſæri</me:facs><me:dipl>ſæri</me:dipl></w>
+</l>
+<l n="23.7">
+<w><me:facs>maal</me:facs><me:dipl>maal</me:dipl></w>
+<w><me:facs>ǫll</me:facs><me:dipl>ǫll</me:dipl></w>
+<lb ed="ms" n="38"/>
+<w><me:facs>meginlig</me:facs><me:dipl>meginlig</me:dipl></w>
+</l>
+<l n="23.8">
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>meðal</me:facs><me:dipl>meðal</me:dipl></w>
+<w><me:facs>voꝛu</me:facs><me:dipl>voꝛu</me:dipl></w>
+</l>
+</lg>
+<pb ed="ms" n="20v"/>
+<lb ed="ms" n="1"/>
+<lg n="24">
+<l n="24.1">
+<w><me:facs>Veit</me:facs><me:dipl>Veit</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<name>
+<w><me:facs>heimꝺallar</me:facs><me:dipl>heimꝺallar</me:dipl></w>
+</name>
+</l>
+<l n="24.2">
+<w><me:facs>hlioð</me:facs><me:dipl>hlioð</me:dipl></w>
+<w><me:facs>um</me:facs><me:dipl>um</me:dipl></w>
+<w><me:facs>ꝼolgit</me:facs><me:dipl>ꝼolgit</me:dipl></w>
+</l>
+<l n="24.3">
+<w><me:facs>vnꝺ<am>&er;</am></me:facs><me:dipl>vnꝺ<ex>er</ex></me:dipl></w>
+<w><me:facs>heiðvǫnv<am>&bar;</am></me:facs><me:dipl>heiðvǫnv<ex>m</ex></me:dipl></w>
+</l>
+<l n="24.4">
+<w><me:facs>helgu<am>&bar;</am></me:facs><me:dipl>helgu<ex>m</ex></me:dipl></w>
+<w><me:facs>baðmi</me:facs><me:dipl>baðmi</me:dipl></w>
+</l>
+<l n="24.5">
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>ſer</me:facs><me:dipl>ſer</me:dipl></w>
+<lb ed="ms" n="2"/>
+<w><me:facs>h<am>&osup;</am></me:facs><me:dipl>h<ex>on</ex></me:dipl></w>
+<w><me:facs>avſaz</me:facs><me:dipl>avſaz</me:dipl></w>
+</l>
+<l n="24.6">
+<w><me:facs>ǫꝛgu<am>&bar;</am></me:facs><me:dipl>ǫꝛgu<ex>m</ex></me:dipl></w>
+<w><me:facs>ꝼoꝛſi</me:facs><me:dipl>ꝼoꝛſi</me:dipl></w>
+</l>
+<l n="24.7">
+<w><me:facs>aꝼ</me:facs><me:dipl>aꝼ</me:dipl></w>
+<w><me:facs>ueði</me:facs><me:dipl>ueði</me:dipl></w>
+<name>
+<w><me:facs>ualꝼǫðꝛſ</me:facs><me:dipl>ualꝼǫðꝛſ</me:dipl></w>
+</name>
+</l>
+<l n="24.8">
+<w><me:facs>uitu</me:facs><me:dipl>uitu</me:dipl></w>
+<w><me:facs>þ<am>&er;</am></me:facs><me:dipl>þ<ex>er</ex></me:dipl></w>
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>ę<am>&dot;</am></me:facs><me:dipl>ę<ex>ða</ex></me:dipl></w>
+<w><me:facs>huat</me:facs><me:dipl>huat</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="25">
+<l n="25.1">
+<w><me:facs>Auſtr</me:facs><me:dipl>Auſtr</me:dipl></w>
+<w><me:facs>byr</me:facs><me:dipl>byr</me:dipl></w>
+<w><me:facs>hin</me:facs><me:dipl>hin</me:dipl></w>
+<w><me:facs>allꝺna</me:facs><me:dipl>allꝺna</me:dipl></w>
+</l>
+<l n="25.2">
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<lb ed="ms" n="3"/>
+<w><me:facs>iarnviði</me:facs><me:dipl>iarnviði</me:dipl></w>
+</l>
+<l n="25.3">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>ꝼeð<am>&er;</am></me:facs><me:dipl>ꝼeð<ex>er</ex></me:dipl></w>
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+</l>
+<l n="25.4">
+<name>
+<w><me:facs>ꝼenriſ</me:facs><me:dipl>ꝼenriſ</me:dipl></w>
+</name>
+<w><me:facs>kinꝺ<am>&er;</am></me:facs><me:dipl>kinꝺ<ex>er</ex></me:dipl></w>
+</l>
+<l n="25.5">
+<w><me:facs>v<am>&er;</am>ðꝛ</me:facs><me:dipl>v<ex>er</ex>ðꝛ</me:dipl></w>
+<w><me:facs>aꝼ</me:facs><me:dipl>aꝼ</me:dipl></w>
+<w><me:facs>þ<am>&bar;</am>m</me:facs><me:dipl>þ<ex>ei</ex>m</me:dipl></w>
+<w><me:facs>ǫllum</me:facs><me:dipl>ǫllum</me:dipl></w>
+</l>
+<l n="25.6">
+<w><me:facs>ein<am>&bar;</am>a</me:facs><me:dipl>ein<ex>n</ex>a</me:dipl></w>
+<w><me:facs>nǫkkur</me:facs><me:dipl>nǫkkur</me:dipl></w>
+</l>
+<l n="25.7">
+<w><me:facs>tunglſ</me:facs><me:dipl>tunglſ</me:dipl></w>
+<w><me:facs>t<gap/><lb ed="ms" n="4"/>gari</me:facs><me:dipl>t<gap/><lb ed="ms" n="4"/>gari</me:dipl></w>
+</l>
+<l n="25.8">
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>trǫllz</me:facs><me:dipl>trǫllz</me:dipl></w>
+<w><me:facs>hami</me:facs><me:dipl>hami</me:dipl></w>
+</l>
+</lg>
+<!--NB h&auml;r bryter jag Bugges strofnumrering-->
+<lg n="26">
+<l n="26.1">
+<w><me:facs>ꝼylliz</me:facs><me:dipl>ꝼylliz</me:dipl></w>
+<w><me:facs>ꝼiǫꝛꝼi</me:facs><me:dipl>ꝼiǫꝛꝼi</me:dipl></w>
+</l>
+<l n="26.2">
+<w><me:facs>ꝼeig<am>&rabar;</am></me:facs><me:dipl>ꝼeig<ex>ra</ex></me:dipl></w>
+<w><me:facs>man<am>&bar;</am>a</me:facs><me:dipl>man<ex>n</ex>a</me:dipl></w>
+</l>
+<l n="26.3">
+<w><me:facs>ryðꝛ</me:facs><me:dipl>ryðꝛ</me:dipl></w>
+<w><me:facs>ragna</me:facs><me:dipl>ragna</me:dipl></w>
+<w><me:facs>ſiǫt</me:facs><me:dipl>ſiǫt</me:dipl></w>
+</l>
+<l n="26.4">
+<w><me:facs>rauðu<am>&bar;</am></me:facs><me:dipl>rauðu<ex>m</ex></me:dipl></w>
+<w><me:facs>ꝺꝛeyra</me:facs><me:dipl>ꝺꝛeyra</me:dipl></w>
+</l>
+<l n="26.5">
+<w><me:facs>ſvǫꝛt</me:facs><me:dipl>ſvǫꝛt</me:dipl></w>
+<w><me:facs>v<am>&er;</am>ða</me:facs><me:dipl>v<ex>er</ex>ða</me:dipl></w>
+<lb ed="ms" n="5"/>
+<w><me:facs>ſolſkin</me:facs><me:dipl>ſolſkin</me:dipl></w>
+</l>
+<l n="26.6">
+<w><me:facs>um</me:facs><me:dipl>um</me:dipl></w>
+<w><me:facs>ſumvr</me:facs><me:dipl>ſumvr</me:dipl></w>
+<w><me:facs>eꝼt<am>&er;</am></me:facs><me:dipl>eꝼt<ex>er</ex></me:dipl></w>
+</l>
+<l n="26.7">
+<w><me:facs>ueðꝛ</me:facs><me:dipl>ueðꝛ</me:dipl></w>
+<w><me:facs>ǫll</me:facs><me:dipl>ǫll</me:dipl></w>
+<w><me:facs>ualynꝺ</me:facs><me:dipl>ualynꝺ</me:dipl></w>
+</l>
+<l n="26.8">
+<w><me:facs>uitu</me:facs><me:dipl>uitu</me:dipl></w>
+<w><me:facs>þ<am>&er;</am></me:facs><me:dipl>þ<ex>er</ex></me:dipl></w>
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>ęðꝛ</me:facs><me:dipl>ęðꝛ</me:dipl></w>
+<w><me:facs>huat</me:facs><me:dipl>huat</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="27">
+<l n="27.1">
+<w><me:facs>Þat</me:facs><me:dipl>Þat</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>ꝼolk<lb ed="ms" n="6"/>uig</me:facs><me:dipl>ꝼolk<lb ed="ms" n="6"/>uig</me:dipl></w>
+</l>
+<l n="27.2">
+<w><me:facs>ꝼyrſt</me:facs><me:dipl>ꝼyrſt</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>heimi</me:facs><me:dipl>heimi</me:dipl></w>
+</l>
+<l n="27.3">
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<name>
+<w><me:facs>gullueig</me:facs><me:dipl>gullueig</me:dipl></w>
+</name>
+</l>
+<l n="27.4">
+<w><me:facs>geiru<am>&bar;</am></me:facs><me:dipl>geiru<ex>m</ex></me:dipl></w>
+<w><me:facs>ſtuꝺꝺi</me:facs><me:dipl>ſtuꝺꝺi</me:dipl></w>
+</l>
+<l n="27.5">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>hǫll</me:facs><me:dipl>hǫll</me:dipl></w>
+<name>
+<w><me:facs>hꜳrſ</me:facs><me:dipl>hꜳrſ</me:dipl></w>
+</name>
+</l>
+<l n="27.6">
+<w><me:facs>h<am>&bar;</am>a</me:facs><me:dipl>h<ex>an</ex>a</me:dipl></w>
+<w><me:facs>bꝛenꝺu</me:facs><me:dipl>bꝛenꝺu</me:dipl></w>
+</l>
+<l n="27.7">
+<w><me:facs>þꝛyſvar</me:facs><me:dipl>þꝛyſvar</me:dipl></w>
+<w><me:facs>bꝛen<lb ed="ms" n="7"/>ꝺv</me:facs><me:dipl>bꝛen<lb ed="ms" n="7"/>ꝺv</me:dipl></w>
+</l>
+<l n="27.8">
+<w><me:facs>þryſvar</me:facs><me:dipl>þryſvar</me:dipl></w>
+<w><me:facs>brenꝺv</me:facs><me:dipl>brenꝺv</me:dipl></w>
+</l>
+<l n="27.9">
+<w><me:facs>þryſvar</me:facs><me:dipl>þryſvar</me:dipl></w>
+<w><me:facs>boꝛna</me:facs><me:dipl>boꝛna</me:dipl></w>
+</l>
+<l n="27.10">
+<w><me:facs>opt</me:facs><me:dipl>opt</me:dipl></w>
+<w><me:facs>oſiallꝺan</me:facs><me:dipl>oſiallꝺan</me:dipl></w>
+</l>
+<l n="27.11">
+<w><me:facs>þo</me:facs><me:dipl>þo</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>en</me:facs><me:dipl>en</me:dipl></w>
+<w><me:facs>liꝼ<am>&er;</am></me:facs><me:dipl>liꝼ<ex>er</ex></me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="28">
+<l n="28.1">
+<name>
+<w><me:facs>Heiði</me:facs><me:dipl>Heiði</me:dipl></w>
+</name>
+<w><me:facs>hana</me:facs><me:dipl>hana</me:dipl></w>
+<w><me:facs>hetv</me:facs><me:dipl>hetv</me:dipl></w>
+</l>
+<l n="28.2">
+<w><me:facs>hu<am>&rsup;</am>ſ</me:facs><me:dipl>hu<ex>ar</ex>ſ</me:dipl></w>
+<lb ed="ms" n="8"/>
+<w><me:facs>til</me:facs><me:dipl>til</me:dipl></w>
+<w><me:facs>hvſa</me:facs><me:dipl>hvſa</me:dipl></w>
+<w><me:facs>ko<am>&bar;</am></me:facs><me:dipl>ko<ex>m</ex></me:dipl></w>
+</l>
+<l n="28.3">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>vǫlu</me:facs><me:dipl>vǫlu</me:dipl></w>
+<w><me:facs>vel ſpa</me:facs><me:dipl>vel ſpa</me:dipl></w>
+</l>
+<l n="28.4">
+<w><me:facs>uiti</me:facs><me:dipl>uiti</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>ganꝺa</me:facs><me:dipl>ganꝺa</me:dipl></w>
+</l>
+<l n="28.5">
+<w><me:facs>ſeið</me:facs><me:dipl>ſeið</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>hvarſ</me:facs><me:dipl>hvarſ</me:dipl></w>
+<w><me:facs>hvn</me:facs><me:dipl>hvn</me:dipl></w>
+<w><me:facs>kun<am>&bar;</am>i</me:facs><me:dipl>kun<ex>n</ex>i</me:dipl></w>
+</l>
+<l n="28.6">
+<w><me:facs>ſeið</me:facs><me:dipl>ſeið</me:dipl></w>
+<w><me:facs>h<am>&osup;</am></me:facs><me:dipl>h<ex>on</ex></me:dipl></w>
+<w><me:facs>hvglei<lb ed="ms" n="9"/>kin</me:facs><me:dipl>hvglei<lb ed="ms" n="9"/>kin</me:dipl></w>
+</l>
+<l n="28.7">
+<w><me:facs>æ</me:facs><me:dipl>æ</me:dipl></w>
+<w><me:facs>var</me:facs><me:dipl>var</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>angan<am>&bar;</am></me:facs><me:dipl>angan<ex>n</ex></me:dipl></w>
+</l>
+<l n="28.8">
+<w><me:facs>illrar</me:facs><me:dipl>illrar</me:dipl></w>
+<w><me:facs>bruðar</me:facs><me:dipl>bruðar</me:dipl></w>
+</l>
+</lg>
+<lg n="29">
+<l n="29.1">
+<w><me:facs>þa</me:facs><me:dipl>þa</me:dipl></w>
+<w><me:facs>g<am>&bar;</am>gv</me:facs><me:dipl>g<ex>en</ex>gv</me:dipl></w>
+<w><me:facs>regin</me:facs><me:dipl>regin</me:dipl></w>
+<w><me:facs>ǫll</me:facs><me:dipl>ǫll</me:dipl></w>
+</l>
+<l n="29.2">
+<w><me:facs>a</me:facs><me:dipl>a</me:dipl></w>
+<w><me:facs>rǫk ſtola</me:facs><me:dipl>rǫk ſtola</me:dipl></w>
+</l>
+<l n="29.3">
+<w><me:facs>gin<am>&bar;</am>heilvg</me:facs><me:dipl>gin<ex>n</ex>heilvg</me:dipl></w>
+<w><me:facs>goð</me:facs><me:dipl>goð</me:dipl></w>
+</l>
+<l n="29.4">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>v<am>&bar;</am></me:facs><me:dipl>v<ex>m</ex></me:dipl></w>
+<lb ed="ms" n="10"/>
+<w><me:facs>þ<am>&bar;</am></me:facs><me:dipl>þ<ex>at</ex></me:dipl></w>
+<w><me:facs>giettvz</me:facs><me:dipl>giettvz</me:dipl></w>
+</l>
+<l n="29.5">
+<w><me:facs>huart</me:facs><me:dipl>huart</me:dipl></w>
+<w><me:facs>ſkyllꝺv</me:facs><me:dipl>ſkyllꝺv</me:dipl></w>
+<w><me:facs>æſir</me:facs><me:dipl>æſir</me:dipl></w>
+</l>
+<l n="29.6">
+<w><me:facs>aꝼrꜳð</me:facs><me:dipl>aꝼrꜳð</me:dipl></w>
+<w><me:facs>giallꝺa</me:facs><me:dipl>giallꝺa</me:dipl></w>
+</l>
+<l n="29.7">
+<w><me:facs>eðꝛ</me:facs><me:dipl>eðꝛ</me:dipl></w>
+<w><me:facs>ſkyllꝺv</me:facs><me:dipl>ſkyllꝺv</me:dipl></w>
+<w><me:facs>guðin</me:facs><me:dipl>guðin</me:dipl></w>
+<w><me:facs>ǫll</me:facs><me:dipl>ǫll</me:dipl></w>
+</l>
+<l n="29.8">
+<w><me:facs>gillꝺi</me:facs><me:dipl>gillꝺi</me:dipl></w>
+<w><me:facs>eiga</me:facs><me:dipl>eiga</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lb ed="ms" n="11"/>
+<lg n="30">
+<l n="30.1">
+<w><me:facs>Fleygði</me:facs><me:dipl>Fleygði</me:dipl></w>
+<name>
+<w><me:facs>oðin<am>&bar;</am></me:facs><me:dipl>oðin<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="30.2">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>ꝼolk</me:facs><me:dipl>ꝼolk</me:dipl></w>
+<w><me:facs>vm</me:facs><me:dipl>vm</me:dipl></w>
+<w><me:facs>ſkaut</me:facs><me:dipl>ſkaut</me:dipl></w>
+</l>
+<l n="30.3">
+<w><me:facs>þ<am>&bar;</am></me:facs><me:dipl>þ<ex>at</ex></me:dipl></w>
+<w><me:facs>var</me:facs><me:dipl>var</me:dipl></w>
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>ꝼolkuig</me:facs><me:dipl>ꝼolkuig</me:dipl></w>
+</l>
+<l n="30.4">
+<w><me:facs>ꝼyʀ</me:facs><me:dipl>ꝼyʀ</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>heimi</me:facs><me:dipl>heimi</me:dipl></w>
+</l>
+<l n="30.5">
+<w><me:facs>bꝛotinn</me:facs><me:dipl>bꝛotinn</me:dipl></w>
+<w><me:facs>var</me:facs><me:dipl>var</me:dipl></w>
+<w><me:facs>boꝛð<lb ed="ms" n="12"/>ueggr</me:facs><me:dipl>boꝛð<lb ed="ms" n="12"/>ueggr</me:dipl></w>
+</l>
+<l n="30.6">
+<w><me:facs>b<am>&bar;</am>gar</me:facs><me:dipl>b<ex>or</ex>gar</me:dipl></w>
+<w><me:facs>ꜳſa</me:facs><me:dipl>ꜳſa</me:dipl></w>
+</l>
+<l n="30.7">
+<w><me:facs>knaattu</me:facs><me:dipl>knaattu</me:dipl></w>
+<w><me:facs>van<am>&er;</am></me:facs><me:dipl>van<ex>er</ex></me:dipl></w>
+<w><me:facs>uig ſpa</me:facs><me:dipl>uig ſpa</me:dipl></w>
+</l>
+<l n="30.8">
+<w><me:facs>uǫllu</me:facs><me:dipl>uǫllu</me:dipl></w>
+<w><me:facs>ſpoꝛna</me:facs><me:dipl>ſpoꝛna</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="31">
+<l n="31.1">
+<w><me:facs>Þa</me:facs><me:dipl>Þa</me:dipl></w>
+<w><me:facs>kna</me:facs><me:dipl>kna</me:dipl></w>
+<w><me:facs>vala</me:facs><me:dipl>vala</me:dipl></w>
+</l>
+<l n="31.2">
+<w><me:facs>vigbonꝺ</me:facs><me:dipl>vigbonꝺ</me:dipl></w>
+<w><me:facs>ſn<lb ed="ms" n="13"/>ua</me:facs><me:dipl>ſn<lb ed="ms" n="13"/>ua</me:dipl></w>
+</l>
+<l n="31.3">
+<w><me:facs>hellꝺꝛ</me:facs><me:dipl>hellꝺꝛ</me:dipl></w>
+<w><me:facs>v<am>&osup;</am></me:facs><me:dipl>v<ex>oru</ex></me:dipl></w>
+<w><me:facs>harðgioꝛ</me:facs><me:dipl>harðgioꝛ</me:dipl></w>
+</l>
+<l n="31.4">
+<w><me:facs>hǫꝼt</me:facs><me:dipl>hǫꝼt</me:dipl></w>
+<w><me:facs>oꝛ</me:facs><me:dipl>oꝛ</me:dipl></w>
+<w><me:facs>þǫꝛmu<am>&bar;</am></me:facs><me:dipl>þǫꝛmu<ex>m</ex></me:dipl></w>
+</l>
+</lg>
+<lg n="31.5">
+<l>
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>ſitr</me:facs><me:dipl>ſitr</me:dipl></w>
+<w><me:facs>ſigyn</me:facs><me:dipl>ſigyn</me:dipl></w>
+</l>
+<l n="31.6">
+<w><me:facs>þeygi</me:facs><me:dipl>þeygi</me:dipl></w>
+<w><me:facs>v<am>&bar;</am></me:facs><me:dipl>v<ex>m</ex></me:dipl></w>
+<w><me:facs>ſinu<am>&bar;</am></me:facs><me:dipl>ſinu<ex>m</ex></me:dipl></w>
+</l>
+<l n="31.7">
+<w><me:facs>uer</me:facs><me:dipl>uer</me:dipl></w>
+<w><me:facs>uel<lb ed="ms" n="14"/>glyiut</me:facs><me:dipl>uel<lb ed="ms" n="14"/>glyiut</me:dipl></w>
+</l>
+<l n="31.8">
+<w><me:facs>vitu</me:facs><me:dipl>vitu</me:dipl></w>
+<w><me:facs>þer</me:facs><me:dipl>þer</me:dipl></w>
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>eða</me:facs><me:dipl>eða</me:dipl></w>
+<w><me:facs>huat</me:facs><me:dipl>huat</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="32">
+<l n="32.1">
+<w><me:facs>Geyr</me:facs><me:dipl>Geyr</me:dipl></w>
+<name>
+<w><me:facs>garmr</me:facs><me:dipl>garmr</me:dipl></w>
+</name>
+<w><me:facs>miǫk</me:facs><me:dipl>miǫk</me:dipl></w>
+</l>
+<l n="32.2">
+<w><me:facs>ꝼ<am>&isup;</am></me:facs><me:dipl>ꝼ<ex>yrer</ex></me:dipl></w>
+<name>
+<w><me:facs>gnupa<lb ed="ms" n="15"/>helli</me:facs><me:dipl>gnupa<lb ed="ms" n="15"/>helli</me:dipl></w>
+</name>
+</l>
+<l n="32.3">
+<w><me:facs>ꝼeſtr</me:facs><me:dipl>ꝼeſtr</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>ſlitna</me:facs><me:dipl>ſlitna</me:dipl></w>
+</l>
+<l n="32.4">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>ꝼreki</me:facs><me:dipl>ꝼreki</me:dipl></w>
+<w><me:facs>ren<am>&bar;</am>a</me:facs><me:dipl>ren<ex>n</ex>a</me:dipl></w>
+</l>
+<l n="32.5">
+<w><me:facs>ꝼram<am>&bar;</am></me:facs><me:dipl>ꝼram<ex>m</ex></me:dipl></w>
+<w><me:facs>ſe</me:facs><me:dipl>ſe</me:dipl></w>
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<w><me:facs>lengra</me:facs><me:dipl>lengra</me:dipl></w>
+</l>
+<lb ed="ms" n="16"/>
+<l n="32.6">
+<w><me:facs>ꝼiǫlð</me:facs><me:dipl>ꝼiǫlð</me:dipl></w>
+<w><me:facs>kan<am>&bar;</am></me:facs><me:dipl>kan<ex>n</ex></me:dipl></w>
+<w><me:facs>ek</me:facs><me:dipl>ek</me:dipl></w>
+<w><me:facs>ſegia</me:facs><me:dipl>ſegia</me:dipl></w>
+</l>
+<l n="32.7">
+<w><me:facs>um</me:facs><me:dipl>um</me:dipl></w>
+<w><me:facs>ragna</me:facs><me:dipl>ragna</me:dipl></w>
+<w><me:facs>rǫk</me:facs><me:dipl>rǫk</me:dipl></w>
+</l>
+<l n="32.8">
+<w><me:facs>rǫm<am>&bar;</am></me:facs><me:dipl>rǫm<ex>m</ex></me:dipl></w>
+<w><me:facs>ſigtiva</me:facs><me:dipl>ſigtiva</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="33">
+<l n="33.1">
+<w><me:facs>Sat</me:facs><me:dipl>Sat</me:dipl></w>
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>haugi</me:facs><me:dipl>haugi</me:dipl></w>
+</l>
+<l n="33.2">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<lb ed="ms" n="17"/>
+<w><me:facs>ſlo</me:facs><me:dipl>ſlo</me:dipl></w>
+<w><me:facs>hǫꝛpu</me:facs><me:dipl>hǫꝛpu</me:dipl></w>
+</l>
+<l n="33.3">
+<w><me:facs>gygiar</me:facs><me:dipl>gygiar</me:dipl></w>
+<w><me:facs>hirð<am>&er;</am></me:facs><me:dipl>hirð<ex>er</ex></me:dipl></w>
+</l>
+<l n="33.4">
+<w><me:facs>glaðꝛ</me:facs><me:dipl>glaðꝛ</me:dipl></w>
+<w><me:facs>egð<am>&er;</am></me:facs><me:dipl>egð<ex>er</ex></me:dipl></w>
+</l>
+<l n="33.5">
+<w><me:facs>gol</me:facs><me:dipl>gol</me:dipl></w>
+<w><me:facs>yꝼ<am>&er;</am></me:facs><me:dipl>yꝼ<ex>er</ex></me:dipl></w>
+</l>
+<l n="33.6">
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w><w><me:facs>galguiði</me:facs><me:dipl>galguiði</me:dipl></w>
+</l>
+<l n="33.7">
+<w><me:facs>ꝼagr rauðꝛ</me:facs><me:dipl>ꝼagr rauðꝛ</me:dipl></w>
+<w><me:facs>hani</me:facs><me:dipl>hani</me:dipl></w>
+</l>
+<l n="33.8">
+<w><me:facs>enn</me:facs><me:dipl>enn</me:dipl></w>
+<w><me:facs>ſꜳ</me:facs><me:dipl>ſꜳ</me:dipl></w>
+<name>
+<w><me:facs>ꝼia<lb ed="ms" n="18"/>laʀ</me:facs><me:dipl>ꝼia<lb ed="ms" n="18"/>laʀ</me:dipl></w>
+</name>
+<w><me:facs>heit<am>&er;</am></me:facs><me:dipl>heit<ex>er</ex></me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="34">
+<l n="34.1">
+<w><me:facs>Gol</me:facs><me:dipl>Gol</me:dipl></w>
+<w><me:facs>yꝼ<am>&er;</am></me:facs><me:dipl>yꝼ<ex>er</ex></me:dipl></w>
+<w><me:facs>&aaligdblac;ſum</me:facs><me:dipl>&aaligdblac;ſum</me:dipl></w>
+</l>
+<l n="34.2">
+<name>
+<w><me:facs>gullin kambi</me:facs><me:dipl>gullin kambi</me:dipl></w>
+</name>
+</l>
+<l n="34.3">
+<w><me:facs>ſa</me:facs><me:dipl>ſa</me:dipl></w>
+<w><me:facs>uekr</me:facs><me:dipl>uekr</me:dipl></w>
+<w><me:facs>hǫlꝺa</me:facs><me:dipl>hǫlꝺa</me:dipl></w>
+</l>
+<l n="34.4">
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<name>
+<w><me:facs>h<am>&er;</am>ia ꝼǫðꝛſ</me:facs><me:dipl>h<ex>er</ex>ia ꝼǫðꝛſ</me:dipl></w>
+</name>
+</l>
+<l n="34.5">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>an<am>&bar;</am>aʀ</me:facs><me:dipl>an<ex>n</ex>aʀ</me:dipl></w>
+<w><me:facs>gelr</me:facs><me:dipl>gelr</me:dipl></w>
+</l>
+<lb ed="ms" n="19"/>
+<l n="34.6">
+<w><me:facs>ꝼyr<am>&er;</am></me:facs><me:dipl>ꝼyr<ex>er</ex></me:dipl></w>
+<w><me:facs>iǫꝛð</me:facs><me:dipl>iǫꝛð</me:dipl></w>
+<w><me:facs>neðan</me:facs><me:dipl>neðan</me:dipl></w>
+</l>
+<l n="34.7">
+<w><me:facs>ſot rauðꝛ</me:facs><me:dipl>ſot rauðꝛ</me:dipl></w>
+<w><me:facs>hani</me:facs><me:dipl>hani</me:dipl></w>
+</l>
+<l n="34.8">
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<w><me:facs>ſǫlum</me:facs><me:dipl>ſǫlum</me:dipl></w>
+<name>
+<w><me:facs>heliar</me:facs><me:dipl>heliar</me:dipl></w>
+</name>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="35">
+<l n="35.1">
+<w><me:facs>Sal</me:facs><me:dipl>Sal</me:dipl></w>
+<w><me:facs>ſier</me:facs><me:dipl>ſier</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>ſtanꝺa</me:facs><me:dipl>ſtanꝺa</me:dipl></w>
+</l>
+<l n="35.2">
+<w><me:facs>ſolu</me:facs><me:dipl>ſolu</me:dipl></w>
+<w><me:facs>ꝼiaʀi</me:facs><me:dipl>ꝼiaʀi</me:dipl></w>
+</l>
+<lb ed="ms" n="20"/>
+<l n="35.3">
+<name>
+<w><me:facs>naſtronꝺu<am>&bar;</am></me:facs><me:dipl>naſtronꝺu<ex>m</ex></me:dipl></w>
+</name>
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+</l>
+<l n="35.4">
+<w><me:facs>noꝛðꝛ</me:facs><me:dipl>noꝛðꝛ</me:dipl></w>
+<w><me:facs>hoꝛꝼa</me:facs><me:dipl>hoꝛꝼa</me:dipl></w>
+<w><me:facs>ꝺyʀ</me:facs><me:dipl>ꝺyʀ</me:dipl></w>
+</l>
+<l n="35.5">
+<w><me:facs>ꝼalla</me:facs><me:dipl>ꝼalla</me:dipl></w>
+<w><me:facs>eitrꝺꝛopar</me:facs><me:dipl>eitrꝺꝛopar</me:dipl></w>
+</l>
+<l n="35.6">
+<w><me:facs>inn</me:facs><me:dipl>inn</me:dipl></w>
+<w><me:facs>um</me:facs><me:dipl>um</me:dipl></w>
+<w><me:facs>lioꝛa</me:facs><me:dipl>lioꝛa</me:dipl></w>
+</l>
+<l n="35.7">
+<w><me:facs>ſꜳ</me:facs><me:dipl>ſꜳ</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>vnꝺin<am>&bar;</am></me:facs><me:dipl>vnꝺin<ex>n</ex></me:dipl></w>
+<w><me:facs>ſalr</me:facs><me:dipl>ſalr</me:dipl></w>
+</l>
+<lb ed="ms" n="21"/>
+<l n="35.8">
+<w><me:facs>oꝛma</me:facs><me:dipl>oꝛma</me:dipl></w>
+<w><me:facs>hryggiu<am>&bar;</am></me:facs><me:dipl>hryggiu<ex>m</ex></me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="36">
+<l n="36.1">
+<w><me:facs>Ser</me:facs><me:dipl>Ser</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>vaða</me:facs><me:dipl>vaða</me:dipl></w>
+</l>
+<l n="36.2">
+<w><me:facs>þunga</me:facs><me:dipl>þunga</me:dipl></w>
+<w><me:facs>ſtrauma</me:facs><me:dipl>ſtrauma</me:dipl></w>
+</l>
+<l n="36.3">
+<w><me:facs>m<am>&bar;</am>n</me:facs><me:dipl>m<ex>en</ex>n</me:dipl></w>
+<w><me:facs>meínſvara</me:facs><me:dipl>meínſvara</me:dipl></w>
+</l>
+<l n="36.4">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>moꝛðvar<lb ed="ms" n="22"/>ga</me:facs><me:dipl>moꝛðvar<lb ed="ms" n="22"/>ga</me:dipl></w>
+</l>
+<l n="36.5">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>þan<am>&bar;</am>z</me:facs><me:dipl>þan<ex>n</ex>z</me:dipl></w>
+<w><me:facs>an<am>&bar;</am>arſ</me:facs><me:dipl>an<ex>n</ex>arſ</me:dipl></w>
+<w><me:facs>glepr</me:facs><me:dipl>glepr</me:dipl></w>
+</l>
+<l n="36.6">
+<w><me:facs>eyrna runa</me:facs><me:dipl>eyrna runa</me:dipl></w>
+</l>
+<l n="36.7">
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>ſavg</me:facs><me:dipl>ſavg</me:dipl></w>
+<name>
+<w><me:facs>nið hǫggr</me:facs><me:dipl>nið hǫggr</me:dipl></w>
+</name>
+</l>
+<l n="36.8">
+<w><me:facs>nai</me:facs><me:dipl>nai</me:dipl></w>
+<w><me:facs>ꝼramgengna</me:facs><me:dipl>ꝼramgengna</me:dipl></w>
+</l>
+<l n="36.9">
+<w><me:facs>ſleit</me:facs><me:dipl>ſleit</me:dipl></w>
+<lb ed="ms" n="23"/>
+<w><me:facs>vargr</me:facs><me:dipl>vargr</me:dipl></w>
+<w><me:facs>vera</me:facs><me:dipl>vera</me:dipl></w>
+</l>
+<l n="36.10">
+<w><me:facs>vitu</me:facs><me:dipl>vitu</me:dipl></w>
+<w><me:facs>þ<am>&er;</am></me:facs><me:dipl>þ<ex>er</ex></me:dipl></w>
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>eða</me:facs><me:dipl>eða</me:dipl></w>
+<w><me:facs>hvat</me:facs><me:dipl>hvat</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="37">
+<l n="37.1">
+<w><me:facs>Geyr</me:facs><me:dipl>Geyr</me:dipl></w>
+<w><me:facs>nu</me:facs><me:dipl>nu</me:dipl></w>
+<name>
+<w><me:facs>garmr</me:facs><me:dipl>garmr</me:dipl></w>
+</name>
+<w><me:facs>miok</me:facs><me:dipl>miok</me:dipl></w>
+</l>
+<l n="37.2">
+<w><me:facs>ꝼyri</me:facs><me:dipl>ꝼyri</me:dipl></w>
+<name>
+<w><me:facs>gn<am>&dot;</am></me:facs><me:dipl>gn<ex>ipa</ex></me:dipl></w>
+<w><me:facs>h<am>&dot;</am></me:facs><me:dipl>h<ex>elli</ex></me:dipl></w>
+</name>
+<!--NB att det här kanske borde betraktas som ett ord-->
+</l>
+<l n="37.3">
+<w><me:facs>f<am>&dot;</am></me:facs><me:dipl>f<ex>estr</ex></me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>ſl<am>&dot;</am></me:facs><me:dipl>ſl<ex>itna</ex></me:dipl></w>
+</l>
+<l n="37.4">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>ꝼ<am>&dot;</am></me:facs><me:dipl></me:dipl></w>
+</l>
+</lg>
+<lb ed="ms" n="24"/>
+<lg n="38">
+<l n="38.1">
+<w><me:facs>Bræðꝛ</me:facs><me:dipl>Bræðꝛ</me:dipl></w>
+<w><me:facs>munu</me:facs><me:dipl>munu</me:dipl></w>
+<w><me:facs>beriaz</me:facs><me:dipl>beriaz</me:dipl></w>
+</l>
+<l n="38.2">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<w><me:facs>bǫnu<am>&bar;</am></me:facs><me:dipl>bǫnu<ex>m</ex></me:dipl></w>
+<w><me:facs>verðaz</me:facs><me:dipl>verðaz</me:dipl></w>
+</l>
+<l n="38.3">
+<w><me:facs>munu</me:facs><me:dipl>munu</me:dipl></w>
+<w><me:facs>ſyſtrungar</me:facs><me:dipl>ſyſtrungar</me:dipl></w>
+</l>
+<l n="38.4">
+<w><me:facs>ſiꝼiu<am>&bar;</am></me:facs><me:dipl>ſiꝼiu<ex>m</ex></me:dipl></w>
+<w><me:facs>ſpilla</me:facs><me:dipl>ſpilla</me:dipl></w>
+</l>
+<l n="38.5">
+<w><me:facs>hart</me:facs><me:dipl>hart</me:dipl></w>
+<lb ed="ms" n="25"/>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>heimí</me:facs><me:dipl>heimí</me:dipl></w>
+</l>
+<l n="38.6">
+<w><me:facs>hoꝛꝺomr</me:facs><me:dipl>hoꝛꝺomr</me:dipl></w>
+<w><me:facs>mikill</me:facs><me:dipl>mikill</me:dipl></w>
+</l>
+<l n="38.7">
+<w><me:facs>ſkeggǫll</me:facs><me:dipl>ſkeggǫll</me:dipl></w>
+<w><me:facs>ſkꜳlmǫllꝺ</me:facs><me:dipl>ſkꜳlmǫllꝺ</me:dipl></w>
+</l>
+<l n="38.8">
+<w><me:facs>ſkillꝺ<am>&er;</am></me:facs><me:dipl>ſkillꝺ<ex>er</ex></me:dipl></w>
+<w><me:facs>kloꝼn<am>&er;</am></me:facs><me:dipl>kloꝼn<ex>er</ex></me:dipl></w>
+</l>
+</lg>
+<lg n="39">
+<l n="39.1">
+<w><me:facs>Vinꝺ ǫllꝺ</me:facs><me:dipl>Vinꝺ ǫllꝺ</me:dipl></w>
+<w><me:facs>v<am>&rsup;</am>g<lb ed="ms" n="26"/>ǫllꝺ</me:facs><me:dipl>v<ex>ar</ex>g<lb ed="ms" n="26"/>ǫllꝺ</me:dipl></w>
+</l>
+<l n="39.2">
+<w><me:facs>ꜳðꝛ</me:facs><me:dipl>ꜳðꝛ</me:dipl></w>
+<w><me:facs>v<am>&er;</am>ǫllꝺ</me:facs><me:dipl>v<ex>er</ex>ǫllꝺ</me:dipl></w>
+<w><me:facs>ſteypiz</me:facs><me:dipl>ſteypiz</me:dipl></w>
+</l>
+<l n="39.3">
+<w><me:facs>grunꝺ<am>&er;</am></me:facs><me:dipl>grunꝺ<ex>er</ex></me:dipl></w>
+<w><me:facs>gialla</me:facs><me:dipl>gialla</me:dipl></w>
+</l>
+<l n="39.4">
+<w><me:facs>giꝼr</me:facs><me:dipl>giꝼr</me:dipl></w>
+<w><me:facs>ꝼliuganꝺi</me:facs><me:dipl>ꝼliuganꝺi</me:dipl></w>
+</l>
+<l n="39.5">
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>eingi</me:facs><me:dipl>eingi</me:dipl></w>
+<w><me:facs>m<am>&rsup;</am></me:facs><me:dipl>m<ex>aðr</ex></me:dipl></w>
+</l>
+<l n="39.6">
+<w><me:facs>ǫðꝛu<am>&bar;</am></me:facs><me:dipl>ǫðꝛu<ex>m</ex></me:dipl></w>
+<w><me:facs>þyrma</me:facs><me:dipl>þyrma</me:dipl></w>
+</l>
+</lg>
+<lb ed="ms" n="27"/>
+<lg n="40">
+<l n="40.1">
+<w><me:facs>Leika</me:facs><me:dipl>Leika</me:dipl></w>
+<name>
+<w><me:facs>mimſ</me:facs><me:dipl>mimſ</me:dipl></w>
+</name>
+<w><me:facs>ſynir</me:facs><me:dipl>ſynir</me:dipl></w>
+</l>
+<l n="40.2">
+<w><me:facs>en</me:facs><me:dipl>en</me:dipl></w>
+<w><me:facs>miǫtvðꝛ</me:facs><me:dipl>miǫtvðꝛ</me:dipl></w>
+<w><me:facs>kynꝺiz</me:facs><me:dipl>kynꝺiz</me:dipl></w>
+</l>
+<l n="40.3">
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<w><me:facs>hínu</me:facs><me:dipl>hínu</me:dipl></w>
+<w><me:facs>gamla</me:facs><me:dipl>gamla</me:dipl></w>
+</l>
+<l n="40.4">
+<name>
+<w><me:facs>giallar hoꝛní</me:facs><me:dipl>giallar hoꝛní</me:dipl></w>
+</name>
+</l>
+<l n="40.5">
+<w><me:facs>hꜳtt</me:facs><me:dipl>hꜳtt</me:dipl></w>
+<w><me:facs>blæſſ</me:facs><me:dipl>blæſſ</me:dipl></w>
+<lb ed="ms" n="28"/>
+<name>
+<w><me:facs>heimꝺallr</me:facs><me:dipl>heimꝺallr</me:dipl></w>
+</name>
+</l>
+<l n="40.6">
+<w><me:facs>hoꝛn</me:facs><me:dipl>hoꝛn</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w><w><me:facs>lopti</me:facs><me:dipl>lopti</me:dipl></w>
+</l>
+<l n="40.7">
+<w><me:facs>męler</me:facs><me:dipl>męler</me:dipl></w>
+<name>
+<w><me:facs>oðin<am>&bar;</am></me:facs><me:dipl>oðin<ex>n</ex></me:dipl></w>
+</name>
+</l>
+<l n="40.8">
+<w><me:facs>við</me:facs><me:dipl>við</me:dipl></w>
+<name>
+<w><me:facs>mimſ</me:facs><me:dipl>mimſ</me:dipl></w>
+</name>
+<w><me:facs>hǫꝼut</me:facs><me:dipl>hǫꝼut</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="41">
+<l n="41.1">
+<w><me:facs>Skelꝼr</me:facs><me:dipl>Skelꝼr</me:dipl></w>
+<name>
+<w><me:facs>yggꝺꝛaſilſ</me:facs><me:dipl>yggꝺꝛaſilſ</me:dipl></w>
+</name>
+</l>
+<l n="41.2">
+<w><me:facs>aſkr</me:facs><me:dipl>aſkr</me:dipl></w>
+<lb ed="ms" n="29"/>
+<w><me:facs>ſtanꝺanꝺi</me:facs><me:dipl>ſtanꝺanꝺi</me:dipl></w>
+</l>
+<l n="41.3">
+<w><me:facs>ymr</me:facs><me:dipl>ymr</me:dipl></w>
+<w><me:facs>hið</me:facs><me:dipl>hið</me:dipl></w>
+<w><me:facs>allꝺna</me:facs><me:dipl>allꝺna</me:dipl></w>
+<w><me:facs>tre</me:facs><me:dipl>tre</me:dipl></w>
+</l>
+<l n="41.4">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>iǫtun<am>&bar;</am></me:facs><me:dipl>iǫtun<ex>n</ex></me:dipl></w>
+<w><me:facs>loſnar</me:facs><me:dipl>loſnar</me:dipl></w>
+</l>
+<l n="41.5">
+<w><me:facs>hræðaz</me:facs><me:dipl>hræðaz</me:dipl></w>
+<w><me:facs>aller</me:facs><me:dipl>aller</me:dipl></w>
+</l>
+<l n="41.6">
+<w><me:facs>a</me:facs><me:dipl>a</me:dipl></w>
+<w><me:facs>helvegv<am>&bar;</am></me:facs><me:dipl>helvegv<ex>m</ex></me:dipl></w>
+</l>
+<l n="41.7">
+<w><me:facs>ꜳðꝛ</me:facs><me:dipl>ꜳðꝛ</me:dipl></w>
+<w><me:facs>ſurtar</me:facs><me:dipl>ſurtar</me:dipl></w>
+<lb ed="ms" n="30"/>
+<w><me:facs>þan<am>&bar;</am></me:facs><me:dipl>þan<ex>n</ex></me:dipl></w>
+</l>
+<l n="41.8">
+<w><me:facs>ſevi</me:facs><me:dipl>ſevi</me:dipl></w>
+<w><me:facs>oꝼ</me:facs><me:dipl>oꝼ</me:dipl></w>
+<w><me:facs>gleyp<am>&er;</am></me:facs><me:dipl>gleyp<ex>er</ex></me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="42">
+<l n="42.1">
+<w><me:facs>Hvat</me:facs><me:dipl>Hvat</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>með</me:facs><me:dipl>með</me:dipl></w>
+<w><me:facs>ꜳſu<am>&bar;</am></me:facs><me:dipl>ꜳſu<ex>m</ex></me:dipl></w>
+</l>
+<l n="42.2">
+<w><me:facs>hvat</me:facs><me:dipl>hvat</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>með</me:facs><me:dipl>með</me:dipl></w>
+<w><me:facs>ꜳlꝼu<am>&bar;</am></me:facs><me:dipl>ꜳlꝼu<ex>m</ex></me:dipl></w>
+</l>
+<l n="42.3">
+<w><me:facs>gnyr</me:facs><me:dipl>gnyr</me:dipl></w>
+<w><me:facs>allr</me:facs><me:dipl>allr</me:dipl></w>
+<name>
+<w><me:facs>iǫtun hei<am>&bar;</am>r</me:facs><me:dipl>iǫtun hei<ex>m</ex>r</me:dipl></w>
+</name>
+</l>
+<lb ed="ms" n="31"/>
+<l n="42.4">
+<w><me:facs>æſir</me:facs><me:dipl>æſir</me:dipl></w>
+<w><me:facs>eru</me:facs><me:dipl>eru</me:dipl></w>
+<w><me:facs>ꜳ</me:facs><me:dipl>ꜳ</me:dipl></w>
+<w><me:facs>þ<am>&bar;</am>gi</me:facs><me:dipl>þ<ex>in</ex>gi</me:dipl></w>
+</l>
+<l n="42.5">
+<w><me:facs>ſtynia</me:facs><me:dipl>ſtynia</me:dipl></w>
+<w><me:facs>ꝺu<am>&er;</am>gar</me:facs><me:dipl>ꝺu<ex>er</ex>gar</me:dipl></w>
+</l>
+<l n="42.6">
+<w><me:facs>ꝼ<am>&isup;</am></me:facs><me:dipl>ꝼ<ex>yrer</ex></me:dipl></w>
+<w><me:facs>ſteinꝺyrv<am>&bar;</am></me:facs><me:dipl>ſteinꝺyrv<ex>m</ex></me:dipl></w>
+</l>
+<l n="42.7">
+<w><me:facs>vegb<am>&er;</am>gſ</me:facs><me:dipl>vegb<ex>er</ex>gſ</me:dipl></w>
+<w><me:facs>uiſir</me:facs><me:dipl>uiſir</me:dipl></w>
+</l>
+<l n="42.8">
+<w><me:facs>uitv</me:facs><me:dipl>uitv</me:dipl></w>
+<w><me:facs>þ<am>&er;</am></me:facs><me:dipl>þ<ex>er</ex></me:dipl></w>
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>eða</me:facs><me:dipl>eða</me:dipl></w>
+<w><me:facs>hvað</me:facs><me:dipl>hvað</me:dipl></w>
+</l>
+</lg>
+<lb ed="ms" n="32"/>
+<lg n="43">
+<l n="43.1">
+<w><me:facs>Geyr</me:facs><me:dipl>Geyr</me:dipl></w>
+<w><me:facs>nu</me:facs><me:dipl>nu</me:dipl></w>
+<name>
+<w><me:facs>garmr</me:facs><me:dipl>garmr</me:dipl></w>
+</name>
+<w><me:facs>miǫk</me:facs><me:dipl>miǫk</me:dipl></w>
+</l>
+<l n="43.2">
+<w><me:facs>ꝼ<am>&isup;</am></me:facs><me:dipl>ꝼ<ex>yrer</ex></me:dipl></w>
+<name>
+<w><me:facs>gnipa helli</me:facs><me:dipl>gnipa helli</me:dipl></w>
+</name>
+</l>
+<l n="43.3">
+<w><me:facs>ꝼ&dot;</me:facs><me:dipl></me:dipl></w><!--Kontrollera-->
+<w><me:facs>m&dot;</me:facs><me:dipl></me:dipl></w><!--Kontrollera-->
+</l>
+</lg>
+<lg n="44">
+<l n="44.1">
+<name>
+<w><me:facs>Hrymr</me:facs><me:dipl>Hrymr</me:dipl></w>
+</name>
+<w><me:facs>ekr</me:facs><me:dipl>ekr</me:dipl></w>
+<w><me:facs>auſtan</me:facs><me:dipl>auſtan</me:dipl></w>
+</l>
+<l n="44.2">
+<w><me:facs>heꝼiz</me:facs><me:dipl>heꝼiz</me:dipl></w>
+<w><me:facs>linꝺ</me:facs><me:dipl>linꝺ</me:dipl></w>
+<w><me:facs>ꝼyr<am>&er;</am></me:facs><me:dipl>ꝼyr<ex>er</ex></me:dipl></w>
+</l>
+<lb ed="ms" n="33"/>
+<l n="44.3">
+<w><me:facs>ſnyz</me:facs><me:dipl>ſnyz</me:dipl></w>
+<name>
+<w><me:facs>iǫꝛmunganꝺꝛ</me:facs><me:dipl>iǫꝛmunganꝺꝛ</me:dipl></w>
+</name>
+</l>
+<l n="44.4">
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>iǫtvnmoði</me:facs><me:dipl>iǫtvnmoði</me:dipl></w>
+</l>
+<l n="44.5">
+<w><me:facs>oꝛmr</me:facs><me:dipl>oꝛmr</me:dipl></w>
+<w><me:facs>knyr</me:facs><me:dipl>knyr</me:dipl></w>
+<w><me:facs>unn<am>&er;</am></me:facs><me:dipl>unn<ex>er</ex></me:dipl></w>
+</l>
+<l n="44.6">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>ari</me:facs><me:dipl>ari</me:dipl></w>
+<w><me:facs>hlakkar</me:facs><me:dipl>hlakkar</me:dipl></w>
+</l>
+<l n="44.7">
+<w><me:facs>ſlitr</me:facs><me:dipl>ſlitr</me:dipl></w>
+<w><me:facs>nai</me:facs><me:dipl>nai</me:dipl></w>
+<lb ed="ms" n="34"/>
+<w><me:facs>niðꝼǫlr</me:facs><me:dipl>niðꝼǫlr</me:dipl></w>
+</l>
+<l n="44.8">
+<name>
+<w><me:facs>naglꝼar</me:facs><me:dipl>naglꝼar</me:dipl></w>
+</name>
+<w><me:facs>loſnar</me:facs><me:dipl>loſnar</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="45">
+<l n="45.1">
+<w><me:facs>Kioll</me:facs><me:dipl>Kioll</me:dipl></w>
+<w><me:facs>ꝼ<am>&er;</am>r</me:facs><me:dipl>ꝼ<ex>er</ex>r</me:dipl></w>
+<w><me:facs>auſtan</me:facs><me:dipl>auſtan</me:dipl></w>
+</l>
+<l n="45.2">
+<w><me:facs>koma</me:facs><me:dipl>koma</me:dipl></w>
+<w><me:facs>mvnu</me:facs><me:dipl>mvnu</me:dipl></w>
+<name>
+<w><me:facs>mvſpellz</me:facs><me:dipl>mvſpellz</me:dipl></w>
+</name>
+</l>
+<l n="45.3">
+<w><me:facs>vm</me:facs><me:dipl>vm</me:dipl></w>
+<w><me:facs>lǫgh</me:facs><me:dipl>lǫgh</me:dipl></w>
+<lb ed="ms" n="35"/>
+<w><me:facs>lyðer</me:facs><me:dipl>lyðer</me:dipl></w>
+</l>
+<l n="45.4">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<name>
+<w><me:facs>loki</me:facs><me:dipl>loki</me:dipl></w>
+</name>
+<w><me:facs>ſtyr<am>&er;</am></me:facs><me:dipl>ſtyr<ex>er</ex></me:dipl></w>
+</l>
+<l n="45.5">
+<w><me:facs>ꝼarar</me:facs><me:dipl>ꝼarar</me:dipl></w>
+<w><me:facs>ꝼiꝼlmeg<am>&er;</am></me:facs><me:dipl>ꝼiꝼlmeg<ex>er</ex></me:dipl></w>
+</l>
+<l n="45.6">
+<w><me:facs>með</me:facs><me:dipl>með</me:dipl></w>
+<w><me:facs>ꝼreka</me:facs><me:dipl>ꝼreka</me:dipl></w>
+<w><me:facs>aller</me:facs><me:dipl>aller</me:dipl></w>
+</l>
+<l n="45.7">
+<w><me:facs>þ<am>&bar;</am>m</me:facs><me:dipl>þ<ex>ei</ex>m</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>broð<am>&er;</am></me:facs><me:dipl>broð<ex>er</ex></me:dipl></w>
+</l>
+<l n="45.8">
+<name>
+<w><me:facs>byleſtz</me:facs><me:dipl>byleſtz</me:dipl></w>
+</name>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<lb ed="ms" n="36"/>
+<w><me:facs>ꝼerð</me:facs><me:dipl>ꝼerð</me:dipl></w>
+</l>
+</lg>
+<lg n="46">
+<l n="46.1">
+<name>
+<w><me:facs>ſurtr</me:facs><me:dipl>ſurtr</me:dipl></w>
+</name>
+<w><me:facs>ꝼ<am>&er;</am>r</me:facs><me:dipl>ꝼ<ex>er</ex>r</me:dipl></w>
+<w><me:facs>ſun<am>&bar;</am>an</me:facs><me:dipl>ſun<ex>n</ex>an</me:dipl></w>
+</l>
+<l n="46.2">
+<w><me:facs>með</me:facs><me:dipl>með</me:dipl></w>
+<w><me:facs>ſuiga</me:facs><me:dipl>ſuiga</me:dipl></w>
+<w><me:facs>levi</me:facs><me:dipl>levi</me:dipl></w>
+</l>
+<l n="46.3">
+<w><me:facs>ſkin<am>&bar;</am></me:facs><me:dipl>ſkin<ex>n</ex></me:dipl></w>
+<w><me:facs>aꝼ</me:facs><me:dipl>aꝼ</me:dipl></w>
+<w><me:facs>ſv<am>&er;</am>ðe</me:facs><me:dipl>ſv<ex>er</ex>ðe</me:dipl></w>
+</l>
+<l n="46.4">
+<w><me:facs>ſol</me:facs><me:dipl>ſol</me:dipl></w>
+<w><me:facs>valtiꝼa</me:facs><me:dipl>valtiꝼa</me:dipl></w>
+</l>
+<l n="46.5">
+<w><me:facs>griotbiǫꝛg</me:facs><me:dipl>griotbiǫꝛg</me:dipl></w>
+<w><me:facs>gnata</me:facs><me:dipl>gnata</me:dipl></w>
+</l>
+<lb ed="ms" n="37"/>
+<l n="46.6">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>giꝼr</me:facs><me:dipl>giꝼr</me:dipl></w>
+<w><me:facs>hrata</me:facs><me:dipl>hrata</me:dipl></w>
+</l>
+<l n="46.7">
+<w><me:facs>troða</me:facs><me:dipl>troða</me:dipl></w>
+<w><me:facs>haler</me:facs><me:dipl>haler</me:dipl></w>
+<w><me:facs>helveg</me:facs><me:dipl>helveg</me:dipl></w>
+</l>
+<l n="46.8">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>himin<am>&bar;</am></me:facs><me:dipl>himin<ex>n</ex></me:dipl></w>
+<w><me:facs>kloꝼnar</me:facs><me:dipl>kloꝼnar</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="47">
+<l n="47.1">
+<w><me:facs>Þa</me:facs><me:dipl>Þa</me:dipl></w>
+<w><me:facs>kemr</me:facs><me:dipl>kemr</me:dipl></w>
+<name>
+<w><me:facs>hlinar</me:facs><me:dipl>hlinar</me:dipl></w>
+</name>
+</l>
+<l n="47.2">
+<w><me:facs>harmr</me:facs><me:dipl>harmr</me:dipl></w>
+<w><me:facs>an<lb ed="ms" n="38"/>naʀ</me:facs><me:dipl>an<lb ed="ms" n="38"/>naʀ</me:dipl></w>
+<w><me:facs>ꝼram<am>&bar;</am></me:facs><me:dipl>ꝼram<ex>m</ex></me:dipl></w>
+</l>
+<l n="47.3">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<name>
+<w><me:facs>oðin<am>&bar;</am></me:facs><me:dipl>oðin<ex>n</ex></me:dipl></w>
+</name>
+<w><me:facs>ꝼ<am>&er;</am>r</me:facs><me:dipl>ꝼ<ex>er</ex>r</me:dipl></w>
+</l>
+<l n="47.4">
+<w><me:facs>við</me:facs><me:dipl>við</me:dipl></w>
+<w><me:facs>vlꝼ</me:facs><me:dipl>vlꝼ</me:dipl></w>
+<w><me:facs>uega</me:facs><me:dipl>uega</me:dipl></w>
+</l>
+<l n="47.5">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>bani</me:facs><me:dipl>bani</me:dipl></w>
+<name>
+<w><me:facs>belia</me:facs><me:dipl>belia</me:dipl></w>
+</name>
+</l>
+<l n="47.6">
+<w><me:facs>biartr</me:facs><me:dipl>biartr</me:dipl></w>
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<name>
+<w><me:facs>ſurti</me:facs><me:dipl>ſurti</me:dipl></w>
+</name>
+</l>
+<l n="47.7">
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<lb ed="ms" n="39"/>
+<name>
+<w><me:facs>ꝼriggiar</me:facs><me:dipl>ꝼriggiar</me:dipl></w>
+</name>
+</l>
+<l n="47.8">
+<w><me:facs>ꝼalla</me:facs><me:dipl>ꝼalla</me:dipl></w>
+<w><me:facs>angan<am>&bar;</am></me:facs><me:dipl>angan<ex>n</ex></me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="48">
+<l n="48.1">
+<w><me:facs>Geyr</me:facs><me:dipl>Geyr</me:dipl></w>
+<w><me:facs>nu</me:facs><me:dipl>nu</me:dipl></w>
+<name>
+<w><me:facs>garmr</me:facs><me:dipl>garmr</me:dipl></w>
+</name>
+<w><me:facs>miǫk</me:facs><me:dipl>miǫk</me:dipl></w>
+</l>
+<l n="48.2">
+<w><me:facs>ꝼ<am>&isup;</am></me:facs><me:dipl>ꝼ<ex>yrer</ex></me:dipl></w>
+<name>
+<w><me:facs>gnipa helli</me:facs><me:dipl>gnipa helli</me:dipl></w>
+</name>
+</l>
+<l n="48.3">
+<w><me:facs>ꝼ&dot;</me:facs><me:dipl></me:dipl></w><!--Kontrollera-->
+<w><me:facs>m&dot;</me:facs><me:dipl></me:dipl></w><!--Kontrollera-->
+</l>
+</lg>
+<lg n="49">
+<l n="49.1">
+<w><me:facs>Gin<am>&bar;</am></me:facs><me:dipl>Gin<ex>n</ex></me:dipl></w>
+<w><me:facs>loꝼt</me:facs><me:dipl>loꝼt</me:dipl></w>
+<w><me:facs>yꝼer</me:facs><me:dipl>yꝼer</me:dipl></w>
+</l>
+<lb ed="ms" n="40"/>
+<l n="49.2">
+<w><me:facs>linꝺi</me:facs><me:dipl>linꝺi</me:dipl></w>
+<w><me:facs>iarðar</me:facs><me:dipl>iarðar</me:dipl></w>
+</l>
+<l n="49.3">
+<w><me:facs>gapa</me:facs><me:dipl>gapa</me:dipl></w>
+<name>
+<w><me:facs>ygſ</me:facs><me:dipl>ygſ</me:dipl></w>
+</name>
+<w><me:facs>kiaꝼtar</me:facs><me:dipl>kiaꝼtar</me:dipl></w>
+</l>
+<l n="49.4">
+<w><me:facs>oꝛmſ</me:facs><me:dipl>oꝛmſ</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>heꝺu<am>&bar;</am></me:facs><me:dipl>heꝺu<ex>m</ex></me:dipl></w>
+</l>
+<l n="49.5">
+<w><me:facs>mun</me:facs><me:dipl>mun</me:dipl></w>
+<name>
+<w><me:facs>oðinſ</me:facs><me:dipl>oðinſ</me:dipl></w>
+</name>
+<w><me:facs>ſon</me:facs><me:dipl>ſon</me:dipl></w>
+</l>
+<l n="49.6">
+<w><me:facs>oꝛmi</me:facs><me:dipl>oꝛmi</me:dipl></w>
+<w><me:facs>męta</me:facs><me:dipl>męta</me:dipl></w>
+</l>
+<l n="49.7">
+<w><me:facs>vargſ</me:facs><me:dipl>vargſ</me:dipl></w>
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+</l>
+<gap/>
+<lb ed="ms" n="41"/>
+<l n="49.8">
+<name>
+<w><me:facs>viðarſ</me:facs><me:dipl>viðarſ</me:dipl></w>
+</name>
+<w><me:facs>niðia</me:facs><me:dipl>niðia</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="50">
+    <l>
+<gap/>
+<w><me:facs>naðꝛ</me:facs><me:dipl>naðꝛ</me:dipl></w>
+<gap/>
+    </l>
+    <l>
+<lb ed="ms" n="42"/>
+<w><me:facs>munv</me:facs><me:dipl>munv</me:dipl></w>
+<w><me:facs>halir</me:facs><me:dipl>halir</me:dipl></w>
+<gap/>
+    </l>
+    <l>
+<seg>yðia</seg>
+<gap/>
+<seg>mið</seg>
+<gap/>
+        </l>
+</lg>
+<pb ed="ms" n="21r"/>
+<lb ed="ms" n="1"/>
+<lg n="51">
+<l n="51.1">
+<unclear><w><me:facs>ſol</me:facs><me:dipl>ſol</me:dipl></w>
+<w><me:facs>ter</me:facs><me:dipl>ter</me:dipl></w></unclear>
+<w><me:facs>ſoꝛtna</me:facs><me:dipl>ſoꝛtna</me:dipl></w>
+</l>
+<l n="51.2">
+<w><me:facs>ſigr</me:facs><me:dipl>ſigr</me:dipl></w>
+<w><me:facs>ꝼollꝺ</me:facs><me:dipl>ꝼollꝺ</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w><w><me:facs>mar</me:facs><me:dipl>mar</me:dipl></w>
+</l>
+<l n="51.3">
+<w><me:facs>hu<am>&er;</am>ꝼa</me:facs><me:dipl>hu<ex>er</ex>ꝼa</me:dipl></w>
+<w><me:facs>aꝼ</me:facs><me:dipl>aꝼ</me:dipl></w>
+<w><me:facs>himni</me:facs><me:dipl>himni</me:dipl></w>
+</l>
+<l n="51.4">
+<w><me:facs>heiðar</me:facs><me:dipl>heiðar</me:dipl></w>
+<w><me:facs>ſtioꝛnur</me:facs><me:dipl>ſtioꝛnur</me:dipl></w>
+</l>
+<lb ed="ms" n="2"/>
+<l n="51.5">
+<unclear><w><me:facs>geiſar</me:facs><me:dipl>geiſar</me:dipl></w></unclear>
+<w><me:facs>eimí</me:facs><me:dipl>eimí</me:dipl></w>
+</l>
+<l n="51.6">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>allꝺꝛnari</me:facs><me:dipl>allꝺꝛnari</me:dipl></w>
+</l>
+<l n="51.7">
+<w><me:facs>leikr</me:facs><me:dipl>leikr</me:dipl></w>
+<w><me:facs>hꜳr</me:facs><me:dipl>hꜳr</me:dipl></w>
+<w><me:facs>hiti</me:facs><me:dipl>hiti</me:dipl></w>
+</l>
+<l n="51.8">
+<w><me:facs>v<am>&isup;</am></me:facs><me:dipl>v<ex>it</ex>></me:dipl></w>
+<w><me:facs>himin</me:facs><me:dipl>himin</me:dipl></w>
+<w><me:facs>ſialꝼan</me:facs><me:dipl>ſialꝼan</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="52">
+<l n="52.1">
+<w><me:facs>Geyr</me:facs><me:dipl>Geyr</me:dipl></w>
+<lb ed="ms" n="3"/>
+<unclear><w><me:facs>nu</me:facs><me:dipl>nu</me:dipl></w></unclear>
+<name>
+<w><me:facs>garmr</me:facs><me:dipl>garmr</me:dipl></w>
+</name>
+<w><me:facs>miǫk</me:facs><me:dipl>miǫk</me:dipl></w>
+</l>
+<l n="52.2">
+<w><me:facs>ꝼ<am>&isup;</am></me:facs><me:dipl>ꝼ<ex>yrer</ex></me:dipl></w>
+<name>
+<w><me:facs>gnipa helli</me:facs><me:dipl>gnipa helli</me:dipl></w>
+</name>
+</l>
+<l n="52.3">
+<w><me:facs>ꝼeſtr</me:facs><me:dipl>ꝼeſtr</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>ſlitna</me:facs><me:dipl>ſlitna</me:dipl></w>
+</l>
+<l n="52.4">
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>ꝼreki</me:facs><me:dipl>ꝼreki</me:dipl></w>
+<w><me:facs>r<am>&dot;</am></me:facs><me:dipl>r<ex>enna</ex></me:dipl></w>
+</l>
+</lg>
+<lb ed="ms" n="4"/>
+<lg n="53">
+<l n="53.1">
+<unclear><w><me:facs>ſer</me:facs><me:dipl>ſer</me:dipl></w></unclear>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>vpp</me:facs><me:dipl>vpp</me:dipl></w>
+<w><me:facs>koma</me:facs><me:dipl>koma</me:dipl></w>
+</l>
+<l n="53.2">
+<w><me:facs>ǫðꝛu</me:facs><me:dipl>ǫðꝛu</me:dipl></w>
+<w><me:facs>ſin<am>&bar;</am>i</me:facs><me:dipl>ſin<ex>n</ex>i</me:dipl></w>
+</l>
+<l n="53.3">
+<w><me:facs>iǫꝛð</me:facs><me:dipl>iǫꝛð</me:dipl></w>
+<w><me:facs>oꝛ</me:facs><me:dipl>oꝛ</me:dipl></w>
+<w><me:facs>ægi</me:facs><me:dipl>ægi</me:dipl></w>
+</l>
+<l n="53.4">
+<w><me:facs>iðia græna</me:facs><me:dipl>iðia græna</me:dipl></w>
+</l>
+<l n="53.5">
+<w><me:facs>ꝼalla</me:facs><me:dipl>ꝼalla</me:dipl></w>
+<w><me:facs>ꝼoꝛ<lb ed="ms" n="5"/><unclear>ſ</unclear>ar</me:facs><me:dipl>ꝼoꝛ<lb ed="ms" n="5"/><unclear>ſ</unclear>ar</me:dipl></w>
+</l>
+<l n="53.6">
+<w><me:facs>ꝼlygr</me:facs><me:dipl>ꝼlygr</me:dipl></w>
+<w><me:facs>ǫꝛn</me:facs><me:dipl>ǫꝛn</me:dipl></w>
+<w><me:facs>yꝼ<am>&er;</am></me:facs><me:dipl>yꝼ<ex>er</ex></me:dipl></w>
+</l>
+<l n="53.7">
+<w><me:facs>ſꜳ</me:facs><me:dipl>ſꜳ</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>aá</me:facs><me:dipl>aá</me:dipl></w>
+<w><me:facs>ꝼialli</me:facs><me:dipl>ꝼialli</me:dipl></w>
+</l>
+<l n="53.8">
+<w><me:facs>ꝼiſka</me:facs><me:dipl>ꝼiſka</me:dipl></w>
+<w><me:facs>veið<am>&er;</am></me:facs><me:dipl>veið<ex>er</ex></me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="54">
+<l n="54.1">
+<w><me:facs>Hittaz</me:facs><me:dipl>Hittaz</me:dipl></w>
+<w><me:facs>æſer</me:facs><me:dipl>æſer</me:dipl></w>
+</l>
+<l n="54.2">
+<w><me:facs>a</me:facs><me:dipl>a</me:dipl></w>
+<name>
+<w><me:facs>iða<lb ed="ms" n="6"/>velli</me:facs><me:dipl>iða<lb ed="ms" n="6"/>velli</me:dipl></w>
+</name>
+</l>
+<l n="54.3">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>um</me:facs><me:dipl>um</me:dipl></w>
+<w><me:facs>mollꝺþinur</me:facs><me:dipl>mollꝺþinur</me:dipl></w>
+</l>
+<l n="54.4">
+<w><me:facs>matkan</me:facs><me:dipl>matkan</me:dipl></w>
+<w><me:facs>ꝺęma</me:facs><me:dipl>ꝺęma</me:dipl></w>
+</l>
+<l n="54.5">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>min<am>&bar;</am>az</me:facs><me:dipl>min<ex>n</ex>az</me:dipl></w>
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+</l>
+<l n="54.6">
+<w><me:facs>a</me:facs><me:dipl>a</me:dipl></w>
+<w><me:facs>megin<lb ed="ms" n="7"/>ꝺoma</me:facs><me:dipl>megin<lb ed="ms" n="7"/>ꝺoma</me:dipl></w>
+</l>
+<l n="54.7">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>a</me:facs><me:dipl>a</me:dipl></w>
+<name>
+<w><me:facs>ꝼimbultyſ</me:facs><me:dipl>ꝼimbultyſ</me:dipl></w>
+</name>
+</l>
+<l n="54.8">
+<w><me:facs>ꝼoꝛnar</me:facs><me:dipl>ꝼoꝛnar</me:dipl></w>
+<w><me:facs>runar</me:facs><me:dipl>runar</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="55">
+<l n="55.1">
+<w><me:facs>Þa</me:facs><me:dipl>Þa</me:dipl></w>
+<w><me:facs>munu</me:facs><me:dipl>munu</me:dipl></w>
+<w><me:facs>æſer</me:facs><me:dipl>æſer</me:dipl></w>
+</l>
+<l n="55.2">
+<w><me:facs>unꝺꝛſa<am>&bar;</am><lb ed="ms" n="8"/>legar</me:facs><me:dipl>unꝺꝛſa<ex>m</ex><lb ed="ms" n="8"/>legar</me:dipl></w>
+</l>
+<l n="55.3">
+<w><me:facs>gullnar</me:facs><me:dipl>gullnar</me:dipl></w>
+<w><me:facs>tǫꝼlur</me:facs><me:dipl>tǫꝼlur</me:dipl></w>
+</l>
+<l n="55.4">
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>graſi</me:facs><me:dipl>graſi</me:dipl></w>
+<w><me:facs>ꝼin<am>&bar;</am>a</me:facs><me:dipl>ꝼin<ex>n</ex>a</me:dipl></w>
+</l>
+<l n="55.5">
+<w><me:facs>þærſ</me:facs><me:dipl>þærſ</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<w><me:facs>aarꝺaga</me:facs><me:dipl>aarꝺaga</me:dipl></w>
+</l>
+<l n="55.6">
+<w><me:facs>ááttar</me:facs><me:dipl>ááttar</me:dipl></w>
+<w><me:facs>hǫꝼðv</me:facs><me:dipl>hǫꝼðv</me:dipl></w>
+</l>
+</lg>
+<lb ed="ms" n="9"/>
+<lg n="56">
+<l n="56.1">
+<w><me:facs>munu</me:facs><me:dipl>munu</me:dipl></w>
+<w><me:facs>oſaan<am>&er;</am></me:facs><me:dipl>oſaan<ex>er</ex></me:dipl></w>
+</l>
+<l n="56.2">
+<w><me:facs>akrar</me:facs><me:dipl>akrar</me:dipl></w>
+<w><me:facs>uaxa</me:facs><me:dipl>uaxa</me:dipl></w>
+</l>
+<l n="56.3">
+<w><me:facs>bolſ</me:facs><me:dipl>bolſ</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>allz</me:facs><me:dipl>allz</me:dipl></w>
+<w><me:facs>batna</me:facs><me:dipl>batna</me:dipl></w>
+</l>
+<l n="56.4">
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<name>
+<w><me:facs>ballꝺꝛ</me:facs><me:dipl>ballꝺꝛ</me:dipl></w>
+</name>
+<w><me:facs>ko<lb ed="ms" n="10"/>ma</me:facs><me:dipl>ko<lb ed="ms" n="10"/>ma</me:dipl></w>
+</l>
+<l n="56.5">
+<w><me:facs>bua</me:facs><me:dipl>bua</me:dipl></w>
+<w><me:facs>þ<am>&bar;</am>r</me:facs><me:dipl>þ<ex>ei</ex>r</me:dipl></w>
+<name>
+<w><me:facs>hǫðꝛ</me:facs><me:dipl>hǫðꝛ</me:dipl></w>
+</name>
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<name>
+<w><me:facs>ballꝺꝛ</me:facs><me:dipl>ballꝺꝛ</me:dipl></w>
+</name>
+</l>
+<l n="56.6">
+<w><me:facs>hroptz</me:facs><me:dipl>hroptz</me:dipl></w>
+<w><me:facs>ſigtoꝼt<am>&er;</am></me:facs><me:dipl>ſigtoꝼt<ex>er</ex></me:dipl></w>
+</l>
+<l n="56.7">
+<w><me:facs>vel</me:facs><me:dipl>vel</me:dipl></w>
+<w><me:facs>uelltiꝼar</me:facs><me:dipl>uelltiꝼar</me:dipl></w>
+</l>
+<l n="56.8">
+<w><me:facs>uí<lb ed="ms" n="11"/>tu</me:facs><me:dipl>uí<lb ed="ms" n="11"/>tu</me:dipl></w>
+<w><me:facs>þ<am>&er;</am></me:facs><me:dipl>þ<ex>er</ex></me:dipl></w>
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>eðꝛ</me:facs><me:dipl>eðꝛ</me:dipl></w>
+<w><me:facs>hvat</me:facs><me:dipl>hvat</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="57">
+<l n="57.1">
+<w><me:facs>Þa</me:facs><me:dipl>Þa</me:dipl></w>
+<w><me:facs>kna</me:facs><me:dipl>kna</me:dipl></w>
+<name>
+<w><me:facs>hęn<am>&er;</am></me:facs><me:dipl>hęn<ex>er</ex></me:dipl></w>
+</name>
+</l>
+<l n="57.2">
+<w><me:facs>hlutvið</me:facs><me:dipl>hlutvið</me:dipl></w>
+<w><me:facs>kioſa</me:facs><me:dipl>kioſa</me:dipl></w>
+</l>
+<l n="57.3">
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>bur<am>&er;</am></me:facs><me:dipl>bur<ex>er</ex></me:dipl></w>
+<w><me:facs>byggia</me:facs><me:dipl>byggia</me:dipl></w>
+</l>
+<lb ed="ms" n="12"/>
+<l n="57.4">
+<w><me:facs>bræðꝛa</me:facs><me:dipl>bræðꝛa</me:dipl></w>
+<w><me:facs>tueggia</me:facs><me:dipl>tueggia</me:dipl></w>
+</l>
+<l n="57.5">
+<w><me:facs>vinꝺ heim</me:facs><me:dipl>vinꝺ heim</me:dipl></w>
+<w><me:facs>viðan</me:facs><me:dipl>viðan</me:dipl></w>
+</l>
+<l n="57.6">
+<w><me:facs>vitv</me:facs><me:dipl>vitv</me:dipl></w>
+<w><me:facs>þ<am>&er;</am></me:facs><me:dipl>þ<ex>er</ex></me:dipl></w>
+<w><me:facs>en<am>&bar;</am></me:facs><me:dipl>en<ex>n</ex></me:dipl></w>
+<w><me:facs>ęðꝛ</me:facs><me:dipl>ęðꝛ</me:dipl></w>
+<w><me:facs>huat</me:facs><me:dipl>huat</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="58">
+<l n="58.1">
+<w><me:facs>Sal</me:facs><me:dipl>Sal</me:dipl></w>
+<w><me:facs>ſer</me:facs><me:dipl>ſer</me:dipl></w>
+<lb ed="ms" n="13"/>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>ſtanꝺa</me:facs><me:dipl>ſtanꝺa</me:dipl></w>
+</l>
+<l n="58.2">
+<w><me:facs>ſolu</me:facs><me:dipl>ſolu</me:dipl></w>
+<w><me:facs>ꝼegra</me:facs><me:dipl>ꝼegra</me:dipl></w>
+</l>
+<l n="58.3">
+<w><me:facs>gulli</me:facs><me:dipl>gulli</me:dipl></w>
+<w><me:facs>þaktan</me:facs><me:dipl>þaktan</me:dipl></w>
+</l>
+<l n="58.4">
+<w><me:facs>a</me:facs><me:dipl>a</me:dipl></w>
+<name>
+<w><me:facs>gimle</me:facs><me:dipl>gimle</me:dipl></w>
+</name>
+</l>
+<l n="58.5">
+<w><me:facs>þar</me:facs><me:dipl>þar</me:dipl></w>
+<w><me:facs>ſk<am>&bar;</am>o</me:facs><me:dipl>ſk<ex>ul</ex>o</me:dipl></w>
+<w><me:facs>ꝺyggvar</me:facs><me:dipl>ꝺyggvar</me:dipl></w>
+</l>
+<lb ed="ms" n="14"/>
+<l n="58.6">
+<w><me:facs>ꝺꝛottir</me:facs><me:dipl>ꝺꝛottir</me:dipl></w>
+<w><me:facs>byggia</me:facs><me:dipl>byggia</me:dipl></w>
+</l>
+<l n="58.7">
+<w><me:facs>ok</me:facs><me:dipl>ok</me:dipl></w>
+<w><me:facs>um</me:facs><me:dipl>um</me:dipl></w>
+<w><me:facs>allꝺꝛ ꝺaga</me:facs><me:dipl>allꝺꝛ ꝺaga</me:dipl></w>
+</l>
+<l n="58.8">
+<w><me:facs>ynꝺiſ</me:facs><me:dipl>ynꝺiſ</me:dipl></w>
+<w><me:facs>niota</me:facs><me:dipl>niota</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="59">
+<l n="59.1">
+<w><me:facs>Þa</me:facs><me:dipl>Þa</me:dipl></w>
+<w><me:facs>kemr</me:facs><me:dipl>kemr</me:dipl></w>
+<w><me:facs>hin<am>&bar;</am></me:facs><me:dipl>hin<ex>n</ex></me:dipl></w>
+<w><me:facs>ri<lb ed="ms" n="15"/>ki</me:facs><me:dipl>ri<lb ed="ms" n="15"/>ki</me:dipl></w>
+</l>
+<l n="59.2">
+<w><me:facs>at</me:facs><me:dipl>at</me:dipl></w>
+<w><me:facs>regin ꝺomi</me:facs><me:dipl>regin ꝺomi</me:dipl></w>
+</l>
+<l n="59.3">
+<w><me:facs>ǫꝼlugr</me:facs><me:dipl>ǫꝼlugr</me:dipl></w>
+<w><me:facs>oꝼan</me:facs><me:dipl>oꝼan</me:dipl></w>
+</l>
+<l n="59.4">
+<w><me:facs>ſa</me:facs><me:dipl>ſa</me:dipl></w>
+<w><me:facs>er</me:facs><me:dipl>er</me:dipl></w>
+<w><me:facs>ǫllv</me:facs><me:dipl>ǫllv</me:dipl></w>
+<w><me:facs>ræðꝛ</me:facs><me:dipl>ræðꝛ</me:dipl></w>
+<me:punct><me:facs>.</me:facs><me:dipl>.</me:dipl></me:punct>
+</l>
+</lg>
+<lg n="60">
+<l n="60.1">
+<w><me:facs>Kemr</me:facs><me:dipl>Kemr</me:dipl></w>
+<w><me:facs>hin<am>&bar;</am></me:facs><me:dipl>hin<ex>n</ex></me:dipl></w>
+<lb ed="ms" n="16"/>
+<w><me:facs>ꝺimi</me:facs><me:dipl>ꝺimi</me:dipl></w>
+</l>
+<l n="60.2">
+<w><me:facs>ꝺꝛeki</me:facs><me:dipl>ꝺꝛeki</me:dipl></w>
+<w><me:facs>ꝼliuganꝺi</me:facs><me:dipl>ꝼliuganꝺi</me:dipl></w>
+</l>
+<l n="60.3">
+<w><me:facs>naðꝛ</me:facs><me:dipl>naðꝛ</me:dipl></w>
+<w><me:facs>ꝼraan<am>&bar;</am></me:facs><me:dipl>ꝼraan<ex>n</ex></me:dipl></w>
+<w><me:facs>neðan</me:facs><me:dipl>neðan</me:dipl></w>
+</l>
+<l n="60.4">
+<w><me:facs>ꝼ<am>&rabar;</am></me:facs><me:dipl>ꝼ<ex>ra</ex></me:dipl></w>
+<w><me:facs>niða</me:facs><me:dipl>niða</me:dipl></w>
+</l>
+<l n="60.5">
+<w><me:facs>b<am>&er;</am>r</me:facs><me:dipl>b<ex>er</ex>r</me:dipl></w>
+<w><me:facs>ſier</me:facs><me:dipl>ſier</me:dipl></w>
+<w><me:facs>i</me:facs><me:dipl>i</me:dipl></w>
+<lb ed="ms" n="17"/>
+<w><me:facs>ꝼiǫðꝛum</me:facs><me:dipl>ꝼiǫðꝛum</me:dipl></w>
+</l>
+<l n="60.6">
+<w><me:facs>ꝼlygr</me:facs><me:dipl>ꝼlygr</me:dipl></w>
+<w><me:facs>uǫll</me:facs><me:dipl>uǫll</me:dipl></w>
+<w><me:facs>yꝼ<am>&er;</am></me:facs><me:dipl>yꝼ<ex>er</ex></me:dipl></w>
+</l>
+<l n="60.7">
+<name>
+<w><me:facs>niðhoggr</me:facs><me:dipl>niðhoggr</me:dipl></w>
+</name>
+<w><me:facs>nai</me:facs><me:dipl>nai</me:dipl></w>
+</l>
+<l n="60.8">
+<w><me:facs>nv</me:facs><me:dipl>nv</me:dipl></w>
+<w><me:facs>man</me:facs><me:dipl>man</me:dipl></w>
+<w><me:facs>hon</me:facs><me:dipl>hon</me:dipl></w>
+<w><me:facs>ſǫkk<lb ed="ms" n="18"/>vaz</me:facs><me:dipl>ſǫkk<lb ed="ms" n="18"/>vaz</me:dipl></w>
+</l>
+</lg>
+</div>
+</body></text></TEI>

@@ -1,0 +1,1299 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="n4167" period="1245"><ptr
+                  target="http://www.mirabileweb.it/title/liber-de-doctrina-dicendi-et-tacendi-albertanus-br-title/4167"
+               />Liber de doctrina dicendi et tacendi (Tractatus de arte loquendi et tacendi) </title>
+            <author><ptr target="http://viaf.org/viaf/69742024"/><persName xml:id="n19350"><ptr
+                     target="http://www.mirabileweb.it/author/albertanus-brixiensis-n-1190-ca-m-post-1253-author/19350"
+                  />Albertanus Brixiensis n. 1190 ca., m. post
+               1253</persName><term>Tractatus</term></author>
+         </titleStmt>
+         <editionStmt>
+            <edition xml:id="n346528"><ptr
+                  target="http://www.mirabileweb.it/mel/liber-de-doctrina-dicendi-et-tacendi-la-parola-del/346528"
+               />Edizione critica</edition>
+            <sponsor xml:id="n206">SISMEL</sponsor>
+            <editor xml:id="n10895">Navone, Paola</editor>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:id="n10536">SISMEL. Edizioni del Galluzzo</publisher>
+            <pubPlace xml:id="n70">Firenze</pubPlace>
+            <date>1998</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listPerson type="Sources">
+               <person>
+                  <bibl xml:id="n181761">Biblia sacra</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42707">Publilius Syrus</persName>
+                  <bibl xml:id="n16904">Sententiae</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42810">Paulinus Nolanus</persName>
+                  <bibl xml:id="n17134">Epistolae</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42456">Caecilius Balbus</persName>
+                  <bibl xml:id="n33368">De nugis philosophorum</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n19516">Petrus Alphonsi n. 1062/1075, m. post 1130</persName>
+                  <bibl xml:id="n2118">Dialogus contra Iudaeos</bibl>
+                  <bibl xml:id="n4290">Disciplina clericalis</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n19225">Cassiodorus Senator n. 485 ca., m. 580/585
+                     ca.</persName>
+                  <bibl xml:id="n2372">Variae</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42384">Cicero M. Tullius</persName>
+                  <bibl xml:id="n16534">De officiis</bibl>
+                  <bibl xml:id="n16516">De amicitia</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n19182">Alcuinus n. 730/735, m. 19-5-804</persName>
+                  <bibl xml:id="n5456">Disputatio de rhetorica et de virtutibus</bibl>
+               </person>
+               <person>
+                  <bibl xml:id="n174146">Disticha Catonis</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42399">Seneca philosophus</persName>
+                  <bibl xml:id="n16634">Epistolae ad Lucilium</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42624">Seneca philosophus pseudo</persName>
+                  <bibl xml:id="n18702">De moribus</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n21803">Baldo fabulator saec. XII</persName>
+                  <bibl xml:id="n14233">Novus Esopus</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42404">Horatius</persName>
+                  <bibl xml:id="n16662">Epistolae</bibl>
+                  <bibl xml:id="n16660">Saturae</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n19360">Iustinianus imperator n. 482 ca., m. 11-11-565 </persName>
+                  <bibl xml:id="n2105">Digesta</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n19291">Gratianus n. saec. XI ex., m. ante 1159</persName>
+                  <bibl xml:id="n4486">Decretum</bibl>
+               </person>
+               <person>
+                  <bibl xml:id="n172380">Pamphilus de amore</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n19393">Martinus Bracarensis episcopus n. 510/520, m.
+                     20-3-580</persName>
+                  <bibl xml:id="n9">Formula vitae honestae</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42706">Prosper Aquitanus</persName>
+                  <bibl xml:id="n127245">Sententiae ex operibus sancti Augustini</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42378">Augustinus Aurelius</persName>
+                  <bibl xml:id="n16413">Enchiridion ad Laurentium (De fide, spe et caritate)</bibl>
+                  <bibl xml:id="n16412">Epistolae</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n21379">Gaufridus Wintoniensis prior n. 1050 ca., m.
+                     27-12-1107</persName>
+                  <bibl xml:id="n4130">Epigrammata historica [19]</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n19192">Gregorius I papa n. 540 ca., m. 604</persName>
+                  <bibl xml:id="n2406">Homiliae XL in Evangelia</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n19204">Isidorus Hispalensis episcopus n. 560 ca., m.
+                     4-4-636</persName>
+                  <bibl xml:id="n3783">Etymologiarum libri XX</bibl>
+               </person>
+               <person>
+                  <persName xml:id="n42401">Ovidius</persName>
+                  <bibl xml:id="n16646">Heroides</bibl>
+               </person>
+            </listPerson>
+            <listWit>
+               <witness ana="archetypum">ω</witness>
+               <listWit ana="descendants of ω">
+                  <witness ana="subarchetypum1">x</witness>
+                  <listWit ana="descendants of x">
+                     <witness ana="subarchetypum2">x1</witness>
+                     <listWit ana="descendants of x1">
+                        <witness ana="C1">Cambridge, Corpus Christi College, 306, ff. 1-6</witness>
+                        <witness ana="subarchetypum3">x2</witness>
+                        <listWit ana="descendants of x2">
+                           <witness xml:id="n19181" ana="P24"><ptr
+                                 target="http://www.mirabileweb.it/manuscript/pavia-biblioteca-universitaria-aldini-235-manoscript/19181"
+                              />Pavia, Biblioteca Universitaria, Aldini 235, ff. 25c-28d</witness>
+                           <witness ana="subarchetypum4">x1</witness>
+                           <listWit ana="descendants of x1">
+                              <witness xml:id="n19177" ana="P14"><ptr
+                                    target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-14703-manoscript/19177"
+                                 />Paris, Bibliothèque Nationale de France, lat. 14703, ff.
+                                 2-7b</witness>
+                              <witness xml:id="n19179" ana="P16"><ptr
+                                    target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-15557-manoscript/19179"
+                                 />Paris, Bibliothèque Nationale de France, lat. 15557, ff.
+                                 53-57c</witness>
+                           </listWit>
+                        </listWit>
+                     </listWit>
+                     <witness ana="subarchetypum5">x4</witness>
+                     <listWit ana="descendants of x4">
+                        <witness ana="R3">Roma, Biblioteca Angelica, 1473</witness>
+                        <witness xml:id="n19185" ana="V4"><ptr
+                              target="http://www.mirabileweb.it/manuscript/città-del-vaticano-biblioteca-apostolica-vaticana--manoscript/19185"
+                           />Città del Vaticano, Biblioteca Apostolica Vaticana, Vat. lat. 991, ff.
+                           1-7a</witness>
+                     </listWit>
+                     <witness xml:id="n19170" ana="F5"><ptr
+                           target="http://www.mirabileweb.it/manuscript/firenze-biblioteca-riccardiana-770-manoscript/19170"
+                        />Firenze, Biblioteca Riccardiana 770, ff. 1-2b</witness>
+                     <witness xml:id="n19187" ana="N2"><ptr
+                           target="http://www.mirabileweb.it/manuscript/new-haven-ct-yale-university-beinecke-rare-book-an-manoscript/19187"
+                        />New Haven, CT, Yale University, Beinecke Rare Book and Manuscript Library
+                        102, ff. 63-67v</witness>
+                     <witness xml:id="n19178" ana="P15"><ptr
+                           target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-15091-manoscript/19178"
+                        />Paris, Bibliothèque Nationale de France, lat. 15091, ff. 1-5a</witness>
+                     <witness xml:id="n19180" ana="P18"><ptr
+                           target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-17833-manoscript/19180"
+                        />Paris, Bibliothèque Nationale de France, lat. 17833, ff. 1-7c</witness>
+                     <witness xml:id="n19183" ana="T1"><ptr
+                           target="http://www.mirabileweb.it/manuscript/toledo-archivo-y-biblioteca-capitulares-(olim-bibl-manoscript/19183"
+                        />Toledo, Archivo y Biblioteca Capitulares (olim Biblioteca del Cabildo)
+                        8-26, ff. 1-7a </witness>
+                  </listWit>
+                  <witness ana="subarchetypum6">y</witness>
+                  <listWit ana="descendants of y">
+                     <witness ana="subarchetypum7">y1</witness>
+                     <listWit ana="descendants of y1">
+                        <witness xml:id="n19176" ana="P5"><ptr
+                              target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-3345-manoscript/19176"
+                           />Paris, Bibliothèque Nationale de France, lat. 3345, ff. 1-5a</witness>
+                        <witness ana="V3">Città del Vaticano, Biblioteca Apostolica Vaticana, Reg.
+                           lat. 402, ff. 1-5d</witness>
+                     </listWit>
+                     <witness xml:id="n19186" ana="W2"><ptr
+                           target="http://www.mirabileweb.it/manuscript/wien-österreichische-nationalbibliothek-597-manoscript/19186"
+                        />Wien, Österreichische Nationalbibliothek 597, ff. 43-48d</witness>
+                  </listWit>
+               </listWit>
+            </listWit>
+            <listWit exclude="true">
+               <witness xml:id="n10290" ana="B28"><ptr
+                     target="http://www.mirabileweb.it/manuscript/brescia-biblioteca-civica-queriniana-c-vii-14-manoscript/10290"
+                  />Brescia, Biblioteca Civica Queriniana C.VII.14, ff. 1-10d</witness>
+               <witness xml:id="n3448" ana="C2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/cambridge-gonville-and-caius-college-61-155-manoscript/3448"
+                  />Cambridge, Gonville and Caius College 61/155, ff. 267-284</witness>
+               <witness xml:id="n19171" ana="M1"><ptr
+                     target="http://www.mirabileweb.it/manuscript/madrid-biblioteca-nacional-de-españa-ms-411-manoscript/19171"
+                  />Madrid, Biblioteca Nacional de España, Ms. 411, ff. 61c-64b</witness>
+               <witness xml:id="n19172" ana="M2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/madrid-biblioteca-nacional-de-españa-ms-600-manoscript/19172"
+                  />Madrid, Biblioteca Nacional de España, Ms. 600, ff. 2-12</witness>
+               <witness xml:id="n19173" ana="M5"><ptr
+                     target="http://www.mirabileweb.it/manuscript/manchester-john-rylands-university-library-lat-454-manoscript/19173"
+                  />Manchester, John Rylands University Library, lat. 454, ff. 17-25v</witness>
+               <witness xml:id="n19174" ana="M12"><ptr
+                     target="http://www.mirabileweb.it/manuscript/milano-biblioteca-ambrosiana-o-76-sup--manoscript/19174"
+                  />Milano, Biblioteca Ambrosiana O 76 sup., ff. 1-9</witness>
+               <witness xml:id="n19175" ana="N4"><ptr
+                     target="http://www.mirabileweb.it/manuscript/novara-archivio-e-biblioteca-capitolari-di-santa-m-manoscript/19175"
+                  />Novara, Archivio e Biblioteca Capitolari di Santa Maria LX (77), ff.
+                  1-7b</witness>
+               <witness xml:id="n7581" ana="P17"><ptr
+                     target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-16716-manoscript/7581"
+                  />Paris, Bibliothèque Nationale de France, lat. 16716, ff. 40-44d</witness>
+               <witness xml:id="n102404" ana="A2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/augsburg-staats-und-stadtbibliothek-4°-259-manoscript/102404"
+                  />Augsburg, Staats- und Stadtbibliothek, 4° 259</witness>
+               <witness xml:id="n158566" ana="A4"><ptr
+                     target="http://www.mirabileweb.it/manuscript/augsburg-staats-und-stadtbibliothek-8°-35-manoscript/158566"
+                  />Augsburg, Staats- und Stadtbibliothek, 8° 35, ff. 215-237</witness>
+               <witness xml:id="n171581" ana="B7"><ptr
+                     target="http://www.mirabileweb.it/manuscript/basel-bâle-universitätsbibliothek-(olim-öffentlich-manoscript/171581"
+                  />Basel/Bâle, Universitätsbibliothek (olim Öffentliche Bibliothek der Universität)
+                  A X 131, ff. 40-45v </witness>
+               <witness xml:id="n184781" ana="B8"><ptr
+                     target="http://www.mirabileweb.it/manuscript/basel-bâle-universitätsbibliothek-(olim-öffentlich-manoscript/184781"
+                  />Basel/Bâle, Universitätsbibliothek (olim Öffentliche Bibliothek der Universität)
+                  A XI 79, ff. 148 e sgg.</witness>
+               <witness xml:id="n130900" ana="B12"><ptr
+                     target="http://www.mirabileweb.it/manuscript/berlin-staatsbibliothek-zu-berlin-preußischer-kult-manoscript/130900"
+                  />Berlin, Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, lat. 4° 381 (olim
+                  Theol. lat. 4° 233), ff. 101-108v</witness>
+               <witness xml:id="n180298" ana="B14"><ptr
+                     target="http://www.mirabileweb.it/manuscript/berlin-staatsbibliothek-zu-berlin-preußischer-kult-manoscript/180298"
+                  />Berlin, Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, lat. 8° 429, ff.
+                  72-76 </witness>
+               <witness xml:id="n15377" ana="B15"><ptr
+                     target="http://www.mirabileweb.it/manuscript/berlin-staatsbibliothek-zu-berlin-preußischer-kult-manoscript/15377"
+                  />Berlin, Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Magdeburg 76, ff.
+                  172-177b </witness>
+               <witness xml:id="n227132" ana="B24"><ptr
+                     target="http://www.mirabileweb.it/manuscript/bologna-biblioteca-comunale-dell-archiginnasio-ser-manoscript/227132"
+                  />Bologna, Biblioteca Comunale dell'Archiginnasio, Serie A 242, ff.
+                  1-18a</witness>
+               <witness xml:id="n171633" ana="B25"><ptr
+                     target="http://www.mirabileweb.it/manuscript/bologna-biblioteca-universitaria-100-manoscript/171633"
+                  />Bologna, Biblioteca Universitaria 100, ff. 1-5c</witness>
+               <witness xml:id="n92761" ana="B27"><ptr
+                     target="http://www.mirabileweb.it/manuscript/bratislava-státny-slovensky-ústredny-archív-111-manoscript/92761"
+                  />Bratislava, Státny Slovensky ústredny Archív 111, ff. 160 e sgg.</witness>
+               <witness xml:id="n170398" ana="B29"><ptr
+                     target="http://www.mirabileweb.it/manuscript/brescia-biblioteca-civica-queriniana-d-vii-9-manoscript/170398"
+                  />Brescia, Biblioteca Civica Queriniana D.VII.9, ff. 1-8</witness>
+               <witness xml:id="n137519" ana="B30"><ptr
+                     target="http://www.mirabileweb.it/manuscript/brugge-hoofdbibliotheek-biekorf-(stadsbibliotheek)-manoscript/137519"
+                  />Brugge, Hoofdbibliotheek Biekorf (Stadsbibliotheek) 292, ff. 1-8b</witness>
+               <witness xml:id="n118445" ana="B31"><ptr
+                     target="http://www.mirabileweb.it/manuscript/bruxelles-bibliothèque-royale-albert-ier-2519-23-(-manoscript/118445"
+                  />Bruxelles, Bibliothèque Royale «Albert Ier» 2519-23 (2063), ff. 78-84</witness>
+               <witness xml:id="n90314" ana="C4"><ptr
+                     target="http://www.mirabileweb.it/manuscript/cambridge-university-library-ee-iv-23-manoscript/90314"
+                  />Cambridge, University Library Ee.IV.23, ff. 239-242</witness>
+               <witness xml:id="n107100" ana="C5"><ptr
+                     target="http://www.mirabileweb.it/manuscript/cambridge-university-library-ii-vi-39-manoscript/107100"
+                  />Cambridge, University Library Ii.VI.39, ff. 164-175</witness>
+               <witness xml:id="n170755" ana="C6"><ptr
+                     target="http://www.mirabileweb.it/manuscript/carcassonne-bibliothèque-municipale-30-(2311-22)-manoscript/170755"
+                  />Carcassonne, Bibliothèque Municipale 30 (2311-22), ff. 1-6</witness>
+               <witness xml:id="n165438" ana="C7"><ptr
+                     target="http://www.mirabileweb.it/manuscript/chartres-médiathèque-l-apostrophe-(olim-bibliothèq-manoscript/165438"
+                  />Chartres, Médiathèque «L'Apostrophe» (olim Bibliothèque Municipale) 77 (57) (+),
+                  ff. 64-69v </witness>
+               <witness xml:id="n37206" ana="D1"><ptr
+                     target="http://www.mirabileweb.it/manuscript/darmstadt-universitäts-und-landesbibliothek-(olim--manoscript/37206"
+                  />Darmstadt, Universitäts- und Landesbibliothek (olim Hessische Landes- und
+                  Hochschulbibliothek) 2769, ff. 101a-101b</witness>
+               <witness xml:id="n11275" ana="E2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/el-escorial-real-biblioteca-de-san-lorenzo-de-el-e-manoscript/11275"
+                  />El Escorial, Real Biblioteca de San Lorenzo de El Escorial b.III.14, ff. 212 e
+                  sgg.</witness>
+               <witness xml:id="n3159" ana="F2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/firenze-biblioteca-nazionale-centrale-ii-ii-67-(ma-manoscript/3159"
+                  />Firenze, Biblioteca Nazionale Centrale II.II.67 (Magl. VIII.32; Strozzi 742),
+                  ff. 1-7v</witness>
+               <witness ana="F3">Firenze, Biblioteca Nazionale Centrale, Conv. soppr.
+                  G.IV.313</witness>
+               <witness ana="F4">Firenze, Biblioteca Nazionale Centrale, Conv. soppr.
+                  I.X.26</witness>
+               <witness xml:id="n155795" ana="G1"><ptr
+                     target="http://www.mirabileweb.it/manuscript/gdansk-biblioteka-gdanska-polskiej-akademii-nauk-1-manoscript/155795"
+                  />Gdansk, Biblioteka Gdanska Polskiej Akademii Nauk 1980, ff. 67-69b</witness>
+               <witness xml:id="n132863" ana="G2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/gdansk-biblioteka-gdanska-polskiej-akademii-nauk-m-manoscript/132863"
+                  />Gdansk, Biblioteka Gdanska Polskiej Akademii Nauk, Mar. F. 171, ff.
+                  227-230</witness>
+               <witness xml:id="n110906" ana="H4"><ptr
+                     target="http://www.mirabileweb.it/manuscript/herzogenburg-stiftsbibliothek-21-manoscript/110906"
+                  />Herzogenburg, Stiftsbibliothek 21, ff. 133-137v</witness>
+               <witness xml:id="n144490" ana="J"><ptr
+                     target="http://www.mirabileweb.it/manuscript/jena-thüringer-universitäts-und-landesbibliothek-e-manoscript/144490"
+                  />Jena, Thüringer Universitäts- und Landesbibliothek, El. 4° 7, ff.
+                  42-49v</witness>
+               <witness xml:id="n150856" ana="K2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/københavn-kongelige-bibliotek-gks-78-2°-manoscript/150856"
+                  />København, Kongelige Bibliotek, GKS 78 2°, ff. 1-5</witness>
+               <witness xml:id="n154077" ana="K3"><ptr
+                     target="http://www.mirabileweb.it/manuscript/københavn-kongelige-bibliotek-thott-110-8°-manoscript/154077"
+                  />København, Kongelige Bibliotek, Thott 110 8°, ff. 1-23</witness>
+               <witness xml:id="n92061" ana="K3a"><ptr
+                     target="http://www.mirabileweb.it/manuscript/köln-historisches-archiv-der-stadt-köln-(stadtarch-manoscript/92061"
+                  />Köln, Historisches Archiv der Stadt Köln (Stadtarchiv), Best. 7004
+                  (Handschriften - GB 4°) 156, ff. 107-114v</witness>
+               <witness xml:id="n144117" ana="L1"><ptr
+                     target="http://www.mirabileweb.it/manuscript/leipzig-universitätsbibliothek-1091-manoscript/144117"
+                  />Leipzig, Universitätsbibliothek 1091, ff. 91v-100</witness>
+               <witness xml:id="n189737" ana="L5"><ptr
+                     target="http://www.mirabileweb.it/manuscript/leuven-maurits-sabbebibliotheek-(bibliotheek-van-d-manoscript/189737"
+                  />Leuven, Maurits Sabbebibliotheek (Bibliotheek van de Faculteit der
+                  Godgeleerdheid K.U.L.), Grootseminarie Mechelen 26, ff. 81-85v</witness>
+               <witness xml:id="n190535" ana="L6"><ptr
+                     target="http://www.mirabileweb.it/manuscript/lonato-(brescia)-fondazione-ugo-da-como-131-manoscript/190535"
+                  />Lonato (Brescia), Fondazione Ugo da Como 131, ff. 1-6</witness>
+               <witness xml:id="n174156" ana="L7"><ptr
+                     target="http://www.mirabileweb.it/manuscript/london-british-library-add-6158-manoscript/174156"
+                  />London, British Library, Add. 6158, ff. 1-8a</witness>
+               <witness xml:id="n18575" ana="L9"><ptr
+                     target="http://www.mirabileweb.it/manuscript/london-british-library-arundel-248-manoscript/18575"
+                  />London, British Library, Arundel 248, ff. 2 e sgg?</witness>
+               <witness xml:id="n171509" ana="L10"><ptr
+                     target="http://www.mirabileweb.it/manuscript/london-british-library-harley-4887-manoscript/171509"
+                  />London, British Library, Harley 4887</witness>
+               <witness xml:id="n3450" ana="L11"><ptr
+                     target="http://www.mirabileweb.it/manuscript/london-british-library-harley-5441-manoscript/3450"
+                  />London, British Library, Harley 5441</witness>
+               <witness xml:id="n176760" ana="M14"><ptr
+                     target="http://www.mirabileweb.it/manuscript/milano-biblioteca-nazionale-braidense-(brera)-ae-x-manoscript/176760"
+                  />Milano, Biblioteca Nazionale Braidense (Brera) AE.XII.10, ff. 23d-26b</witness>
+               <witness xml:id="n170217" ana="M16"><ptr
+                     target="http://www.mirabileweb.it/manuscript/milano-archivio-storico-civico-e-biblioteca-trivul-manoscript/170217"
+                  />Milano, Archivio Storico Civico e Biblioteca Trivulziana, Triv. 679, ff.
+                  1-7v</witness>
+               <witness xml:id="n156591" ana="M19"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-3782-manoscript/156591"
+                  />München, Bayerische Staatsbibliothek, Clm 3782, ff. 66-72v</witness>
+               <witness xml:id="n18614" ana="M21"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-5319-manoscript/18614"
+                  />München, Bayerische Staatsbibliothek, Clm 5319, ff. 1-9d</witness>
+               <witness xml:id="n183438" ana="M22"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-5361-manoscript/183438"
+                  />München, Bayerische Staatsbibliothek, Clm 5361, ff. 75v-86v</witness>
+               <witness xml:id="n193202" ana="M23"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-5662-manoscript/193202"
+                  />München, Bayerische Staatsbibliothek, Clm 5662, ff. 194-206</witness>
+               <witness xml:id="n111955" ana="M27"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-14230-manoscript/111955"
+                  />München, Bayerische Staatsbibliothek, Clm 14230, ff. 1-4d</witness>
+               <witness xml:id="n87291" ana="M28"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-14782-(em--manoscript/87291"
+                  />München, Bayerische Staatsbibliothek, Clm 14782 (Em. E 4), ff. 204v-206v,
+                  251-256v, 296v-298v, 313v-314</witness>
+               <witness xml:id="n89905" ana="M29"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-17290-(sch-manoscript/89905"
+                  />München, Bayerische Staatsbibliothek, Clm 17290 (Scheftl. 290), ff.
+                  90-97v</witness>
+               <witness xml:id="n140884" ana="M30"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-18566-manoscript/140884"
+                  />München, Bayerische Staatsbibliothek, Clm 18566, ff. 155-167</witness>
+               <witness xml:id="n89500" ana="M31"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-18637-(teg-manoscript/89500"
+                  />München, Bayerische Staatsbibliothek, Clm 18637 (Teg. 637), ff. 41-49</witness>
+               <witness xml:id="n152817" ana="M32"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-23833-manoscript/152817"
+                  />München, Bayerische Staatsbibliothek, Clm 23833, ff. 110d-118b [ex
+                  125d-133b]</witness>
+               <witness ana="M33">München, Bayerische Staatsbibliothek, lat. 23865, ff.
+                  24-26v</witness>
+               <witness ana="M34">München, Bayerische Staatsbibliothek, lat. 27019, ff.
+                  225-234d</witness>
+               <witness xml:id="n20293" ana="M35"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-28845-manoscript/20293"
+                  />München, Bayerische Staatsbibliothek, Clm 28845, ff. 152-158a</witness>
+               <witness xml:id="n155806" ana="M36"><ptr
+                     target="http://www.mirabileweb.it/manuscript/münchen-bayerische-staatsbibliothek-clm-28885-manoscript/155806"
+                  />München, Bayerische Staatsbibliothek, Clm 28885, ff. 39c-43b</witness>
+               <witness xml:id="n10438" ana="O1"><ptr
+                     target="http://www.mirabileweb.it/manuscript/oxford-bodleian-library-add-c-12-(s-c-24755)-manoscript/10438"
+                  />Oxford, Bodleian Library, Add. C 12 (S.C. 24755), ff. 64v-69</witness>
+               <witness xml:id="n190916" ana="O3"><ptr
+                     target="http://www.mirabileweb.it/manuscript/oxford-bodleian-library-lyell-63-manoscript/190916"
+                  />Oxford, Bodleian Library, Lyell 63, ff. 226v-233v</witness>
+               <witness xml:id="n159488" ana="O4"><ptr
+                     target="http://www.mirabileweb.it/manuscript/oxford-bodleian-library-marshall-86-(s-c-5297)-manoscript/159488"
+                  />Oxford, Bodleian Library, Marshall 86 (S.C. 5297), ff. 76-94</witness>
+               <witness xml:id="n5577" ana="P10"><ptr
+                     target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-8654-manoscript/5577﻿"
+                  />Paris, Bibliothèque Nationale de France, lat. 8654, ff. 53-58v</witness>
+               <witness xml:id="n169354" ana="P12"><ptr
+                     target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-10731-manoscript/169354"
+                  />Paris, Bibliothèque Nationale de France, lat. 10731, ff. 81-92v</witness>
+               <witness xml:id="n189212" ana="P13"><ptr
+                     target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-lat-12440-manoscript/189212"
+                  />Paris, Bibliothèque Nationale de France, lat. 12440, ff. 3-10</witness>
+               <witness xml:id="n114934" ana="P23"><ptr
+                     target="http://www.mirabileweb.it/manuscript/paris-bibliothèque-nationale-de-france-n-a-lat-314-manoscript/114934"
+                  />Paris, Bibliothèque Nationale de France, n.a. lat. 3144, ff. 9-12</witness>
+               <witness xml:id="n91484" ana="P25"><ptr
+                     target="http://www.mirabileweb.it/manuscript/perugia-archivio-storico-di-s-pietro-c-m-27-manoscript/91484"
+                  />Perugia, Archivio Storico di S. Pietro C.M.27, ff. 100-106b</witness>
+               <witness xml:id="n2179" ana="P27"><ptr
+                     target="http://www.mirabileweb.it/manuscript/philadelphia-pa-university-of-pennsylvania-library-manoscript/2179"
+                  />Philadelphia, PA, University of Pennsylvania Library. Rare Book and Manuscript
+                  Library, lat. 107, ff. 2-7r</witness>
+               <witness xml:id="n91620" ana="P29"><ptr
+                     target="http://www.mirabileweb.it/manuscript/praha-národní-knihovna-ceské-republiky-(olim-národ-manoscript/91620"
+                  />Praha, Národní Knihovna Ceské Republiky (olim Národní a Univerzitní Knihovna)
+                  III.D.17 (469), ff. 1-5a</witness>
+               <witness xml:id="n154563" ana="P33"><ptr
+                     target="http://www.mirabileweb.it/manuscript/praha-národní-knihovna-ceské-republiky-(olim-národ-manoscript/154563"
+                  />Praha, Národní Knihovna Ceské Republiky (olim Národní a Univerzitní Knihovna)
+                  XI.F.7 (2069), ff. 128-132b</witness>
+               <witness xml:id="n126582" ana="P34"><ptr
+                     target="http://www.mirabileweb.it/manuscript/praha-národní-knihovna-ceské-republiky-(olim-národ-manoscript/126582"
+                  />Praha, Národní Knihovna Ceské Republiky (olim Národní a Univerzitní Knihovna)
+                  XIV.E.31 (2565), ff. 394b-399b</witness>
+               <witness xml:id="n179236" ana="R2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/reims-bibliothèque-d-etude-et-du-patrimoine-(bibli-manoscript/179236"
+                  />Reims, Bibliothèque d'Etude et du Patrimoine (Bibliothèque Carnegie; olim
+                  Bibliothèque Municipale) 499 (E. 373), ff. 100-107</witness>
+               <witness xml:id="n221295" ana="R6"><ptr
+                     target="http://www.mirabileweb.it/manuscript/rostock-universitätsbibliothek-mss-theol-37a-manoscript/221295"
+                  />Rostock, Universitätsbibliothek, Mss. theol. 37a</witness>
+               <witness xml:id="n171136" ana="S2"><ptr
+                     target="http://www.mirabileweb.it/manuscript/salzburg-benediktiner-erzabtei-sankt-peter-stiftsb-manoscript/171136"
+                  />Salzburg, Benediktiner-Erzabtei Sankt Peter, Stiftsbibliothek b.IX.20, ff.
+                  85-91</witness>
+               <witness xml:id="n107635" ana="S4"><ptr
+                     target="http://www.mirabileweb.it/manuscript/sankt-gallen-kantonsbibliothek-st-gallen-vadianisc-manoscript/107635"
+                  />Sankt Gallen, Kantonsbibliothek St. Gallen, Vadianische Sammlung (olim
+                  Stadtbibliothek) 455, ff. 33-38r </witness>
+               <witness xml:id="n119151" ana="S7"><ptr
+                     target="http://www.mirabileweb.it/manuscript/savignano-sul-rubicone-(forlì-cesena)-biblioteca-d-manoscript/119151"
+                  />Savignano sul Rubicone (Forlì-Cesena), Biblioteca della Rubiconia Accademia dei
+                  Filopatridi 18, ff. 1-11v</witness>
+               <witness xml:id="n185234" ana="S9"><ptr
+                     target="http://www.mirabileweb.it/manuscript/siena-biblioteca-comunale-degli-intronati-g-x-12-manoscript/213478"
+                  />Siena, Biblioteca Comunale degli Intronati G.X.12, ff. 1-6a</witness>
+               <witness xml:id="n217470" ana="S10"><ptr
+                     target="http://www.mirabileweb.it/manuscript/siena-biblioteca-comunale-degli-intronati-u-iii-13-manoscript/217470"
+                  />Siena, Biblioteca Comunale degli Intronati U.III.13, ff. 417-425v</witness>
+               <witness xml:id="n116485" ana="T5"><ptr
+                     target="http://www.mirabileweb.it/manuscript/trento-archivio-diocesano-tridentino-biblioteca-ca-manoscript/116485"
+                  />Trento, Archivio Diocesano Tridentino. Biblioteca Capitolare 39, ff.
+                  85-96v</witness>
+               <witness xml:id="n112435" ana="V6"><ptr
+                     target="http://www.mirabileweb.it/manuscript/città-del-vaticano-biblioteca-apostolica-vaticana--manoscript/112435"
+                  />Città del Vaticano, Biblioteca Apostolica Vaticana, Vat. lat. 993, ff.
+                  1-4</witness>
+               <witness xml:id="n15861" ana="V8"><ptr
+                     target="http://www.mirabileweb.it/manuscript/città-del-vaticano-biblioteca-apostolica-vaticana--manoscript/15861"
+                  />Città del Vaticano, Biblioteca Apostolica Vaticana, Vat. lat. 4257, ff.
+                  72-78</witness>
+               <witness ana="V9">Città del Vaticano, Biblioteca Apostolica Vaticana, Vat. lat. 5996,
+                  ff. 1-5c</witness>
+               <witness xml:id="n122289" ana="V10"><ptr
+                     target="http://www.mirabileweb.it/manuscript/città-del-vaticano-biblioteca-apostolica-vaticana--manoscript/122289"
+                  />Città del Vaticano, Biblioteca Apostolica Vaticana, Vat. lat. 6297, ff.
+                  93-100v</witness>
+               <witness xml:id="n90947" ana="V15"><ptr
+                     target="http://www.mirabileweb.it/manuscript/venezia-biblioteca-nazionale-marciana-lat-xiv-127--manoscript/90947"
+                  />Venezia, Biblioteca Nazionale Marciana, lat. XIV. 127 (4332), ff.
+                  35-46</witness>
+               <witness xml:id="n191855" ana="W1"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wien-österreichische-nationalbibliothek-322-manoscript/191855"
+                  />Wien, Österreichische Nationalbibliothek 322, ff. 199v-210v</witness>
+               <witness xml:id="n101837" ana="W3"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wien-österreichische-nationalbibliothek-1291-manoscript/101837"
+                  />Wien, Österreichische Nationalbibliothek 1291, ff. 5-11v</witness>
+               <witness xml:id="n155786" ana="W5"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wien-österreichische-nationalbibliothek-3939-manoscript/155786"
+                  />Wien, Österreichische Nationalbibliothek 3939, ff. 251v-259v</witness>
+               <witness xml:id="n175526" ana="W7"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wien-österreichische-nationalbibliothek-4570-manoscript/175526"
+                  />Wien, Österreichische Nationalbibliothek 4570, ff. 284-288v</witness>
+               <witness xml:id="n15234" ana="W8"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wien-österreichische-nationalbibliothek-4753-manoscript/15234"
+                  />Wien, Österreichische Nationalbibliothek 4753, ff. 1v-8v</witness>
+               <witness xml:id="n130088" ana="W9"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wien-österreichische-nationalbibliothek-4868-manoscript/130088"
+                  />Wien, Österreichische Nationalbibliothek 4868, ff. 75v-78v</witness>
+               <witness xml:id="n171758" ana="W10"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wien-österreichische-nationalbibliothek-4922-manoscript/171758"
+                  />Wien, Österreichische Nationalbibliothek 4922, ff. 190v-193v</witness>
+               <witness xml:id="n86757" ana="W13"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wolfenbüttel-herzog-august-bibliothek-aug-2°-69-11-manoscript/86757"
+                  />Wolfenbüttel, Herzog August Bibliothek, Aug. 2° 69. 11 (2662), ff.
+                  95-101v</witness>
+               <witness ana="W14">Wolfenbüttel, Herzog August Bibliothek, Gud. lat. 90.91, ff.
+                  53v-58v</witness>
+               <witness xml:id="n23105" ana="W15"><ptr
+                     target="http://www.mirabileweb.it/manuscript/wolfenbüttel-herzog-august-bibliothek-helmst-602-(-manoscript/23105"
+                  />Wolfenbüttel, Herzog August Bibliothek, Helmst. 602 (650), ff. 54-65</witness>
+               <witness xml:id="n92246" ana="W19"><ptr
+                     target="http://www.mirabileweb.it/manuscript/würzburg-universitätsbibliothek-m-ch-q-100-manoscript/92246"
+                  />Würzburg, Universitätsbibliothek, M.ch.q. 100, ff. 155-167v</witness>
+               <witness xml:id="n94531" ana="W20"><ptr
+                     target="http://www.mirabileweb.it/manuscript/würzburg-universitätsbibliothek-m-ch-q-140-manoscript/94531"
+                  />Würzburg, Universitätsbibliothek, M.ch.q. 140, ff. 161-166</witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <head>Nota al testo</head>
+         <p>Le fonti delle citazioni sono menzionate in riferimento alle seguenti edizioni:</p>
+         <p><emph rend="bold">Alc. <emph rend="italic">De arte rhet.</emph></emph> = <emph
+               rend="italic">Disputatio de rhetorica et virtutibus</emph>, in <emph rend="italic"
+               >Rhetores latini minores</emph>, ed. K. Halm, Leipzig 1863, rist. an. Frankfurt/Main
+            1964, pp. 523-550.</p>
+         <p><emph rend="bold">Aug. <emph rend="italic">Ench</emph>.</emph> = Sancti Aurelii
+            Augustini <emph rend="italic">Enchiridion ad Laurentium de fide et spe et
+               caritate</emph>, ed. E. Evans, Turnholti 1969 (<emph rend="italic">CCC</emph> 46),
+            pp. 48-114.</p>
+         <p><emph rend="bold">Aug. <emph rend="italic">Ep</emph></emph>. = S. Aureli Augustini Hipp.
+            Ep. <emph rend="italic">Epistulae</emph>, ed. A. Goldbacher, Pars III: <emph
+               rend="italic">Ep. CXXIV-CLXXXIV A</emph>, Vindobonae-Lipsiae 1904 (<emph
+               rend="italic">CSEL</emph> 44).</p>
+         <p><emph rend="bold">Bald. <emph rend="italic">Fab</emph>.</emph> = A. Hilka, <emph
+               rend="italic">Beiträge zur lateinischen Erzählungsliteratur des Mittelalters: 1. Der
+               Novus Aesopus des Baldo, 2. Eine lateinische Übersetzung der griechischen Version des
+               Kalila-buchs</emph>, in <emph rend="italic">Abhandlungen der Gesellschaft der
+               Wissenschaften zu Göttingen. Philogisch-historische Klasse</emph>, N. F., XXI 3,
+            1928, pp. 1-58.</p>
+         <p><emph rend="bold">Caec. Balb. <emph rend="italic">De nugis</emph></emph> = Caecilii
+            Balbi <emph rend="italic">De nugiis philosophorum quae supersunt</emph>, ed. E.
+            Wölfflin, Basiliae 1855.</p>
+         <p><emph rend="bold">Cass. <emph rend="italic">Variae</emph></emph> = Magni Aurelii
+            Cassiodori <emph rend="italic">Variarum libri XII</emph>, ed. Å. J. Fridh, Turnholti
+            1973 (<emph rend="italic">CCL</emph> 96), pp. 1-499.</p>
+         <p><emph rend="bold"><emph rend="italic">Cod. Iust.</emph></emph> = <emph rend="italic"
+               >Corpus iuris civilis</emph>, II. <emph rend="italic">Codex Iustinianus</emph>, ed.
+            P. Krüger, Berlin 1906.</p>
+         <p><emph rend="bold"><emph rend="italic">De mor.</emph></emph> = <emph rend="italic">De
+               moribus</emph>, in Publilii Syri <emph rend="italic">Sententiae</emph>, ed. E.
+            Wölfflin, cit. <emph rend="italic">infra</emph>, pp. 136-148; ed. O. Friedrich, cit.
+               <emph rend="italic">infra</emph>, pp. 87-91.</p>
+         <p><emph rend="bold"><emph rend="italic">Decr.</emph></emph> = <emph rend="italic">Corpus
+               iuris canonici</emph>, I (a): <emph rend="italic">Decretum magistri Gratiani</emph>,
+            ed. L. Richter - E. Friedberg, Leipzig 1879, rist. an. Graz 1955.</p>
+         <p><emph rend="bold"><emph rend="italic">Dig.</emph></emph> = <emph rend="italic">Corpus
+               iuris civilis</emph>, I: <emph rend="italic">Institutiones</emph>, ed. P. Krüger,
+               <emph rend="italic">Digesta</emph>, ed. Th. Mommsen - P. Krüger, Berlin 1908.</p>
+         <p><emph rend="bold"><emph rend="italic">Dist. Cat.</emph></emph> = <emph rend="italic"
+               >Disticha Catonis</emph>, ed. M. Boas - H. J. Botschuyver, Amstelodami 1952.</p>
+         <p><emph rend="bold">God.<emph rend="italic">Ep.</emph></emph> = Godefridus Wintoniensis,
+            in Th. Wright, cit. <emph rend="italic">infra</emph>, II, London 1872, rist. an. 1964,
+            pp. 103-155.</p>
+         <p><emph rend="bold">Greg. Magn. <emph rend="italic">Hom. ev.</emph></emph> = San Gregorio
+            Magno, <emph rend="italic">Omelie sui Vangeli</emph>, a cura di G. Cremascoli, Roma 1994
+               (<emph rend="italic">Opere di Gregorio Magno 2</emph>).</p>
+         <p><emph rend="bold">Isid. <emph rend="italic">Et.</emph></emph> = Isidori Hispalensis
+            Episcopi <emph rend="italic">Etymologiarum sive Originum libri viginti</emph>, ed. W. M.
+            Lindsay, Oxford 1911.</p>
+         <p><emph rend="bold">Mart. Brac. <emph rend="italic">Formula</emph></emph> = Martini
+            Episcopi Bracarensis <emph rend="italic">Opera omnia</emph>, ed. C. W. Barlow, New Haven
+            1950, pp. 204-250.</p>
+         <p><emph rend="italic"><emph rend="bold">Pamph.</emph></emph> = <emph rend="italic"
+               >Pamphilus</emph>, ed. S. Pittaluga, in <emph rend="italic">Commedie latine del XII e
+               XIII secolo</emph>, III, Genova 1980, pp. 13-137.</p>
+         <p><emph rend="bold">Petr. Alf. <emph rend="italic">Dial.</emph></emph> = <emph
+               rend="italic">Dialogus Petri Alphonsi, ex Judaeo Christiani, et Moysi Judaei</emph>,
+            in <emph rend="italic">PL</emph> 157, coll. 535-672.</p>
+         <p><emph rend="bold">Petr. Alf. <emph rend="italic">Disc.</emph></emph> = Petri Alfonsi
+               <emph rend="italic">Disciplina clericalis</emph>, ed. A. Hilka - W. Söderhjelm,
+            Helsingforsiae 1911 (<emph rend="italic">Acta societatis scientiarum Fennicae</emph>
+            XXXVIII 4).</p>
+         <p><emph rend="bold">Prosp. Aquit. <emph rend="italic">Lib. sent.</emph></emph> = Prosperi
+            Aquitani <emph rend="italic">Liber sententiarum</emph>, ed. M. Gastaldo, Turnholti 1972
+               (<emph rend="italic">CCL</emph> 68 A), pp. 213-365.</p>
+         <p><emph rend="bold">Publ. Syr. <emph rend="italic">Sent.</emph></emph> = Publilii Syri
+               <emph rend="italic">Sententiae</emph>, ed. E. Wölfflin, Leipzig 1869, pp. 65-113; ed.
+            O. Friedrich, Berlin 1880, rist. an., Hildesheim 1964, pp. 27-79.</p>
+         <p><emph rend="bold">Walther</emph> = H. Walther, <emph rend="italic">Lateinische
+               Sprichwörter und Sentenzen des Mittelalters</emph>, Göttingen 1963.</p>
+      </front>
+      <body>
+         <div1 type="LIBER_DE_DOCTRINA_DICENDI_ET_TACENDI">
+            <div2>
+               <head><pb n="2"/>Incipit liber de doctrina dicendi et tacendi</head>
+               <p>[1] Initio, medio ac fine mei tractatus adsit gratia Sancti Spiritus. Amen.</p>
+               <p>[2] Quoniam in dicendo multi errant nec est aliquis qui linguam suam ad plenum
+                  valeat domare, [3] beato Jacobo hoc testante, qui dixit: <quote ana="Iac 3, 7-8"
+                     >«Natura bestiarum et serpentum ac volucrum et ceterorum domatur et a natura
+                     humana domita sunt, linguam autem suam nemo domare potest»</quote>, [4] ideo
+                  ego, Albertanus, brevem doctrinam super dicendo atque tacendo uno versiculo
+                  comprehensam tibi, filio meo Stephano, tradere curavi. [5] Versiculus autem hic
+                  est: «Quis, quid, cui dicas, cur, quomodo, quando requiras».</p>
+               <p>[6] Verum quia verba in hoc versiculo comprehensa ponderosa sunt et generalia, et
+                  generalitas parit obscuritatem, [7] ideo illa exponere ac pro modulo mee scientie,
+                  licet non ad plenum, proposui dilucidare. [8] Tu igitur, fili karissime, cum loqui
+                  desideras a temet ipso incipere debes, ad exemplum galli, qui antequam cantet cum
+                  alis ter se percutit. [9] In principio itaque dicti tui, antequam spiritus ad os
+                  tuum verba producat, te ipsum et omnia verba in hoc versiculo posita requiras, id
+                  est inquiras te ipsum et a te ipso non solum queras, sed iterum queras. [10] Nam
+                  istud «re» reiterationem denotat, ut dicas «requiras» id est «iterum queras»;
+                  sicut enim «repetere» dicitur quis, id est «iterum petere», ita «requirere» quis
+                  dicitur, id est «iterum querere».</p>
+            </div2>
+            <div2>
+               <head><pb n="4"/>[I]</head>
+               <head>Super hac sillaba quis</head>
+               <p>[1] Requiras ergo in animo tuo a te ipso quis es, qui dicere vis, utrum dictum
+                  illud ad te pertineat an potius ad alium. [2] Nam si ad alium potius quam ad te
+                  dictum illud pertineat, illi dicto te immiscere non debes. [3] Sicut enim per
+                  leges <quote
+                     ana="Dig. L 17, 36 (Pomp. ad Sabinum); cfr. anche Liber cons., XLII, p. 95, rr. 11-12"
+                     >culpa est immiscere se rei ad se non pertinenti</quote>, ut dicit regula
+                  iuris, ita culpa est dicere quod ad se non pertineat. [4] Unde Salomon in
+                  Proverbiis dixit: <quote ana="Prv 26, 17">«Sicut qui apprehendit auribus canem,
+                     ita qui transit et impatiens commiscetur alterius rixe»</quote>. [5] Et Jesus
+                  Sirac dixit: <quote ana="Sir 11, 9">«De ea re que te non molestat ne
+                     certaveris»</quote>.</p>
+               <p>[6] Secundo requiras te ipsum et a te ipso utrum in plano et quieto sensu
+                  permaneas an vero ira vel aliqua perturbatione animi motus existas. [7] Nam si
+                  turbatus est animus tuus, a locutione cessare debes et motus tui animi turbatos
+                  cohibere ira durante. [8] Ait enim Tullius: <quote ana="Cic. De off., II 5, 18"
+                     >«Virtus est cohibere motus animi turbatos et appetitiones efficere
+                     rationi»</quote>. [9] Et ideo tacere debes iratus, quia, ut ait Seneca: <quote
+                     ana="cfr. Publ. Syr. Sent., ed. Wölfflin, n. 281 p. 84">«Iratus nichil nisi
+                     criminis loquitur»</quote>. [10] Quare et Cato dixit: <quote
+                     ana="Dist. Cat. II 4, p. 101">«Iratus de re incerta contendere noli. Ira
+                     impedit animum, ne possit cernere verum»</quote>. [11] Et alius dixit: <quote
+                     ana="Publ. Syr. Sent., ed. Friedrich, n. 13 p. 54; ed. Wölfflin, n. 304 p. 85"
+                     >«Lex videt iratum, iratus non videt illam»</quote>. [12] Inde etiam Ovidius
+                  dixit: <quote ana="Ov. Her., III 85">«Vince animos iramque tuam qui cetera
+                     vincis»</quote>. [13] Inde etiam Tullius dixit: <quote
+                     ana="Cic. De off., I 38, 136">«Ira procul absit, cum qua nichil recte fieri,
+                     nichil considerari potest»</quote>. [14] <quote ana="Cic. De off., I 38, 137"
+                     >«Que enim aliqua perturbatione fiunt, ea nec constanter fieri possunt neque
+                     hiis qui adsunt approbari»</quote>. [15] Nam et Petrus Alfonsus dixit: <quote
+                     ana="Petr. Alf. Dial., col. 539B">«Natura hoc habet humana, ut animo quoquo
+                     pacto conturbato in vero falsoque discernendo discretionis careat
+                     oculo»</quote>. [16] Et si de ira et irato atque iracundo plenius scire
+                  volueris, lege in libro quem composui <emph rend="italic">De amore et dilectione
+                     Dei et aliarum rerum et de forma vite</emph>, in titulo «De amicitia iracundi
+                  hominis vitanda».</p>
+               <p><pb n="6"/>[17] Et certe cavere debes ne voluntas dicendi in tantum te moveat
+                  atque ad dicendum te inducat quod appetitus tuus rationi non consentiat. [18] Ait
+                  enim Salomon: <quote ana="Prv 25, 28; cfr. anche Liber de amore, I, II, p. 6"
+                     >«Sicut urbs patens et sine murorum ambitu, ita vir qui non potest cohibere
+                     spiritum suum in loquendo»</quote>. [19] Inde etiam dici consuevit: <quote
+                     ana="De mor., n. 132 (ed. Wölfflin, p. 147; ed. Friedrich, p. 90">«Tacere qui
+                     nescit, nescit loqui»</quote>. [20] Nescit ergo stultus loqui, quia tacere non
+                  potest. <quote ana="Caec. Balb. De nugis, XXVI 4, p. 28">«Nam quidam sapiens,
+                     interrogatus cur tantum taceret an quia stultus esset, respondit: “Stultus
+                     tacere non potest”»</quote>. [21] Et alibi Salomon dixit: <quote
+                     ana="Sir 28, 29-30">«Aurum tuum et argentum tuum confla et verbis tuis facito
+                     stateram et impone ori tuo frenos rectos et attende ne forte labaris in lingua
+                     et sit casus tuus insanabilis in morte»</quote>. [22] Et iterum idem ait:
+                     <quote ana="Prv 13, 3; cfr. anche Liber de amore, I, II, p. 6">«Qui custodit os
+                     suum, custodit animam suam; qui autem inconsideratus est ad loquendum sentiet
+                     mala»</quote>. [23] Et etiam Cato dixit: <quote ana="Dist. Cat., I 3, p. 36"
+                     >«Virtutem primam puto compescere linguam. Proximus ille deo est qui scit
+                     ratione tacere»</quote>.</p>
+               <p>[24] Tertio requiras te ipsum et a te ipso in animo tuo recogites quis es, qui
+                  alium reprehendere vel alii dicere velis, utrum de simili dicto vel facto valeas
+                  reprehendi. [25] Nam dixit beatus Paulus in epistola ad Romanos: <quote
+                     ana="Rm 2, 1">«Inexcusabilis es, o homo, omnis qui iudicas: in quo enim alterum
+                     iudicas te ipsum condemnas, eadem enim agis que iudicas»</quote>. [26] Et in
+                  eadem epistola subicit: <quote ana="Rm 2, 21-23">«Qui ergo alium doces te ipsum
+                     non doces; qui predicas non furandum furaris; qui dicis non mecandum mecaris;
+                     qui abhominaris sacrilegium facis, deum inhonoras»</quote>. [27] Et Cato dixit:
+                     <quote ana="Dist. Cat. I 30, p. 69">«Que culpare soles, ea tu ne feceris ipse.
+                     Turpe est doctori cum culpa redarguit ipsum»</quote>. [28] Nam <quote
+                     ana="Prosp. Aquit. Lib. sent., VI 2-3, p. 258">«bene dicere et male operari
+                     nichil aliud est quam se propria voce damnare»</quote>, ut Augustinus ait. [29]
+                  Et alibi idem Cato ait: <quote ana="Dist. Cat., III 7, p. 160">«Alterius dictum
+                     vel factum ne carpseris umquam, exemplo simili ne te derideat
+                  alter»</quote>.</p>
+               <p>[30] Quarto requiras a te ipso intra te quis es, qui dicere velis, utrum bene
+                  doctus vel indoctus et utrum quod dicere velis bene sapias, alio<pb n="8"/>quin
+                  bene dicere non valeres. [31] <quote ana="Caec. Balb. De nugis, XLIII 2">«Nam
+                     quidam sapientem interrogavit quomodo optime posset dicere, qui respondit: “Si
+                     tantummodo dixeris quod bene scieris”»</quote>. [32] Et Jesus Sirac dixit:
+                     <quote ana="Sir 5, 14; cfr. anche Liber de amore, I, II, p. 6">«Si est tibi
+                     intellectus responde proximo; sin autem sit manus tua super os tuum, ne
+                     capiaris in verbo indisciplinato et confundaris»</quote>.</p>
+               <p>[33] Quinto requiras quis erit effectus tue locutionis. Nam quedam ab initio
+                  videntur bona que malum effectum sunt habitura. [34] Dixit enim Jesus Sirac:
+                     <quote ana="Sir 12, 7">«In omnibus bonis dupplicia mala invenies»</quote>;
+                  quare non solum principium sed etiam finem et effectum requirere debes atque
+                  excogitare. [35] Unde Pamphilus dixit: <quote ana="Pamph., 335-338">«Principium
+                     finemque simul prudentia spectat. Rerum finis habet crimen et omne decus. Verbi
+                     principium, finem circumspice verbi, ut melius possis premeditata
+                     loqui»</quote>. [36] Si autem in verbo quod dicere velis dubium appareat utrum
+                  bonum effectum sit habiturum an non, silere debes potius quam dicere. [37] Nam
+                  dixit Petrus Alfonsus, qui fuit optimus philosophus: <quote
+                     ana="Petr. Alf. Disc., p. 11, r. 6">«Si dicere metuas unde peniteas, semper
+                     melius est “non” quam “sic”»</quote>. [38] <quote
+                     ana="Caec. Balb. De nugis, XXVI 3, p. 28">«Sapienti enim magis expedit tacere
+                     pro se quam loqui contra se; quia neminem tacendo, multos loquendo
+                     circumventos»</quote> vidimus. [39] <quote
+                     ana="Caec. Balb. De nugis, XLVIII 5, p. 34">«Verba enim sagittis sunt quasi
+                     similia: facile emittuntur, difficile extrahuntur»</quote>. [40] Quare dici
+                  consuevit: <quote ana="Hor. Ep., I, XVIII 71">«Evolat emissum semel irrevocabile
+                     verbum»</quote>. [41] Unde in dubiis melius est tacere quam dicere, sicut et in
+                  factis dubiis melius est non facere quam facere. [42] Ut ait Tullius dicens:
+                     <quote ana="Cic. De off., I 9, 30">«Bene precipiunt qui vetant quicquam agere
+                     quod dubites equum an iniquum sit. Equitas enim per se lucet, dubitatio autem
+                     significationem continet iniurie»</quote>. [43] Et alius dixit: <quote
+                     ana="Caec. Balb. De nugis, nn. 38-39, pp. 40-41">«Si quid dubitas ne feceris.
+                     Animi enim iudicio quod negatum fuerit fugito»</quote>. [44] Quia ut Seneca
+                  dixit: <quote ana="Publ. Syr. Sent., ed. Wölfflin, n. 593, p. 108">«Solet esse in
+                     dubio pro consilio temeritas»</quote>.</p>
+               <p>[45] Et certe ad intelligentiam et expositionem huius sillabe «quis» multa notari
+                  possent, sed ista quinque exempla superius posita, brevitatis causa, tibi
+                  sufficiant.</p>
+            </div2>
+            <div2>
+               <head><pb n="10"/>[II]</head>
+               <head>Super hac sillaba quid</head>
+               <p>[1] Predictis notatis diligenterque cognitis super hac sillaba «quis», sequitur
+                  videre aliqua expositionis causa super hac sillaba «quid». [2] Et certe requirere
+                  debes quid dicas; in primis utrum verum an falsum. [3] Ait enim Jesus Sirac:
+                     <quote ana="Sir 37, 20">«Ante omnia opera tua verbum verax precedat te et ante
+                     omnem actum tuum consilium stabile»</quote>. [4] Super omnia enim veritas est
+                  colenda, que <quote ana="De mor., ed. Friedrich, n. 145b p. 91">«sola Deo homines
+                     proximos facit»</quote>, cum ipse Deus veritas sit, ipsomet hoc testante, [5]
+                  cum dicit: <quote ana="Io 14, 6">«Ego sum via, veritas et vita»</quote>. [6] Si
+                  ergo loqui debes, veritatem omnimodo dicas, mendacio doloso penitus fugato. [7]
+                  Ait enim Salomon in Ecclesiastico: <quote ana="Sir 20, 27">«Potius diligendus est
+                     fur quam assiduus in mendacio»</quote>. [8] Et alius dixit: <quote
+                     ana="Petr. Alf. Disc., p. 8, rr. 14-15">«Acquiesce veritati sive a te prolate
+                     sive tibi oblate»</quote>. [9] Et etiam Cassiodorus dixit: <quote
+                     ana="Cass. Variae, III 3, r. 7">«Pessima consuetudo est despicere
+                     veritatem»</quote> et intelligo veritatem puram, in qua nichil immisceatur
+                  falsitatis. [10] Nam ut idem ait: <quote ana="Cass. Variae, III 7, rr. 9-10"
+                     >«Bonum est verum si non aliquid illi immisceatur adversum»</quote>. [11]
+                  Intelligo etiam de simplici veritate; ait enim Seneca: <quote
+                     ana="Sen. Ep., IV 40, 4">«Oratio eius qui veritati operam dat incomposita et
+                     simplex esse debet»</quote>. [12] Ita ergo veritatem loqui debes ut dictum tuum
+                  habeat pondus iurisiurandi et nichil intersit inter tuam simplicem assertionem et
+                  iusiurandum. [13] Nam ut Seneca dixit: <quote
+                     ana="Caec. Balb. De nugis XXXVIII 4, p. 32">«Dictum cuius non habet
+                     iurisiurandi pondus, eius quoque iurisiurandi pondus vile est»</quote>. [14] Et
+                  iterum idem dixit in libro <emph rend="italic">De formula honeste vite</emph>:
+                     <quote ana="Mart. Brac. Formula, 5, 14-23, p. 247">«Nichil tibi intersit an
+                     affirmes an iures: de religione enim et fide scias agi ubicumque de veritate
+                     tractatur. Nam etsi iureiurando Deus non invocatur et invocantis non est
+                     testis, tamen ne transeas veritatem, ne iustitie transilias legem. [15] Quod si
+                     aliquando coherceris uti mendacio, utere non ad falsi sed ad veri custodiam.
+                     [16] Et si contigerit fidelitatem mendacio redimere non mentieris, sed <pb
+                        n="12"/>potius excusaberis, quod ubi honesta causa est, iustus secreta non
+                     prodit: tacenda enim tacet, loquenda loquitur atque ita illi pax est secreta
+                     tranquillitas»</quote>. [17] Veritatem ergo puram dicas et simplicem et Deum
+                  roga ut verba mendacii a te longe faciat. [18] Nam et Salomon rogavit Dominum
+                  dicens: <quote ana="Prv 30, 7-8">«Duo rogavi te, Domine, ne deneges mihi:
+                     vanitatem et verba mendacii longe fac a me»</quote>. [19] Et sicut non debes
+                  dicere contra veritatem, ita nec facere. [20] Dixit enim beatus Paulus in epistola
+                  secunda ad Corinthios: <quote ana="II Cor 13, 8">«Non enim possumus aliquid extra
+                     veritatem, sed pro veritate»</quote>. [21] Et talem veritatem dicas quod tibi
+                  credatur, alioquin pro mendacio reputaretur et vicem falsitatis optineret. [22]
+                  Nam veritas que non creditur, pro mendacio reputatur, sicut econverso vicem veri
+                  optinet quod falso creditur. [23] Et ideo dixi supra: «mendacio doloso penitus
+                  fugato», quia <quote ana="cfr. Aug. Ench. VI 18, rr. 13-15">«non est iudicandus
+                     mendax qui dicit falsum quod putat verum, quia quantum in ipso est non fallit
+                     ipse sed fallitur»</quote>. [24] <quote ana="Aug. Ench. VI 18, rr. 17-18"
+                     >«Econtra mentitur qui dicit verum quod putat falsum»</quote>. [25] <quote
+                     ana="Aug. Ench. VI 18, rr. 21-22">«Nec est liber a mendacio qui ore nesciens
+                     verum loquitur, sciens autem voluntate mentitur»</quote>, ut beatus Augustinus
+                  dixit.</p>
+               <p>[26] Secundo requiras quid dicere vis, utrum sit efficax an inane. [27] Efficacia
+                  enim verba semper dicere debemus, inania vero penitus silere. [28] Ait enim Seneca
+                  de formula honeste vite: <quote ana="Mart. Brac. Formula, 2, 31-32, p. 239">«Sermo
+                     quoque tuus non sit inanis, sed aut consoletur aut doceat aut precipiat aut
+                     moneat»</quote>. [29] Et Paulus in epistola ad Timotheum dixit: <quote
+                     ana="II Tim. 2, 16">«Prophana autem inaniloquia devita»</quote>.</p>
+               <p>[30] Tertio requiras an dicas quid rationabile an irrationabile. [31] Rationabilia
+                  verba semper sunt dicenda, irrationabilia vero semper sunt tacenda. [32] Nam quod
+                  ratione caret non potest esse diuturnum. [33] Qui enim rationem secum portat totum
+                  mundum vincit. [34] Unde scriptum est: <quote ana="Sen. Ep., IV 37, 4">«Si vis
+                     vincere totum mundum, subice te rationi»</quote>. [35] <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 569, p. 105">«Ratione enim vincenda est
+                     adolescentia»</quote>. [36] Et etiam dici con<pb n="14"/>suevit: <quote
+                     ana="Cic. Tusc., IV 27, 58">«Bene adhibita ratio cernit quod optimum sit,
+                     neglecta vero multis implicatur erroribus»</quote>.</p>
+               <p>[37] Quarto requiras utrum dicas quid asperum an dulce et suave. [38] Dulcia enim
+                  verba semper sunt proferenda, contraria vero tacenda et penitus omittenda. [39]
+                  Dixit enim Jesus Sirac: <quote ana="Sir 40, 21">«Tibie et psalterium suavem
+                     faciunt melodiam, super utraque autem lingua suavis»</quote>. [40] Et iterum
+                  idem dixit: <quote ana="Sir 6, 5">«Verbum dulce multiplicat amicos et mitigat
+                     inimicos»</quote>. [41] Inde etiam dici consuevit: <quote
+                     ana="cfr. Walther, 29629">«Silva tenet leporem, sapientis lingua
+                     leporem»</quote>. [42] Et Pamphilus dixit: <quote ana="Pamph., 107">«Excitat et
+                     nutrit facundia dulcis amorem»</quote>.</p>
+               <p>[43] Quinto requiras an dicas quid durum an molle. [44] Mollia enim verba et non
+                  dura dicenda sunt. [45] Ait enim Salomon: <quote ana="Prv 15, 1">«Mollis responsio
+                     frangit iram, sermo quoque durus suscitat furorem»</quote>.</p>
+               <p>[46] Sexto requiras an dicas quid pulcrum an vero turpe vel malum. [47] Nam pulcra
+                  et bona verba dicenda sunt, turpibus et malis penitus omissis. [48] Nam dixit
+                  beatus Paulus in epistola prima ad Corinthios: <quote ana="I Cor 15, 33">«Nolite
+                     seduci: corrumpunt bonos mores colloquia prava et mala»</quote>. [49] Et alibi
+                  idem dixit in epistola ad Ephesios: <quote ana="Eph 4, 29">«Omnis sermo malus de
+                     ore vestro non procedat»</quote>. [50] Et iterum in eadem epistola subicit:
+                     <quote ana="Eph 5, 3-4">«Turpitudo aut stultiloquium aut scurrilitas, que ad
+                     rem non pertinet, non nominetur in vobis, sicut decet sanctos»</quote>. [51] Et
+                  Seneca de formula honeste vite dixit: <quote
+                     ana="Mart. Brac. Formula, 4, 22-23, p. 243">«A verbis quoque turpibus
+                     abstineto, quia licentia eorum impudentiam nutrit»</quote>. [52] Et Salomon
+                  dixit: <quote ana="Sir 23, 20">«Homo assuetus in verbis improperii non erudietur
+                     cunctis diebus vite sue»</quote>. [53] Sermo itaque tuus non sit turpis, sed
+                  semper in gratia sale sit conditus. [54] Ait enim beatus Paulus in epistola ad
+                  Colossenses: <quote ana="Col 4, 6">«Sermo vester semper in gratia sale sit
+                     conditus, ut sciatis quomodo oporteat unicuique respondere»</quote>.</p>
+               <p>[55] Septimo requiras ne quid dicas obscurum vel ambiguum, sed dicere debes clarum
+                  et apertum. [56] Dicit enim lex: <quote
+                     ana="Dig., XI I, II, 7-8 (Ulp. XXII ad edictum)">«Nichil interest, <pb n="16"
+                     />neget quis an taceat an obscure respondeat, quantum ad hoc ut incertum
+                     dimittat interrogantem»</quote>. [57] Scriptum est enim: <quote
+                     ana="Cic. Phil, III 9, 22">«Sanctius est mutum esse, quam quod nemo intelligat
+                     dicere»</quote>.</p>
+               <p>[58] Octavo requiras ne quid sophisticum dicas. [59] Ait enim Jesus Sirac: <quote
+                     ana="Sir 37, 23-24">«Qui sophistice loquitur odibilis est, omni re
+                     defraudabitur, non enim data est illi a Domino gratia»</quote>.</p>
+               <p>[60] Nono requiras ne quid iniuriosum vel contumeliosum dicas vel facias. [61]
+                  Scriptum est enim: <quote ana="Walther, 15512">«Multis minatur qui uni facit
+                     iniuriam»</quote>. [62] Unde Jesus Sirac dixit: <quote ana="Sir 10, 6">«Omnis
+                     iniurie proximi ne memineris et nichil agas in operibus iniurie»</quote>. [63]
+                  Et Cassiodorus dixit: <quote ana="Cass. Variae, IX 2, rr. 4-5">«Iniuria unius
+                     compago tota conteritur»</quote>. [64] Et etiam apostolus in epistola ad
+                  Colossenses ait: <quote ana="Col 3, 25">«Qui enim iniuriam facit accipiet quod
+                     inique gessit»</quote>. [65] Et Seneca in epistolis dixit: <quote
+                     ana="Sen. Ep., XV 94, 43">«Ab alio expectas quod alii feceris»</quote>. [66] Et
+                  hoc intelligo de qualibet iniuria et contumelia et maxime de illa que fit sub
+                  simulatione boni. [67] Ait enim Tullius: <quote ana="Cic. de off., I 13, 41"
+                     >«Nulla capitalior est iniuria quam eorum qui tunc, cum maxime fallunt, id
+                     agunt ut boni viri esse videantur»</quote>. [68] Iniurie namque et contumelie
+                  tam pessime sunt ut non solum cuilibet singulariter noceant, sed etiam regnum
+                  propter ea destructionem et mutationem quandoque patiatur. [69] Nam ut ait Jesus
+                  Sirac: <quote ana="Sir 10, 8">«Regnum a gente in gentem transfertur propter
+                     iniustitias, iniurias et contumelias»</quote>. [70] Et non solum a dicendo vel
+                  faciendo alii iniuriam cohibere te debes atque cessare, sed etiam alii, volenti
+                  dicere vel facere iniuriam, obstare debes, si commode potes. [71] Ait enim Tullius
+                  in libro De officiis primo: <quote ana="Cic. de off., I 7, 23">«Duo sunt
+                     iniustitie genera: unum eorum qui inferunt, alterum eorum qui ab hiis quibus
+                     infertur, si possunt, non propulsant iniuriam, et tam est in vitio qui non
+                     obstat iniurie, si potest, quam si parentes aut patriam aut amicos
+                     deserat»</quote>. [72] «Si commode potes» ideo dixi, quia ea demum fieri posse
+                  dicuntur que commode fieri possunt, ut lex nostra dicit. [73] Si autem alius tibi
+                  iniuriam dixerit <pb n="18"/>tacere debes; nam scripsit Augustinus in libro <emph
+                     rend="italic">De summo bono</emph>: <quote
+                     ana="Greg. Magn. Hom. ev., I, hom. 18, cap. 4, rr. 20-21, p. 228"/>«Gloriosius
+                  est tacendo iniuriam fugere quam respondendo superare».</p>
+               <p>[74] Decimo requiras ne quid seditiosum dicas, quia nichil est perniciosius in
+                  civitate quam seditio.</p>
+               <p>[75] Undecimo requiras ne quid irrisorium dicas neque de amico neque de inimico
+                  nec de quolibet alio. [76] Scriptum est enim: <quote
+                     ana="Caec. Balb. De nugis, XV 17, p. 25">«Amicum nec ioco ledere quidem
+                     decet»</quote>. [77] Et iterum: <quote
+                     ana="Publ. Syr. Sent., ed. Friedrich, n. 10, p. 31">«Bonus amicus lesus gravius
+                     irascitur»</quote>. [78] Inimicus autem propter irrisiones de se factas tecum
+                  cito ad verba perveniret ac verbera; cuilibet autem irrisio de se facta displicet
+                  ita quod amor inter eos minuitur. [79] Et secundum regulam amoris: <quote
+                     ana="De amore, II, 8, 19, p. 358">«Si amor minuatur cito deficit et raro
+                     convalescit»</quote>. [80] Et certe propter derisiones cito diceretur tibi quod
+                  nolles audire, nam dixit Salomon: <quote
+                     ana="Caec. Balb. De nugis, XLVIII 4, p. 34">«Qui aliena temere manifestat
+                     vitia, sua intempestive audiet crimina»</quote>. [81] Et Martialis dixit:
+                     <quote ana="God. Ep., XII, 1, p. 105">«Deridens alios non inderisus
+                     abibis»</quote>. [82] Et iterum idem dixit: «Si rides alium vel si rideris,
+                  utrumque culpa est, &lt;Maure&gt;, prius turpe sequensve magis».</p>
+               <p>[83] Duodecimo requiras ne quid dolosum dicas. Dixit enim propheta: <quote
+                     ana="Ps 11, 4">«Disperdat Deus universa labia dolosa et linguam
+                     magniloquam</quote>.</p>
+               <p>[84] Tertiodecimo requiras ne quid superbum dicas; nam dixit Salomon: <quote
+                     ana="Prv 11, 2">«Ubi fuerit superbia ibi et contumelia; ubi autem humilitas,
+                     ibi sapientia»</quote> cum gloria. [85] Et Job dixit: <quote ana="Iob 20, 6-7"
+                     >«Si ascenderit usque ad celos superbia et caput eius nubes tetigerit, quasi
+                     sterquilinium in fine perdetur</quote>. [86] Et Jesus Sirac dixit: <quote
+                     ana="Sir 10, 7">«Odibilis est coram Deo et hominibus superbia et execrabilis
+                     omnis iniquitas»</quote>. [87] Et iterum: <quote ana="Sir 21, 5">«Obiurgatio et
+                     iniurie annullabunt substantiam et domus que nimis locuplex est annullabitur
+                     superbia»</quote>.</p>
+               <p>[88] Denique requiras ne verbum otiosum dicas; scriptum est namque: <quote
+                     ana="Mt 12, 36">«De omni otioso verbo reddituri sumus rationem»</quote>.</p>
+               <p>[89] Sit itaque verbum tuum verum, efficax, non inane, rationabile, <pb n="20"
+                  />dulce et suave, molle et non durum, pulcrum et non turpe vel malum, non obscurum
+                  vel ambiguum, non sophisticum, non iniuriosum nec seditiosum, non irrisorium, non
+                  dolosum, non superbum nec otiosum.</p>
+               <p>[90] Hoc denique trado tibi pro regula generali: quod <quote
+                     ana="Dig., XXVIII 7, 15">omnia facta que pietatem, extimationem, verecundiam
+                     nostram ledunt et, ut generaliter dicam, contra bonos mores fiunt nec nos
+                     facere posse credendum est</quote>, ut lex nostra dicit, ergo nec ea dicere
+                  debemus. [91] Ait enim Socrates: <quote ana="Caec. Balb. De nugis, I 2, p. 18"
+                     >«Que facere turpe est, ea nec dicere honestum puto»</quote>. [92] Honesta
+                  igitur semper dicere debes, non solum inter extraneos, sed etiam inter tuos. [93]
+                     <quote ana="Alc. De arte rhet., 43, rr. 27-29">«Nec enim inhonestis verbis
+                     inter suos uti debet qui honestis inter alios uti desiderat, cum in omni parte
+                     vite honestas prenecessaria est»</quote>.</p>
+               <p>[94] Et certe infinita exempla super hoc verbo «quid» ad eius expositionem et
+                  intelligentiam dici valerent, sed hec ad presens tibi dicta sufficiant.</p>
+            </div2>
+            <div2>
+               <head>[III]</head>
+               <head>Super hac dictione cui</head>
+               <p>[1] Habito tractatu super hiis duabus sillabis «quis» et «quid» accedas ad
+                  tractatum super hac dictione «cui». [2] Et certe, cum loqui desideras, requiras
+                  cui loquaris, utrum amico an alii. [3] Amico loqui bene et recte potes, quia
+                  nichil est <quote ana="Cic. de am., 6, 22">«dulcius quam habere amicum cum quo
+                     tamquam cum te ipso loquaris»</quote>. [4] Non tamen amico talia dicas de
+                  quibus propalandis timeas, si inimicus postea fieret. [5] Ait enim Seneca in
+                  epistolis: <quote ana="Sen. Ep., I 10, 5">«Sic loquaris cum amicis tamquam Deus
+                     audiat et sic vivas cum hominibus tamquam Deus videat»</quote>. [6] Et alius
+                  dixit: <quote ana="Publ. Syr. Sent., ed. Wölfflin, n. 75">«Sic habeas amicum ut
+                     non timeas ipsum fieri inimicum»</quote>. [7] Et Petrus Alfonsus dixit <quote
+                     ana="Petr. Alf. Disc., p. 6, rr. 12-14">«propter amicos non probatos: “Provide
+                     tibi, semel de inimicis et <pb n="22"/>milies de amicis; quia forsan amicus
+                     quandoque fieret inimicus et sic levius poterit perquirere damnum
+                     tuum”»</quote>. [8] Secretum ergo tuum, de quo non vis vel non potes habere
+                  consilium, tibi habeas nullique manifestes. [9] Ait enim Jesus Sirac: <quote
+                     ana="Sir 19, 8-9">«Amico et inimico noli enarrare sensum tuum. Et si est tuum
+                     delictum noli denudare: audiet enim te et respiciet te et quasi defendens
+                     peccatum tuum»</quote> subridebit te. [10] Et alius dixit: <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 75 p. 101; ed. Friedriche, n. 312 p. 105"
+                     >«Quod secretum esse vis, nemini dicas»</quote>. [11] Et alius dixit: «Vix
+                  existimes ab uno celari posse secretum». [12] Et alius dixit: <quote
+                     ana="Petr. Alf. Disc., p. 6, rr. 22-23">«Consilium vel secretum tuum
+                     absconditum quasi in carcere tuo est retrusum; revelatum vero te in carcere suo
+                     tenet ligatum»</quote>. [13] Quare dixit: <quote
+                     ana="Petr. Alf. Disc., p. 6, rr. 20-21">«Qui consilium suum retinet in corde
+                     sui iuris est melius eligere»</quote>. [14] Nam tutius est tacere quam ut
+                  taceat alium rogare. [15] Ait enim Seneca: <quote
+                     ana="De mor., ed. Wölfflin, n. 16 p. 137">«Si tibi ipsi non imperasti ut
+                     taceres, quomodo ab alio silentium queris?»</quote>. [16] Si autem de secreto
+                  consilium habere volueris, amicissimo fideli et probato atque secreto illud
+                  committas. [17] Dixit enim Salomon: <quote ana="Sir 6, 6">«Multi pacifici sint
+                     tibi et consiliarius unus de mille»</quote>. [18] Et Cato dixit: <quote
+                     ana="Dist. Cat. II 22, p. 127">«Consilium archanum tacito committe sodali.
+                     Corporis auxilium medico committe fideli»</quote>. [19] Inimico autem non
+                  multum loquaris nec secreta tua illi detegas. [20] Ait enim Ysopus: <quote
+                     ana="Bald. Fab., XI 47-48, p. 30">«Ne confidatis secreta nec hiis detegatis cum
+                     quibus egistis pugne discrimina tristis»</quote>. [21] Et alibi idem dixit:
+                     <quote ana="Bald. Fab., XXVI 39-40, p. 48">«Nulla fides hosti tibi sit qui
+                     talia nosti. Prorsus et hostilis tibi sit persuasio vilis»</quote>. [22] Et hoc
+                  dico tibi etiam si cum inimico in gratiam redieris; scriptum est enim: <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 91, p. 71">«Cum inimico nemo tute in
+                     gratiam redit»</quote>. [23] Vapor enim odii semper latet in pectore inimici.
+                  [24] Nam ut ait Seneca: <quote ana="Publ. Syr. Sent., ed. Wölfflin, n. 388, p. 91"
+                     >«Numquam ubi diu fuit ignis deficit vapor»</quote>. [25] Quare idem ait:
+                     <quote ana="Caec. Balb. De nugis, XV 20, p. 25">«Pro amico potius occidi
+                     expedit quam cum inimico vivere»</quote>. [26] Inde etiam Salomon dixit: <quote
+                     ana="Sir 12, 10-11">«Inimico antiquo ne credas in eternum; et si humiliatus
+                     vadat curvus»</quote>, <quote ana="cfr. Caec. Balb. De nugis, XV 16, p. 25"
+                     >«non credas illi. [27] Captus <pb n="24"/>enim utilitate non amicitia,
+                     revertitur voluntate, ut capiat fugiendo que non potuit persequendo»</quote>.
+                  [28] Et alibi idem ait: <quote ana="Sir 12, 16">«In oculis tuis illacrimabitur
+                     inimicus et si viderit tempus non satiabitur sanguine»</quote> tuo. [29] Et
+                  Petrus Alfonsus dixit: <quote ana="Petr. Alf. Disc., p. 6, rr. 24-25">«Ne
+                     associeris inimicis tuis cum alios possis reperire socios: que enim male egeris
+                     notabunt, que vero bona fuerint deviabunt»</quote>. [30] Cum omnibus denique
+                  caute loquendum et faciendum est, quia multi creduntur amici qui re vera sunt
+                  inimici. [31] Quare idem dixit: «Omnes ignotos quasi inimicos suspicandos». [32]
+                  Ait enim: <quote ana="Petr. Alf. Disc., p. 25, rr. 25-27">«Non aggrediaris viam
+                     cum aliquo, nisi prius eum cognoveris. Et si aliquis in via tibi ignotus se
+                     associaverit iterque tuum investigaverit, dic te velle longius ire quam
+                     disposueris. Et si detulerit lanceam, vade a dextris, si ensem vade a
+                     sinistris»</quote>.</p>
+               <p>[33] Item requiras utrum insipienti an sapienti loquaris. [34] Ait enim Salomon:
+                     <quote ana="Prv 23, 9">«In auribus insipientum ne loquaris, quia despicient
+                     doctrinam eloquii tui»</quote>. [35] Et iterum: <quote ana="Prv 29, 9">«Vir
+                     sapiens si cum stulto contenderit, sive irascatur sive rideat, non inveniet
+                     requiem»</quote>. [36] Et iterum: <quote ana="Prv 18, 2">«Non recipit stultus
+                     verba prudentie, nisi ea dixeris que versantur in corde suo»</quote>. [37] Et
+                  Jesus Sirac dixit: <quote ana="Sir 22, 9">«Cum dormiente loquitur qui narrat
+                     stulto sapientiam et in fine narrationis dicet “Quis est hic?”»</quote>.</p>
+               <p>[38] Item requiras ne cum irrisore loquaris. [39] Scriptum est enim: «Cum irrisore
+                  consortium non habeas, loquele eius assiduitatem quasi toxica fugias. Societas
+                  eius tui laqueus est, alternaque affabilitas despectio». [40] Et Salomon dixit:
+                     <quote ana="Prv 9, 8">«Noli arguere irrisorem, ne te oderit. Argue sapientem et
+                     diliget te»</quote>. [41] Et Seneca dixit: <quote ana="Prv 9, 7">«Qui corripit
+                     irrisorem ipse sibi iniuriam facit. Qui arguit impium ipse sibi maculam
+                     querit»</quote>.</p>
+               <p>[42] Item requiras ne cum linguoso vel loquaci colloquium habeas. [43] Ait enim
+                  propheta: <quote ana="Ps 139, 12">«Vir linguosus non dirigetur in terra»</quote>.
+                  [44] Et Jesus Sirac dixit: <quote ana="Sir 9, 25">«Terribilis est in civitate sua
+                     homo linguosus et teme<pb n="26"/>rarius in verbo suo odibilis erit»</quote>.
+                  [45] Et iterum: <quote ana="Sir 19, 5">«Qui odit loquacitatem extinguit
+                     malitiam»</quote>. [46] Et alibi idem dixit: <quote ana="Sir 8, 4">«Cum viro
+                     linguoso non loquaris nec in ignem illius struas ligna»</quote>. [47] Et alibi
+                  idem ait: <quote ana="Sir 8, 20">«Ne cum fatuis consilium habeas: non enim
+                     poterunt diligere nisi que eis placent»</quote>.</p>
+               <p>[48] Item requiras ne cum cinicis multum loquaris. [49] Ait enim Tullius: <quote
+                     ana="Cic. De off., I 41, 148">«Ratio cinicorum penitus abicienda est»</quote>.
+                  [50] «Cinos» grece, latine dicitur «canis»: inde «cinici» dicuntur latrantes ut
+                  canes. [51] De quibus et similibus Dominus dixit: <quote ana="Mt 7, 6">«Nolite
+                     proicere margaritas inter porcos»</quote>.</p>
+               <p>[52] Item requiras ne cum malivolis multum contendas. [53] Ait enim Augustinus:
+                  «Sicut ignis quanto magis ligna susceperit semper in maiorem flammam erigitur, ita
+                  malus homo quanto magis rationem audierit semper in maiorem malitiam excitatur».
+                  [54] Et <quote ana="Sap 1, 4">«in malivolam animam non intrat sapientia»</quote>.
+                  [55] Quare Cato dixit: <quote ana="Dist. Cat., I 10, p. 42">«Contra verbosos noli
+                     contendere verbis. Sermo datur cunctis, animi sapientia paucis»</quote>.</p>
+               <p>[56] Item requiras ne de secretis cum ebrioso vel muliere mala loquaris. [57]
+                  Dixit enim Salomon: <quote ana="Prv 31, 4">«Nullum secretum ubi regnat
+                     ebrietas»</quote>. [58] Et alius dixit: <quote ana="Sen. Contr., II 13, 12"
+                     >«Garrulitas mulierum id solum novit celare quod nescit»</quote>.</p>
+               <p>[59] Denique requiras quibus audientibus aliquid dicas. [60] Scriptum est enim:
+                     <quote ana="Walther, 22720a">«Prospice te circum si vis proferre
+                     sinistrum»</quote>, ne lateat forsan qui maledicat idem.</p>
+               <p>[61] Et certe multa exempla ad expositionem et intelligentiam huius dictionis
+                  «cui» poni valerent, sed ista in presenti tibi sufficiant.</p>
+            </div2>
+            <div2>
+               <head><pb n="28"/>[IV]</head>
+               <head>Expositio super hoc adverbio cur</head>
+               <p>[1] Nunc accedas ad expositionem huius adverbii «cur». Et certe istud «cur» causam
+                  requirit. [2] Requiras ergo tui dicti causam. Nam sicut in factis et faciendis
+                  causa est requirenda, [3] dicente Seneca: <quote
+                     ana="Mart. Brac., Formula, 2, 24-25, p. 239">«Cuiusque facti causam require et
+                     cum initia inveneris exitus cogitabis»</quote>, ita etiam in dictis causa est
+                  requirenda. [4] Et sicut <quote ana="Cass. Variae, XII 25, rr. 4-5">sine causa
+                     nichil agitur nec mundus fortuitis casibus implicatur</quote>, ut Cassiodorus
+                  ait, ita sine causa nichil dicere debes. [5] Et sicut in qualibet re quadruplex
+                  causa reperitur, videlicet causa efficiens, materialis, formalis atque finalis,
+                  ita et in dictis quadruplex causa reperitur. [6] Causa igitur dicti tui sit aut
+                  pro Dei servitio aut pro humano commodo aut pro utroque aut forte pro amico aut
+                  etiam pro omnibus predictis.</p>
+               <p>[7] Pro Dei servitio, ut faciunt fratres Predicatores et Minores.</p>
+               <p>[8] Pro humano commodo, ut causidici et alii oratores faciunt. [9] <quote
+                     ana="cfr. Aug. Ep., CLIII, VI 23, p. 243">Nam secundum beatum Augustinum licet
+                     advocato vendere iustam advocationem et iurisperito vendere iustum
+                     consilium</quote>. [10] Et tunc quando dicis verba pro humano commodo, requiras
+                  quid sit commodum et quale. [11] Debet enim esse pulcrum et non turpe, quia <quote
+                     ana="Dig., III 6, 5 pr. (Ulp. X ad edictum">secundum leges</quote> turpia lucra
+                  etiam ab heredibus sunt extorquenda. [12] Quare Seneca dixit: <quote
+                     ana="Caec. Balb. De nugis, I 3, p. 18">«Turpe lucrum ut dispendium
+                     fugito»</quote>. [13] Et alius dixit: <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 135 p. 74">«Lucrum cum mala fama damnum
+                     est appellandum»</quote>. [14] Et alibi scriptum est: <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 479 p. 98">«Perdidisse mallem quam
+                     turpiter accepisse»</quote>. [15] Debet etiam esse commodum moderatum:
+                  componitur enim commodum ex «cum» et «modo». [16] Nam ut ait Cassiodorus: <quote
+                     ana="Cass. Variae, IX 14, rr. 32-33">«Si commodum mensuram equalitatis
+                     excesserit vim sui nominis non habebit»</quote>. [17] Debet <pb n="30"/>etiam
+                  esse commodum naturale et quasi commune, id est cum commodo nostro et alieno. [18]
+                  Ait enim lex: <quote ana="Dig., L 17, 206 (Pomp. IX ex variis lectionibus">«Natura
+                     equum est neminem cum alterius iactura fieri locupletiorem»</quote>. [19] Plus
+                  etiam procedit Tullius dicens: <quote ana="Cic. De off., III 5, 21">«Neque timor
+                     neque dolor neque mors neque aliquid quod extrinsecus homini accidere possit,
+                     tam est contra naturam quam ex alieno incommodo suum augere commodum»</quote>
+                  et maxime de exiguitate mendici. [20] Ait enim Cassiodorus: <quote
+                     ana="Cass. Variae, XII 13, rr. 34-35">«Ultra omnes crudelitates est divitem
+                     velle fieri de exiguitate mendici»</quote>.</p>
+               <p>[21] Pro utroque autem, id est pro Dei servitio et humano commodo, dicunt verba
+                  alii sacerdotes et clerici seculares: principaliter pro Dei servitio, secundario
+                  pro suo commodo. [22] Vivere enim debent de altari, <quote
+                     ana="Decr. II pars, causa I qu. III c. XIV">ut decreta clamant</quote>. [23] Et
+                  etiam Paulus in epistola prima ad Corinthios ubi dicit: <quote
+                     ana="I Cor 9, 13-14">«Qui altari deserviunt, cum altari participant. [24] Ita
+                     et Deus ordinavit hiis qui evangelium annuntiant de evangelio vivere»</quote>.
+                  [25] Quidam tamen clerici causam convertunt, quia principaliter dicunt verba pro
+                  humano commodo et pro bonis prebendis et secundario pro Dei servitio, quod facere
+                  non deberent.</p>
+               <p>[26] Causa vero dicendi pro amico te movere debet, dum tamen verba sint iusta et
+                  pulcra. [27] <quote ana="Cic. De am., 13, 44">Lex enim amicitie secundum Tullium
+                     hec est: ut non rogemus res turpes neque faciamus rogatu</quote>. [28] Non enim
+                  pro amico facere vel dicere debes quod ad peccatum pertineat. [29] Nam secundum
+                  regulam amoris: <quote ana="Cic. De am., 11, 37">«Non est excusatio peccati si
+                     amici causa peccaveris»</quote>. [30] <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 10 p. 66">«Amici enim crimina si feras,
+                     facis tua»</quote>. [31] Plus etiam dicitur quia <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 52 p. 69; ed. Friedrich, n. 9 p. 31"
+                     >«bis peccat qui peccato obsequium accommodat»</quote>. [32] Crimen sibi parat
+                  qui nocentem adiuvat. [33] Nam <quote
+                     ana="Publ. Syr. Sent., ed. Friedrich, n. 35 p. 75">«socius fit culpe qui
+                     nocentem adiuvat»</quote>. [34] Et maxime in re turpi, ubi duplex est peccatum.
+                  [35] Ait enim Seneca: <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 283 p. 84; ed. Friedrich, n. 53 p. 53"
+                     >«In turpi re peccare bis est delinquere»</quote>. [36] Innoxie enim amicum
+                  defendere debes ut verus defensor dicaris. [37] Ait enim Cassiodorus: <quote
+                     ana="Cass. Variae, IX 25, rr. 55-56">«Ille proprie defensor est dicendus qui
+                     defendit innoxie»</quote>.</p>
+               <p>[38] Pro omnibus vero predictis libentius verba fundas utilia, videlicet pro Dei
+                  servitio et humano commodo et amici utilitate.</p>
+               <p>[39] Et licet multa exempla ad expositionem huius adverbii «cur» dici valeant,
+                  hec, brevitatis causa, tibi sufficiant.</p>
+            </div2>
+            <div2>
+               <head>[V]</head>
+               <head>Expositio super hoc adverbio quomodo</head>
+               <p>[1] Predictis auditis et intellectis super hoc adverbio «cur», expositionem et
+                  intellectum audias huius dictionis «quomodo». [2] Et certe istud «quomodo» modum
+                  requirit. [3] Requiras ergo modum dicendi; nam sicut in rebus modus est servandus,
+                  [4] de quo dici consuevit: <quote ana="Hor., Serm. I, 1, 106-107">«Est modus in
+                     rebus, sunt certi denique fines, quos ultra citraque nequit consistere
+                     rectum»</quote>, ita et in dictis si modus omittatur nichil laudabile poterit
+                  inveniri. [5] Ait enim Cassiodorus: <quote ana="Cass. Variae, I 19, rr. 6-7"
+                     >«Modus ubique laudandus est»</quote>. [6] Modus itaque tuus quintuplex sit,
+                  videlicet in pronuntiatione, in velocitate, in tarditate, in quantitate et
+                  qualitate.</p>
+               <p>[7] Videndum est igitur quid sit pronuntiatio. [8] <quote
+                     ana="Alc. De arte rhet., 40, rr. 11-29">«Pronuntiatio est verborum dignitas,
+                     rebus et sensibus accomodata, et corporis moderatio. [9] Hec enim in tantum
+                     excellit, ut secundum sententiam Marcii Tulli: “Indocta actio laudem tamen
+                     consequitur, si optime proferatur; et quamvis expolita, si indecenter
+                     predicetur, contemptum irrisionemque mereatur”. [10] In pronuntiatione itaque
+                     primum exerceri debet vocis et spiritus moderatio et corporis et lingue motus.
+                     [11] Vitia quoque si qua sunt oris, diligenti cura emendanda sunt, ne verba
+                     sint inflata vel &lt;anhelata&gt; vel in faucibus frendentia nec vocis
+                     immanitate <pb n="34"/>resonantia, non aspera frendentibus vel hiantibus labiis
+                     prolata, [12] sed pressim et equaliter et leniter et clare pronuntiata, ut suis
+                     quoque littere sonis enuntientur et unumquodque verbum legitimo accentu
+                     decoretur, nec immoderato clamore vociferetur nec ostentationis causa frangatur
+                     oratio. [13] Verum pro locis, rebus, causis et temporibus dispensanda est. [14]
+                     Nam alia simplicitate narranda sunt, alia auctoritate suadenda, alia cum
+                     indignatione depromenda, alia miseratione flectenda, ita ut vox et oratio
+                     semper sue cause conveniant».</quote></p>
+               <p>[15] <quote ana="Alc. De arte rhet., 41, rr. 32-37 e 1-2">«Observandum est ut
+                     recta sit facies, ne labia detorqueantur nec immodicus hiatus nec supinus
+                     vultus nec eiecti in terra oculi nec inclinata cervix nec elevata aut depressa
+                     supercilia, quia nichil potest placere quod non deceat. [16] Et secundum
+                     Tullium: “Caput artis est decere quod facias”. [17] Labia lambere vel mordere
+                     est deforme, cum etiam in difiniendis verbis modicus debeat esse eorum motus;
+                     ore vero magis quam labiis loquendum est»</quote>.</p>
+               <p>[18] <quote ana="Isid. Et., II 17, 1-3">«Dicenda quoque sunt summissa leviter,
+                     incitata graviter, inflexa moderate. [19] Cum magna dicimus granditer
+                     proferenda sunt, cum parva dicimus subtiliter, cum mediocria temperate. [20]
+                     Nam in parvis causis nichil grande, nichil sublime dicendum est, sed levi ac
+                     pedestri more loquendum. [21] In causis vero maioribus, ubi de Deo vel hominum
+                     salute referimus, plus magnificientie et fulgoris est exibendum. [22] In
+                     temperatis vero causis, ubi nichil agitur nisi ut auditor delectetur, moderate
+                     dicendum est. [23] Sed quamvis de magnis rebus quisque dicat, non tamen semper
+                     granditer dicere debet. [24] Cum autem aliquid laudat vel vituperat, temperate
+                     dicere debet»</quote>. [25] Nam et Seneca de formula honeste vite dixit: <quote
+                     ana="Mart. Brac. Formula, 2, 32-35, p. 239">«Lauda parce, vitupera parcius. <pb
+                        n="36"/>[26] Similiter enim reprehendenda est nimia laudatio sicut
+                     immoderata vituperatio. Hec enim adulatione, illa malignitate suspecta
+                     est»</quote>. [27] In presentia autem sui aliquis laudari non debet. [28]
+                  Scriptum est enim: <quote
+                     ana="cfr. Caec. Balb. De nugis, I 25 e Walther, 22210a-22211">«Laudare
+                     presentem nec ledere decet».</quote></p>
+               <p>[29] In velocitate et tarditate similiter modum requiras. [30] Verumtamen aliud in
+                  dicendo quam in faciendo: non enim debes esse velox ad loquendum, sed tardus cum
+                  moderamine competenti. [31] Ait enim beatus Jacobus in epistola sua: <quote
+                     ana="Iac 1, 19">«Esto velox ad audiendum, tardus vero ad loquendum et tardus ad
+                     iram»</quote>. [32] Et Salomon dixit: <quote ana="Prv 29, 20">«Vidisti hominem
+                     velocem ad loquendum? stultitia magis speranda est quam illius
+                     correctio»</quote>. [33] Et Cassiodorus dixit: <quote
+                     ana="Cass. Variae, X 4, rr. 48-49">«Hec est regalis procul dubio virtus,
+                     tardius in verba prorumpere et celerius necessaria sentire»</quote>.</p>
+               <p>[34] Similiter in iudicando tardus esse debes. [35] Scriptum est enim: «Optimum
+                  iudicem existimo qui cito intelligit et tarde iudicat». [36] <quote
+                     ana="Publ. Syr. Sent., ed. Wölfflin, n. 128, p. 74; ed. Friedrich, n. 6, p. 38"
+                     >«Deliberare enim utilia mora est tutissima»</quote>. [37] Inde etiam dici
+                  consuevit: <quote ana="Publ. Syr. Sent., ed. Wölfflin, n. 32 p. 67">«Ad penitendum
+                     properat qui cito iudicat»</quote>. [38] Competens enim mora in talibus non est
+                  reprobanda. [39] Nam dici consuevit: <quote
+                     ana="Publ. Syr. Sent., ed. Friedrich, n. 311 p. 55; cfr. anche ed. Wölfflin, n. 254 p. 83"
+                     >«Mora omnis odio est, sed facit sapientem»</quote>.</p>
+               <p>[40] Similiter in consiliis requiras tarditatem et non velocitatem vel
+                  festinantiam. [41] Scriptum est enim de consiliis: <quote
+                     ana="Caec. Balb. De nugis, XXVIII 2, p. 29">«Quod diu tractaveris, id puta
+                     rectissimum»</quote>. [42] <quote ana="Caec. Balb. De nugis, n. 55 p. 41"
+                     >«Velox enim consilium sequitur penitentia»</quote>. [43] Et iterum: <quote
+                     ana="Caec. Balb. De nugis, XXVIII 5, p. 29">«Tria sunt contraria consilio:
+                     festinantia et ira atque cupiditas»</quote>.</p>
+               <p>[44] In faciendo autem post deliberationem velocitatem exercere debes. [45] Ait
+                  enim Seneca in epistolis: <quote ana="Caec. Balb. De nugis, I 5-6 p. 18">«Minus
+                     dicito quam facias et diu deliberato et cito facito»</quote>: <quote
+                     ana="Caec. Balb. De nugis, XIV 5, p. 24">«celeritas enim beneficium gratum
+                     facit»</quote>. [46] Et Salomon dixit: <quote ana="Prv 22, 29">«Vidisti hominem
+                     velocem in omni opere suo? coram regibus stabit nec erit inter
+                     ignobiles»</quote>. [47] Et Jesus Sirac dixit: <quote ana="Sir 31, 27">«In
+                     omnibus operibus tuis velox esto et omnis infirmitas non occurret
+                  tibi»</quote>. [48] Non tamen tantam velocitatem exerceas que operis perfectionem
+                  impediat.</p>
+               <p><pb n="38"/>[49] In quantitate insuper modum requiras. [50] Non multa dicenda: nam
+                     <quote ana="Prv 10, 19">«in multiloquio non deest peccatum»</quote>. [51] Et
+                  Salomon in Ecclesiaste dixit: <quote ana="Ecl 5, 2">«Multas curas sequuntur somnia
+                     et in multis sermonibus invenitur stultitia»</quote>. [52] Et alibi idem dixit:
+                     <quote ana="Prv 14, 23">«In omni opere erit habundantia; ubi autem sunt verba
+                     plurima, ibi frequenter egestas»</quote>. [53] Et Seneca dixit: <quote
+                     ana="Sen. Ep., XVII 105, 6">«Nichil eque proderit quam quiescere et cum aliis
+                     loqui minima, secum multa»</quote>. [54] Moderate tamen loqui et tacere debes.
+                  [55] Dixit enim Pamphilus: <quote ana="Pamph., 105">«Nec nimium taceas nec verba
+                     superflua dicas»</quote>. [56] «Audias ergo plurima, respondeas vero pauca», ut
+                  quidam philosophus dixit. [57] Nam et Socrates dixit: <quote
+                     ana="Caec. Balb. De nugis, XLIII 1, p. 33">«Omnibus placere poteris si gesseris
+                     optima et locutus fueris pauca»</quote>.</p>
+               <p>[58] In qualitate denique dicendi modum requiras, scilicet dicendo bene. [59]
+                  Scriptum est enim: <quote
+                     ana="Caec. Balb. De nugis, XV 13, p. 25 e n. 61 pp. 41-42">«Principium amicitie
+                     est bene loqui, male dicere vero est exordium inimicitiarum»</quote>. [60] Et
+                  dicenda sunt <quote ana="Alc. De arte rhet., 43, rr. 32-33">«verba leta, honesta,
+                     lucida, simplicia, composita, plano ore, vultu quieto, facie composita, sine
+                     immoderato cachinno, clamore nullo prolata»</quote>. [61] De quibus Salomon
+                  dixit: <quote ana="Prv 16, 24">«Favus mellis verba composita dulcedo anime et
+                     sanitas ossium»</quote>.</p>
+               <p>[62] Et hec ad expositionem et intelligentiam huius dictionis «quomodo» dicta
+                  sufficiant.</p>
+            </div2>
+            <div2>
+               <head>[VI]</head>
+               <head>Expositio super hoc adverbio quando</head>
+               <p>[1] Superest denique videre de intelligentia et expositione huius adverbii
+                  «quando». [2] Et certe istud «quando» tempus requirit. [3] Requiras ergo
+                  diligenter tempus dicendi similiter et ordinem.</p>
+               <p>[4] Ait enim Jesus Sirac: <quote ana="Sir 20, 7">«Homo sapiens tacebit usque ad
+                     tempus; lascivus autem et imprudens non servabit tempus»</quote>. [5] Servando
+                  igitur tempus sequaris verbum Salomonis dicentis: <quote ana="Ecl 3, 7">«Tempus
+                     dicendi et tem<pb n="40"/> pus tacendi»</quote>. [6] Magna enim res est vocis
+                  et silentii temperamentum. [7] Ut Seneca dixit: <quote
+                     ana="Petr. Alf. Disc., p. 8, r. 9">«Serva itaque silentium donec tibi loqui
+                     fuerit necessarium»</quote>. [8] Et non solum tuum silentium serva, sed etiam
+                  aliorum silentium expecta. [9] Expectare ergo debes dicendi tempus donec tibi
+                  prebeatur auditus. [10] Ait enim Jesus Sirac: <quote ana="Sir 32, 6">«Ubi non est
+                     auditus, non effundas sermonem et importune noli extolli in sapientia
+                     tua»</quote>. [11] Importuna enim est narratio tua quando tibi non prebetur
+                  auditus et est quasi musica in luctu. [12] Nam ut idem ait: <quote
+                     ana="Sir, 22, 6 e 8">«Musica in luctu importuna narratio et qui enarrat verbum
+                     non attendenti, quasi qui excitat dormientem a gravi somno»</quote>.</p>
+               <p>[13] Et non solum in dicendo aliis, sed etiam in respondendo tempus expectare
+                  debes. [14] Nam scriptum est: <quote ana="Petr. Alf. Disc., p. 8, rr. 10-11">«Ne
+                     properes respondere donec finis fuerit interrogationis»</quote>. [15] Nam ut
+                  ait Salomon: <quote ana="Prv 18, 13">«Qui prius respondet quam audiat, stultum se
+                     esse demonstrat et confusione dignum»</quote>. [16] Similiter qui prius
+                  loquitur quam discat, ad contemptum et irrisionem properat. [17] Unde Jesus Sirac
+                  dixit: <quote ana="Sir 18, 19 e 20">«Ante iudicium para iustitiam et antequam
+                     loquaris disce»</quote>.</p>
+               <p>[18] Singula ergo suo loco et tempore dicenda sunt, prepostero penitus ordine
+                  omisso. [19] Nam si de predicatione loqui desideras tempore congruo, prius
+                  historiam dicas, postea vero allegoriam, tertio tropologiam. [20] Si vero de
+                  epistolis tractes, primo loco et tempore salutationem ponas, secundo exordium,
+                  tertio narrationem, quarto petitionem, quinto conclusionem.</p>
+               <p>[21] Si autem de concionando et ambaxatis faciendis, studeas primo loco et tempore
+                  salutationem dicere; [22] secundo vero commendationem, tam illorum ad quos
+                  ambaxatam dirigitur quam sociorum tecum ambaxatam portantium; [23] tertio
+                  ambaxatam sive narrationem eius quod tibi impositum fuerit; [24] quarto vero
+                  exhortationem, dicendo suasoria verba ad consequendum id quod postulatur; [25]
+                  quinto modi <pb n="42"/>positionem, allegando modum, quo modo id quod postulatur
+                  fieri valeat; [26] sexto exempli positionem, inducendo exempla de rebus in
+                  similibus negotiis factis et observatis; [27] septimo denique assignabis
+                  sufficientem rationem ad omnia predicta. [28] Et hoc facies ad exemplum Gabrielis
+                  archangeli, qui cum missus esset a Deo ad beatam virginem Mariam, primo posuit
+                  salutationem, dicens: <quote ana="Lc I 28">«Ave Maria»</quote>; [29] secundo
+                  commendationem, dicens: <quote ana="Lc I 28">«Gratia plena, Dominus tecum.
+                     Benedicta tu»</quote> et cetera; [30] tertio confortationem sive exhortationem,
+                  dicendo: <quote ana="Lc I 30">«Ne timeas Maria»</quote> et cetera, quam
+                  exhortationem preposuit archangelus denuntiationi, ideo quia beata Maria turbata
+                  fuerat in salutatione archangeli; [31] quarto vero posuit annuntiationem, dicens:
+                     <quote ana="Lc I 31">«Ecce concipies et paries filium»</quote> et cetera; [32]
+                  quinto posuit modi expressionem, cum dixit: <quote ana="Lc I 35">«Spiritus sanctus
+                     superveniet in te et virtus Altissimi obumbrabit tibi»</quote> et cetera; [33]
+                  sexto posuit exemplum, cum dixit: <quote ana="Lc I 36">«Nam et Elisabeth, cognata
+                     tua, pariet filium in senectute sua»</quote> et cetera; [34] septimo assignavit
+                  sufficientem rationem ad predicta, cum dixit quia <quote ana="Lc I 37">«non erit
+                     impossibile apud Deum omne verbum»</quote>.</p>
+               <p>[35] Si autem de legibus vel decretis vel decretalibus tractare volueris, primo
+                  tempore et loco litteram ponas, secundo casum, tertio littere expositionem, quarto
+                  similia, quinto contraria, sexto solutiones. [36] Et sic de qualibet scientia que
+                  ad eam pertineant, secundum prius et posterius sunt dicenda.</p>
+               <p>[37] Hec denique exempla super hoc adverbio «quando» tibi ad presens dicta
+                  sufficiant.</p>
+               <p>[38] Tu autem ex ingenio tibi a Deo prestito multa super hoc et super quolibet
+                  verbo huius versiculi pro tue voluntatis arbitrio poteris excogitare. [39] Nam
+                  sicut super abecedario scripture omnes volvuntur, ita super hoc versiculo quicquid
+                  dici vel taceri debet, fere posset inflecti. [40] Hanc igitur doctrinam super
+                  dicendo vel tacendo breviter comprehensam tibi et aliis tuis fratribus litteratis
+                  scribere curavi, quia <pb n="44"/>vita litteratorum potius in dicendo quam in
+                  faciendo consistit, [41] Seneca hoc testante, qui ait: <quote
+                     ana="Sen. Ep., II 15, 2">«Stulta est et minime conveniens litterato viro
+                     occupatio exercendi lacertos et dilatandi virtutem»</quote>.</p>
+               <p>[42] Si autem super faciendo volueris habere doctrinam, detrahe de hoc versiculo
+                  istud verbum «dicas» et loco illius ponas hoc verbum «facias», ut dicatur: «Quis,
+                  quid, cui facias, cur, quomodo, quando requiras». [43] Et ita fere omnia que dicta
+                  sunt supra et multa alia poterunt ad hoc verbum «facias» utiliter adaptari.</p>
+               <p>[44] Hiis denique auditis, te circa predicta <quote
+                     ana="Alc. De arte rhet., 42, r. 10">«exercitatione intentissima et usu
+                     acri»</quote> exerceas – [45] «nam exercitatio ingenium et naturam sepe vincit
+                  et usus omnium magistrorum precepta superat» – et sic poteris doctrinam dicendi ac
+                  faciendi in promptu habere.</p>
+               <p>[46] Deum insuper exora, qui mihi donavit predicta tibi narrare, ut ad eterna
+                  gaudia nos faciat pervenire. Amen.</p>
+               <p>Explicit liber de doctrina dicendi et tacendi ab Albertano causidico Brixiensi de
+                  ora sancte Agathe compositus et compilatus, sub anno Domini M.CC.XLV de mense
+                  decembris.</p>
+            </div2>
+         </div1>
+      </body>
+   </text>
+</TEI>

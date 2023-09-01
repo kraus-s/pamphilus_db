@@ -1,0 +1,886 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			
+			<titleStmt>
+<title>Rota Veneris</title>
+				<author ref="http://viaf.org/viaf/42637591">Boncompagnus de Signa<date>c.1165-c.1240</date></author>
+</titleStmt><editionStmt>
+				<editor>Print edition by: P. Garbini</editor>
+				<respStmt>
+					<resp key="ALIM2_0">esportazione in formato TEI XML livello 0 effettuata da </resp>
+					<name key="OK">Omar Khalaf</name>
+					<name key="MB">Marina Buzzoni</name>
+				</respStmt>
+				<respStmt>
+					<resp key="ALIM2_1">Edizione in formato TEI XML, livello ALIM2_1, a cura di </resp>
+					<name key="JC">Jan Ctibor</name>
+				</respStmt>
+			</editionStmt>
+			<extent>
+				<measure quantity="4632" unit="words">Parole: 4632</measure>
+				<measure quantity="28671" unit="characters_without_spaces">Caratteri (spazi esclusi): 28671</measure>
+				<measure quantity="32556" unit="characters_witht_spaces">Caratteri (spazi inclusi): 32556</measure>
+			</extent>
+			
+			<notesStmt>
+				<note>Genere: Retorica</note>
+				<note>Tipo: Fonti Letterarie</note>
+				<note>Note: A p. 30, r. penult. ho corretto "promtpum" in "promptum".
+					Caratteri (con spazi): 32.790
+				MDG</note>
+				<note>Livello di codifica: 1</note>
+			</notesStmt>
+			
+				<publicationStmt>
+					<monogr>
+						<author>Boncompagno da Signa</author>
+						<title level="m">Rota Veneris</title>
+						<editor>P. Garbini</editor>
+						<publicationStmt>
+							<publisher>Salerno editrice</publisher>
+							<pubPlace>Roma</pubPlace>
+							<date>1996</date>
+						</publicationStmt>
+					</monogr>
+				</publicationStmt>
+<seriesStmt>
+				<idno>BonSig.RotVene</idno>
+				<publisher>ALIM</publisher>
+				<date when="2005-04-07">07/04/2005</date>
+			</seriesStmt>
+<sourceDesc>
+<p></p>
+</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>This text's TEI xml encoding from ALIM (http://it.alim.unisi.it/) was improved for the University of Zurich's <hi>Corpus Corporum</hi> project (www.mlat.uzh.ch) by Jan Ctibor in 2018</p>
+			</projectDesc>
+			<editorialDecl>
+				<normalization>Mediaeval Latin orthography</normalization>
+          </editorialDecl>
+      </encodingDesc>
+ 	  <profileDesc>
+		<creation>
+ 		<date></date>
+  		</creation>
+  	  <langUsage>
+  		<language ident="lat">latin</language>
+  	  </langUsage>
+  	  <textClass>
+  		<keywords>
+ 		 <list>
+ 		  <item></item>
+		  <item></item>
+	  	 </list>
+  		</keywords>
+  		<keywords scheme='genre'>
+  		 <list>
+   			<item></item>
+  		</list>
+  		</keywords>
+  		<keywords scheme='period'>
+ 		 <list>
+   			<item></item>
+  		 </list>
+  		</keywords>
+ 	   </textClass>
+ 	</profileDesc>
+ </teiHeader>
+<text>
+ <body>
+		<pb n="28"/>
+		<div1 n="1">
+			<head>[1]</head>
+ <p>In principio veris, cum sensibilia et animata
+				<lb/>quelibet ex aeris temperie revirescunt et germinare
+				<lb/>incipiunt ex temperantia qualitatum ipsius,
+				<lb/>que premortua hiemis presentia videbantur, stabam
+				<lb/>in rotundo monticulo iuxta Ravonem inter
+				<lb/>arbores florigeras et audiebam iocundissimas
+				<lb/>et variabiles phylomenarum voces, sicque
+				<lb/>recreabam animam post laborem. Cum autem
+				<lb/>sic starem et infra mentis archana plurima revolverem,
+				<lb/>ecce virgo in vestitu deaurato circumamicta
+				<lb/>varietatibus ex insperato comparuit,
+				<lb/>quam natura in omnibus taliter perpoliverat, ut
+				<lb/>nulla in ea deformitas compareret; ad modum
+				<lb/>siquidem regine preciosam habebat coronam,
+				<lb/>regale sceptrum in manu dextra dominabiliter
+				<lb/>deferendo. Venerat equidem a finibus terre, ut
+				<lb/>singulorum curialitatem et sapientiam scrutaretur.
+				<lb/>Hanc intuens facie hilari et iocunda, dixi ut
+				<lb/>precipere dignaretur. Illa vero non interrogata
+				<lb/>firmiter asseruit se deam esse Venerem, addendo
+				<lb/>pariter cur salutationes et delectabilia dictamina
+				<lb/>non fecissem, que viderentur ad usum
+				<pb n="30"/>
+				<lb/>amantium pertinere. Stupefactus, ad hec assumpsi
+				<lb/>stilum propere et hoc opusculum incepi,
+				<lb/>quod "Rotam Veneris" volui nominare, quia
+				<lb/>cuiuscumque sexus vel condicionis homines
+				<lb/>amoris ad invicem vinculo colligantur, tamquam
+				<lb/>rota orbiculariter volvuntur et pertimescunt
+				<lb/>omni tempore plurimum, quoniam perfectus
+			<lb/>amor continuum parit assidue timorem.</p>
+			<lb/><p>Preterea placuit michi virgineum chorum a
+				<lb/>dextris Veneris collocare, uxoratas, moniales, viduas
+				<lb/>et defloratas ponere a sinistris; sub scabellum
+				<lb/>vero pedum ipsius, universas ab istis inferius
+				<lb/>constituo, quia in eis turpissima est voluptas
+				<lb/>et iocundatio nulla. Ponam in genere breviter
+				<lb/>de omnibus exemplum, ne prolixitas auditorum
+			<lb/>pregravet aures.</p>
+			<lb/><p>Quecumque igitur sit, his generalibus poteris
+				<lb/>salutationibus uti: "Nobili ac sapienti domine
+				<lb/>S., morum elegantia decorate, I. salutem cum
+				<lb/>promptitudine servitii"; vel aliter: "Nobilissime
+				<lb/>ac sapientissime domine G. de Castelnovo, I.
+				<lb/>se ipsum totum"; vel aliter: "Inclite ac magnifice
+				<lb/>domine B. comitisse, forma et morum elegantia
+				<lb/>decorate, I. de Porto salutem et promptum
+				<lb/>in omnibus servitium", vel: "salutem cum
+				<pb n="32"/>
+				<lb/>fidelissimo servitio", vel: "salutem et quicquid
+				<lb/>potest", vel: "salutem et si aliquid valeret salute
+				<lb/>preciosius inveniri", vel: "salutem et quicquid
+			<lb/>fidelitatis et servitii potest".</p>
+			<lb/><p>Iste quippe salutationes locum habent, antequam
+				<lb/>aliquis percipiat quod affectat. Postquam
+				<lb/>vero suum compleverit desiderium, hoc modo
+				<lb/>salutabit amicam: "Anime sue dimidio pre
+				<lb/>cunctis mortalibus diligende B., amice dulcissime,
+				<lb/>I. se ipsum totum", vel: "quicquid sibi affectat",
+				<lb/>vel: "salutem cum diligentissimi amoris
+				<lb/>perseverancia", vel: "cum indissolubili vinculo
+				<lb/>amoris", vel: "salutem cum sincerissimi amoris
+				<lb/>vinculo", vel: "salutem cum perpetui amoris
+				<lb/>constancia"; vel aliter: "Forma, sensu, genere
+				<lb/>decorate M., amice dulcissime, I. quicquid amoris
+				<lb/>potest", vel: "se ipsum et sua"; vel aliter:
+				<lb/>"Anime sue dimidio et suorum occulorum lumini
+				<lb/>B., formosissime amice sue, I. animam
+				<lb/>et corpus et si plura posset", vel: "quicquid
+				<lb/>habet et habere videtur", vel: "se ipsum et
+				<lb/>sua"; vel aliter: "Gloriosissime ac preciosissime
+				<lb/>domine B., amice dulcissime, O. salutem et illud
+				<lb/>ineffabile gaudium mentis, quod aliqua voce
+				<lb/>vel actu exprimi non potest"; vel aliter: "Super
+				<pb n="34"/>
+				<lb/>aurum et topazion relucenti domine C.,
+				<lb/>amice dilectissime, I. quecumque potest et si ultra
+			<lb/>posse valeret aliquid invenire".</p>
+			<lb/><p>Consueverunt autem quidam ponere rusticanam
+				<lb/>et ridiculosam salutationem, qua forte posset
+				<lb/>quandoque benivolentia captari. Hoc enim
+				<lb/>est: "Amice dulcissime G., forma et morum
+				<lb/>elegantia redimite, I. tot salutes et servitia, quot
+				<lb/>in celo fulgent sidera, quot in arboribus folia et
+			<lb/>quot arene circa maris littora".</p>
+			<lb/><p>Et nota, quod fere omnes mulieres appetunt
+				<lb/>semper de pulcritudine commendari, etiam si
+				<lb/>fuerint deformes, unde tam in salutationibus
+				<lb/>quam in cunctis epistole partibus te oportet benivolentiam
+				<lb/>a pulcritudine captare. Utaris igitur
+				<lb/>superlativis et insistas commendationi, quia
+				<lb/>muliebris condicio huiusmodi laudibus cicius
+				<lb/>inflectitur et inclinatur. Ponas igitur quandoque
+				<lb/>"sapientissime", quandoque "nobilissime
+				<lb/>et illustrissime", si nobilis fuerit, quandoque
+				<lb/>"amatissime" seu "splendidissime" vel "lucidissime"
+			<lb/>aut "iocundissime".</p>
+			<lb/><p>Ex hiis autem salutationibus poteris trahere
+				<lb/>omnes modos salutandi amicas pro amicis et
+				<lb/>amicos pro amasiis, si volvere sciveris et mutare
+				<pb n="36"/>
+				<lb/>mutanda. Nec est aliud necessarium, in mutatione,
+				<lb/>nisi ut permutes adiectiva per sexus et,
+				<lb/>ubi posuisti femininum genus pro mulieribus,
+				<lb/>ponas masculinum pro viris. Et licet viri non
+				<lb/>tantum laudari appetant, de huiusmodi lasciviis
+				<lb/>plurimum letantur. Set videtur michi, quod omnia
+				<lb/>offitia preter miliciam sunt in salutationibus
+				<lb/>tacenda, quia hoc ineptum videretur, ut alicuius
+				<lb/>clerici dignitas vel negotiatoris officium a muliere
+				<lb/>aliqua diceretur. Nec etiam ipsi debent,
+				<lb/>cum scribunt mulieribus alicuius lascivie causa,
+				<lb/>suas dignitates vel officia nominare, quia male
+				<lb/>cum antecedenti concordaret illatum et sic per
+				<lb/>consequens epistola deluderetur. Clerici autem,
+				<lb/>qui frequenter super nature incudem feriunt
+				<lb/>cum malleo repercussorio nec valent motus renum
+				<lb/>de facili refrenare, ponant in salutationibus
+				<lb/>aliqua occulta signa, que propria nomina sub
+				<lb/>ymagine representent. Et est notandum, quod
+				<lb/>tam mulieres quam viri, cuiuscumque sint ordinis
+				<lb/>vel conditionis, debent epistole titulum in
+				<lb/>huiusmodi lasciviis taliter occultare, quod si littere
+				<lb/>ad aliquorum manus pervenerint, nequeant
+			<lb/>de facili cognosci.</p>
+			<lb/><p>Decursis breviter salutandi modis, qui possunt
+				<pb n="38"/>
+				<lb/>ad usum amantium pervenire, duxi quedam
+				<lb/>narrandi genera ponere generaliter in exemplum,
+				<lb/>ut dictatores quilibet preparatoria inveniant in
+				<lb/>dicendo. Set distinguenda sunt amandi tempora
+				<lb/>et amantium genera. Quidam enim amare incipiunt
+				<lb/>aliquas nec tamen cum eis colloquium habuerunt;
+				<lb/>quidam autem post colloquium et parvam
+				<lb/>familiaritatem amorem quarundam requirunt;
+				<lb/>quidam enim illas amare appetunt, quas
+				<lb/>nunquam viderunt. Tria igitur sunt tempora, in
+				<lb/>quibus hec omnia fiunt. Amantium vero genera
+				<lb/>sunt duo: laicus videlicet et clericus. Item laicorum
+				<lb/>alius miles, alius pedes. Item militum alius
+				<lb/>rex, alius dux, alius princeps, alius marchio, alius
+				<lb/>comes, alius procer, alius vavassor. Item peditum
+				<lb/>alius civis, alius burgensis, alius negotiator, alius
+				<lb/>rusticus, alius liber, alius servus. Clericorum itaque
+				<lb/>alius prelatus, alius subditus, quia non sunt distinguende
+				<lb/>omnes clericorum species, ne amoris
+				<lb/>iura ledantur. Ceterum si vellem secundum uniuscuiusque
+				<lb/>vitam et conditionem genera ponere
+				<lb/>narrationum, primo deficeret tempus quam sermo.
+				<lb/>Ergo sicut humane conditionis natura communis
+				<lb/>est, ita communia ponam exempla et transcurram
+			<lb/>opus utiliter inchoatum.</p>
+			<pb n="40"/>
+			<lb/><p>Cuiuscumque igitur conditionis aut ordinis
+				<lb/>sit ille, qui amare desiderat, aut amat, quam non
+				<lb/>habuit, aut illam, quam habuit set nunc facta
+				<lb/>est inter eos amoris alteratio aut illam, quam
+			<lb/>nullo tempore vidit.</p>
+			<lb/><p>Ab istis igitur tribus temporibus duos narrandi
+				<lb/>modos ad usum amantium assumam. Primus
+				<lb/>est ante factum, secundus post factum. Quicunque
+				<lb/>amorem alicuius mulieris habere appetit,
+				<lb/>debet venativas adulationum blanditias premittere,
+				<lb/>promittendo que numquam facere posset,
+				<lb/>quia sic dicit Ovidius: "nil enim promittere ledit".
+				<lb/>Inprimis namque taliter potest amator
+				<lb/>exordiri, narrare atque petere illi, quam desiderat
+			<lb/>habere:</p>
+			<lb/><p>"Cum inter gloriosos puellarum choros vos
+				<lb/>nudiustertius corporeis oculis inspexi, apprehendit
+				<lb/>quidam amoris igniculus precordialia
+				<lb/>mea et repente me fecit esse alterum. Nec sum
+				<lb/>id quod fueram nec potero de cetero esse. Nec
+				<lb/>mirum, quia michi et universis procul dubio videbatur,
+				<lb/>quod inter omnes refulgebatis tanquam
+				<lb/>stella matutina, que in presagium diei auroram
+				<lb/>polliceri videtur. Et dum subtiliter inspicerem,
+				<lb/>quanta vos gloria natura dotaverat, in amiratione
+				<pb n="42"/>
+				<lb/>deficiebat spiritus meus. Capilli siquidem
+				<lb/>vestri quasi aurum contortum iuxta coloratissimas
+				<lb/>aures mirifice dependebant. Frons erat excelsa
+				<lb/>et supercilia sicut duo cardines gemmati,
+				<lb/>oculi velut stelle clarissime refulgebant, quorum
+				<lb/>splendore membra quelibet radiabant. Nares
+				<lb/>directe, labra crossula et rubencia cum dentibus
+				<lb/>eburneis comparebant, collum rotundum
+				<lb/>et gula candidissima se directe inspiciendo geminabant
+				<lb/>pulcritudinem, quam nunquam credo
+				<lb/>potuisse in Helena intendi. Pectus quasi paradisi
+				<lb/>ortulus corpori supereminebat, in quo erant
+				<lb/>duo poma velud fasciculi rosarum, a quibus
+				<lb/>odor suavissimus resultabat. Humeri tamquam
+				<lb/>aure a capitella residebant, in quibus brachia sicut
+				<lb/>rami cedri erant naturaliter inserta. Manus
+				<lb/>longe, digiti exiles, nodi coequales et ungule sicut
+				<lb/>cristallum resplendentes totius stature augmentabant
+				<lb/>decorem. Verum quia primo deficeret
+				<lb/>commendator quam pulcritudinis immensitas,
+				<lb/>stilum verto ad sapientie vestre magnitudinem,
+				<lb/>de qua non possum non amirari; quia
+				<lb/>multe sunt, que, licet convenienti pulcritudine
+				<lb/>gaudeant, non tamen sapientia decorantur. Sunt
+				<lb/>et alie, quibus sapientia fuit nature munere concessa
+				<pb n="44"/>
+				<lb/>et forma corporis denegata. Set in vos ita
+				<lb/>omnia sine defectu aliquo confluxere, quod
+				<lb/>multotiens oppinio me in hanc trahat sententiam,
+				<lb/>ut existimem vos aliqua deitate potiri.
+				<lb/>Magnitudini tamen vestre suppliciter suplico, ut
+				<lb/>michi vestro famulo dignemini precipere, quia
+				<lb/>paratus sum me ipsum et mea vestre in omnibus
+			<lb/>exponere voluntati".</p>
+			<lb/><p>Et nota, quod hec epistola potest in unius diccionis
+				<lb/>permutatione taliter variari, quod cuilibet
+				<lb/>virgini, maritate, vidue, moniali et deflorate
+				<lb/>transmitti potest, scilicet ut, ubi dicitur in principio
+				<lb/>"puellarum", dicatur "dominarum"; nam
+				<lb/>et monachas debes tam in salutationibus quam
+				<lb/>in cunctis epistole partibus "dominas" appellare,
+				<lb/>quia, si diceres "monachas" vel "moniales",
+				<lb/>pocius ad earum spectaret vituperium quam
+				<lb/>honorem, unde in Alemania fere ab omnibus
+				<lb/>"domine" appellantur. Est etiam notandum,
+				<lb/>quod talis epistola non debet transmitti cuilibet,
+				<lb/>set magnis et sapientissimis dominabus. Preterea
+				<lb/>sciendum est, quod unaqueque mulier, cuiuscumque
+				<lb/>ordinis vel conditionis sit, negat in primis,
+				<lb/>quod facere peroptat, unde si aliquo modo
+				<lb/>mittenti rescribere velit, intelligas ipsam concedere
+				<pb n="46"/>
+				<lb/>velle, licet hoc deneget verbis. Ad quod
+				<lb/>notandum est, quod quinque sunt cause, quibus
+				<lb/>mulier denegat, quod postulat amans: prima
+				<lb/>est ex quadam occulta natura, quia naturaliter
+				<lb/>omnibus inesse videtur primo negare quesita;
+				<lb/>secunda, ne, si propere tue condescenderet
+				<lb/>voluntati, crederes illam fore communem;
+				<lb/>tertia, ut postulanti dolcius esse videatur, quod
+				<lb/>sibi fuerat longo tempore denegatum; quarta,
+				<lb/>ut expectet sibi aliquid elargiri, antequam consenciat
+				<lb/>postulanti; quinta, quia sunt plurime,
+				<lb/>que concipere pertimescunt. Unde aliqua sic
+				<lb/>scriberet mittenti et poneret simpliciter titulum
+				<lb/>cum salute; posito autem titulo, sic procedere
+			<lb/>posset:</p>
+			<lb/><p>"In epistole tue serie stilum fatigasti pro nichilo,
+				<lb/>credens per quedam adulancia verba et
+				<lb/>pulcritudinis mee commendationem benivolenciam
+				<lb/>captare, set nichil est, quod credis, et semina
+				<lb/>mandas arene. Tuo siquidem servitio
+				<lb/>non indigeo nec volo quod de cetero michi talia
+			<lb/>mittere presumas".</p>
+			<lb/><p>Hac siquidem epistola perpendere poterit
+				<lb/>amans quod suum procul dubio desiderium
+				<pb n="48"/>
+				<lb/>adimplebit. Unde iterato sibi talem epistolam
+			<lb/>transmittat:</p>
+			<lb/><p>"Vestrarum litterarum significatum animam
+				<lb/>pariter et corpos letificavit. Et licet dixeritis me
+				<lb/>stilum fatigare pro nichilo, credo tamen quod
+				<lb/>me respicere dignabimini, et si non placuerit ut
+				<lb/>vivam, precipiatis ut moriar sicque post mortem
+			<lb/>fruar gaudiis paradisi".</p>
+			<lb/><p>"De tua importunitate non possum non amirari,
+				<lb/>cum iam penitus denegaverim, ne michi litteras
+				<lb/>vel aliquid transmittere auderes; et nunc sic
+				<lb/>me solicitas, ut me credas alterabilem esse. Set
+				<lb/>non reperitur nodus in sirpo, et flos mirice permanet
+				<lb/>inviolabilis, nec est feno similis, quod secatum
+				<lb/>facile arescit. Vidisti forte virgulta in deserto
+				<lb/>et complacuerunt tibi pomeria Damasci. Set
+				<lb/>non omne quod placet potest, ut credis, haberi".
+				<lb/>Huiusmodi siquidem proverbia, occulte ratiocinationes,
+				<lb/>similia et similitudines faciunt
+				<lb/>plurimum ad usum amandi. Ponantur igitur in
+				<lb/>talibus iocunde transumtiones et proverbia, de
+				<lb/>quibus possit multiplex intellectus haberi, quia
+				<lb/>non modicum faciunt amantium animos gratulari.
+				<lb/>Et non solum milites et domine, verum
+				<lb/>etiam populares iocundis quandoque transsumptionibus
+				<pb n="50"/>
+				<lb/>utuntur, et sic sub quodam verborum
+				<lb/>velamine vigor amoris intenditur et amabile
+				<lb/>suscipit incrementum. Transumitur enim
+				<lb/>mulier quandoque in solem, quandoque in lunam,
+				<lb/>quandoque in stellam, quandoque in palmam,
+				<lb/>quandoque in cedrum, quandoque in laurum,
+				<lb/>quandoque in rosam, quandoque in lilium,
+				<lb/>quandoque in violam, quandoque in gemmam
+				<lb/>vel in aliquem lapidem preciosum; vir autem
+				<lb/>transumitur quandoque in leonem propter fortitudinem;
+				<lb/>quandoque in draconem propter incomparabilem
+				<lb/>excellentiam; quandoque in falconem
+				<lb/>propter velocitatem. Infinitis autem modis
+				<lb/>fiunt huiusmodi transumptiones nec possent
+			<lb/>de facili numerari.</p>
+			<lb/><p>Set videndum est, quid sit transumptio. Transumptio
+				<lb/>est positio unius dictionis pro altera,
+				<lb/>que quandoque ad laudem quandoque ad vituperium
+				<lb/>rei transumpte redundat. Et est notandum
+				<lb/>quod omnis transumptio est largo modo
+				<lb/>similitudo; set non convertitur. Ceterum dictator
+				<lb/>ita debet esse providus in transumendo, ut
+				<lb/>semper fiat quedam similitudo vocis vel effectus
+				<lb/>in trasumptione. Nam si mulierem transumeres
+				<lb/>in quercum, non esset iocunda transumptio; et
+				<pb n="52"/>
+				<lb/>si diceres: "collegi glandes" pro effectu amoris
+				<lb/>alicuius, turpiter transumeres, quoniam glandes
+				<lb/>cibaria sunt porcorum. Set si poneres "palmam"
+				<lb/>pro muliere et "dactilos" pro amoris effectu,
+				<lb/>bene transumeres; quoniam palma est arbor
+				<lb/>famosa et dactili dulcedinem exibent per
+				<lb/>gustum. Item, si virum transumeres in canem,
+				<lb/>turpiter transumeres, nisi eum velles taliter dehonestare.
+				<lb/>Verum, quia meum propositum impediretur,
+				<lb/>pretereo sub quodam silencio de
+				<lb/>transumtione; set alias de ipsa specialem proposui
+			<lb/>facere tractatum.</p>
+			<lb/><p>Revertar igitur ad propositum et respondebo
+				<lb/>pro amante superiori epistole hoc modo:
+				<lb/>"Si regnum essem adeptus et regali diademate
+				<lb/>coronatus, non tantum foret gaudium cordi
+				<lb/>meo innatum, quantum de vestrarum litterarum
+				<lb/>tenore percepi. Scio quidem, quod nodus
+				<lb/>non reperitur in sirpo, id est macula non reperitur
+				<lb/>in facundissimo eloquio vestro; et flos mirice
+				<lb/>permanet inviolabilis, idest vestre dilectionis
+				<lb/>sinceritas non potest aliquatenus violari. Ego
+				<lb/>autem sum fenum, quod secatum facile arescit;
+				<lb/>et nisi velitis me rore vestre gratie irrigare, minus
+				<lb/>etiam quam fenum aridum potero dici. Vidi
+				<pb n="54"/>
+				<lb/>tandem virgulta et complacuerunt pomeria Damasci,
+				<lb/>et licet habere nequeam quod placet, magnitudinem
+				<lb/>tamen et curialitatem vestram suppliciter
+				<lb/>exoro, ut michi fidelitatis mee intuitu
+				<lb/>hoc donarium conferatis, videlicet quod me instruere
+				<lb/>dignemini, quo tempore vobis mei cordis
+			<lb/>secreta valeam aperire".</p>
+			<lb/><p>"Credis forte, quod labor improbus omnia
+				<lb/>vincat, et pulsanti omni tempore aperiatur;
+				<lb/>set incerte sunt vie hominum et vane cogitationes
+				<lb/>eorundem, cum res cuiusque in talibus
+				<lb/>magis casu et fortuna regatur quam premeditata
+				<lb/>dispositione. Nolens tamen preces tuas ex toto
+				<lb/>contempnere, ne in desperationis laqueum traharis,
+				<lb/>consulo ut in die festo, cum domini et matrone
+				<lb/>templum dominicum visitant, prohicias
+				<lb/>infra meum pomerium falconem et subito postea
+				<lb/>currens a familiaribus domus tuam repetas
+				<lb/>avem. Ego vero illam tibi faciam denegari, diceturque
+				<lb/>tibi ab ancillis: "recede, non enim tuum
+				<lb/>est, quod queris". Ad istam siquidem contemptionem
+				<lb/>te vocari faciam, sicque michi tui cordis
+			<lb/>archana poteris aperire".</p>
+			<lb/><p>Quid plura? Pono, quod amans iam perfecit
+				<lb/>quod optabat, unde potest et debet ex postfacto
+				<pb n="56"/>
+				<lb/>aliquas iocundissimas ei litteras destinare. Consueverunt
+				<lb/>autem amantes ad maiorem delectationem
+				<lb/>dicere se vidisse per sompnium quod fecerunt,
+				<lb/>unde talem amator potest epistolam destinare:
+				<lb/>/*
+				<lb/>"Dum medium silencium tenerent omnia et
+				<lb/>dies iocundissimo tempore veris suum perageret
+				<lb/>cursum, causa venandi quoddam intravi
+				<lb/>pomerium, infra quod duo rivuli decurrebant.
+				<lb/>Erant enim ibi arbores florigere, inter quas dulcissimus
+				<lb/>phylomenarum cantus undique resonabat.
+				<lb/>Fatigatus, modicum sub frondosa pinu
+				<lb/>quievi et cepi firmiter dormire. Cum autem sic
+				<lb/>quiescerem, ecce comparuit virgo speciosissima,
+				<lb/>cuius pulcritudinem non posset aliquis designare.
+				<lb/>Aprehendit me per manum et cepit mecum
+				<lb/>aliquantulum residere. Utebatur primo suavissimis
+				<lb/>eloquiis et coloratis prefationibus in dicendo;
+				<lb/>post multa siquidem verba, plicatis brachiis,
+				<lb/>me suaviter strinxit et suis rubentibus labellis
+				<lb/>mea suavius comprimens contulit michi basia
+				<lb/>ineffabilia. Post hec, iocundiora et iocundissima
+				<lb/>exercendo, que mille modis gaudium geminaverunt,
+				<lb/>introduxit me tandem in cubiculum
+				<lb/>suum, quod fulcitum erat floribus et malis stipatum.
+				<pb n="58"/>
+				<lb/>Erant ibi cardines eburnei cum capitellis
+				<lb/>aureis, parietes cristallini cum celatura varia, sicque
+				<lb/>radiabant ex gemarum fulgoribus, ut michi
+				<lb/>videretur esse in paradiso deliciarum. Superveniente
+				<lb/>demum aurora, me sub eiusdem arboris
+				<lb/>umbram reduxit et, repetitis amplexibus me
+				<lb/>innumerabiliter astringens, angelicum michi
+				<lb/>contulit "ave". A sompno quidem tam glorioso
+				<lb/>salutationis alloquio excitatus, duxi vestram in
+				<lb/>hac parte sapientiam consulere, ut vestris michi
+				<lb/>litteris dignemini somnium explanare".
+				<lb/>"Iocundari potestis et infra vestre mentis archana
+				<lb/>inenarrabiliter exultare, quod tam preciosum
+				<lb/>vobis comparuit sompnium, in quo desideratissimos
+				<lb/>amplexus, basia iocundissima et cetera
+				<lb/>que secuntur magnifice recepistis. Nam, si
+				<lb/>bene memini, eadem die ad eiusdem arboris
+				<lb/>pedes me recolo sompniasse, quod vos ibidem
+				<lb/>videram hec omnia facientes. Ab ea siquidem
+				<lb/>hora excogitavi sedula, quomodo vestre magnitudini
+				<lb/>possim in omnibus et per omnia complacere.
+				<lb/>Verumtamen interpretari sompnium non
+				<lb/>valeo, nisi mecum sub eadem arbore iterum
+				<lb/>quiescatis. Properate igitur ad eundem locum
+				<lb/>post solis occasum, quoniam ibi proposui explanare
+				<pb n="60"/>
+				<lb/>sompnium et refferre plurima, que litteris
+			<lb/>non audeo annotare".</p>
+			<lb/><p>"Speciosa forma pre filiabus hominum,
+				<lb/>grates decem milia ex parte vestri fidelissimi habeatis,
+				<lb/>scientes procul dubio, quod vestri amoris
+				<lb/>vinculum me tenet indissolubiter colligatum,
+				<lb/>unde quicquid precipere placet, paratus sum effectui
+			<lb/>mancipare".</p>
+			<lb/><p>Pone, quod ista nupserit alii nec velit eum ulterius
+			<lb/>diligere, unde illi taliter scribit:</p>
+			<lb/><p>"Amoris vestri vinculum per effectum operum
+				<lb/>dissolvatur, quoniam nupsi viro, qui me
+				<lb/>maritali annulo subarravit, cinxit collum
+				<lb/>meum lapidibus preciosis deditque vestes auro
+				<lb/>et gemis plurimum renitentes, unde non possum
+				<lb/>nec debeo tecum more solito iocundari".
+				<lb/>"Plorans ploravi nec plangere desistam et
+				<lb/>in tenebris meum stravi lectum, quia obscuratum
+				<lb/>est michi candelabrum, quo videbar inter
+				<lb/>gloriosas militum catervas multimode refulgere:
+				<lb/>unde sciatis, quod si montes et maria cum viro
+				<lb/>vestro transiveritis, sequar vos, ut quandoque
+				<lb/>saltem videre valeam desiderium anime mee".
+				<lb/>Pone, quod antequam nubat, efficiatur gravida,
+			<lb/>unde taliter scribit amasio suo:</p>
+			<pb n="62"/>
+			<lb/><p>"Eram in domo patris mei tenera et in utriusque
+				<lb/>parentis conspectu plurimum amabilis,
+				<lb/>quando per venativas adulationum blanditias
+				<lb/>me traxisti minus provide in laqueum deceptivum.
+				<lb/>Nunc vero non audeo alicui propalare mei
+				<lb/>vulneris causam, et tamen scitur in platheis,
+				<lb/>quod gessimus in absconso; vultus pallet, tumescit
+				<lb/>venter, reserantur claustra pudoris; fama
+				<lb/>plebescit, laceror assidue, subiaceo verberibus,
+				<lb/>requiro mortem, unde non est dolor similis meo
+				<lb/>dolori, quia famam et honorem cum florem
+				<lb/>verginitatis amisi. Nam ad inenarrabilis anxietatis
+				<lb/>augmentum factus es michi penitus alienus,
+				<lb/>nec illius aliquatenus recordaris, cui maria promittebas
+				<lb/>et montes et universa, que celi ambitu
+				<lb/>continentur. Similibus enim laqueis auceps
+				<lb/>decipit aves et piscis ex pelago tali trahitur hamo.
+				<lb/>Sed nil prodest michi, quod reffero, quoniam
+				<lb/>qui ex alto cadit, inremediabiliter corruit,
+				<lb/>et frustra remedium queritur, ubi periculum
+				<lb/>precurrit. Succurre michi, queso, tandem, et si
+				<lb/>non vis prebere iuvamen, inspicias saltem, quomodo
+				<lb/>pro te morior, et utinam morerer! Quia
+				<lb/>minus malum esset mori, quam vivere omni
+			<lb/>tempore cum pudore".</p>
+			<pb n="64"/>
+			<lb/><p>"Antequam uxorem acciperem, dedignabaris
+				<lb/>me recipere in virum; nunc autem, qua ratione
+				<lb/>tue possem condescendere voluntati, cum uxorem
+				<lb/>habeam elegantissimam et multimoda pulcritudine
+				<lb/>decoratam? Cessa igitur a talibus et tecum
+				<lb/>hec verba retracta, quoniam alium credo
+				<lb/>esse in causa, qui tuam navem fecit ad portum
+			<lb/>ignominie devenire".</p>
+			<lb/><p>Pone, quod aliqua virum vel amicum habeat,
+				<lb/>qui abiit in regionem longinquam, nec reverti
+				<lb/>procurat, unde sibi talem epistolam potest destinare:
+				<lb/>/*
+				<lb/>"Expectans expectavi desiderium meum,
+				<lb/>alteram mei corporis partem, oculorum meorum
+				<lb/>lumen, primum dilectum et amicum, et
+				<lb/>iam lapso quinquennio solivaga permansi, credens
+				<lb/>illum videre corporeis oculis, sine quo nichil
+				<lb/>video nec videre potero, nisi michi sue presentie
+				<lb/>contulerit claritatem. Rediit ad Noe columba
+				<lb/>per fenestram, ramum virentis olive in
+				<lb/>signum leticie reportans. Revertatur, queso,
+				<lb/>dilectissimus meus, ut illam faciat vivere, que
+				<lb/>pro illo moritur nec mori potest. Alioquin faciam
+				<lb/>sicut turtur, que suum perdit maritum, ad
+				<lb/>instar cuius amavi semper et amare peropto. Illa
+				<pb n="66"/>
+				<lb/>quidem postea non sedet in ramo viridi, set gemit
+				<lb/>in sicco voce flebili iugiter et aquam claram
+				<lb/>turbat, cum appetit bibere, nullumque nisi mortis
+				<lb/>prestolatur solatium. Sic ego vivam sicque
+				<lb/>moriar, si vestra desiderabili non potero presentia
+			<lb/>potiri".</p>
+			<lb/><p>Qualiter debeat aliquis mulieribus desuadere,
+			<lb/>ne habitum accipiant monachalem:</p>
+			<lb/><p>"Vox turturis immo potius cuculi audita est
+				<lb/>in terra nostra et resonuit, quod huius seculi
+				<lb/>honore deposito habitum proposuisus recipere
+				<lb/>monachalem et in claustro cum gibbis, claudis,
+				<lb/>nasicurvis et strambis mulieribus ducere vitam.
+				<lb/>Que igitur vobis gloriare servabitur, cum vos accendere
+				<lb/>lampades, pulsare tintinabulum, revolvere
+				<lb/>libros et cantare altis vocibus "Alleluia" oportebit?
+				<lb/>Nam cum videbitis puellas plurimas vestimentis
+				<lb/>preciosissimis exornatas, que vobis non
+				<lb/>possunt in pulcritudine coequari, stare cum militibus
+				<lb/>in choreis et cantare in timpano et choro
+				<lb/>"Palma nata paradisi redimita floribus", in vestimentis
+				<lb/>nigris cantabitis "Requiem eternam", gracitando
+				<lb/>psalmos cum inveteratis! Desistatis igitur
+				<lb/>a tali proposito, quoniam paratus sum, quandocumque
+			<lb/>placet, vos recipere in uxorem".</p>
+			<pb n="68"/>
+			<lb/><p>"Diu excogitaveram, qualiter possem evadere,
+				<lb/>ne habitum susciperem monachalem. Set pater
+				<lb/>mens hoc me facere compellebat nec inveniebam
+				<lb/>aliquem, qui michi super hoc vellet
+				<lb/>consulere, unde trisus erat anima mea usque ad
+				<lb/>mortem nec poteram vivere sine dolore. Placet
+				<lb/>igitur michi consilium vestrum et parata
+				<lb/>sum vestre in omnibus obedire voluntati. Quapropter
+				<lb/>amiciciam vestram attentissime deprecor,
+				<lb/>quatenus in proxima nocte ad monasterium,
+				<lb/>cum primo tintinabulum pulsatur, propere accedatis,
+				<lb/>quia vobiscum veniam, quocumque placebit".
+			<lb/>/*</p>
+			<lb/><p>Respondet monialis, quando petitur pro amica:
+				<lb/>/*
+				<lb/>"Cum Illi sim desponsata, cui angeli serviunt,
+				<lb/>et in primo prophessionis voto virginitatem
+				<lb/>meam celesti Sponso compromiserim,
+				<lb/>miror, quod me audes querere in amicam et
+				<lb/>presertim, cum virginitatis portem signum in
+				<lb/>vertice, velum videlicet nigrum, quo innuitur
+				<lb/>me quandam speciem assumpsisse mortalitatis,
+				<lb/>unde tibi ac omnibus deberem secundum carnis
+				<lb/>deloctationem procul dubio displicere. Set,
+				<lb/>ut video, sic te illaqueavit persuasio diabolica,
+				<pb n="70"/>
+				<lb/>quod nullius viri lectum violare pertimesceres,
+				<lb/>ex quo Altissimi sponsam exquirere non pavescis;
+				<lb/>set incunctanter scias et nullatenus dubites,
+				<lb/>quod tue persuasiones contra me non prevalebunt.
+				<lb/>Et si dares que habes et que habere non
+				<lb/>posses, in vanum laboras et semina mandas
+			<lb/>arene".</p>
+			<lb/><p>"Si per velum nigrum intelligatis mortalitatem
+				<lb/>aliquam assumpsisse, eadem vobiscum desidero
+				<lb/>mortalitate potiri et famulari vobis, donec
+				<lb/>simul aliquantulum revivamus. Set de avaricie
+				<lb/>vicio merito reprehendi poteritis, si michi
+				<lb/>mortis vestre denegaveritis particulam. Ex quo
+				<lb/>vitam meam in vestra constituo potestate. Et licet
+				<lb/>velum sit nigrum, sub eodem tamen menbra
+				<lb/>lacte candidiora intueor, unde mille, immo decem
+				<lb/>milia traho suspiria, quod non possum illa
+				<lb/>gloria perpotiri. Ex eo enim, quod asseritis vos
+				<lb/>Illi esse desponsatam, cui angeli serviunt, et eidem
+				<lb/>vestram compromisisse virginitatem, dimittere
+				<lb/>non debetis, quin mee condescendatis
+				<lb/>voluntati, quia celestis Sponsus animam, non
+				<lb/>carnem requirit, unde dicitur: "celum celi Domino,
+			<lb/>terram autem dedit filiis hominum".</p>
+			<lb/><p>Super eo vero, quod me dicitis persuasione diabolica
+				<pb n="72"/>
+				<lb/>sic esse vinculatum, quod nullius viri lectum
+				<lb/>violare pertimescerem, ex quo Altissimi
+				<lb/>sponsam exquirere non pavesco, respondeo taliter,
+				<lb/>quod multo fortius illius violarem thorum,
+				<lb/>qui meos parentes et consanguineos interfecit,
+				<lb/>qui dat pluvias, grandines et tempestates, quam
+				<lb/>alicuius viri terreni, qui paucos vel nullos offendere
+			<lb/>potest".</p>
+			<lb/><p>"Verba tua super mel et favum michi dulcia
+				<lb/>fuerunt nec audeo denegare quod postulas, quoniam
+				<lb/>necessarium proponis et irrefragabile argumentum.
+				<lb/>Venias igitur et cupitis fruamur amplexibus,
+				<lb/>conferendo pariter grata, graciora et gratissima
+				<lb/>basia, que dulciter permisceri solent, labella
+				<lb/>suaviter comprimendo. Quod autem sequitur,
+				<lb/>sit secretissimum et fingamus nos ad invicem
+				<lb/>pro re aliqua rixari, quatenus nostri amoris
+				<lb/>integritas occultetur. Hoc tandem amicicie tue
+				<lb/>precipere proposui, ut si Sponsus meus te aliquo
+				<lb/>tempore molestaverit, in me penam refundas,
+				<lb/>sciens quod, quandocumque potero, dabo ubi
+				<lb/>locum, ut tuam valeas iniuriam vindicare".
+				<lb/>Matrona mittit litteras alicui, qui eam dilexit,
+				<lb/>set nunc est ab eo derelicta pro quadam domicella:
+				<lb/>/*
+				<pb n="74"/>
+				<lb/>"Si amoris iura diligencius inspiceres, non dimitteres
+				<lb/>grana pro paleis neque rem solidam
+				<lb/>pro volatili, quoniam qui teneram diligit puellam,
+				<lb/>fructus degustat acerbos neque naturalem
+				<lb/>percipit saporem, qui uvam premere satagit, antequam
+				<lb/>sit matura. Set scio, quod illas diligere
+				<lb/>consuevisti, que suas facies cerusa et unguento
+				<lb/>citrino dealbant, que rubent ex appositione
+				<lb/>bambacelli et florere videntur ex coloribus
+				<lb/>appositis, unde universis deberent plurimum
+				<lb/>displicere, quia furtivus est color, qui non provenit
+				<lb/>a natura. Est etiam aliud, quod te deberet a
+				<lb/>talium amore divellere, quia neminem nisi pro
+				<lb/>munere diligunt et illam, quam tibi credis esse
+				<lb/>specialem, plures, immo plurimi abutuntur, sicque
+				<lb/>communis est terminus, que speras fore discretum.
+				<lb/>Revertere ad me igitur et more solito
+				<lb/>gloriemur, quia in rebus necessariis nullum patieris
+			<lb/>defectum".</p>
+			<lb/><p>Pone, quod aliqua uxorata velit ad se vocare
+				<lb/>suum amicum, quando maritus est absens:
+				<lb/>"Transmisi vobis violas, nunc autem fasciculum
+				<lb/>destino rosarum, quoniam amicitie vestre
+				<lb/>superlativis laudibus conveniunt flores, fructus
+				<lb/>et frondes. Recessit enim aquilo, veniat igitur
+				<pb n="76"/>
+				<lb/>auster, intret ortum meum et faciat illius aromata
+			<lb/>suis flatibus redolere".</p>
+			<lb/><p>Nunc loquitur Venus universis mulieribus
+			<lb/>hoc modo:</p>
+			<lb/><p>"Iocunda sunt vobis verba in Rota nostra
+				<lb/>proposita, quibus amantes valent se ad invicem
+				<lb/>visitare suorumque cordium revelando secreta.
+				<lb/>Nos autem in eminentiori amoris specula consistentes,
+				<lb/>quendam in hac parte consideravimus
+				<lb/>defectum, quem ex officio nostro volumus in
+				<lb/>integrum supplere; videlicet docere vos proposuimus
+				<lb/>invenire oportunitatem amandi et per
+				<lb/>quas personas hoc facere possitis, unde breviter
+				<lb/>hanc vos regulam doceo, que non fallit: matrone
+				<lb/>per se ipsas, moniales et vidue sub obtentu
+				<lb/>religionis, uxorate per matronas et matres et ancillas
+				<lb/>et puelle per omnes supradictas possunt
+				<lb/>multimode lascivire. Item est notandum, quod
+				<lb/>non est aliquis adeo sagax, qui mulieris propositum
+			<lb/>valeat omni tempore impedire".</p>
+			<lb/><p>His dictis dampnavit Sardos et universos, qui
+				<lb/>zelotipie vitio proscribuntur addendo pariter,
+				<lb/>quod quicumque dubitat et vult sibi conscius
+				<lb/>esse, cornutam adipiscetur procul dubio coronam,
+				<lb/>in qua scribetur cuculi versus et depingetur
+			<lb/>cucurbita ortulana.</p>
+			<pb n="78"/>
+			<lb/><p>Finito siquidem generali edicto abiit dea Venus,
+				<lb/>nec dico, quod taliter abierit, ut non sit ubique
+				<lb/>potencialiter presens. Ego autem solus remansi
+				<lb/>et cepi cogitare mecum omnia, que causa
+				<lb/>lascivie conscripseram, et vereri plurimum, ne
+				<lb/>forte moderni et posteri me crederent nimis
+				<lb/>fuisse lascivum, unde opus destruere proposueram,
+				<lb/>ne ad aliquorum audientiam perveniret.
+				<lb/>Condescendi tandem amicorum precibus et
+				<lb/>Rotam omnibus concessi Veneris, quam feceram
+				<lb/>causa urbanitatis. Unum tamen volo
+				<lb/>universos et singulos scire, quod plus michi
+				<lb/>semper placuerunt verba quam facta, quoniam
+				<lb/>gloriosius est in talibus vivere in spe quam in
+				<lb/>re, secundum sententiam serenissime Capuane.
+				<lb/>/*
+				<lb/>Quedam oblivioni tradideram, que non duxi
+				<lb/>sub silencio preterire, quoniam in eis subulis et
+				<lb/>ardua est rhetorica, unde vix potest imbeccillitas
+				<lb/>ingenii humani rem pre magnitudine intueri.
+				<lb/>Inter cunctos equidem amantium gestus hec
+				<lb/>sunt diligencius et exquisicius contemplanda,
+				<lb/>videlicet quid sit nutus, quid indicium, quid signum,
+				<lb/>quid suspirium, quomodo ista se habeant
+			<lb/>et qualiter permisceri possunt.</p>
+			<pb n="80"/>
+			<lb/><p>Nutus est quidam preambolus amoris nuntius,
+				<lb/>qui quodam inenarrabili actu cordium secreta
+				<lb/>revelat; vel nutus est quedam ymago amoris,
+				<lb/>que representat, quid iam fecerint amantes
+				<lb/>aut quid facere velint; vel nutus est veri vel falsi
+				<lb/>amoris indicativus, quia multotiens per ipsum
+				<lb/>plurimi trahuntur in laqueum deceptivum. Fit
+				<lb/>enim actu, quando mulier in momento aperit
+				<lb/>dextrum vel sinistrum oculum subridendo, unde
+				<lb/>amatorum cordibus quoddam inenarrabile
+				<lb/>gaudium nascitur, pro quo extra se ipsos multociens
+				<lb/>traducuntur, et hoc magis proprie dicitur
+				<lb/>nutus. Fit etiam actu, videlicet quando mulieres
+				<lb/>digito, qui vocatur index, albissimam gulam demonstrat,
+				<lb/>unde amantes amoris igniculo comburuntur.
+				<lb/>Fit etiam actu, quando ille, que pulcros
+				<lb/>habent capillos, manum circa tempora ponunt,
+				<lb/>sublevando drapellum vel bindam, ut
+				<lb/>amantes respiciant pulcritudinem capillorum,
+				<lb/>unde ad amorem non modicum provocantur.
+				<lb/>Fit etiam actu, quando mulieres brachia extendunt,
+				<lb/>revolvendo pelles et permutando, ut amatores
+				<lb/>statum respiciant et personam, unde amoris
+				<lb/>vigor mulumode augmentatur. Mulus autem
+				<lb/>modis fit nutus actu, quos numerare non possum
+				<pb n="82"/>
+				<lb/>propter consuetudinum diversitatem. Nam
+				<lb/>sagaces mulieres in choreis saltantes faciunt nutus,
+				<lb/>licet ab omnibus percipi non possint. Fit autem
+				<lb/>actu quandoque in elevatione capitis, quandoque
+				<lb/>in declinatione, risu, manu et passibus
+			<lb/>tortuosis.</p>
+			<lb/><p>Inditium est quedam latens revelatio secreti,
+				<lb/>per quam indicatur nobis, quid facere debeamus,
+				<lb/>verbi gratia: quedam enim formosa monialis
+				<lb/>vidit iuxta ianuas templi transire amasium
+				<lb/>suum, unde statim accepit librum et incepit canere:
+				<lb/>"sol fa mi re, sol fa mi re, sola sum, sola
+				<lb/>sum". Hoc enim erat inditium quia indicabatur
+				<lb/>ei per tales voces, quid facere deberet. Est enim
+				<lb/>differentia inter nutum et inditium, quia nutus
+				<lb/>fit multum latenter, indinum aliquantulum expresse.
+				<lb/>Item nutus fit tantum actu, inditium vero
+				<lb/>actu et voce. Item est notandum, quod omnis
+				<lb/>nutus est largo modo indinum, quoniam per ipsum
+				<lb/>semper aliquid indicatur, set non convertitur.
+				<lb/>Inditium enim dicitur, quando mulieres frequenter
+				<lb/>aliquos nominant, quia indicatur, quod
+				<lb/>eos diligant vel diligere velint. Inditium est, ut si
+				<lb/>aliquis frequentet horam alicuius mulieris et
+				<lb/>ultra quam consueverit se incipiat perpollire,
+				<pb n="84"/>
+				<lb/>quia indicatur, quod eam habeat vel habere affectet.
+				<lb/>Innumerabilibus enim modis tam actu
+				<lb/>quam voce fiunt indicia, quorum diversitatem
+				<lb/>non posset aliquis plenarie assignare. Est et
+				<lb/>notandum, quod omne indicium est coniectura.
+			<lb/>/*</p>
+			<lb/><p>Signum est, quo secretum quandoque perpenditur,
+				<lb/>ut cum aliquis vel aliqua pallet vel rubet
+				<lb/>repentino motu, pro quo significatur verecundia
+				<lb/>vel ira. Et non accipio hic signum, nisi
+				<lb/>quantum pertinet ad amorem, quoniam signi
+				<lb/>acceptiones infinite sunt. Preterea largo modo
+				<lb/>potest signum indicium dici et econverso.
+				<lb/>Suspirium est passio anime innata ex spirituum
+				<lb/>suspensione; vel suspirium est ingens inspiratio
+				<lb/>cum vehementi spirituum suspensione;
+				<lb/>vel suspirium est vehemens spirituum passio ex
+				<lb/>valida cogitatione; vel suspirium est repentinus
+				<lb/>et inopinatus spirituum sonitus proveniens ex
+				<lb/>anime labore. Dicitur autem suspirium a spirituum
+				<lb/>suspensione, quoniam cum anima reducit
+				<lb/>ad memoriam felicitatem quam habuit aut doloris
+				<lb/>immensitatem vel immensum gaudium
+				<lb/>seu contrarium vel futurum incomodum, suspenditur
+				<lb/>spiritus, quia constringitur cor ex eo,
+				<pb n="86"/>
+				<lb/>quod anima obliviscitur virtutis operative, unde
+				<lb/>quando cor incipit postmodum dilatari, revertitur
+				<lb/>spiritus ad principalem sedem, et ex ipsa reversione
+				<lb/>oritur quidam sonus, qui suspirium
+				<lb/>nominatur. Verumtamen sunt quam plures, qui
+				<lb/>ex prava consuetudine vel morbo suspirant.
+				<lb/>Mulieres autem quandoque suspirant, ut decipiant
+				<lb/>amatores. Nam et ipse multociens suspiriis
+				<lb/>deluduntur. Suspiria quidem largo modo
+				<lb/>possunt dici nutus, inditium et signum. Porro
+				<lb/>per suspirium plurima indicantur. Profecto,
+				<lb/>cum quidam miles non longe a quadam virgine
+				<lb/>sederet, vehementer suspiravit; interrogatus
+				<lb/>tandem ab ea, quare suspiraverit, respondit:
+				<lb/>"Non audeo vobis mei cordis desiderium aperire".
+				<lb/>Illa vero notabile sibi verbum proposuit dicens:
+				<lb/>"Non videtur habere virilem animum, qui
+				<lb/>mulieri suam dubitat patefacere voluntatem,
+			<lb/>dummodo loquendi oportunitas adsit".</p>
+			<lb/><p>Licet autem plura, que lasciviam ostendere
+				<lb/>videntur, in hoc opere posuerim, non tamen est
+				<lb/>credibile me fuisse aut velle fore lascivum, quia
+				<lb/>Salomon, qui meruit assistrici Dei, id est eius
+				<lb/>sapiencie, copulari, multa posuit in Canticis
+				<lb/>canticorum, que secundum litteram magis possent
+				<pb n="88"/>
+				<lb/>ad carnis voluptatem quam ad moralitatem
+				<lb/>spiritus trahi. Veruntamen sapientes dubia
+				<lb/>in meliorem partem interpretantur, dicentes
+				<lb/>sponsam vel amicam Ecclesiam fuisse, sponsum
+				<lb/>Iesum Christum. Credere igitur debetis, quod
+				<lb/>Boncompagnus non dixit hec alicuius lascivie
+			<lb/>causa, set sociorum precibus amicabiliter condescendit.</p>
+		</div1>
+	</body>
+</text>
+</TEI>
+
+
