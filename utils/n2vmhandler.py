@@ -28,7 +28,14 @@ def load_model_metadata() -> pd.DataFrame:
 def get_all_plot_paths() -> list[str]:
     df = pd.read_csv(N2V_PLOT_PARAMETERS_PATH)
     all_plots = df["Plot Filename"].to_list()
-    return [f"{N2V_PLOTS_BASE_PATH}{x}" for x in all_plots]
+    file_names = [f"{N2V_PLOTS_BASE_PATH}{x}" for x in all_plots]
+    label_list = []
+    for index, row in df.iterrows():
+        parts = row["Plot Filename"].split("-")
+        k_means = row["K"]
+        label_list.append(f"From {parts[2]} to {parts[3]}; No. of clusters: {k_means}")
+    return file_names, label_list
+
 
 
 def get_plot(model_filename: str) -> str:
@@ -105,9 +112,12 @@ def load_n2v_model(fname: str) -> KeyedVectors:
     return n2kv
 
 
-def get_similars(model: KeyedVectors, onpID: str, nsimilars: int) -> list[tuple[str, str, str, str]]:
+def get_similars(model: KeyedVectors, onpID: str, nsimilars: int = 10) -> list[tuple[str, str, str, str]]:
     """Returns the n most similar hits from the selected model. Will return a tuple FILL IN DOC"""
-    hits = model.most_similar(onpID, topn=nsimilars)
+    try:
+        hits = model.most_similar(onpID, topn=nsimilars)
+    except KeyError:
+        return "Not found"
     res = []
     conn = create_connection()
     for i in hits:

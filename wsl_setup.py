@@ -108,7 +108,7 @@ def corpus_collector_norse(level: str):
             if not i == '-':
                 toks.append(i)
         if len(toks) >= 10:
-            res[iii.name] = toks
+            res[f"{iii.name}-{iii.ms}"] = toks
         else:
             print(f'{iii.name} in {iii.ms} was eliminated. Reason: Not enough {level} tokens')
     for z in res.keys():
@@ -136,12 +136,12 @@ def get_vector(corpus: dict):
 
 
 def euclid_dist(w2varr, labels: list) -> pd.DataFrame:
-    euclidean_distances = pd.DataFrame(pairwise_distances(w2varr, metric='euclidean'), index=labels, columns=labels)
+    euclidean_distances = pd.DataFrame(pairwise_distances(w2varr, metric='euclidean', n_jobs=-1), index=labels, columns=labels)
     return euclidean_distances
 
 
 def cos_dist(w2varr, labels: list) -> pd.DataFrame:
-    cosine_distances = pd.DataFrame(pairwise_distances(w2varr, metric='cosine'), index=labels, columns=labels) 
+    cosine_distances = pd.DataFrame(pairwise_distances(w2varr, metric='cosine', n_jobs=-1), index=labels, columns=labels) 
     return cosine_distances
 
 
@@ -204,10 +204,10 @@ def analysis_cycle(corpus: dict, fName: str):
 
 
 def analysis_coordinator():
-    corpus = corpus_collector_latin()
-    analysis_cycle(corpus, "latin-basic")
-    corpus = corpus_collector_latin(lemmatize=True)
-    analysis_cycle(corpus, "latinLemmatized")
+    # corpus = corpus_collector_latin()
+    # analysis_cycle(corpus, "latin-basic")
+    # corpus = corpus_collector_latin(lemmatize=True)
+    # analysis_cycle(corpus, "latinLemmatized")
     corpus = corpus_collector_norse('normalized')
     analysis_cycle(corpus, "norse-basic")
     corpus = corpus_collector_norse(level='lemma')
@@ -226,5 +226,5 @@ def run():
 
 
 if __name__ == '__main__':
-    # run()
-    versified_lat_leven()
+    run()
+    # versified_lat_leven()

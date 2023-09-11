@@ -20,10 +20,9 @@ import random
 import string
 from utils import n2vmhandler as n2v
 from utils import similarities as sims
-from IPython.core.display import display, HTML
 import sqlite3
 from streamlit_image_select import image_select
-from pyvis import network as net
+from collections import Counter
 
 
 # Helper functions
@@ -81,12 +80,31 @@ def _create_stylo_network(stylo_df: pd.DataFrame, metric: str):
     pos = nx.spring_layout(G, scale=5)  # Position nodes using Fruchterman-Reingold force-directed algorithm
     nx.draw(G, pos, with_labels=True, node_size=80, font_size=8, font_color='black', edge_color="limegreen", width=0.8)
     st.pyplot(fig)
+    nx.write_gexf(G, "data/export/current-graph.gexf")
+    st.download_button("Download Edgelist", data="data/export/current-graph.txt", file_name="webap-export-edgelist.txt")
+
+
+def _state_initializer():
+    if "quantifier_clicked" not in st.session_state:
+        st.session_state.quantifier_clicked = False
+    if "click_model_load" not in st.session_state:
+        st.session_state.click_model_load = False
+    if "model_quant_done" not in st.session_state:
+        st.session_state.model_quant_done = False
+
+
+def _click_model_quantifier():
+    st.session_state.quantifier_clicked = True
+
+
+def _click_model_load():
+    st.session_state.click_model_load = True
 
 # Display functions
 # -----------------
 
 def onp_n2v():
-    gallery_table = st.radio(label="Display gallery of clusterings or tabel of available models", options=["Gallery", "Table"])
+    gallery_table = st.radio(label="Display gallery of clusterings or tabel of available models. Advanced: Show most frequent top 10 across all models for selected witness", options=["Gallery", "Table", "Advanced"])
     all_models = n2v.load_model_metadata()
     name_resolution_dict = n2v.create_witness_lookup()
     if gallery_table == "Table":
@@ -96,11 +114,43 @@ def onp_n2v():
     elif gallery_table == "Gallery":
         st.write("Hello")
         model_meta = "asdf"
-        img = image_select("All available plots", n2v.get_all_plot_paths())
-        if st.button("Load model"):
-            model_select = n2v.get_model_from_plot_path(img)
-            _show_model(all_models, model_select, name_resolution_dict)
-            
+        files_list, label_list = n2v.get_all_plot_paths()
+        img = image_select("All available plots", images=files_list, captions=label_list)
+        model_select = n2v.get_model_from_plot_path(img)
+        _show_model(all_models, model_select, name_resolution_dict)
+    elif gallery_table == "Advanced":
+        quantify_models(name_resolution_dict, all_models)
+
+
+
+def quantify_models(n_res_dict: dict, all_models: pd.DataFrame):
+    query_options = n2v.get_applicable_witnesses(date_range_init="1, 1536", name_lookup=n_res_dict)
+    query_model = st.selectbox(label="Select a witness to retrieve learned similarities", options=list(query_options.keys()))
+    st.button("Run", on_click=_click_model_quantifier)
+    if st.session_state.quantifier_clicked == True:
+        st.spinner("Working on it")
+        similars_collector = []
+        na_counter = 0
+        for index, row in all_models.iterrows():
+            model = n2v.load_n2v_model(row["File Name"])
+            similars = n2v.get_similars(model=model, onpID=query_options[query_model])
+            if similars == "Not found":
+                na_counter += 1
+                continue
+            for i in similars:
+                similars_collector.append(i[0])
+        similarity_counts = Counter(similars_collector)
+        prettify_counts = [(n_res_dict[x], similarity_counts[x]) for x in similarity_counts.keys()]
+        st.session_state.model_quant_df = pd.DataFrame(prettify_counts, columns=["Name", "Frequency"])
+        st.session_state.model_quant_done = True
+        st.session_state.quantifier_clicked = False
+    if st.session_state.model_quant_done:
+        number_of_models = len(all_models.index)
+        st.dataframe(st.session_state.model_quant_df, hide_index=True)
+        st.write(f"Requested witness was present in {number_of_models - na_counter} out of a total of {number_of_models} models")
+
+
+
 
 def _show_model(all_models: pd.DataFrame, model_select: str, names_dict: dict[str, str]):
     selected_model_metadata = all_models.loc[all_models["File Name"] == model_select].to_dict('records')[0]
@@ -108,18 +158,31 @@ def _show_model(all_models: pd.DataFrame, model_select: str, names_dict: dict[st
     img_path = n2v.get_plot(model_select)
     st.image(img_path)
     query_options = n2v.get_applicable_witnesses(date_range_init=selected_model_metadata['Date Range'], name_lookup=names_dict)
-    query_model = st.selectbox(label="Select a witnesses to retrieve learned similarities", options=list(query_options.keys()))
+    query_model = st.selectbox(label="Select a witness to retrieve learned similarities", options=list(query_options.keys()))
     how_many = st.number_input(label="Load top n of the most similar witnesses", value=10)
     similars = n2v.get_similars(model=model, onpID=query_options[query_model], nsimilars=how_many)
     s = ''
     for i in similars:
-        hs_serch_string = i[2].replace(" ", "+")
-        s += f"- [{names_dict[i[0]]}](https://onp.ku.dk/onp/onp.php{i[1]}) Search for MS on [handrit.is](https://handrit.is/search?q={hs_serch_string}) \n"
+        hs_search_string = i[2].replace(" ", "+")
+        s += f"- [{names_dict[i[0]]}](https://onp.ku.dk/onp/onp.php{i[1]}) Search for MS on [handrit.is](https://handrit.is/search?q={hs_search_string}) \n"
     st.markdown(s)
     cluster_explanations = _get_cluster_docs(model_select, names_dict)
     for i in cluster_explanations.keys():
         with st.expander(f"Show items in cluster {i}"):
             st.markdown(cluster_explanations[i])
+    value_counts = {key: len(values) for key, values in cluster_explanations.items()}
+
+    # Create a pie chart
+    labels = value_counts.keys()
+    sizes = value_counts.values()
+
+    fig, x = plt.subplots()
+
+    x.pie(sizes, labels=labels, autopct='%1.1f%%', shadow=True, startangle=140)
+    x.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+    # Display the pie chart
+    st.pyplot(fig)
 
 
 def _get_cluster_docs(model_filename: str, names_dict: dict[str, str]) -> dict[str, str]:
@@ -327,10 +390,15 @@ def data_entry_helper():
 
 
 def get_all_stylo():
+    melt_down = st.checkbox("Simplify output by creating list of combinations rather than matrix view", value=False)
     all_metrics = sims.get_csv_filenames()
     selected_table = st.selectbox(label="Select a similarity type", options=all_metrics)
     df = sims.get_similarity(f"{STYLO_FOLDER}{selected_table}")
-    st.dataframe(df)
+    if not melt_down:
+        st.dataframe(df)
+    elif melt_down:
+        df = df.melt(ignore_index=False)
+        st.dataframe(df)
     if "euclid" in selected_table:
         metric = "eucl"
     elif "cosine" in selected_table:
@@ -339,8 +407,8 @@ def get_all_stylo():
         metric = "leven"
     if metric != "leven" and st.button("Show as graph"):
         if "norse" in selected_table:
-            df = df.drop(labels=["A fragment of Thómass saga erkibyskups", "A fragment of Rimbegla", "Virgin Mary’s complaint"])
-            df = df.drop(columns=["A fragment of Thómass saga erkibyskups", "A fragment of Rimbegla", "Virgin Mary’s complaint"])
+            df = df.drop(labels=["A fragment of Thómass saga erkibyskups-NRA norr fragm 66", "A fragment of Rimbegla-NRA norr fragm 59", "Virgin Mary’s complaint-SKB A 120"])
+            df = df.drop(columns=["A fragment of Thómass saga erkibyskups-NRA norr fragm 66", "A fragment of Rimbegla-NRA norr fragm 59", "Virgin Mary’s complaint-SKB A 120"])
         _create_stylo_network(df, metric)
 
 
@@ -359,7 +427,6 @@ def get_leven_dfs_ready(df: pd.DataFrame, leven_similarity: int, leven_similarit
     filtered_df = filtered_df.loc[(filtered_df["score"] >= leven_similarity) & (filtered_df["score"] <= leven_similarity_upper)]
     if simplify:
         filtered_df = filtered_df[~filtered_df['v2'].str.contains('|'.join(strings_to_check))]
-        filtered_df = filtered_df.groupby()
         return filtered_df
     else:
         return filtered_df
@@ -367,7 +434,7 @@ def get_leven_dfs_ready(df: pd.DataFrame, leven_similarity: int, leven_similarit
 
 def get_leven_df() -> pd.DataFrame:
     db = sqlite3.connect(LEVEN_DB)
-    df = pd.read_sql("SELECT * FROM scores", db)
+    df = pd.read_sql("SELECT * FROM rat_scores", db)
     return df
 
 
@@ -383,6 +450,7 @@ def display_leven():
 
 
 def main():
+    _state_initializer()
     ON, Lat = data_loader()
     currentData = myData(ON, Lat)
     choices = {"Parallel text display": para_display,
@@ -398,7 +466,6 @@ def main():
     else:
         display = choices[choice]
         display()
-    
 
 # Display part
 # -----------

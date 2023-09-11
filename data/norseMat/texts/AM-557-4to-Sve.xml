@@ -1,0 +1,4792 @@
+<?oxygen RNGSchema="http://www.menota.org/menotaP5.rng" type="xml"?>
+<!DOCTYPE TEI [
+    <!ENTITY % Menota_entities SYSTEM "http://www.menota.org/menota-entities.txt">
+    %Menota_entities;
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:me="http://www.menota.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title>AM 557 4to (Skálholtsbók): A digital edition</title>
+                <respStmt>
+                    <resp>Original transcription by</resp>
+                    <name>
+                        <persName>Lasse Mårtensson</persName>
+                        <orgName type="affiliation">Uppsala Universitet</orgName>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Conversion into XML by</resp>
+                    <name>
+                        <persName>Robert Kristof Paulsen</persName>
+                        <orgName type="affiliation">Universitetet i Bergen</orgName>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>menotaBlitz.plx program written by </resp>
+                    <name>
+                        <persName>Robert Kristof Paulsen</persName>
+                        <orgName type="affiliation">Universitetet i Bergen</orgName>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>emroon software developed and maintained by</resp>
+                    <name>
+                        <persName>Robert Kristof Paulsen</persName>
+                        <orgName type="affiliation">Universitetet i Bergen</orgName>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="0.8">First draft, exported from emroon.no
+                    <date when="2023-09-01">1 September 2023</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><!-- Most likely "Medieval Nordic Text Archive" --></distributor>
+                <idno><!-- to be filled out upon upload --></idno>
+                <date><!-- to be filled out upon upload --></date>
+                <availability status="free">
+                    <licence target="http://creativecommon.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country key="IS">Iceland</country>
+                        <settlement>Reykjavík</settlement>
+                        <repository>Stofnun Árna Magnússonar</repository>
+                        <idno>AM 557 4to</idno>
+                        <msName>Sveinka þáttr Steinarssonar</msName>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This encoding follows the standard set out in
+                    <title>The Menota Handbook (3.0)</title>,
+                    at <ref target="https://www.menota.org/HB3_index.xml">https://www.menota.org/HB3_index.xml</ref>
+                    as of <date when="2021-02-13">13 February 2021</date>.</p>
+            </projectDesc>
+            <editorialDecl>
+                <correction>
+                    <p><!-- Please specify here what the source of your transcription was, e.g. color facsimile, printed edition etc. --></p>
+                </correction>
+                <normalization me:level="facs dipl norm">
+                    <p>These transcriptions have been produced with the help of emroon technology.</p>
+                </normalization>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="non">Old Norse</language>
+                <!-- or another language. You may also specify a dialect (e.g. Norwegian, Icelandic) -->
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2023-09-01">
+                <p>file was created as an export from <ref target="http://www.emroon.no/">emroon</ref>
+                    with a "MenotaFDNA"-style transcription</p>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+			<div type="text">
+				<head>
+					<pb n="48v"/>
+					<lb n="1"/>
+					<add place="margin-top">
+						<w lemma="Sveinki" me:msa="xNP gM nS cG sI">
+							<choice>
+								<me:facs>&slong;ue&inodot;nka</me:facs>
+								<me:dipl>&slong;ueinka</me:dipl>
+								<me:norm>Sveinka</me:norm>
+							</choice>
+						</w>
+						<w lemma="þáttr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>þa&trot;&trot;</me:facs>
+								<me:dipl>þatt<supplied reason="emendation">r</supplied></me:dipl>
+								<me:norm>þáttr</me:norm>
+							</choice>
+						</w>
+					</add>
+				</head><!-- Här inleds Sveinka þáttr Steinarssonar. -->
+				<div type="chapter" n="1">
+					<head>
+					</head>
+					<p>
+						<w lemma="maðr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>a&drot;r</me:facs>
+								<me:dipl><supplied reason="emendation"><c type="initial" rend="u0 d1 cRed">M</c></supplied>adr</me:dipl>
+								<me:norm>Maðr</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="heita" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>he&trot;</me:facs>
+								<me:dipl>het</me:dipl>
+								<me:norm>hét</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sveinki" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&slong;ve&inodot;nke</me:facs>
+								<me:dipl>&slong;veinke</me:dipl>
+								<me:norm>Sveinki</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>Hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="Steinarsson" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&slong;&trot;e&inodot;n<am>&rsup;</am>&slong; &slong;on</me:facs>
+								<me:dipl>&slong;tein<ex>ar</ex>&slong; &slong;on</me:dipl>
+								<me:norm>Steinarsson</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>Hann</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="búa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>b&inodot;o</me:facs>
+								<me:dipl>bio</me:dipl>
+								<me:norm>bjó</me:norm>
+							</choice>
+						</w>
+						<w lemma="austr" me:msa="xAV rP">
+							<choice>
+								<me:facs>av&slong;&trot;r</me:facs>
+								<me:dipl>av&slong;tr</me:dipl>
+								<me:norm>austr</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="Elfi" me:msa="xNP gF nS cD sI">
+							<choice>
+								<me:facs>el&fins;&inodot;</me:facs>
+								<me:dipl>elfi</me:dipl>
+								<me:norm>Elfi</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="Noregr" me:msa="xNP gM nS cD sI">
+							<choice>
+								<me:facs>nor<am>&bar;</am>&inodot;</me:facs>
+								<me:dipl>nor<ex>eg</ex>i</me:dipl>
+								<me:norm>Noregi</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="sá" me:msa="xDD gN nS cN">
+							<choice>
+								<me:facs>þ<am>&bar;</am></me:facs>
+								<me:dipl>þ<ex>at</ex></me:dipl>
+								<me:norm>þat</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>e<am>&er;</am></me:facs>
+								<me:dipl>e<ex>r</ex></me:dipl>
+								<me:norm>er</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="Vík" me:msa="xNP gF nS cD sI">
+							<choice>
+								<me:facs>v&inodot;k</me:facs>
+								<me:dipl>vik</me:dipl>
+								<me:norm>Vík</me:norm>
+							</choice>
+						</w>
+						<w lemma="austr" me:msa="xAV rP">
+							<choice>
+								<me:facs>av&slong;&trot;<am>&rrotsup;</am></me:facs>
+								<me:dipl>av&slong;t<ex>vr</ex></me:dipl>
+								<me:norm>austr</me:norm>
+							</choice>
+						</w>
+						<lb n="2"/>
+						<w lemma="við" me:msa="xAP">
+							<choice>
+								<me:facs>v<am>&trotsup;</am></me:facs>
+								<me:dipl>v<ex>it</ex></me:dipl>
+								<me:norm>við</me:norm>
+							</choice>
+						</w>
+						<w lemma="landsendir" me:msa="xNC gM nP cA sI">
+							<choice>
+								<me:facs>lan&drot;z en&drot;a</me:facs>
+								<me:dipl>landz enda</me:dipl>
+								<me:norm>landsenda</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>Hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="mj&oogon;k" me:msa="xAV rP">
+							<choice>
+								<me:facs>m&inodot;ok</me:facs>
+								<me:dipl>miok</me:dipl>
+								<me:norm>mj&oogon;k</me:norm>
+							</choice>
+						</w>
+						<w lemma="ríkr" me:msa="xAJ rP gM nS cN sI">
+							<choice>
+								<me:facs>&rscap;&inodot;kr</me:facs>
+								<me:dipl>&rscap;ikr</me:dipl>
+								<me:norm>ríkr</me:norm>
+							</choice>
+						</w>
+						<w lemma="maðr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>m<am>&rsup;</am></me:facs>
+								<me:dipl>m<ex>adr</ex></me:dipl>
+								<me:norm>maðr</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="vins&aeligacute;ll" me:msa="xAJ rP gM nS cN sI">
+							<choice>
+								<me:facs>v&inodot;n&slong;æll</me:facs>
+								<me:dipl>vin&slong;æll</me:dipl>
+								<me:norm>vins&aeligacute;ll</me:norm>
+							</choice>
+						</w>
+						<w lemma="af" me:msa="xAP">
+							<choice>
+								<me:facs>a&fins;</me:facs>
+								<me:dipl>af</me:dipl>
+								<me:norm>af</me:norm>
+							</choice>
+						</w>
+						<w lemma="sinn" me:msa="xDP gU nP cD">
+							<choice>
+								<me:facs>&slong;&inodot;nv<am>&bar;</am></me:facs>
+								<me:dipl>&slong;inv<ex>m</ex></me:dipl>
+								<me:norm>sínum</me:norm>
+							</choice>
+						</w>
+						<w lemma="maðr" me:msa="xNC gM nP cD sI">
+							<choice>
+								<me:facs>m<am>&bar;</am>m</me:facs>
+								<me:dipl>m<ex>onnv</ex>m</me:dipl>
+								<me:norm>m&oogon;nnum</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+					</p>
+					<p>
+						<w lemma="þá" me:msa="xAV rP">
+							<choice>
+								<me:facs>þa</me:facs>
+								<me:dipl>þa</me:dipl>
+								<me:norm>Þá</me:norm>
+							</choice>
+						</w>
+						<w lemma="ráða" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&rscap;e&drot;</me:facs>
+								<me:dipl>&rscap;ed</me:dipl>
+								<me:norm>réð</me:norm>
+							</choice>
+						</w>
+						<w lemma="Noregr" me:msa="xNP gM nS cD sI">
+							<choice>
+								<me:facs>noreg&inodot;</me:facs>
+								<me:dipl>noregi</me:dipl>
+								<me:norm>Noregi</me:norm>
+							</choice>
+						</w>
+						<lb n="3"/>
+						<w lemma="Magnús" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&mscap;agnv&slong;</me:facs>
+								<me:dipl>&mscap;agnv&slong;</me:dipl>
+								<me:norm>Magnús</me:norm>
+							</choice>
+						</w>
+						<w lemma="konungr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs><pc>.</pc>k<am>&bar;</am>r<pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>k<ex>onvng</ex>r<pc>.</pc></me:dipl>
+								<me:norm>konungr</me:norm>
+							</choice>
+						</w>
+						<w lemma="berf&oslashacute;tr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>b<am>&er;</am>&fins;æ&trot;&trot;<am>&combdot;</am>r</me:facs>
+								<me:dipl>b<ex>er</ex>fættr</me:dipl>
+								<me:norm>berf&oslashacute;tr</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="en" me:msa="xCC">
+							<choice>
+								<me:facs>en<am>&bar;</am></me:facs>
+								<me:dipl>en<ex>n</ex></me:dipl>
+								<me:norm>En</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sveinki" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&slong;ve&inodot;nke</me:facs>
+								<me:dipl>&slong;veinke</me:dipl>
+								<me:norm>Sveinki</me:norm>
+							</choice>
+						</w>
+						<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>ha&fins;&drot;&inodot;</me:facs>
+								<me:dipl>hafdi</me:dipl>
+								<me:norm>hafði</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fP tPT vA rP gN nS cA sI">
+							<choice>
+								<me:facs>v<am>&er;</am>&inodot;&trot;</me:facs>
+								<me:dipl>v<ex>er</ex>it</me:dipl>
+								<me:norm>verit</me:norm>
+							</choice>
+						</w>
+						<w lemma="lenda" me:msa="xVB fP tPT vA rP gM nS cN sI">
+							<choice>
+								<me:facs>len&drot;r</me:facs>
+								<me:dipl>lendr</me:dipl>
+								<me:norm>lendr</me:norm>
+							</choice>
+						</w>
+						<w lemma="maðr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>m<am>&rsup;</am></me:facs>
+								<me:dipl>m<ex>adr</ex></me:dipl>
+								<me:norm>maðr</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Hákon" me:msa="xNP gM nS cG sI">
+							<choice>
+								<me:facs>hak<am>&bar;</am></me:facs>
+								<me:dipl>hak<ex>onar</ex></me:dipl>
+								<me:norm>Hákonar</me:norm>
+							</choice>
+						</w>
+						<w lemma="konungr" me:msa="xNC gM nS cG sI">
+							<choice>
+								<me:facs><pc>.</pc>k<am>&bar;</am>g&slong;<pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>k<ex>onvn</ex>g&slong;<pc>.</pc></me:dipl>
+								<me:norm>konungs</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="bróðir" me:msa="xNC gM nS cG sI">
+							<choice>
+								<me:facs>b&rrot;o&drot;r</me:facs>
+								<me:dipl>brodr</me:dipl>
+								<me:norm>bróður</me:norm>
+							</choice>
+						</w>
+						<lb n="4"/>
+						<w lemma="hann" me:msa="xPE p3 gM nS cG">
+							<choice>
+								<me:facs>h<am>&bar;</am>n&slong;</me:facs>
+								<me:dipl>h<ex>a</ex>n&slong;</me:dipl>
+								<me:norm>hans</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="meðan" me:msa="xCS">
+							<choice>
+								<me:facs>me&drot;an</me:facs>
+								<me:dipl>medan</me:dipl>
+								<me:norm>meðan</me:norm>
+							</choice>
+						</w>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>hann</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="lifa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>l&inodot;&fins;&drot;&inodot;</me:facs>
+								<me:dipl>lifdi</me:dipl>
+								<me:norm>lifði</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>ha&fins;&drot;&inodot;</me:facs>
+								<me:dipl>hafdi</me:dipl>
+								<me:norm>hafði</me:norm>
+							</choice>
+						</w>
+						<w lemma="hafa" me:msa="xVB fP tPT vA rP gN nS cA sI">
+							<choice>
+								<me:facs>ha&fins;&trot;</me:facs>
+								<me:dipl>haft</me:dipl>
+								<me:norm>haft</me:norm>
+							</choice>
+						</w>
+						<w lemma="af" me:msa="xAP">
+							<choice>
+								<me:facs>a&fins;</me:facs>
+								<me:dipl>af</me:dipl>
+								<me:norm>af</me:norm>
+							</choice>
+						</w>
+						<w lemma="hann" me:msa="xPE p3 gM nS cD">
+							<choice>
+								<me:facs>h<am>&bar;</am>m</me:facs>
+								<me:dipl>h<ex>onv</ex>m</me:dipl>
+								<me:norm>honum</me:norm>
+							</choice>
+						</w>
+						<w lemma="mikill" me:msa="xAJ rP gN nP cA sI">
+							<choice>
+								<me:facs>m&inodot;k&inodot;l</me:facs>
+								<me:dipl>mikil</me:dipl>
+								<me:norm>mikil</me:norm>
+							</choice>
+						</w>
+						<w lemma="metorð" me:msa="xNC gN nP cA sI">
+							<choice>
+								<me:facs>me&trot; o&rrot;&drot;</me:facs>
+								<me:dipl>met ord</me:dipl>
+								<me:norm>metorð</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="en" me:msa="xCC">
+							<choice>
+								<me:facs>en<am>&bar;</am></me:facs>
+								<me:dipl>en<ex>n</ex></me:dipl>
+								<me:norm>En</me:norm>
+							</choice>
+						</w>
+						<w lemma="eftir" me:msa="xAP">
+							<choice>
+								<me:facs>ep&trot;<am>&er;</am></me:facs>
+								<me:dipl>ept<ex>er</ex></me:dipl>
+								<me:norm>eftir</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="andlát" me:msa="xNC gN nS cA sI">
+							<choice>
+								<me:facs>an<am>&bar;</am>la&trot;</me:facs>
+								<me:dipl>an<ex>n</ex>lat</me:dipl>
+								<me:norm>andlát</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Hákon" me:msa="xNP gM nS cG sI">
+							<choice>
+								<me:facs>hak<am>&bar;</am></me:facs>
+								<me:dipl>hak<ex>onar</ex></me:dipl>
+								<me:norm>Hákonar</me:norm>
+							</choice>
+						</w>
+						<lb n="5"/>
+						<w lemma="konungr" me:msa="xNC gM nS cG sI">
+							<choice>
+								<me:facs>k<am>&bar;</am>g&slong;</me:facs>
+								<me:dipl>k<ex>onvn</ex>g&slong;</me:dipl>
+								<me:norm>konungs</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="brjóta" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>b&rrot;av&trot;</me:facs>
+								<me:dipl>bravt</me:dipl>
+								<me:norm>braut</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Magnús" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&mscap;agnv&slong;</me:facs>
+								<me:dipl>&mscap;agnv&slong;</me:dipl>
+								<me:norm>Magnús</me:norm>
+							</choice>
+						</w>
+						<w lemma="konungr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs><pc>.</pc>k<am>&bar;</am>r<pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>k<ex>onvng</ex>r<pc>.</pc></me:dipl>
+								<me:norm>konungr</me:norm>
+							</choice>
+						</w>
+						<w lemma="undir" me:msa="xAP">
+							<choice>
+								<me:facs>vn&drot;&inodot;r</me:facs>
+								<me:dipl>vndir</me:dipl>
+								<me:norm>undir</me:norm>
+							</choice>
+						</w>
+						<w lemma="sik" me:msa="xPE cA">
+							<choice>
+								<me:facs>&slong;&inodot;k</me:facs>
+								<me:dipl>&slong;ik</me:dipl>
+								<me:norm>sik</me:norm>
+							</choice>
+						</w>
+						<w lemma="allr" me:msa="xDQ gN nS cA">
+							<choice>
+								<me:facs>all&trot;</me:facs>
+								<me:dipl>allt</me:dipl>
+								<me:norm>allt</me:norm>
+							</choice>
+						</w>
+						<w lemma="stórmenni" me:msa="xNC gN nS cA sI">
+							<choice>
+								<me:facs>&slong;&trot;<am>&orrotsup;</am>men<am>&bar;</am>&inodot;</me:facs>
+								<me:dipl>&slong;t<ex>or</ex>men<ex>n</ex>i</me:dipl>
+								<me:norm>stórmenni</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="Noregr" me:msa="xNP gM nS cD sI">
+							<choice>
+								<me:facs>nor<am>&bar;</am>&inodot;</me:facs>
+								<me:dipl>nor<ex>eg</ex>i</me:dipl>
+								<me:norm>Noregi</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="því at" me:msa="xCS">
+							<choice>
+								<me:facs>þ<am>&bar;</am>&trot;</me:facs>
+								<me:dipl>þ<ex>vi a</ex>t</me:dipl>
+								<me:norm>því at</me:norm>
+							</choice>
+						</w>
+						<w lemma="margr" me:msa="xAJ rP gM nP cN sI">
+							<choice>
+								<me:facs>m<am>&rsup;</am>ger</me:facs>
+								<me:dipl>m<ex>ar</ex>ger</me:dipl>
+								<me:norm>margir</me:norm>
+							</choice>
+						</w>
+						<w lemma="hafa" me:msa="xVB fF p3 nP vA">
+							<choice>
+								<me:facs>ho&fins;&drot;v</me:facs>
+								<me:dipl>hofdv</me:dipl>
+								<me:norm>h&oogon;fðu</me:norm>
+							</choice>
+						</w>
+						<w lemma="vel" me:msa="xAV rP">
+							<choice>
+								<me:facs>vel</me:facs>
+								<me:dipl>vel</me:dipl>
+								<me:norm>vel</me:norm>
+							</choice>
+						</w>
+						<w lemma="stunda" me:msa="xVB fP tPT vA rP gN nS cA sI">
+							<choice>
+								<me:facs>&slong;&trot;vn<am>&bar;</am><lb ed="ms" n="6"/>&drot;<am>&trotsup;</am></me:facs>
+								<me:dipl>&slong;tvn<ex>n</ex><lb ed="ms" n="6"/>d<ex>at</ex></me:dipl>
+								<me:norm>stundat<lb ed="ms" n="6"/></me:norm>
+							</choice>
+						</w>
+						<w lemma="til" me:msa="xAP">
+							<choice>
+								<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+								<me:dipl>t<ex>il</ex></me:dipl>
+								<me:norm>til</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="hann" me:msa="xPE p3 gM nS cG">
+							<choice>
+								<me:facs>&hslonglig;<am>&bar;</am></me:facs>
+								<me:dipl>h<ex>an&slong;</ex></me:dipl>
+								<me:norm>hans</me:norm>
+							</choice>
+						</w>
+						<w lemma="konungr" me:msa="xNC gM nS cG sI">
+							<choice>
+								<me:facs><pc>.</pc>k<am>&bar;</am>g&slong;<pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>k<ex>onvn</ex>g&slong;<pc>.</pc></me:dipl>
+								<me:norm>konungs</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="því at" me:msa="xCS">
+							<choice>
+								<me:facs>þ<am>&bar;</am>&trot;</me:facs>
+								<me:dipl>þ<ex>vi a</ex>t</me:dipl>
+								<me:norm>því at</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="þykkja" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>þo&trot;&trot;&inodot;</me:facs>
+								<me:dipl>þotti</me:dipl>
+								<me:norm>þótti</me:norm>
+							</choice>
+						</w>
+						<w lemma="landsfolk" me:msa="xNC gN nS cD sD">
+							<choice>
+								<me:facs>lan&drot;z &fins;olk&inodot;nv</me:facs>
+								<me:dipl>landz folkinv</me:dipl>
+								<me:norm>landsfolkinu</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="mikill" me:msa="xAJ rP gN nS cD sI">
+							<choice>
+								<me:facs>myklv</me:facs>
+								<me:dipl>myklv</me:dipl>
+								<me:norm>miklu</me:norm>
+							</choice>
+						</w>
+						<w lemma="h&oslashacute;gr" me:msa="xAJ rC gM nS cN sD">
+							<choice>
+								<me:facs>hæg<am>&inodotsup;</am></me:facs>
+								<me:dipl>hæg<ex>ri</ex></me:dipl>
+								<me:norm>h&oslashacute;gri</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>Ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="af" me:msa="xAP">
+							<choice>
+								<me:facs>a&fins;</me:facs>
+								<me:dipl>af</me:dipl>
+								<me:norm>af</me:norm>
+							</choice>
+						</w>
+						<w lemma="sá" me:msa="xDD gN nS cD">
+							<choice>
+								<me:facs>þ<am>&inodotsup;</am></me:facs>
+								<me:dipl>þ<ex>vi</ex></me:dipl>
+								<me:norm>því</me:norm>
+							</choice>
+						</w>
+						<w lemma="allr" me:msa="xDQ gU nP cD">
+							<choice>
+								<me:facs>&ocurl;llv<am>&bar;</am></me:facs>
+								<me:dipl>&ocurl;llv<ex>m</ex></me:dipl>
+								<me:norm>&oogon;llum</me:norm>
+							</choice>
+						</w>
+						<w lemma="maðr" me:msa="xNC gM nP cD sI">
+							<choice>
+								<me:facs>m<am>&bar;</am>m</me:facs>
+								<me:dipl>m<ex>onnv</ex>m</me:dipl>
+								<me:norm>m&oogon;nnum</me:norm>
+							</choice>
+						</w>
+						<w lemma="þokkas&aeligacute;ll" me:msa="xAJ rP gM nS cN sI">
+							<choice>
+								<me:facs>þocka &slong;æll</me:facs>
+								<me:dipl>þocka &slong;æll</me:dipl>
+								<me:norm>þokkas&aeligacute;ll</me:norm>
+							</choice>
+						</w>
+						<lb n="7"/>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sveinki" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&slong;ve&inodot;nke</me:facs>
+								<me:dipl>&slong;veinke</me:dipl>
+								<me:norm>Sveinki</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>ha&fins;<am>&inodotsup;</am></me:facs>
+								<me:dipl>haf<ex>di</ex></me:dipl>
+								<me:norm>hafði</me:norm>
+							</choice>
+						</w><!-- Efter skrivningen "hafõ" finns ett tecken utskrivet. Dess funktion är dock oklar. -->
+						<w lemma="þá" me:msa="xAV rP">
+							<choice>
+								<me:facs>þa</me:facs>
+								<me:dipl>þa</me:dipl>
+								<me:norm>þá</me:norm>
+							</choice>
+						</w>
+						<w lemma="enn" me:msa="xAV rP">
+							<choice>
+								<me:facs>en<am>&bar;</am></me:facs>
+								<me:dipl>en<ex>n</ex></me:dipl>
+								<me:norm>enn</me:norm>
+							</choice>
+						</w>
+						<w lemma="engi" me:msa="xDQ gN nS cA">
+							<choice>
+								<me:facs>eck&inodot;</me:facs>
+								<me:dipl>ecki</me:dipl>
+								<me:norm>ekki</me:norm>
+							</choice>
+						</w>
+						<w lemma="gefa" me:msa="xVB fP tPT vA rP gN nS cA sI">
+							<choice>
+								<me:facs>ge&fins;<am>&trotsup;</am></me:facs>
+								<me:dipl>gef<ex>it</ex></me:dipl>
+								<me:norm>gefit</me:norm>
+							</choice>
+						</w>
+						<w lemma="sik" me:msa="xPE cA">
+							<choice>
+								<me:facs>&slong;&inodot;k</me:facs>
+								<me:dipl>&slong;ik</me:dipl>
+								<me:norm>sik</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="vald" me:msa="xNC gN nS cA sI">
+							<choice>
+								<me:facs>vall&drot;</me:facs>
+								<me:dipl>valld</me:dipl>
+								<me:norm>vald</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Magnús" me:msa="xNP gM nS cG sI">
+							<choice>
+								<me:facs>&mscap;agnv&slong;</me:facs>
+								<me:dipl>&mscap;agnv&slong;</me:dipl>
+								<me:norm>Magnúss</me:norm>
+							</choice>
+						</w>
+						<w lemma="konungr" me:msa="xNC gM nS cG sI">
+							<choice>
+								<me:facs><pc>.</pc>&kslonglig;<am>&bar;</am><pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>k<ex>onvng&slong;</ex><pc>.</pc></me:dipl>
+								<me:norm>konungs</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+					</p>
+					<p>
+						<w lemma="einn" me:msa="xAJ rP gN nS cA sI">
+							<choice>
+								<me:facs>e&inodot;&trot;&trot;<am>&combdot;</am></me:facs>
+								<me:dipl>eitt</me:dipl>
+								<me:norm>Eitt</me:norm>
+							</choice>
+						</w>
+						<w lemma="sinn" me:msa="xNC gN nS cA sI">
+							<choice>
+								<me:facs>&slong;&inodot;n<am>&bar;</am></me:facs>
+								<me:dipl>&slong;in<ex>n</ex></me:dipl>
+								<me:norm>sinn</me:norm>
+							</choice>
+						</w>
+						<w lemma="heimta" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>he&inodot;m&trot;&inodot;</me:facs>
+								<me:dipl>heimti</me:dipl>
+								<me:norm>heimti</me:norm>
+							</choice>
+						</w>
+						<w lemma="Magnús" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&mscap;agn<am>&us;</am></me:facs>
+								<me:dipl>&mscap;agn<ex>vs</ex></me:dipl>
+								<me:norm>Magnús</me:norm>
+							</choice>
+						</w>
+						<w lemma="konungr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs><pc>.</pc>k<am>&bar;</am>r<pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>k<ex>onvng</ex>r<pc>.</pc></me:dipl>
+								<me:norm>konungr</me:norm>
+							</choice>
+						</w>
+						<w lemma="á" me:msa="xAP">
+							<choice>
+								<me:facs>&aalig;<am>.</am></me:facs>
+								<me:dipl>&aalig;</me:dipl>
+								<me:norm>á</me:norm>
+							</choice>
+						</w>
+						<w lemma="tal" me:msa="xNC gN nS cA sI">
+							<choice>
+								<me:facs>&trot;al</me:facs>
+								<me:dipl>tal</me:dipl>
+								<me:norm>tal</me:norm>
+							</choice>
+						</w>
+						<lb n="8"/>
+						<w lemma="við" me:msa="xAP">
+							<choice>
+								<me:facs>v<am>&trotsup;</am></me:facs>
+								<me:dipl>v<ex>it</ex></me:dipl>
+								<me:norm>við</me:norm>
+							</choice>
+						</w>
+						<w lemma="sik" me:msa="xPE cA">
+							<choice>
+								<me:facs>&slong;&inodot;k</me:facs>
+								<me:dipl>&slong;ik</me:dipl>
+								<me:norm>sik</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sigurðr" me:msa="xNP gM nS cA sI">
+							<choice>
+								<me:facs>&slong;&inodot;g<am>&rrotsup;</am>&drot;</me:facs>
+								<me:dipl>&slong;ig<ex>vr</ex>d</me:dipl>
+								<me:norm>Sigurð</me:norm>
+							</choice>
+						</w>
+						<w lemma="ullstrengr" me:msa="xNC gM nS cA sI">
+							<choice>
+								<me:facs>vll &slong;&trot;<am>&esup;</am>&inodot;ng</me:facs>
+								<me:dipl>vll &slong;t<ex>re</ex>ing</me:dipl>
+								<me:norm>ullstreng</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="ág&aeligacute;tr" me:msa="xAJ rP gM nS cA sI">
+							<choice>
+								<me:facs>&aalig;gæ&trot;an<am>&bar;</am></me:facs>
+								<me:dipl>&aalig;gætan<ex>n</ex></me:dipl>
+								<me:norm>ág&aeligacute;tan</me:norm>
+							</choice>
+						</w>
+						<w lemma="maðr" me:msa="xNC gM nS cA sI">
+							<choice>
+								<me:facs>m<am>&nsup;</am></me:facs>
+								<me:dipl>m<ex>ann</ex></me:dipl>
+								<me:norm>mann</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="segja" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs><am>.</am>&slong;<am>.</am></me:facs>
+								<me:dipl>&slong;<ex>agdi</ex></me:dipl>
+								<me:norm>sagði</me:norm>
+							</choice>
+						</w>
+						<w lemma="konungr" me:msa="xNC gM nS cN sD">
+							<choice>
+								<me:facs>k<am>&bar;</am>gr<am>&nsup;</am></me:facs>
+								<me:dipl>k<ex>onvn</ex>gr<ex>in</ex></me:dipl>
+								<me:norm>konungrinn</me:norm>
+							</choice>
+						</w>
+						<w lemma="hann" me:msa="xPE p3 gM nS cD">
+							<choice>
+								<me:facs>h<am>&bar;</am>m</me:facs>
+								<me:dipl>h<ex>onv</ex>m</me:dipl>
+								<me:norm>honum</me:norm>
+							</choice>
+						</w>
+						<w lemma="at" me:msa="xCS">
+							<choice>
+								<me:facs>a&trot;</me:facs>
+								<me:dipl>at</me:dipl>
+								<me:norm>at</me:norm>
+							</choice>
+						</w>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="vilja" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v&inodot;ll</me:facs>
+								<me:dipl>vill</me:dipl>
+								<me:norm>vill</me:norm>
+							</choice>
+						</w>
+						<w lemma="senda" me:msa="xVB fI vA">
+							<choice>
+								<me:facs>&slong;en&drot;a</me:facs>
+								<me:dipl>&slong;enda</me:dipl>
+								<me:norm>senda</me:norm>
+							</choice>
+						</w>
+						<w lemma="hann" me:msa="xPE p3 gM nS cA">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="austr" me:msa="xAV rP">
+							<choice>
+								<me:facs>av&slong;&trot;r</me:facs>
+								<me:dipl>av&slong;tr</me:dipl>
+								<me:norm>austr</me:norm>
+							</choice>
+						</w>
+						<w lemma="til" me:msa="xAP">
+							<choice>
+								<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+								<me:dipl>t<ex>il</ex></me:dipl>
+								<me:norm>til</me:norm>
+							</choice>
+						</w>
+						<w lemma="elfr" me:msa="xNC gF nS cG sD">
+							<choice>
+								<me:facs>el&fins;<am>&rsup;</am>&inodot;n<am>&bar;</am>ar</me:facs>
+								<me:dipl>elf<ex>ar</ex>in<ex>n</ex>ar</me:dipl>
+								<me:norm>elfarinnar</me:norm>
+							</choice>
+						</w>
+						<lb n="9"/>
+						<w lemma="at" me:msa="xIM">
+							<choice>
+								<me:facs>a&trot;</me:facs>
+								<me:dipl>at</me:dipl>
+								<me:norm>at</me:norm>
+							</choice>
+						</w>
+						<w lemma="boða" me:msa="xVB fI vA">
+							<choice>
+								<me:facs>bo&drot;a</me:facs>
+								<me:dipl>boda</me:dipl>
+								<me:norm>boða</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sveinki" me:msa="xNP gM nS cD sI">
+							<choice>
+								<me:facs>&slong;v&inodot;nka</me:facs>
+								<me:dipl>&slong;v<supplied reason="emendation">e</supplied>inka</me:dipl>
+								<me:norm>Sveinka</me:norm>
+							</choice>
+						</w><!-- Sic. -->
+						<w lemma="af" me:msa="xAP">
+							<choice>
+								<me:facs>a&fins;</me:facs>
+								<me:dipl>af</me:dipl>
+								<me:norm>af</me:norm>
+							</choice>
+						</w>
+						<w lemma="land" me:msa="xNC gN nP cD sI">
+							<choice>
+								<me:facs>lavn&drot;v<am>&bar;</am></me:facs>
+								<me:dipl>lavndv<ex>m</ex></me:dipl>
+								<me:norm>l&oogon;ndum</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<q>
+							<w lemma="því at" me:msa="xCS">
+								<choice>
+									<me:facs>þ<am>&bar;</am>&trot;</me:facs>
+									<me:dipl>þ<ex>vi a</ex>t</me:dipl>
+									<me:norm>því at</me:norm>
+								</choice>
+							</w>
+							<w lemma="hann" me:msa="xPE p3 gM nS cN">
+								<choice>
+									<me:facs>h<am>&bar;</am>n</me:facs>
+									<me:dipl>h<ex>an</ex>n</me:dipl>
+									<me:norm>hann</me:norm>
+								</choice>
+							</w>
+							<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>he&fins;v<am>&er;</am></me:facs>
+									<me:dipl>hefv<ex>er</ex></me:dipl>
+									<me:norm>hefir</me:norm>
+								</choice>
+							</w>
+							<w lemma="engi" me:msa="xDQ gN nS cA">
+								<choice>
+									<me:facs>eck&inodot;</me:facs>
+									<me:dipl>ecki</me:dipl>
+									<me:norm>ekki</me:norm>
+								</choice>
+							</w>
+							<w lemma="til" me:msa="xAP">
+								<choice>
+									<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+									<me:dipl>t<ex>il</ex></me:dipl>
+									<me:norm>til</me:norm>
+								</choice>
+							</w>
+							<w lemma="vér" me:msa="xPE p1 nP cG">
+								<choice>
+									<me:facs>vor</me:facs>
+									<me:dipl>vor</me:dipl>
+									<me:norm>vár</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="hneigja" me:msa="xVB fP tPT vA rP gN nS cA sI">
+								<choice>
+									<me:facs>hne&inodot;k&trot;</me:facs>
+									<me:dipl>hneikt</me:dipl>
+									<me:norm>hneigt</me:norm>
+								</choice>
+							</w>
+							<w lemma="eða" me:msa="xCC">
+								<choice>
+									<me:facs><am>.</am>e<am>.</am></me:facs>
+									<me:dipl>e<ex>da</ex></me:dipl>
+									<me:norm>eða</me:norm>
+								</choice>
+							</w>
+							<w lemma="nøkkurr" me:msa="xDQ gM nS cA">
+								<choice>
+									<me:facs>navck<am>&rrotsup;</am>n</me:facs>
+									<me:dipl>navck<ex>vr</ex>n</me:dipl>
+									<me:norm>n&oogon;kkurn</me:norm>
+								</choice>
+							</w>
+							<w lemma="vér" me:msa="xPE p1 nP cD">
+								<choice>
+									<me:facs>o&slong;&slong;</me:facs>
+									<me:dipl>o&slong;&slong;</me:dipl>
+									<me:norm>oss</me:norm>
+								</choice>
+							</w>
+							<w lemma="sómi" me:msa="xNC gM nS cA sI">
+								<choice>
+									<me:facs>&slong;oma</me:facs>
+									<me:dipl>&slong;oma</me:dipl>
+									<me:norm>sóma</me:norm>
+								</choice>
+							</w>
+							<w lemma="gera" me:msa="xVB fP tPT vA rP gN nS cA sI">
+								<choice>
+									<me:facs>g<lb ed="ms" n="10"/>&inodot;o&rrot;&trot;</me:facs>
+									<me:dipl>g<lb ed="ms" n="10"/>iort</me:dipl>
+									<me:norm>gørt<lb ed="ms" n="10"/></me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+							<w lemma="hafa" me:msa="xVB fF p1 nS vA">
+								<choice>
+									<me:facs>he&fins;&inodot;</me:facs>
+									<me:dipl>hefi</me:dipl>
+									<me:norm>Hefi</me:norm>
+								</choice>
+							</w>
+							<w lemma="ek" me:msa="xPE p1 nS cN">
+								<choice>
+									<me:facs>ek</me:facs>
+									<me:dipl>ek</me:dipl>
+									<me:norm>ek</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xAV rP">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="senda" me:msa="xVB fP tPT vA rP gN nS cA sI">
+								<choice>
+									<me:facs>&slong;en&trot;</me:facs>
+									<me:dipl>&slong;ent</me:dipl>
+									<me:norm>sent</me:norm>
+								</choice>
+							</w>
+							<w lemma="áðr" me:msa="xAV rC">
+								<choice>
+									<me:facs>a&drot;r</me:facs>
+									<me:dipl>adr</me:dipl>
+									<me:norm>áðr</me:norm>
+								</choice>
+							</w>
+							<w lemma="maðr" me:msa="xNC gM nP cA sI">
+								<choice>
+									<me:facs>m<am>&bar;</am></me:facs>
+									<me:dipl>m<ex>enn</ex></me:dipl>
+									<me:norm>menn</me:norm>
+								</choice>
+							</w>
+							<w lemma="til" me:msa="xAP">
+								<choice>
+									<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+									<me:dipl>t<ex>il</ex></me:dipl>
+									<me:norm>til</me:norm>
+								</choice>
+							</w>
+							<w lemma="hann" me:msa="xPE p3 gM nS cG">
+								<choice>
+									<me:facs>h<am>&bar;</am>n&slong;</me:facs>
+									<me:dipl>h<ex>a</ex>n&slong;</me:dipl>
+									<me:norm>hans</me:norm>
+								</choice>
+							</w>
+							<w lemma="fyrri" me:msa="xAV rC">
+								<choice>
+									<me:facs>&fins;yr<am>&combdot;</am>&inodot;</me:facs>
+									<me:dipl>fyr<ex>r</ex>i</me:dipl>
+									<me:norm>fyrri</me:norm>
+								</choice>
+							</w>
+							<w lemma="þessi" me:msa="xDD gN nS cG">
+								<choice>
+									<me:facs>þe&slong;&slong;a</me:facs>
+									<me:dipl>þe&slong;&slong;a</me:dipl>
+									<me:norm>þessa</me:norm>
+								</choice>
+							</w>
+							<w lemma="ørendi" me:msa="xNC gN nS cG sI">
+								<choice>
+									<me:facs>eyren<am>&bar;</am>&drot;&inodot;&slong;</me:facs>
+									<me:dipl>eyren<ex>n</ex>di&slong;</me:dipl>
+									<me:norm>ørendis</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="sitja" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>&slong;&inodot;&trot;r</me:facs>
+									<me:dipl>&slong;itr</me:dipl>
+									<me:norm>sitr</me:norm>
+								</choice>
+							</w>
+							<w lemma="hann" me:msa="xPE p3 gM nS cN">
+								<choice>
+									<me:facs>h<am>&bar;</am>n</me:facs>
+									<me:dipl>h<ex>an</ex>n</me:dipl>
+									<me:norm>hann</me:norm>
+								</choice>
+							</w>
+							<w lemma="í" me:msa="xAP">
+								<choice>
+									<me:facs>&inodot;</me:facs>
+									<me:dipl>i</me:dipl>
+									<me:norm>í</me:norm>
+								</choice>
+							</w>
+							<w lemma="bú" me:msa="xNC gN nP cD sI">
+								<choice>
+									<me:facs>bvv<am>&bar;</am></me:facs>
+									<me:dipl>bvv<ex>m</ex></me:dipl>
+									<me:norm>búm</me:norm>
+								</choice>
+							</w>
+							<w lemma="sinn" me:msa="xDP gU nP cD">
+								<choice>
+									<me:facs>&slong;&inodot;nv<am>&bar;</am></me:facs>
+									<me:dipl>&slong;inv<ex>m</ex></me:dipl>
+									<me:norm>sínum</me:norm>
+								</choice>
+							</w>
+							<w lemma="engi" me:msa="xDQ gN nS cA">
+								<choice>
+									<me:facs>eck&inodot;</me:facs>
+									<me:dipl>ecki</me:dipl>
+									<me:norm>ekki</me:norm>
+								</choice>
+							</w>
+							<lb n="11"/>
+							<w lemma="at" me:msa="xAV rP">
+								<choice>
+									<me:facs>a&trot;</me:facs>
+									<me:dipl>at</me:dipl>
+									<me:norm>at</me:norm>
+								</choice>
+							</w>
+							<w lemma="síðr" me:msa="xAV rC">
+								<choice>
+									<me:facs>&slong;&inodot;&drot;r</me:facs>
+									<me:dipl>&slong;idr</me:dipl>
+									<me:norm>síðr</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="láta" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>læ&trot;<am>&rrotsup;</am></me:facs>
+									<me:dipl>læt<ex>vr</ex></me:dipl>
+									<me:norm>l&aeligacute;tr</me:norm>
+								</choice>
+							</w>
+							<w lemma="sem" me:msa="xCS">
+								<choice>
+									<me:facs>&slong;em</me:facs>
+									<me:dipl>&slong;em</me:dipl>
+									<me:norm>sem</me:norm>
+								</choice>
+							</w>
+							<w lemma="hann" me:msa="xPE p3 gM nS cN">
+								<choice>
+									<me:facs>h<am>&bar;</am>n</me:facs>
+									<me:dipl>h<ex>an</ex>n</me:dipl>
+									<me:norm>hann</me:norm>
+								</choice>
+							</w>
+							<w lemma="eiga" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>e<am>&inodotsup;</am></me:facs>
+									<me:dipl>e<ex>igi</ex></me:dipl>
+									<me:norm>eigi</me:norm>
+								</choice>
+							</w>
+							<w lemma="engi" me:msa="xDQ gN nS cA">
+								<choice>
+									<me:facs>eck&inodot;</me:facs>
+									<me:dipl>ecki</me:dipl>
+									<me:norm>ekki</me:norm>
+								</choice>
+							</w>
+							<w lemma="vinr" me:msa="xNC gM nS cA sI">
+								<choice>
+									<me:facs>v&inodot;n</me:facs>
+									<me:dipl>vin</me:dipl>
+									<me:norm>vin</me:norm>
+								</choice>
+							</w><!-- Det ser ut att ha varit ett horisontellt förkortningsstreck över , som man har försökt radera. Sannolikt har skrivaren haft följden in och tolkat de tre staplarna som m och därför tänkt förkorta det 1. Därefter har han noterat felet och skrivit ut ordet. -->
+							<w lemma="at" me:msa="xIM">
+								<choice>
+									<me:facs>a&trot;</me:facs>
+									<me:dipl>at</me:dipl>
+									<me:norm>at</me:norm>
+								</choice>
+							</w>
+							<w lemma="m&oslashacute;ta" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>mæ&trot;a</me:facs>
+									<me:dipl>mæta</me:dipl>
+									<me:norm>m&oslashacute;ta</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="þar" me:msa="xAV rP">
+								<choice>
+									<me:facs>þ<am>&rsup;</am></me:facs>
+									<me:dipl>þ<ex>ar</ex></me:dipl>
+									<me:norm>þar</me:norm>
+								</choice>
+							</w>
+							<w lemma="sem" me:msa="xCS">
+								<choice>
+									<me:facs>&slong;e<am>&bar;</am></me:facs>
+									<me:dipl>&slong;e<ex>m</ex></me:dipl>
+									<me:norm>sem</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="Sveinki" me:msa="xNP gM nS cN sI">
+								<choice>
+									<me:facs>&slong;ve&inodot;nke</me:facs>
+									<me:dipl>&slong;veinke</me:dipl>
+									<me:norm>Sveinki</me:norm>
+								</choice>
+							</w>
+							<w lemma="vera" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>e<am>&er;</am></me:facs>
+									<me:dipl>e<ex>r</ex></me:dipl>
+									<me:norm>er</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="eða" me:msa="xCC">
+								<choice>
+									<me:facs>e&drot;&rrot;</me:facs>
+									<me:dipl>edr</me:dipl>
+									<me:norm>eðr</me:norm>
+								</choice>
+							</w>
+							<w lemma="Elfargrímar" me:msa="xNP gM nP cN sD">
+								<choice>
+									<me:facs>el&fins;<am>&rsup;</am> g<am>&inodotsup;</am>m<am>&rsup;</am>n<am>&er;</am></me:facs>
+									<me:dipl>elf<ex>ar</ex> g<ex>ri</ex>m<ex>ar</ex>n<ex>er</ex></me:dipl>
+									<me:norm>Elfargrímarnir</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+							<w lemma="vilja" me:msa="xVB fF p1 nS vA">
+								<choice>
+									<me:facs>v&inodot;l</me:facs>
+									<me:dipl>vil</me:dipl>
+									<me:norm>Vil</me:norm>
+								</choice>
+							</w>
+							<w lemma="ek" me:msa="xPE p1 nS cN">
+								<choice>
+									<me:facs>ek</me:facs>
+									<me:dipl>ek</me:dipl>
+									<me:norm>ek</me:norm>
+								</choice>
+							</w>
+							<w lemma="senda" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>&slong;en<lb ed="ms" n="12"/>&drot;a</me:facs>
+									<me:dipl>&slong;en<lb ed="ms" n="12"/>da</me:dipl>
+									<me:norm>senda<lb ed="ms" n="12"/></me:norm>
+								</choice>
+							</w>
+							<w lemma="með" me:msa="xAP">
+								<choice>
+									<me:facs>m<am>&sem;</am></me:facs>
+									<me:dipl>m<ex>ed</ex></me:dipl>
+									<me:norm>með</me:norm>
+								</choice>
+							</w>
+							<w lemma="þú" me:msa="xPE p2 nS cD">
+								<choice>
+									<me:facs>þ<am>&er;</am></me:facs>
+									<me:dipl>þ<ex>er</ex></me:dipl>
+									<me:norm>þér</me:norm>
+								</choice>
+							</w>
+							<w lemma="várr" me:msa="xDP gM nP cA">
+								<choice>
+									<me:facs>v<am>&osup;</am>a</me:facs>
+									<me:dipl>v<ex>or</ex>a</me:dipl>
+									<me:norm>vára</me:norm>
+								</choice>
+							</w>
+							<w lemma="lenda" me:msa="xVB fP tPT vA rP gM nP cA sI">
+								<choice>
+									<me:facs>len&drot;a</me:facs>
+									<me:dipl>lenda</me:dipl>
+									<me:norm>lenda</me:norm>
+								</choice>
+							</w>
+							<w lemma="maðr" me:msa="xNC gM nP cA sI">
+								<choice>
+									<me:facs>m<am>&bar;</am></me:facs>
+									<me:dipl>m<ex>enn</ex></me:dipl>
+									<me:norm>menn</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="Dagr" me:msa="xNP gM nS cA sI">
+								<choice>
+									<me:facs>&drot;ag</me:facs>
+									<me:dipl>dag</me:dipl>
+									<me:norm>Dag</me:norm>
+								</choice>
+							</w>
+							<w lemma="Eilífsson" me:msa="xNP gM nS cA sI">
+								<choice>
+									<me:facs>e&inodot;l&inodot;&fins;&slong; &slong;on</me:facs>
+									<me:dipl>eilif&slong; &slong;on</me:dipl>
+									<me:norm>Eilífsson</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="Kolbeinn" me:msa="xNP gM nS cA sI">
+								<choice>
+									<me:facs>kolbe&inodot;n</me:facs>
+									<me:dipl>kolbein</me:dipl>
+									<me:norm>Kolbein</me:norm>
+								</choice>
+							</w>
+							<w lemma="klokka" me:msa="xNC gF nS cA sI">
+								<choice>
+									<me:facs>klvckv</me:facs>
+									<me:dipl>klvckv</me:dipl>
+									<me:norm>klukku</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="er" me:msa="xCS">
+								<choice>
+									<me:facs>e<am>&er;</am></me:facs>
+									<me:dipl>e<ex>r</ex></me:dipl>
+									<me:norm>er</me:norm>
+								</choice>
+							</w>
+							<w lemma="flytja" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>&fins;ly&trot;&inodot;a</me:facs>
+									<me:dipl>flytia</me:dipl>
+									<me:norm>flytja</me:norm>
+								</choice>
+							</w>
+							<w lemma="skulu" me:msa="xVB fF p3 nP vA">
+								<choice>
+									<me:facs>&slong;k<am>&bar;</am>v</me:facs>
+									<me:dipl>&slong;k<ex>vl</ex>v</me:dipl>
+									<me:norm>skulu</me:norm>
+								</choice>
+							</w>
+							<w lemma="várr" me:msa="xDP gN nS cA">
+								<choice>
+									<me:facs>v<am>&osup;</am>&trot;</me:facs>
+									<me:dipl>v<ex>or</ex>t</me:dipl>
+									<me:norm>várt</me:norm>
+								</choice>
+							</w>
+							<w lemma="ørendi" me:msa="xNC gN nS cA sI">
+								<choice>
+									<me:facs>eyren<am>&bar;</am>&drot;&inodot;</me:facs>
+									<me:dipl>eyren<ex>n</ex>di</me:dipl>
+									<me:norm>ørendi</me:norm>
+								</choice>
+							</w>
+							<w lemma="með" me:msa="xAP">
+								<choice>
+									<me:facs>m<am>&sem;</am></me:facs>
+									<me:dipl>m<ex>ed</ex></me:dipl>
+									<me:norm>með</me:norm>
+								</choice>
+							</w>
+							<lb n="13"/>
+							<w lemma="þú" me:msa="xPE p2 nS cD">
+								<choice>
+									<me:facs>þ<am>&er;</am></me:facs>
+									<me:dipl>þ<ex>er</ex></me:dipl>
+									<me:norm>þér</me:norm>
+								</choice>
+							</w>
+							<w lemma="til" me:msa="xAP">
+								<choice>
+									<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+									<me:dipl>t<ex>il</ex></me:dipl>
+									<me:norm>til</me:norm>
+								</choice>
+							</w>
+							<w lemma="réttendi" me:msa="xNC gN nP cG sI">
+								<choice>
+									<me:facs>&rscap;e&trot;&trot;&inodot;n&drot;a</me:facs>
+									<me:dipl>&rscap;ettinda</me:dipl>
+									<me:norm>réttenda</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="lag" me:msa="xNC gN nP cG sI">
+								<choice>
+									<me:facs>laga</me:facs>
+									<me:dipl>laga</me:dipl>
+									<me:norm>laga</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+						</q>
+					</p>
+					<p>
+						<w lemma="þá" me:msa="xAV rP">
+							<choice>
+								<me:facs>þa</me:facs>
+								<me:dipl>þa</me:dipl>
+								<me:norm>Þá</me:norm>
+							</choice>
+						</w>
+						<w lemma="m&aeligacute;la" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs><pc>.</pc>ml<am>&bar;</am><pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>m<ex>æ</ex>l<ex>ti</ex><pc>.</pc></me:dipl>
+								<me:norm>m&aeligacute;lti</me:norm>
+							</choice>
+						</w>
+						<w lemma="Sigurðr" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&slong;&inodot;g<am>&rrotsup;</am>&drot;&rrot;</me:facs>
+								<me:dipl>&slong;ig<ex>vr</ex>dr</me:dipl>
+								<me:norm>Sigurðr</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>:</me:norm>
+							</choice>
+						</pc>
+						<q>
+							<w lemma="engi" me:msa="xDQ gN nS cA">
+								<choice>
+									<me:facs>eck&inodot;</me:facs>
+									<me:dipl>ecki</me:dipl>
+									<me:norm>Ekki</me:norm>
+								</choice>
+							</w>
+							<w lemma="vita" me:msa="xVB fF p1 nS vA">
+								<choice>
+									<me:facs>ve&inodot;&trot;</me:facs>
+									<me:dipl>veit</me:dipl>
+									<me:norm>veit</me:norm>
+								</choice>
+							</w>
+							<w lemma="ek" me:msa="xPE p1 nS cN">
+								<choice>
+									<me:facs>ek</me:facs>
+									<me:dipl>ek</me:dipl>
+									<me:norm>ek</me:norm>
+								</choice>
+							</w>
+							<w lemma="sá" me:msa="xDD gM nS cG">
+								<choice>
+									<me:facs>þe&slong;&slong;</me:facs>
+									<me:dipl>þe&slong;&slong;</me:dipl>
+									<me:norm>þess</me:norm>
+								</choice>
+							</w>
+							<w lemma="maðr" me:msa="xNC gM nS cG sI">
+								<choice>
+									<me:facs>manz</me:facs>
+									<me:dipl>manz</me:dipl>
+									<me:norm>manns</me:norm>
+								</choice>
+							</w>
+							<w lemma="ván" me:msa="xNC gF nS cA sI">
+								<choice>
+									<me:facs>von</me:facs>
+									<me:dipl>von</me:dipl>
+									<me:norm>ván</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="í" me:msa="xAP">
+								<choice>
+									<me:facs>&inodot;</me:facs>
+									<me:dipl>i</me:dipl>
+									<me:norm>í</me:norm>
+								</choice>
+							</w>
+							<w lemma="Noregr" me:msa="xNP gM nS cD sI">
+								<choice>
+									<me:facs>nor<am>&bar;</am>&inodot;</me:facs>
+									<me:dipl>nor<ex>eg</ex>i</me:dipl>
+									<me:norm>Noregi</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="at" me:msa="xCS">
+								<choice>
+									<me:facs>a&trot;</me:facs>
+									<me:dipl>at</me:dipl>
+									<me:norm>at</me:norm>
+								</choice>
+							</w>
+							<num value="3" type="cardinal">
+								<choice>
+									<me:facs><pc>.</pc>&inodot;&inodot;&jacute;<pc>.</pc></me:facs>
+									<me:dipl><pc>.</pc>ii&jacute;<pc>.</pc></me:dipl>
+									<me:norm>3</me:norm>
+								</choice>
+							</num>
+							<w lemma="lenda" me:msa="xVB fP tPT vA rP gM nP cN sI">
+								<choice>
+									<me:facs>le<lb ed="ms" n="14"/>n&drot;<am>&inodotsup;</am></me:facs>
+									<me:dipl>le<lb ed="ms" n="14"/>nd<ex>ir</ex></me:dipl>
+									<me:norm>lendir<lb ed="ms" n="14"/></me:norm>
+								</choice>
+							</w>
+							<w lemma="maðr" me:msa="xNC gM nP cN sI">
+								<choice>
+									<me:facs>m<am>&bar;</am></me:facs>
+									<me:dipl>m<ex>enn</ex></me:dipl>
+									<me:norm>menn</me:norm>
+								</choice>
+							</w>
+							<w lemma="munu" me:msa="xVB fF p3 nP vA">
+								<choice>
+									<me:facs>mvn&inodot;</me:facs>
+									<me:dipl>mvni</me:dipl>
+									<me:norm>muni</me:norm>
+								</choice>
+							</w>
+							<w lemma="þurfa" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>þ<am>&rrotsup;</am>&fins;a</me:facs>
+									<me:dipl>þ<ex>vr</ex>fa</me:dipl>
+									<me:norm>þurfa</me:norm>
+								</choice>
+							</w>
+							<w lemma="til" me:msa="xAP">
+								<choice>
+									<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+									<me:dipl>t<ex>il</ex></me:dipl>
+									<me:norm>til</me:norm>
+								</choice>
+							</w>
+							<w lemma="at" me:msa="xIM">
+								<choice>
+									<me:facs>a&trot;</me:facs>
+									<me:dipl>at</me:dipl>
+									<me:norm>at</me:norm>
+								</choice>
+							</w>
+							<w lemma="koma" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>ko<am>&bar;</am>a</me:facs>
+									<me:dipl>ko<ex>m</ex>a</me:dipl>
+									<me:norm>koma</me:norm>
+								</choice>
+							</w>
+							<w lemma="við" me:msa="xAP">
+								<choice>
+									<me:facs>v<am>&trotsup;</am></me:facs>
+									<me:dipl>v<ex>it</ex></me:dipl>
+									<me:norm>við</me:norm>
+								</choice>
+							</w>
+							<w lemma="minn" me:msa="xDP">
+								<choice>
+									<me:facs>m&inodot;n<am>&bar;</am></me:facs>
+									<me:dipl>min<ex>n</ex></me:dipl>
+									<me:norm>minn</me:norm>
+								</choice>
+							</w><!-- Sic. -->
+							<w lemma="fulltingr" me:msa="xNC gM nS cA sI">
+								<choice>
+									<me:facs>&fins;vll&trot;&inodot;ng</me:facs>
+									<me:dipl>fvllting</me:dipl>
+									<me:norm>fullting</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+						</q>
+					</p>
+					<p>
+						<w lemma="konungr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs><pc>.</pc>k<am>&bar;</am>r<pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>k<ex>onvng</ex>r<pc>.</pc></me:dipl>
+								<me:norm>Konungr</me:norm>
+							</choice>
+						</w>
+						<w lemma="m&aeligacute;la" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>ml<am>&bar;</am></me:facs>
+								<me:dipl>m<ex>æ</ex>l<ex>ti</ex></me:dipl>
+								<me:norm>m&aeligacute;lti</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>:</me:norm>
+							</choice>
+						</pc>
+						<q>
+							<w lemma="eigi" me:msa="xAV rP">
+								<choice>
+									<me:facs>e<am>&inodotsup;</am></me:facs>
+									<me:dipl>e<ex>igi</ex></me:dipl>
+									<me:norm>Eigi</me:norm>
+								</choice>
+							</w>
+							<w lemma="taka" me:msa="xVB fF p2 nS vA">
+								<choice>
+									<me:facs>&trot;ekr</me:facs>
+									<me:dipl>tekr</me:dipl>
+									<me:norm>tekr</me:norm>
+								</choice>
+							</w>
+							<w lemma="þú" me:msa="xPE p2 nS cN">
+								<choice>
+									<me:facs>þv</me:facs>
+									<me:dipl>þv</me:dipl>
+									<me:norm>þú</me:norm>
+								</choice>
+							</w>
+							<w lemma="til" me:msa="xAP">
+								<choice>
+									<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+									<me:dipl>t<ex>il</ex></me:dipl>
+									<me:norm>til</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="nema" me:msa="xCS">
+								<choice>
+									<me:facs>ne<am>&bar;</am>a</me:facs>
+									<me:dipl>ne<ex>m</ex>a</me:dipl>
+									<me:norm>nema</me:norm>
+								</choice>
+							</w>
+							<w lemma="þú" me:msa="xPE p2 nS cN">
+								<choice>
+									<me:facs>þv</me:facs>
+									<me:dipl>þv</me:dipl>
+									<me:norm>þú</me:norm>
+								</choice>
+							</w>
+							<w lemma="þurfa" me:msa="xVB fF p2 nS vA">
+								<choice>
+									<me:facs>þv&rrot;&fins;<am>&inodotsup;</am></me:facs>
+									<me:dipl>þvrf<ex>ir</ex></me:dipl>
+									<me:norm>þurfir</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+							<w lemma="en" me:msa="xCC">
+								<choice>
+									<me:facs>en<am>&bar;</am></me:facs>
+									<me:dipl>en<ex>n</ex></me:dipl>
+									<me:norm>En</me:norm>
+								</choice>
+							</w>
+							<lb n="15"/>
+							<w lemma="stórr" me:msa="xAJ rP gM nS cA sI">
+								<choice>
+									<me:facs>&slong;&trot;<am>&osup;</am>an</me:facs>
+									<me:dipl>&slong;t<ex>or</ex>an</me:dipl>
+									<me:norm>stóran</me:norm>
+								</choice>
+							</w>
+							<w lemma="skulu" me:msa="xVB fF p2 nS vA">
+								<choice>
+									<me:facs>&slong;kall&trot;v</me:facs>
+									<me:dipl>&slong;kalltv</me:dipl>
+									<me:norm>skaltu</me:norm>
+								</choice>
+							</w>
+							<w lemma="&aeligacute;tla" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>æ&trot;la</me:facs>
+									<me:dipl>ætla</me:dipl>
+									<me:norm>&aeligacute;tla</me:norm>
+								</choice>
+							</w>
+							<w lemma="maðr" me:msa="xNC gM nS cA sD">
+								<choice>
+									<me:facs>m<am>&nsup;</am>&inodot;n<am>&bar;</am></me:facs>
+									<me:dipl>m<ex>ann</ex>in<ex>n</ex></me:dipl>
+									<me:norm>manninn</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+						</q>
+					</p>
+					<p>
+						<w lemma="Sigurðr" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&slong;&inodot;g<am>&rrotsup;</am>&drot;&rrot;</me:facs>
+								<me:dipl>&slong;ig<ex>vr</ex>dr</me:dipl>
+								<me:norm>Sigurðr</me:norm>
+							</choice>
+						</w>
+						<w lemma="ullstrengr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>vll &slong;&trot;<am>&esup;</am>&inodot;ngr</me:facs>
+								<me:dipl>vll &slong;t<ex>re</ex>ingr</me:dipl>
+								<me:norm>ullstrengr</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="fara" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&fins;<am>&er;</am></me:facs>
+								<me:dipl>f<ex>er</ex></me:dipl>
+								<me:norm>ferr</me:norm>
+							</choice>
+						</w>
+						<w lemma="nú" me:msa="xAV rP">
+							<choice>
+								<me:facs>nv</me:facs>
+								<me:dipl>nv</me:dipl>
+								<me:norm>nú</me:norm>
+							</choice>
+						</w>
+						<w lemma="fyrr" me:msa="xAV rS">
+							<choice>
+								<me:facs>&fins;y&slong;&trot;</me:facs>
+								<me:dipl>fy&slong;t</me:dipl>
+								<me:norm>fyrst</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="Vík" me:msa="xNP gF nS cA sI">
+							<choice>
+								<me:facs>v&inodot;k</me:facs>
+								<me:dipl>vik</me:dipl>
+								<me:norm>Vík</me:norm>
+							</choice>
+						</w>
+						<w lemma="austr" me:msa="xAV rP">
+							<choice>
+								<me:facs>av&slong;&trot;<am>&rrotsup;</am></me:facs>
+								<me:dipl>av&slong;t<ex>vr</ex></me:dipl>
+								<me:norm>austr</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="stefna" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&slong;&trot;e&fins;n<am>&er;</am></me:facs>
+								<me:dipl>&slong;tefn<ex>er</ex></me:dipl>
+								<me:norm>stefnir</me:norm>
+							</choice>
+						</w>
+						<w lemma="til" me:msa="xAP">
+							<choice>
+								<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+								<me:dipl>t<ex>il</ex></me:dipl>
+								<me:norm>til</me:norm>
+							</choice>
+						</w>
+						<w lemma="sik" me:msa="xPE cG">
+							<choice>
+								<me:facs>&slong;&inodot;n</me:facs>
+								<me:dipl>&slong;in</me:dipl>
+								<me:norm>sín</me:norm>
+							</choice>
+						</w>
+						<w lemma="lenda" me:msa="xVB fP tPT vA rP gU nP cD sI">
+							<choice>
+								<me:facs>len&drot;v<am>&bar;</am></me:facs>
+								<me:dipl>lendv<ex>m</ex></me:dipl>
+								<me:norm>lendum</me:norm>
+							</choice>
+						</w>
+						<lb n="16"/>
+						<w lemma="maðr" me:msa="xNC gM nP cD sI">
+							<choice>
+								<me:facs>m<am>&bar;</am>m</me:facs>
+								<me:dipl>m<ex>onnv</ex>m</me:dipl>
+								<me:norm>m&oogon;nnum</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>he&fins;<am>&er;</am></me:facs>
+								<me:dipl>hef<ex>er</ex></me:dipl>
+								<me:norm>hefir</me:norm>
+							</choice>
+						</w>
+						<w lemma="tal" me:msa="xNC gN nS cA sI">
+							<choice>
+								<me:facs>&trot;al</me:facs>
+								<me:dipl>tal</me:dipl>
+								<me:norm>tal</me:norm>
+							</choice>
+						</w>
+						<w lemma="við" me:msa="xAP">
+							<choice>
+								<me:facs>v<am>&trotsup;</am></me:facs>
+								<me:dipl>v<ex>it</ex></me:dipl>
+								<me:norm>við</me:norm>
+							</choice>
+						</w>
+						<w lemma="sá" me:msa="xDD gM nP cA">
+							<choice>
+								<me:facs>þa</me:facs>
+								<me:dipl>þa</me:dipl>
+								<me:norm>þá</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="ráðagerð" me:msa="xNC gF nS cA sI">
+							<choice>
+								<me:facs>&rscap;a&drot;a g&inodot;<am>&osup;</am>&drot;</me:facs>
+								<me:dipl>&rscap;ada gi<ex>or</ex>d</me:dipl>
+								<me:norm>ráðagørð</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="síðan" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;&inodot;&drot;<am>&nsup;</am></me:facs>
+								<me:dipl>&slong;id<ex>an</ex></me:dipl>
+								<me:norm>Síðan</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="þing" me:msa="xNC gN nS cG sI">
+							<choice>
+								<me:facs>þ&inodot;ng&slong;</me:facs>
+								<me:dipl>þing&slong;</me:dipl>
+								<me:norm>þings</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="kveðja" me:msa="xVB fP tPT vA rP gN nS cN sI">
+							<choice>
+								<me:facs>qva&trot;<am>&combdot;</am></me:facs>
+								<me:dipl>qvat<ex>t</ex></me:dipl>
+								<me:norm>kvatt</me:norm>
+							</choice>
+						</w>
+						<w lemma="um" me:msa="xAP">
+							<choice>
+								<me:facs>v<am>&bar;</am></me:facs>
+								<me:dipl>v<ex>m</ex></me:dipl>
+								<me:norm>um</me:norm>
+							</choice>
+						</w>
+						<w lemma="Vík" me:msa="xNP gF nS cA sD">
+							<choice>
+								<me:facs>v&inodot;k&inodot;na</me:facs>
+								<me:dipl>vikina</me:dipl>
+								<me:norm>Víkina</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="sá" me:msa="xDD gU nP cD">
+							<choice>
+								<me:facs>þ<am>&bar;</am>m</me:facs>
+								<me:dipl>þ<ex>ei</ex>m</me:dipl>
+								<me:norm>þeim</me:norm>
+							</choice>
+						</w>
+						<w lemma="til" me:msa="xAP">
+							<choice>
+								<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+								<me:dipl>t<ex>il</ex></me:dipl>
+								<me:norm>til</me:norm>
+							</choice>
+						</w>
+						<w lemma="stefna" me:msa="xVB fP tPT vA rP gN nS cN sI">
+							<choice>
+								<me:facs>&slong;&trot;e&fins;n&trot;</me:facs>
+								<me:dipl>&slong;tefnt</me:dipl>
+								<me:norm>stefnt</me:norm>
+							</choice>
+						</w>
+						<w lemma="austan" me:msa="xAV rP">
+							<choice>
+								<me:facs>av<lb ed="ms" n="17"/>&slong;&trot;<am>&nsup;</am></me:facs>
+								<me:dipl>av<lb ed="ms" n="17"/>&slong;t<ex>an</ex></me:dipl>
+								<me:norm>austan<lb ed="ms" n="17"/></me:norm>
+							</choice>
+						</w>
+						<w lemma="Elfargrímar" me:msa="xNP gM nP cD sD">
+							<choice>
+								<me:facs>el&fins;<am>&rsup;</am> g<am>&inodotsup;</am>mvnv<am>&bar;</am></me:facs>
+								<me:dipl>elf<ex>ar</ex> g<ex>ri</ex>mvnv<ex>m</ex></me:dipl>
+								<me:norm>Elfargrímunum</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="þar" me:msa="xAV rP">
+							<choice>
+								<me:facs>þ<am>&rsup;</am></me:facs>
+								<me:dipl>þ<ex>ar</ex></me:dipl>
+								<me:norm>þar</me:norm>
+							</choice>
+						</w>
+						<w lemma="fj&oogon;lmennr" me:msa="xAJ rP gN nS cN sI">
+							<choice>
+								<me:facs>&fins;&inodot;olm<am>&bar;</am>&trot;</me:facs>
+								<me:dipl>fiolm<ex>enn</ex>t</me:dipl>
+								<me:norm>fj&oogon;lmennt</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="þurfa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>þ<am>&rrotsup;</am>&fins;&trot;&inodot;</me:facs>
+								<me:dipl>þ<ex>vr</ex>fti</me:dipl>
+								<me:norm>þurfti</me:norm>
+							</choice>
+						</w>
+						<w lemma="at" me:msa="xIM">
+							<choice>
+								<me:facs>a&trot;</me:facs>
+								<me:dipl>at</me:dipl>
+								<me:norm>at</me:norm>
+							</choice>
+						</w>
+						<w lemma="bíða" me:msa="xVB fI vA">
+							<choice>
+								<me:facs>b&inodot;&drot;a</me:facs>
+								<me:dipl>bida</me:dipl>
+								<me:norm>bíða</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sveinki" me:msa="xNP gM nS cG sI">
+							<choice>
+								<me:facs>&slong;ve&inodot;nka</me:facs>
+								<me:dipl>&slong;veinka</me:dipl>
+								<me:norm>Sveinka</me:norm>
+							</choice>
+						</w>
+						<w lemma="um" me:msa="xAP">
+							<choice>
+								<me:facs>v<am>&bar;</am></me:facs>
+								<me:dipl>v<ex>m</ex></me:dipl>
+								<me:norm>um</me:norm>
+							</choice>
+						</w>
+						<w lemma="hríð" me:msa="xNC gF nS cA sI">
+							<choice>
+								<me:facs>h<am>&inodotsup;</am>&drot;</me:facs>
+								<me:dipl>h<ex>ri</ex>d</me:dipl>
+								<me:norm>hríð</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="síðan" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;&inodot;&drot;<am>&nsup;</am></me:facs>
+								<me:dipl>&slong;id<ex>an</ex></me:dipl>
+								<me:norm>Síðan</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="sjá" me:msa="xVB fP tPT vA rP gF nS cN sI">
+							<choice>
+								<me:facs>&slong;&inodot;en</me:facs>
+								<me:dipl>&slong;ien</me:dipl>
+								<me:norm>sén</me:norm>
+							</choice>
+						</w>
+						<w lemma="mannaferð" me:msa="xNC gF nS cN sI">
+							<choice>
+								<me:facs>m<am>&asup;</am> &fins;e<am>&er;</am>&drot;</me:facs>
+								<me:dipl>m<ex>anna</ex> fe<ex>r</ex>d</me:dipl>
+								<me:norm>mannaferð</me:norm>
+							</choice>
+						</w>
+						<lb n="18"/>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="sem" me:msa="xCS">
+							<choice>
+								<me:facs>&slong;e<am>&bar;</am></me:facs>
+								<me:dipl>&slong;e<ex>m</ex></me:dipl>
+								<me:norm>sem</me:norm>
+							</choice>
+						</w>
+						<w lemma="á" me:msa="xAP">
+							<choice>
+								<me:facs>&aalig;</me:facs>
+								<me:dipl>&aalig;</me:dipl>
+								<me:norm>á</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="einn" me:msa="xAJ rP gF nS cA sI">
+							<choice>
+								<me:facs>e&inodot;na</me:facs>
+								<me:dipl>eina</me:dipl>
+								<me:norm>eina</me:norm>
+							</choice>
+						</w>
+						<w lemma="ísm&oogon;l" me:msa="xNC gF nS cA sI">
+							<choice>
+								<me:facs>&inodot;&slong;mavl</me:facs>
+								<me:dipl>i&slong;mavl</me:dipl>
+								<me:norm>ísm&oogon;l</me:norm>
+							</choice>
+						</w>
+						<w lemma="sjá" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&slong;æ&inodot;</me:facs>
+								<me:dipl>&slong;æi</me:dipl>
+								<me:norm>s&aeligacute;i</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="bera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>b<am>&er;</am></me:facs>
+								<me:dipl>b<ex>er</ex></me:dipl>
+								<me:norm>Berr</me:norm>
+							</choice>
+						</w>
+						<w lemma="þessi" me:msa="xDD gF nS cA">
+							<choice>
+								<me:facs>þe&slong;&slong;a</me:facs>
+								<me:dipl>þe&slong;&slong;a</me:dipl>
+								<me:norm>þessa</me:norm>
+							</choice>
+						</w>
+						<w lemma="bráðr" me:msa="xAJ rP gN nS cA sI">
+							<choice>
+								<me:facs>b<am>&ra;</am>&trot;&trot;</me:facs>
+								<me:dipl>b<ex>ra</ex>tt</me:dipl>
+								<me:norm>brátt</me:norm>
+							</choice>
+						</w>
+						<w lemma="at" me:msa="xCS">
+							<choice>
+								<me:facs>a&trot;</me:facs>
+								<me:dipl>at</me:dipl>
+								<me:norm>at</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="því at" me:msa="xCS">
+							<choice>
+								<me:facs>þ<am>&bar;</am>&trot;</me:facs>
+								<me:dipl>þ<ex>vi a</ex>t</me:dipl>
+								<me:norm>því at</me:norm>
+							</choice>
+						</w>
+						<w lemma="maðr" me:msa="xNC gM nP cN sD">
+							<choice>
+								<me:facs>m<am>&bar;</am>v&rrot;n<am>&inodotsup;</am></me:facs>
+								<me:dipl>m<ex>enn</ex>vrn<ex>ir</ex></me:dipl>
+								<me:norm>mennrnir</me:norm>
+							</choice>
+						</w>
+						<w lemma="ríða" me:msa="xVB fF p3 nP vA">
+							<choice>
+								<me:facs>&rscap;&inodot;&drot;v</me:facs>
+								<me:dipl>&rscap;idv</me:dipl>
+								<me:norm>riðu</me:norm>
+							</choice>
+						</w>
+						<w lemma="mikill" me:msa="xAJ rP gM nS cA sI">
+							<choice>
+								<me:facs>m&inodot;k<am>&nsup;</am></me:facs>
+								<me:dipl>mik<ex>in</ex></me:dipl>
+								<me:norm>mikinn</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="koma" me:msa="xVB fF p3 nP vA">
+							<choice>
+								<me:facs>kvo<am>&bar;</am>v</me:facs>
+								<me:dipl>kvo<ex>m</ex>v</me:dipl>
+								<me:norm>kómu</me:norm>
+							</choice>
+						</w>
+						<w lemma="á" me:msa="xAP">
+							<choice>
+								<me:facs>&aalig;</me:facs>
+								<me:dipl>&aalig;</me:dipl>
+								<me:norm>á</me:norm>
+							</choice>
+						</w>
+						<w lemma="þingmót" me:msa="xNC gN nS cA sD">
+							<choice>
+								<me:facs>þ&inodot;ng<lb ed="ms" n="19"/>mo&trot;<am>&trotsup;</am></me:facs>
+								<me:dipl>þing<lb ed="ms" n="19"/>mot<ex>it</ex></me:dipl>
+								<me:norm>þingmótit<lb ed="ms" n="19"/></me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="stíga" me:msa="xVB fF p3 nP vA">
+							<choice>
+								<me:facs>&slong;&trot;&inodot;ga</me:facs>
+								<me:dipl>&slong;tiga</me:dipl>
+								<me:norm>stíga</me:norm>
+							</choice>
+						</w>
+						<w lemma="af" me:msa="xAP">
+							<choice>
+								<me:facs>a&fins;</me:facs>
+								<me:dipl>af</me:dipl>
+								<me:norm>af</me:norm>
+							</choice>
+						</w>
+						<w lemma="bak" me:msa="xNC gN nS cD sI">
+							<choice>
+								<me:facs>bak&inodot;</me:facs>
+								<me:dipl>baki</me:dipl>
+								<me:norm>baki</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="setja" me:msa="xVB fF p3 nP vR">
+							<choice>
+								<me:facs>&slong;e&trot;&inodot;az&trot;</me:facs>
+								<me:dipl>&slong;etiazt</me:dipl>
+								<me:norm>setjask</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="einn" me:msa="xAJ rP gM nS cA sI">
+							<choice>
+								<me:facs>e&inodot;n<am>&bar;</am></me:facs>
+								<me:dipl>ein<ex>n</ex></me:dipl>
+								<me:norm>einn</me:norm>
+							</choice>
+						</w>
+						<w lemma="hringr" me:msa="xNC gM nS cA sI">
+							<choice>
+								<me:facs>h<am>&inodotsup;</am>ng</me:facs>
+								<me:dipl>h<ex>ri</ex>ng</me:dipl>
+								<me:norm>hring</me:norm>
+							</choice>
+						</w>
+						<w lemma="allr" me:msa="xDQ gM nP cN">
+							<choice>
+								<me:facs>all&inodot;r</me:facs>
+								<me:dipl>allir</me:dipl>
+								<me:norm>allir</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sveinki" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs><am>.</am>s<am>.</am></me:facs>
+								<me:dipl>s<ex>veinki</ex></me:dipl>
+								<me:norm>Sveinki</me:norm>
+							</choice>
+						</w>
+						<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>ha&fins;&drot;&inodot;</me:facs>
+								<me:dipl>hafdi</me:dipl>
+								<me:norm>hafði</me:norm>
+							</choice>
+						</w>
+						<num value="500" type="cardinal">
+							<choice>
+								<me:facs><pc>.</pc>&cacute;&cacute;&cacute;&cacute;&cacute;<pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>&cacute;&cacute;&cacute;&cacute;&cacute;<pc>.</pc></me:dipl>
+								<me:norm>500</me:norm>
+							</choice>
+						</num>
+						<w lemma="maðr" me:msa="xNC gM nP cG sI">
+							<choice>
+								<me:facs>m<am>&asup;</am></me:facs>
+								<me:dipl>m<ex>anna</ex></me:dipl>
+								<me:norm>manna</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+					</p>
+					<p>
+						<w lemma="síðan" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;&inodot;&drot;<am>&nsup;</am></me:facs>
+								<me:dipl>&slong;id<ex>an</ex></me:dipl>
+								<me:norm>Síðan</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>e<am>&er;</am></me:facs>
+								<me:dipl>e<ex>r</ex></me:dipl>
+								<me:norm>er</me:norm>
+							</choice>
+						</w>
+						<w lemma="hljóð" me:msa="xNC gN nS cG sI">
+							<choice>
+								<me:facs>hl&inodot;o<lb ed="ms" n="20"/>&drot;&slong;</me:facs>
+								<me:dipl>hlio<lb ed="ms" n="20"/>d&slong;</me:dipl>
+								<me:norm>hljóðs<lb ed="ms" n="20"/></me:norm>
+							</choice>
+						</w>
+						<w lemma="kveðja" me:msa="xVB fP tPT vA rP gN nS cN sI">
+							<choice>
+								<me:facs>qva&trot;&trot;</me:facs>
+								<me:dipl>qvatt</me:dipl>
+								<me:norm>kvatt</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="standa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&slong;&trot;en&drot;r</me:facs>
+								<me:dipl>&slong;tendr</me:dipl>
+								<me:norm>stendr</me:norm>
+							</choice>
+						</w>
+						<w lemma="upp" me:msa="xAV rP">
+							<choice>
+								<me:facs>v&pplig;<am>&combdot;</am></me:facs>
+								<me:dipl>vpp</me:dipl>
+								<me:norm>upp</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sigurðr" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&slong;&inodot;g<am>&rrotsup;</am>&drot;r</me:facs>
+								<me:dipl>&slong;ig<ex>vr</ex>dr</me:dipl>
+								<me:norm>Sigurðr</me:norm>
+							</choice>
+						</w>
+						<w lemma="ullstrengr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>vll &slong;&trot;<am>&esup;</am>&inodot;ngr</me:facs>
+								<me:dipl>vll &slong;t<ex>re</ex>ingr</me:dipl>
+								<me:norm>ullstrengr</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="taka" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&trot;ekr</me:facs>
+								<me:dipl>tekr</me:dipl>
+								<me:norm>tekr</me:norm>
+							</choice>
+						</w>
+						<w lemma="svá" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;vo</me:facs>
+								<me:dipl>&slong;vo</me:dipl>
+								<me:norm>svá</me:norm>
+							</choice>
+						</w>
+						<w lemma="til" me:msa="xAP">
+							<choice>
+								<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+								<me:dipl>t<ex>il</ex></me:dipl>
+								<me:norm>til</me:norm>
+							</choice>
+						</w>
+						<w lemma="mál" me:msa="xNC gN nS cG sI">
+							<choice>
+								<me:facs>mal&slong;</me:facs>
+								<me:dipl>mal&slong;</me:dipl>
+								<me:norm>máls</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>:</me:norm>
+							</choice>
+						</pc>
+						<q>
+							<w lemma="guð" me:msa="xNC gM nS cG sI">
+								<choice>
+									<me:facs>Gv&drot;&slong;</me:facs>
+									<me:dipl>Gvd&slong;</me:dipl>
+									<me:norm>Guðs</me:norm>
+								</choice>
+							</w>
+							<w lemma="kveðja" me:msa="xNC gF nS cA sI">
+								<choice>
+									<me:facs><am>.</am>q<am>.</am></me:facs>
+									<me:dipl>q<ex>vediv</ex></me:dipl>
+									<me:norm>kveðju</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="sinn" me:msa="xDP gF nS cA">
+								<choice>
+									<me:facs>&slong;&inodot;na</me:facs>
+									<me:dipl>&slong;ina</me:dipl>
+									<me:norm>sína</me:norm>
+								</choice>
+							</w>
+							<w lemma="senda" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>&slong;en&drot;&inodot;r</me:facs>
+									<me:dipl>&slong;endir</me:dipl>
+									<me:norm>sendir</me:norm>
+								</choice>
+							</w>
+							<lb n="21"/>
+							<w lemma="Magnús" me:msa="xNP gM nS cN sI">
+								<choice>
+									<me:facs>&mscap;agn<am>&us;</am></me:facs>
+									<me:dipl>&mscap;agn<ex>vs</ex></me:dipl>
+									<me:norm>Magnús</me:norm>
+								</choice>
+							</w>
+							<w lemma="konungr" me:msa="xNC gM nS cN sI">
+								<choice>
+									<me:facs><pc>.</pc>k<am>&bar;</am>r<pc>.</pc></me:facs>
+									<me:dipl><pc>.</pc>k<ex>onvng</ex>r<pc>.</pc></me:dipl>
+									<me:norm>konungr</me:norm>
+								</choice>
+							</w>
+							<w lemma="allr" me:msa="xDQ gU nP cD">
+								<choice>
+									<me:facs>avllv<am>&bar;</am></me:facs>
+									<me:dipl>avllv<ex>m</ex></me:dipl>
+									<me:norm>&oogon;llum</me:norm>
+								</choice>
+							</w>
+							<w lemma="sinn" me:msa="xDP gU nP cD">
+								<choice>
+									<me:facs>&slong;&inodot;nv<am>&bar;</am></me:facs>
+									<me:dipl>&slong;inv<ex>m</ex></me:dipl>
+									<me:norm>sínum</me:norm>
+								</choice>
+							</w>
+							<w lemma="vinr" me:msa="xNC gM nP cD sI">
+								<choice>
+									<me:facs>v&inodot;nv<am>&bar;</am></me:facs>
+									<me:dipl>vinv<ex>m</ex></me:dipl>
+									<me:norm>vinum</me:norm>
+								</choice>
+							</w>
+							<w lemma="allr" me:msa="xDQ gU nP cD">
+								<choice>
+									<me:facs>avllv<am>&bar;</am></me:facs>
+									<me:dipl>avllv<ex>m</ex></me:dipl>
+									<me:norm>&oogon;llum</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="lenda" me:msa="xVB fP tPT vA rP gU nP cD sI">
+								<choice>
+									<me:facs>len&drot;v<am>&bar;</am></me:facs>
+									<me:dipl>lendv<ex>m</ex></me:dipl>
+									<me:norm>lendum</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="maðr" me:msa="xNC gM nP cD sI">
+								<choice>
+									<me:facs>m<am>&bar;</am>m</me:facs>
+									<me:dipl>m<ex>onnv</ex>m</me:dipl>
+									<me:norm>m&oogon;nnum</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="ríkismaðr" me:msa="xNC gM nP cD sI">
+								<choice>
+									<me:facs>&rscap;&inodot;k&inodot;&slong;<pc>.</pc>m<am>&bar;</am>m</me:facs>
+									<me:dipl>&rscap;iki&slong;<pc>.</pc>m<ex>onnv</ex>m</me:dipl>
+									<me:norm>ríkism&oogon;nnum</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="svá" me:msa="xAV rP">
+								<choice>
+									<me:facs>&slong;vo</me:facs>
+									<me:dipl>&slong;vo</me:dipl>
+									<me:norm>svá</me:norm>
+								</choice>
+							</w>
+							<w lemma="allr" me:msa="xDQ gF nS cD">
+								<choice>
+									<me:facs>all&rrot;&inodot;</me:facs>
+									<me:dipl>allri</me:dipl>
+									<me:norm>allri</me:norm>
+								</choice>
+							</w>
+							<w lemma="alþýða" me:msa="xNC gF nS cD sI">
+								<choice>
+									<me:facs>alþy&drot;v</me:facs>
+									<me:dipl>alþydv</me:dipl>
+									<me:norm>alþýðu</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="þar" me:msa="xAV rP">
+								<choice>
+									<me:facs>þ<am>&rsup;</am></me:facs>
+									<me:dipl>þ<ex>ar</ex></me:dipl>
+									<me:norm>þar</me:norm>
+								</choice>
+							</w>
+							<w lemma="með" me:msa="xAP">
+								<choice>
+									<me:facs>m<am>&sem;</am></me:facs>
+									<me:dipl>m<ex>ed</ex></me:dipl>
+									<me:norm>með</me:norm>
+								</choice>
+							</w>
+							<lb n="22"/>
+							<w lemma="fagr" me:msa="xAJ rP gN nP cA sI">
+								<choice>
+									<me:facs>&fins;ogr</me:facs>
+									<me:dipl>fogr</me:dipl>
+									<me:norm>f&oogon;gr</me:norm>
+								</choice>
+							</w>
+							<w lemma="orð" me:msa="xNC gN nP cA sI">
+								<choice>
+									<me:facs>o&rrot;&drot;</me:facs>
+									<me:dipl>ord</me:dipl>
+									<me:norm>orð</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+							<w lemma="bjóða" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>by&drot;&rrot;</me:facs>
+									<me:dipl>bydr</me:dipl>
+									<me:norm>Býðr</me:norm>
+								</choice>
+							</w>
+							<w lemma="hann" me:msa="xPE p3 gM nS cN">
+								<choice>
+									<me:facs>h<am>&bar;</am>n</me:facs>
+									<me:dipl>h<ex>an</ex>n</me:dipl>
+									<me:norm>hann</me:norm>
+								</choice>
+							</w>
+							<w lemma="sik" me:msa="xPE cA">
+								<choice>
+									<me:facs>&slong;&inodot;k</me:facs>
+									<me:dipl>&slong;ik</me:dipl>
+									<me:norm>sik</me:norm>
+								</choice>
+							</w>
+							<w lemma="til" me:msa="xAP">
+								<choice>
+									<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+									<me:dipl>t<ex>il</ex></me:dipl>
+									<me:norm>til</me:norm>
+								</choice>
+							</w>
+							<w lemma="forvista" me:msa="xNC gF nS cG sI">
+								<choice>
+									<me:facs>&fins;<am>&osup;</am>ro&slong;&trot;v</me:facs>
+									<me:dipl>f<ex>or</ex>ro&slong;tv</me:dipl>
+									<me:norm>forystu</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="at" me:msa="xIM">
+								<choice>
+									<me:facs>a&trot;</me:facs>
+									<me:dipl>at</me:dipl>
+									<me:norm>at</me:norm>
+								</choice>
+							</w>
+							<w lemma="vera" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>v<am>&er;</am>a</me:facs>
+									<me:dipl>v<ex>er</ex>a</me:dipl>
+									<me:norm>vera</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="?" me:msa="xUA">
+								<choice>
+									<me:facs>b&inodot;o&rrot;&slong;&trot;</me:facs>
+									<me:dipl>bior&slong;t</me:dipl>
+									<me:norm>biorst</me:norm>
+								</choice>
+							</w><!-- Sic. -->
+							<w lemma="fyrir" me:msa="xAP">
+								<choice>
+									<me:facs>&fins;<am>&inodotsup;</am></me:facs>
+									<me:dipl>f<ex>irir</ex></me:dipl>
+									<me:norm>fyrir</me:norm>
+								</choice>
+							</w>
+							<w lemma="allr" me:msa="xDQ gU nP cD">
+								<choice>
+									<me:facs>avllv<am>&bar;</am></me:facs>
+									<me:dipl>avllv<ex>m</ex></me:dipl>
+									<me:norm>&oogon;llum</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="Noregr" me:msa="xNP gM nS cG sI">
+								<choice>
+									<me:facs>no&rrot;<am>&bar;</am></me:facs>
+									<me:dipl>nor<ex>eg&slong;</ex></me:dipl>
+									<me:norm>Noregs</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="maðr" me:msa="xNC gM nP cD sI">
+								<choice>
+									<me:facs>m<am>&bar;</am>m</me:facs>
+									<me:dipl>m<ex>onnv</ex>m</me:dipl>
+									<me:norm>m&oogon;nnum</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>Ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="vera" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>e<am>&er;</am></me:facs>
+									<me:dipl>e<ex>r</ex></me:dipl>
+									<me:norm>er</me:norm>
+								</choice>
+							</w>
+							<w lemma="góðr" me:msa="xAJ rP gN nS cN sI">
+								<choice>
+									<me:facs>go&trot;&trot;</me:facs>
+									<me:dipl>gott</me:dipl>
+									<me:norm>gott</me:norm>
+								</choice>
+							</w>
+							<w lemma="at" me:msa="xIM">
+								<choice>
+									<me:facs>a&trot;</me:facs>
+									<me:dipl>at</me:dipl>
+									<me:norm>at</me:norm>
+								</choice>
+							</w>
+							<w lemma="taka" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>&trot;<am>&asup;</am></me:facs>
+									<me:dipl>t<ex>aka</ex></me:dipl>
+									<me:norm>taka</me:norm>
+								</choice>
+							</w>
+							<lb n="23"/>
+							<w lemma="vel" me:msa="xAV rP">
+								<choice>
+									<me:facs>vel</me:facs>
+									<me:dipl>vel</me:dipl>
+									<me:norm>vel</me:norm>
+								</choice>
+							</w>
+							<w lemma="konungr" me:msa="xNC gM nS cG sI">
+								<choice>
+									<me:facs><pc>.</pc>&kslonglig;<am>&bar;</am><pc>.</pc></me:facs>
+									<me:dipl><pc>.</pc>k<ex>onvng&slong;</ex><pc>.</pc></me:dipl>
+									<me:norm>konungs</me:norm>
+								</choice>
+							</w>
+							<w lemma="mál" me:msa="xNC gN nS cD sI">
+								<choice>
+									<me:facs>mal&inodot;</me:facs>
+									<me:dipl>mali</me:dipl>
+									<me:norm>máli</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="því at" me:msa="xCS">
+								<choice>
+									<me:facs>þ<am>&bar;</am>&trot;</me:facs>
+									<me:dipl>þ<ex>vi a</ex>t</me:dipl>
+									<me:norm>því at</me:norm>
+								</choice>
+							</w>
+							<w lemma="svá" me:msa="xAV rP">
+								<choice>
+									<me:facs>&slong;vo</me:facs>
+									<me:dipl>&slong;vo</me:dipl>
+									<me:norm>svá</me:norm>
+								</choice>
+							</w>
+							<w lemma="vera" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>er</me:facs>
+									<me:dipl>er</me:dipl>
+									<me:norm>er</me:norm>
+								</choice>
+							</w>
+							<w lemma="s&oslashacute;miliga" me:msa="xAV rP">
+								<choice>
+									<me:facs>&slong;æm&inodot;l&inodot;ga</me:facs>
+									<me:dipl>&slong;æmiliga</me:dipl>
+									<me:norm>s&oslashacute;miliga</me:norm>
+								</choice>
+							</w>
+							<w lemma="bjóða" me:msa="xVB fP tPT vA rP gN nS cN sI">
+								<choice>
+									<me:facs>bo&drot;<am>&trotsup;</am></me:facs>
+									<me:dipl>bod<ex>it</ex></me:dipl>
+									<me:norm>boðit</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+						</q>
+					</p>
+					<p>
+						<w lemma="þá" me:msa="xAV rP">
+							<choice>
+								<me:facs>þa</me:facs>
+								<me:dipl>þa</me:dipl>
+								<me:norm>Þá</me:norm>
+							</choice>
+						</w>
+						<w lemma="standa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&slong;&trot;o&drot;</me:facs>
+								<me:dipl>&slong;tod</me:dipl>
+								<me:norm>stóð</me:norm>
+							</choice>
+						</w>
+						<w lemma="upp" me:msa="xAV rP">
+							<choice>
+								<me:facs>v&pplig;</me:facs>
+								<me:dipl>vpp</me:dipl>
+								<me:norm>upp</me:norm>
+							</choice>
+						</w>
+						<w lemma="maðr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>m<am>&rsup;</am></me:facs>
+								<me:dipl>m<ex>adr</ex></me:dipl>
+								<me:norm>maðr</me:norm>
+							</choice>
+						</w>
+						<w lemma="af" me:msa="xAP">
+							<choice>
+								<me:facs>a&fins;</me:facs>
+								<me:dipl>af</me:dipl>
+								<me:norm>af</me:norm>
+							</choice>
+						</w>
+						<w lemma="sá" me:msa="xDD gU nP cD">
+							<choice>
+								<me:facs>þ<am>&bar;</am>m</me:facs>
+								<me:dipl>þ<ex>ei</ex>m</me:dipl>
+								<me:norm>þeim</me:norm>
+							</choice>
+						</w>
+						<w lemma="Elfargrímar" me:msa="xNP gM nP cD sD">
+							<choice>
+								<me:facs>el&fins;<am>&rsup;</am> g<am>&inodotsup;</am>mvnv<am>&bar;</am></me:facs>
+								<me:dipl>elf<ex>ar</ex> g<ex>ri</ex>mvnv<ex>m</ex></me:dipl>
+								<me:norm>Elfargrímunum</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="sá" me:msa="xDD gM nS cN">
+							<choice>
+								<me:facs>&slong;a</me:facs>
+								<me:dipl>&slong;a</me:dipl>
+								<me:norm>Sá</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="mikill" me:msa="xAJ rP gM nS cN sI">
+							<choice>
+								<me:facs>m&inodot;k<lb ed="ms" n="24"/>&inodot;ll</me:facs>
+								<me:dipl>mik<lb ed="ms" n="24"/>ill</me:dipl>
+								<me:norm>mikill<lb ed="ms" n="24"/></me:norm>
+							</choice>
+						</w>
+						<w lemma="v&oogon;xtr" me:msa="xNC gM nS cD sI">
+							<choice>
+								<me:facs>vex&trot;&inodot;</me:facs>
+								<me:dipl>vexti</me:dipl>
+								<me:norm>vexti</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="ofsi" me:msa="xNC gM nS cG sI">
+							<choice>
+								<me:facs>o&fins;&slong;a</me:facs>
+								<me:dipl>of&slong;a</me:dipl>
+								<me:norm>ofsa</me:norm>
+							</choice>
+						</w>
+						<w lemma="þrekligr" me:msa="xAJ rP gM nS cN sI">
+							<choice>
+								<me:facs>þ<am>&esup;</am>kl&inodot;gr</me:facs>
+								<me:dipl>þ<ex>re</ex>kligr</me:dipl>
+								<me:norm>þrekligr</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>Hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="vera" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am></me:facs>
+								<me:dipl>v<ex>ar</ex></me:dipl>
+								<me:norm>var</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="loðkápa" me:msa="xNC gF nS cD sI">
+							<choice>
+								<me:facs>lo&drot; kapv</me:facs>
+								<me:dipl>lod kapv</me:dipl>
+								<me:norm>loðkápu</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>ha&fins;&drot;&inodot;</me:facs>
+								<me:dipl>hafdi</me:dipl>
+								<me:norm>hafði</me:norm>
+							</choice>
+						</w>
+						<w lemma="refði" me:msa="xNC gN nS cA sI">
+							<choice>
+								<me:facs>&rscap;e&fins;&drot;&inodot;</me:facs>
+								<me:dipl>&rscap;efdi</me:dipl>
+								<me:norm>refði</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="h&oogon;nd" me:msa="xNC gF nS cD sI">
+							<choice>
+								<me:facs>h<am>&bar;</am>&drot;&inodot;</me:facs>
+								<me:dipl>h<ex>en</ex>di</me:dipl>
+								<me:norm>hendi</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="reiða" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>re&inodot;&drot;&drot;&inodot;</me:facs>
+								<me:dipl>reiddi</me:dipl>
+								<me:norm>reiddi</me:norm>
+							</choice>
+						</w>
+						<w lemma="um" me:msa="xAP">
+							<choice>
+								<me:facs>v<am>&bar;</am></me:facs>
+								<me:dipl>v<ex>m</ex></me:dipl>
+								<me:norm>um</me:norm>
+							</choice>
+						</w>
+						<w lemma="&oogon;xl" me:msa="xNC gF nS cA sI">
+							<choice>
+								<me:facs>avxl</me:facs>
+								<me:dipl>avxl</me:dipl>
+								<me:norm>&oogon;xl</me:norm>
+							</choice>
+						</w>
+						<lb n="25"/>
+						<w lemma="sik" me:msa="xPE cD">
+							<choice>
+								<me:facs>&slong;er</me:facs>
+								<me:dipl>&slong;er</me:dipl>
+								<me:norm>sér</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="girzkr" me:msa="xAJ rP gM nS cA sI">
+							<choice>
+								<me:facs>g<am>&inodotsup;</am>zk<am>&nsup;</am></me:facs>
+								<me:dipl>g<ex>ir</ex>zk<ex>an</ex></me:dipl>
+								<me:norm>girzkan</me:norm>
+							</choice>
+						</w>
+						<w lemma="hattr" me:msa="xNC gM nS cA sI">
+							<choice>
+								<me:facs>ha&trot;&trot;</me:facs>
+								<me:dipl>hatt</me:dipl>
+								<me:norm>hatt</me:norm>
+							</choice>
+						</w>
+						<w lemma="á" me:msa="xAP">
+							<choice>
+								<me:facs>&aalig;</me:facs>
+								<me:dipl>&aalig;</me:dipl>
+								<me:norm>á</me:norm>
+							</choice>
+						</w>
+						<w lemma="h&oogon;fuð" me:msa="xNC gN nS cD sI">
+							<choice>
+								<me:facs>ho&fins;&drot;&inodot;</me:facs>
+								<me:dipl>hofdi</me:dipl>
+								<me:norm>h&oogon;fði</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>Hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="taka" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&trot;ok</me:facs>
+								<me:dipl>tok</me:dipl>
+								<me:norm>tók</me:norm>
+							</choice>
+						</w>
+						<w lemma="svá" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;vo</me:facs>
+								<me:dipl>&slong;vo</me:dipl>
+								<me:norm>svá</me:norm>
+							</choice>
+						</w>
+						<w lemma="til" me:msa="xAP">
+							<choice>
+								<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+								<me:dipl>t<ex>il</ex></me:dipl>
+								<me:norm>til</me:norm>
+							</choice>
+						</w>
+						<w lemma="mál" me:msa="xNC gN nS cG sI">
+							<choice>
+								<me:facs>mal&slong;</me:facs>
+								<me:dipl>mal&slong;</me:dipl>
+								<me:norm>máls</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>:</me:norm>
+							</choice>
+						</pc>
+						<q>
+							<w lemma="vera" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>era&trot;</me:facs>
+									<me:dipl>erat</me:dipl>
+									<me:norm>Erat</me:norm>
+								</choice>
+							</w>
+							<w lemma="hlunnr" me:msa="xNC gM nS cG sI">
+								<choice>
+									<me:facs>hlv<am>&bar;</am>&slong;</me:facs>
+									<me:dipl>hlv<ex>n</ex>&slong;</me:dipl>
+									<me:norm>hlunns</me:norm>
+								</choice>
+							</w>
+							<w lemma="vanr" me:msa="xAJ rP gN nS cN sI">
+								<choice>
+									<me:facs>v<am>&nsup;</am>&trot;</me:facs>
+									<me:dipl>v<ex>an</ex>t</me:dipl>
+									<me:norm>vant</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="kveða" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs><am>.</am>q<am>.</am></me:facs>
+									<me:dipl>q<ex>vad</ex></me:dipl>
+									<me:norm>kvað</me:norm>
+								</choice>
+							</w>
+							<w lemma="Refr" me:msa="xNP gM nS cN sI">
+								<choice>
+									<me:facs>&rscap;e&fins;r</me:facs>
+									<me:dipl>&rscap;efr</me:dipl>
+									<me:norm>Refr</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="draga" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>&drot;&rrot;o</me:facs>
+									<me:dipl>dro</me:dipl>
+									<me:norm>dró</me:norm>
+								</choice>
+							</w>
+							<w lemma="harpa" me:msa="xNC gF nS cA sI">
+								<choice>
+									<me:facs>hav<lb ed="ms" n="26"/>rpv</me:facs>
+									<me:dipl>hav<lb ed="ms" n="26"/>rpv</me:dipl>
+									<me:norm>h&oogon;rpu<lb ed="ms" n="26"/></me:norm>
+								</choice>
+							</w>
+							<w lemma="at" me:msa="xAP">
+								<choice>
+									<me:facs>a&trot;</me:facs>
+									<me:dipl>at</me:dipl>
+									<me:norm>at</me:norm>
+								</choice>
+							</w>
+							<w lemma="íss" me:msa="xNC gM nS cD sI">
+								<choice>
+									<me:facs>&inodot;&slong;&inodot;</me:facs>
+									<me:dipl>i&slong;i</me:dipl>
+									<me:norm>ísi</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+						</q>
+						<w lemma="eftir" me:msa="xAP">
+							<choice>
+								<me:facs>ep&trot;<am>&er;</am></me:facs>
+								<me:dipl>ept<ex>er</ex></me:dipl>
+								<me:norm>Eftir</me:norm>
+							</choice>
+						</w>
+						<w lemma="sá" me:msa="xDD gN nS cA">
+							<choice>
+								<me:facs>þ<am>&bar;</am></me:facs>
+								<me:dipl>þ<ex>at</ex></me:dipl>
+								<me:norm>þat</me:norm>
+							</choice>
+						</w>
+						<w lemma="setja" me:msa="xVB fF p3 nS vR">
+							<choice>
+								<me:facs>&slong;e&trot;&inodot;z&trot;</me:facs>
+								<me:dipl>&slong;etizt</me:dipl>
+								<me:norm>settisk</me:norm>
+							</choice>
+						</w>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>hann</me:norm>
+							</choice>
+						</w>
+						<w lemma="niðr" me:msa="xAV rP">
+							<choice>
+								<me:facs>n&inodot;&drot;&rrot;</me:facs>
+								<me:dipl>nidr</me:dipl>
+								<me:norm>niðr</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+					</p>
+					<p>
+						<w lemma="nøkkurr" me:msa="xDQ gN nS cD">
+							<choice>
+								<me:facs>nock<am>&rrotsup;</am>v</me:facs>
+								<me:dipl>nock<ex>vr</ex>v</me:dipl>
+								<me:norm>N&oogon;kkuru</me:norm>
+							</choice>
+						</w>
+						<w lemma="síð" me:msa="xAV rC">
+							<choice>
+								<me:facs>&slong;&inodot;&drot;<am>&rsup;</am></me:facs>
+								<me:dipl>&slong;id<ex>ar</ex></me:dipl>
+								<me:norm>síðar</me:norm>
+							</choice>
+						</w>
+						<w lemma="rísa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>re&inodot;&slong;</me:facs>
+								<me:dipl>rei&slong;</me:dipl>
+								<me:norm>reis</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm></me:norm>
+							</choice>
+						</pc>
+						<w lemma="Sigurðr" me:msa="xNP gM nS cN sI">
+							<choice>
+								<me:facs>&slong;&inodot;g<am>&rrotsup;</am>&drot;&rrot;</me:facs>
+								<me:dipl>&slong;ig<ex>vr</ex>dr</me:dipl>
+								<me:norm>Sigurðr</me:norm>
+							</choice>
+						</w>
+						<w lemma="upp" me:msa="xAV rP">
+							<choice>
+								<me:facs>v&pplig;</me:facs>
+								<me:dipl>vpp</me:dipl>
+								<me:norm>upp</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="taka" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>&trot;ok</me:facs>
+								<me:dipl>tok</me:dipl>
+								<me:norm>tók</me:norm>
+							</choice>
+						</w>
+						<w lemma="svá" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;vo</me:facs>
+								<me:dipl>&slong;vo</me:dipl>
+								<me:norm>svá</me:norm>
+							</choice>
+						</w>
+						<w lemma="til" me:msa="xAP">
+							<choice>
+								<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+								<me:dipl>t<ex>il</ex></me:dipl>
+								<me:norm>til</me:norm>
+							</choice>
+						</w>
+						<w lemma="mál" me:msa="xNC gN nS cG sI">
+							<choice>
+								<me:facs>m<lb ed="ms" n="27"/>al&slong;</me:facs>
+								<me:dipl>m<lb ed="ms" n="27"/>al&slong;</me:dipl>
+								<me:norm>máls<lb ed="ms" n="27"/></me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>:</me:norm>
+							</choice>
+						</pc>
+						<q>
+							<w lemma="allógóðr" me:msa="xAJ rP gF nP cA sI">
+								<choice>
+									<me:facs>allogo&drot;ar</me:facs>
+									<me:dipl>allogodar</me:dipl>
+									<me:norm>Allógóðar</me:norm>
+								</choice>
+							</w>
+							<w lemma="tenging" me:msa="xNC gF nP cA sI">
+								<choice>
+									<me:facs>&trot;e&inodot;ng&inodot;ng<am>&rsup;</am></me:facs>
+									<me:dipl>teinging<ex>ar</ex></me:dipl>
+									<me:norm>tengingar</me:norm>
+								</choice>
+							</w>
+							<w lemma="konungr" me:msa="xNC gM nS cG sI">
+								<choice>
+									<me:facs><pc>.</pc>&kslonglig;<am>&bar;</am><pc>.</pc></me:facs>
+									<me:dipl><pc>.</pc>k<ex>onvng&slong;</ex><pc>.</pc></me:dipl>
+									<me:norm>konungs</me:norm>
+								</choice>
+							</w>
+							<w lemma="mál" me:msa="xNC gN nP cG sI">
+								<choice>
+									<me:facs>mala</me:facs>
+									<me:dipl>mala</me:dipl>
+									<me:norm>mála</me:norm>
+								</choice>
+							</w>
+							<w lemma="hafa" me:msa="xVB fF p1 nP vA">
+								<choice>
+									<me:facs>ho&fins;v<am>&bar;</am></me:facs>
+									<me:dipl>hofv<ex>m</ex></me:dipl>
+									<me:norm>h&oogon;fum</me:norm>
+								</choice>
+							</w>
+							<w lemma="vér" me:msa="xPE p1 nP cN">
+								<choice>
+									<me:facs>v<am>&er;</am></me:facs>
+									<me:dipl>v<ex>er</ex></me:dipl>
+									<me:norm>vér</me:norm>
+								</choice>
+							</w>
+							<w lemma="ór" me:msa="xAP">
+								<choice>
+									<me:facs>vr</me:facs>
+									<me:dipl>vr</me:dipl>
+									<me:norm>ór</me:norm>
+								</choice>
+							</w>
+							<w lemma="flokkr" me:msa="xNC gM nS cD sI">
+								<choice>
+									<me:facs>&fins;lock&inodot;</me:facs>
+									<me:dipl>flocki</me:dipl>
+									<me:norm>flokki</me:norm>
+								</choice>
+							</w>
+							<w lemma="sá" me:msa="xDD gU nP cG">
+								<choice>
+									<me:facs>þ<am>&bar;</am>ra</me:facs>
+									<me:dipl>þ<ex>ei</ex>ra</me:dipl>
+									<me:norm>þeira</me:norm>
+								</choice>
+							</w>
+							<w lemma="Elfargrímar" me:msa="xNP gM nP cG sD">
+								<choice>
+									<me:facs>el&fins;<am>&rsup;</am> g<am>&inodotsup;</am>m<am>&nsup;</am>a</me:facs>
+									<me:dipl>elf<ex>ar</ex> g<ex>ri</ex>m<ex>an</ex>a</me:dipl>
+									<me:norm>Elfargrímanna</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="miðla" me:msa="xVB fF p1 nP vA">
+								<choice>
+									<me:facs>m&inodot;&drot;lv<am>&bar;</am></me:facs>
+									<me:dipl>midlv<ex>m</ex></me:dipl>
+									<me:norm>miðlum</me:norm>
+								</choice>
+							</w>
+							<lb n="28"/>
+							<w lemma="vingjarnliga" me:msa="xAV rC">
+								<choice>
+									<me:facs>v&inodot;n g&inodot;<am>&rsup;</am>nl&inodot;g<am>&rsup;</am></me:facs>
+									<me:dipl>vin gi<ex>ar</ex>nlig<ex>ar</ex></me:dipl>
+									<me:norm>vingjarnligar</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+							<w lemma="en" me:msa="xCC">
+								<choice>
+									<me:facs>en<am>&bar;</am></me:facs>
+									<me:dipl>en<ex>n</ex></me:dipl>
+									<me:norm>En</me:norm>
+								</choice>
+							</w>
+							<w lemma="sjalfr" me:msa="xDQ gM nS cA">
+								<choice>
+									<me:facs>&slong;&inodot;al&fins;<am>&nsup;</am></me:facs>
+									<me:dipl>&slong;ialf<ex>an</ex></me:dipl>
+									<me:norm>sjalfan</me:norm>
+								</choice>
+							</w>
+							<w lemma="sik" me:msa="xPE cA">
+								<choice>
+									<me:facs>&slong;&inodot;k</me:facs>
+									<me:dipl>&slong;ik</me:dipl>
+									<me:norm>sik</me:norm>
+								</choice>
+							</w>
+							<w lemma="sýna" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>&slong;yn<am>&er;</am></me:facs>
+									<me:dipl>&slong;yn<ex>er</ex></me:dipl>
+									<me:norm>sýnir</me:norm>
+								</choice>
+							</w>
+							<w lemma="hverr" me:msa="xDQ gM nS cN">
+								<choice>
+									<me:facs>hv<am>&er;</am></me:facs>
+									<me:dipl>hv<ex>er</ex></me:dipl>
+									<me:norm>hverr</me:norm>
+								</choice>
+							</w>
+							<w lemma="í" me:msa="xAP">
+								<choice>
+									<me:facs>&inodot;</me:facs>
+									<me:dipl>i</me:dipl>
+									<me:norm>í</me:norm>
+								</choice>
+							</w>
+							<w lemma="þessi" me:msa="xDD gN nS cD">
+								<choice>
+									<me:facs>þe&slong;&slong;v</me:facs>
+									<me:dipl>þe&slong;&slong;v</me:dipl>
+									<me:norm>þessu</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="verða" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>v<am>&er;</am>&drot;&rrot;</me:facs>
+									<me:dipl>v<ex>er</ex>dr</me:dipl>
+									<me:norm>verðr</me:norm>
+								</choice>
+							</w>
+							<w lemma="enn" me:msa="xAV rP">
+								<choice>
+									<me:facs>en<am>&bar;</am></me:facs>
+									<me:dipl>en<ex>n</ex></me:dipl>
+									<me:norm>enn</me:norm>
+								</choice>
+							</w>
+							<w lemma="at" me:msa="xIM">
+								<choice>
+									<me:facs>a&trot;</me:facs>
+									<me:dipl>at</me:dipl>
+									<me:norm>at</me:norm>
+								</choice>
+							</w>
+							<w lemma="gera" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>g&inodot;o&rrot;a</me:facs>
+									<me:dipl>giora</me:dipl>
+									<me:norm>gøra</me:norm>
+								</choice>
+							</w>
+							<w lemma="berr" me:msa="xAJ rC gN nS cA sD">
+								<choice>
+									<me:facs>b<am>&er;</am>ara</me:facs>
+									<me:dipl>b<ex>er</ex>ara</me:dipl>
+									<me:norm>berara</me:norm>
+								</choice>
+							</w>
+							<w lemma="konungr" me:msa="xNC gM nS cG sI">
+								<choice>
+									<me:facs><pc>.</pc>&kslonglig;<am>&bar;</am><pc>.</pc></me:facs>
+									<me:dipl><pc>.</pc>k<ex>onvng&slong;</ex><pc>.</pc></me:dipl>
+									<me:norm>konungs</me:norm>
+								</choice>
+							</w>
+							<w lemma="ørendi" me:msa="xNC gN nS cA sI">
+								<choice>
+									<me:facs>ey&rrot;&inodot;n&drot;&inodot;</me:facs>
+									<me:dipl>eyrindi</me:dipl>
+									<me:norm>ørendi</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="því at" me:msa="xCS">
+								<choice>
+									<me:facs>þ<am>&bar;</am>&trot;</me:facs>
+									<me:dipl>þ<ex>vi a</ex>t</me:dipl>
+									<me:norm>því at</me:norm>
+								</choice>
+							</w>
+							<lb n="29"/>
+							<w lemma="hann" me:msa="xPE p3 gM nS cN">
+								<choice>
+									<me:facs>h<am>&bar;</am>n</me:facs>
+									<me:dipl>h<ex>an</ex>n</me:dipl>
+									<me:norm>hann</me:norm>
+								</choice>
+							</w>
+							<w lemma="beiða" me:msa="xVB fF p3 nS vR">
+								<choice>
+									<me:facs>be&inodot;&drot;&inodot;z&trot;</me:facs>
+									<me:dipl>beidizt</me:dipl>
+									<me:norm>beiðisk</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="sannr" me:msa="xAJ rP gU nP cG sI">
+								<choice>
+									<me:facs>&slong;an<am>&bar;</am>&rrot;a</me:facs>
+									<me:dipl>&slong;an<ex>n</ex>ra</me:dipl>
+									<me:norm>sannra</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="landsskyld" me:msa="xNC gF nP cG sI">
+								<choice>
+									<me:facs>lan&drot;z<pc>.</pc>&slong;kyll&drot;a</me:facs>
+									<me:dipl>landz<pc>.</pc>&slong;kyllda</me:dipl>
+									<me:norm>landsskylda</me:norm>
+								</choice>
+							</w>
+							<w lemma="af" me:msa="xAP">
+								<choice>
+									<me:facs>a&fins;</me:facs>
+									<me:dipl>af</me:dipl>
+									<me:norm>af</me:norm>
+								</choice>
+							</w>
+							<w lemma="ríkismaðr" me:msa="xNC gM nP cD sI">
+								<choice>
+									<me:facs>&rscap;&inodot;k&inodot;&slong; m<am>&bar;</am>m</me:facs>
+									<me:dipl>&rscap;iki&slong; m<ex>onnv</ex>m</me:dipl>
+									<me:norm>ríkism&oogon;nnum</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="leiðangrsgerð" me:msa="xNC gF nS cG sI">
+								<choice>
+									<me:facs>le&inodot;&drot;an<am>&bar;</am>gr g&inodot;<am>&osup;</am>&drot;<am>&rsup;</am></me:facs>
+									<me:dipl>leidan<ex>n</ex>gr<supplied reason="emendation">&slong;</supplied> gi<ex>or</ex>d<ex>ar</ex></me:dipl>
+									<me:norm>leiðangrsgørðar</me:norm>
+								</choice>
+							</w>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="þar" me:msa="xAV rP">
+								<choice>
+									<me:facs>þ<am>&rsup;</am></me:facs>
+									<me:dipl>þ<ex>ar</ex></me:dipl>
+									<me:norm>þar</me:norm>
+								</choice>
+							</w>
+							<w lemma="með" me:msa="xAP">
+								<choice>
+									<me:facs>m<am>&sem;</am></me:facs>
+									<me:dipl>m<ex>ed</ex></me:dipl>
+									<me:norm>með</me:norm>
+								</choice>
+							</w>
+							<w lemma="annarr" me:msa="xDQ gM nS cG">
+								<choice>
+									<me:facs>an<am>&bar;</am><lb ed="ms" n="30"/>ar&slong;</me:facs>
+									<me:dipl>an<ex>n</ex><lb ed="ms" n="30"/>ar&slong;</me:dipl>
+									<me:norm>annars<lb ed="ms" n="30"/></me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="sómi" me:msa="xNC gM nS cG sI">
+								<choice>
+									<me:facs>&slong;oma</me:facs>
+									<me:dipl>&slong;oma</me:dipl>
+									<me:norm>sóma</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>.</me:norm>
+								</choice>
+							</pc>
+							<w lemma="renna" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>ren<am>&bar;</am>&inodot;</me:facs>
+									<me:dipl>ren<ex>n</ex>i</me:dipl>
+									<me:norm>Renni</me:norm>
+								</choice>
+							</w>
+							<w lemma="þar" me:msa="xAV rP">
+								<choice>
+									<me:facs>þ<am>&rsup;</am></me:facs>
+									<me:dipl>þ<ex>ar</ex></me:dipl>
+									<me:norm>þar</me:norm>
+								</choice>
+							</w>
+							<w lemma="hverr" me:msa="xDQ gM nS cN">
+								<choice>
+									<me:facs>hv<am>&er;</am></me:facs>
+									<me:dipl>hv<ex>er</ex></me:dipl>
+									<me:norm>hverr</me:norm>
+								</choice>
+							</w>
+							<w lemma="hugr" me:msa="xNC gM nP cD sI">
+								<choice>
+									<me:facs>hvgv<am>&bar;</am></me:facs>
+									<me:dipl>hvgv<ex>m</ex></me:dipl>
+									<me:norm>hugum</me:norm>
+								</choice>
+							</w>
+							<w lemma="til" me:msa="xAP">
+								<choice>
+									<me:facs>&trot;<am>&inodotsup;</am></me:facs>
+									<me:dipl>t<ex>il</ex></me:dipl>
+									<me:norm>til</me:norm>
+								</choice>
+							</w>
+							<w lemma="sik" me:msa="xPE cG">
+								<choice>
+									<me:facs>&slong;&inodot;n<am>&bar;</am></me:facs>
+									<me:dipl>&slong;in<ex>n</ex></me:dipl>
+									<me:norm>sín</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="hversu" me:msa="xAQ">
+								<choice>
+									<me:facs>hv<am>&er;</am>&slong;v</me:facs>
+									<me:dipl>hv<ex>er</ex>&slong;v</me:dipl>
+									<me:norm>hversu</me:norm>
+								</choice>
+							</w>
+							<w lemma="sá" me:msa="xDD gN nS cA">
+								<choice>
+									<me:facs>þ<am>&bar;</am></me:facs>
+									<me:dipl>þ<ex>at</ex></me:dipl>
+									<me:norm>þat</me:norm>
+								</choice>
+							</w>
+							<w lemma="munu" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>mvn</me:facs>
+									<me:dipl>mvn</me:dipl>
+									<me:norm>mun</me:norm>
+								</choice>
+							</w>
+							<w lemma="gera" me:msa="xVB fP tPT vA rP gN nS cA sI">
+								<choice>
+									<me:facs>g&inodot;<am>&osup;</am>&trot;</me:facs>
+									<me:dipl>gi<ex>or</ex>t</me:dipl>
+									<me:norm>gørt</me:norm>
+								</choice>
+							</w>
+							<w lemma="hafa" me:msa="xVB fI vA">
+								<choice>
+									<me:facs>ha&fins;va</me:facs>
+									<me:dipl>hafva</me:dipl>
+									<me:norm>hafa</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="ok" me:msa="xCC">
+								<choice>
+									<me:facs><am>&etslash;</am></me:facs>
+									<me:dipl><ex>ok</ex></me:dipl>
+									<me:norm>ok</me:norm>
+								</choice>
+							</w>
+							<w lemma="unna" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>vn<am>&bar;</am>&inodot;</me:facs>
+									<me:dipl>vn<ex>n</ex>i</me:dipl>
+									<me:norm>unni</me:norm>
+								</choice>
+							</w>
+							<w lemma="nú" me:msa="xAV rP">
+								<choice>
+									<me:facs>nv</me:facs>
+									<me:dipl>nv</me:dipl>
+									<me:norm>nú</me:norm>
+								</choice>
+							</w>
+							<w lemma="sjalfr" me:msa="xDQ gM nS cD">
+								<choice>
+									<me:facs>&slong;&inodot;al&fins;v<am>&bar;</am></me:facs>
+									<me:dipl>&slong;ialfv<ex>m</ex></me:dipl>
+									<me:norm>sj&oogon;lfum</me:norm>
+								</choice>
+							</w>
+							<lb n="31"/>
+							<w lemma="sik" me:msa="xPE cD">
+								<choice>
+									<me:facs>&slong;er</me:facs>
+									<me:dipl>&slong;er</me:dipl>
+									<me:norm>sér</me:norm>
+								</choice>
+							</w>
+							<w lemma="sómi" me:msa="xNC gM nS cG sI">
+								<choice>
+									<me:facs>&slong;oma</me:facs>
+									<me:dipl>&slong;oma</me:dipl>
+									<me:norm>sóma</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="en" me:msa="xCC">
+								<choice>
+									<me:facs>en<am>&bar;</am></me:facs>
+									<me:dipl>en<ex>n</ex></me:dipl>
+									<me:norm>en</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs>.</me:facs>
+									<me:dipl>.</me:dipl>
+									<me:norm></me:norm>
+								</choice>
+							</pc>
+							<w lemma="konungr" me:msa="xNC gM nS cD sI">
+								<choice>
+									<me:facs>k<am>&bar;</am>g&inodot;</me:facs>
+									<me:dipl>k<ex>onvn</ex>gi</me:dipl>
+									<me:norm>konungi</me:norm>
+								</choice>
+							</w>
+							<w lemma="várr" me:msa="xDP gM nS cD">
+								<choice>
+									<me:facs>vo&rrot;v<am>&bar;</am></me:facs>
+									<me:dipl>vorv<ex>m</ex></me:dipl>
+									<me:norm>várum</me:norm>
+								</choice>
+							</w>
+							<w lemma="réttr" me:msa="xAJ rP gU nP cG sI">
+								<choice>
+									<me:facs>&rscap;e&trot;&trot;<am>&ra;</am></me:facs>
+									<me:dipl>&rscap;ett<ex>ra</ex></me:dipl>
+									<me:norm>réttra</me:norm>
+								</choice>
+							</w>
+							<w lemma="lag" me:msa="xNC gN nP cG sI">
+								<choice>
+									<me:facs>laga</me:facs>
+									<me:dipl>laga</me:dipl>
+									<me:norm>laga</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="ef" me:msa="xCS">
+								<choice>
+									<me:facs>e&fins;</me:facs>
+									<me:dipl>ef</me:dipl>
+									<me:norm>ef</me:norm>
+								</choice>
+							</w>
+							<w lemma="áðr" me:msa="xAV rC">
+								<choice>
+									<me:facs>a&drot;r</me:facs>
+									<me:dipl>adr</me:dipl>
+									<me:norm>áðr</me:norm>
+								</choice>
+							</w>
+							<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>he&fins;v<am>&er;</am></me:facs>
+									<me:dipl>hefv<ex>er</ex></me:dipl>
+									<me:norm>hefir</me:norm>
+								</choice>
+							</w>
+							<w lemma="á" me:msa="xAP">
+								<choice>
+									<me:facs>&aalig;</me:facs>
+									<me:dipl>&aalig;</me:dipl>
+									<me:norm>á</me:norm>
+								</choice>
+							</w>
+							<w lemma="skorta" me:msa="xVB fP tPT vA rP gN nS cA sI">
+								<choice>
+									<me:facs>&slong;k<am>&osup;</am>&trot;</me:facs>
+									<me:dipl>&slong;k<ex>or</ex>t</me:dipl>
+									<me:norm>skort</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+						</q>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="setja" me:msa="xVB fF p3 nS vR">
+							<choice>
+								<me:facs>&slong;ez&trot;</me:facs>
+								<me:dipl>&slong;ezt</me:dipl>
+								<me:norm>sezk</me:norm>
+							</choice>
+						</w>
+						<w lemma="niðr" me:msa="xAV rP">
+							<choice>
+								<me:facs>n&inodot;&drot;&rrot;</me:facs>
+								<me:dipl>nidr</me:dipl>
+								<me:norm>niðr</me:norm>
+							</choice>
+						</w>
+						<w lemma="síðan" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;&inodot;&drot;<am>&nsup;</am></me:facs>
+								<me:dipl>&slong;id<ex>an</ex></me:dipl>
+								<me:norm>síðan</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>.</me:norm>
+							</choice>
+						</pc>
+					</p>
+					<p>
+						<w lemma="hinn" me:msa="xDD gM nS cN">
+							<choice>
+								<me:facs>h&inodot;n<am>&bar;</am></me:facs>
+								<me:dipl>hin<ex>n</ex></me:dipl>
+								<me:norm>Hinn</me:norm>
+							</choice>
+						</w>
+						<lb n="32"/>
+						<w lemma="sami" me:msa="xAJ rP gM nS cN sD">
+							<choice>
+								<me:facs>&slong;am&inodot;</me:facs>
+								<me:dipl>&slong;ami</me:dipl>
+								<me:norm>sami</me:norm>
+							</choice>
+						</w>
+						<w lemma="maðr" me:msa="xNC gM nS cN sI">
+							<choice>
+								<me:facs>m<am>&rsup;</am></me:facs>
+								<me:dipl>m<ex>adr</ex></me:dipl>
+								<me:norm>maðr</me:norm>
+							</choice>
+						</w>
+						<w lemma="rísa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>re&inodot;&slong;</me:facs>
+								<me:dipl>rei&slong;</me:dipl>
+								<me:norm>reis</me:norm>
+							</choice>
+						</w>
+						<w lemma="upp" me:msa="xAV rP">
+							<choice>
+								<me:facs>v&pplig;</me:facs>
+								<me:dipl>vpp</me:dipl>
+								<me:norm>upp</me:norm>
+							</choice>
+						</w>
+						<w lemma="í" me:msa="xAP">
+							<choice>
+								<me:facs>&inodot;</me:facs>
+								<me:dipl>i</me:dipl>
+								<me:norm>í</me:norm>
+							</choice>
+						</w>
+						<w lemma="flokkr" me:msa="xNC gM nS cD sI">
+							<choice>
+								<me:facs>&fins;lock&inodot;</me:facs>
+								<me:dipl>flocki</me:dipl>
+								<me:norm>flokki</me:norm>
+							</choice>
+						</w>
+						<w lemma="sá" me:msa="xDD gU nP cG">
+							<choice>
+								<me:facs>þ<am>&bar;</am>ra</me:facs>
+								<me:dipl>þ<ex>ei</ex>ra</me:dipl>
+								<me:norm>þeira</me:norm>
+							</choice>
+						</w>
+						<w lemma="Elfargrímar" me:msa="xNP gM nP cG sD">
+							<choice>
+								<me:facs>el&fins;<am>&rsup;</am> g<am>&inodotsup;</am>m<am>&nsup;</am>a</me:facs>
+								<me:dipl>elf<ex>ar</ex> g<ex>ri</ex>m<ex>an</ex>a</me:dipl>
+								<me:norm>Elfargrímanna</me:norm>
+							</choice>
+						</w>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="varpa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>v<am>&rsup;</am>par</me:facs>
+								<me:dipl>v<ex>ar</ex>par</me:dipl>
+								<me:norm>varpar</me:norm>
+							</choice>
+						</w>
+						<w lemma="nøkkurr" me:msa="xDQ gN nS cA">
+							<choice>
+								<me:facs>nockv&trot;</me:facs>
+								<me:dipl>nockvt</me:dipl>
+								<me:norm>n&oogon;kkut</me:norm>
+							</choice>
+						</w>
+						<w lemma="svá" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;vo</me:facs>
+								<me:dipl>&slong;vo</me:dipl>
+								<me:norm>svá</me:norm>
+							</choice>
+						</w>
+						<w lemma="hattr" me:msa="xNC gM nS cD sD">
+							<choice>
+								<me:facs>ha&trot;&trot;&inodot;nv<am>&bar;</am></me:facs>
+								<me:dipl>hattinv<ex>m</ex></me:dipl>
+								<me:norm>hattinum</me:norm>
+							</choice>
+						</w>
+						<w lemma="er" me:msa="xCS">
+							<choice>
+								<me:facs>er</me:facs>
+								<me:dipl>er</me:dipl>
+								<me:norm>er</me:norm>
+							</choice>
+						</w>
+						<w lemma="hann" me:msa="xPE p3 gM nS cN">
+							<choice>
+								<me:facs>h<am>&bar;</am>n</me:facs>
+								<me:dipl>h<ex>an</ex>n</me:dipl>
+								<me:norm>hann</me:norm>
+							</choice>
+						</w>
+						<lb n="33"/>
+						<w lemma="hafa" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs>ha&fins;&drot;&inodot;</me:facs>
+								<me:dipl>hafdi</me:dipl>
+								<me:norm>hafði</me:norm>
+							</choice>
+						</w>
+						<w lemma="á" me:msa="xAP">
+							<choice>
+								<me:facs>&aalig;</me:facs>
+								<me:dipl>&aalig;</me:dipl>
+								<me:norm>á</me:norm>
+							</choice>
+						</w>
+						<w lemma="h&oogon;fuð" me:msa="xNC gN nS cD sD">
+							<choice>
+								<me:facs>hav&fins;&drot;&inodot;nv</me:facs>
+								<me:dipl>havfdinv</me:dipl>
+								<me:norm>h&oogon;fðinu</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs></me:facs>
+								<me:dipl></me:dipl>
+								<me:norm>,</me:norm>
+							</choice>
+						</pc>
+						<w lemma="ok" me:msa="xCC">
+							<choice>
+								<me:facs><am>&etslash;</am></me:facs>
+								<me:dipl><ex>ok</ex></me:dipl>
+								<me:norm>ok</me:norm>
+							</choice>
+						</w>
+						<w lemma="m&aeligacute;la" me:msa="xVB fF p3 nS vA">
+							<choice>
+								<me:facs><pc>.</pc>ml<am>&bar;</am><pc>.</pc></me:facs>
+								<me:dipl><pc>.</pc>m<ex>æ</ex>l<ex>ti</ex><pc>.</pc></me:dipl>
+								<me:norm>m&aeligacute;lti</me:norm>
+							</choice>
+						</w>
+						<w lemma="svá" me:msa="xAV rP">
+							<choice>
+								<me:facs>&slong;vo</me:facs>
+								<me:dipl>&slong;vo</me:dipl>
+								<me:norm>svá</me:norm>
+							</choice>
+						</w>
+						<pc>
+							<choice>
+								<me:facs>.</me:facs>
+								<me:dipl>.</me:dipl>
+								<me:norm>:</me:norm>
+							</choice>
+						</pc>
+						<q>
+							<w lemma="sn&aeligacute;liga" me:msa="xAV rP">
+								<choice>
+									<me:facs>&slong;n&inodot;ol&inodot;ga</me:facs>
+									<me:dipl>&slong;nioliga</me:dipl>
+									<me:norm>Snjóliga</me:norm>
+								</choice>
+							</w>
+							<w lemma="snugga" me:msa="xVB fF p3 nS vA">
+								<choice>
+									<me:facs>&slong;nvgg<am>&inodotsup;</am></me:facs>
+									<me:dipl>&slong;nvgg<ex>ir</ex></me:dipl>
+									<me:norm>snuggir</me:norm>
+								</choice>
+							</w>
+							<w lemma="sveinn" me:msa="xNC gM nP cN sI">
+								<choice>
+									<me:facs>&slong;ve&inodot;n<am>&rsup;</am></me:facs>
+									<me:dipl>&slong;vein<ex>ar</ex></me:dipl>
+									<me:norm>sveinar</me:norm>
+								</choice>
+							</w>
+							<w lemma="kveða" me:msa="xVB fF p3 nP vA">
+								<choice>
+									<me:facs>qvo&drot;v</me:facs>
+									<me:dipl>qvodv</me:dipl>
+									<me:norm>kváðu</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm>,</me:norm>
+								</choice>
+							</pc>
+							<w lemma="finnr" me:msa="xNC gM nP cN sI">
+								<choice>
+									<me:facs>&fins;&inodot;n<am>&bar;</am>a&rrot;</me:facs>
+									<me:dipl>fin<ex>n</ex>ar</me:dipl>
+									<me:norm>finnar</me:norm>
+								</choice>
+							</w>
+							<w lemma="eiga" me:msa="xVB fF p3 nP vA">
+								<choice>
+									<me:facs>a&trot;&trot;v</me:facs>
+									<me:dipl>attv</me:dipl>
+									<me:norm>áttu</me:norm>
+								</choice>
+							</w>
+							<w lemma="?" me:msa="xUA">
+								<choice>
+									<me:facs>an&drot;<am>&ra;</am></me:facs>
+									<me:dipl>and<ex>ra</ex></me:dipl>
+									<me:norm>andra</me:norm>
+								</choice>
+							</w>
+							<pc>
+								<choice>
+									<me:facs></me:facs>
+									<me:dipl></me:dipl>
+									<me:norm> &hellip;</me:norm>
+								</choice>
+							</pc><!-- Efter fol. 48 saknas ca tre sidor av slutet av Sveinka þáttr, d.v.s. en fol. samt ena sidan av ytterligare en. -->
+						</q>
+					</p>
+				</div>
+			</div>
+        </body>
+    </text>
+</TEI>
