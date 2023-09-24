@@ -91,6 +91,8 @@ def _state_initializer():
         st.session_state.click_model_load = False
     if "model_quant_done" not in st.session_state:
         st.session_state.model_quant_done = False
+    if "display_gallery" not in st.session_state:
+        st.session_state.display_gallery = False
 
 
 def _click_model_quantifier():
@@ -112,12 +114,18 @@ def onp_n2v():
         model_select = st.selectbox(label="Select a model to display and query", options=all_models["File Name"].to_list())
         _show_model(all_models, model_select, name_resolution_dict)
     elif gallery_table == "Gallery":
-        st.write("Hello")
-        model_meta = "asdf"
-        files_list, label_list = n2v.get_all_plot_paths()
-        img = image_select("All available plots", images=files_list, captions=label_list)
-        model_select = n2v.get_model_from_plot_path(img)
-        _show_model(all_models, model_select, name_resolution_dict)
+        stop_docs = st.radio("Show with or without stopdocs:", options=["y", "n"])
+        date_range = st.radio("Select date range", options=["1-1325", "1-1536", "1200-1325"])
+        date_range = date_range.split("-")
+        st.write(date_range)
+        date_range_tuple = int(date_range[0]), int(date_range[1])
+        gallery_df = n2v.get_all_plot_paths(date_range_tuple, stop_docs)
+        if st.button("Load filtered Gallery"):
+            st.session_state.display_gallery = True
+        if st.session_state.display_gallery:
+            img = image_select("All available plots", images=gallery_df["Path"].to_list(), captions=gallery_df["Label"].to_list())
+            model_select = n2v.get_model_from_plot_path(img)
+            _show_model(all_models, model_select, name_resolution_dict)
     elif gallery_table == "Advanced":
         quantify_models(name_resolution_dict, all_models)
 
@@ -157,6 +165,7 @@ def _show_model(all_models: pd.DataFrame, model_select: str, names_dict: dict[st
     model = n2v.load_n2v_model(model_select)
     img_path = n2v.get_plot(model_select)
     st.image(img_path)
+    st.write(selected_model_metadata)
     query_options = n2v.get_applicable_witnesses(date_range_init=selected_model_metadata['Date Range'], name_lookup=names_dict)
     query_model = st.selectbox(label="Select a witness to retrieve learned similarities", options=list(query_options.keys()))
     how_many = st.number_input(label="Load top n of the most similar witnesses", value=10)
@@ -178,8 +187,10 @@ def _show_model(all_models: pd.DataFrame, model_select: str, names_dict: dict[st
 
     fig, x = plt.subplots()
 
-    x.pie(sizes, labels=labels, autopct='%1.1f%%', shadow=True, startangle=140)
+    x.pie(sizes, autopct='%1.1f%%', shadow=True, startangle=140, pctdistance=0.8)
     x.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+    x.legend(labels, loc="best")
+
 
     # Display the pie chart
     st.pyplot(fig)
