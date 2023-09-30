@@ -12,3 +12,4 @@ matplotlib
 openpyxl
 spacy
 gensim
+streamlit_image_select
