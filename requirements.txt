@@ -10,3 +10,4 @@ numpy
 st-annotated-text
 matplotlib
 openpyxl
+spacy

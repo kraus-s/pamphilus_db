@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from functools import reduce as red
 from utils.util import read_tei
-import spacy
 from utils.constants import *
 
 
