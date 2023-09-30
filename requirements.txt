@@ -11,3 +11,4 @@ st-annotated-text
 matplotlib
 openpyxl
 spacy
+gensim
