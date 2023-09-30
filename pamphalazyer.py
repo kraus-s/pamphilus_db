@@ -294,58 +294,59 @@ def para_display(data: myData):
 
 
 def display_para():
-    graph = GraphDatabase.driver("neo4j://localhost:7687", auth=('neo4j', '12'))
-    verseSelect = st.text_input("Select Verse or Verserange")
-    txtWits = ['B1', 'P3', 'To', 'W1', 'DG4-7']
-    txtSelect = st.multiselect(label="Select witnesses", options = txtWits, default=txtWits)
-    displayMode = st.radio("Select display mode", options=[1, 2])
-    if st.button("Run"):
-        if "-" in verseSelect:
-            i, ii = verseSelect.split("-")
-            vRange = list(map(str, range(int(i), int(ii)+1)))
-            vRange = [str(x) for x in vRange]
-        if not verseSelect:
-            st.write("You gotta give me some text to work with")
-        if displayMode == 1:
-            colNo = len(txtSelect)
-            cols = st.columns(colNo)
-            for a, aa in enumerate(cols):
-                currTxt = txtSelect[a]
-                aa.write(currTxt)
-                if not verseSelect:
-                    aa.write("No Verse or Verserange selected")
-                if currTxt == 'DG4-7':
-                    with graph.session() as session:
-                        tx = session.begin_transaction()
-                        results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.paraVerse IN {vRange} AND a.inMS = '{currTxt}' RETURN a.paraVerse AS vn, a.Normalized AS text")
-                        resD = results.data()
-                else:
-                    with graph.session() as session:
-                        tx = session.begin_transaction()
-                        results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.VerseNorm IN {vRange} AND a.inMS = '{currTxt}' RETURN a.VerseNorm AS vn, a.Normalized AS text")
-                        resD = results.data()
-                resX = {}
-                for res in resD:
-                    if res['vn'] in resX:
-                        resX[res['vn']] = f"{resX[res['vn']]} {res['text']}"
-                    else:
-                        resX[res['vn']] = res['text']
-                for k in resX:
-                    aa.write(f"{k} {resX[k]}")
-        elif displayMode == 2:
-            st.write("Nothing to see here yet.")
-            st.write(f"Getting Verses {vRange} from MSs {txtSelect}")
-            with graph.session() as session:
-                tx = session.begin_transaction()
-                results = tx.run(f"""MATCH (a)-[r]->(b) 
-                                    WHERE a.inMS IN {txtSelect}
-                                    AND b.inMS IN {txtSelect}
-                                    AND a.VerseNorm IN {vRange} 
-                                    RETURN *""")
-                nodes = list(results.graph()._nodes.values())
-                rels = list(results.graph()._relationships.values())
-            graph_view = neo2st.get_view(nodes, rels)
-            components.html(graph_view, height = 900, width=900, scrolling=True)
+    st.write("NB! neo4j backend is not currently working with streamlit cloud.")
+    # graph = GraphDatabase.driver("neo4j://localhost:7687", auth=('neo4j', '12'))
+    # verseSelect = st.text_input("Select Verse or Verserange")
+    # txtWits = ['B1', 'P3', 'To', 'W1', 'DG4-7']
+    # txtSelect = st.multiselect(label="Select witnesses", options = txtWits, default=txtWits)
+    # displayMode = st.radio("Select display mode", options=[1, 2])
+    # if st.button("Run"):
+    #     if "-" in verseSelect:
+    #         i, ii = verseSelect.split("-")
+    #         vRange = list(map(str, range(int(i), int(ii)+1)))
+    #         vRange = [str(x) for x in vRange]
+    #     if not verseSelect:
+    #         st.write("You gotta give me some text to work with")
+    #     if displayMode == 1:
+    #         colNo = len(txtSelect)
+    #         cols = st.columns(colNo)
+    #         for a, aa in enumerate(cols):
+    #             currTxt = txtSelect[a]
+    #             aa.write(currTxt)
+    #             if not verseSelect:
+    #                 aa.write("No Verse or Verserange selected")
+    #             if currTxt == 'DG4-7':
+    #                 with graph.session() as session:
+    #                     tx = session.begin_transaction()
+    #                     results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.paraVerse IN {vRange} AND a.inMS = '{currTxt}' RETURN a.paraVerse AS vn, a.Normalized AS text")
+    #                     resD = results.data()
+    #             else:
+    #                 with graph.session() as session:
+    #                     tx = session.begin_transaction()
+    #                     results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.VerseNorm IN {vRange} AND a.inMS = '{currTxt}' RETURN a.VerseNorm AS vn, a.Normalized AS text")
+    #                     resD = results.data()
+    #             resX = {}
+    #             for res in resD:
+    #                 if res['vn'] in resX:
+    #                     resX[res['vn']] = f"{resX[res['vn']]} {res['text']}"
+    #                 else:
+    #                     resX[res['vn']] = res['text']
+    #             for k in resX:
+    #                 aa.write(f"{k} {resX[k]}")
+    #     elif displayMode == 2:
+    #         st.write("Nothing to see here yet.")
+    #         st.write(f"Getting Verses {vRange} from MSs {txtSelect}")
+    #         with graph.session() as session:
+    #             tx = session.begin_transaction()
+    #             results = tx.run(f"""MATCH (a)-[r]->(b) 
+    #                                 WHERE a.inMS IN {txtSelect}
+    #                                 AND b.inMS IN {txtSelect}
+    #                                 AND a.VerseNorm IN {vRange} 
+    #                                 RETURN *""")
+    #             nodes = list(results.graph()._nodes.values())
+    #             rels = list(results.graph()._relationships.values())
+    #         graph_view = neo2st.get_view(nodes, rels)
+    #         components.html(graph_view, height = 900, width=900, scrolling=True)
             
 
 def vcooc():
