@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from functools import reduce as red
 from utils.util import read_tei
-from cltk.tokenize.latin.word import WordTokenizer
+import spacy
 from utils.constants import *
 
 
@@ -41,28 +41,6 @@ class latDoc:
     def order_verses(self, versObj, verseOrder):
         self.ordered_verses[verseOrder] = versObj
 
-
-# Helpers
-# -------
-
-# Shamelessly stolen from CLTK v.0.1.111 -> latin word tokenizer
-def enclitics(token: str) -> str:
-    is_enclitic = False
-    wt = WordTokenizer()
-    if token.lower() not in wt.EXCEPTIONS:
-        for enclitic in wt.ENCLITICS:
-            if token.endswith(enclitic):
-                if enclitic == 'n':
-                    return f'{token[:-len(enclitic)]} -ne'
-                elif enclitic == 'st':
-                    if token.endswith('ust'):
-                        return f'{token[:-len(enclitic)]} + 1] est'
-                    else:
-                        return f'{token[:-len(enclitic)]} est'
-                else:
-                    return f'{token[:-len(enclitic)]} {enclitic}'
-    if not is_enclitic:
-        return token
 
 # Parsing
 # -------
