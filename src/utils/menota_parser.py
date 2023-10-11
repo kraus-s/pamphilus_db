@@ -1,5 +1,7 @@
+import imp
 from typing import Tuple
 from bs4 import BeautifulSoup
+import bs4
 from lxml import etree
 import os
 from pathlib import Path
@@ -24,6 +26,7 @@ class token:
         self.lemma = lemma
         self.msa = msa
 
+
 class sent:
 
     def __init__(self, order: int) -> None:
@@ -32,19 +35,21 @@ class sent:
 
     def add_token(self, newtoken: token):
         self.tokens.append(newtoken)
-
-        
+ 
         
 class vpara:
+
 
     def __init__(self, vno: str, var: str) -> None:
         self.vno = vno
         self.aligned = var
         self.tokens = []
     
+
     def add_token(self, newtoken: token):
         self.tokens.append(newtoken)
     
+
     def pretty_print():
         
         pass
@@ -56,10 +61,17 @@ class doc:
         self.name = name
         self.ms = manuscript
         self.sents = []
+        self.tokens = []
 
     
     def add_sent(self, newsent: sent):
         self.sents.append(newsent)
+    
+
+    def add_token(self, newtoken: token):
+        self.tokens.append(newtoken)
+    
+
 
 
 class paradoc:
@@ -79,7 +91,34 @@ def read_tei(tei_file):
         return soup
 
 
-def getInfo (soup) -> str:
+def getInfo (soup: BeautifulSoup, get_all: bool = False) -> Tuple[str, str, str]:
+    if get_all:
+        try:
+            msInfo = soup.find("sourcedesc")
+        except:
+            print("Something is up!")
+        if not msInfo:
+            try:
+                msInfo = soup.find("sourceDesc")
+            except:
+                print("Ain't nothing here!")
+                return
+        shelfmark_ = msInfo.find('idno')
+        txtName_ = msInfo.find("msName")
+        origPlace_ = msInfo.find('origPlace')
+        if shelfmark_:
+            shelfmark = shelfmark_.get_text()
+        else:
+            shelfmark = "N/A"
+        if txtName_:
+            txtName = txtName_.get_text()
+        else:
+            txtName = "N/A"
+        if origPlace_:
+            origPlace = origPlace_.get_text()
+        else:
+            origPlace = "N/A"   
+        return shelfmark, txtName, origPlace
     try:
         msInfo = soup.find("sourcedesc")
         shelfmark_ = msInfo.find('idno')
@@ -96,11 +135,10 @@ def getInfo (soup) -> str:
     return shelfmark, txtName
 
 
-def reg_menota_parse(currMS, soup):
-    text_proper = soup.find('body')
+def reg_menota_parse(currMS: doc, soup: bs4.BeautifulSoup) -> doc:
+    text_proper = soup.find_all('w')
 
-    for i in text_proper:
-        
+    for word in text_proper:
         lemming = word.get('lemma')
         if lemming is not None:
             lemming = word.get('lemma')
@@ -137,7 +175,7 @@ def para_parse(soup, currMS: paradoc):
         currVerseNo = indiVerse.get('vn')
         variantBecker = indiVerse.get('var')
         currVerse = vpara(vno=currVerseNo, var=variantBecker)
-        allWords = indiVerse.findAll('w')
+        allWords = indiVerse.find_all('w')
         for word in allWords:
             lemming = word.get('lemma')
             if lemming is not None:
@@ -164,47 +202,37 @@ def para_parse(soup, currMS: paradoc):
                 msaClean = word.get('me:msa')
             else:
                 msaClean = "-"
-            print(lemming)
             currword = token(normalized=normClean, diplomatic=diplClean, facsimile=facsClean, lemma=lemming, msa=msaClean)
             currVerse.add_token(currword)
         currMS.add_verse(currVerse)
     return currMS
 
 
-
-def getText(soup, para: str = None):
-    if para:
-        if para == "versify":
-            isPara = True
-        if para == "sents":
-            isPara = False
-    else:
-        try:
-            edType = soup.find("editionStmt")
-            para_ = edType.get('edtype')
-            if para_ == 'parallelization':
-                isPara = True
-        except:
-            isPara = False
+def getText(soup: bs4.BeautifulSoup, isPara: bool):
     if isPara:
         print("I recognized a parallelized text!")
         ms_sig, txt_name = getInfo(soup)
         currMS = paradoc(name=txt_name, manuscript=ms_sig)
-        currMS = para_parse(soup, currMS)
+        currMS = para_parse(soup=soup, currMS=currMS)
         return currMS
     else:
         print("I will do sentence tokenization!")
         ms_sig, txt_name = getInfo(soup)
         currMS = doc(name=txt_name, manuscript=ms_sig)
-        currMS = reg_menota_parse(soup, currMS)
+        currMS = reg_menota_parse(soup=soup, currMS=currMS)
         return currMS
     
 
 
-def parse(inFile: str) -> paradoc:
+def parse(inFile: str):
     soup = read_tei(inFile)
-    res = getText(soup)
+    if "para" in inFile:
+        isPara = True
+    else:
+        isPara = False
+    res = getText(soup, isPara)
     return res
+
 
 # End Region
 # ----------

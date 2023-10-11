@@ -3,12 +3,12 @@ from typing import Tuple
 from neo4j import GraphDatabase
 from pathlib import Path
 import pandas as pd
-from utils.constants import *
-from utils.latin_parser import latin_neofyier as ln
-from utils.menota_parser import para_neofiyer as pn
-from utils import menota_parser as mp
+from constants import *
+from latin_parser import latin_neofyier as ln
+from menota_parser import para_neofiyer as pn
+import menota_parser as mp
 import glob
-from utils.util import read_tei
+from util import read_tei
 from bs4 import BeautifulSoup
 
 
@@ -28,7 +28,7 @@ localDB = "localhost"
 
 def load_stilometrics() -> pd.DataFrame:
     '''Helper function to load the stilometric data, i.e. cosine DISTANCE of different texts'''
-    df = pd.read_csv('latinLemmatized-cosine.csv', header=0, index_col=0)
+    df = pd.read_csv('data/similarities/stylo/latinLemmatized-cosine.csv', header=0, index_col=0)
     edgeDF = pd.DataFrame(columns=['FromNode', 'ToNode', 'EdgeLabels', 'EdgeProps', 'HRF'])
     for index, row in df.iterrows():
         if index in TXTLOOKUPDICT:
@@ -50,7 +50,7 @@ def load_norse_constil() -> Tuple[pd.DataFrame, pd.DataFrame]:
     fList = glob.glob(f"{OLD_NORSE_CORPUS_FILES}*.xml")
     edgeDF = pd.DataFrame(columns=['FromNode', 'ToNode', 'EdgeLabels', 'EdgeProps', 'HRF'])
     nodeDF = pd.DataFrame(columns=['NodeID', 'NodeLabels', 'NodeProps'])
-    stylo = pd.read_csv('norse-lemmatized-cosine.csv', header=0, index_col=0)
+    stylo = pd.read_csv('data/similarities/stylo/norse-lemmatized-cosine.csv', header=0, index_col=0)
     stylo_lookup = {}
     have_ms = []
     for i in fList:
@@ -70,7 +70,7 @@ def load_norse_constil() -> Tuple[pd.DataFrame, pd.DataFrame]:
             if not mss in have_ms:
                 nodeDF = nodeDF.append({"NodeID": f'"{mss.replace(" ", "_")}"', 'NodeLabels': f'{MSSDESC}', 'NodeProps': f"Signature: '{mss}', Origin: '{origPlace}'"}, ignore_index=True)
                 if not origPlace == 'N/A':
-                    edgeDF = edgeDF.append({'FromNode': f'"{mss.replace(" ", "_")}"', 'ToNode': f"'{LOCLOOK[origPlace]}'", 'EdgeLabels': f"{FROMWHERE}"}, ignore_index=True)
+                    edgeDF = edgeDF.append({'FromNode': f'"{mss.replace(" ", "_")}"', 'ToNode': f"'{LOCLOOK.get('origPlace', origPlace)}'", 'EdgeLabels': f"{FROMWHERE}"}, ignore_index=True)
             nodeDF = nodeDF.append({"NodeID": f'"{i}"', 'NodeLabels': f'{TXTWITDES}', 'NodeProps': f"Title: '{txt}', InMS: '{mss}', inFam: 'N/A', famID: 'N/A', AuthorID: 'nan', Language: 'ON', Meter:'Prose'"}, ignore_index=True)
             edgeDF = edgeDF.append({'FromNode': f'"{i}"', 'ToNode': f'"{mss.replace(" ", "_")}"', 'EdgeLabels': f'InMS'}, ignore_index=True)
             
@@ -78,8 +78,11 @@ def load_norse_constil() -> Tuple[pd.DataFrame, pd.DataFrame]:
         have_ms.append(mss)
     for index, row in stylo.iterrows():
         for i in list(stylo.columns):
-            if not i == index:
-                edgeDF = edgeDF.append({'FromNode': f"'{stylo_lookup[index]}'", 'ToNode': f"'{stylo_lookup[i]}'", 'EdgeLabels': f"{INTERTEXTREL}", 'EdgeProps': f"Weigth: {float(row[i])}"}, ignore_index=True)
+            if i != index:
+                try:
+                    edgeDF = edgeDF.append({'FromNode': f"'{stylo_lookup[index]}'", 'ToNode': f"'{stylo_lookup[i]}'", 'EdgeLabels': f"{INTERTEXTREL}", 'EdgeProps': f"Weigth: {float(row[i])}"}, ignore_index=True)
+                except KeyError:
+                    print(f"{i} not lemmatized")
     return nodeDF, edgeDF
 
 
@@ -163,6 +166,7 @@ def db_commit(nodeDF: pd.DataFrame, edgeDF: pd.DataFrame):
     # This will create all edges from the edges list
     with graph.session() as session:
         tx = session.begin_transaction()
+        import pdb; pdb.set_trace()
         for index, row in edgeDF.iterrows():
             tx.run(f"MATCH (a), (b) WHERE a.nodeID = {row['FromNode']} AND b.nodeID = {row['ToNode']} AND NOT a.nodeID = b.nodeID CREATE (a)-[r:{row['EdgeLabels']} {{{row['EdgeProps']}}} ]->(b)")
         tx.commit()
@@ -285,7 +289,7 @@ def db_commit(nodeDF: pd.DataFrame, edgeDF: pd.DataFrame):
         )
         tx.commit()
     print("Done!")
-    return
+
 
 def main():
     nodeDF, edgeDF = data_collector()

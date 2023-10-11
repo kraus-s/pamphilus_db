@@ -1,17 +1,15 @@
 import itertools
-from numpy import product, vectorize
 from utils import latin_parser
 from utils import menota_parser
 from utils.constants import *
 from sklearn.feature_extraction.text import TfidfVectorizer
-from scipy.spatial.distance import pdist, squareform
 from sklearn.metrics import pairwise_distances
 import pandas as pd
 import glob
-from cltk.stem.latin.j_v import JVReplacer
 import sqlite3
 from rapidfuzz import fuzz
 import spacy
+
 
 # Helper functions latin
 # ----------------------
@@ -25,8 +23,8 @@ def get_latin_stopwords():
     return stops
 
 
-def get_pamph(inFile, versify: bool = False) -> dict:
-    pamph = latin_parser.parse_pamphilus(inFile)
+def get_pamph(file, versify: bool = False) -> dict:
+    pamph = latin_parser.parse_pamphilus(file)
     res = {}
     if versify:
         for i in pamph:
@@ -55,11 +53,11 @@ def corpus_collector_latin(lemmatize: bool = False, versify: bool = False) -> di
         else:
             i = latin_parser.parse_perseus(f, versify)
         corpusDIct.update(i)
-    res = corpus_cleaner(corpusDIct, lemmatize, versify)
+    res = corpus_cleaner(corpusDIct, lemmatize)
     return res
 
 
-def corpus_cleaner(corps: dict, lemmatize: bool = False, versify: bool = False) -> dict:
+def corpus_cleaner(corps: dict, lemmatize: bool = False) -> dict:
     res = {}
     nlp = spacy.load('la_core_web_lg')
     nlp.max_length = 10000000
@@ -192,22 +190,22 @@ def leven_worker(combinations, corpus: dict):
 
 def analysis_cycle(corpus: dict, fName: str):
     print(f"Now processing {fName}")
-    vecCorps, diagLabels = get_vector(corpus)
-    eucD = euclid_dist(vecCorps, diagLabels)
-    eucD.to_csv(f"{STYLO_FOLDER}{fName}-euclid.csv")  
+    vectorized_corpus, corpus_keys = get_vector(corpus)
+    euclid_distance = euclid_dist(vectorized_corpus, corpus_keys)
+    euclid_distance.to_csv(f"{STYLO_FOLDER}{fName}-euclid.csv")  
     print("Euclidian")
-    print(eucD)
-    cosD = cos_dist(vecCorps, diagLabels)
+    print(euclid_distance)
+    cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
     print("Cosine")
-    print(cosD)    
-    cosD.to_csv(f"{STYLO_FOLDER}{fName}-cosine.csv")
+    print(cosine_distance)    
+    cosine_distance.to_csv(f"{STYLO_FOLDER}{fName}-cosine.csv")
 
 
-def analysis_coordinator():
-    # corpus = corpus_collector_latin()
-    # analysis_cycle(corpus, "latin-basic")
-    # corpus = corpus_collector_latin(lemmatize=True)
-    # analysis_cycle(corpus, "latinLemmatized")
+def stylo_coordiinator():
+    corpus = corpus_collector_latin()
+    analysis_cycle(corpus, "latin-basic")
+    corpus = corpus_collector_latin(lemmatize=True)
+    analysis_cycle(corpus, "latinLemmatized")
     corpus = corpus_collector_norse('normalized')
     analysis_cycle(corpus, "norse-basic")
     corpus = corpus_collector_norse(level='lemma')
@@ -222,9 +220,9 @@ def versified_lat_leven():
 
 
 def run():
-    analysis_coordinator()    
+    stylo_coordiinator()
+    versified_lat_leven()    
 
 
 if __name__ == '__main__':
     run()
-    # versified_lat_leven()

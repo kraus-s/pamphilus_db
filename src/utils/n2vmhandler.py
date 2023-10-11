@@ -7,7 +7,8 @@ import pandas as pd
 import ast
 import re
 
-def create_connection(db_file: str = SQLITE_PATH) -> sqlite3.Connection:
+
+def create_connection(db_file: str = ONP_DATABASE_PATH) -> sqlite3.Connection:
     """ create a database connection to the SQLite database
         specified by db_file
     :param db_file: database file

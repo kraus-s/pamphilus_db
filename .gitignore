@@ -7,3 +7,4 @@ utils/__pycache__/
 utils/__pycache__/latin_parser.cpython-39.pyc
 lev-mem.db
 *.db
+data/.DS_Store

@@ -1,6 +1,9 @@
 from bs4 import BeautifulSoup
 import pandas as pd
 from functools import reduce as red
+from utils.util import read_tei
+from utils.constants import *
+
 
 # Region: Class based for i dunno what
 # ------
@@ -23,7 +26,7 @@ class verse:
         self.tokens.append(newToken)
 
 
-class latDoc:
+class latin_document:
 
     def __init__(self, abbreviation: str, shelfmark: str) -> None:
         self.name = abbreviation
@@ -31,27 +34,27 @@ class latDoc:
         self.verses = []
         self.ordered_verses = {}
     
-    def add_verse(self, newVerse: verse):
-        self.verses.append(newVerse)
+    def add_verse(self, new_verse: verse):
+        self.verses.append(new_verse)
     
-    def order_verses(self, versObj, verseOrder):
-        self.ordered_verses[verseOrder] = versObj
+    def order_verses(self, verse_object, verse_order):
+        self.ordered_verses[verse_order] = verse_object
 
 
-def read_tei(tei_file):
-    with open(tei_file, 'r', encoding="UTF-8") as tei:
-        soup = BeautifulSoup(tei, from_encoding='UTF-8', features='lxml-xml')
-        return soup
+# Parsing
+# -------
 
 
-def read_latin_xml(infile) -> dict:
+def parse_pamphilus(infile: str) -> dict[str, latin_document]:
+    """This function will process the latin XML of Pamphilus and produce individual objects of the latin document class for every manuscript.
+    It will return a dict of latin_document"""
     soup = read_tei(infile)
     verses = soup.find_all('v')
-    B1 = latDoc(abbreviation="B1", shelfmark="Ms Hamilton 390")
-    P3 = latDoc(abbreviation="P3", shelfmark="Lat----?")
-    W1 = latDoc(abbreviation="W1", shelfmark="cod. 303")
-    To = latDoc(abbreviation="To", shelfmark="cod. 102")
-    res = {"B1": B1, "P3": P3, "To": To, "W1": W1}
+    B1 = latin_document(abbreviation="B1", shelfmark="Ms Hamilton 390")
+    P3 = latin_document(abbreviation="P3", shelfmark="BNF cod. lat. 8430")
+    W1 = latin_document(abbreviation="W1", shelfmark="cod. 303")
+    To = latin_document(abbreviation="To", shelfmark="cod. 102")
+    P5 = latin_document(abbreviation="P5", shelfmark="BNF cod. franc. 25405")
     for indiVerse in verses:
         
         currVerse_ = indiVerse.get('n')
@@ -59,37 +62,101 @@ def read_latin_xml(infile) -> dict:
         currVerseP3 = verse(versNumber=currVerse_)
         currVerseW1 = verse(versNumber=currVerse_)
         currVerseTo = verse(versNumber=currVerse_)
-        currVList = [currVerseB1, currVerseP3, currVerseW1, currVerseTo]
+        curr_verse_p5 = verse(versNumber=currVerse_)
+        currVList = [currVerseB1, currVerseP3, currVerseW1, currVerseTo, curr_verse_p5]
         words2beWorked = indiVerse.findAll()
         for realtalk in words2beWorked:
             if realtalk.name == 'w':
                 variants = realtalk.findAll('var')                
                 for indiVari in variants:
-                    variantesConcretes = indiVari.get('variants')
+                    local_variants = indiVari.get('variants')
                     actualWord = indiVari.get_text()
                     if "'" in actualWord:
                         actualWord = actualWord.replace("'", "")
                     if '"' in actualWord:
                         actualWord = actualWord.replace('"', '')
-                    if "a" in variantesConcretes:
+                    if "a" in local_variants:
                         for i in currVList:
                             i.add_token(actualWord)
-                    if "B1" in variantesConcretes:
+                    if "B1" in local_variants:
                         currVerseB1.add_token(actualWord)
-                    if "P3" in variantesConcretes:
+                    if "P3" in local_variants:
                         currVerseP3.add_token(actualWord)
-                    if "To" in variantesConcretes:
+                    if "To" in local_variants:
                         currVerseTo.add_token(actualWord)
-                    if "W1" in variantesConcretes:
+                    if "W1" in local_variants:
                         currVerseW1.add_token(actualWord)
+                    if "P5" in local_variants:
+                        curr_verse_p5.add_token(actualWord)
         B1.add_verse(currVerseB1)
         P3.add_verse(currVerseP3)
         To.add_verse(currVerseTo)
         W1.add_verse(currVerseW1)
+        P5.add_verse(curr_verse_p5)
+    res = {"B1": B1, "P3": P3, "To": To, "W1": W1, "P5": P5}
     return res
+
+def parse_perseus(infile, versify: bool = False) -> dict:
+    soup = read_tei(infile)
+    fname = infile.rsplit("/", 1)[1]
+    res = {}
+    if fname == 'ovid.am_lat.xml':
+        subsoup = soup.find('group')
+        indiTxts = subsoup.find_all('text')
+        for txt in indiTxts:
+            ttl = txt.find('head').get_text()
+            lines = txt.find_all('l')
+            docTxt = []
+            if versify:
+                vcount = 1
+            for l in lines:
+                tokens = l.get_text()
+                tokens = tokens.split(" ")
+                if versify:
+                    vttl = f"{ttl}-{vcount}"
+                    res[vttl] = " ".join([x for x in tokens])
+                    vcount += 1
+                else:
+                    for token in tokens:
+                        docTxt.append(token)
+            if not versify:
+                docTxt2 = " ".join([x for x in docTxt])
+                res[ttl] = docTxt2
+        return res
+    else:
+        ttl = soup.find('title').get_text()
+        if soup.find('note'):
+            notes = soup.find_all('note')
+            for i in notes:
+                i.decompose()
+        else:
+            print("No notes, yay!")
+        if versify:
+            try:
+                verses = soup.find_all('l')
+                hasVerse = True
+            except:
+                hasVerse = False
+            if not hasVerse:
+                txt = soup.find('body').get_text()
+                verses = txt.splitlines()
+            vcount = 1
+            for v in verses:
+                vtxt = v.get_text()
+                vttl = f"{ttl}-{vcount}"
+                res[vttl] = vtxt
+                vcount +=1
+        else:            
+            txt = soup.find('body').get_text()
+            res[ttl] = txt
+        return res
+
+        
+
 
 # End Region
 # ----------
+
 
 # Region: For neo4j
 # -----------------
@@ -101,11 +168,12 @@ def read_latin_xml(infile) -> dict:
 def read_latin_xml(infile):
     soup = read_tei(infile)
     verses = soup.find_all('v')
-    witnessB1Bamboo = pd.DataFrame(columns=['Verse', 'Word'])
-    witnessP3Bamboo = pd.DataFrame(columns=['Verse', 'Word'])
-    witnessToBamboo = pd.DataFrame(columns=['Verse', 'Word'])
-    witnessW1Bamboo = pd.DataFrame(columns=['Verse', 'Word'])
-  
+    witnessB1_df = pd.DataFrame(columns=['Verse', 'Word'])
+    witnessP3_df = pd.DataFrame(columns=['Verse', 'Word'])
+    witnessTo_df = pd.DataFrame(columns=['Verse', 'Word'])
+    witnessW1_df = pd.DataFrame(columns=['Verse', 'Word'])
+    witnessP5_df = pd.DataFrame(columns=['Verse', 'Word'])
+    df_dict: dict[str, pd.DataFrame] = {"B1": witnessB1_df, "P3": witnessP3_df, "To": witnessTo_df, "W1": witnessW1_df, "P5": witnessP5_df}
     for indiVerse in verses:
         
         currVerse = indiVerse.get('n')
@@ -116,30 +184,22 @@ def read_latin_xml(infile):
             if realtalk.name == 'w':
                 variants = realtalk.findAll('var')                
                 for indiVari in variants:
-                    variantesConcretes = indiVari.get('variants')
+                    local_variants = indiVari.get('variants')
                     actualWord = indiVari.get_text()
                     if "'" in actualWord:
                         actualWord = actualWord.replace("'", "")
                     if '"' in actualWord:
                         actualWord = actualWord.replace('"', '')
-                    if "a" in variantesConcretes:
-                        witnessB1Bamboo = witnessB1Bamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
-                        witnessP3Bamboo = witnessP3Bamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
-                        witnessToBamboo = witnessToBamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
-                        witnessW1Bamboo = witnessW1Bamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
-                    if "B1" in variantesConcretes:
-                        witnessB1Bamboo = witnessB1Bamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
-                        currVerseReps.append('B1')
-                    if "P3" in variantesConcretes:
-                        witnessP3Bamboo = witnessP3Bamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
-                        currVerseReps.append('P3')
-                    if "To" in variantesConcretes:
-                        witnessToBamboo = witnessToBamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
-                        currVerseReps.append('To')
-                    if "W1" in variantesConcretes:
-                        witnessW1Bamboo = witnessW1Bamboo.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
-                        currVerseReps.append('W1')
-    return witnessB1Bamboo, witnessP3Bamboo, witnessToBamboo, witnessW1Bamboo
+                    if "a" in local_variants:
+                        for key, df in df_dict.items():
+                            df_dict[key] = df.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
+                    else:
+                        for i in local_variants:
+                            df = df_dict[i]
+                            df_dict[i] = df.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
+
+    res = list(df_dict.values() )
+    return res
 
 
 def latin_para_import(infile, outputDF: str = 'merged'):
@@ -171,7 +231,7 @@ def latin_para_import(infile, outputDF: str = 'merged'):
 
 
 def apply_sort(inDF: pd.DataFrame, currMS: str) -> pd.DataFrame:
-    orderPD = pd.read_excel("./data/latMat/verseorder.xlsx", index_col=None, usecols=['Base', currMS])
+    orderPD = pd.read_excel(VERSEORDER, index_col=None, usecols=['Base', currMS])
     orderPD[currMS] = orderPD[currMS].astype(str).replace('\.0', '', regex=True)
     orderPD['Base'] = orderPD['Base'].astype(int)
     orderPD.dropna(inplace=True)
@@ -181,21 +241,26 @@ def apply_sort(inDF: pd.DataFrame, currMS: str) -> pd.DataFrame:
     newDF = newDF.rename(columns={currMS: 'VerseNo-Norm.'})
     return newDF
 
+def get_order() -> pd.DataFrame:
+    orderPD = pd.read_excel("./data/latMat/verseorder.xlsx", index_col=None)
+    orderPD = orderPD.astype(str).replace('\.0', '', regex=True)
+    orderPD.dropna(inplace=True)
+    return orderPD
+
 
 def latin_neofyier(infile):
     nodeDF = pd.DataFrame(columns=['NodeID', 'NodeLabels', 'NodeProps'])
     edgeDF = pd.DataFrame(columns=['FromNode', 'ToNode', 'EdgeLabels', 'EdgeProps', 'HRF'])
     latDict = latin_para_import(infile, outputDF="dict")
-    msDict = {'B1': 'Ms. Hamilton 390', 'P3': 'cod. lat. 8430 4°', 'To': 'cod. 102-11', 'W1': 'cod. 303 HAN MAG 8°'}
+    msDict = {'B1': 'rx46', 'P3': 'rx9', 'To': 'rx51', 'W1': 'rx24'}
     edgeHelperDict2 = {}
     for key, value in msDict.items():
-        msID = value.replace(" ", "-")
-        updog = {key: msID}
+        updog = {key: value}
         edgeHelperDict2.update(updog)
-        nodeDF = nodeDF.append({'NodeID': f"'{msID}'",
-                                'NodeLabels': 'E22_Human_Made_Object',
-                                'NodeProps': f"Signature: '{value}', Abbreviation: '{key}'"},
-                                ignore_index=True)
+        # nodeDF = nodeDF.append({'NodeID': f"'{value}'",  # TODO: Check if needed
+        #                         'NodeLabels': f'{TXTWITDES}',
+        #                         'NodeProps': f"InMS: '{key}'"},
+        #                         ignore_index=True)
     for key, value in latDict.items():
         count1 = 0
         count2 = 1
@@ -206,27 +271,26 @@ def latin_neofyier(infile):
         for index, row in value.iterrows():
             words = row['Word'].split()
             nodeDF = nodeDF.append({
-                                'NodeID': f"'v{key}-{row['Verse']}'",
+                                'NodeID': f"'v{msDict[key]}-{row['Verse']}'",
                                 'NodeLabels': 'ZZ1_Verse', 
-                                'NodeProps': f"VerseDipl: '{row['Verse']}', VerseNorm: '{index}', inMS: '{key}'"},
+                                'NodeProps': f"VerseDipl: '{row['Verse']}', VerseNorm: '{index}', inMS: '{msDict[key]}'"},
                                 ignore_index=True)
-            edgeDF = edgeDF.append({'FromNode': f"'v{key}-{row['Verse']}'",
+            edgeDF = edgeDF.append({'FromNode': f"'v{msDict[key]}-{row['Verse']}'",
                             'ToNode': f"'{edgeHelperDict2[key]}'",
                             'EdgeLabels': 'ZZ3_VersinMS',
-                            'HRF': f"{key} - {row['Verse']} to MS {key}"},
+                            'HRF': f"{key} - {row['Verse']} to MS {msDict[key]}"},
                             ignore_index=True)
             if notFirst:
-                if notFirst:
-                    edgeDF = edgeDF.append({'FromNode': f"'v{key}-{voDipl}'",
-                                            'ToNode': f"'v{key}-{row['Verse']}'",
-                                            'EdgeLabels': 'vNext_dipl',
-                                            'HRF': f"{key} - Verse {voDipl} to next Verse {row['Verse']}"},
-                                            ignore_index=True)
-                    edgeDF = edgeDF.append({'FromNode': f"'v{key}-{voNorm}'",
-                                            'ToNode': f"'v{key}-{index}'",
-                                            'EdgeLabels': 'vNext_norm',
-                                            'HRF': f"{key} - Verse {voDipl} to next Verse {row['Verse']}"},
-                                            ignore_index=True)
+                edgeDF = edgeDF.append({'FromNode': f"'v{key}-{voDipl}'",
+                                        'ToNode': f"'v{key}-{row['Verse']}'",
+                                        'EdgeLabels': 'vNext_dipl',
+                                        'HRF': f"{key} - Verse {voDipl} to next Verse {row['Verse']}"},
+                                        ignore_index=True)
+                edgeDF = edgeDF.append({'FromNode': f"'v{key}-{voNorm}'",
+                                        'ToNode': f"'v{key}-{index}'",
+                                        'EdgeLabels': 'vNext_norm',
+                                        'HRF': f"{key} - Verse {voDipl} to next Verse {row['Verse']}"},
+                                        ignore_index=True)
 
             notFirst = True
             voNorm = index
@@ -256,6 +320,7 @@ def latin_neofyier(infile):
                 count1 +=1
                 count2 +=1
     return nodeDF, edgeDF
+
 
 def parse(inFile):
     return read_latin_xml(inFile)

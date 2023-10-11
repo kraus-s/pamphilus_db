@@ -1,4 +1,5 @@
 import pandas as pd
+from bs4 import BeautifulSoup
 
 
 def onp_dataset() -> pd.DataFrame:
@@ -18,3 +19,9 @@ def onp_dataset() -> pd.DataFrame:
     onpResultDF = onpResultDFList[0]
     onpResultDF['lemma'] = onpResultDF['lemma'].str.strip('123456789')
     return onpResultDF
+
+
+def read_tei(tei_file):
+    with open(tei_file, 'r', encoding="UTF-8") as tei:
+        soup = BeautifulSoup(tei, from_encoding='UTF-8', features='lxml-xml')
+        return soup
