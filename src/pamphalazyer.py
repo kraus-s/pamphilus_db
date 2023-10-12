@@ -41,25 +41,23 @@ class myData:
 
 
 def data_loader():
-    picklePath0 = Path("data/pickleON.p")
-    picklePath1 = Path("data/pickleLat.p")
-    if picklePath0.is_file():
-        with open("data/pickleON.p", "rb") as f:
-            onPamph = pickle.load(f)
+    if Path(OLD_NORSE_PICKLE).is_file():
+        with open(OLD_NORSE_PICKLE, "rb") as f:
+            old_norse_pamph = pickle.load(f)
     else:
-        onPamph = menota_parser.parse("data/paraMat/DG-4at7-Pamph-para.xml")
-        f = open("data/pickleON.p", 'w+b')
-        pickle.dump(onPamph, f)
+        old_norse_pamph = menota_parser.parse(PSDG47)
+        f = open(OLD_NORSE_PICKLE, 'w+b')
+        pickle.dump(old_norse_pamph, f)
         f.close()
-    if picklePath1.is_file():
-        with open("data/pickleLat.p", "rb") as f:
+    if Path(LATIN_PICKLE).is_file():
+        with open(LATIN_PICKLE, "rb") as f:
             latin = pickle.load(f)
     else:
-        latin = latin_parser.parse_pamphilus("data/latin/texts/pamphilus/pamphLat.xml")
-        f = open("data/pickleLat.p", 'w+b')
+        latin = latin_parser.parse_pamphilus(PAMPHILUS_LATINUS)
+        f = open(LATIN_PICKLE, 'w+b')
         pickle.dump(latin, f)
         f.close()
-    return onPamph, latin
+    return old_norse_pamph, latin
 
 
 def get_id():
@@ -464,6 +462,7 @@ def display_leven():
 def home_page():
     st.write("Hello!")
 
+
 def main():
     _state_initializer()
     ON, LAT = data_loader()
@@ -482,6 +481,7 @@ def main():
     else:
         display = choices[choice]
         display()
+
 
 # Display part
 # -----------

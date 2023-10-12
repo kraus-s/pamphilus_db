@@ -19,6 +19,9 @@ N2V_TABLES_PATH ="data/n2v/tables/"
 
 WORD_COOCURRENCES_PATH = "data/coocurrences"
 
+LATIN_PICKLE = "data/cache/latin_pickle.p"
+OLD_NORSE_PICKLE = "data/cache/old_norse_pickle.p"
+
 # For ONP
 BASE_URL = "https://onp.ku.dk/onp/onp.php"
 TXTLOOKUPDICT = {'B1': 'rx46', 
@@ -69,7 +72,12 @@ ALEXSAGA519 = 'r002'
 
 # More lookup snafus
 
-LOCLOOK = {'Bergen': 'https://d-nb.info/gnd/1027742-0', 'Norway': 'https://d-nb.info/gnd/4042640-3', 'Iceland': 'https://d-nb.info/gnd/4027754-9', 'N/A': 'Uncertain', "Vadstena, Sweden": "https://d-nb.info/gnd/4389764-2", "Vadstena kloster": "https://d-nb.info/gnd/4389764-2"}
+LOCLOOK = {'Bergen': 'https://d-nb.info/gnd/1027742-0',
+           'Norway': 'https://d-nb.info/gnd/4042640-3',
+           'Iceland': 'https://d-nb.info/gnd/4027754-9',
+           'N/A': 'Uncertain',
+           "Vadstena, Sweden": "https://d-nb.info/gnd/4389764-2",
+           "Vadstena kloster": "https://d-nb.info/gnd/4389764-2"}
 
 
 # n2v config

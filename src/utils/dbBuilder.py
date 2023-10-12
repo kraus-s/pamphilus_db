@@ -3,24 +3,16 @@ from typing import Tuple
 from neo4j import GraphDatabase
 from pathlib import Path
 import pandas as pd
-from constants import *
-from latin_parser import latin_neofyier as ln
-from menota_parser import para_neofiyer as pn
-import menota_parser as mp
+from utils.constants import *
+from utils.latin_parser import latin_neofyier as ln
+from utils.menota_parser import para_neofiyer as pn
+import utils.menota_parser as mp
 import glob
-from util import read_tei
-from bs4 import BeautifulSoup
+from utils.util import read_tei
 
 
 # Constants
 ###########
-
-
-safeHouse = Path('.')
-latMat = Path('./data/latMat/')
-norseMat = Path('./data/norseMat/')
-bowlMat = Path('./data/bowlMat/')
-paraMat = Path('./data/paraMat/')
 
 remoteDB = "philhist-sven-1.philhist.unibas.ch"
 localDB = "localhost"
@@ -131,12 +123,11 @@ def data_collector() -> Tuple[pd.DataFrame, pd.DataFrame]:
     norNodes, norEdges = load_norse_constil()
     addnodes = pd.read_excel(f"{EXCELS}addnodes.xlsx")
     addedges = pd.read_excel(f"{EXCELS}addedges.xlsx")  
-    # latNodes, latEdges = ln(infile=PAMPHILUS_LATINUS)
-    # paraNodes, paraEdges = pn(infile=PSDG47)
-    allNodes = pd.concat([conNodes, norNodes, addnodes])
-    allEdges = pd.concat([conEdges, interEdges, norEdges, addedges])
+    latNodes, latEdges = ln(infile=PAMPHILUS_LATINUS)
+    paraNodes, paraEdges = pn(infile=PSDG47)
+    allNodes = pd.concat([conNodes, norNodes, addnodes, paraNodes, paraEdges])
+    allEdges = pd.concat([conEdges, interEdges, norEdges, addedges, latNodes, latEdges])
     return allNodes, allEdges
-
 
 
 def db_commit(nodeDF: pd.DataFrame, edgeDF: pd.DataFrame):
@@ -166,7 +157,6 @@ def db_commit(nodeDF: pd.DataFrame, edgeDF: pd.DataFrame):
     # This will create all edges from the edges list
     with graph.session() as session:
         tx = session.begin_transaction()
-        import pdb; pdb.set_trace()
         for index, row in edgeDF.iterrows():
             tx.run(f"MATCH (a), (b) WHERE a.nodeID = {row['FromNode']} AND b.nodeID = {row['ToNode']} AND NOT a.nodeID = b.nodeID CREATE (a)-[r:{row['EdgeLabels']} {{{row['EdgeProps']}}} ]->(b)")
         tx.commit()

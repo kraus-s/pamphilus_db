@@ -602,7 +602,7 @@
                 <var variants="a">prioribus</var>
             </w>
             <w>
-                <var variants="P3, To, W3">illis</var>
+                <var variants="P3, To, W1">illis</var>
                 <var variants="B1">illis</var>
             </w>
         </v>
@@ -786,7 +786,7 @@
                 <var variants="a">ducum</var>
             </w>
             <w>
-                <var variants="B3, To, W1, P3">seruitque</var>
+                <var variants="B1, To, W1, P3">seruitque</var>
                 <var variants="P5">seruit</var>
             </w>
             <w>
@@ -3048,7 +3048,7 @@
                 <var variants="a">Exiguo</var>
             </w>
             <w>
-                <var variants="B1, P3 To, W1">pulcram</var>
+                <var variants="B1, P3, To, W1">pulcram</var>
                 <var variants="P5">uitam</var>
             </w>
             <w>
@@ -3058,7 +3058,7 @@
                 <var variants="a">sollercia</var>
             </w>
             <w>
-                <var variants="B1, P3 To, W1">uitam</var>
+                <var variants="B1, P3,To, W1">uitam</var>
                 <var variants="P5">pulcram</var>
             </w>
         </v>
@@ -5314,7 +5314,7 @@
         </v>
         <v n="207">
             <w>
-                <var variants="P3, To, W1, P%">Cunctarum</var>
+                <var variants="P3, To, W1, P5">Cunctarum</var>
                 <var variants="B1">Iunctarum</var>
             </w>
             <w>
@@ -6436,7 +6436,7 @@
                 <var variants="To">de</var>
             </w>
             <w>
-                <var variants="BB1, P3, W1, P5">mea</var>
+                <var variants="B1, P3, W1, P5">mea</var>
                 <var variants="To">mente</var>
             </w>
             <w>
@@ -7764,7 +7764,7 @@
             </w>
             <w>
                 <var variants="B1, P3, To">nimis</var>
-                <var variants="w1, P5">minus</var>
+                <var variants="W1, P5">minus</var>
             </w>
             <w>
                 <var variants="a">ille</var>
@@ -13167,7 +13167,7 @@
                 <var variants="a">uerbis</var>
             </w>
             <w>
-                <var variants="B1, to, W1, P5">fruimur</var>
+                <var variants="B1, To, W1, P5">fruimur</var>
                 <var variants="P3">fruitur</var>
             </w>
             <p>,</p>

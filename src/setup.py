@@ -1,7 +1,7 @@
-import dbBuilder
+from utils import dbBuilder
 import requests
 import os
-from constants import *
+from utils.constants import *
 
 def download_onp_data():
 

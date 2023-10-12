@@ -165,7 +165,7 @@ def parse_perseus(infile, versify: bool = False) -> dict:
 #----------------
 
 
-def read_latin_xml(infile):
+def read_latin_xml(infile) -> dict[str, pd.DataFrame]:
     soup = read_tei(infile)
     verses = soup.find_all('v')
     witnessB1_df = pd.DataFrame(columns=['Verse', 'Word'])
@@ -173,7 +173,8 @@ def read_latin_xml(infile):
     witnessTo_df = pd.DataFrame(columns=['Verse', 'Word'])
     witnessW1_df = pd.DataFrame(columns=['Verse', 'Word'])
     witnessP5_df = pd.DataFrame(columns=['Verse', 'Word'])
-    df_dict: dict[str, pd.DataFrame] = {"B1": witnessB1_df, "P3": witnessP3_df, "To": witnessTo_df, "W1": witnessW1_df, "P5": witnessP5_df}
+    witnessF_df = pd.DataFrame(columns=['Verse', 'Word'])
+    df_dict: dict[str, pd.DataFrame] = {"B1": witnessB1_df, "P3": witnessP3_df, "To": witnessTo_df, "W1": witnessW1_df, "P5": witnessP5_df, "F": witnessF_df}
     for indiVerse in verses:
         
         currVerse = indiVerse.get('n')
@@ -184,7 +185,7 @@ def read_latin_xml(infile):
             if realtalk.name == 'w':
                 variants = realtalk.findAll('var')                
                 for indiVari in variants:
-                    local_variants = indiVari.get('variants')
+                    local_variants = str(indiVari.get('variants')).replace(" ", "").split(",")
                     actualWord = indiVari.get_text()
                     if "'" in actualWord:
                         actualWord = actualWord.replace("'", "")
@@ -198,8 +199,7 @@ def read_latin_xml(infile):
                             df = df_dict[i]
                             df_dict[i] = df.append({'Verse': currVerse, 'Word': actualWord}, ignore_index=True)
 
-    res = list(df_dict.values() )
-    return res
+    return df_dict
 
 
 def latin_para_import(infile, outputDF: str = 'merged'):
@@ -207,26 +207,20 @@ def latin_para_import(infile, outputDF: str = 'merged'):
     Args:
     outputDF: if grouped returns all witnesses in one DF, column names reflecting MS abbrs.
     if outputDF == 'dict' returns individual DFs for each witness '''
-    Berlin1, Paris3, Toledo, Wien1 = read_latin_xml(infile)
-    Berlin1 = Berlin1.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
-    Paris3 = Paris3.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
-    Toledo = Toledo.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
-    Wien1 = Wien1.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
-    zoo = {"B1": Berlin1,"P3": Paris3, "To": Toledo, "W1": Wien1}
-    for key, value in zoo.items():
-        df_obj = value.select_dtypes(['object'])
-        df1 = df_obj.apply(lambda x: x.str.strip())
-        newDF = apply_sort(df1, key)
-        updog = {key: newDF}
-        zoo.update(updog)
+    df_dict = read_latin_xml(infile)
+    for key, value in df_dict.items():
+        df = value.groupby(['Verse'])['Word'].apply(" ".join).reset_index()
+        df =  df.select_dtypes(['object'])
+        df = apply_sort(df, key)
+        df_dict[key] = df
     if outputDF == 'dict':
-        return zoo
+        return df_dict
     if outputDF == 'merged':
-        zooList = []
-        for key, value in zoo.items():
+        df_list = []
+        for key, value in df_dict.items():
             newDF = value.rename(columns={'Word': key})
-            zooList.append(newDF)
-        df_merged = red(lambda left,right: pd.merge(left,right, on=['Verse'], how='outer'), zooList)
+            df_list.append(newDF)
+        df_merged = red(lambda left,right: pd.merge(left,right, on=['Verse'], how='outer'), df_list)
         return df_merged
 
 
@@ -240,6 +234,7 @@ def apply_sort(inDF: pd.DataFrame, currMS: str) -> pd.DataFrame:
     newDF = newDF.sort_index()
     newDF = newDF.rename(columns={currMS: 'VerseNo-Norm.'})
     return newDF
+
 
 def get_order() -> pd.DataFrame:
     orderPD = pd.read_excel("./data/latMat/verseorder.xlsx", index_col=None)
