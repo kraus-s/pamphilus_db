@@ -17630,13 +17630,9 @@
             </w>
             <p>.</p>
         </v>
+    </pos>
+    <pos speaker="Galathea">
         <v n="680a">
-            <w>
-                <var variants="W1">Vrgeor</var>
-            </w>
-            <w>
-                <var variants="W1">immenso</var>
-            </w>
             <w>
                 <var variants="W1">Nescio</var>
             </w>
@@ -17647,7 +17643,565 @@
                 <var variants="W1">sit</var>
             </w>
             <w>
+                <var variants="W1">amor;</var>
+            </w>
+            <w>
+                <var variants="W1">noli</var>
+            </w>
+            <w>
+                <var variants="W1">me</var>
+            </w>
+            <w>
+                <var variants="W1">sollicitare;</var>
+            </w>
+        </v>
+        <v n="680b">
+            <w>
+                <var variants="W1">Sum</var>
+            </w>
+
+            <w>
+                <var variants="W1">rudis</var>
+            </w>
+            <w>
+                <var variants="W1">et</var>
+            </w>
+            <w>
+                <var variants="W1">simplex;</var>
+            </w>
+            <w>
+                <var variants="W1">nescio</var>
+            </w>
+            <w>
+                <var variants="W1">quid</var>
+            </w>
+            <w>
+                <var variants="W1">sit</var>
+            </w>
+            <w>
+                <var variants="W1">amor.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Pamphilus">
+        <v n="680c">
+            <w>
+                <var variants="W1">Quid</var>
+            </w>
+            <w>
+                <var variants="W1">sit</var>
+            </w>
+            <w>
                 <var variants="W1">amor</var>
+            </w>
+            <w>
+                <var variants="W1">nescis.</var>
+            </w>
+            <w>
+                <var variants="W1">ego</var>
+            </w>
+            <w>
+                <var variants="W1">quid</var>
+            </w>
+            <w>
+                <var variants="W1">sit</var>
+            </w>
+            <w>
+                <var variants="W1">amare</var>
+            </w>
+            <w>
+                <var variants="W1">docebo;</var>
+            </w>
+        </v>
+        <v n="680d">
+            <w>
+                <var variants="W1">Tu</var>
+            </w>
+            <w>
+                <var variants="W1">rudis</var>
+            </w>
+            <w>
+                <var variants="W1">et</var>
+            </w>
+            <w>
+                <var variants="W1">simplex</var>
+            </w>
+            <w>
+                <var variants="W1">simplicitate</var>
+            </w>
+            <w>
+                <var variants="W1">places.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Galathea">
+        <v n="680e">
+            <w>
+                <var variants="W1">Est</var>
+            </w>
+            <w>
+                <var variants="W1">pater</var>
+            </w>
+            <w>
+                <var variants="W1">asper</var>
+            </w>
+            <w>
+                <var variants="W1">homo,</var>
+            </w>
+            <w>
+                <var variants="W1">timeo</var>
+            </w>
+            <w>
+                <var variants="W1">patris</var>
+            </w>
+            <w>
+                <var variants="W1">asperitatem;</var>
+            </w>
+        </v>
+        <v n="680f">
+            <w>
+                <var variants="W1">Mors</var>
+            </w>
+            <w>
+                <var variants="W1">mihi</var>
+            </w>
+            <w>
+                <var variants="W1">pena</var>
+            </w>
+            <w>
+                <var variants="W1">foret;</var>
+            </w>
+            <w>
+                <var variants="W1">est</var>
+            </w>
+            <w>
+                <var variants="W1">pater</var>
+            </w>
+            <w>
+                <var variants="W1">asper</var>
+            </w>
+            <w>
+                <var variants="W1">homo.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Pamphilus">
+        <v n="680g">
+            <w>
+                <var variants="W1">Si</var>
+            </w>
+            <w>
+                <var variants="W1">pater</var>
+            </w>
+            <w>
+                <var variants="W1">asper</var>
+            </w>
+            <w>
+                <var variants="W1">homo</var>
+            </w>
+            <w>
+                <var variants="W1">facient</var>
+            </w>
+            <w>
+                <var variants="W1">mea</var>
+            </w>
+            <w>
+                <var variants="W1">verba</var>
+            </w>
+            <w>
+                <var variants="W1">benignum,</var>
+            </w>
+        </v>
+        <v n="680h">
+            <w>
+                <var variants="W1">Si</var>
+            </w>
+            <w>
+                <var variants="W1">patris</var>
+            </w>
+            <w>
+                <var variants="W1">ense</var>
+            </w>
+            <w>
+                <var variants="W1">peris</var>
+            </w>
+            <w>
+                <var variants="W1">et</var>
+            </w>
+            <w>
+                <var variants="W1">pater</var>
+            </w>
+            <w>
+                <var variants="W1">ense</var>
+            </w>
+            <w>
+                <var variants="W1">meo.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Galathea">
+        <v n="680i">
+            <w>
+                <var variants="W1">Virginitas</var>
+            </w>
+            <w>
+                <var variants="W1">placuit,</var>
+            </w>
+            <w>
+                <var variants="W1">nolo</var>
+            </w>
+            <w>
+                <var variants="W1">perdere</var>
+            </w>
+            <w>
+                <var variants="W1">virginitatem;</var>
+            </w>
+        </v>
+        <v n="680j">
+            <w>
+                <var variants="W1">Res</var>
+            </w>
+            <w>
+                <var variants="W1">immunda</var>
+            </w>
+            <w>
+                <var variants="W1">Venus.</var>
+            </w>
+            <w>
+                <var variants="W1">Virginitas</var>
+            </w>
+            <w>
+                <var variants="W1">placuit.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Pamphilus">
+        <v n="680k">
+            <w>
+                <var variants="W1">Virginitas</var>
+            </w>
+            <w>
+                <var variants="W1">tua</var>
+            </w>
+            <w>
+                <var variants="W1">sit,</var>
+            </w>
+            <w>
+                <var variants="W1">nec</var>
+            </w>
+            <w>
+                <var variants="W1">ego</var>
+            </w>
+            <w>
+                <var variants="W1">peto</var>
+            </w>
+            <w>
+                <var variants="W1">virginitatem,</var>
+            </w>
+        </v>
+        <v n="680l">
+            <w>
+                <var variants="W1">Si</var>
+            </w>
+            <w>
+                <var variants="W1">maculem</var>
+            </w>
+            <w>
+                <var variants="W1">quod</var>
+            </w>
+            <w>
+                <var variants="W1">amem</var>
+            </w>
+            <w>
+                <var variants="W1">res</var>
+            </w>
+            <w>
+                <var variants="W1">inhonesta</var>
+            </w>
+            <w>
+                <var variants="W1">foret.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Galathea">
+        <v n="680m">
+            <w>
+                <var variants="W1">Fama</var>
+            </w>
+            <w>
+                <var variants="W1">ream</var>
+            </w>
+            <w>
+                <var variants="W1">faciet</var>
+            </w>
+            <w>
+                <var variants="W1">si</var>
+            </w>
+            <w>
+                <var variants="W1">non</var>
+            </w>
+            <w>
+                <var variants="W1">rea</var>
+            </w>
+            <w>
+                <var variants="W1">criminis</var>
+            </w>
+            <w>
+                <var variants="W1">essem,</var>
+            </w>
+        </v>
+        <v n="680n">
+            <w>
+                <var variants="W1">Et</var>
+            </w>
+            <w>
+                <var variants="W1">licet</var>
+            </w>
+            <w>
+                <var variants="W1">inmerito</var>
+            </w>
+            <w>
+                <var variants="W1">fama</var>
+            </w>
+            <w>
+                <var variants="W1">ream</var>
+            </w>
+            <w>
+                <var variants="W1">faciet.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Pamphilus">
+        <v n="680o">
+            <w>
+                <var variants="W1">Crimina</var>
+            </w>
+            <w>
+                <var variants="W1">tum</var>
+            </w>
+            <w>
+                <var variants="W1">arte</var>
+            </w>
+            <w>
+                <var variants="W1">soient</var>
+            </w>
+            <w>
+                <var variants="W1">secreta</var>
+            </w>
+            <w>
+                <var variants="W1">latere</var>
+            </w>
+        </v>
+        <v n="680p">
+            <w>
+                <var variants="W1">Non</var>
+            </w>
+            <w>
+                <var variants="W1">est</var>
+            </w>
+            <w>
+                <var variants="W1">quod</var>
+            </w>
+            <w>
+                <var variants="W1">timeas</var>
+            </w>
+            <w>
+                <var variants="W1">si</var>
+            </w>
+            <w>
+                <var variants="W1">tibi</var>
+            </w>
+            <w>
+                <var variants="W1">provideas.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Galathea">
+        <v n="680q">
+            <w>
+                <var variants="W1">Quis</var>
+            </w>
+            <w>
+                <var variants="W1">locus</var>
+            </w>
+            <w>
+                <var variants="W1">aptus</var>
+            </w>
+            <w>
+                <var variants="W1">erit</var>
+            </w>
+            <w>
+                <var variants="W1">ubi</var>
+            </w>
+            <w>
+                <var variants="W1">conveniamus</var>
+            </w>
+            <w>
+                <var variants="W1">amantes?</var>
+            </w>
+        </v>
+        <v n="680r">
+            <w>
+                <var variants="W1">Est</var>
+            </w>
+            <w>
+                <var variants="W1">pater</var>
+            </w>
+            <w>
+                <var variants="W1">usque</var>
+            </w>
+            <w>
+                <var variants="W1">domi,</var>
+            </w>
+            <w>
+                <var variants="W1">quis</var>
+            </w>
+            <w>
+                <var variants="W1">locus</var>
+            </w>
+            <w>
+                <var variants="W1">aptus</var>
+            </w>
+            <w>
+                <var variants="W1">erit?</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Pamphilus">
+        <v n="680s">
+            <w>
+                <var variants="W1">Quis</var>
+            </w>
+            <w>
+                <var variants="W1">locus?</var>
+            </w>
+            <w>
+                <var variants="W1">ecce</var>
+            </w>
+            <w>
+                <var variants="W1">locum</var>
+            </w>
+            <w>
+                <var variants="W1">nobis</var>
+            </w>
+            <w>
+                <var variants="W1">natura</var>
+            </w>
+            <w>
+                <var variants="W1">paravit</var>
+            </w>
+        </v>
+        <v n="680t">
+            <w>
+                <var variants="W1">Nam</var>
+            </w>
+            <w>
+                <var variants="W1">tutas</var>
+            </w>
+            <w>
+                <var variants="W1">latebras</var>
+            </w>
+            <w>
+                <var variants="W1">proxima</var>
+            </w>
+            <w>
+                <var variants="W1">silva</var>
+            </w>
+            <w>
+                <var variants="W1">parat.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Galathea">
+        <v n="680u">
+            <w>
+                <var variants="W1">Est</var>
+            </w>
+            <w>
+                <var variants="W1">anus</var>
+            </w>
+            <w>
+                <var variants="W1">in</var>
+            </w>
+            <w>
+                <var variants="W1">thalamis</var>
+            </w>
+            <w>
+                <var variants="W1">nutrix</var>
+            </w>
+            <w>
+                <var variants="W1">mihi</var>
+            </w>
+            <w>
+                <var variants="W1">sedula</var>
+            </w>
+            <w>
+                <var variants="W1">custos</var>
+            </w>
+        </v>
+        <v n="680v">
+            <w>
+                <var variants="W1">Nec</var>
+            </w>
+            <w>
+                <var variants="W1">patet</var>
+            </w>
+            <w>
+                <var variants="W1">egressus,</var>
+            </w>
+            <w>
+                <var variants="W1">est</var>
+            </w>
+            <w>
+                <var variants="W1">anus</var>
+            </w>
+            <w>
+                <var variants="W1">in</var>
+            </w>
+            <w>
+                <var variants="W1">thalamis.</var>
+            </w>
+        </v>
+    </pos>
+    <pos speaker="Pamphilus">
+        <v n="680w">
+            <w>
+                <var variants="W1">Corrumpatur</var>
+            </w>
+            <w>
+                <var variants="W1">anus</var>
+            </w>
+            <w>
+                <var variants="W1">quoque</var>
+            </w>
+            <w>
+                <var variants="W1">si</var>
+            </w>
+            <w>
+                <var variants="W1">corrumpitur</var>
+            </w>
+            <w>
+                <var variants="W1">index,</var>
+            </w>
+        </v>
+        <v n="680x">
+            <w>
+                <var variants="W1">Praeparat</var>
+            </w>
+            <w>
+                <var variants="W1">haec</var>
+            </w>
+            <w>
+                <var variants="W1">noctem,</var>
+            </w>
+            <w>
+                <var variants="W1">praeparat</var>
+            </w>
+            <w>
+                <var variants="W1">arte</var>
+            </w>
+            <w>
+                <var variants="W1">diem.</var>
             </w>
         </v>
     </pos>

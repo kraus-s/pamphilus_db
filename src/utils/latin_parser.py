@@ -205,7 +205,7 @@ def read_latin_xml(infile) -> dict[str, pd.DataFrame]:
 def latin_para_import(infile, outputDF: str = 'merged'):
     '''Reads the parallelized XML and returns DF.
     Args:
-    outputDF: if grouped returns all witnesses in one DF, column names reflecting MS abbrs.
+    outputDF: if grouped returns all witnesses in one DF, column names are the sigla of the manuscripts.
     if outputDF == 'dict' returns individual DFs for each witness '''
     df_dict = read_latin_xml(infile)
     for key, value in df_dict.items():
@@ -224,30 +224,26 @@ def latin_para_import(infile, outputDF: str = 'merged'):
         return df_merged
 
 
-def apply_sort(inDF: pd.DataFrame, currMS: str) -> pd.DataFrame:
-    orderPD = pd.read_excel(VERSEORDER, index_col=None, usecols=['Base', currMS])
-    orderPD[currMS] = orderPD[currMS].astype(str).replace('\.0', '', regex=True)
-    orderPD['Base'] = orderPD['Base'].astype(int)
-    orderPD.dropna(inplace=True)
-    newDF = pd.merge(left=inDF, right=orderPD, left_on='Verse', right_on=currMS, how='left')
-    newDF.set_index('Base', inplace=True)
-    newDF = newDF.sort_index()
-    newDF = newDF.rename(columns={currMS: 'VerseNo-Norm.'})
-    return newDF
-
-
-def get_order() -> pd.DataFrame:
-    orderPD = pd.read_excel("./data/latMat/verseorder.xlsx", index_col=None)
-    orderPD = orderPD.astype(str).replace('\.0', '', regex=True)
-    orderPD.dropna(inplace=True)
-    return orderPD
+def apply_sort(source_df: pd.DataFrame, current_ms: str) -> pd.DataFrame:
+    """This uses an external Excel Sheet to sort the verses of each manuscript in the way they appear in the manuscript.
+        Afterwards, every verse will have to verse numbers: One reflecting the order of the manuscript and one normalized
+        reflecting the verse order of Beckers edition"""
+    order_pd = pd.read_excel(VERSEORDER, index_col=None, usecols=['Base', current_ms])
+    order_pd[current_ms] = order_pd[current_ms].astype(str).replace('\.0', '', regex=True)
+    order_pd['Base'] = order_pd['Base'].astype(int)
+    order_pd.dropna(inplace=True)
+    new_df = pd.merge(left=source_df, right=order_pd, left_on='Verse', right_on=current_ms, how='left')
+    new_df.set_index('Base', inplace=True)
+    new_df = new_df.sort_index()
+    new_df = new_df.rename(columns={current_ms: 'VerseNo-Norm.'})
+    return new_df
 
 
 def latin_neofyier(infile):
     nodeDF = pd.DataFrame(columns=['NodeID', 'NodeLabels', 'NodeProps'])
     edgeDF = pd.DataFrame(columns=['FromNode', 'ToNode', 'EdgeLabels', 'EdgeProps', 'HRF'])
     latDict = latin_para_import(infile, outputDF="dict")
-    msDict = {'B1': 'rx46', 'P3': 'rx9', 'To': 'rx51', 'W1': 'rx24'}
+    msDict = {'B1': 'berlin_hamilton_390', 'P3': 'paris_bnf_latin_8430', 'To': 'toledo_cathedral_102-11', 'W1': 'vienna_cod_303', 'P5': 'paris_bnf_franc_25405', 'F': 'frankfurt_frag_lat_11_II'}
     edgeHelperDict2 = {}
     for key, value in msDict.items():
         updog = {key: value}
