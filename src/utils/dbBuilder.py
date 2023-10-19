@@ -81,7 +81,7 @@ def load_norse_constil() -> Tuple[pd.DataFrame, pd.DataFrame]:
 def load_contexts() -> Tuple[pd.DataFrame, pd.DataFrame]:
     '''Helper function to ingest several Excel files with information on manuscripts etc.'''
     
-    # This loads the infomartion on the core manuscripts and contained text witnesses (B1, P3, To, W1)
+    # This loads the infomartion on the core manuscripts and contained text witnesses (B1, P3, To, W1, P5)
     wtns = pd.read_excel(f"{EXCELS}hss-txtwtns.xlsx")
     nodeDF = pd.DataFrame(columns=['NodeID', 'NodeLabels', 'NodeProps'])
     edgeDF = pd.DataFrame(columns=['FromNode', 'ToNode', 'EdgeLabels', 'EdgeProps', 'HRF'])

@@ -61,6 +61,8 @@ METRE = 'XX_METRIC' # Node label
 INLANG = 'XX_HAS_LANUAGE' # Rel label
 HASMETRE = 'XX_HAS_METRE' # Rel label
 FROMWHERE = 'XX_ISFROM' #Rel label
+VERSETYPE = "ZZ1_verse"
+VERSEINMS = "ZZ3_VersinMS"
 
 
 # Yet another manual lookup snafu
