@@ -6,8 +6,8 @@ import sqlite3
 from rapidfuzz import fuzz
 import csv
 
-from constants import DATABASE_PATH, EXCLUDE_LEGAL
-from onp_res_dict import res_dct
+from utils.constants import ONP_DATABASE_PATH, EXCLUDE_LEGAL
+from utils.onp_res_dict import res_dct
 
 
 def create_connection(db_path: str) -> sqlite3.Connection:

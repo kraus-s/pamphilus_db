@@ -31,12 +31,12 @@ from collections import Counter
 
 class myData:
 
-    oldNorse: menota_parser.paradoc
+    old_norse: menota_parser.ParallelizedNorseDoc
 
     latin: dict
 
     def __init__(self, on, lat) -> None:
-        self.oldNorse = on
+        self.old_norse = on
         self.latin = lat
 
 
@@ -45,7 +45,7 @@ def data_loader():
         with open(OLD_NORSE_PICKLE, "rb") as f:
             old_norse_pamph = pickle.load(f)
     else:
-        old_norse_pamph = menota_parser.parse(PSDG47)
+        old_norse_pamph = menota_parser.get_parallelized_text(PSDG47)
         f = open(OLD_NORSE_PICKLE, 'w+b')
         pickle.dump(old_norse_pamph, f)
         f.close()
@@ -208,9 +208,9 @@ def _get_cluster_docs(model_filename: str, names_dict: dict[str, str]) -> dict[s
 
 
 def para_display(data: myData):
-    onPamph = data.oldNorse
+    onPamph = data.old_norse
     txtDict = data.latin
-    txtDict["DG 4-7"] = data.oldNorse
+    txtDict["DG 4-7"] = data.old_norse
     transLevel = st.selectbox("Select transcription level of Pamphilus saga", ["Diplomatic", "Normalized", "Facsimile", "Lemmatized"])
     verseSelect = st.text_input("Select Verse or Verserange")
     txtSelect = st.multiselect(label="Select witnesses", options = txtDict.keys(), default= txtDict.keys())
@@ -218,7 +218,10 @@ def para_display(data: myData):
     cols = st.columns(colNo)
     lookupD = {}
     for k in txtDict.keys():
-        lookupD[k] = [x.vno for x in txtDict[k].verses]
+        if k == "DG 4-7":
+            lookupD[k] = [x.vno for x in txtDict[k].verses]
+        else:
+            lookupD[k] = [x.verse_number_norm for x in txtDict[k].verse_list]
     
 
     for a, aa in enumerate(cols):
@@ -229,6 +232,7 @@ def para_display(data: myData):
         if not verseSelect:
             if currMS == "DG 4-7":
                 for v in onPamph.verses:
+                    print(v)
                     if transLevel == "Diplomatic":
                         aa.write(f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens]))
                     if transLevel == "Normalized":
@@ -238,8 +242,8 @@ def para_display(data: myData):
                     if transLevel == "Lemmatized":
                         aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
             else:
-                for v in currTxt.verses:
-                    aa.write(f"{v.vno} " + " ".join([t for t in v.tokens]))
+                for v in currTxt.verse_list:
+                    aa.write(f"{v.verse_number_norm} " + " ".join([t.word for t in v.tokens]))
 
 
         if "-" in verseSelect:
@@ -286,9 +290,9 @@ def para_display(data: myData):
                         if transLevel == "Lemmatized":
                             aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
             else:
-                for v in currTxt.verses:
-                    if verseSelect in v.vno:
-                        aa.write(f"{v.vno} {' '.join([t for t in v.tokens])}")
+                for v in currTxt.verse_list:
+                    if verseSelect in v.verse_number_norm:
+                        aa.write(f"{v.verse_number_norm} {' '.join([t.word for t in v.tokens])}")
 
 
 def display_para():

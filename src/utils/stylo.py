@@ -81,29 +81,18 @@ def corpus_collector_norse(level: str):
     res = {}
     res0 = []
     for i in fList:
-        ii = menota_parser.parse(i)
+        ii = menota_parser.get_regular_text(i)
         res0.append(ii)
     for iii in res0:
-        if isinstance(iii, menota_parser.paradoc):
-            tokens = []
-            for x in iii.verses:
-                if level == 'normalized':
-                    toks = [y.normalized for y in x.tokens]
-                elif level == 'lemma':
-                    toks = [y.lemma for y in x.tokens]
-                elif level == 'facs':
-                    toks = [y.facsimile for y in x.tokens]
-                tokens.extend(toks)
-        else:
-            if level == 'normalized':
-                tokens = [x.normalized for x in iii.tokens]
-            elif level == 'lemma':
-                tokens = [x.lemma for x in iii.tokens]
-            elif level == 'facs':
-                tokens = [x.facsimile for x in iii.tokens]
+        if level == 'normalized':
+            tokens = [x.normalized for x in iii.tokens]
+        elif level == 'lemma':
+            tokens = [x.lemma for x in iii.tokens]
+        elif level == 'facs':
+            tokens = [x.facsimile for x in iii.tokens]
         toks = []
         for i in tokens:
-            if not i == '-':
+            if i != '-':
                 toks.append(i)
         if len(toks) >= 10:
             res[f"{iii.name}-{iii.ms}"] = toks

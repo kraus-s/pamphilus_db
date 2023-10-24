@@ -3,7 +3,6 @@ from typing import Tuple
 from bs4 import BeautifulSoup
 import bs4
 from lxml import etree
-import os
 from pathlib import Path
 import pandas as pd
 
@@ -13,6 +12,12 @@ import pandas as pd
 
 
 class token:
+
+    normalized: str
+    diplomatic: str
+    facsimile: str
+    lemma: str
+    msa: str
 
     def __init__(self,
                 normalized: str,
@@ -29,6 +34,9 @@ class token:
 
 class sent:
 
+    order: int
+    tokens: list[token]
+
     def __init__(self, order: int) -> None:
         self.order = order
         self.tokens = []
@@ -39,6 +47,9 @@ class sent:
         
 class vpara:
 
+    vno: str
+    aligned: str
+    tokens: list[token]
 
     def __init__(self, vno: str, var: str) -> None:
         self.vno = vno
@@ -55,7 +66,11 @@ class vpara:
         pass
 
 
-class doc:
+class NorseDoc:
+
+    name: str
+    ms: str
+    sents: list[sent]
 
     def __init__(self, name: str, manuscript: str) -> None:
         self.name = name
@@ -74,7 +89,8 @@ class doc:
 
 
 
-class paradoc:
+class ParallelizedNorseDoc:
+    verses: list[vpara]
 
     def __init__(self, name: str, manuscript: str) -> None:
         self.name = name
@@ -135,7 +151,7 @@ def getInfo (soup: BeautifulSoup, get_all: bool = False) -> Tuple[str, str, str]
     return shelfmark, txtName
 
 
-def reg_menota_parse(currMS: doc, soup: bs4.BeautifulSoup) -> doc:
+def reg_menota_parse(current_manuscript: NorseDoc, soup: bs4.BeautifulSoup) -> NorseDoc:
     text_proper = soup.find_all('w')
 
     for word in text_proper:
@@ -165,16 +181,16 @@ def reg_menota_parse(currMS: doc, soup: bs4.BeautifulSoup) -> doc:
         else:
             msaClean = "-"
         currword = token(normalized=normClean, diplomatic=diplClean, facsimile=facsClean, lemma=lemming, msa=msaClean)
-        currMS.add_token(currword)
-    return currMS
+        current_manuscript.add_token(currword)
+    return current_manuscript
 
 
-def para_parse(soup, currMS: paradoc):
+def para_parse(soup, current_manuscript: ParallelizedNorseDoc) -> ParallelizedNorseDoc:
     paraVerses = soup.findAll('para')
     for indiVerse in paraVerses:
-        currVerseNo = indiVerse.get('vn')
+        current_verseerseNo = indiVerse.get('vn')
         variantBecker = indiVerse.get('var')
-        currVerse = vpara(vno=currVerseNo, var=variantBecker)
+        current_verseerse = vpara(vno=current_verseerseNo, var=variantBecker)
         allWords = indiVerse.find_all('w')
         for word in allWords:
             lemming = word.get('lemma')
@@ -203,35 +219,29 @@ def para_parse(soup, currMS: paradoc):
             else:
                 msaClean = "-"
             currword = token(normalized=normClean, diplomatic=diplClean, facsimile=facsClean, lemma=lemming, msa=msaClean)
-            currVerse.add_token(currword)
-        currMS.add_verse(currVerse)
-    return currMS
+            current_verseerse.add_token(currword)
+        current_manuscript.add_verse(current_verseerse)
+    return current_manuscript
 
 
-def getText(soup: bs4.BeautifulSoup, isPara: bool):
-    if isPara:
-        print("I recognized a parallelized text!")
-        ms_sig, txt_name = getInfo(soup)
-        currMS = paradoc(name=txt_name, manuscript=ms_sig)
-        currMS = para_parse(soup=soup, currMS=currMS)
-        return currMS
-    else:
-        print("I will do sentence tokenization!")
-        ms_sig, txt_name = getInfo(soup)
-        currMS = doc(name=txt_name, manuscript=ms_sig)
-        currMS = reg_menota_parse(soup=soup, currMS=currMS)
-        return currMS
-    
+def get_parallelized_text(input_file: str) -> ParallelizedNorseDoc:
+    print("Parsing parallelized text...")
+    soup = read_tei(input_file)
+    ms_sig, txt_name = getInfo(soup)
+    current_manuscript = ParallelizedNorseDoc(name=txt_name, manuscript=ms_sig)
+    current_manuscript = para_parse(soup=soup, current_manuscript=current_manuscript)
+    return current_manuscript
 
 
-def parse(inFile: str):
-    soup = read_tei(inFile)
-    if "para" in inFile:
-        isPara = True
-    else:
-        isPara = False
-    res = getText(soup, isPara)
-    return res
+def get_regular_text(input_file: str) -> NorseDoc:
+    print("Parsing regular text...")
+    soup = read_tei(input_file)
+    ms_sig, txt_name = getInfo(soup)
+    current_manuscript = NorseDoc(name=txt_name, manuscript=ms_sig)
+    current_manuscript = reg_menota_parse(soup=soup, current_manuscript=current_manuscript)
+    return current_manuscript
+
+
 
 
 # End Region
@@ -240,150 +250,72 @@ def parse(inFile: str):
 # Region: For neo4j
 # -----------------
 
-menotaEnt = "./data/menota-ents-1.txt"
 
-
-def paramenotaParse(inFile) -> pd.DataFrame:
-    intro = "<!DOCTYPE TEI ["
-    outro = " ]>"
-    with open(inFile, 'r', encoding="UTF-8") as trash:
-        presoup = trash.read()
-    with open(menotaEnt, 'r', encoding='UTF-8') as ents:
-        treebeard = ents.read()
-    pot = etree.fromstring(intro + treebeard + outro + presoup)
-    
-    soup = BeautifulSoup(etree.tostring(pot, encoding='UTF-8'), features='lxml')
-    paraVerses = soup.findAll('para')
-    friendlyName = 'DG4-7-Pamph' # TODO: Remove hardcoding
-    properIdentifier = friendlyName
-
-    # Throwing MS and witness to the pandas
-    pamphBamboo = pd.DataFrame(columns=['Verse', 'Order', 'Lemma', 'Normalized', 'Facsimile', 'MSA', 'Variant'])
-    counter = 1 
-    for indiVerse in paraVerses:
-        currVerse = indiVerse.get('vn')
-        variantBecker = indiVerse.get('var')
-        words2beParallelized = indiVerse.findAll('w')
-        for realtalk in words2beParallelized:         
-            lemming = realtalk.get('lemma')
-            if lemming is not None:
-                lemming = realtalk.get('lemma')
-            else:
-                lemming = "-"
-            diplRaw = realtalk.find('me:dipl')
-            if diplRaw is not None:
-                diplClean = diplRaw.get_text()
-            else:
-                diplClean = "-"
-            normRaw = realtalk.find('me:norm')
-            if normRaw is not None:
-                normClean = normRaw.get_text()
-            else:
-                normClean = "-"
-            facsRaw = realtalk.find('me:facs')
-            if facsRaw is not None:
-                facsClean = facsRaw.get_text()
-            else:
-                normClean = "-"
-            MSARaw = realtalk.get('me:msa')
-            if MSARaw is not None:
-                msaClean = realtalk.get('me:msa')
-            else:
-                msaClean = "-"
-            pamphBamboo = pamphBamboo.append({'Verse': currVerse, 'Lemma': lemming, 'Normalized': normClean, 'Facsimile': facsClean, 'MSA': msaClean, 'Order': counter, 'Variant': variantBecker}, ignore_index=True)
-        counter += 1
-    return pamphBamboo
-
-
-def para_verse_sorter(inDF: pd.DataFrame) -> pd.DataFrame:
-    bamboozled = inDF.groupby(['Verse', 'Order']).agg(" ".join).reset_index()
-    return bamboozled
-
-
-def para_neofiyer(infile: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    paraDF = paramenotaParse(infile)
-    nodeDF = pd.DataFrame(columns=['NodeID', 'NodeLabels', 'NodeProps'])
-    edgeDF = pd.DataFrame(columns=['FromNode', 'ToNode', 'EdgeLabels', 'EdgeProps', 'HRF'])
-    nodeDF = nodeDF.append({'NodeID': "'DG4-7'",
-                                'NodeLabels': 'E22_Human_Made_Object',
-                                'NodeProps': "Signature: 'De La Gardie 4-7', Abbreviation: 'DG4-7'"},
-                                ignore_index=True)
+def para_neofiyer(input_file: str) -> tuple[list[tuple[str, str, str]], list[tuple[str, str, str, str, str]]]:
+    """
+        Prepares parallelized Pamphilus-XML for neo4j import. Transforms data into lists of tuples for nodes and edges respecitvely.
+        Tuples are packed as follows: (NodeID, NodeLabels, NodeProps) and (FromNode, ToNode, EdgeLabels, EdgeProps, HRF)
+    Args:
+        input_file (str): Path to XML-file
+    Returns:
+        tuple[list[tuple[str, str, str]], list[tuple[str, str, str, str, str]]]: Tuple of lists of tuples
+    """
+    parallel_pamphilus = get_parallelized_text(input_file)
+    node_tuple_list: list[tuple[str, str, str]] = []
+    edge_tuple_list: list[tuple[str, str, str, str, str]] = []
+    current_node_tuple = (f"'{parallel_pamphilus.ms}'", 'E22_Human_Made_Object', f"Signature: 'De La Gardie 4-7', Abbreviation: '{parallel_pamphilus.ms}'")
+    node_tuple_list.append(current_node_tuple)
     count1 = 0
     count2 = 1
     key = "DG4-7"
-    edgeHelperDict2 = {"DG4-7": "De La Gardie 4-7"}
-    currV = ""
-    notFirst = False
-    for index, row in paraDF.iterrows():
-        nodeDF = nodeDF.append({
-                        'NodeID': f"'{key}-{count2}'",
-                        'NodeLabels': 'E33_Linguistic_Object', 
-                        'NodeProps': f"Normalized: '{row['Normalized']}', Verse: '{row['Verse']}', inMS: '{key}', pos: '{key}-{count2}', lemma: '{row['Lemma']}', paraMS: '{row['Variant']}', paraVerse: '{row['Verse']}', VerseNorm: '{row['Verse']}'"},
-                        ignore_index=True)
-        if not currV == row['Verse']:
-            if notFirst:
-                edgeDF = edgeDF.append({'FromNode': f"'v{key}-{currV}'",
-                                        'ToNode': f"'v{key}-{row['Verse']}'",
-                                        'EdgeLabels': 'vNext',
-                                        'HRF': f"{key} - Verse {currV} to next Verse {row['Verse']}"},
-                                        ignore_index=True)
-            notFirst = True
-            currV = row['Verse']
-            nodeDF = nodeDF.append({
-                                    'NodeID': f"'v{key}-{currV}'",
-                                    'NodeLabels': 'ZZ1_Verse',
-                                    'NodeProps': f"vno: '{currV}', inMS: '{key}'"},
-                                    ignore_index=True)
-            edgeDF = edgeDF.append({'FromNode': f"'v{key}-{currV}'",
-                                    'ToNode': f"'{edgeHelperDict2[key]}'",
-                                    'EdgeLabels': 'ZZ3_VersinMS',
-                                    'HRF': f"{key} - Verse {currV} to MS {key}"},
-                                    ignore_index=True)
-            variants = row['Variant'].split(',')
-            varClean = [x.strip() for x in variants]
-            for i in varClean:
-                if ',' in currV:
-                    indiVs = currV.split(',')
-                    cleanVs = [x.strip() for x in indiVs]
-                    for ii in cleanVs:
-                        edgeDF = edgeDF.append({'FromNode': f"'v{key}-{currV}'",
-                                        'ToNode': f"'v{i}-{ii}'",
-                                        'EdgeLabels': 'ZZ4_VersPara',
-                                        'HRF': f"{key} - Verse {currV} to MS {i}"},
-                                        ignore_index=True)
-                elif i == 'x':
-                    print(f'No parallel to V{currV}')
-                else:
-                    edgeDF = edgeDF.append({'FromNode': f"'v{key}-{currV}'",
-                                        'ToNode': f"'v{i}-{currV}'",
-                                        'EdgeLabels': 'ZZ4_VersPara',
-                                        'HRF': f"{key} - Verse {currV} to MS {i}"},
-                                        ignore_index=True)  
-        edgeDF = edgeDF.append({'FromNode': f"'{key}-{count2}'",
-                                    'ToNode': f"'{edgeHelperDict2[key]}'",
-                                    'EdgeLabels': 'P56_Is_Found_On',
-                                    'HRF': f"{key} - {row['Normalized']} to MS {key}"},
-                                    ignore_index=True)
-        edgeDF = edgeDF.append({'FromNode': f"'{key}-{count2}'",
-                                    'ToNode': f"'v{key}-{currV}'",
-                                    'EdgeLabels': 'ZZ2_inVerse',
-                                    'HRF': f"{key} - {row['Normalized']} to Verse {key}"},
-                                    ignore_index=True)
-        if count1 > 0:
-            edgeDF = edgeDF.append({'FromNode': f"'{key}-{count1}'",
-                                                'ToNode': f"'{key}-{count2}'",
-                                                'EdgeLabels': 'next',
-                                                'HRF': f"{key} - {row['Normalized']} to next"},
-                                                ignore_index=True)
-        count1 +=1
-        count2 +=1
-    return nodeDF, edgeDF
+    signature_long = "De La Gardie 4-7"
+    current_verse = ""
+    not_first = True
+    for verse in parallel_pamphilus.verses:
+        for word in verse.tokens:
+            current_node_tuple = (f"'{key}-{count2}'", 'E33_Linguistic_Object', f"Normalized: '{word.normalized}', Verse: '{verse.vno}', inMS: '{key}', pos: '{key}-{count2}', lemma: '{word.lemma}', paraMS: '{verse.aligned}', paraVerse: '{verse.vno}', VerseNorm: '{verse.vno}'")
+            node_tuple_list.append(current_node_tuple)
+            if current_verse != verse.vno:
+                if not_first:
+                    current_edge_tuple = (f"'{key}-{current_verse}'", f"'{key}-{verse.vno}'", 'vNext', '-', f"{key} - Verse {current_verse} to next Verse {verse.vno}")
+                    edge_tuple_list.append(current_edge_tuple)
+                not_first = False
+                current_verse = verse.vno
+                current_node_tuple = (f"'v{key}-{current_verse}'", 'ZZ1_Verse', f"vno: '{current_verse}', inMS: '{key}'")
+                node_tuple_list.append(current_node_tuple)
+                current_edge_tuple = (f"'{key}-{current_verse}'",  signature_long, "ZZ3_VersinMS", '-', f"{key} - Verse {current_verse} to MS {key}")
+                edge_tuple_list.append(current_edge_tuple)
+                variants = verse.aligned.split(',')
+                cleaned_variants = [x.strip() for x in variants]
+                # Some parts of the old norse Pamphilus correspond to more than one latin verse, this resolves multiple alignments
+                for i in cleaned_variants:
+                    if ',' in current_verse:
+                        distinct_verses = current_verse.split(',')
+                        cleaned_distinct = [x.strip() for x in distinct_verses]
+                        for ii in cleaned_distinct:
+                            current_edge_tuple = (f"'v{key}-{current_verse}'", f"'v{i}-{ii}'", 'ZZ4_VersPara', '-', f"{key} - Verse {current_verse} to MS {i}")
+                            edge_tuple_list.append(current_edge_tuple)
+                    elif i == 'x':
+                        print(f'No parallel to V{current_verse}')
+                    else:
+                        current_edge_tuple = (f"'v{key}-{current_verse}'", f"'v{i}-{current_verse}'", 'ZZ4_VersPara', '-', f"{key} - Verse {current_verse} to MS {i}")
+                        edge_tuple_list.append(current_edge_tuple)
+            current_edge_tuple = (f"'{key}-{count2}'", signature_long, 'P56_Is_Found_On', '-', f"{key} - {word.normalized} to MS {key}")
+            edge_tuple_list.append(current_edge_tuple)
+            current_edge_tuple = (f"'{key}-{count2}'", f"'v{key}-{current_verse}'", 'ZZ2_inVerse', '-', f"{key} - {word.normalized} to Verse {key}")
+            edge_tuple_list.append(current_edge_tuple)
+            if count1 > 0:
+                current_edge_tuple = (f"'{key}-{count1}'", f"'{key}-{count2}'", 'next', '-', f"{key} - {word.normalized} to next")
+                edge_tuple_list.append(current_edge_tuple)
+            count1 +=1
+            count2 +=1
+    return node_tuple_list, edge_tuple_list
 
 
-def regmenotaParse(inFile) -> pd.DataFrame:
+def regmenotaParse(input_file) -> pd.DataFrame:
     nodeDF = pd.DataFrame(columns=['NodeID', 'NodeLabels', 'NodeProps'])
     edgeDF = pd.DataFrame(columns=['FromNode', 'ToNode', 'EdgeLabels', 'EdgeProps'])
-    soup = read_tei(inFile)
+    soup = read_tei(input_file)
     shelfmark, famName, witID = menota_meta_extractor(soup)
     nodeDF = nodeDF.append({'NodeID': shelfmark, 
                             'NodeLabels': 'E18_Physical_Thing', 
@@ -458,5 +390,4 @@ def menota_meta_extractor(inSoup):
 
 if __name__ == "__main__":
     testfile = Path("data/training/AM-519a-4to.xml")
-    soupsoupsoup = read_tei(testfile)
-    myShit = getText(soupsoupsoup)
+    test_stuff = get_regular_text(testfile)

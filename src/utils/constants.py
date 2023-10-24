@@ -95,4 +95,5 @@ NEO4J_CREDENTIALS = ('neo4j', '12')
 
 
 # setup config
-ONP_DB_URL = "https://drive.switch.ch/index.php/s/QOG86EdRFjOTya7"
+ONP_DB_URL = "https://drive.switch.ch/index.php/s/QOG86EdRFjOTya7/download"
+LEVENSHTEIN_DB_URL = "https://drive.switch.ch/index.php/s/c3VyEkTut3n7d2j/download"

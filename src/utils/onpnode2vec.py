@@ -5,7 +5,7 @@ from node2vec import Node2Vec
 import networkx as nx
 from collections import Counter
 import itertools
-from constants import *
+from utils.constants import *
 from typing import Generator
 from datetime import datetime
 import os
@@ -107,7 +107,7 @@ def save_model(model, date_range: tuple[int, int], w_length: int, context_size: 
         writer.writerow([date_range, w_length, context_size, return_param, in_out_param, stop_docs, file_name])
 
 
-def get_files(path: str = model_path) -> list[str]:
+def get_files(path: str = N2V_MODELS_PATH) -> list[str]:
     return [os.path.abspath(x) for x in glob.iglob(path, recursive=True)]
 
 
@@ -138,7 +138,7 @@ def main(date_range: tuple[int, int], stop_docs: str, test_run: bool = False):
         save_model(model, date_range, w_length=30, context_size=10, return_param=1, in_out_param=1, itcnt=9999, stop_docs=stop_docs)
 
 
-def flow_control():
+def run():
     append_to_csv = input("Keep writing to same csv? y/n")
     if append_to_csv == "n":
         with open("data/model-parameters.csv", "w+") as f:
@@ -150,4 +150,4 @@ def flow_control():
 
 
 if __name__ == "__main__":
-    flow_control()
+    run()
