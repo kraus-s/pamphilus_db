@@ -59,11 +59,6 @@ class vpara:
 
     def add_token(self, newtoken: token):
         self.tokens.append(newtoken)
-    
-
-    def pretty_print():
-        
-        pass
 
 
 class NorseDoc:

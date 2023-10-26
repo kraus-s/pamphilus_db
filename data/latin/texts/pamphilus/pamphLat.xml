@@ -46,7 +46,7 @@
                 <var variants="F">assidue</var>
             </w>
             <w>
-                <var variants="B1, W1, To">plaga</var>
+                <var variants="B1, W1, To, P5">plaga</var>
                 <var variants="P3">pena</var>
                 <var variants="F">plaga</var>
             </w>
@@ -62,12 +62,12 @@
         </v>
         <v n="3">
             <w>
-                <var variants="B1, P3">Et</var>
+                <var variants="B1, P3, P5">Et</var>
                 <var variants="To, W1">Sed</var>
                 <var variants="F">-</var>
             </w>
             <w>
-                <var variants="B1, To, W1">ferientis</var>
+                <var variants="B1, To, W1, P5">ferientis</var>
                 <var variants="P3">feruentis</var>
                 <var variants="F">ferientis</var>
             </w>
@@ -169,7 +169,8 @@
                 <var variants="F">-</var>
             </w>
             <w>
-                <var variants="a">dabit</var>
+                <var variants="B1, P3, To, W1">dabit</var>
+                <var variants="P5">dabat</var>
                 <var variants="F">dabit</var>
             </w>
             <p>.</p>
@@ -196,13 +197,13 @@
                 <var variants="F">-</var>
             </w>
             <w>
-                <var variants="P3, To, W1">carpere</var>
+                <var variants="P3, To, W1, P5">carpere</var>
                 <var variants="B1">capere</var>
                 <var variants="F">-</var>
             </w>
             <w>
                 <var variants="To, W1">possum</var>
-                <var variants="B1, P3">possim</var>
+                <var variants="B1, P3, P5">possim</var>
                 <var variants="F">possum</var>
             </w>
             <p>?</p>
@@ -235,7 +236,7 @@
                 <var variants="F">-</var>
             </w>
             <w>
-                <var variants="B1, To">certus</var>
+                <var variants="B1, To, P5">certus</var>
                 <var variants="P3, W1">tutus</var>
                 <var variants="F">-</var>
             </w>
@@ -295,7 +296,7 @@
                 <var variants="F">-</var>
             </w>
             <w>
-                <var variants="B1, To">michi</var>
+                <var variants="B1, To, P5">michi</var>
                 <var variants="P3, W1">mei</var>
                 <var variants="F">-</var>
             </w>
@@ -383,9 +384,8 @@
                 <var variants="F">mea</var>
             </w>
             <w>
-                <var variants="P3, To, W1">plaga</var>
+                <var variants="P3, To, W1, P5">plaga</var>
                 <var variants="B1">pla</var>
-                <var variants="P3, To, W1">plaga</var>
             </w>
             <w>
                 <var variants="a">suos</var>
@@ -420,40 +420,38 @@
             <w>
                 <var variants="B1, To, W1">sit</var>
                 <var variants="P3">ferat</var>
-                <var variants="F">sit</var>
+                <var variants="F, P5">sit</var>
             </w>
             <w>
-                <var variants="B1, To, W1">et</var>
+                <var variants="B1, To, W1, P5">et</var>
                 <var variants="P3">unde</var>
                 <var variants="F">et</var>
             </w>
             <w>
-                <var variants="B1, To, W1">unde</var>
+                <var variants="B1, To, W1, P5">unde</var>
                 <var variants="P3">uenit</var>
                 <var variants="F">-</var>
             </w>
             <w>
-                <var variants="B1, To, W1">uenit</var>
+                <var variants="B1, To, W1, P5">uenit</var>
                 <var variants="P3">armaque</var>
                 <var variants="F">uenit</var>
             </w>
             <p>,</p>
             <w>
-                <var variants="W1">armaque</var>
+                <var variants="W1, P5">armaque</var>
                 <var variants="B1">et</var>
                 <var variants="P3">quis</var>
                 <var variants="To">arma</var>
                 <var variants="F">-</var>
             </w>
             <w>
-                <var variants="W1">quis</var>
+                <var variants="W1, P5, B1, To">quis</var>
                 <var variants="P3">posuit</var>
-                <var variants="B1">quis</var>
-                <var variants="To">quis</var>
                 <var variants="F">-</var>
             </w>
             <w>
-                <var variants="W1">posuit</var>
+                <var variants="W1, P5">posuit</var>
                 <var variants="B1">arma</var>
                 <var variants="To">et</var>
             </w>
@@ -465,7 +463,7 @@
         </v>
         <v n="15">
             <w>
-                <var variants="B1, P3, W1">Perdet</var>
+                <var variants="B1, P3, W1, P5">Perdet</var>
                 <var variants="To">Perdit</var>
                 <var variants="F">-</var>
             </w>
@@ -474,7 +472,7 @@
                 <var variants="F">et</var>
             </w>
             <w>
-                <var variants="B1, To">ipsa</var>
+                <var variants="B1, To, P5">ipsa</var>
                 <var variants="P3, W1">ipse</var>
                 <var variants="F">ipsa</var>
             </w>
@@ -498,7 +496,7 @@
         </v>
         <v n="16">
             <w>
-                <var variants="To, W1, P3">Spes</var>
+                <var variants="To, W1, P3, P5">Spes</var>
                 <var variants="B1">Opes</var>
                 <var variants="F">-</var>
             </w>
@@ -602,8 +600,8 @@
                 <var variants="a">prioribus</var>
             </w>
             <w>
-                <var variants="P3, To, W1">illis</var>
-                <var variants="B1">illis</var>
+                <var variants="P3, To, W1, P5">illis</var>
+                <var variants="B1">illi</var>
             </w>
         </v>
         <v n="20">
@@ -611,7 +609,7 @@
                 <var variants="a">Et</var>
             </w>
             <w>
-                <var variants="B1, To, W1">me</var>
+                <var variants="B1, To, W1, P5">me</var>
                 <var variants="P3">michi</var>
             </w>
             <w>
@@ -619,7 +617,7 @@
                 <var variants="P3, P5">contingit</var>
             </w>
             <w>
-                <var variants="B1, To, W1">protinus</var>
+                <var variants="B1, To, W1, P5">protinus</var>
                 <var variants="P3">pocius</var>
             </w>
             <w>
@@ -642,14 +640,14 @@
             </w>
             <p>,</p>
             <w>
-                <var variants="B1, P3, W1">nam</var>
+                <var variants="B1, P3, W1, P5">nam</var>
                 <var variants="To">iam</var>
             </w>
             <w>
                 <var variants="a">conditus</var>
             </w>
             <w>
-                <var variants="P3, To, W1">ignis</var>
+                <var variants="P3, To, W1, P5">ignis</var>
                 <var variants="B1">igni</var>
             </w>
         </v>
@@ -722,11 +720,11 @@
         <v n="25">
             <w>
                 <var variants="B1, P3, To, W1">Vnica</var>
-                <var variants="a">Es</var>
+                <var variants="P5">Es</var>
             </w>
             <w>
                 <var variants="B1, P3, To, W1">-</var>
-                <var variants="a">mea</var>
+                <var variants="P5">mea</var>
             </w>
             <w>
                 <var variants="a">spes</var>
@@ -825,35 +823,35 @@
                 <var variants="a">Ne</var>
             </w>
             <w>
-                <var variants="P3, W1">sis</var>
+                <var variants="P3, W1, P5">sis</var>
                 <var variants="B1, To">michi</var>
             </w>
             <w>
                 <var variants="P3, W1">dura</var>
+                <var variants="P5">diua</var>
                 <var variants="B1">sis</var>
                 <var variants="To">sitem</var>
             </w>
             <w>
-                <var variants="P3, W1">michi</var>
-                <var variants="B1, To">dura</var>
-                <var variants="P5">diua</var>
+                <var variants="P3, W1, P5">michi</var>
+                <var variants="B1, To">dura</var>   
             </w>
             <w>
-                <var variants="B1, P3, To">precibusque</var>
+                <var variants="B1, P3, To, P5">precibusque</var>
                 <var variants="W1">precibus</var>
             </w>
             <w>
                 <var variants="a">resistere</var>
             </w>
             <w>
-                <var variants="P3, To, W1">noli</var>
+                <var variants="P3, To, W1, P5">noli</var>
                 <var variants="B1">meis</var>
             </w>
             <p>,</p>
         </v>
         <v n="30">
             <w>
-                <var variants="P3, To, W1">Sed</var>
+                <var variants="P3, To, W1, P5">Sed</var>
                 <var variants="B1">Et</var>
             </w>
             <w>
@@ -861,7 +859,7 @@
             </w>
             <p>,</p>
             <w>
-                <var variants="B1, To, W1">quod</var>
+                <var variants="B1, To, W1, P5">quod</var>
                 <var variants="P3">que</var>
             </w>
             <w>
@@ -894,11 +892,11 @@
             </w>
             <p>-</p>
             <w>
-                <var variants="B1, P3, W1">misero</var>
+                <var variants="B1, P3, W1, P5">misero</var>
                 <var variants="To">michi</var>
             </w>
             <w>
-                <var variants="B1, P3, W1">michi</var>
+                <var variants="B1, P3, W1, P5">michi</var>
                 <var variants="To">misero</var>
             </w>
             <w>
@@ -947,7 +945,7 @@
                 <var variants="P5">animo</var>
             </w>
             <w>
-                <var variants="a">tantu</var>
+                <var variants="a">tantum</var>
             </w>
             <p>!</p>
             <w>
@@ -971,7 +969,7 @@
                 <var variants="a">sic</var>
             </w>
             <w>
-                <var variants="B1, P3, To">euenient</var>
+                <var variants="B1, P3, To, P5">euenient</var>
                 <var variants="W1">peruenient</var>
             </w>
             <w>
@@ -1003,7 +1001,7 @@
                 <var variants="a">non</var>
             </w>
             <w>
-                <var variants="P3, W1">esse</var>
+                <var variants="P3, W1, P5">esse</var>
                 <var variants="B1, To">esset</var>
             </w>
             <p>,</p>

@@ -207,32 +207,35 @@ def _get_cluster_docs(model_filename: str, names_dict: dict[str, str]) -> dict[s
     return res
 
 
-def para_display(data: myData):
+def para_display(data: myData): 
     onPamph = data.old_norse
-    txtDict = data.latin
-    txtDict["DG 4-7"] = data.old_norse
+    texts_dict = {}
+    texts_dict["DG 4-7"] = data.old_norse
+    latin_dict = data.latin
+    texts_dict.update(latin_dict)
+    st.write("This displays the parallel text of the Pamphilus saga and the Latin witnesses. VB marks the verses in Beckers order. VOP denotes the verses in the order they appear in each manuscript.")
     transLevel = st.selectbox("Select transcription level of Pamphilus saga", ["Diplomatic", "Normalized", "Facsimile", "Lemmatized"])
     verseSelect = st.text_input("Select Verse or Verserange")
-    txtSelect = st.multiselect(label="Select witnesses", options = txtDict.keys(), default= txtDict.keys())
+    txtSelect = st.multiselect(label="Select witnesses", options = texts_dict.keys(), default= texts_dict.keys())
     colNo = len(txtSelect)
     cols = st.columns(colNo)
     lookupD = {}
-    for k in txtDict.keys():
+    for k in texts_dict.keys():
         if k == "DG 4-7":
-            lookupD[k] = [x.vno for x in txtDict[k].verses]
+            lookupD[k] = [x.vno for x in texts_dict[k].verses]
         else:
-            lookupD[k] = [x.verse_number_norm for x in txtDict[k].verse_list]
+            lookupD[k] = [x.verse_number_norm for x in texts_dict[k].verse_list]
     
-
+    parallels_dict = {}
     for a, aa in enumerate(cols):
         aa.write(f"{txtSelect[a]}")
-        currMS = txtSelect[a]
-        currTxt = txtDict[currMS]
+        current_manuscript = txtSelect[a]
+        current_text = texts_dict[current_manuscript]
 
         if not verseSelect:
-            if currMS == "DG 4-7":
+            if current_manuscript == "DG 4-7":
                 for v in onPamph.verses:
-                    print(v)
+                    parallels_dict[v.vno] = v.aligned
                     if transLevel == "Diplomatic":
                         aa.write(f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens]))
                     if transLevel == "Normalized":
@@ -242,17 +245,24 @@ def para_display(data: myData):
                     if transLevel == "Lemmatized":
                         aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
             else:
-                for v in currTxt.verse_list:
-                    aa.write(f"{v.verse_number_norm} " + " ".join([t.word for t in v.tokens]))
+                for number, verse in current_text.verses_order_on_page.items():
+                    is_parallel = parallels_dict.get(verse.verse_number_norm, [])
+                    if current_manuscript in is_parallel:
+                        color = "green"
+                    else:
+                        color = "red"
+                    verse_string = " ".join([t.word for t in verse.tokens])
+                    aa.write(f"VB: {verse.verse_number_norm} / VOP: {number} \n :{color}[{verse_string}]" )
 
 
         if "-" in verseSelect:
             i, ii = verseSelect.split("-")
-            vRange = list(map(str, range(int(i), int(ii)+1)))
+            verse_number_range = list(map(str, range(int(i), int(ii)+1)))
 
-            if currMS == "DG 4-7":
-                for v in currTxt.verses:
-                    if v.vno in vRange:
+            if current_manuscript == "DG 4-7":
+                for v in current_text.verses:
+                    if check_verse_contained(v.vno, verse_number_range):
+                        parallels_dict[v.vno] = v.aligned
                         if transLevel == "Diplomatic":
                             aa.write(f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens]))
                         if transLevel == "Normalized":
@@ -261,24 +271,19 @@ def para_display(data: myData):
                             aa.write(f"{v.vno} " + " ".join([t.facsimile for t in v.tokens]))
                         if transLevel == "Lemmatized":
                             aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
-                    if "," in v.vno:
-                        v1 = v.vno.split(",")
-                        if v1[0] in vRange:
-                            if transLevel == "Diplomatic":
-                                aa.write(f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens]))
-                            if transLevel == "Normalized":
-                                aa.write(f"{v.vno} " + " ".join([t.normalized for t in v.tokens]))
-                            if transLevel == "Facsimile":
-                                aa.write(f"{v.vno} " + " ".join([t.facsimile for t in v.tokens]))
-                            if transLevel == "Lemmatized":
-                                aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
 
             else:
-                for v in currTxt.verses:
-                    if v.vno in vRange:
-                        aa.write(f"{v.vno} " + " ".join([t for t in v.tokens]))
+                for verse_number in verse_number_range:
+                    verse_object = current_text.verses_order_on_page[int(verse_number)]
+                    is_parallel = parallels_dict.get(verse_object.verse_number_norm, [])
+                    if current_manuscript in is_parallel:
+                        color = "green"
+                    else:
+                        color = "red"
+                    verse_string = " ".join([t.word for t in verse_object.tokens])
+                    aa.write(f"VB: {verse_object.verse_number_norm} / VOP: {verse_number} \n :{color}[{verse_string}]" )
         else:
-            if currMS == "DG 4-7":
+            if current_manuscript == "DG 4-7":
                 for v in onPamph.verses:
                     if verseSelect in v.vno:
                         if transLevel == "Diplomatic":
@@ -290,9 +295,19 @@ def para_display(data: myData):
                         if transLevel == "Lemmatized":
                             aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
             else:
-                for v in currTxt.verse_list:
+                for v in current_text.verse_list:
                     if verseSelect in v.verse_number_norm:
                         aa.write(f"{v.verse_number_norm} {' '.join([t.word for t in v.tokens])}")
+
+
+def check_verse_contained(verse_number: str, verse_number_range: List[str]) -> bool:
+    if "," in verse_number:
+        verse_number = verse_number.split(",")[0]
+    for i in verse_number_range:
+        if i in verse_number:
+            return True    
+    return False
+
 
 
 def display_para():
@@ -305,27 +320,27 @@ def display_para():
     if st.button("Run"):
         if "-" in verseSelect:
             i, ii = verseSelect.split("-")
-            vRange = list(map(str, range(int(i), int(ii)+1)))
-            vRange = [str(x) for x in vRange]
+            verse_number_range = list(map(str, range(int(i), int(ii)+1)))
+            verse_number_range = [str(x) for x in verse_number_range]
         if not verseSelect:
             st.write("You gotta give me some text to work with")
         if displayMode == 1:
             colNo = len(txtSelect)
             cols = st.columns(colNo)
             for a, aa in enumerate(cols):
-                currTxt = txtSelect[a]
-                aa.write(currTxt)
+                current_text = txtSelect[a]
+                aa.write(current_text)
                 if not verseSelect:
                     aa.write("No Verse or Verserange selected")
-                if currTxt == 'DG4-7':
+                if current_text == 'DG4-7':
                     with graph.session() as session:
                         tx = session.begin_transaction()
-                        results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.paraVerse IN {vRange} AND a.inMS = '{currTxt}' RETURN a.paraVerse AS vn, a.Normalized AS text")
+                        results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.paraVerse IN {verse_number_range} AND a.inMS = '{current_text}' RETURN a.paraVerse AS vn, a.Normalized AS text")
                         resD = results.data()
                 else:
                     with graph.session() as session:
                         tx = session.begin_transaction()
-                        results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.VerseNorm IN {vRange} AND a.inMS = '{currTxt}' RETURN a.VerseNorm AS vn, a.Normalized AS text")
+                        results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.VerseNorm IN {verse_number_range} AND a.inMS = '{current_text}' RETURN a.VerseNorm AS vn, a.Normalized AS text")
                         resD = results.data()
                 resX = {}
                 for res in resD:
@@ -337,13 +352,13 @@ def display_para():
                     aa.write(f"{k} {resX[k]}")
         elif displayMode == 2:
             st.write("Nothing to see here yet.")
-            st.write(f"Getting Verses {vRange} from MSs {txtSelect}")
+            st.write(f"Getting Verses {verse_number_range} from MSs {txtSelect}")
             with graph.session() as session:
                 tx = session.begin_transaction()
                 results = tx.run(f"""MATCH (a)-[r]->(b) 
                                     WHERE a.inMS IN {txtSelect}
                                     AND b.inMS IN {txtSelect}
-                                    AND a.VerseNorm IN {vRange} 
+                                    AND a.VerseNorm IN {verse_number_range} 
                                     RETURN *""")
                 nodes = list(results.graph()._nodes.values())
                 rels = list(results.graph()._relationships.values())
@@ -468,6 +483,7 @@ def home_page():
 
 
 def main():
+    st.set_page_config(layout="wide")
     _state_initializer()
     ON, LAT = data_loader()
     current_data = myData(ON, LAT)

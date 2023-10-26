@@ -19,3 +19,4 @@ The python side of things can be set up fairly easily using pipenv or pip using 
 If you used pipenv you can simply run `pipenv run setup` to prepare all the data.
 Otherwise you will need to run src/utils/setup.py manually.
 In either case, make sure to start the neo4j database beforehand.
+You can use the webapp without the neo4j backend, too. To do so, simply run streamlit with `python -m streamlit run src/pamphalazyer.py` or with `pipenv run run` if you used pipenv to set up a virtual envirnonment.

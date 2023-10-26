@@ -40,12 +40,14 @@ class LatinDocument:
     name: str
     shelfmark: str
     verses: dict[str, Verse]
+    verses_order_on_page: dict[str, Verse]
 
     def __init__(self, abbreviation: str, shelfmark: str) -> None:
         self.name = abbreviation
         self.shelfmark = shelfmark
         self.verses = {}
         self.verse_list = []
+        self.verses_order_on_page = {}
         self.verse_tuples = apply_sort()[abbreviation]
     
     def add_verse(self, new_verse: Verse):
@@ -67,6 +69,7 @@ class LatinDocument:
             if number_becker != "nan":
                 if len(self.verses[number_becker].tokens) > 0:
                     res[number_on_page] = self.verses[number_becker]
+        self.verses_order_on_page = res
         return res
 
 # Parsing
@@ -115,6 +118,8 @@ def parse_pamphilus(infile: str) -> dict[str, LatinDocument]:
                 token_count += 1
         for key, val in docs_dict.items():
             witness_dict[key].add_verse(val)
+    for key, val in witness_dict.items():
+        val.ms_order_verses()
     return witness_dict
 
 
