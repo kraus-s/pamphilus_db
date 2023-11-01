@@ -7536,7 +7536,7 @@
                 <var variants="a">miseros</var>
             </w>
             <w>
-                <var variants="P3, W1">mala</var>
+                <var variants="P3, W1, P5">mala</var>
                 <var variants="B1, To">mille</var>
             </w>
             <w>
@@ -7751,7 +7751,7 @@
                 <var variants="W1">uel</var>
             </w>
             <w>
-                <var variants="B1, P3, To">-</var>
+                <var variants="B1, P3, To, P5">-</var>
                 <var variants="W1">ille</var> <!-- extra bits in W1 -->
             </w>
             <w>
@@ -9153,7 +9153,7 @@
             </w>
             <w>
                 <var variants="B1, P3, W1, To">tamen</var>
-                <var variants="P5">tamen</var>
+                <var variants="P5">nunc</var>
             </w>
             <w>
                 <var variants="a">ipsa</var>
@@ -11486,7 +11486,7 @@
                 <var variants="a">quibus</var>
             </w>
             <w>
-                <var variants="P3, W1, P3">istud</var>
+                <var variants="P3, W1, P3, P5">istud</var>
                 <var variants="B1, To">illud</var>
             </w>
             <w>
