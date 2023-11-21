@@ -208,41 +208,41 @@ def _get_cluster_docs(model_filename: str, names_dict: dict[str, str]) -> dict[s
 
 
 def para_display(data: myData): 
-    onPamph = data.old_norse
+    old_norse_pamphilus = data.old_norse
     texts_dict = {}
     texts_dict["DG 4-7"] = data.old_norse
     latin_dict = data.latin
     texts_dict.update(latin_dict)
     st.write("This displays the parallel text of the Pamphilus saga and the Latin witnesses. VB marks the verses in Beckers order. VOP denotes the verses in the order they appear in each manuscript.")
-    transLevel = st.selectbox("Select transcription level of Pamphilus saga", ["Diplomatic", "Normalized", "Facsimile", "Lemmatized"])
-    verseSelect = st.text_input("Select Verse or Verserange")
-    txtSelect = st.multiselect(label="Select witnesses", options = texts_dict.keys(), default= texts_dict.keys())
-    colNo = len(txtSelect)
-    cols = st.columns(colNo)
-    lookupD = {}
+    transcription_level = st.selectbox("Select transcription level of Pamphilus saga", ["Diplomatic", "Normalized", "Facsimile", "Lemmatized"])
+    selected_verse = st.text_input("Select Verse or Verserange")
+    selected_text = st.multiselect(label="Select witnesses", options = texts_dict.keys(), default= texts_dict.keys())
+    number_of_columns = len(selected_text)
+    cols = st.columns(number_of_columns)
+    lookup_dict = {}
     for k in texts_dict.keys():
         if k == "DG 4-7":
-            lookupD[k] = [x.vno for x in texts_dict[k].verses]
+            lookup_dict[k] = [x.vno for x in texts_dict[k].verses]
         else:
-            lookupD[k] = [x.verse_number_norm for x in texts_dict[k].verse_list]
+            lookup_dict[k] = [x.verse_number_norm for x in texts_dict[k].verse_list]
     
     parallels_dict = {}
     for a, aa in enumerate(cols):
-        aa.write(f"{txtSelect[a]}")
-        current_manuscript = txtSelect[a]
+        aa.write(f"{selected_text[a]}")
+        current_manuscript = selected_text[a]
         current_text = texts_dict[current_manuscript]
 
-        if not verseSelect:
+        if not selected_verse:
             if current_manuscript == "DG 4-7":
-                for v in onPamph.verses:
+                for v in old_norse_pamphilus.verses:
                     parallels_dict[v.vno] = v.aligned
-                    if transLevel == "Diplomatic":
+                    if transcription_level == "Diplomatic":
                         aa.write(f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens]))
-                    if transLevel == "Normalized":
+                    if transcription_level == "Normalized":
                         aa.write(f"{v.vno} " + " ".join([t.normalized for t in v.tokens]))
-                    if transLevel == "Facsimile":
+                    if transcription_level == "Facsimile":
                         aa.write(f"{v.vno} " + " ".join([t.facsimile for t in v.tokens]))
-                    if transLevel == "Lemmatized":
+                    if transcription_level == "Lemmatized":
                         aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
             else:
                 for number, verse in current_text.verses_order_on_page.items():
@@ -255,21 +255,21 @@ def para_display(data: myData):
                     aa.write(f"VB: {verse.verse_number_norm} / VOP: {number} \n :{color}[{verse_string}]" )
 
 
-        if "-" in verseSelect:
-            i, ii = verseSelect.split("-")
+        if "-" in selected_verse:
+            i, ii = selected_verse.split("-")
             verse_number_range = list(map(str, range(int(i), int(ii)+1)))
 
             if current_manuscript == "DG 4-7":
                 for v in current_text.verses:
                     if check_verse_contained(v.vno, verse_number_range):
                         parallels_dict[v.vno] = v.aligned
-                        if transLevel == "Diplomatic":
+                        if transcription_level == "Diplomatic":
                             aa.write(f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens]))
-                        if transLevel == "Normalized":
+                        if transcription_level == "Normalized":
                             aa.write(f"{v.vno} " + " ".join([t.normalized for t in v.tokens]))
-                        if transLevel == "Facsimile":
+                        if transcription_level == "Facsimile":
                             aa.write(f"{v.vno} " + " ".join([t.facsimile for t in v.tokens]))
-                        if transLevel == "Lemmatized":
+                        if transcription_level == "Lemmatized":
                             aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
 
             else:
@@ -284,19 +284,19 @@ def para_display(data: myData):
                     aa.write(f"VB: {verse_object.verse_number_norm} / VOP: {verse_number} \n :{color}[{verse_string}]" )
         else:
             if current_manuscript == "DG 4-7":
-                for v in onPamph.verses:
-                    if verseSelect in v.vno:
-                        if transLevel == "Diplomatic":
+                for v in old_norse_pamphilus.verses:
+                    if selected_verse in v.vno:
+                        if transcription_level == "Diplomatic":
                             aa.write(f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens]))
-                        if transLevel == "Normalized":
+                        if transcription_level == "Normalized":
                             aa.write(f"{v.vno} " + " ".join([t.normalized for t in v.tokens]))
-                        if transLevel == "Facsimile":
+                        if transcription_level == "Facsimile":
                             aa.write(f"{v.vno} " + " ".join([t.facsimile for t in v.tokens]))
-                        if transLevel == "Lemmatized":
+                        if transcription_level == "Lemmatized":
                             aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
             else:
                 for v in current_text.verse_list:
-                    if verseSelect in v.verse_number_norm:
+                    if selected_verse in v.verse_number_norm:
                         aa.write(f"{v.verse_number_norm} {' '.join([t.word for t in v.tokens])}")
 
 
@@ -313,24 +313,24 @@ def check_verse_contained(verse_number: str, verse_number_range: List[str]) -> b
 def display_para():
     st.write("NB! neo4j backend is not currently working with streamlit cloud.")
     graph = GraphDatabase.driver(NEO4J_URL_LOCAL, auth=NEO4J_CREDENTIALS)
-    verseSelect = st.text_input("Select Verse or Verserange") 
+    selected_verse = st.text_input("Select Verse or Verserange") 
     txtWits = ['B1', 'P3', 'To', 'W1', 'DG4-7']
-    txtSelect = st.multiselect(label="Select witnesses", options = txtWits, default=txtWits)
+    selected_text = st.multiselect(label="Select witnesses", options = txtWits, default=txtWits)
     displayMode = st.radio("Select display mode", options=[1, 2])
     if st.button("Run"):
-        if "-" in verseSelect:
-            i, ii = verseSelect.split("-")
+        if "-" in selected_verse:
+            i, ii = selected_verse.split("-")
             verse_number_range = list(map(str, range(int(i), int(ii)+1)))
             verse_number_range = [str(x) for x in verse_number_range]
-        if not verseSelect:
+        if not selected_verse:
             st.write("You gotta give me some text to work with")
         if displayMode == 1:
-            colNo = len(txtSelect)
-            cols = st.columns(colNo)
+            number_of_columns = len(selected_text)
+            cols = st.columns(number_of_columns)
             for a, aa in enumerate(cols):
-                current_text = txtSelect[a]
+                current_text = selected_text[a]
                 aa.write(current_text)
-                if not verseSelect:
+                if not selected_verse:
                     aa.write("No Verse or Verserange selected")
                 if current_text == 'DG4-7':
                     with graph.session() as session:
@@ -352,12 +352,12 @@ def display_para():
                     aa.write(f"{k} {resX[k]}")
         elif displayMode == 2:
             st.write("Nothing to see here yet.")
-            st.write(f"Getting Verses {verse_number_range} from MSs {txtSelect}")
+            st.write(f"Getting Verses {verse_number_range} from MSs {selected_text}")
             with graph.session() as session:
                 tx = session.begin_transaction()
                 results = tx.run(f"""MATCH (a)-[r]->(b) 
-                                    WHERE a.inMS IN {txtSelect}
-                                    AND b.inMS IN {txtSelect}
+                                    WHERE a.inMS IN {selected_text}
+                                    AND b.inMS IN {selected_text}
                                     AND a.VerseNorm IN {verse_number_range} 
                                     RETURN *""")
                 nodes = list(results.graph()._nodes.values())

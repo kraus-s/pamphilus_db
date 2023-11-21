@@ -2067,7 +2067,7 @@
                 <var variants="a">prius</var>
             </w>
             <w>
-                <var variants="B1, To, W1, To">quos</var>
+                <var variants="B1, P3, W1, To">quos</var>
                 <var variants="P5">quod</var>
             </w>
             <w>
@@ -6537,7 +6537,8 @@
                 <var variants="B1">-</var>            <!-- om. -->
             </w>
             <w>
-                <var variants="a">plura</var>
+                <var variants="B1, P3, To, W1">plura</var>
+                <var variants="P5">verba</var>
             </w>
             <w>
                 <var variants="a">cohercent</var>
@@ -12017,7 +12018,7 @@
             <w>
                 <var variants="B1, P3, W1">inanis</var>
                 <var variants="To">mortalis</var>
-                <var variants="To">moralis</var>
+                <var variants="P5">moralis</var>
             </w>
             <w>
                 <var variants="a">egestas</var>

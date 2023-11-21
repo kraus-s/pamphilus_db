@@ -409,7 +409,7 @@ guanda</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="5, 6" var="B1, P3, To, W1">
+                        <para vn="5" var="B1, P3, To, W1, P5">
                             <w lemma="sá" me:msa="xDD gN nS cD">
                                 <choice>
                                     <me:facs>þu&inodot;</me:facs>
@@ -478,6 +478,8 @@ ti</me:dipl>
                                     <me:norm>,</me:norm>
                                 </choice>
                             </pc>
+                        </para>
+                        <para vn="6" var="B1, P3, To, W1, P5">
                             <w lemma="ok" me:msa="xCC">
                                 <choice>
                                     <me:facs>Oc</me:facs>
@@ -6962,7 +6964,7 @@ læikr</me:dipl>
                                 </choice>
                             </pc>
                         </para>
-                        <para vn="90" var="x">
+                        <para vn="90" var="B1, P3, P5, To, W1">
                             <seg type="nb">
                                 <w lemma="ok" me:msa="xCC">
                                     <choice>
@@ -15512,7 +15514,7 @@ kær</me:dipl>
                         </choice>
                     </pc>
                 </para>
-                <para vn="204" var="B1, P3, To, W1, P5">
+                <para vn="204" var="x">
                     <w lemma="því at" me:msa="xCS">
                         <choice>
                             <me:facs>þu&inodot;a&trot;</me:facs>
@@ -18934,7 +18936,7 @@ liga</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="248" var="B1, P3, To, W1, , P5">
+            <para vn="248" var="B1, P3, To, W1, P5">
                 <w lemma="því at" me:msa="xCS">
                     <choice>
                         <me:facs>þu&inodot;a&trot;</me:facs>
@@ -24135,7 +24137,7 @@ nan</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="315" var="B1, To, W1, P3, , P5">
+            <para vn="315" var="B1, To, W1, P3, P5">
                 <w lemma="oft" me:msa="xAV rP">
                     <choice>
                         <me:facs>o&fins;&trot;</me:facs>
