@@ -29356,7 +29356,7 @@ ma</me:dipl>
                     </choice>
                 </pc>
             </para>
-            <para vn="382, 383" var="B1, P3, To, W1, P5">
+            <para vn="383" var="B1, P3, To, W1, P5">
                 <w lemma="sá" me:msa="xDD gN nS cA">
                     <choice>
                         <me:facs>þa&trot;</me:facs>
@@ -29400,8 +29400,6 @@ ma</me:dipl>
                         <me:norm></me:norm>
                     </choice>
                 </pc>
-            </para>
-            <para vn="383" var="B1, P3, To, W1, P5">
                 <w lemma="hvat" me:msa="xPQ gN nS cD">
                     <choice>
                         <me:facs>hu&inodot;</me:facs>
