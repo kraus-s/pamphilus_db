@@ -19803,6 +19803,8 @@ ra</me:dipl>
                         <me:norm></me:norm>
                     </choice>
                 </pc>
+            </para>
+            <para vn="258a" var="x">
                 <w lemma="af" me:msa="xAP">
                     <choice>
                         <me:facs>a&fins;</me:facs>
@@ -19831,8 +19833,6 @@ ra</me:dipl>
                         <me:norm></me:norm>
                     </choice>
                 </pc>
-            </para>
-            <para vn="258a" var="x">
                 <w lemma="ok" me:msa="xCC">
                     <choice>
                         <me:facs>
@@ -20737,6 +20737,8 @@ ra</me:dipl>
                         <me:norm>hrindi</me:norm>
                     </choice>
                 </w>
+            </para>
+            <para vn="273" var="B1, P3, To, W1, P5">
                 <w lemma="sá" me:msa="xDD gN nS cD">
                     <choice>
                         <me:facs>þu&inodot;</me:facs>
@@ -20751,8 +20753,6 @@ ra</me:dipl>
                         <me:norm></me:norm>
                     </choice>
                 </pc>
-            </para>
-            <para vn="273" var="B1, P3, To, W1, P5">
                 <w lemma="vera" me:msa="xVB fF tPS mSU p3 nS vA">
                     <choice>
                         <me:facs>&slong;e</me:facs>
@@ -34950,7 +34950,7 @@ gan</me:dipl>
         </choice>
     </pc>
 </para>
-<para vn="453a" var="x">
+<para vn="454a" var="x">
     <w lemma="fótr" me:msa="xNC gM nP cN sI">
         <choice>
             <me:facs>&fins;&oogon;&trot;r</me:facs>
