@@ -1,10 +1,10 @@
-import imp
 from typing import Tuple
 from bs4 import BeautifulSoup
 import bs4
 from lxml import etree
 from pathlib import Path
 import pandas as pd
+import requests
 
 
 # Region: Class based, idk why
@@ -66,12 +66,21 @@ class NorseDoc:
     name: str
     ms: str
     sents: list[sent]
-
-    def __init__(self, name: str, manuscript: str) -> None:
+    tokens: list[token]
+    lemmatized: bool
+    diplomatic: bool
+    normalized: bool
+    facsimile: bool
+    def __init__(self, name: str, manuscript: str, lemmatized: bool, diplomatic: bool, normalized: bool, facsimile: bool, msa: bool) -> None:
         self.name = name
         self.ms = manuscript
         self.sents = []
         self.tokens = []
+        self.lemmatized = lemmatized
+        self.diplomatic = diplomatic
+        self.normalized = normalized
+        self.facsimile = facsimile
+        self.msa = msa
 
     
     def add_sent(self, newsent: sent):
@@ -94,15 +103,40 @@ class ParallelizedNorseDoc:
 
     def add_verse(self, newverse:vpara):
         self.verses.append(newverse)
-        
-
-def read_tei(tei_file):
-    with open(tei_file, 'r', encoding="UTF-8") as tei:
-        soup = BeautifulSoup(tei, from_encoding='UTF-8', features='lxml-xml')
-        return soup
 
 
-def getInfo (soup: BeautifulSoup, get_all: bool = False) -> Tuple[str, str, str]:
+def download_and_parse_entities(url) -> dict[str, str]:
+    response = requests.get(url)
+    response.raise_for_status()  # Ensure the request was successful
+    lines = response.text.splitlines()
+
+    entity_mappings = {}
+    entity_declaration_pattern = re.compile(r'<!ENTITY\s+(\w+)\s+"&#x([0-9A-Fa-f]+);">')
+    for line in lines:
+        match = entity_declaration_pattern.search(line)
+        if match:
+            entity_name, unicode_hex = match.groups()
+            entity = f'&{entity_name};'
+            unicode_char = chr(int(unicode_hex, 16))
+            entity_mappings[entity] = unicode_char
+    return entity_mappings
+
+
+def replace_entities(text, entity_mappings):
+    for entity, unicode_char in entity_mappings.items():
+        text = text.replace(entity, unicode_char)
+    return text
+
+
+def read_tei(tei_file: str, entity_mappings: dict[str, str]) -> BeautifulSoup:
+    with open(tei_file, 'r', encoding='utf-8') as file:
+        xml_content = file.read()
+        xml_content = replace_entities(xml_content, entity_mappings)
+        soup = BeautifulSoup(xml_content, from_encoding='UTF-8', features='lxml-xml')
+    return soup
+
+
+def get_menota_info (soup: BeautifulSoup, get_all: bool = False) -> NorseDoc:
     if get_all:
         try:
             msInfo = soup.find("sourcedesc")
@@ -111,9 +145,8 @@ def getInfo (soup: BeautifulSoup, get_all: bool = False) -> Tuple[str, str, str]
         if not msInfo:
             try:
                 msInfo = soup.find("sourceDesc")
-            except:
-                print("Ain't nothing here!")
-                return
+            except Exception as e:
+                raise Exception("No Manuscript Info found!") from e
         shelfmark_ = msInfo.find('idno')
         txtName_ = msInfo.find("msName")
         origPlace_ = msInfo.find('origPlace')
@@ -143,7 +176,34 @@ def getInfo (soup: BeautifulSoup, get_all: bool = False) -> Tuple[str, str, str]
         txtName_ = msInfo.find("msName")
         txtName = txtName_.get_text()
 
-    return shelfmark, txtName
+    levels = soup.find("normalization")
+    levels = levels["me_level"]
+    levels = levels.split()
+    if "diplomatic" in levels:
+        diplomatic = True
+    else:
+        diplomatic = False
+    if "normalized" in levels:
+        normalized = True
+    else:
+        normalized = False
+    if "facsimile" in levels:
+        facsimile = True
+    else:
+        facsimile = False
+    interpretations = soup.find("interpretation")
+    if interpretations["me:lemmatized"] == "completely":
+        lemmatized = True
+    else:
+        lemmatized = False
+    if interpretations["me:morphAnalyzed"] == "completely":
+        msa = True
+    else:   
+        msa = False
+    
+    current_manuscript = NorseDoc(name=txtName, manuscript=shelfmark, lemmatized=lemmatized, diplomatic=diplomatic, normalized=normalized, facsimile=facsimile, msa=msa)
+
+    return current_manuscript
 
 
 def reg_menota_parse(current_manuscript: NorseDoc, soup: bs4.BeautifulSoup) -> NorseDoc:
@@ -222,7 +282,7 @@ def para_parse(soup, current_manuscript: ParallelizedNorseDoc) -> ParallelizedNo
 def get_parallelized_text(input_file: str) -> ParallelizedNorseDoc:
     print("Parsing parallelized text...")
     soup = read_tei(input_file)
-    ms_sig, txt_name = getInfo(soup)
+    ms_sig, txt_name = get_menota_info(soup)
     current_manuscript = ParallelizedNorseDoc(name=txt_name, manuscript=ms_sig)
     current_manuscript = para_parse(soup=soup, current_manuscript=current_manuscript)
     return current_manuscript
@@ -230,9 +290,9 @@ def get_parallelized_text(input_file: str) -> ParallelizedNorseDoc:
 
 def get_regular_text(input_file: str) -> NorseDoc:
     print("Parsing regular text...")
-    soup = read_tei(input_file)
-    ms_sig, txt_name = getInfo(soup)
-    current_manuscript = NorseDoc(name=txt_name, manuscript=ms_sig)
+    entity_dict = download_and_parse_entities("http://www.menota.org/menota-entities.txt")
+    soup = read_tei(input_file, entity_dict)
+    current_manuscript = get_menota_info(soup)
     current_manuscript = reg_menota_parse(soup=soup, current_manuscript=current_manuscript)
     return current_manuscript
 
