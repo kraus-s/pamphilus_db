@@ -5,6 +5,7 @@ from lxml import etree
 from pathlib import Path
 import pandas as pd
 import requests
+import re
 
 
 # Region: Class based, idk why
@@ -71,6 +72,8 @@ class NorseDoc:
     diplomatic: bool
     normalized: bool
     facsimile: bool
+    msa: bool
+    
     def __init__(self, name: str, manuscript: str, lemmatized: bool, diplomatic: bool, normalized: bool, facsimile: bool, msa: bool) -> None:
         self.name = name
         self.ms = manuscript
@@ -89,6 +92,19 @@ class NorseDoc:
 
     def add_token(self, newtoken: token):
         self.tokens.append(newtoken)
+    
+    def get_full_text(self, level: str) -> str:
+        full_text = ""
+        for token in self.tokens:
+            if level == "diplomatic":
+                full_text += token.diplomatic + " "
+            elif level == "normalized":
+                full_text += token.normalized + " "
+            elif level == "facsimile":
+                full_text += token.facsimile + " "
+            elif level == "lemma":
+                full_text += token.lemma + " "
+        return full_text
     
 
 
@@ -175,67 +191,103 @@ def get_menota_info (soup: BeautifulSoup, get_all: bool = False) -> NorseDoc:
         shelfmark = shelfmark_.get_text()
         txtName_ = msInfo.find("msName")
         txtName = txtName_.get_text()
-
-    levels = soup.find("normalization")
-    levels = levels["me_level"]
-    levels = levels.split()
-    if "diplomatic" in levels:
+    try:
+        levels = soup.find("normalization")
+        levels = levels["me:level"]
+        levels = levels.split()
+    except:
+        import pdb; pdb.set_trace()
+    if "dipl" in levels:
         diplomatic = True
     else:
         diplomatic = False
-    if "normalized" in levels:
+    if "norm" in levels:
         normalized = True
     else:
         normalized = False
-    if "facsimile" in levels:
+    if "facs" in levels:
         facsimile = True
     else:
         facsimile = False
     interpretations = soup.find("interpretation")
-    if interpretations["me:lemmatized"] == "completely":
-        lemmatized = True
+    if interpretations is not None:
+        if interpretations["me:lemmatized"] == "completely":
+            lemmatized = True
+        else:
+            lemmatized = False
+        if interpretations["me:morphAnalyzed"] == "completely":
+            msa = True
+        else:   
+            msa = False
     else:
-        lemmatized = False
-    if interpretations["me:morphAnalyzed"] == "completely":
-        msa = True
-    else:   
-        msa = False
+        emroon = False
+        for string in soup.strings:
+            if "emroon" in string:
+                emroon = True
+        if emroon:
+            msa = True
+            lemmatized = True
+        else:
+            msa = False
+            lemmatized = False
     
     current_manuscript = NorseDoc(name=txtName, manuscript=shelfmark, lemmatized=lemmatized, diplomatic=diplomatic, normalized=normalized, facsimile=facsimile, msa=msa)
 
     return current_manuscript
 
 
-def reg_menota_parse(current_manuscript: NorseDoc, soup: bs4.BeautifulSoup) -> NorseDoc:
+def reg_menota_parse(current_manuscript: NorseDoc, soup: bs4.BeautifulSoup, for_nlp: bool = True) -> NorseDoc:
     text_proper = soup.find_all('w')
 
     for word in text_proper:
         lemming = word.get('lemma')
         if lemming is not None:
             lemming = word.get('lemma')
+            if "-" in lemming:
+                lemming = lemming.replace("-", "")
+            if "(" in lemming:
+                lemming = lemming.replace("(", "")
+            if ")" in lemming:
+                lemming = lemming.replace(")", "")
+            lemming = lemming.lower()
+            weird_lemmatization_dict = {"kaupsskip": "kaupskip", "slǫngva": "sløngva", "þrøngva þrøngja": "þrøngva"}
+            for k, v in weird_lemmatization_dict.items():
+                if lemming == k:
+                    lemming = v
+            if lemming == "?":
+                lemming = "-"
         else:
             lemming = "-"
-        facsRaw = word.find('me:facs')
-        if facsRaw is not None:
-            facsClean = facsRaw.get_text()
+        facsimile_raw = word.find('me:facs')
+        if facsimile_raw is not None:
+            facsimile_clean = facsimile_raw.get_text()
         else:
-            facsClean = "-"
-        diplRaw = word.find('me:dipl')
-        if diplRaw is not None:
-            diplClean = diplRaw.get_text()
+            facsimile_clean = "-"
+        diplomatic_raw = word.find('me:dipl')
+        if diplomatic_raw is not None:
+            diplomatic_clean = diplomatic_raw.get_text()
         else:
-            diplClean = "-"
-        normRaw = word.find('me:norm')
-        if normRaw is not None:
-            normClean = normRaw.get_text()
+            diplomatic_clean = "-"
+        normalized_raw = word.find('me:norm')
+        if normalized_raw is not None:
+            normalized_clean = normalized_raw.get_text()
         else:
-            normClean = "-"
-        MSARaw = word.get('me:msa')
-        if MSARaw is not None:
-            msaClean = word.get('me:msa')
+            normalized_clean = "-"
+        msa_raw = word.get('me:msa')
+        if msa_raw is not None:
+            msa_clean = word.get('me:msa')
         else:
-            msaClean = "-"
-        currword = token(normalized=normClean, diplomatic=diplClean, facsimile=facsClean, lemma=lemming, msa=msaClean)
+            msa_clean = "-"
+        token_parts_list_final: list[str] = []
+        for i in [normalized_clean, diplomatic_clean, facsimile_clean, lemming]:
+            weird_chars_dict = {"ҩoogon;": "ǫ", "ҩoslashacute;": "ǿ", "ҩaeligacute;": "ǽ", "lͣ": "l", "io": "jo", "ió": "jó", "ia": "ja"}
+            for k, v in weird_chars_dict.items():
+                if k in i:
+                    i = i.replace(k, v)
+            if for_nlp:
+                i = i.lower()
+            token_parts_list_final.append(i.replace(" ", ""))
+        currword = token(normalized=token_parts_list_final[0], diplomatic=token_parts_list_final[1], facsimile=token_parts_list_final[2], lemma=token_parts_list_final[3], msa=msa_clean)
         current_manuscript.add_token(currword)
     return current_manuscript
 
@@ -253,27 +305,27 @@ def para_parse(soup, current_manuscript: ParallelizedNorseDoc) -> ParallelizedNo
                 lemming = word.get('lemma')
             else:
                 lemming = "-"
-            facsRaw = word.find('me:facs')
-            if facsRaw is not None:
-                facsClean = facsRaw.get_text()
+            facsimile_raw = word.find('me:facs')
+            if facsimile_raw is not None:
+                facsimile_clean = facsimile_raw.get_text()
             else:
-                facsClean = "-"
-            diplRaw = word.find('me:dipl')
-            if diplRaw is not None:
-                diplClean = diplRaw.get_text()
+                facsimile_clean = "-"
+            diplomatic_raw = word.find('me:dipl')
+            if diplomatic_raw is not None:
+                diplomatic_clean = diplomatic_raw.get_text()
             else:
-                diplClean = "-"
-            normRaw = word.find('me:norm')
-            if normRaw is not None:
-                normClean = normRaw.get_text()
+                diplomatic_clean = "-"
+            normalized_raw = word.find('me:norm')
+            if normalized_raw is not None:
+                normalized_clean = normalized_raw.get_text()
             else:
-                normClean = "-"
-            MSARaw = word.get('me:msa')
-            if MSARaw is not None:
-                msaClean = word.get('me:msa')
+                normalized_clean = "-"
+            msa_raw = word.get('me:msa')
+            if msa_raw is not None:
+                msa_clean = word.get('me:msa')
             else:
-                msaClean = "-"
-            currword = token(normalized=normClean, diplomatic=diplClean, facsimile=facsClean, lemma=lemming, msa=msaClean)
+                msa_clean = "-"
+            currword = token(normalized=normalized_clean, diplomatic=diplomatic_clean, facsimile=facsimile_clean, lemma=lemming, msa=msa_clean)
             current_verseerse.add_token(currword)
         current_manuscript.add_verse(current_verseerse)
     return current_manuscript
@@ -281,9 +333,10 @@ def para_parse(soup, current_manuscript: ParallelizedNorseDoc) -> ParallelizedNo
 
 def get_parallelized_text(input_file: str) -> ParallelizedNorseDoc:
     print("Parsing parallelized text...")
-    soup = read_tei(input_file)
-    ms_sig, txt_name = get_menota_info(soup)
-    current_manuscript = ParallelizedNorseDoc(name=txt_name, manuscript=ms_sig)
+    entity_dict = download_and_parse_entities("http://www.menota.org/menota-entities.txt")
+    soup = read_tei(input_file, entity_dict)
+    current_manuscript = get_menota_info(soup)
+    current_manuscript = ParallelizedNorseDoc(name=current_manuscript.name, manuscript=current_manuscript.ms)
     current_manuscript = para_parse(soup=soup, current_manuscript=current_manuscript)
     return current_manuscript
 
@@ -398,16 +451,16 @@ def regmenotaParse(input_file) -> pd.DataFrame:
             msa = realtalk.get('me:msa')
         except:
             msa = "-"
-        diplRaw = realtalk.find('me:dipl')
-        if diplRaw is not None:
-            diplClean = diplRaw.get_text()
+        diplomatic_raw = realtalk.find('me:dipl')
+        if diplomatic_raw is not None:
+            diplomatic_clean = diplomatic_raw.get_text()
         else:
-            diplClean = "-"
-        normRaw = realtalk.find('me:norm')
-        if normRaw is not None:
-            normClean = normRaw.get_text()
+            diplomatic_clean = "-"
+        normalized_raw = realtalk.find('me:norm')
+        if normalized_raw is not None:
+            normalized_clean = normalized_raw.get_text()
         else:
-            normClean = "-"
+            normalized_clean = "-"
         
         currNodeID = id(realtalk)
         
@@ -415,12 +468,12 @@ def regmenotaParse(input_file) -> pd.DataFrame:
             prevNodeID = currNodeID
             nodeDF = nodeDF.append({'NodeID': currNodeID, 
                                     'NodeLabels': 'E33_Linguistic_Object', 
-                                    'NodeProps': f"Normalized: {normClean}, Diplomatic: {diplClean}, Lemma: {lemming}, MSA MENOTA: {msa}"}, 
+                                    'NodeProps': f"Normalized: {normalized_clean}, Diplomatic: {diplomatic_clean}, Lemma: {lemming}, MSA MENOTA: {msa}"}, 
                                     ignore_index=True)
         else:
             nodeDF = nodeDF.append({'NodeID': currNodeID, 
                                     'NodeLabels': 'E33_Linguistic_Object', 
-                                    'NodeProps': f"Normalized: {normClean}, Diplomatic: {diplClean}, Lemma: {lemming}, MSA MENOTA: {msa}"}, 
+                                    'NodeProps': f"Normalized: {normalized_clean}, Diplomatic: {diplomatic_clean}, Lemma: {lemming}, MSA MENOTA: {msa}"}, 
                                     ignore_index=True)
             edgeDF = edgeDF.append({'FromNode': prevNodeID,
                                     'ToNode': currNodeID,

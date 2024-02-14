@@ -60,7 +60,7 @@ if __name__ == "__main__":
     print("App setup successfull")
     print("You can run stylo, node2vec and clustering from here. Warning! Node2vec takes about a week on an M1 Pro with 32GB of RAM.")
     print("All the data is either shipped with the app or downloaded during setup.")
-    print("If you chose not to run the stylometry, levenshtein data will be downloaded instead.")
+    print("If you chose not to run the stylometry, data will be downloaded instead.")
     run_stylometry = input("Run stylometry? (y/n): ")
     if run_stylometry == "y":
         stylo.run()

@@ -489,9 +489,6 @@ def main():
     current_data = myData(ON, LAT)
     choices = {"Home": home_page,
                 "Parallel text display": para_display,
-                "Lemmata of interest": words_of_interest,
-                "Word cooccurences": vcooc,
-                "Graph based paras": display_para,
                 "Node2Vec similarities": onp_n2v,
                 "Stylometrics and Similarities": get_all_stylo,
                 "Levenshtein similarities (Latin)": display_leven}

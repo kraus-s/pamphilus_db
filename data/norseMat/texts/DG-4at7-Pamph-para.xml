@@ -100,6 +100,14 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <normalization me:level="facs dipl norm">
+                <p>These transcriptions have been produced with the help of emroon technology.</p>
+            </normalization>
+            <interpretation me:morphAnalyzed="completely" me:lemmatized="completely">
+                <p>The whole text has been lemmatised and morphologically analysed.</p>
+            </interpretation>
+        </encodingDesc>
         <profileDesc>
             <handNotes>
                 <handNote xml:id="h1"/>
