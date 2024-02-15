@@ -6,7 +6,7 @@ and it enables other researchers to easily access the data in the background.
 
 # Installation
 
-I recommend using pipenv `pipenv install` to create a virtual environment for the app and get all dependencies.
+I recommend using pipenv `pipenv install` to create a virtual environment for the app and get all dependencies. Tested using python 3.11.5.
 
 ## Preparing the webapp
 If you used pipenv you can simply run `pipenv run setup` to prepare all the data.

@@ -19,6 +19,9 @@ N2V_TABLES_PATH ="data/n2v/tables/"
 
 WORD_COOCURRENCES_PATH = "data/coocurrences"
 
+STYLE_MARKERS_PATH = "data/style_markers/"
+MENOTA_COMPLETE_PICKLE = "data/cache/menota_complete.p"
+
 LATIN_PICKLE = "data/cache/latin_pickle.p"
 OLD_NORSE_PICKLE = "data/cache/old_norse_pickle.p"
 

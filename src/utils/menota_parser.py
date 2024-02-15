@@ -138,7 +138,7 @@ def download_and_parse_entities(url) -> dict[str, str]:
     return entity_mappings
 
 
-def replace_entities(text, entity_mappings):
+def replace_entities(text: str, entity_mappings: dict[str, str]) -> str:
     for entity, unicode_char in entity_mappings.items():
         text = text.replace(entity, unicode_char)
     return text
@@ -147,8 +147,8 @@ def replace_entities(text, entity_mappings):
 def read_tei(tei_file: str, entity_mappings: dict[str, str]) -> BeautifulSoup:
     with open(tei_file, 'r', encoding='utf-8') as file:
         xml_content = file.read()
-        xml_content = replace_entities(xml_content, entity_mappings)
-        soup = BeautifulSoup(xml_content, from_encoding='UTF-8', features='lxml-xml')
+        xml_content_cleaned = replace_entities(xml_content, entity_mappings)
+        soup = BeautifulSoup(xml_content_cleaned, from_encoding='UTF-8', features='lxml-xml')
     return soup
 
 
@@ -238,7 +238,6 @@ def get_menota_info (soup: BeautifulSoup, get_all: bool = False) -> NorseDoc:
 
 def reg_menota_parse(current_manuscript: NorseDoc, soup: bs4.BeautifulSoup, for_nlp: bool = True) -> NorseDoc:
     text_proper = soup.find_all('w')
-
     for word in text_proper:
         lemming = word.get('lemma')
         if lemming is not None:
@@ -341,12 +340,12 @@ def get_parallelized_text(input_file: str) -> ParallelizedNorseDoc:
     return current_manuscript
 
 
-def get_regular_text(input_file: str) -> NorseDoc:
+def get_regular_text(input_file: str, entity_dict: dict[str, str]) -> NorseDoc:
     print("Parsing regular text...")
-    entity_dict = download_and_parse_entities("http://www.menota.org/menota-entities.txt")
     soup = read_tei(input_file, entity_dict)
     current_manuscript = get_menota_info(soup)
     current_manuscript = reg_menota_parse(soup=soup, current_manuscript=current_manuscript)
+    print(f"Finished parsing {current_manuscript.name} from {current_manuscript.ms} with {len(current_manuscript.tokens)} tokens.")
     return current_manuscript
 
 

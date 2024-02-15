@@ -478,6 +478,16 @@ def display_leven():
     st.dataframe(filtered_df)
 
 
+def style_markers_page():
+    if Path(STYLE_MARKERS_PATH).is_dir():
+        style_files = [f for f in Path(STYLE_MARKERS_PATH).iterdir() if f.is_file()]
+        style_files = [f.name for f in style_files]
+        style_file = st.selectbox("Select a style marker file", options=style_files)
+        df = pd.read_csv(f"{STYLE_MARKERS_PATH}{style_file}")
+        st.dataframe(df)
+    else:
+        st.write("No style marker files found")
+
 def home_page():
     st.write("Hello!")
 
@@ -491,7 +501,8 @@ def main():
                 "Parallel text display": para_display,
                 "Node2Vec similarities": onp_n2v,
                 "Stylometrics and Similarities": get_all_stylo,
-                "Levenshtein similarities (Latin)": display_leven}
+                "Levenshtein similarities (Latin)": display_leven,
+                "Markers for Old Norse style": style_markers_page}
     choice = st.sidebar.selectbox(label="Menu", options=choices.keys())
     if choice == 'Parallel text display':
         para_display(current_data)
