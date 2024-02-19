@@ -53,7 +53,7 @@ def load_norse_constil() -> tuple[list[tuple[str, str, str]], list[tuple[str, st
     have_ms = []
     for i in xml_files:
         soup = read_tei(i)
-        mss, txt, origin_place = mp.getInfo(soup, get_all=True)
+        mss, txt, origin_place = mp.get_menota_info(soup, get_all=True)
         print(f"Processing {txt}")
         if "DG-4at7" in i:
             if "Pamph" in i:

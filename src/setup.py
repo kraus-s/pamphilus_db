@@ -56,7 +56,8 @@ def download_levenshtein_data():
 
 if __name__ == "__main__":
     download_onp_data()
-    dbBuilder.main()
+    # dbBuilder.main()
+    # Not needed at this time TODO: Clean up
     print("App setup successfull")
     print("You can run stylo, node2vec and clustering from here. Warning! Node2vec takes about a week on an M1 Pro with 32GB of RAM.")
     print("All the data is either shipped with the app or downloaded during setup.")
