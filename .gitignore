@@ -1,7 +1,5 @@
 __pycache__/
 Pipfile.lock
-Pipfile
-data/models/n2v-model.n2v
 data/onp/onp_data.db
 utils/__pycache__/
 utils/__pycache__/latin_parser.cpython-39.pyc

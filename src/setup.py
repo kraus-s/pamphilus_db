@@ -32,6 +32,11 @@ def download_onp_data():
 
 def download_levenshtein_data():
     print("Downloading levenshtein data...")
+    if not os.path.exists(LEVEN_FOLDER):
+        os.makedirs(LEVEN_FOLDER)
+        print(f"Directory '{LEVEN_FOLDER}' created successfully")
+    else:
+        print(f"Directory '{LEVEN_FOLDER}' already exists")
     try:
         # Send an HTTP GET request to the URL
         response = requests.get(LEVENSHTEIN_DB_URL)
