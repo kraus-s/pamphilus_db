@@ -22,6 +22,7 @@ WORD_COOCURRENCES_PATH = "data/coocurrences"
 
 STYLE_MARKERS_PATH = "data/style_markers/"
 MENOTA_COMPLETE_PICKLE = "data/cache/menota_complete.p"
+PAMPHILUS_SAGA_PICKLE = "data/cache/pamph_saga.p"
 
 LATIN_PICKLE = "data/cache/latin_pickle.p"
 OLD_NORSE_PICKLE = "data/cache/old_norse_pickle.p"

@@ -213,5 +213,23 @@ def run():
     versified_lat_leven()    
 
 
+def compare_pamphilus_internally():
+    pamph = menota_parser.get_parallelized_text(PSDG47)
+    all_tokens = [y for x in pamph.verses for y in x.tokens]
+    n = len(all_tokens)
+    print(f"Total tokens in Pamphilus: {n}")
+    number_of_chunks = 2
+    part_size = n // number_of_chunks
+    split_dict = {f"Chunk {i+1}": all_tokens[i*part_size:(i+1)*part_size] for i in range(number_of_chunks)}
+    split_dict_0 = {}
+    for k, v in split_dict.items():
+        toks = [x.lemma for x in v]
+        split_dict_0[k] = " ".join([x for x in toks])
+    vectorized_corpus, corpus_keys = get_vector(split_dict_0)
+    cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
+    cosine_distance.to_csv(f"{STYLO_FOLDER}pamph-internally.csv")
+    
+
+
 if __name__ == '__main__':
     run()

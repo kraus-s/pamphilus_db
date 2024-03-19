@@ -59,8 +59,11 @@ def check_all_docs_for_style_markers(docs: list[NorseDoc]):
         current_results_df.to_excel(f"data/export/{marker[0]}-{marker[1]}_results.xlsx", index=False)
 
 
-if __name__ == "__main__":
+def main():
     parsed_docs = load_data()
     best_docs = _basic_preprocessor(parsed_docs)
     check_all_docs_for_style_markers(best_docs)
     print("Done")
+
+if __name__ == "__main__":
+    main()

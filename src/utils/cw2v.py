@@ -1,6 +1,6 @@
 from typing import List
-from utils.helpers.latin_parser import parse_pamphilus
-from utils.helpers.menota_parser import paramenotaParse
+from utils.latin_parser import parse_pamphilus
+from utils.menota_parser import get_parallelized_text as paramenotaParse
 import itertools
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
@@ -8,14 +8,14 @@ from utils.constants import *
 
 
 def on_stops() -> List:
-    with open("stopwords.txt", encoding='UTF-8') as file:
+    with open(ON_STOPS, encoding='UTF-8') as file:
         stops = file.read()
         stop_list = stops.split(',')
     return stop_list
 
 
 def latin_stops() -> List:
-    with open("latinStops.txt") as file:
+    with open(LATIN_STOP_WORDS) as file:
         stops = file.read()
         stop_list = stops.split(", ")
     return stop_list
@@ -46,8 +46,8 @@ def mergeonlat(latDF: pd.DataFrame, onDF: pd.DataFrame, variant: str):
 
 
 def word_pairs_preprocess():
-    latin_dict = parse_pamphilus()
-    oldnorse_df = paramenotaParse()
+    latin_dict = parse_pamphilus(PAMPHILUS_LATINUS)
+    oldnorse_df = paramenotaParse(PSDG47)
     vocab_dict = {}
     for k, v in latin_dict.items():
         vocab_dict[k] = mergeonlat(v, oldnorse_df, k)

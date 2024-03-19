@@ -1,4 +1,3 @@
-from typing import Tuple
 from bs4 import BeautifulSoup
 import bs4
 from lxml import etree
@@ -6,6 +5,9 @@ from pathlib import Path
 import pandas as pd
 import requests
 import re
+import os
+import pickle
+from utils.constants import *
 
 
 # Region: Class based, idk why
@@ -331,12 +333,17 @@ def para_parse(soup, current_manuscript: ParallelizedNorseDoc) -> ParallelizedNo
 
 
 def get_parallelized_text(input_file: str) -> ParallelizedNorseDoc:
+    """This is basically only used for Pamphilus saga atm, so its quite specific."""
     print("Parsing parallelized text...")
-    entity_dict = download_and_parse_entities("http://www.menota.org/menota-entities.txt")
-    soup = read_tei(input_file, entity_dict)
-    current_manuscript = get_menota_info(soup)
-    current_manuscript = ParallelizedNorseDoc(name=current_manuscript.name, manuscript=current_manuscript.ms)
-    current_manuscript = para_parse(soup=soup, current_manuscript=current_manuscript)
+    if not os.path.exists(PAMPHILUS_SAGA_PICKLE):
+        entity_dict = download_and_parse_entities("http://www.menota.org/menota-entities.txt")
+        soup = read_tei(input_file, entity_dict)
+        current_manuscript = get_menota_info(soup)
+        current_manuscript = ParallelizedNorseDoc(name=current_manuscript.name, manuscript=current_manuscript.ms)
+        current_manuscript = para_parse(soup=soup, current_manuscript=current_manuscript)
+        pickle.dump(current_manuscript, open(PAMPHILUS_SAGA_PICKLE, "wb"))
+    else:
+        current_manuscript = pickle.load(open(PAMPHILUS_SAGA_PICKLE, "rb"))
     return current_manuscript
 
 
