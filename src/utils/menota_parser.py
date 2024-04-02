@@ -287,7 +287,7 @@ def reg_menota_parse(current_manuscript: NorseDoc, soup: bs4.BeautifulSoup, for_
                     i = i.replace(k, v)
             if for_nlp:
                 i = i.lower()
-            token_parts_list_final.append(i.replace(" ", ""))
+            token_parts_list_final.append(i.replace(" ", "").replace("-", ""))
         currword = token(normalized=token_parts_list_final[0], diplomatic=token_parts_list_final[1], facsimile=token_parts_list_final[2], lemma=token_parts_list_final[3], msa=msa_clean)
         current_manuscript.add_token(currword)
     return current_manuscript

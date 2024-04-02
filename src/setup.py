@@ -7,6 +7,7 @@ from utils import onpnode2vec
 from utils import msclustering
 from tqdm import tqdm
 from utils import on_verse_begin
+from utils import culler
 
 def download_onp_data():
     print("Downloading ONP data...")
@@ -88,5 +89,6 @@ if __name__ == "__main__":
     # if input("Run verse begin analysis? (y/n): ") == "y":
     #     on_verse_begin.main()
     # if input("Analyse Pamphilus internally? (y/n): ") == "y":
+    culler.culler()
     stylo.norse_stylo_revised()
     print("All done. Bye!")

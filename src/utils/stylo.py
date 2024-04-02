@@ -12,6 +12,9 @@ import spacy
 from utils.menota_parser import NorseDoc
 from utils.util import load_data
 from collections import Counter
+import pickle
+from sklearn.feature_extraction.text import CountVectorizer
+
 
 # Helper functions latin
 # ----------------------
@@ -89,7 +92,7 @@ def corpus_collector_norse(doc_level: str, use_stops: bool = False, use_mfws: bo
 
     if use_mfws:
         mfws_raw = get_mfws_old_norse(menota_docs, doc_level)
-        mfws = [x[0] for x in mfws_raw.most_common(mfw_count)]
+        mfws = [x[0] for x in mfws_raw.most_common(mfw_count) if len(x[0]) > 1]
         print(mfws)
     res = {}
     for i in menota_docs:
@@ -98,11 +101,9 @@ def corpus_collector_norse(doc_level: str, use_stops: bool = False, use_mfws: bo
         elif use_mfws:
             doc = " ".join([getattr(x, doc_level) for x in i.tokens if getattr(x, doc_level) in mfws])
         else:
-            doc = " ".join([getattr(x, doc_level) for x in i.tokens ])
-        if "Strengn" in i.name:
-            import pdb; pdb.set_trace()
-        doc.replace("-", "")
-        if len(doc) > 10:
+            doc = " ".join([getattr(x, doc_level) for x in i.tokens])
+        doc = doc.replace("-", "")
+        if len(doc) - doc.count(" ") > 100:
             txt_ms_name = f"{i.name}-{i.ms}"
             res[txt_ms_name] = doc
     return res
@@ -120,13 +121,28 @@ def get_on_stopwords():
 # -------------
 
 def get_mfws_old_norse(corpus: list[NorseDoc], edition_level: str) -> Counter:
-    all_toks = [getattr(x, edition_level) for y in corpus for x in y.tokens if not getattr(x, edition_level) == "-"]
+    if edition_level == "lemma":
+        cull_words = pickle.load(open(ON_CULLS_LEMMA, "rb"))
+    elif edition_level == "normalized":
+        cull_words = pickle.load(open(ON_CULLS_NORMALIZED, "rb"))
+    else:
+        raise Exception("Not implemented!")
+    all_toks = [getattr(x, edition_level) for y in corpus for x in y.tokens if getattr(x, edition_level) != "-" and getattr(x, edition_level) not in cull_words]
     word_counts = Counter(all_toks)
     return word_counts
 
 
 def get_vector(corpus: dict):
     vectorizer = TfidfVectorizer(ngram_range=(1,3))
+    w2varr = vectorizer.fit_transform(corpus.values()).toarray()
+    return w2varr, corpus.keys()
+    # vectorizer = CountVectorizer(ngram_range=(1,3))
+    # w2varr = vectorizer.fit_transform(corpus.values()).toarray()
+    # return w2varr, corpus.keys()
+
+
+def get_tfidfed_vector(corpus: dict):
+    vectorizer = TfidfVectorizer(ngram_range=(1,3), max_df=0.95, min_df=0.1)
     w2varr = vectorizer.fit_transform(corpus.values()).toarray()
     return w2varr, corpus.keys()
 
@@ -181,13 +197,19 @@ def leven_worker(combinations, corpus: dict):
 # ------------------
 
 
-def analysis_cycle(corpus: dict, file_name: str):
+def analysis_cycle(corpus: dict, file_name: str, stopped_or_mfwed: bool = False):
     print(f"Now processing {file_name}")
     vectorized_corpus, corpus_keys = get_vector(corpus)
     cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
     print("Cosine")
     print(cosine_distance)    
     cosine_distance.to_csv(f"{STYLO_FOLDER}{file_name}-cosine.csv")
+    if not stopped_or_mfwed:
+        vectorized_corpus, corpus_keys = get_tfidfed_vector(corpus)
+        cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
+        print("Cosine")
+        print(cosine_distance)
+        cosine_distance.to_csv(f"{STYLO_FOLDER}{file_name}-tfidf-cosine.csv")
 
 
 def stylo_coordiinator():
@@ -220,14 +242,14 @@ def norse_stylo_revised():
     analysis_cycle(corpus, "norse-lemmatized-new")
     corpus = corpus_collector_norse('facsimile')
     analysis_cycle(corpus=corpus, file_name='norse-facs-new')
-    mfws_list = [100, 200, 300, 400]
+    mfws_list = [100, 200, 300, 400, 600, 800]
     for i in mfws_list:
         corpus = corpus_collector_norse(doc_level="normalized", use_mfws=True, mfw_count=i)
-        analysis_cycle(corpus, f"mfwed-{i}-on-norms")
+        analysis_cycle(corpus, f"mfwed-{i}-on-norms-culled", True)
         corpus = corpus_collector_norse(doc_level="lemma", use_mfws=True, mfw_count=i)
-        analysis_cycle(corpus, f"mfwed-{i}-on-lemma")
+        analysis_cycle(corpus, f"mfwed-{i}-on-lemma-culled", True)
     corpus = corpus_collector_norse(doc_level="lemma", use_stops=True)
-    analysis_cycle(corpus, "on-lemma-stopped")
+    analysis_cycle(corpus, "on-lemma-stopped", True)
 
 
 if __name__ == '__main__':

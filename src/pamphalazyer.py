@@ -14,7 +14,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from typing import List, Dict
 from pyvis import network as net
-from IPython.core.display import display, HTML
+from IPython.display import display, HTML
 import streamlit.components.v1 as components
 import random
 import string
@@ -383,46 +383,14 @@ def words_of_interest() -> None:
     ag(onpWords)
 
 
-def data_entry_helper():
-    if Path("/data/ingest/nodes.csv").is_file():
-        nodesDF = pd.read_csv("/data/ingest/nodes.csv")
-    else:
-        nodesDF = pd.DataFrame(columns=['NodeID', 'Labels', 'Properties'])
-    if Path("/data/ingest/edges.csv").is_file():
-        edgeDF = pd.read_csv("/data/ingest/nodes.csv")
-    else:
-        edgeDF = pd.DataFrame(columns=['fromID', 'toID', 'HRF'])
-    labelList = ['E22_Human-Made_Object', 'E21_Person', 'E53_Place']
-    propsList22 = ['Signature', 'Abbreviation', 'Provenance (Place)']
-    propsList21 = ['Name', 'Year born', 'Year died', 'GND']
-    whatToDo = st.selectbox('Was eingeben?', ['Person', 'Object/Artifact', 'Edge'])
-    with st.form("Data entry"):
-        if whatToDo == 'Person':
-            name = st.text_input('name')
-            yob = st.text_input('Year of birth')
-            yod = st.text_input('Year of death')
-            gnd = st.text_input('GND Identifier if any')
-            submitted = st.form_submit_button('Submit')
-            if submitted:
-                id = get_id()
-                apDict = {'NodeID': id, 'Labels': 'E22_Human-Made_Object', 'Properties': f"name: '{name}', born: '{yob}', died: '{yod}', GND-ID: '{gnd}'"}
-                nodesDF = nodesDF.append(apDict)
-                nodesDF.to_csv("/data/ingest/nodes.csv")
-        if whatToDo == 'Object/Artifact':
-            sig = st.text_input('Signature')
-            abb = st.text_input('Abbreviation')
-            provenance = st.text_input("Where is it from?")
-            submitted = st.form_submit_button()
-            if submitted:
-                id = get_id()
-                apDict = {'NodeID': id, 'Labels': 'E22_Human-Made_Object'}
-
-
 def get_all_stylo():
     melt_down = st.checkbox("Simplify output by creating list of combinations rather than matrix view", value=False)
+    filter_pamph = st.checkbox("Simplify output by showing Pamphilus only", value=False)
     all_metrics = sims.get_csv_filenames()
     selected_table = st.selectbox(label="Select a similarity type", options=all_metrics)
     df = sims.get_similarity(f"{STYLO_FOLDER}{selected_table}")
+    if filter_pamph:
+        df = df["Pamphilus saga-DG 4-7"]
     if not melt_down:
         st.dataframe(df)
     elif melt_down:
