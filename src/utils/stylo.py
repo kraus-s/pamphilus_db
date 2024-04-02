@@ -99,7 +99,8 @@ def corpus_collector_norse(doc_level: str, use_stops: bool = False, use_mfws: bo
         else:
             doc = " ".join([getattr(x, doc_level) for x in i.tokens ])
         if len(doc) > 10:
-            res[i.name] = doc
+            txt_ms_name = f"{i.name}-{i.ms}"
+            res[txt_ms_name] = doc
     return res
 
 
@@ -176,13 +177,13 @@ def leven_worker(combinations, corpus: dict):
 # ------------------
 
 
-def analysis_cycle(corpus: dict, fName: str):
-    print(f"Now processing {fName}")
+def analysis_cycle(corpus: dict, file_name: str):
+    print(f"Now processing {file_name}")
     vectorized_corpus, corpus_keys = get_vector(corpus)
     cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
     print("Cosine")
     print(cosine_distance)    
-    cosine_distance.to_csv(f"{STYLO_FOLDER}{fName}-cosine.csv")
+    cosine_distance.to_csv(f"{STYLO_FOLDER}{file_name}-cosine.csv")
 
 
 def stylo_coordiinator():
@@ -195,7 +196,7 @@ def stylo_coordiinator():
     corpus = corpus_collector_norse(level='lemma')
     analysis_cycle(corpus, "norse-lemmatized")
     corpus = corpus_collector_norse('facs')
-    analysis_cycle(corpus=corpus, fName='norse-facs')
+    analysis_cycle(corpus=corpus, file_name='norse-facs')
 
 
 def versified_lat_leven():
