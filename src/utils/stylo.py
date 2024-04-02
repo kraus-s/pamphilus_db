@@ -90,6 +90,7 @@ def corpus_collector_norse(doc_level: str, use_stops: bool = False, use_mfws: bo
     if use_mfws:
         mfws_raw = get_mfws_old_norse(menota_docs, doc_level)
         mfws = [x[0] for x in mfws_raw.most_common(mfw_count)]
+        print(mfws)
     res = {}
     for i in menota_docs:
         if use_stops:
@@ -98,6 +99,9 @@ def corpus_collector_norse(doc_level: str, use_stops: bool = False, use_mfws: bo
             doc = " ".join([getattr(x, doc_level) for x in i.tokens if getattr(x, doc_level) in mfws])
         else:
             doc = " ".join([getattr(x, doc_level) for x in i.tokens ])
+        if "Strengn" in i.name:
+            import pdb; pdb.set_trace()
+        doc.replace("-", "")
         if len(doc) > 10:
             txt_ms_name = f"{i.name}-{i.ms}"
             res[txt_ms_name] = doc
@@ -116,7 +120,7 @@ def get_on_stopwords():
 # -------------
 
 def get_mfws_old_norse(corpus: list[NorseDoc], edition_level: str) -> Counter:
-    all_toks = [getattr(x, edition_level) for y in corpus for x in y.tokens]
+    all_toks = [getattr(x, edition_level) for y in corpus for x in y.tokens if not getattr(x, edition_level) == "-"]
     word_counts = Counter(all_toks)
     return word_counts
 
@@ -220,6 +224,8 @@ def norse_stylo_revised():
     for i in mfws_list:
         corpus = corpus_collector_norse(doc_level="normalized", use_mfws=True, mfw_count=i)
         analysis_cycle(corpus, f"mfwed-{i}-on-norms")
+        corpus = corpus_collector_norse(doc_level="lemma", use_mfws=True, mfw_count=i)
+        analysis_cycle(corpus, f"mfwed-{i}-on-lemma")
     corpus = corpus_collector_norse(doc_level="lemma", use_stops=True)
     analysis_cycle(corpus, "on-lemma-stopped")
 
