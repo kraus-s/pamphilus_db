@@ -9,7 +9,9 @@ import glob
 import sqlite3
 from rapidfuzz import fuzz
 import spacy
-
+from utils.menota_parser import NorseDoc
+from utils.util import load_data
+from collections import Counter
 
 # Helper functions latin
 # ----------------------
@@ -74,33 +76,30 @@ def corpus_cleaner(corps: dict, lemmatize: bool = False) -> dict:
 # ---------------------------
 
 
-def corpus_collector_norse(level: str):
-    """Params: level(str): "normalized" or "lemma"
+def corpus_collector_norse(doc_level: str, use_stops: bool = False, use_mfws: bool = False, mfw_count: int = 200):
+    """Params: level(str): "normalized" or "lemma" or "facsimile"
     """
-    fList = glob.glob(f"{OLD_NORSE_CORPUS_FILES}*.xml")
+    
+    if use_stops and doc_level == "lemma":
+        stop_words = get_on_stopwords()
+    elif use_stops and doc_level != "lemma":
+        raise Exception("Not implemented!")
+    
+    menota_docs = load_data()
+
+    if use_mfws:
+        mfws_raw = get_mfws_old_norse(menota_docs, doc_level)
+        mfws = [x[0] for x in mfws_raw.most_common(mfw_count)]
     res = {}
-    res0 = []
-    for i in fList:
-        ii = menota_parser.get_regular_text(i)
-        res0.append(ii)
-    for iii in res0:
-        if level == 'normalized':
-            tokens = [x.normalized for x in iii.tokens]
-        elif level == 'lemma':
-            tokens = [x.lemma for x in iii.tokens]
-        elif level == 'facs':
-            tokens = [x.facsimile for x in iii.tokens]
-        toks = []
-        for i in tokens:
-            if i != '-':
-                toks.append(i)
-        if len(toks) >= 10:
-            res[f"{iii.name}-{iii.ms}"] = toks
+    for i in menota_docs:
+        if use_stops:
+            doc = " ".join([getattr(x, doc_level) for x in i.tokens if x.lemma not in stop_words])
+        elif use_mfws:
+            doc = " ".join([getattr(x, doc_level) for x in i.tokens if getattr(x, doc_level) in mfws])
         else:
-            print(f'{iii.name} in {iii.ms} was eliminated. Reason: Not enough {level} tokens')
-    for z in res.keys():
-        doc = " ".join([x for x in res[z] ])
-        res[z] = doc
+            doc = " ".join([getattr(x, doc_level) for x in i.tokens ])
+        if len(doc) > 10:
+            res[i.name] = doc
     return res
 
 
@@ -115,16 +114,16 @@ def get_on_stopwords():
 # NLP helper functions
 # -------------
 
+def get_mfws_old_norse(corpus: list[NorseDoc], edition_level: str) -> Counter:
+    all_toks = [getattr(x, edition_level) for y in corpus for x in y.tokens]
+    word_counts = Counter(all_toks)
+    return word_counts
+
 
 def get_vector(corpus: dict):
     vectorizer = TfidfVectorizer(ngram_range=(1,3))
     w2varr = vectorizer.fit_transform(corpus.values()).toarray()
     return w2varr, corpus.keys()
-
-
-def euclid_dist(w2varr, labels: list) -> pd.DataFrame:
-    euclidean_distances = pd.DataFrame(pairwise_distances(w2varr, metric='euclidean', n_jobs=-1), index=labels, columns=labels)
-    return euclidean_distances
 
 
 def cos_dist(w2varr, labels: list) -> pd.DataFrame:
@@ -180,10 +179,6 @@ def leven_worker(combinations, corpus: dict):
 def analysis_cycle(corpus: dict, fName: str):
     print(f"Now processing {fName}")
     vectorized_corpus, corpus_keys = get_vector(corpus)
-    euclid_distance = euclid_dist(vectorized_corpus, corpus_keys)
-    euclid_distance.to_csv(f"{STYLO_FOLDER}{fName}-euclid.csv")  
-    print("Euclidian")
-    print(euclid_distance)
     cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
     print("Cosine")
     print(cosine_distance)    
@@ -213,22 +208,11 @@ def run():
     versified_lat_leven()    
 
 
-def compare_pamphilus_internally():
-    pamph = menota_parser.get_parallelized_text(PSDG47)
-    all_tokens = [y for x in pamph.verses for y in x.tokens]
-    n = len(all_tokens)
-    print(f"Total tokens in Pamphilus: {n}")
-    number_of_chunks = 2
-    part_size = n // number_of_chunks
-    split_dict = {f"Chunk {i+1}": all_tokens[i*part_size:(i+1)*part_size] for i in range(number_of_chunks)}
-    split_dict_0 = {}
-    for k, v in split_dict.items():
-        toks = [x.lemma for x in v]
-        split_dict_0[k] = " ".join([x for x in toks])
-    vectorized_corpus, corpus_keys = get_vector(split_dict_0)
-    cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
-    cosine_distance.to_csv(f"{STYLO_FOLDER}pamph-internally.csv")
-    
+def test_new_cosine():
+    mfws_list = [100, 200, 300, 400]
+    for i in mfws_list:
+        corpus = corpus_collector_norse(doc_level="normalized", use_mfws=True, mfw_count=i)
+        analysis_cycle(corpus, f"mfwed-{i}-on-norms")
 
 
 if __name__ == '__main__':

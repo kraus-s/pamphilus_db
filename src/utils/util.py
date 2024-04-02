@@ -1,5 +1,9 @@
 import pandas as pd
 from bs4 import BeautifulSoup
+import os
+import pickle
+from utils.menota_parser import NorseDoc
+from utils.constants import *
 
 
 def onp_dataset() -> pd.DataFrame:
@@ -25,3 +29,24 @@ def read_tei(tei_file):
     with open(tei_file, 'r', encoding="UTF-8") as tei:
         soup = BeautifulSoup(tei, from_encoding='UTF-8', features='lxml-xml')
         return soup
+    
+
+def load_data() -> list[NorseDoc]:
+    if not os.path.exists(MENOTA_COMPLETE_PICKLE):
+        parsed_docs_list = import_menota_data(path= OLD_NORSE_CORPUS_FILES)
+        pickle.dump(parsed_docs_list, open(MENOTA_COMPLETE_PICKLE, "wb"))
+    else:
+        parsed_docs_list = pickle.load(open(MENOTA_COMPLETE_PICKLE, "rb"))
+    return parsed_docs_list
+
+
+def import_menota_data(path: str = OLD_NORSE_CORPUS_FILES) -> list[NorseDoc]:
+    """
+    Imports the Norse corpus from the Menota XML files
+    """
+    path_list = glob.glob(f"{path}*.xml")
+    docs_to_parse = path_list
+    entities = menota_parser.download_and_parse_entities("http://www.menota.org/menota-entities.txt")
+    parsed_docs_list = [menota_parser.get_regular_text(path, entities) for path in docs_to_parse]
+
+    return parsed_docs_list

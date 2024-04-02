@@ -88,5 +88,5 @@ if __name__ == "__main__":
     # if input("Run verse begin analysis? (y/n): ") == "y":
     #     on_verse_begin.main()
     # if input("Analyse Pamphilus internally? (y/n): ") == "y":
-    stylo.compare_pamphilus_internally()
+    stylo.test_new_cosine()
     print("All done. Bye!")
