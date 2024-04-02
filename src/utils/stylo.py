@@ -193,7 +193,7 @@ def stylo_coordiinator():
     analysis_cycle(corpus, "latinLemmatized")
     corpus = corpus_collector_norse('normalized')
     analysis_cycle(corpus, "norse-basic")
-    corpus = corpus_collector_norse(level='lemma')
+    corpus = corpus_collector_norse('lemma')
     analysis_cycle(corpus, "norse-lemmatized")
     corpus = corpus_collector_norse('facs')
     analysis_cycle(corpus=corpus, file_name='norse-facs')
@@ -209,11 +209,19 @@ def run():
     versified_lat_leven()    
 
 
-def test_new_cosine():
+def norse_stylo_revised():
+    corpus = corpus_collector_norse('normalized')
+    analysis_cycle(corpus, "norse-basic-new")
+    corpus = corpus_collector_norse('lemma')
+    analysis_cycle(corpus, "norse-lemmatized-new")
+    corpus = corpus_collector_norse('facsimile')
+    analysis_cycle(corpus=corpus, file_name='norse-facs-new')
     mfws_list = [100, 200, 300, 400]
     for i in mfws_list:
         corpus = corpus_collector_norse(doc_level="normalized", use_mfws=True, mfw_count=i)
         analysis_cycle(corpus, f"mfwed-{i}-on-norms")
+    corpus = corpus_collector_norse(doc_level="lemma", use_stops=True)
+    analysis_cycle(corpus, "on-lemma-stopped")
 
 
 if __name__ == '__main__':
