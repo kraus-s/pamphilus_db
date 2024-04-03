@@ -49,6 +49,6 @@ def import_menota_data(path: str = OLD_NORSE_CORPUS_FILES) -> list[NorseDoc]:
     path_list = glob.glob(f"{path}*.xml")
     docs_to_parse = path_list
     entities = menota_parser.download_and_parse_entities("http://www.menota.org/menota-entities.txt")
-    parsed_docs_list = [menota_parser.get_regular_text(path, entities) for path in docs_to_parse]
+    parsed_docs_list = [x for path in docs_to_parse for x in menota_parser.get_regular_text(path, entities)]
 
     return parsed_docs_list

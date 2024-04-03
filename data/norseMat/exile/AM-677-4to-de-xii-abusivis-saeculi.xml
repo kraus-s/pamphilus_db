@@ -1,0 +1,2971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.menota.org/menotaP5.rng" type="xml" ?>
+<!DOCTYPE TEI
+[
+<!ENTITY % Menota_entities SYSTEM 'http://www.menota.org/menota-entities.txt'>
+%Menota_entities;
+
+<!ENTITY BAR  "&#x200A;&bar;">
+<!ENTITY drotstrok "&drot;&macrmed;">
+<!ENTITY trotdot   "&trot;&combdot;">    <!-- LATIN SMALL LETTER T ROTUNDA with dot -->
+<!ENTITY gnlig "&#xA77F;">               <!-- gn ligature, looks more or less like &ginsturn  -->
+<!ENTITY nglig "&#xA77F;">               <!-- ng ligature, looks quite similar to gnlig, so for the moment &ginsturn  -->
+<!ENTITY eracute "&#x035B;&combacute;"> <!-- tittle with acute; OEH: "sup" not allowed here, not sure what the character will look like in the Corpuscle display, let us make a test -->
+<!ENTITY amacrsup   "&asup;&macrhigh;">                    <!-- superscript amacr  -->
+<!ENTITY ocurlsup "&#x0024;">   <!-- superscript ocurl; OEH: "sup" not allowed here, solution postponed  -->
+<!ENTITY eacutesup "&#x0024;">   <!-- superscript eacute; OEH: "sup" not allowed here, solution postponed  -->
+<!ENTITY eenlacute "&eenl;&combacute;">    <!-- LATIN ENLARGED LETTER SMALL E with acute OEH: "sup" not allowed here, but the "combacute" entity might do the trick  -->
+<!ENTITY THORNbar "&THORN;&bar;">
+<!ENTITY THlig "&#x2E24;TH&#x2E25;">     <!-- an accidental ligature of T and H, instead of an initial THORN, because there was no place for that initial THORN -->
+<!ENTITY oslashcurlacute "&oslashcurl;&combacute;">        <!-- o with slash and curl and acute -->
+<!ENTITY escapacute "&escap;&combacute;">                  <!-- smallcap e with acute    -->
+<!ENTITY zero "0">                                              <!-- This should be a small zero, not Old Style, but the narrow one that is found in most fonts, and in Andron Scriptor Web,
+                                                                preferably in a smaller size than the rest of the text; it has now been changed to "smallzero" in the whole file, since this character looks much better -->
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:me="http://www.menota.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title>De xii abusivis saeculi</title>
+    <editor>
+     <name>
+      <persName>
+       <forename>Andrea</forename>
+       <surname>de Leeuw van Weenen</surname>
+      </persName>
+     </name>
+    </editor>
+    <respStmt resp="annotation">
+     <resp>Transcription of source</resp>
+     <resp>Lemmatization and morphological analysis</resp>
+     <resp>Conversion to Menotic XML</resp>
+     <name>
+      <persName>
+       <forename>Andrea</forename>
+       <surname>de Leeuw van Weenen</surname>
+      </persName>
+     </name>
+    </respStmt>
+   </titleStmt>
+   <editionStmt>
+    <edition n="1.0">Version 1.0, <date when="2019-12-04">4 December 2019.</date> 
+    </edition>
+   </editionStmt>
+   <extent n="51726">51726 words</extent>
+   <publicationStmt>
+    <distributor>Medieval Nordic Text Archive</distributor>
+    <idno type="Menota">Ms. 41</idno>
+    <date when="2019-12-04">4 December 2019</date>
+    
+    <availability status="free">
+     <licence target="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</licence>
+     <p>License accepted by the editor Andrea de Leeuw van Weenen in a mail dated 28 February 
+        2024 to the head of the Menota archive, Alex Speed Kjeldsen.</p>
+    </availability>
+    
+   </publicationStmt>
+   <sourceDesc>
+    <bibl facs="yes">Photographic facsimiles of the whole manuscript from the Arnamagnæan Collection in Copenhagen.</bibl>
+    <msDesc>
+     <msIdentifier>
+      <country key="DK">Denmark</country>
+      <settlement>Copenhagen</settlement>
+      <repository>Den Arnamagnæanske Samling</repository>
+      <idno>AM 677 4to</idno>
+      <msName>De xii abusivis saeculi</msName>
+     </msIdentifier>
+     <msContents>
+      <msItem n="1">
+       <locus from="1r" to="1v">f. 1r</locus>
+       <title type="main">1. De xii abusivis saeculi</title>
+       <title type="abbreviated">Ab</title>
+       <textLang mainLang="isl">Icelandic</textLang>
+      </msItem>
+      <msItem n="2">
+       <locus from="1v" to="6v">ff. 1v–6v</locus>
+       <title type="main">2. Prosper’s Epigrams</title>
+       <title type="abbreviated">Ep</title>
+       <textLang mainLang="isl">Icelandic</textLang>
+      </msItem>
+      <msItem n="3">
+       <locus from="7r" to="24v">ff. 7r–24v</locus>
+       <title type="main">3. Gregory’s Homilies on the Gospels</title>
+       <title type="abbreviated">He</title>
+       <textLang mainLang="isl">Icelandic</textLang>
+      </msItem>
+      <msItem n="4">
+       <locus from="25r" to="41v">ff. 25r–41v</locus>
+       <title type="main">4. Gregory’s Dialogues</title>
+       <title type="abbreviated">Di</title>
+       <textLang mainLang="isl">Icelandic</textLang>
+      </msItem>
+     </msContents>
+     <physDesc>
+      <objectDesc form="codex">
+       <supportDesc>
+        <support>
+         <p>
+          <material>Parchment</material>
+         </p>
+        </support>
+        <extent>41</extent>
+        <foliation>
+         <p>fols. 1–41</p>
+        </foliation>
+       </supportDesc>
+      </objectDesc>
+     </physDesc>
+     <history>
+      <origin>
+      <p>The manuscript has been written in <origPlace>Iceland</origPlace> in <origDate notBefore="1200" notAfter="1225">c. 1200-1225</origDate>.</p> <!-- OEH 2020-11-06: This dating was added by me according to that of ONP -->
+      </origin>
+     </history>
+    </msDesc>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <projectDesc>
+    <p>This manuscript text has been encoded according to the standard
+     set out in <title>The Menota handbook</title> (version 3.0
+     beta) as of 6 December 2017.</p>
+   </projectDesc>
+   <editorialDecl>
+    <normalization me:level="facs dipl norm">
+     <p>This manuscript text has been encoded on three levels: facsimile, diplomatic and normalised.</p>
+    </normalization>
+    <correction status="high">
+     <p>The text was proofread several times by Andrea de Leeuw van Weenen
+      and a final time before printing by Tom Lorenz in September 2016.</p>
+    </correction>
+    <interpretation me:lemmatized="completely" me:morphAnalyzed="completely">
+     <p>This text has been fully lemmatised and morphologically analysed according to the rules
+      specified in ch. 11 of the Menota Handbook, v. 3.0 beta. Words missing in the manuscript text
+      and added in supplied tags by the editor are neither lemmatized nor morphologically analyzed.</p>
+    </interpretation>
+   </editorialDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="isl">Icelandic</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   
+   <change>
+    <date>2024-02-29</date>
+    <name>
+     <persName>Odd Einar Haugen</persName>
+     <orgName type="affiliation">University of Bergen</orgName>
+    </name>: Updated the “availability” element in the header so that the file is now free (CC-BY-SA 4.0) </change>
+ 
+   <change>
+    <date>2020-02-26</date>
+    <name>
+     <persName>Odd Einar Haugen</persName>
+     <orgName type="affiliation">University of Bergen</orgName>
+    </name>: Words in the “supplied” element had been given lemma and me:msa attributes with the values “xxx”,
+    i.e. “w lemma="###" me:msa="###"”; these attributes have now been deleted so that words in the “supplied” element only
+   have a “w” element with no attributes; these words will be equally searchable in the XML file, but will not
+   cause confusion for the Corpuscle application in morphological queries</change>
+   
+   <change>
+    <date>2020-02-25</date>
+    <name>
+     <persName>Odd Einar Haugen</persName>
+     <orgName type="affiliation">University of Bergen</orgName>
+    </name>: Changed all “eE” to “eP” (enclitic pronoun) according to the v. 3.0 guidelines of Menota </change>
+   
+   <change>
+    <date>2020-02-24</date>
+    <name>
+     <persName>Odd Einar Haugen</persName>
+     <orgName type="affiliation">University of Bergen</orgName>
+    </name>: (1) Changed all “yDA” name tokens (for government of accusative or dative) with “yAD”; 
+    (2) Changed all “cDA” name tokens with “cAD” (for case accusative or dative)</change>
+   
+   <change>
+    <date>2020-02-20</date>
+    <name>
+     <persName>Odd Einar Haugen</persName>
+     <orgName type="affiliation">University of Bergen</orgName>
+    </name>: Corrected three typos in the me:msa attribute: from “cb” to “cB”, from “nvR” to “vR”
+   and from “gu nFN” to “gFN nS”</change>
+   
+   <change>
+    <date>2019-12-04</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Moved the file to the public part of Menota 
+    and gave it version number 1.0 with the date 4 December 2019; otherwise no changes to the file. 
+   </change>
+   
+   <change>
+    <date>2018-08-27</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: After having received a revised file from
+    Andrea de Leeuw van Weenen on 26 July 2018, I have changed the "zero" entity to the "smallzero" entity 
+    which will display the character as a small zero in the Tabular style of Andron Scriptor Web (actually using
+    U+F1BD in the Private Use Area of Andron Mega Corpus); there are a total of 138 instances of this character in the file.
+   </change>
+
+   <change>
+    <date>2018-01-25</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: As a stop-gap measure, added rend="red"
+    to all "seg type="head"", until a more correct encoding can be made; also moved down the "handShift" element
+    into the nearest "p"
+   </change>
+
+   <change>
+    <date>2017-12-06</date>
+    <name>Andrea de Leeuw van Weenen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Revised the encoding of the whole file
+   </change>
+
+   <change>
+    <date>2017-11-14</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Made a number of corrections of mistakes pointed out by the editor in mails of 3, 6, 7 and 8 November
+   </change>
+
+   <change>
+    <date>2017-10-28</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Added red colour to the last line on f. 1r, and did a test with having a new sections begin on a new line on ff. 2r and 2v
+   </change>
+
+   <change>
+    <date>2017-10-03</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Revised the encoding of f. 1r–2v, adding missing "lb/" elements and specified initial types, introducing a "subtype" attribute
+   </change>
+
+   <change>
+    <date>2017-09-17</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Changed the interpretation of the "THORNbar" entity from "0024" (question mark) to a sequence of the "THORN" and "bar" entities
+   </change>
+
+   <change>
+    <date>2017-09-12</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Added the ed="ms" attribute
+    in the "pb", "cb" and "lb" elements
+   </change>
+
+   <change>
+    <date>2017-09-11</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Made various updates to the header.
+   </change>
+   <change>
+    <date>2017-07-31</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: By request from the editor, changed the lemma at 5r1512 from "orðigr" to "ǫrðigr" and the normalised form accordingly.
+   </change>
+   <change>
+    <date>2017-06-13</date>
+    <name>Odd Einar Haugen</name>
+    <orgName type="affiliation">University of Bergen</orgName>: Revised the
+    XML elements and attributes according to the latest schema in Menota,
+    corrected imbalanced or missing elements, added a top level of four major div’s,
+    and supplied several elements in the header
+   </change>
+   <change>
+    <date>2017-04-21</date>
+    <name>Andrea de Leeuw van Weenen</name>:
+    Converted Menotic XML file from database
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text xml:lang="isl">
+  <body>
+<div type="text">
+<div type="major-part" n="A1">
+<div n="Ab11">
+<p>
+<pb ed="ms" n="1r"/>
+<lb ed="ms" n="1"/>
+<w lemma="kraftr" me:msa="xNC gM nS cD sI">
+ <me:facs>&trot;&inodot;</me:facs>
+ <me:dipl>ti</me:dipl>
+ <me:norm>ti</me:norm>
+ <note type="msLocation"> 1r0101 </note>
+</w>
+<w lemma="af" me:msa="xAP yD">
+ <me:facs>af</me:facs>
+ <me:dipl>af</me:dipl>
+ <me:norm>af</me:norm>
+ <note type="msLocation"> 1r0102 </note>
+</w>
+<w lemma="himinn" me:msa="xNC gM nS cD sI">
+ <me:facs>h&inodot;mn&inodot;</me:facs>
+ <me:dipl>himni</me:dipl>
+ <me:norm>himni</me:norm>
+ <note type="msLocation"> 1r0103 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="kyrtill" me:msa="xNC gM nS cN sI">
+ <me:facs>&kenl;yr&trot;&inodot;ll</me:facs>
+ <me:dipl>&kenl;yrtill</me:dipl>
+ <me:norm>Kyrtill</me:norm>
+ <note type="msLocation"> 1r0104 </note>
+</w>
+<w lemma="l&iacute;kamr" me:msa="xNC gM nS cG sI">
+ <me:facs>l&inodot;c&amacr;&slong;</me:facs>
+ <me:dipl>lica<ex>m</ex>&slong;</me:dipl>
+ <me:norm>l&iacute;kams</me:norm>
+ <note type="msLocation"> 1r0105 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cG sI">
+ <me:facs>c&inodotsup;&slong;&trot;z</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tz</me:dipl>
+ <me:norm>Krists</me:norm>
+ <note type="msLocation"> 1r0106 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r0107 </note>
+</w>
+<w lemma="kenning" me:msa="xNC gF nS cN sI">
+ <me:facs>ke&nscap;&imacr;g</me:facs>
+ <me:dipl>ke&nscap;i<ex>n</ex>g</me:dipl>
+ <me:norm>kenning</me:norm>
+ <note type="msLocation"> 1r0108 </note>
+</w>
+<w lemma="kristni" me:msa="xNC gF nS cG sD">
+ <me:facs>c&inodotsup;&slong;&trot;n&imacr;nar</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tni<ex>n</ex>nar</me:dipl>
+ <me:norm>kristninnar</me:norm>
+ <note type="msLocation"> 1r0109 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<lb ed="ms" n="2"/>
+<w lemma="en" me:msa="xCC">
+ <me:facs>En</me:facs>
+ <me:dipl>En</me:dipl>
+ <me:norm>En</me:norm>
+ <note type="msLocation"> 1r0201 </note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gM nS cN">
+ <me:facs>&slong;a</me:facs>
+ <me:dipl>&slong;a</me:dipl>
+ <me:norm>s&aacute;</me:norm>
+ <note type="msLocation"> 1r0202 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r0203 </note>
+</w>
+<w lemma="fyr &uacute;tan" me:msa="xAP yA">
+ <me:facs>fyr u&trot;an</me:facs>
+ <me:dipl>fyr utan</me:dipl>
+ <me:norm>fyr &uacute;tan</me:norm>
+ <note type="msLocation"> 1r0204 </note>
+</w>
+<w lemma="r&aacute;&eth;ning" me:msa="xNC gF nS cA sI">
+ <me:facs>ra&drot;n&imacr;g</me:facs>
+ <me:dipl>radni<ex>n</ex>g</me:dipl>
+ <me:norm>r&aacute;&eth;ning</me:norm>
+ <note type="msLocation"> 1r0206 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r02072</note>
+</w>
+<w lemma="&uacute;tlendr" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>u&trot; lendr</me:facs>
+ <me:dipl>ut lendr</me:dipl>
+ <me:norm>&uacute;tlendr</me:norm>
+ <note type="msLocation"> 1r0208 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r02093</note>
+</w>
+<w lemma="fr&aacute;" me:msa="xAP yD">
+ <me:facs>fra</me:facs>
+ <me:dipl>fra</me:dipl>
+ <me:norm>fr&aacute;</me:norm>
+ <note type="msLocation"> 1r0210 </note>
+</w>
+<w lemma="l&iacute;kamr" me:msa="xNC gM nS cD sI">
+ <me:facs>l&inodot;c&amacr;</me:facs>
+ <me:dipl>lica<ex>m</ex></me:dipl>
+ <me:norm>l&iacute;kam</me:norm>
+ <note type="msLocation"> 1r0211 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cG sI">
+ <me:facs>c&inodotsup;&slong;&trot;z</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tz</me:dipl>
+ <me:norm>Krists</me:norm>
+ <note type="msLocation"> 1r0212 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<lb ed="ms" n="3"/>
+<w lemma="sl&iacute;ta" me:msa="xVB fF tPS mIP p1 nP vA">
+ <me:facs>Sl&inodot;&trot;&omacr;</me:facs>
+ <me:dipl>Slito<ex>m</ex></me:dipl>
+ <me:norm>Sl&iacute;tum</me:norm>
+ <note type="msLocation"> 1r0301 </note>
+</w>
+<w lemma="v&eacute;r" me:msa="xPE p1 nP cN">
+ <me:facs>v&er;</me:facs>
+ <me:dipl>v<ex>er</ex></me:dipl>
+ <me:norm>v&eacute;r</me:norm>
+ <note type="msLocation"> 1r0302 </note>
+</w>
+<w lemma="eigi" me:msa="xAV rP">
+ <me:facs>e&inodot;g&bar;</me:facs>
+ <me:dipl>eig<ex>i</ex></me:dipl>
+ <me:norm>eigi</me:norm>
+ <note type="msLocation"> 1r0303 </note>
+</w>
+<w lemma="ok" me:msa="xAV rP">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r0304 </note>
+</w>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r0305 </note>
+</w>
+<w lemma="sj&aacute;" me:msa="xDD gM nS cA">
+ <me:facs>&thorn;e&nscap;a</me:facs>
+ <me:dipl>&thorn;e&nscap;a</me:dipl>
+ <me:norm>&thorn;enna</me:norm>
+ <note type="msLocation"> 1r0306 </note>
+</w>
+<w lemma="kyrtill" me:msa="xNC gM nS cA sI">
+ <me:facs>kyr&trot;&inodot;l</me:facs>
+ <me:dipl>kyrtil</me:dipl>
+ <me:norm>kyrtil</me:norm>
+ <note type="msLocation"> 1r0307 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="heldr" me:msa="xAV rC">
+ <me:facs>heldr</me:facs>
+ <me:dipl>heldr</me:dipl>
+ <me:norm>heldr</me:norm>
+ <note type="msLocation"> 1r0308 </note>
+</w>
+<w lemma="hluta" me:msa="xVB fF tPS mIP p1 nP vA">
+ <me:facs>hlv&trot;o</me:facs>
+ <me:dipl>hlvto</me:dipl>
+ <me:norm>hlutum</me:norm>
+ <note type="msLocation"> 1r0309 </note>
+</w>
+<w lemma="v&eacute;r" me:msa="xPE p1 nP cN">
+ <me:facs>v&er;</me:facs>
+ <me:dipl>v<ex>er</ex></me:dipl>
+ <me:norm>v&eacute;r</me:norm>
+ <note type="msLocation"> 1r03102</note>
+</w>
+<w lemma="hann" me:msa="xPE p3 gM nS cA">
+ <me:facs>&hstrok;</me:facs>
+ <me:dipl>h<ex>ann</ex></me:dipl>
+ <me:norm>hann</me:norm>
+ <note type="msLocation"> 1r0311 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="s&aacute;" me:msa="xDD gN nS cN">
+ <me:facs>&thornbar;</me:facs>
+ <me:dipl>&thorn;<ex>at</ex></me:dipl>
+ <me:norm>&THORN;at</me:norm>
+ <note type="msLocation"> 1r0312 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r0313 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="at" me:msa="xCS">
+ <me:facs>a&trot;</me:facs>
+ <me:dipl>at</me:dipl>
+ <me:norm>at</me:norm>
+ <note type="msLocation"> 1r0314 </note>
+</w>
+<lb ed="ms" n="4"/>
+<w lemma="v&eacute;r" me:msa="xPE p1 nP cN">
+ <me:facs>v&er;</me:facs>
+ <me:dipl>v<ex>er</ex></me:dipl>
+ <me:norm>v&eacute;r</me:norm>
+ <note type="msLocation"> 1r0401 </note>
+</w>
+<w lemma="leysa" me:msa="xVB fF tPS mSU p1 nP vA">
+ <me:facs>lev&slong;&inodot;m</me:facs>
+ <me:dipl>lev&slong;im</me:dipl>
+ <me:norm>leysim</me:norm>
+ <note type="msLocation"> 1r0402 </note>
+</w>
+<w lemma="eigi" me:msa="xAV rP">
+ <me:facs>e&inodot;g&bar;</me:facs>
+ <me:dipl>eig<ex>i</ex></me:dipl>
+ <me:norm>eigi</me:norm>
+ <note type="msLocation"> 1r0403 </note>
+</w>
+<w lemma="&iacute; sundr" me:msa="xAV rP">
+ <me:facs>&inodot; &slong;vndr</me:facs>
+ <me:dipl>i &slong;vndr</me:dipl>
+ <me:norm>&iacute; sundr</me:norm>
+ <note type="msLocation"> 1r0405 </note>
+</w>
+<w lemma="bo&eth;or&eth;" me:msa="xNC gN nP cA sI">
+ <me:facs>bo&drot;o&rrot;&drot;</me:facs>
+ <me:dipl>bodord</me:dipl>
+ <me:norm>bo&eth;or&eth;</me:norm>
+ <note type="msLocation"> 1r0406 </note>
+</w>
+<w lemma="gu&eth;" me:msa="xNC gM nS cG sI">
+ <me:facs>g&bar;&slong;</me:facs>
+ <me:dipl>g<ex>vd</ex>&slong;</me:dipl>
+ <me:norm>Gu&eth;s</me:norm>
+ <note type="msLocation"> 1r0407 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="heldr" me:msa="xAV rC">
+ <me:facs>heldr</me:facs>
+ <me:dipl>heldr</me:dipl>
+ <me:norm>heldr</me:norm>
+ <note type="msLocation"> 1r0408 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIP p3 nS vA">
+ <me:facs>v&er;&inodot;</me:facs>
+ <me:dipl>v<ex>er</ex>i</me:dipl>
+ <me:norm>veri</me:norm>
+ <note type="msLocation"> 1r0409 </note>
+</w>
+<w lemma="hverr" me:msa="xPQ gM nS cN">
+ <me:facs>hv&er;r</me:facs>
+ <me:dipl>hv<ex>er</ex>r</me:dipl>
+ <me:norm>hverr</me:norm>
+ <note type="msLocation"> 1r0410 </note>
+</w>
+<w lemma="sem" me:msa="xCS">
+ <me:facs>&slong;&emacr;</me:facs>
+ <me:dipl>&slong;e<ex>m</ex></me:dipl>
+ <me:norm>sem</me:norm>
+ <note type="msLocation"> 1r0411 </note>
+</w>
+<w lemma="einn" me:msa="xNA gM nS cN sI">
+ <me:facs>e&inodot;&nscap;</me:facs>
+ <me:dipl>ei&nscap;</me:dipl>
+ <me:norm>einn</me:norm>
+ <note type="msLocation"> 1r0412 </note>
+</w>
+<w lemma="sta&eth;fastr" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>&slong;&trot;<lb ed="ms" n="5"/>a&drot;fa&slong;&trot;r</me:facs>
+ <me:dipl>&slong;t<lb ed="ms" n="5"/>adfa&slong;tr</me:dipl>
+ <me:norm>st<lb ed="ms" n="5"/>a&eth;fastr</me:norm>
+ <note type="msLocation"> 1r0413 </note>
+</w>
+<seg type="nb">
+<w lemma="&iacute;" me:msa="xAP yD">
+ <me:facs>&inodot;</me:facs>
+ <me:dipl>i</me:dipl>
+ <me:norm>&iacute;</me:norm>
+ <note type="msLocation"> 1r0501 </note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gN nS cD">
+ <me:facs>&thorn;&inodotsup;</me:facs>
+ <me:dipl>&thorn;<ex>vi</ex></me:dipl>
+ <me:norm>&thorn;v&iacute;</me:norm>
+ <note type="msLocation"> 1r0502 </note>
+</w>
+</seg>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r0503 </note>
+</w>
+<w lemma="hann" me:msa="xPE p3 gM nS cN">
+ <me:facs>&hstrok;</me:facs>
+ <me:dipl>h<ex>ann</ex></me:dipl>
+ <me:norm>hann</me:norm>
+ <note type="msLocation"> 1r0504 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r05052</note>
+</w>
+<w lemma="til" me:msa="xAP">
+ <me:facs>&trot;&inodotsup;</me:facs>
+ <me:dipl>t<ex>il</ex></me:dipl>
+ <me:norm>til</me:norm>
+ <note type="msLocation"> 1r0506 </note>
+</w>
+<w lemma="kalla" me:msa="xVB fP tPT vA gM nS cN sI">
+ <me:facs>kalla&drot;r</me:facs>
+ <me:dipl>kalladr</me:dipl>
+ <me:norm>kalla&eth;r</me:norm>
+ <note type="msLocation"> 1r0507 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+</p>
+</div>
+<div n="Ab12">
+<p>
+<lb ed="ms" n="6"/>
+<w lemma="enn" me:msa="xDD gM nS cN">
+ <me:facs><c type="initial">E</c>&nscap;</me:facs>
+ <me:dipl><c type="initial">E</c>&nscap;</me:dipl>
+ <me:norm>Enn</me:norm>
+ <note type="msLocation"> 1r0601 </note>
+</w>
+<w lemma="tolfti" me:msa="xNO gM nS cN sD">
+ <me:facs>&trot;olf&trot;&inodot;</me:facs>
+ <me:dipl>tolfti</me:dipl>
+ <me:norm>t&oacute;lfti</me:norm>
+ <note type="msLocation"> 1r0602 </note>
+</w>
+<w lemma="pallr" me:msa="xNC gM nS cN sI">
+ <me:facs>pallr</me:facs>
+ <me:dipl>pallr</me:dipl>
+ <me:norm>pallr</me:norm>
+ <note type="msLocation"> 1r0603 </note>
+</w>
+<w lemma="&oacute;s&oacute;mi" me:msa="xNC gM nS cG sI">
+ <me:facs>o&slong;oma</me:facs>
+ <me:dipl>o&slong;oma</me:dipl>
+ <me:norm>&oacute;s&oacute;ma</me:norm>
+ <note type="msLocation"> 1r0604 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r0605 </note>
+</w>
+<w lemma="l&yacute;&eth;r" me:msa="xNC gM nS cN sI">
+ <me:facs>ly&drot;r</me:facs>
+ <me:dipl>lydr</me:dipl>
+ <me:norm>l&yacute;&eth;r</me:norm>
+ <note type="msLocation"> 1r0606 </note>
+</w>
+<w lemma="lagalauss" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>laga lav&slong;&slong;</me:facs>
+ <me:dipl>laga lav&slong;&slong;</me:dipl>
+ <me:norm>lagalauss</me:norm>
+ <note type="msLocation"> 1r0607 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="s&aacute;" me:msa="xDD gM nS cN">
+ <me:facs>&slong;a</me:facs>
+ <me:dipl>&slong;a</me:dipl>
+ <me:norm>s&aacute;</me:norm>
+ <note type="msLocation"> 1r0608 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r06092</note>
+</w>
+<w lemma="falla" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>fellr</me:facs>
+ <me:dipl>fellr</me:dipl>
+ <me:norm>fellr</me:norm>
+ <note type="msLocation"> 1r0610 </note>
+</w>
+<w lemma="&iacute;" me:msa="xAP yA">
+ <me:facs>&inodot;</me:facs>
+ <me:dipl>i</me:dipl>
+ <me:norm>&iacute;</me:norm>
+ <note type="msLocation"> 1r0611 </note>
+</w>
+<lb ed="ms" n="7"/>
+<w lemma="snara" me:msa="xNC gF nS cA sI">
+ <me:facs>&slong;no&rrot;o</me:facs>
+ <me:dipl>&slong;noro</me:dipl>
+ <me:norm>sn&oogon;ru</me:norm>
+ <note type="msLocation"> 1r0701 </note>
+</w>
+<w lemma="gl&oogon;tun" me:msa="xNC gF nS cG sI">
+ <me:facs>gl&avlig;&trot;unar</me:facs>
+ <me:dipl>gl&avlig;tunar</me:dipl>
+ <me:norm>gl&oogon;tunar</me:norm>
+ <note type="msLocation"> 1r0702 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r0703 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r0704 </note>
+</w>
+<w lemma="hann" me:msa="xPE p3 gM nS cN">
+ <me:facs>&hstrok;</me:facs>
+ <me:dipl>h<ex>ann</ex></me:dipl>
+ <me:norm>hann</me:norm>
+ <note type="msLocation"> 1r0705 </note>
+</w>
+<w lemma="renna" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>re&nscap;r</me:facs>
+ <me:dipl>re&nscap;r</me:dipl>
+ <me:norm>rennr</me:norm>
+ <note type="msLocation"> 1r0706 </note>
+</w>
+<w lemma="of" me:msa="xAP yA">
+ <me:facs>of</me:facs>
+ <me:dipl>of</me:dipl>
+ <me:norm>of</me:norm>
+ <note type="msLocation"> 1r0707 </note>
+</w>
+<w lemma="&yacute;miss" me:msa="xAJ rP gF nP cA sI">
+ <me:facs>ym&slong;ar</me:facs>
+ <me:dipl>ym&slong;ar</me:dipl>
+ <me:norm>&yacute;msar</me:norm>
+ <note type="msLocation"> 1r0708 </note>
+</w>
+<w lemma="villugata" me:msa="xNC gF nP cA sI">
+ <me:facs>v&inodot;llo go&trot;o&rrot;</me:facs>
+ <me:dipl>villo gotor</me:dipl>
+ <me:norm>villug&oogon;tur</me:norm>
+ <note type="msLocation"> 1r0709 </note>
+</w>
+<lb ed="ms" n="8"/>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r0801 </note>
+</w>
+<w lemma="fyrl&iacute;ta" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>fyr l&inodot;&trot;r</me:facs>
+ <me:dipl>fyr litr</me:dipl>
+ <me:norm>fyrl&iacute;tr</me:norm>
+ <note type="msLocation"> 1r0802 </note>
+</w>
+<w lemma="m&aacute;l" me:msa="xNC gN nS cA sI">
+ <me:facs>mal</me:facs>
+ <me:dipl>mal</me:dipl>
+ <me:norm>m&aacute;l</me:norm>
+ <note type="msLocation"> 1r0804 </note>
+</w>
+<w lemma="gu&eth;" me:msa="xNC gM nS cG sI">
+ <me:facs>g&bar;&slong;</me:facs>
+ <me:dipl>g<ex>vd</ex>&slong;</me:dipl>
+ <me:norm>Gu&eth;s</me:norm>
+ <note type="msLocation"> 1r0805 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r08062</note>
+</w>
+<w lemma="setning" me:msa="xNC gF nS cA sI">
+ <me:facs>&slong;e&trot;&trot;n&imacr;g</me:facs>
+ <me:dipl>&slong;ettni<ex>n</ex>g</me:dipl>
+ <me:norm>setning</me:norm>
+ <note type="msLocation"> 1r0807 </note>
+</w>
+<w lemma="lag" me:msa="xNC gN nP cG sI">
+ <me:facs>laga</me:facs>
+ <me:dipl>laga</me:dipl>
+ <me:norm>laga</me:norm>
+ <note type="msLocation"> 1r0808 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="sj&aacute;" me:msa="xDD gN nS cA">
+ <me:facs>&THORNbar;&trot;a</me:facs>
+ <me:dipl>&THORN;<ex>et</ex>ta</me:dipl>
+ <me:norm>&THORN;etta</me:norm>
+ <note type="msLocation"> 1r0809 </note>
+</w>
+<w lemma="mannkyn" me:msa="xNC gN nS cA sI">
+ <me:facs>ma&nscap;kyn</me:facs>
+ <me:dipl>ma&nscap;kyn</me:dipl>
+ <me:norm>mannkyn</me:norm>
+ <note type="msLocation"> 1r0810 </note>
+</w>
+<w lemma="gera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>g&oslashsup;&inodot;r</me:facs>
+ <me:dipl>g<ex>&oslash;r</ex>ir</me:dipl>
+ <me:norm>g&oslash;rir</me:norm>
+ <note type="msLocation"> 1r0811 </note>
+</w>
+<lb ed="ms" n="9"/>
+<w lemma="sp&aacute;ma&eth;r" me:msa="xNC gM nS cN sI">
+ <me:facs>&slong;pa&mMedrun;</me:facs>
+ <me:dipl>&slong;pa<ex>madr</ex></me:dipl>
+ <me:norm>sp&aacute;ma&eth;r</me:norm>
+ <note type="msLocation"> 1r0901 </note>
+</w>
+<w lemma="undir" me:msa="xAP yD">
+ <me:facs>vnd&er;</me:facs>
+ <me:dipl>vnd<ex>ir</ex></me:dipl>
+ <me:norm>undir</me:norm>
+ <note type="msLocation"> 1r0902 </note>
+</w>
+<w lemma="gl&iacute;king" me:msa="xNC gF nS cD sI">
+ <me:facs>gl&inodot;c&inodot;ngo</me:facs>
+ <me:dipl>glicingo</me:dipl>
+ <me:norm>gl&iacute;kingu</me:norm>
+ <note type="msLocation"> 1r0903 </note>
+</w>
+<w lemma="misgera" me:msa="xVB fP tPS vA gM nS cG sD">
+ <me:facs>m&inodot;&slong;g&er;anda</me:facs>
+ <me:dipl>mi&slong;g<ex>er</ex>anda</me:dipl>
+ <me:norm>misgeranda</me:norm>
+ <note type="msLocation"> 1r0904 </note>
+</w>
+<w lemma="l&yacute;&eth;r" me:msa="xNC gM nS cG sI">
+ <me:facs>ly&drot;&slong;</me:facs>
+ <me:dipl>lyd&slong;</me:dipl>
+ <me:norm>l&yacute;&eth;s</me:norm>
+ <note type="msLocation"> 1r0905 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm></me:norm>
+</pc>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>&et;</me:facs>
+ <me:dipl><ex>ok</ex></me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r0906 </note>
+</w>
+<w lemma="m&aeligacute;la" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>m&lhighstrok;</me:facs>
+ <me:dipl>m<ex>e</ex>l<ex>ir</ex></me:dipl>
+ <me:norm>m&aeligacute;lir</me:norm>
+ <note type="msLocation"> 1r0907 </note>
+</w>
+<w lemma="sv&aacute;" me:msa="xAV rP">
+ <me:facs>s&asup;</me:facs>
+ <me:dipl>s<ex>va</ex></me:dipl>
+ <me:norm>sv&aacute;</me:norm>
+ <note type="msLocation"> 1r0908 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>:</me:norm>
+</pc>
+<w lemma="allr" me:msa="xAJ rP gM nP cN sI">
+ <me:facs>&aenl;ll&er;</me:facs>
+ <me:dipl>&aenl;ll<ex>ir</ex></me:dipl>
+ <me:norm>Allir</me:norm>
+ <note type="msLocation"> 1r0909 </note>
+</w>
+<w lemma="villa" me:msa="xVB fF tPT mIN p1 nP vR">
+ <me:facs>v&inodot;ll<lb ed="ms" n="10"/>&trot;&omacr;c</me:facs>
+ <me:dipl>vill<lb ed="ms" n="10"/>to<ex>m</ex>c</me:dipl>
+ <me:norm>vill<lb ed="ms" n="10"/>tumk</me:norm>
+ <note type="msLocation"> 1r0910 </note>
+</w>
+<w lemma="v&eacute;r" me:msa="xPE p1 nP cN">
+ <me:facs>v&er;</me:facs>
+ <me:dipl>v<ex>er</ex></me:dipl>
+ <me:norm>v&eacute;r</me:norm>
+ <note type="msLocation"> 1r1001 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="sv&aacute;" me:msa="xAV rP">
+ <me:facs>&slong;va</me:facs>
+ <me:dipl>&slong;va</me:dipl>
+ <me:norm>sv&aacute;</me:norm>
+ <note type="msLocation"> 1r1002 </note>
+</w>
+<w lemma="sem" me:msa="xCS">
+ <me:facs>&slong;&emacr;</me:facs>
+ <me:dipl>&slong;e<ex>m</ex></me:dipl>
+ <me:norm>sem</me:norm>
+ <note type="msLocation"> 1r1003 </note>
+</w>
+<w lemma="sau&eth;r" me:msa="xNC gM nP cN sI">
+ <me:facs>&slong;&avlig;&drot;&er;</me:facs>
+ <me:dipl>&slong;&avlig;d<ex>ir</ex></me:dipl>
+ <me:norm>sau&eth;ir</me:norm>
+ <note type="msLocation"> 1r1004 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r1005 </note>
+</w>
+<w lemma="hneigja" me:msa="xVB fF tPT mIN p3 nS vR">
+ <me:facs>hne&inodot;g&thorn;&inodot;&slong;c</me:facs>
+ <me:dipl>hneig&thorn;i&slong;c</me:dipl>
+ <me:norm>hneig&eth;isk</me:norm>
+ <note type="msLocation"> 1r1006 </note>
+</w>
+<w lemma="hverr" me:msa="xPQ gM nS cN">
+ <me:facs>hv&er;r</me:facs>
+ <me:dipl>hv<ex>er</ex>r</me:dipl>
+ <me:norm>hverr</me:norm>
+ <note type="msLocation"> 1r1007 </note>
+</w>
+<w lemma="sem" me:msa="xCS">
+ <me:facs>&slong;&emacr;</me:facs>
+ <me:dipl>&slong;e<ex>m</ex></me:dipl>
+ <me:norm>sem</me:norm>
+ <note type="msLocation"> 1r10082</note>
+</w>
+<w lemma="einn" me:msa="xNA gM nS cN sI">
+ <me:facs>e&inodot;&nscap;</me:facs>
+ <me:dipl>ei&nscap;</me:dipl>
+ <me:norm>einn</me:norm>
+ <note type="msLocation"> 1r1009 </note>
+</w>
+<w lemma="&aacute;" me:msa="xAP yA">
+ <me:facs>a</me:facs>
+ <me:dipl>a</me:dipl>
+ <me:norm>&aacute;</me:norm>
+ <note type="msLocation"> 1r1010 </note>
+</w>
+<w lemma="sinn" me:msa="xDP gF nS cA">
+ <me:facs>&slong;&inodot;na</me:facs>
+ <me:dipl>&slong;ina</me:dipl>
+ <me:norm>s&iacute;na</me:norm>
+ <note type="msLocation"> 1r1011 </note>
+</w>
+<w lemma="gata" me:msa="xNC gF nS cA sI">
+ <me:facs>go&trot;o</me:facs>
+ <me:dipl>goto</me:dipl>
+ <me:norm>g&oogon;tu</me:norm>
+ <note type="msLocation"> 1r1012 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<lb ed="ms" n="11"/>
+<w lemma="of" me:msa="xAP yA">
+ <me:facs>Of</me:facs>
+ <me:dipl>Of</me:dipl>
+ <me:norm>Of</me:norm>
+ <note type="msLocation"> 1r1101 </note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gM nP cA">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r1102 </note>
+</w>
+<w lemma="m&aeligacute;la" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>m&lhighstrok;</me:facs>
+ <me:dipl>m<ex>e</ex>l<ex>ir</ex></me:dipl>
+ <me:norm>m&aeligacute;lir</me:norm>
+ <note type="msLocation"> 1r1103 </note>
+</w>
+<w lemma="sjalfr" me:msa="xAJ rP gF nS cN sI">
+ <me:facs>&slong;&inodot;alf</me:facs>
+ <me:dipl>&slong;ialf</me:dipl>
+ <me:norm>sj&oogonacute;lf</me:norm>
+ <note type="msLocation"> 1r1104 </note>
+</w>
+<w lemma="speki" me:msa="xNC gF nS cN sI">
+ <me:facs>&slong;pek&inodot;</me:facs>
+ <me:dipl>&slong;peki</me:dipl>
+ <me:norm>speki</me:norm>
+ <note type="msLocation"> 1r1105 </note>
+</w>
+<w lemma="fyrir" me:msa="xAP yA">
+ <me:facs>fyr&er;</me:facs>
+ <me:dipl>fyr<ex>ir</ex></me:dipl>
+ <me:norm>fyrir</me:norm>
+ <note type="msLocation"> 1r1106 </note>
+</w>
+<w lemma="salomon" me:msa="xNP gM nS cA" xml:lang="lat">
+ <me:facs>&slong;alomon&emacr;</me:facs>
+ <me:dipl>&slong;alomone<ex>m</ex></me:dipl>
+ <me:norm>Salomonem</me:norm>
+ <note type="msLocation"> 1r1107 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>:</me:norm>
+</pc>
+<w lemma="margr" me:msa="xAJ rP gF nP cN sI">
+ <me:facs>Margar</me:facs>
+ <me:dipl>Margar</me:dipl>
+ <me:norm>Margar</me:norm>
+ <note type="msLocation"> 1r1108 </note>
+</w>
+<w lemma="gata" me:msa="xNC gF nP cN sI">
+ <me:facs>go&trot;o&rrot;</me:facs>
+ <me:dipl>gotor</me:dipl>
+ <me:norm>g&oogon;tur</me:norm>
+ <note type="msLocation"> 1r1109 </note>
+</w>
+<w lemma="s&yacute;na" me:msa="xVB fF tPS mIN p3 nP vR">
+ <me:facs>&slong;yna<lb ed="ms" n="12"/>&slong;c</me:facs>
+ <me:dipl>&slong;yna<lb ed="ms" n="12"/>&slong;c</me:dipl>
+ <me:norm>s&yacute;na<lb ed="ms" n="12"/>sk</me:norm>
+ <note type="msLocation"> 1r1110 </note>
+</w>
+<w lemma="ma&eth;r" me:msa="xNC gM nP cD sI">
+ <me:facs>&mscap;&er;&mscap;</me:facs>
+ <me:dipl>&mscap;<ex>onno</ex>&mscap;</me:dipl>
+ <me:norm>m&oogon;nnum</me:norm>
+ <note type="msLocation"> 1r1201 </note>
+</w>
+<w lemma="r&eacute;ttr" me:msa="xAJ rP gF nP cN sI">
+ <me:facs>re&trot;&trot;ar</me:facs>
+ <me:dipl>rettar</me:dipl>
+ <me:norm>r&eacute;ttar</me:norm>
+ <note type="msLocation"> 1r1202 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="s&aacute;" me:msa="xDD gF nP cN">
+ <me:facs>&thorn;&eacute;r</me:facs>
+ <me:dipl>&thorn;&eacute;r</me:dipl>
+ <me:norm>&thorn;&aeligacute;r</me:norm>
+ <note type="msLocation"> 1r1203 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r1204 </note>
+</w>
+<w lemma="of" me:msa="xAP yA">
+ <me:facs>of</me:facs>
+ <me:dipl>of</me:dipl>
+ <me:norm>of</me:norm>
+ <note type="msLocation"> 1r1205 </note>
+</w>
+<w lemma="s&iacute;&eth;" me:msa="xNC gF nP cA sI">
+ <me:facs>&slong;&inodot;&drot;&er;</me:facs>
+ <me:dipl>&slong;id<ex>ir</ex></me:dipl>
+ <me:norm>s&iacute;&eth;ir</me:norm>
+ <note type="msLocation"> 1r1206 </note>
+</w>
+<w lemma="lei&eth;a" me:msa="xVB fF tPS mIN p3 nP vA">
+ <me:facs>le&inodot;&drot;a</me:facs>
+ <me:dipl>leida</me:dipl>
+ <me:norm>lei&eth;a</me:norm>
+ <note type="msLocation"> 1r1207 </note>
+</w>
+<w lemma="til" me:msa="xAP yG">
+ <me:facs>&trot;&inodotsup;</me:facs>
+ <me:dipl>t<ex>il</ex></me:dipl>
+ <me:norm>til</me:norm>
+ <note type="msLocation"> 1r1208 </note>
+</w>
+<w lemma="gl&oogon;tun" me:msa="xNC gF nS cG sI">
+ <me:facs>glo&trot;onar</me:facs>
+ <me:dipl>glotonar</me:dipl>
+ <me:norm>gl&oogon;tunar</me:norm>
+ <note type="msLocation"> 1r1209 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="sj&aacute;" me:msa="xDD gF nP cN">
+ <me:facs>&THORN;e&slong;&slong;ar</me:facs>
+ <me:dipl>&THORN;e&slong;&slong;ar</me:dipl>
+ <me:norm>&THORN;essar</me:norm>
+ <note type="msLocation"> 1r1210 </note>
+</w>
+<w lemma="gata" me:msa="xNC gF nP cN sI">
+ <me:facs>go<lb ed="ms" n="13"/>&trot;o&rrot;</me:facs>
+ <me:dipl>go<lb ed="ms" n="13"/>tor</me:dipl>
+ <me:norm>g&oogon;<lb ed="ms" n="13"/>tur</me:norm>
+ <note type="msLocation"> 1r1211 </note>
+</w>
+<w lemma="gl&oogon;tun" me:msa="xNC gF nS cG sI">
+ <me:facs>glo&trot;onar</me:facs>
+ <me:dipl>glotonar</me:dipl>
+ <me:norm>gl&oogon;tunar</me:norm>
+ <note type="msLocation"> 1r1301 </note>
+</w>
+<w lemma="ver&eth;a" me:msa="xVB fF tPS mIN p3 nP vA">
+ <me:facs>v&er;&thorn;a</me:facs>
+ <me:dipl>v<ex>er</ex>&thorn;a</me:dipl>
+ <me:norm>ver&eth;a</me:norm>
+ <note type="msLocation"> 1r1302 </note>
+</w>
+<w lemma="ganga" me:msa="xVB fP tPT vA gF nP cN sI">
+ <me:facs>gengnar</me:facs>
+ <me:dipl>gengnar</me:dipl>
+ <me:norm>gengnar</me:norm>
+ <note type="msLocation"> 1r1303 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r1304 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r1305 </note>
+</w>
+<w lemma="fyrl&aacute;ta" me:msa="xVB fP tPT vA gF nS cN sI">
+ <me:facs>fyr la&trot;&inodot;n</me:facs>
+ <me:dipl>fyr latin</me:dipl>
+ <me:norm>fyrl&aacute;tin</me:norm>
+ <note type="msLocation"> 1r1306 </note>
+</w>
+<w lemma="ver&eth;a" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>v&er;&drot;r</me:facs>
+ <me:dipl>v<ex>er</ex>dr</me:dipl>
+ <me:norm>ver&eth;r</me:norm>
+ <note type="msLocation"> 1r1308 </note>
+</w>
+<w lemma="einn" me:msa="xNA gF nS cN sI">
+ <me:facs>e&inodot;n</me:facs>
+ <me:dipl>ein</me:dipl>
+ <me:norm>ein</me:norm>
+ <note type="msLocation"> 1r1309 </note>
+</w>
+<w lemma="konungligr" me:msa="xAJ rP gF nS cN sI">
+ <me:facs>k&BAR;g<lb ed="ms" n="14"/>l&inodot;g</me:facs>
+ <me:dipl>k<ex>onon</ex>g<lb ed="ms" n="14"/>lig</me:dipl>
+ <me:norm>konung<lb ed="ms" n="14"/>lig</me:norm>
+ <note type="msLocation"> 1r1310 </note>
+</w>
+<w lemma="gata" me:msa="xNC gF nS cN sI">
+ <me:facs>ga&trot;a</me:facs>
+ <me:dipl>gata</me:dipl>
+ <me:norm>gata</me:norm>
+ <note type="msLocation"> 1r1401 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="s&aacute;" me:msa="xDD gN nS cN">
+ <me:facs>&thornbar;</me:facs>
+ <me:dipl>&thorn;<ex>at</ex></me:dipl>
+ <me:norm>&thorn;at</me:norm>
+ <note type="msLocation"> 1r1402 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nP vA">
+ <me:facs>ero</me:facs>
+ <me:dipl>ero</me:dipl>
+ <me:norm>eru</me:norm>
+ <note type="msLocation"> 1r1403 </note>
+</w>
+<w lemma="lag" me:msa="xNC gN nP cN sI">
+ <me:facs>laug</me:facs>
+ <me:dipl>laug</me:dipl>
+ <me:norm>l&oogon;g</me:norm>
+ <note type="msLocation"> 1r1404 </note>
+</w>
+<w lemma="gu&eth;" me:msa="xNC gM nS cG sI">
+ <me:facs>g&bar;&slong;</me:facs>
+ <me:dipl>g<ex>vd</ex>&slong;</me:dipl>
+ <me:norm>Gu&eth;s</me:norm>
+ <note type="msLocation"> 1r1405 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="s&aacute;" me:msa="xDD gN nP cN">
+ <me:facs>&thorn;&avlig;</me:facs>
+ <me:dipl>&thorn;&avlig;</me:dipl>
+ <me:norm>&thorn;au</me:norm>
+ <note type="msLocation"> 1r1406 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r1407 </note>
+</w>
+<w lemma="eigi" me:msa="xAV rP">
+ <me:facs>e&inodot;g&bar;</me:facs>
+ <me:dipl>eig<ex>i</ex></me:dipl>
+ <me:norm>eigi</me:norm>
+ <note type="msLocation"> 1r1408 </note>
+</w>
+<w lemma="hneigja" me:msa="xVB fF tPS mIN p3 nP vR">
+ <me:facs>hne&inodot;g&inodot;a&slong;c</me:facs>
+ <me:dipl>hneigia&slong;c</me:dipl>
+ <me:norm>hneigjask</me:norm>
+ <note type="msLocation"> 1r1409 </note>
+</w>
+<w lemma="til" me:msa="xAP yG">
+ <me:facs>&trot;&inodotsup;</me:facs>
+ <me:dipl>t<ex>il</ex></me:dipl>
+ <me:norm>til</me:norm>
+ <note type="msLocation"> 1r1410 </note>
+</w>
+<w lemma="h&oslashacute;gri" me:msa="xAJ rC gF nS cG sD">
+ <me:facs>h&oogon;g&inodotsup;</me:facs>
+ <me:dipl>h&oogon;g<ex>ri</ex></me:dipl>
+ <me:norm>h&oslashacute;gri</me:norm>
+ <note type="msLocation"> 1r1411 </note>
+</w>
+<w lemma="h&oogon;nd" me:msa="xNC gF nS cG sI">
+ <me:facs>han<lb ed="ms" n="15"/>dar</me:facs>
+ <me:dipl>han<lb ed="ms" n="15"/>dar</me:dipl>
+ <me:norm>han<lb ed="ms" n="15"/>dar</me:norm>
+ <note type="msLocation"> 1r1412 </note>
+</w>
+<w lemma="n&eacute;" me:msa="xAV rP">
+ <me:facs>ne</me:facs>
+ <me:dipl>ne</me:dipl>
+ <me:norm>n&eacute;</me:norm>
+ <note type="msLocation"> 1r1501 </note>
+</w>
+<w lemma="vinstri" me:msa="xAJ rC gF nS cG sD">
+ <me:facs>v&inodot;n&slong;&trot;&inodotsup;</me:facs>
+ <me:dipl>vin&slong;t<ex>ri</ex></me:dipl>
+ <me:norm>vinstri</me:norm>
+ <note type="msLocation"> 1r1502 </note>
+</w>
+<w lemma="fyrir" me:msa="xAP yD">
+ <me:facs>fyr&er;</me:facs>
+ <me:dipl>fyr<ex>ir</ex></me:dipl>
+ <me:norm>fyrir</me:norm>
+ <note type="msLocation"> 1r1503 </note>
+</w>
+<w lemma="&oacute;r&oslashacute;k&eth;" me:msa="xNC gF nS cD sI">
+ <me:facs>or&oogon;c&drot;</me:facs>
+ <me:dipl>or&oogon;cd</me:dipl>
+ <me:norm>&oacute;r&oslashacute;k&eth;</me:norm>
+ <note type="msLocation"> 1r1504 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="of" me:msa="xAP yA">
+ <me:facs>Of</me:facs>
+ <me:dipl>Of</me:dipl>
+ <me:norm>Of</me:norm>
+ <note type="msLocation"> 1r1505 </note>
+</w>
+<w lemma="sj&aacute;" me:msa="xDD gF nS cA">
+ <me:facs>&thorn;e&slong;&slong;a</me:facs>
+ <me:dipl>&thorn;e&slong;&slong;a</me:dipl>
+ <me:norm>&thorn;essa</me:norm>
+ <note type="msLocation"> 1r1506 </note>
+</w>
+<w lemma="gata" me:msa="xNC gF nS cA sI">
+ <me:facs>go&trot;o</me:facs>
+ <me:dipl>goto</me:dipl>
+ <me:norm>g&oogon;tu</me:norm>
+ <note type="msLocation"> 1r1507 </note>
+</w>
+<w lemma="m&aeligacute;la" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>m&lhighstrok;</me:facs>
+ <me:dipl>m<ex>e</ex>l<ex>ir</ex></me:dipl>
+ <me:norm>m&aeligacute;lir</me:norm>
+ <note type="msLocation"> 1r1508 </note>
+</w>
+<w lemma="dr&oacute;ttinn" me:msa="xNC gM nS cN sI">
+ <me:facs>&drot;&osup;&trot;&trot;&bar;</me:facs>
+ <me:dipl>d<ex>ro</ex>tt<ex>inn</ex></me:dipl>
+ <me:norm>Dr&oacute;ttinn</me:norm>
+ <note type="msLocation"> 1r1509 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cN sI">
+ <me:facs>c&inodotsup;&slong;&trot;r</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tr</me:dipl>
+ <me:norm>Kristr</me:norm>
+ <note type="msLocation"> 1r1510 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<lb ed="ms" n="16"/>
+<w lemma="s&aacute;" me:msa="xDD gM nS cN">
+ <me:facs>&slong;a</me:facs>
+ <me:dipl>&slong;a</me:dipl>
+ <me:norm>s&aacute;</me:norm>
+ <note type="msLocation"> 1r1601 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r1602 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r16032</note>
+</w>
+<w lemma="endir" me:msa="xNC gM nS cN sI">
+ <me:facs>end&er;</me:facs>
+ <me:dipl>end<ex>ir</ex></me:dipl>
+ <me:norm>endir</me:norm>
+ <note type="msLocation"> 1r1604 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r1605 </note>
+</w>
+<w lemma="fylling" me:msa="xNC gF nS cN sI">
+ <me:facs>fyll&imacr;g</me:facs>
+ <me:dipl>fylli<ex>n</ex>g</me:dipl>
+ <me:norm>fylling</me:norm>
+ <note type="msLocation"> 1r1606 </note>
+</w>
+<w lemma="lag" me:msa="xNC gN nP cG sI">
+ <me:facs>laga</me:facs>
+ <me:dipl>laga</me:dipl>
+ <me:norm>laga</me:norm>
+ <note type="msLocation"> 1r1607 </note>
+</w>
+<w lemma="til" me:msa="xAP yG">
+ <me:facs>&trot;&inodotsup;</me:facs>
+ <me:dipl>t<ex>il</ex></me:dipl>
+ <me:norm>til</me:norm>
+ <note type="msLocation"> 1r1608 </note>
+</w>
+<w lemma="r&eacute;ttl&aeligacute;ti" me:msa="xNC gN nS cG sI">
+ <me:facs>re&trot;le&trot;&inodot;&slong;&slong;</me:facs>
+ <me:dipl>retleti&slong;&slong;</me:dipl>
+ <me:norm>r&eacute;ttl&aeligacute;tis</me:norm>
+ <note type="msLocation"> 1r1609 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="ek" me:msa="xPE p1 nS cN">
+ <me:facs>Ec</me:facs>
+ <me:dipl>Ec</me:dipl>
+ <me:norm>Ek</me:norm>
+ <note type="msLocation"> 1r1610 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p1 nS vA">
+ <me:facs>em</me:facs>
+ <me:dipl>em</me:dipl>
+ <me:norm>em</me:norm>
+ <note type="msLocation"> 1r1611 </note>
+</w>
+<w lemma="gata" me:msa="xNC gF nS cN sI">
+ <me:facs>ga&trot;a</me:facs>
+ <me:dipl>gata</me:dipl>
+ <me:norm>gata</me:norm>
+ <note type="msLocation"> 1r1612 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r16132</note>
+</w>
+<lb ed="ms" n="17"/>
+<w lemma="sannyr&eth;i" me:msa="xNC gN nS cN sI">
+ <me:facs>&slong;a&nscap;yr&drot;&inodot;</me:facs>
+ <me:dipl>&slong;a&nscap;yrdi</me:dipl>
+ <me:norm>sannyr&eth;i</me:norm>
+ <note type="msLocation"> 1r1701 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r1702 </note>
+</w>
+<w lemma="l&iacute;f" me:msa="xNC gN nS cN sI">
+ <me:facs>l&inodot;f</me:facs>
+ <me:dipl>lif</me:dipl>
+ <me:norm>l&iacute;f</me:norm>
+ <note type="msLocation"> 1r1703 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="engi" me:msa="xPI gM nS cN">
+ <me:facs>Eng&inodot;</me:facs>
+ <me:dipl>Engi</me:dipl>
+ <me:norm>Engi</me:norm>
+ <note type="msLocation"> 1r1704 </note>
+</w>
+<w lemma="koma" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>c&omacr;&rrot;</me:facs>
+ <me:dipl>co<ex>m</ex>r</me:dipl>
+ <me:norm>k&oslash;mr</me:norm>
+ <note type="msLocation"> 1r1705 </note>
+</w>
+<w lemma="til" me:msa="xAP yG">
+ <me:facs>&trot;&inodotsup;</me:facs>
+ <me:dipl>t<ex>il</ex></me:dipl>
+ <me:norm>til</me:norm>
+ <note type="msLocation"> 1r1706 </note>
+</w>
+<w lemma="fa&eth;ir" me:msa="xNC gM nS cG sI">
+ <me:facs>fau&drot;o&rrot;</me:facs>
+ <me:dipl>faudor</me:dipl>
+ <me:norm>f&oogon;&eth;ur</me:norm>
+ <note type="msLocation"> 1r1707 </note>
+</w>
+<w lemma="nema" me:msa="xCS">
+ <me:facs>n&emacr;a</me:facs>
+ <me:dipl>ne<ex>m</ex>a</me:dipl>
+ <me:norm>nema</me:norm>
+ <note type="msLocation"> 1r1708 </note>
+</w>
+<w lemma="fyr" me:msa="xAP yA">
+ <me:facs>fyr</me:facs>
+ <me:dipl>fyr</me:dipl>
+ <me:norm>fyr</me:norm>
+ <note type="msLocation"> 1r1709 </note>
+</w>
+<w lemma="ek" me:msa="xPE p1 nS cA">
+ <me:facs>m&inodot;c</me:facs>
+ <me:dipl>mic</me:dipl>
+ <me:norm>mik</me:norm>
+ <note type="msLocation"> 1r1710 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="til" me:msa="xAP yG">
+ <me:facs>T&inodot;l</me:facs>
+ <me:dipl>Til</me:dipl>
+ <me:norm>Til</me:norm>
+ <note type="msLocation"> 1r1711 </note>
+</w>
+<w lemma="sj&aacute;" me:msa="xDD gF nS cG">
+ <me:facs>&thorn;<lb ed="ms" n="18"/>e&slong;&slong;ar</me:facs>
+ <me:dipl>&thorn;<lb ed="ms" n="18"/>e&slong;&slong;ar</me:dipl>
+ <me:norm>&thorn;<lb ed="ms" n="18"/>essar</me:norm>
+ <note type="msLocation"> 1r1712 </note>
+</w>
+<w lemma="gata" me:msa="xNC gF nS cG sI">
+ <me:facs>go&trot;o</me:facs>
+ <me:dipl>goto</me:dipl>
+ <me:norm>g&oogon;tu</me:norm>
+ <note type="msLocation"> 1r1801 </note>
+</w>
+<w lemma="la&eth;a" me:msa="xVB fF tPT mIN p3 nS vA">
+ <me:facs>la&drot;a&drot;&inodot;</me:facs>
+ <me:dipl>ladadi</me:dipl>
+ <me:norm>la&eth;a&eth;i</me:norm>
+ <note type="msLocation"> 1r1802 </note>
+</w>
+<w lemma="hann" me:msa="xPE p3 gM nS cN">
+ <me:facs>&hstrok;</me:facs>
+ <me:dipl>h<ex>ann</ex></me:dipl>
+ <me:norm>hann</me:norm>
+ <note type="msLocation"> 1r1803 </note>
+</w>
+<w lemma="allr" me:msa="xAJ rP gM nP cA sI">
+ <me:facs>alla</me:facs>
+ <me:dipl>alla</me:dipl>
+ <me:norm>alla</me:norm>
+ <note type="msLocation"> 1r1804 </note>
+</w>
+<w lemma="ma&eth;r" me:msa="xNC gM nP cA sI">
+ <me:facs>&mscap;&bar;</me:facs>
+ <me:dipl>&mscap;<ex>enn</ex></me:dipl>
+ <me:norm>menn</me:norm>
+ <note type="msLocation"> 1r1805 </note>
+</w>
+<w lemma="saman" me:msa="xAV rP">
+ <me:facs>&slong;am&amacr;</me:facs>
+ <me:dipl>&slong;ama<ex>n</ex></me:dipl>
+ <me:norm>saman</me:norm>
+ <note type="msLocation"> 1r1806 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r1807 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r1808 </note>
+</w>
+<w lemma="hann" me:msa="xPE p3 gM nS cN">
+ <me:facs>&hstrok;</me:facs>
+ <me:dipl>h<ex>ann</ex></me:dipl>
+ <me:norm>hann</me:norm>
+ <note type="msLocation"> 1r18092</note>
+</w>
+<w lemma="m&aeligacute;la" me:msa="xVB fF tPT mIN p3 nS vA">
+ <me:facs>m&lhighstrok;</me:facs>
+ <me:dipl>m<ex>e</ex>l<ex>ti</ex></me:dipl>
+ <me:norm>m&aeligacute;lti</me:norm>
+ <note type="msLocation"> 1r1810 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>:</me:norm>
+</pc>
+<w lemma="koma" me:msa="xVB fF tPS mIP p2 nP vA">
+ <me:facs>Com&inodot;&drot;</me:facs>
+ <me:dipl>Comid</me:dipl>
+ <me:norm>Komi&eth;</me:norm>
+ <note type="msLocation"> 1r1811 </note>
+</w>
+<w lemma="&eacute;r" me:msa="xPE p2 nP cN">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>&eacute;r</me:norm>
+ <note type="msLocation"> 1r18122</note>
+</w>
+<lb ed="ms" n="19"/>
+<w lemma="til" me:msa="xAP yG">
+ <me:facs>&trot;&inodotsup;</me:facs>
+ <me:dipl>t<ex>il</ex></me:dipl>
+ <me:norm>til</me:norm>
+ <note type="msLocation"> 1r1901 </note>
+</w>
+<w lemma="ek" me:msa="xPE p1 nS cG">
+ <me:facs>m&inodot;n</me:facs>
+ <me:dipl>min</me:dipl>
+ <me:norm>m&iacute;n</me:norm>
+ <note type="msLocation"> 1r1902 </note>
+</w>
+<w lemma="allr" me:msa="xAJ rP gM nP cN sI">
+ <me:facs>all&er;</me:facs>
+ <me:dipl>all<ex>ir</ex></me:dipl>
+ <me:norm>allir</me:norm>
+ <note type="msLocation"> 1r1903 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r1904 </note>
+</w>
+<w lemma="starfa" me:msa="xVB fF tPS mIN p2 nP vA">
+ <me:facs>&slong;&trot;arf&inodot;&drot;</me:facs>
+ <me:dipl>&slong;tarfid</me:dipl>
+ <me:norm>starfi&eth;</me:norm>
+ <note type="msLocation"> 1r1905 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r1906 </note>
+</w>
+<w lemma="hafa" me:msa="xVB fF tPS mIN p2 nP vA">
+ <me:facs>haf&inodot;&drot;</me:facs>
+ <me:dipl>hafid</me:dipl>
+ <me:norm>hafi&eth;</me:norm>
+ <note type="msLocation"> 1r1907 </note>
+</w>
+<w lemma="erfi&eth;i" me:msa="xNC gN nS cA sI">
+ <me:facs>erf&inodot;&drot;&inodot;</me:facs>
+ <me:dipl>erfidi</me:dipl>
+ <me:norm>erfi&eth;i</me:norm>
+ <note type="msLocation"> 1r1908 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="engi" me:msa="xPI gF nS cN">
+ <me:facs>Eng&inodot;</me:facs>
+ <me:dipl>Engi</me:dipl>
+ <me:norm>Engi</me:norm>
+ <note type="msLocation"> 1r1909 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r19102</note>
+</w>
+<w lemma="vir&eth;ing" me:msa="xNC gF nS cN sI">
+ <me:facs>v&inodot;r&thorn;&imacr;g</me:facs>
+ <me:dipl>vir&thorn;i<ex>n</ex>g</me:dipl>
+ <me:norm>vir&eth;ing</me:norm>
+ <note type="msLocation"> 1r1911 </note>
+</w>
+<lb ed="ms" n="20"/>
+<w lemma="t&iacute;gn" me:msa="xNC gF nS cG sI">
+ <me:facs>&trot;&inodot;gnar</me:facs>
+ <me:dipl>tignar</me:dipl>
+ <me:norm>t&iacute;gnar</me:norm>
+ <note type="msLocation"> 1r2001 </note>
+</w>
+<w lemma="fyr" me:msa="xAP yD">
+ <me:facs>fyr</me:facs>
+ <me:dipl>fyr</me:dipl>
+ <me:norm>fyr</me:norm>
+ <note type="msLocation"> 1r2002 </note>
+</w>
+<w lemma="gu&eth;" me:msa="xNC gM nS cD sI">
+ <me:facs>gv&drot;&inodot;</me:facs>
+ <me:dipl>gvdi</me:dipl>
+ <me:norm>Gu&eth;i</me:norm>
+ <note type="msLocation"> 1r2003 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="kve&eth;a" me:msa="xVB fF tPT mIN p3 nS vA">
+ <me:facs>q&asup;&drot;</me:facs>
+ <me:dipl>q<ex>va</ex>d</me:dipl>
+ <me:norm>Kva&eth;</me:norm>
+ <note type="msLocation"> 1r2004 </note>
+</w>
+<w lemma="postuli" me:msa="xNC gM nS cN sD">
+ <me:facs>p&lhighstrok;&inodot;&nscap;</me:facs>
+ <me:dipl>p<ex>o&slong;to</ex>li&nscap;</me:dipl>
+ <me:norm>postulinn</me:norm>
+ <note type="msLocation"> 1r2005 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>:</me:norm>
+</pc>
+<w lemma="&thorn;ar" me:msa="xAV rP">
+ <me:facs>&THORN;ar</me:facs>
+ <me:dipl>&THORN;ar</me:dipl>
+ <me:norm>&THORN;ar</me:norm>
+ <note type="msLocation"> 1r2006 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2007 </note>
+</w>
+<w lemma="engi" me:msa="xPI gM nS cN">
+ <me:facs>eng&inodot;</me:facs>
+ <me:dipl>engi</me:dipl>
+ <me:norm>engi</me:norm>
+ <note type="msLocation"> 1r2008 </note>
+</w>
+<w lemma="gy&eth;ingr" me:msa="xNC gM nS cN sI">
+ <me:facs>gy&thorn;&imacr;gr</me:facs>
+ <me:dipl>gy&thorn;i<ex>n</ex>gr</me:dipl>
+ <me:norm>gy&eth;ingr</me:norm>
+ <note type="msLocation"> 1r2009 </note>
+</w>
+<w lemma="n&eacute;" me:msa="xAV rP">
+ <me:facs>ne</me:facs>
+ <me:dipl>ne</me:dipl>
+ <me:norm>n&eacute;</me:norm>
+ <note type="msLocation"> 1r2010 </note>
+</w>
+<w lemma="girzkr" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>g&inodot;rczr</me:facs>
+ <me:dipl>girczr</me:dipl>
+ <me:norm>girzkr</me:norm>
+ <note type="msLocation"> 1r2011 </note>
+</w>
+<lb ed="ms" n="21"/>
+<w lemma="ma&eth;r" me:msa="xNC gM nS cN sI">
+ <me:facs>&mMedrun;</me:facs>
+ <me:dipl><ex>madr</ex></me:dipl>
+ <me:norm>ma&eth;r</me:norm>
+ <note type="msLocation"> 1r2101 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="hei&eth;inn" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>he&inodot;&thorn;&inodot;&nscap;</me:facs>
+ <me:dipl>hei&thorn;i&nscap;</me:dipl>
+ <me:norm>hei&eth;inn</me:norm>
+ <note type="msLocation"> 1r2102 </note>
+</w>
+<w lemma="n&eacute;" me:msa="xAV rP">
+ <me:facs>ne</me:facs>
+ <me:dipl>ne</me:dipl>
+ <me:norm>n&eacute;</me:norm>
+ <note type="msLocation"> 1r2103 </note>
+</w>
+<w lemma="&uacute;tlendr" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>v&trot;le&nscap;dr</me:facs>
+ <me:dipl>vtle&nscap;dr</me:dipl>
+ <me:norm>&uacute;tlendr</me:norm>
+ <note type="msLocation"> 1r2104 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="&thorn;r&aeligacute;ll" me:msa="xNC gM nS cN sI">
+ <me:facs>&thorn;rell</me:facs>
+ <me:dipl>&thorn;rell</me:dipl>
+ <me:norm>&thorn;r&aeligacute;ll</me:norm>
+ <note type="msLocation"> 1r2105 </note>
+</w>
+<w lemma="n&eacute;" me:msa="xAV rP">
+ <me:facs>ne</me:facs>
+ <me:dipl>ne</me:dipl>
+ <me:norm>n&eacute;</me:norm>
+ <note type="msLocation"> 1r21062</note>
+</w>
+<w lemma="frelsingr" me:msa="xNC gM nS cN sI">
+ <me:facs>frel&slong;&inodot;ngr</me:facs>
+ <me:dipl>frel&slong;ingr</me:dipl>
+ <me:norm>frelsingr</me:norm>
+ <note type="msLocation"> 1r2107 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="karl" me:msa="xNC gM nS cN sI">
+ <me:facs>call</me:facs>
+ <me:dipl>call</me:dipl>
+ <me:norm>karl</me:norm>
+ <note type="msLocation"> 1r2108 </note>
+</w>
+<w lemma="n&eacute;" me:msa="xAV rP">
+ <me:facs>ne</me:facs>
+ <me:dipl>ne</me:dipl>
+ <me:norm>n&eacute;</me:norm>
+ <note type="msLocation"> 1r21093</note>
+</w>
+<w lemma="kona" me:msa="xNC gF nS cN sI">
+ <me:facs>cona</me:facs>
+ <me:dipl>cona</me:dipl>
+ <me:norm>kona</me:norm>
+ <note type="msLocation"> 1r2110 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<lb ed="ms" n="22"/>
+<w lemma="heldr" me:msa="xAV rC">
+ <me:facs>helldr</me:facs>
+ <me:dipl>helldr</me:dipl>
+ <me:norm>heldr</me:norm>
+ <note type="msLocation"> 1r2201 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2202 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cN sI">
+ <me:facs>c&inodotsup;&slong;&trot;r</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tr</me:dipl>
+ <me:norm>Kristr</me:norm>
+ <note type="msLocation"> 1r2203 </note>
+</w>
+<w lemma="sv&aacute;" me:msa="xAV rP">
+ <me:facs>&slong;va</me:facs>
+ <me:dipl>&slong;va</me:dipl>
+ <me:norm>sv&aacute;</me:norm>
+ <note type="msLocation"> 1r2204 </note>
+</w>
+<w lemma="sem" me:msa="xCS">
+ <me:facs>&slong;&emacr;</me:facs>
+ <me:dipl>&slong;e<ex>m</ex></me:dipl>
+ <me:norm>sem</me:norm>
+ <note type="msLocation"> 1r2205 </note>
+</w>
+<w lemma="allr" me:msa="xAJ rP gM nP cN sI">
+ <me:facs>all&er;</me:facs>
+ <me:dipl>all<ex>ir</ex></me:dipl>
+ <me:norm>allir</me:norm>
+ <note type="msLocation"> 1r2206 </note>
+</w>
+<w lemma="hlutr" me:msa="xNC gM nP cN sI">
+ <me:facs>h&lhighstrok;&inodot;r</me:facs>
+ <me:dipl>hl<ex>ut</ex>ir</me:dipl>
+ <me:norm>hlutir</me:norm>
+ <note type="msLocation"> 1r2207 </note>
+</w>
+<w lemma="&iacute;" me:msa="xAP yD">
+ <me:facs>&inodot;</me:facs>
+ <me:dipl>i</me:dipl>
+ <me:norm>&iacute;</me:norm>
+ <note type="msLocation"> 1r2208 </note>
+</w>
+<w lemma="allr" me:msa="xAJ rP gM nP cD sI">
+ <me:facs>oll&omacr;</me:facs>
+ <me:dipl>ollo<ex>m</ex></me:dipl>
+ <me:norm>&oogon;llum</me:norm>
+ <note type="msLocation"> 1r2209 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="en" me:msa="xCC">
+ <me:facs>en</me:facs>
+ <me:dipl>en</me:dipl>
+ <me:norm>En</me:norm>
+ <note type="msLocation"> 1r2210 </note>
+</w>
+<w lemma="allr" me:msa="xAJ rP gM nP cN sI">
+ <me:facs>all&er;</me:facs>
+ <me:dipl>all<ex>ir</ex></me:dipl>
+ <me:norm>allir</me:norm>
+ <note type="msLocation"> 1r22112</note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nP vA">
+ <me:facs>ero</me:facs>
+ <me:dipl>ero</me:dipl>
+ <me:norm>eru</me:norm>
+ <note type="msLocation"> 1r2212 </note>
+</w>
+<w lemma="einn" me:msa="xNA gN nS cN sI">
+ <me:facs>e&inodot;&trot;&trot;</me:facs>
+ <me:dipl>eitt</me:dipl>
+ <me:norm>eitt</me:norm>
+ <note type="msLocation"> 1r2213 </note>
+</w>
+<w lemma="me&eth;" me:msa="xAP yD">
+ <me:facs>m&drotstrok;</me:facs>
+ <me:dipl>m<ex>e</ex>d</me:dipl>
+ <me:norm>me&eth;</me:norm>
+ <note type="msLocation"> 1r2214 </note>
+</w>
+<lb ed="ms" n="23"/>
+<w lemma="gu&eth;" me:msa="xNC gM nS cD sI">
+ <me:facs>gv&drot;&inodot;</me:facs>
+ <me:dipl>gvdi</me:dipl>
+ <me:norm>Gu&eth;i</me:norm>
+ <note type="msLocation"> 1r2301 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="ef" me:msa="xCS">
+ <me:facs>Ef</me:facs>
+ <me:dipl>Ef</me:dipl>
+ <me:norm>Ef</me:norm>
+ <note type="msLocation"> 1r2302 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cN sI">
+ <me:facs>c&inodotsup;&slong;&trot;r</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tr</me:dipl>
+ <me:norm>Kristr</me:norm>
+ <note type="msLocation"> 1r2303 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2304 </note>
+</w>
+<w lemma="endir" me:msa="xNC gM nS cN sI">
+ <me:facs>end&er;</me:facs>
+ <me:dipl>end<ex>ir</ex></me:dipl>
+ <me:norm>endir</me:norm>
+ <note type="msLocation"> 1r2305 </note>
+</w>
+<w lemma="lag" me:msa="xNC gN nP cG sD">
+ <me:facs>laga&nscap;a</me:facs>
+ <me:dipl>laga&nscap;a</me:dipl>
+ <me:norm>laganna</me:norm>
+ <note type="msLocation"> 1r2306 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r2307 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nP vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>eru</me:norm>
+ <note type="msLocation"> 1r23082</note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gM nP cN">
+ <me:facs>&thorn;&BAR;r</me:facs>
+ <me:dipl>&thorn;<ex>ei</ex>r</me:dipl>
+ <me:norm>&thorn;eir</me:norm>
+ <note type="msLocation"> 1r2309 </note>
+</w>
+<w lemma="fyr &uacute;tan" me:msa="xAP yA">
+ <me:facs>fyr v&trot;&amacr;</me:facs>
+ <me:dipl>fyr vta<ex>n</ex></me:dipl>
+ <me:norm>fyr &uacute;tan</me:norm>
+ <note type="msLocation"> 1r2310 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cA sI">
+ <me:facs>c&inodotsup;&slong;&trot;</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;t</me:dipl>
+ <me:norm>Krist</me:norm>
+ <note type="msLocation"> 1r2312 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r23133</note>
+</w>
+<lb ed="ms" n="24"/>
+<w lemma="fyr &uacute;tan" me:msa="xAP yA">
+ <me:facs>fyr v&trot;&amacr;</me:facs>
+ <me:dipl>fyr vta<ex>n</ex></me:dipl>
+ <me:norm>fyr &uacute;tan</me:norm>
+ <note type="msLocation"> 1r2401 </note>
+</w>
+<w lemma="lag" me:msa="xNC gN nP cA sI">
+ <me:facs>l&avlig;g</me:facs>
+ <me:dipl>l&avlig;g</me:dipl>
+ <me:norm>l&oogon;g</me:norm>
+ <note type="msLocation"> 1r2403 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nP vA">
+ <me:facs>ero</me:facs>
+ <me:dipl>ero</me:dipl>
+ <me:norm>eru</me:norm>
+ <note type="msLocation"> 1r2404 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>Ok</me:norm>
+ <note type="msLocation"> 1r2405 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2406 </note>
+</w>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r2407 </note>
+</w>
+<w lemma="lagalauss" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>laga l&avlig;&slong;&slong;</me:facs>
+ <me:dipl>laga l&avlig;&slong;&slong;</me:dipl>
+ <me:norm>lagalauss</me:norm>
+ <note type="msLocation"> 1r2408 </note>
+</w>
+<w lemma="l&yacute;&eth;r" me:msa="xNC gM nS cN sI">
+ <me:facs>ly&drot;r</me:facs>
+ <me:dipl>lydr</me:dipl>
+ <me:norm>l&yacute;&eth;r</me:norm>
+ <note type="msLocation"> 1r2409 </note>
+</w>
+<w lemma="fyr &uacute;tan" me:msa="xAP yA">
+ <me:facs>fyr v&trot;an</me:facs>
+ <me:dipl>fyr vtan</me:dipl>
+ <me:norm>fyr &uacute;tan</me:norm>
+ <note type="msLocation"> 1r24102</note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cA sI">
+ <me:facs>c&inodotsup;&slong;&trot;</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;t</me:dipl>
+ <me:norm>Krist</me:norm>
+ <note type="msLocation"> 1r2412 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<lb ed="ms" n="25"/>
+<w lemma="en" me:msa="xCC">
+ <me:facs>En</me:facs>
+ <me:dipl>En</me:dipl>
+ <me:norm>En</me:norm>
+ <note type="msLocation"> 1r2501 </note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gN nS cN">
+ <me:facs>&thornbar;</me:facs>
+ <me:dipl>&thorn;<ex>at</ex></me:dipl>
+ <me:norm>&thorn;at</me:norm>
+ <note type="msLocation"> 1r2502 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2503 </note>
+</w>
+<w lemma="&oacute;s&oslashacute;mr" me:msa="xAJ rP gN nS cN sI">
+ <me:facs>o&slong;&oogon;m&trot;</me:facs>
+ <me:dipl>o&slong;&oogon;mt</me:dipl>
+ <me:norm>&oacute;s&oslashacute;mt</me:norm>
+ <note type="msLocation"> 1r2504 </note>
+</w>
+<seg type="nb">
+<w lemma="&aacute;" me:msa="xAP yD">
+ <me:facs>a</me:facs>
+ <me:dipl>a</me:dipl>
+ <me:norm>&aacute;</me:norm>
+ <note type="msLocation"> 1r2505 </note>
+</w>
+<w lemma="t&iacute;&eth;" me:msa="xNC gF nP cD sI">
+ <me:facs>&trot;&inodot;&thorn;&omacr;</me:facs>
+ <me:dipl>ti&thorn;o<ex>m</ex></me:dipl>
+ <me:norm>t&iacute;&eth;um</me:norm>
+ <note type="msLocation"> 1r2506 </note>
+</w>
+</seg>
+<w lemma="gu&eth;spjallskenning" me:msa="xNC gF nS cG sI">
+ <me:facs>gv&drot;&slong;p&inodot;allz ke&nscap;&imacr;gar</me:facs>
+ <me:dipl>gvd&slong;piallz ke&nscap;i<ex>n</ex>gar</me:dipl>
+ <me:norm>gu&eth;spjallskenningar</me:norm>
+ <note type="msLocation"> 1r2507 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="at" me:msa="xCS">
+ <me:facs>a&trot;</me:facs>
+ <me:dipl>at</me:dipl>
+ <me:norm>at</me:norm>
+ <note type="msLocation"> 1r2508 </note>
+</w>
+<w lemma="l&yacute;&eth;r" me:msa="xNC gM nS cN sI">
+ <me:facs>ly&drot;r</me:facs>
+ <me:dipl>lydr</me:dipl>
+ <me:norm>l&yacute;&eth;r</me:norm>
+ <note type="msLocation"> 1r2509 </note>
+</w>
+<w lemma="ver&eth;a" me:msa="xVB fF tPS mSU p3 nS vA">
+ <me:facs>v&er;&drot;&inodot;</me:facs>
+ <me:dipl>v<ex>er</ex>di</me:dipl>
+ <me:norm>ver&eth;i</me:norm>
+ <note type="msLocation"> 1r2510 </note>
+</w>
+<w lemma="fyr &uacute;tan" me:msa="xAP yA">
+ <me:facs>fyr <lb ed="ms" n="26"/>v&trot;an</me:facs>
+ <me:dipl>fyr <lb ed="ms" n="26"/>vtan</me:dipl>
+ <me:norm>fyr <lb ed="ms" n="26"/>&uacute;tan</me:norm>
+ <note type="msLocation"> 1r2511 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cA sI">
+ <me:facs>c&inodotsup;&slong;&trot;</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;t</me:dipl>
+ <me:norm>Krist</me:norm>
+ <note type="msLocation"> 1r2602 </note>
+</w>
+<w lemma="nafn" me:msa="xNC gN nS cA sI">
+ <me:facs>nafn</me:facs>
+ <me:dipl>nafn</me:dipl>
+ <me:norm>nafn</me:norm>
+ <note type="msLocation"> 1r2603 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r2604 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2605 </note>
+</w>
+<w lemma="postuli" me:msa="xNC gM nP cD sI">
+ <me:facs>po&slong;&trot;ol&omacr;</me:facs>
+ <me:dipl>po&slong;tolo<ex>m</ex></me:dipl>
+ <me:norm>postulum</me:norm>
+ <note type="msLocation"> 1r2606 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r26072</note>
+</w>
+<w lemma="gefa" me:msa="xVB fP tPT vA gN nS cN sI">
+ <me:facs>gef&inodot;&trot;</me:facs>
+ <me:dipl>gefit</me:dipl>
+ <me:norm>gefit</me:norm>
+ <note type="msLocation"> 1r2608 </note>
+</w>
+<w lemma="leyfi" me:msa="xNC gN nS cN sI">
+ <me:facs>levf&inodot;</me:facs>
+ <me:dipl>levfi</me:dipl>
+ <me:norm>leyfi</me:norm>
+ <note type="msLocation"> 1r2609 </note>
+</w>
+<w lemma="at" me:msa="xIM">
+ <me:facs>a&trot;</me:facs>
+ <me:dipl>at</me:dipl>
+ <me:norm>at</me:norm>
+ <note type="msLocation"> 1r2610 </note>
+</w>
+<w lemma="kenna" me:msa="xVB fI tPS vA">
+ <me:facs>ke&nscap;a</me:facs>
+ <me:dipl>ke&nscap;a</me:dipl>
+ <me:norm>kenna</me:norm>
+ <note type="msLocation"> 1r2611 </note>
+</w>
+<lb ed="ms" n="27"/>
+<w lemma="allr" me:msa="xAJ rP gF nP cD sI">
+ <me:facs>oll&omacr;</me:facs>
+ <me:dipl>ollo<ex>m</ex></me:dipl>
+ <me:norm>&oogon;llum</me:norm>
+ <note type="msLocation"> 1r2701 </note>
+</w>
+<w lemma="hei&eth;inn" me:msa="xAJ rP gF nP cD sI">
+ <me:facs>he&inodot;&drot;n&omacr;</me:facs>
+ <me:dipl>heidno<ex>m</ex></me:dipl>
+ <me:norm>hei&eth;num</me:norm>
+ <note type="msLocation"> 1r2702 </note>
+</w>
+<w lemma="&thorn;j&oacute;&eth;" me:msa="xNC gF nP cD sI">
+ <me:facs>&thorn;&inodot;o&thorn;&omacr;</me:facs>
+ <me:dipl>&thorn;io&thorn;o<ex>m</ex></me:dipl>
+ <me:norm>&thorn;j&oacute;&eth;um</me:norm>
+ <note type="msLocation"> 1r2703 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&THORN;a</me:facs>
+ <me:dipl>&THORN;a</me:dipl>
+ <me:norm>&THORN;&aacute;</me:norm>
+ <note type="msLocation"> 1r2704 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2705 </note>
+</w>
+<w lemma="gu&eth;spjall" me:msa="xNC gN nS cG sI">
+ <me:facs>gv&drot;&luslst;&slong;&ruslst;p&inodot;allz</me:facs>
+ <me:dipl>gvd&luslst;&slong;&ruslst;piallz</me:dipl>
+ <me:norm>gu&eth;spjalls</me:norm>
+ <note type="msLocation"> 1r2706 </note>
+</w>
+<w lemma="r&oogon;dd" me:msa="xNC gF nS cN sI">
+ <me:facs>r&oogon;dd</me:facs>
+ <me:dipl>r&oogon;dd</me:dipl>
+ <me:norm>r&oogon;dd</me:norm>
+ <note type="msLocation"> 1r2707 </note>
+</w>
+<w lemma="reysta" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>rev&slong;&trot;&er;</me:facs>
+ <me:dipl>rev&slong;t<ex>ir</ex></me:dipl>
+ <me:norm>reystir</me:norm>
+ <note type="msLocation"> 1r2708 </note>
+</w>
+<w lemma="yfir" me:msa="xAP yA">
+ <me:facs>yf&er;</me:facs>
+ <me:dipl>yf<ex>ir</ex></me:dipl>
+ <me:norm>yfir</me:norm>
+ <note type="msLocation"> 1r2709 </note>
+</w>
+<w lemma="allr" me:msa="xAJ rP gF nP cA sI">
+ <me:facs>al<lb ed="ms" n="28"/>lar</me:facs>
+ <me:dipl>al<lb ed="ms" n="28"/>lar</me:dipl>
+ <me:norm>al<lb ed="ms" n="28"/>lar</me:norm>
+ <note type="msLocation"> 1r2710 </note>
+</w>
+<w lemma="&oogonacute;tt" me:msa="xNC gF nP cA sI">
+ <me:facs>a&trot;&trot;&er;</me:facs>
+ <me:dipl>att<ex>ir</ex></me:dipl>
+ <me:norm>&aacute;ttir</me:norm>
+ <note type="msLocation"> 1r2801 </note>
+</w>
+<w lemma="heimr" me:msa="xNC gM nS cG sI">
+ <me:facs>he&imacr;&slong;</me:facs>
+ <me:dipl>hei<ex>m</ex>&slong;</me:dipl>
+ <me:norm>heims</me:norm>
+ <note type="msLocation"> 1r2802 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r2803 </note>
+</w>
+<w lemma="hei&eth;inn" me:msa="xAJ rP gF nP cN sI">
+ <me:facs>he&inodot;&drot;nar</me:facs>
+ <me:dipl>heidnar</me:dipl>
+ <me:norm>hei&eth;nar</me:norm>
+ <note type="msLocation"> 1r2804 </note>
+</w>
+<w lemma="&thorn;j&oacute;&eth;" me:msa="xNC gF nP cN sI">
+ <me:facs>&thorn;&inodot;o&drot;&er;</me:facs>
+ <me:dipl>&thorn;iod<ex>ir</ex></me:dipl>
+ <me:norm>&thorn;j&oacute;&eth;ir</me:norm>
+ <note type="msLocation"> 1r2805 </note>
+</w>
+<w lemma="gr&iacute;pa" me:msa="xVB fF tPT mIN p3 nP vA">
+ <me:facs>gr&inodot;po</me:facs>
+ <me:dipl>gripo</me:dipl>
+ <me:norm>gripu</me:norm>
+ <note type="msLocation"> 1r2806 </note>
+</w>
+<w lemma="r&eacute;ttl&aeligacute;ti" me:msa="xNC gN nS cA sI">
+ <me:facs>re&trot;le&trot;&inodot;</me:facs>
+ <me:dipl>retleti</me:dipl>
+ <me:norm>r&eacute;ttl&aeligacute;ti</me:norm>
+ <note type="msLocation"> 1r2807 </note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gN nS cA">
+ <me:facs>&thornbar;</me:facs>
+ <me:dipl>&thorn;<ex>at</ex></me:dipl>
+ <me:norm>&thorn;at</me:norm>
+ <note type="msLocation"> 1r2808 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2809 </note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gM nP cN">
+ <me:facs>&thornbar;r</me:facs>
+ <me:dipl>&thorn;<ex>ei</ex>r</me:dipl>
+ <me:norm>&thorn;eir</me:norm>
+ <note type="msLocation"> 1r2810 </note>
+</w>
+<w lemma="vita" me:msa="xVB fF tPT mIN p3 nP vA">
+ <me:facs>v&inodot;&slong;<lb ed="ms" n="29"/>&slong;o</me:facs>
+ <me:dipl>vi&slong;<lb ed="ms" n="29"/>&slong;o</me:dipl>
+ <me:norm>vis<lb ed="ms" n="29"/>su</me:norm>
+ <note type="msLocation"> 1r2811 </note>
+</w>
+<w lemma="eigi" me:msa="xAV rP">
+ <me:facs>eg&bar;</me:facs>
+ <me:dipl>e<ex>i</ex>g<ex>i</ex></me:dipl>
+ <me:norm>eigi</me:norm>
+ <note type="msLocation"> 1r2901 </note>
+</w>
+<w lemma="fyrr" me:msa="xAV rC">
+ <me:facs>fy&rscap;</me:facs>
+ <me:dipl>fy&rscap;</me:dipl>
+ <me:norm>fyrr</me:norm>
+ <note type="msLocation"> 1r2902 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r2903 </note>
+</w>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r2904 </note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gM nP cN">
+ <me:facs>&thorn;&BAR;r</me:facs>
+ <me:dipl>&thorn;<ex>ei</ex>r</me:dipl>
+ <me:norm>&thorn;eir</me:norm>
+ <note type="msLocation"> 1r2905 </note>
+</w>
+<w lemma="n&oogonacute;lga" me:msa="xVB fF tPS mIN p3 nP vR">
+ <me:facs>nalga&slong;c</me:facs>
+ <me:dipl>nalga&slong;c</me:dipl>
+ <me:norm>n&oogonacute;lgask</me:norm>
+ <note type="msLocation"> 1r2906 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cA sI">
+ <me:facs>c&inodotsup;&slong;&trot;</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;t</me:dipl>
+ <me:norm>Krist</me:norm>
+ <note type="msLocation"> 1r2907 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r29082</note>
+</w>
+<w lemma="fjarri" me:msa="xAV rC">
+ <me:facs>f&inodot;a&rscap;&inodot;</me:facs>
+ <me:dipl>fia&rscap;i</me:dipl>
+ <me:norm>fjarri</me:norm>
+ <note type="msLocation"> 1r2909 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPT mIN p3 nP vA">
+ <me:facs>v&osup;</me:facs>
+ <me:dipl>v<ex>oro</ex></me:dipl>
+ <me:norm>v&oogonacute;ru</me:norm>
+ <note type="msLocation"> 1r2910 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r2911 </note>
+</w>
+<w lemma="s&aacute;" me:msa="xDD gM nP cN">
+ <me:facs>&thorn;&BAR;r</me:facs>
+ <me:dipl>&thorn;<ex>ei</ex>r</me:dipl>
+ <me:norm>&thorn;eir</me:norm>
+ <note type="msLocation"> 1r29122</note>
+</w>
+<w lemma="gera" me:msa="xVB fF tPS mIN p3 nP vR">
+ <me:facs>go&rrot;a&slong;c</me:facs>
+ <me:dipl>gora&slong;c</me:dipl>
+ <me:norm>g&oslash;rask</me:norm>
+ <note type="msLocation"> 1r2913 </note>
+</w>
+<lb ed="ms" n="30"/>
+<w lemma="n&uacute;" me:msa="xAV rP">
+ <me:facs>nv</me:facs>
+ <me:dipl>nv</me:dipl>
+ <me:norm>n&uacute;</me:norm>
+ <note type="msLocation"> 1r3001 </note>
+</w>
+<w lemma="heilagr" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>he&inodot;lagr</me:facs>
+ <me:dipl>heilagr</me:dipl>
+ <me:norm>heilagr</me:norm>
+ <note type="msLocation"> 1r3002 </note>
+</w>
+<w lemma="l&yacute;&eth;r" me:msa="xNC gM nS cN sI">
+ <me:facs>ly&drot;r</me:facs>
+ <me:dipl>lydr</me:dipl>
+ <me:norm>l&yacute;&eth;r</me:norm>
+ <note type="msLocation"> 1r3003 </note>
+</w>
+<seg type="nb">
+<w lemma="&iacute;" me:msa="xAP yD">
+ <me:facs>&inodot;</me:facs>
+ <me:dipl>i</me:dipl>
+ <me:norm>&iacute;</me:norm>
+ <note type="msLocation"> 1r3004 </note>
+</w>
+<w lemma="kristni" me:msa="xNC gF nS cD sI">
+ <me:facs>c&inodotsup;&slong;&trot;n&inodot;</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tni</me:dipl>
+ <me:norm>kristni</me:norm>
+ <note type="msLocation"> 1r3005 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+</seg>
+<w lemma="er" me:msa="xRP">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r3006 </note>
+</w>
+<w lemma="fyrr" me:msa="xAV rC">
+ <me:facs>fy&rscap;</me:facs>
+ <me:dipl>fy&rscap;</me:dipl>
+ <me:norm>fyrr</me:norm>
+ <note type="msLocation"> 1r3007 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPT mIN p3 nP vA">
+ <me:facs>v&osup;</me:facs>
+ <me:dipl>v<ex>oro</ex></me:dipl>
+ <me:norm>v&oogonacute;ru</me:norm>
+ <note type="msLocation"> 1r3008 </note>
+</w>
+<w lemma="eigi" me:msa="xAV rP">
+ <me:facs>e&inodot;g&bar;</me:facs>
+ <me:dipl>eig<ex>i</ex></me:dipl>
+ <me:norm>eigi</me:norm>
+ <note type="msLocation"> 1r3009 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cG sI">
+ <me:facs>c&inodotsup;&slong;&trot;z</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tz</me:dipl>
+ <me:norm>Krists</me:norm>
+ <note type="msLocation"> 1r3010 </note>
+</w>
+<w lemma="l&yacute;&eth;r" me:msa="xNC gM nS cN sI">
+ <me:facs>ly&drot;r</me:facs>
+ <me:dipl>lydr</me:dipl>
+ <me:norm>l&yacute;&eth;r</me:norm>
+ <note type="msLocation"> 1r30112</note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>Ok</me:norm>
+ <note type="msLocation"> 1r3012 </note>
+</w>
+<w lemma="n&uacute;" me:msa="xAV rP">
+ <me:facs>nv</me:facs>
+ <me:dipl>nv</me:dipl>
+ <me:norm>n&uacute;</me:norm>
+ <note type="msLocation"> 1r30132</note>
+</w>
+<lb ed="ms" n="31"/>
+<w lemma="vera" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>er</me:facs>
+ <me:dipl>er</me:dipl>
+ <me:norm>er</me:norm>
+ <note type="msLocation"> 1r3101 </note>
+</w>
+<w lemma="t&oslashacute;kiligr" me:msa="xAJ rP gF nS cN sI">
+ <me:facs>&trot;&oogon;k&inodot;l&inodot;g</me:facs>
+ <me:dipl>t&oogon;kilig</me:dipl>
+ <me:norm>t&oslashacute;kilig</me:norm>
+ <note type="msLocation"> 1r3102 </note>
+</w>
+<w lemma="t&iacute;&eth;" me:msa="xNC gF nS cN sI">
+ <me:facs>&trot;&inodot;&drot;</me:facs>
+ <me:dipl>tid</me:dipl>
+ <me:norm>t&iacute;&eth;</me:norm>
+ <note type="msLocation"> 1r3103 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r3104 </note>
+</w>
+<w lemma="dagr" me:msa="xNC gM nS cN sI">
+ <me:facs>dagr</me:facs>
+ <me:dipl>dagr</me:dipl>
+ <me:norm>dagr</me:norm>
+ <note type="msLocation"> 1r3105 </note>
+</w>
+<w lemma="heilsa" me:msa="xNC gF nS cG sI">
+ <me:facs>he&inodot;l&slong;o</me:facs>
+ <me:dipl>heil&slong;o</me:dipl>
+ <me:norm>heilsu</me:norm>
+ <note type="msLocation"> 1r3106 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r31072</note>
+</w>
+<w lemma="t&iacute;&eth;" me:msa="xNC gF nP cN sI">
+ <me:facs>&trot;&inodot;&thorn;&er;</me:facs>
+ <me:dipl>ti&thorn;<ex>ir</ex></me:dipl>
+ <me:norm>t&iacute;&eth;ir</me:norm>
+ <note type="msLocation"> 1r3108 </note>
+</w>
+<w lemma="hj&oogon;lp" me:msa="xNC gF nS cG sI">
+ <me:facs>h&inodot;alpar</me:facs>
+ <me:dipl>hialpar</me:dipl>
+ <me:norm>hj&aacute;lpar</me:norm>
+ <note type="msLocation"> 1r3109 </note>
+</w>
+<seg type="nb">
+<w lemma="&iacute;" me:msa="xAP yD">
+ <me:facs>&inodot;</me:facs>
+ <me:dipl>i</me:dipl>
+ <me:norm>&iacute;</me:norm>
+ <note type="msLocation"> 1r3110 </note>
+</w>
+<w lemma="auglit" me:msa="xNC gN nS cD sI">
+ <me:facs>augl&inodot;&trot;&inodot;</me:facs>
+ <me:dipl>augliti</me:dipl>
+ <me:norm>augliti</me:norm>
+ <note type="msLocation"> 1r3111 </note>
+</w>
+</seg>
+<lb ed="ms" n="32"/>
+<w lemma="enn" me:msa="xDD gM nS cG">
+ <me:facs>en&slong;</me:facs>
+ <me:dipl>en&slong;</me:dipl>
+ <me:norm>ens</me:norm>
+ <note type="msLocation"> 1r3201 </note>
+</w>
+<w lemma="h&oogonacute;r" me:msa="xAJ rS gM nS cG sD">
+ <me:facs>he&slong;&trot;a</me:facs>
+ <me:dipl>he&slong;ta</me:dipl>
+ <me:norm>h&aeligacute;sta</me:norm>
+ <note type="msLocation"> 1r3202 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r3203 </note>
+</w>
+<w lemma="hverr" me:msa="xPQ gF nS cN">
+ <me:facs>hv&er;</me:facs>
+ <me:dipl>hv<ex>er</ex></me:dipl>
+ <me:norm>hver</me:norm>
+ <note type="msLocation"> 1r3204 </note>
+</w>
+<w lemma="&thorn;j&oacute;&eth;" me:msa="xNC gF nS cN sI">
+ <me:facs>&thorn;&inodot;o&drot;</me:facs>
+ <me:dipl>&thorn;iod</me:dipl>
+ <me:norm>&thorn;j&oacute;&eth;</me:norm>
+ <note type="msLocation"> 1r3205 </note>
+</w>
+<w lemma="hafa" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>hev&er;</me:facs>
+ <me:dipl>hev<ex>ir</ex></me:dipl>
+ <me:norm>hefir</me:norm>
+ <note type="msLocation"> 1r3206 </note>
+</w>
+<w lemma="v&oogonacute;ttr" me:msa="xNC gM nS cA sI">
+ <me:facs>v&oogon;&trot;&trot;</me:facs>
+ <me:dipl>v&oogon;tt</me:dipl>
+ <me:norm>v&oogonacute;tt</me:norm>
+ <note type="msLocation"> 1r3207 </note>
+</w>
+<w lemma="upprisa" me:msa="xNC gF nS cG sI">
+ <me:facs>upr&inodot;&slong;v</me:facs>
+ <me:dipl>upri&slong;v</me:dipl>
+ <me:norm>upprisu</me:norm>
+ <note type="msLocation"> 1r3208 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="&thorn;&aacute; er" me:msa="xCS">
+ <me:facs>&thorn;a er</me:facs>
+ <me:dipl>&thorn;a er</me:dipl>
+ <me:norm>&thorn;&aacute; er</me:norm>
+ <note type="msLocation"> 1r3210 </note>
+</w>
+<w lemma="dr&oacute;ttinn" me:msa="xNC gM nS cN sI">
+ <me:facs>d&osup;&trot;&trot;&bar;</me:facs>
+ <me:dipl>d<ex>ro</ex>tt<ex>inn</ex></me:dipl>
+ <me:norm>Dr&oacute;ttinn</me:norm>
+ <note type="msLocation"> 1r3211 </note>
+</w>
+<w lemma="sjalfr" me:msa="xAJ rP gM nS cN sI">
+ <me:facs>&slong;&inodot;<lb ed="ms" n="33"/>alfr</me:facs>
+ <me:dipl>&slong;i<lb ed="ms" n="33"/>alfr</me:dipl>
+ <me:norm>sj<lb ed="ms" n="33"/>&aacute;lfr</me:norm>
+ <note type="msLocation"> 1r3212 </note>
+</w>
+<w lemma="v&aacute;tta" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>va&trot;&trot;ar</me:facs>
+ <me:dipl>vattar</me:dipl>
+ <me:norm>v&aacute;ttar</me:norm>
+ <note type="msLocation"> 1r3301 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r3302 </note>
+</w>
+<w lemma="sv&aacute;" me:msa="xAV rP">
+ <me:facs>&slong;va</me:facs>
+ <me:dipl>&slong;va</me:dipl>
+ <me:norm>sv&aacute;</me:norm>
+ <note type="msLocation"> 1r3303 </note>
+</w>
+<w lemma="m&aeligacute;la" me:msa="xVB fF tPS mIN p3 nS vA">
+ <me:facs>mel&er;</me:facs>
+ <me:dipl>mel<ex>ir</ex></me:dipl>
+ <me:norm>m&aeligacute;lir</me:norm>
+ <note type="msLocation"> 1r3304 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>:</me:norm>
+</pc>
+<w lemma="ek" me:msa="xPE p1 nS cN">
+ <me:facs>Ec</me:facs>
+ <me:dipl>Ec</me:dipl>
+ <me:norm>Ek</me:norm>
+ <note type="msLocation"> 1r3305 </note>
+</w>
+<w lemma="vera" me:msa="xVB fF tPS mIN p1 nS vA">
+ <me:facs>em</me:facs>
+ <me:dipl>em</me:dipl>
+ <me:norm>em</me:norm>
+ <note type="msLocation"> 1r3306 </note>
+</w>
+<w lemma="me&eth;" me:msa="xAP yD">
+ <me:facs>m&drotstrok;</me:facs>
+ <me:dipl>m<ex>e</ex>d</me:dipl>
+ <me:norm>me&eth;</me:norm>
+ <note type="msLocation"> 1r3307 </note>
+</w>
+<w lemma="&eacute;r" me:msa="xPE p2 nP cD">
+ <me:facs>y&drot;r</me:facs>
+ <me:dipl>ydr</me:dipl>
+ <me:norm>y&eth;r</me:norm>
+ <note type="msLocation"> 1r3308 </note>
+</w>
+<w lemma="&aacute;" me:msa="xAP yD">
+ <me:facs>a</me:facs>
+ <me:dipl>a</me:dipl>
+ <me:norm>&aacute;</me:norm>
+ <note type="msLocation"> 1r3309 </note>
+</w>
+<w lemma="allr" me:msa="xAJ rP gM nP cD sI">
+ <me:facs>oll&omacr;</me:facs>
+ <me:dipl>ollo<ex>m</ex></me:dipl>
+ <me:norm>&oogon;llum</me:norm>
+ <note type="msLocation"> 1r3310 </note>
+</w>
+<w lemma="dagr" me:msa="xNC gM nP cD sI">
+ <me:facs>dog&omacr;</me:facs>
+ <me:dipl>dogo<ex>m</ex></me:dipl>
+ <me:norm>d&oogon;gum</me:norm>
+ <note type="msLocation"> 1r3311 </note>
+</w>
+<lb ed="ms" n="34"/>
+<w lemma="til" me:msa="xAP yG">
+ <me:facs>&trot;&inodotsup;</me:facs>
+ <me:dipl>t<ex>il</ex></me:dipl>
+ <me:norm>til</me:norm>
+ <note type="msLocation"> 1r3401 </note>
+</w>
+<w lemma="endi" me:msa="xNC gM nS cG sI">
+ <me:facs>enda</me:facs>
+ <me:dipl>enda</me:dipl>
+ <me:norm>enda</me:norm>
+ <note type="msLocation"> 1r3402 </note>
+</w>
+<w lemma="heimr" me:msa="xNC gM nS cG sI">
+ <me:facs>he&imacr;&slong;</me:facs>
+ <me:dipl>hei<ex>m</ex>&slong;</me:dipl>
+ <me:norm>heims</me:norm>
+ <note type="msLocation"> 1r3403 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+<w lemma="gera" me:msa="xVB fF tPS mIP p1 nP vA">
+ <me:facs>Go&rum;</me:facs>
+ <me:dipl>Go<ex>rom</ex></me:dipl>
+ <me:norm>G&oslash;rum</me:norm>
+ <note type="msLocation"> 1r3404 </note>
+</w>
+<w lemma="v&eacute;r" me:msa="xPE p1 nP cN">
+ <me:facs>v&er;</me:facs>
+ <me:dipl>v<ex>er</ex></me:dipl>
+ <me:norm>v&eacute;r</me:norm>
+ <note type="msLocation"> 1r3405 </note>
+</w>
+<w lemma="ok" me:msa="xCC">
+ <me:facs>oc</me:facs>
+ <me:dipl>oc</me:dipl>
+ <me:norm>ok</me:norm>
+ <note type="msLocation"> 1r3406 </note>
+</w>
+<w lemma="&thorn;&aacute;" me:msa="xAV rP">
+ <me:facs>&thorn;a</me:facs>
+ <me:dipl>&thorn;a</me:dipl>
+ <me:norm>&thorn;&aacute;</me:norm>
+ <note type="msLocation"> 1r3407 </note>
+</w>
+<w lemma="engi" me:msa="xPI gN nS cA">
+ <me:facs>ek&inodot;</me:facs>
+ <me:dipl>eki</me:dipl>
+ <me:norm>ekki</me:norm>
+ <note type="msLocation"> 1r3408 </note>
+</w>
+<w lemma="&oogonacute;n" me:msa="xAP yD">
+ <me:facs>&oogon;n</me:facs>
+ <me:dipl>&oogon;n</me:dipl>
+ <me:norm>&oogonacute;n</me:norm>
+ <note type="msLocation"> 1r3409 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cD sI">
+ <me:facs>c&inodotsup;&slong;&trot;&inodot;</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;ti</me:dipl>
+ <me:norm>Kristi</me:norm>
+ <note type="msLocation"> 1r3410 </note>
+</w>
+<w lemma="&aacute;" me:msa="xAP yD">
+ <me:facs>a</me:facs>
+ <me:dipl>a</me:dipl>
+ <me:norm>&aacute;</me:norm>
+ <note type="msLocation"> 1r3411 </note>
+</w>
+<w lemma="sj&aacute;" me:msa="xDD gF nS cD">
+ <me:facs>&thorn;e&slong;&slong;&inodot;</me:facs>
+ <me:dipl>&thorn;e&slong;&slong;i</me:dipl>
+ <me:norm>&thorn;essi</me:norm>
+ <note type="msLocation"> 1r3412 </note>
+</w>
+<w lemma="stundligr" me:msa="xAJ rP gF nS cD sI">
+ <me:facs>&slong;&trot;&vmacr;dl&inodot;g&inodotsup;</me:facs>
+ <me:dipl>&slong;tv<ex>n</ex>dlig<ex>ri</ex></me:dipl>
+ <me:norm>stundligri</me:norm>
+ <note type="msLocation"> 1r3413 </note>
+</w>
+<lb ed="ms" n="35"/>
+<w lemma="t&iacute;&eth;" me:msa="xNC gF nS cD sI">
+ <me:facs>&trot;&inodot;&drot;</me:facs>
+ <me:dipl>tid</me:dipl>
+ <me:norm>t&iacute;&eth;</me:norm>
+ <note type="msLocation"> 1r3501 </note>
+</w>
+<pc>
+ <me:facs></me:facs>
+ <me:dipl></me:dipl>
+ <me:norm>,</me:norm>
+</pc>
+<w lemma="at" me:msa="xCS">
+ <me:facs>a&trot;</me:facs>
+ <me:dipl>at</me:dipl>
+ <me:norm>at</me:norm>
+ <note type="msLocation"> 1r3502 </note>
+</w>
+<w lemma="eigi" me:msa="xAV rP">
+ <me:facs>e&inodot;g&bar;</me:facs>
+ <me:dipl>eig<ex>i</ex></me:dipl>
+ <me:norm>eigi</me:norm>
+ <note type="msLocation"> 1r3503 </note>
+</w>
+<w lemma="ver&eth;a" me:msa="xVB fF tPS mSU p1 nP vA">
+ <me:facs>v&er;&drot;&inodot;</me:facs>
+ <me:dipl>v<ex>er</ex>di</me:dipl>
+ <me:norm>ver&eth;i</me:norm>
+ <note type="msLocation"> 1r3504 </note>
+</w>
+<w lemma="v&eacute;r" me:msa="xPE p1 nP cN">
+ <me:facs>v&er;</me:facs>
+ <me:dipl>v<ex>er</ex></me:dipl>
+ <me:norm>v&eacute;r</me:norm>
+ <note type="msLocation"> 1r3505 </note>
+</w>
+<w lemma="skilja" me:msa="xVB fP tPT vA gM nP cN sI">
+ <me:facs>&slong;c&inodot;l&thorn;&er;</me:facs>
+ <me:dipl>&slong;cil&thorn;<ex>ir</ex></me:dipl>
+ <me:norm>skil&eth;ir</me:norm>
+ <note type="msLocation"> 1r3506 </note>
+</w>
+<w lemma="fr&aacute;" me:msa="xAP yD">
+ <me:facs>fra</me:facs>
+ <me:dipl>fra</me:dipl>
+ <me:norm>fr&aacute;</me:norm>
+ <note type="msLocation"> 1r3507 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cD sI">
+ <me:facs>c&inodotsup;&slong;&trot;&inodot;</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;ti</me:dipl>
+ <me:norm>Kristi</me:norm>
+ <note type="msLocation"> 1r3508 </note>
+</w>
+<w lemma="e&eth;a" me:msa="xCC">
+ <me:facs>e&drotstrok;</me:facs>
+ <me:dipl>ed<ex>a</ex></me:dipl>
+ <me:norm>e&eth;a</me:norm>
+ <note type="msLocation"> 1r3509 </note>
+</w>
+<w lemma="kristr" me:msa="xNC gM nS cN sI">
+ <me:facs>c&inodotsup;&slong;&trot;r</me:facs>
+ <me:dipl>c<ex>ri</ex>&slong;tr</me:dipl>
+ <me:norm>Kristr</me:norm>
+ <note type="msLocation"> 1r3510 </note>
+</w>
+<w lemma="fr&aacute;" me:msa="xAP yD">
+ <me:facs>fra</me:facs>
+ <me:dipl>fra</me:dipl>
+ <me:norm>fr&aacute;</me:norm>
+ <note type="msLocation"> 1r35112</note>
+</w>
+<w lemma="v&eacute;r" me:msa="xPE p1 nP cD">
+ <me:facs>o&slong;&slong;</me:facs>
+ <me:dipl>o&slong;&slong;</me:dipl>
+ <me:norm>oss</me:norm>
+ <note type="msLocation"> 1r3512 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm></me:norm>
+</pc>
+<w lemma="&iacute;" me:msa="xAP yD">
+ <me:facs>&inodot;</me:facs>
+ <me:dipl>i</me:dipl>
+ <me:norm>&iacute;</me:norm>
+ <note type="msLocation"> 1r3513 </note>
+</w>
+<w lemma="&oacute;or&eth;inn" me:msa="xAJ rP gN nS cD sI">
+ <me:facs>o o&rrot;&drot;no</me:facs>
+ <me:dipl>o ordno</me:dipl>
+ <me:norm>&oacute;or&eth;nu</me:norm>
+ <note type="msLocation"> 1r3514 </note>
+</w>
+<lb ed="ms" n="36"/>
+<w lemma="l&iacute;f" me:msa="xNC gN nS cD sI">
+ <me:facs>l&inodot;fe</me:facs>
+ <me:dipl>life</me:dipl>
+ <me:norm>l&iacute;fi</me:norm>
+ <note type="msLocation"> 1r3601 </note>
+</w>
+<pc>
+ <me:facs>.</me:facs>
+ <me:dipl>.</me:dipl>
+ <me:norm>.</me:norm>
+</pc>
+</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

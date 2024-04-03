@@ -154,45 +154,45 @@ def read_tei(tei_file: str, entity_mappings: dict[str, str]) -> BeautifulSoup:
     return soup
 
 
-def get_menota_info (soup: BeautifulSoup, get_all: bool = False) -> NorseDoc:
+def get_menota_info (soup: BeautifulSoup, get_all: bool = False) -> list[NorseDoc]:
     if get_all:
         try:
-            msInfo = soup.find("sourcedesc")
+            ms_info_ = soup.find("sourcedesc")
         except:
             print("Something is up!")
-        if not msInfo:
+        if not ms_info_:
             try:
-                msInfo = soup.find("sourceDesc")
+                ms_info_ = soup.find("sourceDesc")
             except Exception as e:
                 raise Exception("No Manuscript Info found!") from e
-        shelfmark_ = msInfo.find('idno')
-        txtName_ = msInfo.find("msName")
-        origPlace_ = msInfo.find('origPlace')
+        shelfmark_ = ms_info_.find('idno')
+        text_name_ = ms_info_.find("msName")
+        place_of_origin_ = ms_info_.find('origPlace')
         if shelfmark_:
             shelfmark = shelfmark_.get_text()
         else:
             shelfmark = "N/A"
-        if txtName_:
-            txtName = txtName_.get_text()
+        if text_name_:
+            txtName = text_name_.get_text()
         else:
             txtName = "N/A"
-        if origPlace_:
-            origPlace = origPlace_.get_text()
+        if place_of_origin_:
+            origPlace = place_of_origin_.get_text()
         else:
             origPlace = "N/A"   
         return shelfmark, txtName, origPlace
     try:
-        msInfo = soup.find("sourcedesc")
-        shelfmark_ = msInfo.find('idno')
+        ms_info_ = soup.find("sourcedesc")
+        shelfmark_ = ms_info_.find('idno')
         shelfmark = shelfmark_.get_text()
-        txtName_ = msInfo.find("msname")
-        txtName = txtName_.get_text()
+        text_name_ = ms_info_.find("msname")
+        txtName = text_name_.get_text()
     except:
-        msInfo = soup.find("sourceDesc")
-        shelfmark_ = msInfo.find('idno')
+        ms_info_ = soup.find("sourceDesc")
+        shelfmark_ = ms_info_.find('idno')
         shelfmark = shelfmark_.get_text()
-        txtName_ = msInfo.find("msName")
-        txtName = txtName_.get_text()
+        text_name_ = ms_info_.find("msName")
+        txtName = text_name_.get_text()
     try:
         levels = soup.find("normalization")
         levels = levels["me:level"]
@@ -232,13 +232,64 @@ def get_menota_info (soup: BeautifulSoup, get_all: bool = False) -> NorseDoc:
         else:
             msa = False
             lemmatized = False
-    
-    current_manuscript = NorseDoc(name=txtName, manuscript=shelfmark, lemmatized=lemmatized, diplomatic=diplomatic, normalized=normalized, facsimile=facsimile, msa=msa)
+
+    parts = _determine_parts(soup)
+    current_manuscript = []
+    if parts:
+        for part in parts:
+            current_manuscript.append(NorseDoc(name=part[1], 
+                                               manuscript=shelfmark, 
+                                               lemmatized=lemmatized, 
+                                               diplomatic=diplomatic, 
+                                               normalized=normalized, 
+                                               facsimile=facsimile, 
+                                               msa=msa))
+    else:
+        current_manuscript.append(NorseDoc(name=txtName, 
+                                           manuscript=shelfmark, 
+                                           lemmatized=lemmatized, 
+                                           diplomatic=diplomatic, 
+                                           normalized=normalized, 
+                                           facsimile=facsimile, 
+                                           msa=msa))
 
     return current_manuscript
 
 
-def reg_menota_parse(current_manuscript: NorseDoc, soup: bs4.BeautifulSoup, for_nlp: bool = True) -> NorseDoc:
+def _determine_parts(soup: bs4.BeautifulSoup) -> list[tuple[str, str]]:
+    parts = soup.find("msContents")
+    res: list[tuple[str, str]] = []
+    if parts is not None:
+        parts = parts.find_all("msItem")
+        for part in parts:
+            part_number = part["n"]
+            part_title = part.find("title").get_text()
+            res.append((part_number, part_title))
+    return res
+
+
+def reg_menota_parse(current_manuscript: list[NorseDoc], soup: bs4.BeautifulSoup, for_nlp: bool = True) -> list[NorseDoc]:
+    res: list[NorseDoc] = []
+    if len(current_manuscript) > 1:
+        text_body = soup.body.div
+        text_body_parts = text_body.find_all("div")
+        if len(text_body_parts) == len(current_manuscript):
+            for i, part in enumerate(text_body_parts):
+                res.append(_token_extraction(part, current_manuscript[i], for_nlp))
+                print(f"Finished parsing {res[i].name} from {res[i].ms} with {len(res[i].tokens)} tokens.")
+        else:
+            for i, ms in enumerate(current_manuscript):
+                part = text_body.div
+                res.append(_token_extraction(part, ms, for_nlp))
+                print(f"Finished parsing {res[i].name} from {res[i].ms} with {len(res[i].tokens)} tokens.")
+                part.decompose()
+    else:
+        res.append(_token_extraction(soup, current_manuscript[0], for_nlp))
+        print(f"Finished parsing {res[0].name} from {res[0].ms} with {len(res[0].tokens)} tokens.")
+    return res
+
+
+def _token_extraction(soup: bs4.BeautifulSoup, current_doc: NorseDoc, for_nlp: bool = True) -> NorseDoc:
     text_proper = soup.find_all('w')
     for word in text_proper:
         lemming = word.get('lemma')
@@ -289,8 +340,8 @@ def reg_menota_parse(current_manuscript: NorseDoc, soup: bs4.BeautifulSoup, for_
                 i = i.lower()
             token_parts_list_final.append(i.replace(" ", "").replace("-", ""))
         currword = token(normalized=token_parts_list_final[0], diplomatic=token_parts_list_final[1], facsimile=token_parts_list_final[2], lemma=token_parts_list_final[3], msa=msa_clean)
-        current_manuscript.add_token(currword)
-    return current_manuscript
+        current_doc.add_token(currword)
+    return current_doc
 
 
 def para_parse(soup, current_manuscript: ParallelizedNorseDoc) -> ParallelizedNorseDoc:
@@ -347,12 +398,12 @@ def get_parallelized_text(input_file: str) -> ParallelizedNorseDoc:
     return current_manuscript
 
 
-def get_regular_text(input_file: str, entity_dict: dict[str, str]) -> NorseDoc:
+def get_regular_text(input_file: str, entity_dict: dict[str, str]) -> list[NorseDoc]:
     print("Parsing regular text...")
     soup = read_tei(input_file, entity_dict)
     current_manuscript = get_menota_info(soup)
     current_manuscript = reg_menota_parse(soup=soup, current_manuscript=current_manuscript)
-    print(f"Finished parsing {current_manuscript.name} from {current_manuscript.ms} with {len(current_manuscript.tokens)} tokens.")
+    print(f"Finished parsing {current_manuscript[0].ms} with {len(current_manuscript)} parts and {sum([len(x.tokens) for x in current_manuscript])} tokens.")
     return current_manuscript
 
 
@@ -494,11 +545,11 @@ def regmenotaParse(input_file) -> pd.DataFrame:
         
 
 def menota_meta_extractor(inSoup):
-    msInfo = inSoup.find("sourceDesc")
-    shelfmark = msInfo.msDesc.idno.get_text()
-    famName = msInfo.msDesc.msName.get_text()
+    ms_info_ = inSoup.find("sourceDesc")
+    shelfmark = ms_info_.msDesc.idno.get_text()
+    famName = ms_info_.msDesc.msName.get_text()
     witID = f"{famName}-{shelfmark}".replace(" ", "")
-    MSpyID = id(msInfo)
+    MSpyID = id(ms_info_)
     return shelfmark, famName, witID
 
 
