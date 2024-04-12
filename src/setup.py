@@ -2,12 +2,13 @@ from utils import dbBuilder
 import requests
 import os
 from utils.constants import *
-from utils import stylo
-from utils import onpnode2vec
-from utils import msclustering
+import utils.stylo as stylo
+import utils.onpnode2vec as onpnode2vec
+import utils.msclustering as msclustering
 from tqdm import tqdm
-from utils import on_verse_begin
-from utils import culler
+import utils.on_verse_begin as on_verse_begin
+import utils.culler as culler
+
 
 def download_onp_data():
     print("Downloading ONP data...")
@@ -88,7 +89,6 @@ if __name__ == "__main__":
     #     stylalyzer.main()
     # if input("Run verse begin analysis? (y/n): ") == "y":
     #     on_verse_begin.main()
-    # if input("Analyse Pamphilus internally? (y/n): ") == "y":
     # culler.culler()
     # stylo.norse_stylo_revised()
     # stylo.levenshtein_norse()
