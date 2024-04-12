@@ -281,7 +281,6 @@ def latin_stylo():
     analysis_cycle(corpus, "latin_lemmatized", latin=True)
     
 
-
 def versified_lat_leven():
     corpus = corpus_collector_latin(versify=True)
     leven_cit_verse(corpus)
