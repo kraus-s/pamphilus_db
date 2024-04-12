@@ -8,6 +8,7 @@ ON_CULLS_LEMMA = "data/cache/on_culls_lemma.p"
 ON_CULLS_NORMALIZED = "data/cache/on_culls_normalized.p"
 EXCELS = "data/ingest/"
 LEVEN_DB = "data/similarities/levenshtein/lev-mem.db"
+LEVEN_DB_ON = "data/similarities/levenshtein/lev-on.db"
 LEVEN_FOLDER = "data/similarities/levenshtein/"
 STYLO_FOLDER = "data/similarities/stylo/"
 
