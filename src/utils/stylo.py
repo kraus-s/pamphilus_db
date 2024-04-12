@@ -61,16 +61,24 @@ def corpus_collector_latin(lemmatize: bool = False, versify: bool = False) -> di
     return res
 
 
-def corpus_cleaner(corps: dict, lemmatize: bool = False) -> dict:
+def corpus_cleaner(corps: dict, lemmatize: bool = False, filter_stops: bool = False) -> dict:
     res = {}
     nlp = spacy.load('la_core_web_lg')
     nlp.max_length = 10000000
     text_tuples = [(corps[x], {"text_id": x}) for x in corps.keys()]
     for doc, context in nlp.pipe(text_tuples, as_tuples=True, batch_size=5):
         if lemmatize:
-            res[context["text_id"]] = ' '.join(tok.lemma_ for tok in doc if not tok.is_punct)
+            if filter_stops:
+                stop_words = get_latin_stopwords()
+                res[context["text_id"]] = ' '.join(tok.lemma_ for tok in doc if not tok.is_punct and tok.lemma_ not in stop_words)
+            else:
+                res[context["text_id"]] = ' '.join(tok.lemma_ for tok in doc if not tok.is_punct)
         else:
-            res[context["text_id"]] = ' '.join(tok.norm_ for tok in doc if not tok.is_punct)
+            if filter_stops:
+                stop_words = get_latin_stopwords()
+                res[context["text_id"]] = ' '.join(tok.norm_ for tok in doc if not tok.is_punct and tok.norm_ not in stop_words)
+            else:
+                res[context["text_id"]] = ' '.join(tok.norm_ for tok in doc if not tok.is_punct)
     return res
 
 
@@ -140,8 +148,8 @@ def get_vector(corpus: dict):
     # return w2varr, corpus.keys()
 
 
-def get_tfidfed_vector(corpus: dict):
-    vectorizer = TfidfVectorizer(ngram_range=(1,3), max_df=0.95, min_df=0.1)
+def get_tfidfed_vector(corpus: dict, max_doc_freq: float = 0.95, min_doc_freq: float = 0.1, num_features: int | None = None):
+    vectorizer = TfidfVectorizer(ngram_range=(1,3), max_df=max_doc_freq, min_df=min_doc_freq, max_features = num_features)
     w2varr = vectorizer.fit_transform(corpus.values()).toarray()
     return w2varr, corpus.keys()
 
@@ -196,26 +204,45 @@ def leven_worker(combinations, corpus: dict):
 # ------------------
 
 
-def analysis_cycle(corpus: dict, file_name: str, stopped_or_mfwed: bool = False):
+def analysis_cycle(corpus: dict, file_name: str, stopped_or_mfwed: bool = False, latin: bool = False):
     print(f"Now processing {file_name}")
-    vectorized_corpus, corpus_keys = get_vector(corpus)
-    cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
-    print("Cosine")
-    print(cosine_distance)    
-    cosine_distance.to_csv(f"{STYLO_FOLDER}{file_name}-cosine.csv")
-    if not stopped_or_mfwed:
-        vectorized_corpus, corpus_keys = get_tfidfed_vector(corpus)
+    if latin:
+        _revised_latin_analysis(corpus, file_name)
+    else:
+        vectorized_corpus, corpus_keys = get_vector(corpus)
         cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
         print("Cosine")
-        print(cosine_distance)
-        cosine_distance.to_csv(f"{STYLO_FOLDER}{file_name}-tfidf-cosine.csv")
+        print(cosine_distance)    
+        cosine_distance.to_csv(f"{STYLO_FOLDER}{file_name}-cosine.csv")
+        if not stopped_or_mfwed:
+            _basic_tfidf_analysis(corpus, file_name)
+
+
+def _revised_latin_analysis(corpus: dict, file_name: str):
+    mfws_list = [100, 200, 300, 400, 600, 800]
+    _basic_tfidf_analysis(corpus, file_name)
+    for i in mfws_list:
+        vectorized_corpus, corpus_keys = get_tfidfed_vector(corpus, max_doc_freq=0.99, min_doc_freq=1, num_features=i)
+        _cosine_dist_analysis(vectorized_corpus, corpus_keys, file_name, file_suffix=f"mfwed-{i}")
+
+
+def _basic_tfidf_analysis(corpus: dict, file_name: str):
+    vectorized_corpus, corpus_keys = get_tfidfed_vector(corpus)
+    _cosine_dist_analysis(vectorized_corpus, corpus_keys, file_name, file_suffix="tfidf")
+
+
+def _cosine_dist_analysis(vectorized_corpus, corpus_keys, file_name: str, file_suffix: str):
+    print("Cosine")
+    cosine_distance = cos_dist(vectorized_corpus, corpus_keys)
+    print(cosine_distance)
+    cosine_distance.to_csv(f"{STYLO_FOLDER}{file_name}-{file_suffix}.csv")
 
 
 def latin_stylo():
     corpus = corpus_collector_latin()
     analysis_cycle(corpus, "latin-basic")
     corpus = corpus_collector_latin(lemmatize=True)
-    analysis_cycle(corpus, "latinLemmatized")
+    analysis_cycle(corpus, "latin_lemmatized")
     
 
 
