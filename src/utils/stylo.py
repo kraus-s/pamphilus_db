@@ -1,6 +1,5 @@
 import itertools
-from utils import latin_parser
-from utils import menota_parser
+import utils.latin_parser as latin_parser
 from utils.constants import *
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import pairwise_distances
@@ -40,25 +39,25 @@ def get_pamph(file, versify: bool = False) -> dict:
     else:
         for i in pamph:
             doc = []
-            for ii in pamph[i].verses:
+            for k, ii in pamph[i].verses_order_on_page.items():
                 for iii in ii.tokens:
-                    doc.append(iii)
+                    doc.append(iii.word)
             doc2 = " ".join([x for x in doc])
             res[i] = doc2
     return res
 
 
 def corpus_collector_latin(lemmatize: bool = False, versify: bool = False) -> dict:
-    fList = glob.glob(f"{LATIN_CORPUS_FILES}**/*.xml", recursive=True)
-    corpusDIct = {}
-    for f in fList:
+    file_list = glob.glob(f"{LATIN_CORPUS_FILES}**/*.xml", recursive=True)
+    corpus_dict = {}
+    for f in file_list:
         print(f"Now opening {f}")
         if 'pamph' in f:
             i = get_pamph(f, versify)
         else:
             i = latin_parser.parse_perseus(f, versify)
-        corpusDIct.update(i)
-    res = corpus_cleaner(corpusDIct, lemmatize)
+        corpus_dict.update(i)
+    res = corpus_cleaner(corpus_dict, lemmatize)
     return res
 
 
@@ -248,17 +247,12 @@ def analysis_cycle(corpus: dict, file_name: str, stopped_or_mfwed: bool = False)
         cosine_distance.to_csv(f"{STYLO_FOLDER}{file_name}-tfidf-cosine.csv")
 
 
-def stylo_coordiinator():
+def latin_stylo():
     corpus = corpus_collector_latin()
     analysis_cycle(corpus, "latin-basic")
     corpus = corpus_collector_latin(lemmatize=True)
     analysis_cycle(corpus, "latinLemmatized")
-    corpus = corpus_collector_norse('normalized')
-    analysis_cycle(corpus, "norse-basic")
-    corpus = corpus_collector_norse('lemma')
-    analysis_cycle(corpus, "norse-lemmatized")
-    corpus = corpus_collector_norse('facs')
-    analysis_cycle(corpus=corpus, file_name='norse-facs')
+    
 
 
 def versified_lat_leven():
@@ -267,7 +261,7 @@ def versified_lat_leven():
 
 
 def run():
-    stylo_coordiinator()
+    latin_stylo()
     versified_lat_leven()    
 
 

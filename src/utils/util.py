@@ -5,7 +5,7 @@ import pickle
 from utils.menota_parser import NorseDoc
 from utils.constants import *
 import glob
-from utils import menota_parser
+import utils.menota_parser as menota_parser
 
 
 def onp_dataset() -> pd.DataFrame:

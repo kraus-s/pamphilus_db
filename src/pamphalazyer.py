@@ -41,6 +41,7 @@ class myData:
 
 
 def data_loader():
+    # TODO: Unify with data loaders in util.py
     if Path(OLD_NORSE_PICKLE).is_file():
         with open(OLD_NORSE_PICKLE, "rb") as f:
             old_norse_pamph = pickle.load(f)
