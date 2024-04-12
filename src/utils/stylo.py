@@ -159,11 +159,15 @@ def cos_dist(w2varr, labels: list) -> pd.DataFrame:
     return cosine_distances
 
 
-def combinator(corpus: dict[str, str], pamph_only: bool = False) -> list[str]:
-    if pamph_only:
+def combinator(corpus: dict[str, str], pamph_only: bool = False, old_norse: bool = False) -> list[str]:
+    if pamph_only and not old_norse:
         all_keys = corpus.keys()
         pamph_mss = ["B1", "P3", "P5", "W1", "To"]
         pamph_keys = [x for x in all_keys if any(ms in x for ms in pamph_mss)]
+        res = list(itertools.product(pamph_keys, all_keys))
+    elif pamph_only and old_norse:
+        all_keys = corpus.keys()
+        pamph_keys = [x for x in all_keys if "Pamph" in x]
         res = list(itertools.product(pamph_keys, all_keys))
     else:
         res = itertools.combinations(corpus.keys(), 2)
@@ -193,11 +197,43 @@ def leven_cit_verse(corpus: dict):
             itcnt += 1        
 
 
+def leven_cit_window_norse(corpus: dict[str, str]):
+    slices_dict = {}
+    for i in corpus:
+        toks = corpus[i].split()
+        for j in range(0, len(toks), 10):
+            slices_dict[f"{i}-{j}"] = " ".join(toks[j:j+30])
+    slice_combinations = combinator(slices_dict, pamph_only=True, old_norse=True)
+    res0 = []
+    itcnt = 0
+    svcnt = 0
+
+    for i in leven_worker(slice_combinations, slices_dict):
+        x, y, lev = i
+        res0.append((x, y, lev, slices_dict[x], slices_dict[y]))
+        if lev > 80:
+            print(f"{x} and {y} have a leven of {lev}")
+        if itcnt == 500:
+            db = sqlite3.connect(LEVEN_DB_ON)
+            curse = db.cursor()
+            curse.execute("CREATE TABLE IF NOT EXISTS rat_scores (locID integer PRIMARY KEY DEFAULT 0 NOT NULL, sent1, sent2, score, s1_text, s2_text)")
+            curse.executemany("INSERT OR IGNORE INTO rat_scores(sent1, sent2, score, s1_text, s2_text) VALUES (?, ?, ?, ?, ?)", res0)
+            db.commit()
+            db.close()
+            res0 = []
+            itcnt = 0
+            svcnt += 1
+            print(f"Done a total of {500*svcnt} pairings.")
+        else:
+            itcnt += 1 
+        
+
 def leven_worker(combinations, corpus: dict):
-    for x,y in combinations:
-        leven = fuzz.ratio(corpus[x], corpus[y])
-        if leven > 50:
-            yield x, y, leven
+    for x, y in combinations:
+        if x != y:
+            leven = fuzz.ratio(corpus[x], corpus[y])
+            if leven > 50:
+                yield x, y, leven
 
     
 # Analysis functions
@@ -272,6 +308,10 @@ def norse_stylo_revised():
     corpus = corpus_collector_norse(doc_level="lemma", use_stops=True)
     analysis_cycle(corpus, "on-lemma-stopped", True)
 
+
+def levenshtein_norse():
+    corpus = corpus_collector_norse('normalized')
+    leven_cit_window_norse(corpus)
 
 if __name__ == '__main__':
     run()

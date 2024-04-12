@@ -414,33 +414,40 @@ def splitsies(combined_name: str) -> str:
     return combined_name.split("-")[1]
 
 
-def get_leven_dfs_ready(df: pd.DataFrame, leven_similarity: int, leven_similarity_upper: int, simplify: bool = False):
-    strings_to_check = ["B1", "P3", "W1", "To", "P5"]
-    filtered_df = df[df['v1'].str.contains('|'.join(strings_to_check))]
-    filtered_df["v_number_v1"] = filtered_df["v1"].apply(splitsies)
-    filtered_df["v_number_v2"] = filtered_df["v2"].apply(splitsies)
-    filtered_df = filtered_df[filtered_df["v_number_v1"] != filtered_df["v_number_v2"]]
-    filtered_df = filtered_df[filtered_df["v1"] != ""]
-    filtered_df.drop(columns=["v_number_v1", "v_number_v2", "locID"], inplace=True)
-    filtered_df = filtered_df.loc[(filtered_df["score"] >= leven_similarity) & (filtered_df["score"] <= leven_similarity_upper)]
-    if simplify:
-        filtered_df = filtered_df[~filtered_df['v2'].str.contains('|'.join(strings_to_check))]
-        return filtered_df
-    else:
-        return filtered_df
+def get_leven_dfs_ready(df: pd.DataFrame, leven_similarity: int, leven_similarity_upper: int, lang: str, simplify: bool = False):
+    if lang == "Latin":
+        strings_to_check = ["B1", "P3", "W1", "To", "P5"]
+        filtered_df = df[df['v1'].str.contains('|'.join(strings_to_check))]
+        filtered_df["v_number_v1"] = filtered_df["v1"].apply(splitsies)
+        filtered_df["v_number_v2"] = filtered_df["v2"].apply(splitsies)
+        filtered_df = filtered_df[filtered_df["v_number_v1"] != filtered_df["v_number_v2"]]
+        filtered_df = filtered_df[filtered_df["v1"] != ""]
+        filtered_df.drop(columns=["v_number_v1", "v_number_v2", "locID"], inplace=True)
+        filtered_df = filtered_df.loc[(filtered_df["score"] >= leven_similarity) & (filtered_df["score"] <= leven_similarity_upper)]
+        if simplify:
+            filtered_df = filtered_df[~filtered_df['v2'].str.contains('|'.join(strings_to_check))]
+            return filtered_df
+        else:
+            return filtered_df
+    elif lang == "Old Norse":
+        if simplify:
+            filtered_df = df.loc[(df["score"] >= leven_similarity) & (df["score"] <= leven_similarity_upper)]
+            filtered_df = filtered_df[~filtered_df['sent1'].str.contains("Pamph")]
+            return filtered_df
+        else:
+            return df.loc[(df["score"] >= leven_similarity) & (df["score"] <= leven_similarity_upper)]
 
-
-def get_leven_df() -> pd.DataFrame:
-    db = sqlite3.connect(LEVEN_DB)
+def get_leven_df(leven_path:str) -> pd.DataFrame:
+    db = sqlite3.connect(leven_path)
     df = pd.read_sql("SELECT * FROM rat_scores", db)
     return df
 
 
 def display_leven():
-    df = get_leven_df()
+    which_leven = st.selectbox("Load Old Norse or Latin Levenshtein data", options=["Old Norse", "Latin"])
+    option_dict = {"Old Norse": LEVEN_DB_ON, "Latin": LEVEN_DB}
+    df = get_leven_df(option_dict[which_leven])
     simplify = st.checkbox("Simplify output by removing all entries, that show Levenshtein Scores between Verses of Pamphilus; group results by verses and sort.")
-    st.write("Model subset selection: Select all models, models including all ONP data, or only models excluding diplomas and legal sources")
-    display_stop_docs = st.radio("Selection:", ["All models", "Models with all data", "Models exluding diplomas/legal sources"])
     leven_similarity = st.slider("Levenshtein lower threshold", min_value=50, max_value=100, value=60)
     leven_similarity_upper = st.slider("Levenshtein upper threshold", min_value=50, max_value=100, value=99)
     filtered_df = get_leven_dfs_ready(df, leven_similarity, leven_similarity_upper, simplify)

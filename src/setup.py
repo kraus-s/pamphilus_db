@@ -91,5 +91,6 @@ if __name__ == "__main__":
     # if input("Analyse Pamphilus internally? (y/n): ") == "y":
     # culler.culler()
     # stylo.norse_stylo_revised()
+    # stylo.levenshtein_norse()
     stylo.latin_stylo()
     print("All done. Bye!")
