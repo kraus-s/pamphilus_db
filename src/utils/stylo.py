@@ -276,9 +276,9 @@ def _cosine_dist_analysis(vectorized_corpus, corpus_keys, file_name: str, file_s
 
 def latin_stylo():
     corpus = corpus_collector_latin()
-    analysis_cycle(corpus, "latin-basic")
+    analysis_cycle(corpus, "latin-basic", latin=True)
     corpus = corpus_collector_latin(lemmatize=True)
-    analysis_cycle(corpus, "latin_lemmatized")
+    analysis_cycle(corpus, "latin_lemmatized", latin=True)
     
 
 

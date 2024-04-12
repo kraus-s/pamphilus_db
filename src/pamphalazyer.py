@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-from utils import menota_parser
-from utils import latin_parser
-from utils import util as ut
+import utils.menota_parser as menota_parser
+import utils.latin_parser as latin_parser
+import utils.util as ut
 from utils import neo2st
 from utils.constants import *
 import pickle
@@ -19,7 +19,7 @@ import streamlit.components.v1 as components
 import random
 import string
 from utils import n2vmhandler as n2v
-from utils import similarities as sims
+import utils.similarities as sims
 import sqlite3
 from streamlit_image_select import image_select
 from collections import Counter
@@ -391,7 +391,12 @@ def get_all_stylo():
     selected_table = st.selectbox(label="Select a similarity type", options=all_metrics)
     df = sims.get_similarity(f"{STYLO_FOLDER}{selected_table}")
     if filter_pamph:
-        df = df["Pamphilus saga-DG 4-7"]
+        if "latin" in selected_table:
+            strings_to_check = ["B1", "P3", "W1", "To", "P5"]
+            filtered_columns = [col for col in strings_to_check if col in df.columns]
+            df = df[filtered_columns]
+        else:
+            df = df["Pamphilus saga-DG 4-7"]
     if not melt_down:
         st.dataframe(df)
     elif melt_down:

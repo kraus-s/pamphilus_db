@@ -74,7 +74,7 @@ if __name__ == "__main__":
     # if run_stylometry == "y":
     #     stylo.run()
     # elif run_stylometry == "n":
-    #     download_levenshtein_data()
+    download_levenshtein_data()
     # run_node2vec = input("Run node2vec? (y/n): ")
     # if run_node2vec == "y":
     #     onpnode2vec.run()
@@ -92,5 +92,5 @@ if __name__ == "__main__":
     # culler.culler()
     # stylo.norse_stylo_revised()
     # stylo.levenshtein_norse()
-    stylo.latin_stylo()
+    # stylo.latin_stylo()
     print("All done. Bye!")
