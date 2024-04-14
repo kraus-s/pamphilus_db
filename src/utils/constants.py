@@ -1,6 +1,7 @@
 # File paths
 PAMPHILUS_LATINUS = "data/latin/texts/pamphilus/pamphLat.xml"
 LATIN_STOP_WORDS = "data/latin/latinStops.txt"
+LATIN_CULL_WORDS = "data/latin/latin_culls.txt"
 LATIN_CORPUS_FILES = "data/latin/texts/"
 OLD_NORSE_CORPUS_FILES = "data/norseMat/texts/"
 ON_STOPS = "data/norseMat/stopwords.txt"

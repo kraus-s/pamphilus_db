@@ -19,15 +19,15 @@ from sklearn.feature_extraction.text import CountVectorizer
 # ----------------------
 
 
-def get_latin_stopwords():
-    with open(LATIN_STOP_WORDS, 'r') as f:
+def get_latin_stopwords(file_path: str = LATIN_STOP_WORDS) -> list[str]:
+    with open(file_path, 'r') as f:
         stops = f.read()
     stops = stops.split(',')
     stops = [x.strip() for x in stops]
     return stops
 
 
-def get_pamph(file, versify: bool = False) -> dict:
+def get_pamph(file, versify: bool = False) -> dict[str, str]:
     pamph = latin_parser.parse_pamphilus(file)
     res = {}
     if versify:
@@ -61,24 +61,24 @@ def corpus_collector_latin(lemmatize: bool = False, versify: bool = False) -> di
     return res
 
 
-def corpus_cleaner(corps: dict, lemmatize: bool = False, filter_stops: bool = False) -> dict:
+def corpus_cleaner(corps: dict[str, str], lemmatize: bool = False) -> dict[str, str]:
     res = {}
     nlp = spacy.load('la_core_web_lg')
     nlp.max_length = 10000000
     text_tuples = [(corps[x], {"text_id": x}) for x in corps.keys()]
     for doc, context in nlp.pipe(text_tuples, as_tuples=True, batch_size=5):
         if lemmatize:
-            if filter_stops:
-                stop_words = get_latin_stopwords()
-                res[context["text_id"]] = ' '.join(tok.lemma_ for tok in doc if not tok.is_punct and tok.lemma_ not in stop_words)
-            else:
-                res[context["text_id"]] = ' '.join(tok.lemma_ for tok in doc if not tok.is_punct)
+            res[context["text_id"]] = ' '.join(tok.lemma_ for tok in doc if not tok.is_punct)
         else:
-            if filter_stops:
-                stop_words = get_latin_stopwords()
-                res[context["text_id"]] = ' '.join(tok.norm_ for tok in doc if not tok.is_punct and tok.norm_ not in stop_words)
-            else:
-                res[context["text_id"]] = ' '.join(tok.norm_ for tok in doc if not tok.is_punct)
+            res[context["text_id"]] = ' '.join(tok.norm_ for tok in doc if not tok.is_punct)
+    return res
+
+
+def _latin_culler(corpus: dict[str, str]) -> dict[str, str]:
+    cull_words = get_latin_stopwords(LATIN_CULL_WORDS)
+    res = {}
+    for k, v in corpus.items():
+        res[k] = " ".join([x for x in v.split() if x not in cull_words])
     return res
 
 
@@ -155,7 +155,7 @@ def get_tfidfed_vector(corpus: dict, max_doc_freq: float = 0.95, min_doc_freq: f
 
 
 def cos_dist(w2varr, labels: list) -> pd.DataFrame:
-    cosine_distances = pd.DataFrame(pairwise_distances(w2varr, metric='cosine', n_jobs=-1), index=labels, columns=labels) 
+    cosine_distances = pd.DataFrame(pairwise_distances(w2varr, metric='cosine', n_jobs=2), index=labels, columns=labels) 
     return cosine_distances
 
 
@@ -254,12 +254,14 @@ def analysis_cycle(corpus: dict, file_name: str, stopped_or_mfwed: bool = False,
             _basic_tfidf_analysis(corpus, file_name)
 
 
-def _revised_latin_analysis(corpus: dict, file_name: str):
-    mfws_list = [100, 200, 300, 400, 600, 800]
+def _revised_latin_analysis(corpus: dict[str, str], file_name: str):
+    mfws_list = [400, 600, 800]
     _basic_tfidf_analysis(corpus, file_name)
+    mfw_corpus = _latin_culler(corpus)
     for i in mfws_list:
-        vectorized_corpus, corpus_keys = get_tfidfed_vector(corpus, max_doc_freq=0.99, min_doc_freq=1, num_features=i)
-        _cosine_dist_analysis(vectorized_corpus, corpus_keys, file_name, file_suffix=f"mfwed-{i}")
+        vectorizer = TfidfVectorizer(ngram_range=(1,3), max_features = i)
+        w2varr = vectorizer.fit_transform(mfw_corpus.values()).toarray()
+        _cosine_dist_analysis(w2varr, mfw_corpus.keys(), file_name, file_suffix=f"mfwed-{i}")
 
 
 def _basic_tfidf_analysis(corpus: dict, file_name: str):
@@ -276,7 +278,7 @@ def _cosine_dist_analysis(vectorized_corpus, corpus_keys, file_name: str, file_s
 
 def latin_stylo():
     corpus = corpus_collector_latin()
-    analysis_cycle(corpus, "latin-basic", latin=True)
+    analysis_cycle(corpus, "latin_basic", latin=True)
     corpus = corpus_collector_latin(lemmatize=True)
     analysis_cycle(corpus, "latin_lemmatized", latin=True)
     

@@ -176,13 +176,12 @@ def parse_amores(soup: BeautifulSoup, versify: bool = False) -> dict[str, str]:
     return res
 
 
-def parse_perseus(infile: str, versify: bool = False) -> dict:
+def parse_perseus(infile: str, versify: bool = False) -> dict[str, str]:
     """This function will process the XML of a Perseus Latin Library document and return a dictionary of the text.
     If versify is True, it will return a dictionary of the text with verse numbers."""
     soup = read_tei(infile)
-    fname = infile.rsplit("/", 1)[1]
     res = {}
-    if fname == 'ovid.am_lat.xml':
+    if  'ovid.am_lat.xml' in infile:
         return parse_amores(soup, versify)
     else:
         doc_title = soup.find('title').get_text()

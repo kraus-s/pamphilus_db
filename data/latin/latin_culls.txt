@@ -1,0 +1,12 @@
+ego, mei, mihi, me, me, nos, nostrum, nobis, nos, nobis, tu, tui, tibi, te, te,
+vos, vestrum, vobis, vos, vobis ille, illius, illi, illum, illo, illa, illius, illi, illam, illa,
+illud, illius, illi, illud, illo illi, illorum, illis, illos, illis illae, illarum, illis, illas, illis,
+illa, illorum, illis, illa, illis, iste, istius, isti, istum, isto, ista, istius, isti, istam, ista,
+istud, istius, isti, istud, isto, isti, istorum, istis, istos, istis, istae, istarum, istis, istas, istis,
+ista, istorum, istis, ista, istis, is, eius, ei, eum, eo ea, eius, ei, eam, ea,
+id, eius, ei, id, eo ei, eorum, eis, eos, eis eae, earum, eis, eas, eis,
+ea, eorum, eis, ea, eis, hic, huius, huic, hunc, hoc haec, huius, huic, hanc, hac,
+hoc, huius, huic, hoc, hoc hi, horum, his, hos, his hae, harum, his, has, his,
+haec, horum, his, haec, his, qui, cuius, cui, quem, quo quae, cuius, cui, quam, qua,
+quod, cuius, cui, quod, quo, qui, quorum, quibus, quos, quibus quae, quarum, quibus, quas, quibus,
+quae, quorum, quibus, quae, quibus, mea, michi, mei, meis
