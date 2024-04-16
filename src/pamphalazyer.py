@@ -452,10 +452,10 @@ def display_leven():
     which_leven = st.selectbox("Load Old Norse or Latin Levenshtein data", options=["Old Norse", "Latin"])
     option_dict = {"Old Norse": LEVEN_DB_ON, "Latin": LEVEN_DB}
     df = get_leven_df(option_dict[which_leven])
-    simplify = st.checkbox("Simplify output by removing all entries, that show Levenshtein Scores between Verses of Pamphilus; group results by verses and sort.")
+    simplify = st.checkbox("Simplify output by removing all entries that show Levenshtein Scores between Verses of Pamphilus; group results by verses and sort.")
     leven_similarity = st.slider("Levenshtein lower threshold", min_value=50, max_value=100, value=60)
     leven_similarity_upper = st.slider("Levenshtein upper threshold", min_value=50, max_value=100, value=99)
-    filtered_df = get_leven_dfs_ready(df, leven_similarity, leven_similarity_upper, simplify)
+    filtered_df = get_leven_dfs_ready(df, leven_similarity, leven_similarity_upper, which_leven, simplify)
     st.dataframe(filtered_df)
 
 
