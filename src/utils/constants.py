@@ -12,6 +12,8 @@ LEVEN_DB = "data/similarities/levenshtein/lev-mem.db"
 LEVEN_DB_ON = "data/similarities/levenshtein/lev-on.db"
 LEVEN_FOLDER = "data/similarities/levenshtein/"
 STYLO_FOLDER = "data/similarities/stylo/"
+HANDRIT_MS_DATA = "data/ingest/handrit_msitems.csv"
+MIMIR_DATABASE = "data/ingest/mimir_data.db"
 
 PSDG47 = "data/norseMat/texts/DG-4at7-Pamph-para.xml"
 VERSEORDER = "data/latin/texts/pamphilus/verseorder.xlsx"
@@ -95,7 +97,37 @@ LOCLOOK = {'Bergen': 'https://d-nb.info/gnd/1027742-0',
 
 DATE_RANGES = [(1200, 1325), (1, 1325), (1, 1536)]
 STOPWORD_PATH = "data/ingest/stopwords.txt"
-EXCLUDE_LEGAL = ["Landslǫg", "Lǫgfrǿði", "Hirðskrá", "Kristinn réttr", "Statuta Vilhjalms kardinála", "Réttarbǿtr", "Grágás", "Jónsbók"]
+EXCLUDE_LEGAL = [
+    "Landslǫg",
+    "Lǫgfrǿði",
+    "Hirðskrá",
+    "Kristinn réttr",
+    "Statuta Vilhjalms kardinála",
+    "Réttarbǿtr",
+    "Grágás",
+    "Jónsbók",
+    "The Provincial Law of Jutland",
+    "Jyske lov",
+    "Jyske lovs fortale",
+    "Preface",
+    "Trolddomskapitlet",
+    "Chapter on Sorcery",
+    "Valdemars Sjællandske lov",
+    "Sjællandske kirkelov",
+    "Borgarþingslǫg: Kristinn réttr hinn forni",
+    "Borgartings ældste kristenret",
+    "Kong Magnus lagabøters Norske landslov med retterbøder",
+    "Réttarbǫtr Hákonar Magnússonar",
+    "Réttarbǫtr Hákonar Hákonarsonar",
+    "Réttarbǫtr Eríks Magnússonar",
+    "Réttarbǫtr Magnús Hákonarsonar",
+    "Bjarkeyjarréttr",
+    "Den nyere bylov",
+    "Det færøske saudabrev",
+    "Gulaþingslǫg",
+    "Valdemar's Provincial Law of Sjælland", 
+    "Valdemars Sjællandske lov"
+]
 EXCLUDE_DIPLOMAS = ["?v95", "?v91", "?v261", "?v375"]
 
 # neo4j default config

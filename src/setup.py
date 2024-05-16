@@ -8,6 +8,7 @@ import utils.msclustering as msclustering
 from tqdm import tqdm
 import utils.on_verse_begin as on_verse_begin
 import utils.culler as culler
+import utils.msclustering as msclustering
 
 
 def download_onp_data():
@@ -92,5 +93,6 @@ if __name__ == "__main__":
     # culler.culler()
     # stylo.norse_stylo_revised()
     # stylo.levenshtein_norse()
-    stylo.latin_stylo()
+    # stylo.latin_stylo()
+    msclustering.main()
     print("All done. Bye!")

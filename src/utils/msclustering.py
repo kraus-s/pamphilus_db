@@ -6,7 +6,7 @@ import sqlite3
 from rapidfuzz import fuzz
 import csv
 
-from utils.constants import ONP_DATABASE_PATH, EXCLUDE_LEGAL
+from utils.constants import ONP_DATABASE_PATH, EXCLUDE_LEGAL, HANDRIT_MS_DATA, MIMIR_DATABASE
 from utils.onp_res_dict import res_dct
 
 
@@ -49,13 +49,13 @@ def gen_edgelist(data_list: List[List[str]]) -> Generator[Tuple[str, str], None,
 
 
 def main():
-    unittlDF = pd.read_csv("ingest/handrit_msitems.csv", names=['Shelfmark', 'Title'])
+    unittlDF = pd.read_csv(HANDRIT_MS_DATA, names=['Shelfmark', 'Title'])
 
     shlfmrks = unittlDF['Shelfmark'].unique().tolist()
     ttls = unittlDF['Title'].unique().tolist()
 
-    conn = create_connection(DATABASE_PATH)
-    conn_toole = create_connection("ingest/data.db")
+    conn = create_connection(ONP_DATABASE_PATH)
+    conn_toole = create_connection(MIMIR_DATABASE)
     curs = conn.cursor()
 
     curs.execute("SELECT shelfmark FROM msInfo WHERE antequem <= 1350")
@@ -82,7 +82,7 @@ def main():
     df1 = df1.groupby(["workID"])["witID"].apply(list).reset_index()
     wit_id_lists = df1["witID"].to_list()
     work_list = df1["workID"].to_list()
-    exclude_list = ["?v95", '?v91', '?v261', '?v375']
+    exclude_list = ["?v95", '?v91', '?v261', '?v375', "?v271", "?v52", "?v479", "?v435", "?v286", "?v294", "?v291", "?v125", "?v162"]
     df1 = df1[~df1['workID'].isin(exclude_list)]
     wit_work_rel = df1.set_index('workID')['witID'].to_dict()
 
@@ -126,7 +126,11 @@ def main():
             i = i.replace('\xa0', '')
             i = i.strip()
             ret_list.append(i)
-        if all(x not in work_name for x in EXCLUDE_LEGAL):
+        is_legal = False
+        for x in EXCLUDE_LEGAL:
+            if x in work_name:
+                is_legal = True  
+        if not is_legal:
             named_work_list.append(work_name)
             shelfmarks_onp_list.append(ret_list)
         curs.close()
@@ -162,6 +166,16 @@ def main():
     cleaned_handrit_df = pd.DataFrame(cleaned_dict)
     final_df = final_df[~final_df['Shelfmark'].isin(handrit_instead_df['Shelfmark'].to_list())]
     final_final_df = pd.concat([final_df, cleaned_handrit_df], ignore_index=True)
+    final_final_df = final_final_df[~final_final_df['Title'].isin(EXCLUDE_LEGAL)]
+    
+    # Clean up DG 4-7; splits this MS into the original production units and removes AM 666 4to
+    final_final_df = final_final_df.loc[final_final_df['Shelfmark'] != 'DG 4-7']
+    final_final_df = final_final_df.loc[final_final_df['Shelfmark'] != 'AM 666 b 4to']
+    og_dg = {"Shelfmark": ["DG 4-7 I", "DG 4-7 II", "DG 4-7 II", "DG 4-7 II", "DG 4-7 II"], "Title": ["Óláfs saga Tryggvasonar", "Elíss saga ok Rósamundar", "Pamfíluss saga", "Strengleikar", "Viðrǿða ǽðru ok hugrekki"]}
+    og_dg_df = pd.DataFrame(og_dg)
+    final_final_df = pd.concat([final_final_df, og_dg_df], ignore_index=True)
+
+
 
     # Make it so
     ffdf = final_final_df.groupby('Title')['Shelfmark'].apply(list).reset_index()
