@@ -91,8 +91,8 @@ if __name__ == "__main__":
     # if input("Run verse begin analysis? (y/n): ") == "y":
     #     on_verse_begin.main()
     # culler.culler()
-    # stylo.norse_stylo_revised()
+    stylo.norse_stylo_revised()
     # stylo.levenshtein_norse()
     # stylo.latin_stylo()
-    msclustering.main()
+    # msclustering.main()
     print("All done. Bye!")

@@ -132,8 +132,8 @@ def get_mfws_old_norse(corpus: list[NorseDoc], edition_level: str) -> Counter:
         cull_words = pickle.load(open(ON_CULLS_LEMMA, "rb"))
     elif edition_level == "normalized":
         cull_words = pickle.load(open(ON_CULLS_NORMALIZED, "rb"))
-    else:
-        raise Exception("Not implemented!")
+    elif edition_level == "facsimile":
+        cull_words = []
     all_toks = [getattr(x, edition_level) for y in corpus for x in y.tokens if getattr(x, edition_level) != "-" and getattr(x, edition_level) not in cull_words]
     word_counts = Counter(all_toks)
     return word_counts
@@ -294,18 +294,20 @@ def run():
 
 
 def norse_stylo_revised():
-    corpus = corpus_collector_norse('normalized')
-    analysis_cycle(corpus, "norse-basic-new")
-    corpus = corpus_collector_norse('lemma')
-    analysis_cycle(corpus, "norse-lemmatized-new")
-    corpus = corpus_collector_norse('facsimile')
-    analysis_cycle(corpus=corpus, file_name='norse-facs-new')
-    mfws_list = [100, 200, 300, 400, 600, 800]
+    # corpus = corpus_collector_norse('normalized')
+    # analysis_cycle(corpus, "norse-basic-new")
+    # corpus = corpus_collector_norse('lemma')
+    # analysis_cycle(corpus, "norse-lemmatized-new")
+    # corpus = corpus_collector_norse('facsimile')
+    # analysis_cycle(corpus=corpus, file_name='norse-facs-new')
+    mfws_list = [100, 200, 300, 400, 600, 800, 1200]
     for i in mfws_list:
-        corpus = corpus_collector_norse(doc_level="normalized", use_mfws=True, mfw_count=i)
-        analysis_cycle(corpus, f"mfwed-{i}-on-norms-culled", True)
-        corpus = corpus_collector_norse(doc_level="lemma", use_mfws=True, mfw_count=i)
-        analysis_cycle(corpus, f"mfwed-{i}-on-lemma-culled", True)
+        # corpus = corpus_collector_norse(doc_level="normalized", use_mfws=True, mfw_count=i)
+        # analysis_cycle(corpus, f"mfwed-{i}-on-norms-culled", True)
+        # corpus = corpus_collector_norse(doc_level="lemma", use_mfws=True, mfw_count=i)
+        # analysis_cycle(corpus, f"mfwed-{i}-on-lemma-culled", True)
+        corpus = corpus_collector_norse(doc_level="facsimile", use_mfws=True, mfw_count=i)
+        analysis_cycle(corpus, f"mfwed-{i}-on-facs", True)
     corpus = corpus_collector_norse(doc_level="lemma", use_stops=True)
     analysis_cycle(corpus, "on-lemma-stopped", True)
 

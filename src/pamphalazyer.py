@@ -218,6 +218,8 @@ def para_display(data: myData):
     transcription_level = st.selectbox("Select transcription level of Pamphilus saga", ["Diplomatic", "Normalized", "Facsimile", "Lemmatized"])
     selected_verse = st.text_input("Select Verse or Verserange")
     selected_text = st.multiselect(label="Select witnesses", options = texts_dict.keys(), default= texts_dict.keys())
+    search_word = st.text_input("Search for a word in the text")
+    search_language = st.selectbox("Select language to search in", ["Old Norse", "Latin"])
     number_of_columns = len(selected_text)
     cols = st.columns(number_of_columns)
     lookup_dict = {}
@@ -238,13 +240,18 @@ def para_display(data: myData):
                 for v in old_norse_pamphilus.verses:
                     parallels_dict[v.vno] = v.aligned
                     if transcription_level == "Diplomatic":
-                        aa.write(f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens]))
+                        str_to_write = f"{v.vno} " + " ".join([t.diplomatic for t in v.tokens])
                     if transcription_level == "Normalized":
-                        aa.write(f"{v.vno} " + " ".join([t.normalized for t in v.tokens]))
+                        str_to_write = f"{v.vno} " + " ".join([t.normalized for t in v.tokens])
                     if transcription_level == "Facsimile":
-                        aa.write(f"{v.vno} " + " ".join([t.facsimile for t in v.tokens]))
+                        str_to_write = f"{v.vno} " + " ".join([t.facsimile for t in v.tokens])
                     if transcription_level == "Lemmatized":
-                        aa.write(f"{v.vno} " + " ".join([t.lemma for t in v.tokens]))
+                        str_to_write = f"{v.vno} " + " ".join([t.lemma for t in v.tokens])
+                    if search_word != "" and search_language == "Old Norse":
+                        if search_word in str_to_write:
+                            aa.write(str_to_write)
+                    else:
+                        aa.write(str_to_write)
             else:
                 for number, verse in current_text.verses_order_on_page.items():
                     is_parallel = parallels_dict.get(verse.verse_number_norm, [])
@@ -253,6 +260,10 @@ def para_display(data: myData):
                     else:
                         color = "red"
                     verse_string = " ".join([t.word for t in verse.tokens])
+                if search_word != "" and search_language == "Latin":
+                    if any([t.word == search_word for t in verse.tokens]):
+                        aa.write(f"VB: {verse.verse_number_norm} / VOP: {number} \n :{color}[{verse_string}]" )
+                else:
                     aa.write(f"VB: {verse.verse_number_norm} / VOP: {number} \n :{color}[{verse_string}]" )
 
 
