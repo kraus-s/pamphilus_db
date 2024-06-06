@@ -33,5 +33,5 @@ types-python-dateutil = "*"
 
 [scripts]
 setup = "python src/setup.py"
-stylo = "python src/utils/run_stylos.py"
+stylo = "python src/analysis.py"
 run = "python -m streamlit run src/pamphalazyer.py"
