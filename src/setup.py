@@ -1,4 +1,3 @@
-from utils import dbBuilder
 import requests
 import os
 from utils.constants import *
@@ -64,35 +63,12 @@ def download_levenshtein_data():
 
 
 if __name__ == "__main__":
-    # download_onp_data()
-    # # dbBuilder.main()
-    # # Not needed at this time TODO: Clean up
-    # print("App setup successfull")
-    # print("You can run stylo, node2vec and clustering from here. Warning! Node2vec takes about a week on an M1 Pro with 32GB of RAM.")
-    # print("All the data is either shipped with the app or downloaded during setup.")
-    # print("If you chose not to run the stylometry, data will be downloaded instead.")
-    # run_stylometry = input("Run stylometry? (y/n): ")
-    # if run_stylometry == "y":
-    #     stylo.run()
-    # elif run_stylometry == "n":
-    # download_levenshtein_data()
-    # run_node2vec = input("Run node2vec? (y/n): ")
-    # if run_node2vec == "y":
-    #     onpnode2vec.run()
-    # run_clustering = input("Run clustering? (y/n): ")
-    # if run_clustering == "y":
-    #     msclustering.main()
-    # if input("Run word coocurrence? (y/n): ") == "y":
-    #     from utils import cw2v
-    #     cw2v.count_results()
-    # if input("Run old norse style marker analysis? (y/n): ") == "y":
-    #     from utils import stylalyzer
-    #     stylalyzer.main()
-    # if input("Run verse begin analysis? (y/n): ") == "y":
-    #     on_verse_begin.main()
-    # culler.culler()
-    stylo.norse_stylo_revised()
-    # stylo.levenshtein_norse()
-    # stylo.latin_stylo()
-    # msclustering.main()
+    print("Command line setup. Also available in WebApp. Run webapp by typing pipenv run run or continue here.")
+    print("This script will download the ONP database and the Levenshtein database.")
+    print("To run the analysis script, use the webapp or use 'pipenv run analysis'")
+    input("Press Enter to continue...")
+    print("Downloading ONP data...")
+    download_onp_data()
+    download_levenshtein_data()
+    print("App setup successfull")
     print("All done. Bye!")

@@ -9,12 +9,9 @@ import pickle
 from pathlib import Path
 from st_aggrid import AgGrid as ag
 from neo4j import GraphDatabase
-from neo4j.graph import Node, Relationship
 import networkx as nx
 import matplotlib.pyplot as plt
 from typing import List, Dict
-from pyvis import network as net
-from IPython.display import display, HTML
 import streamlit.components.v1 as components
 import random
 import string
@@ -23,7 +20,14 @@ import utils.similarities as sims
 import sqlite3
 from streamlit_image_select import image_select
 from collections import Counter
+from utils import stylo
+from utils import msclustering
+from utils import culler
+from utils import onpnode2vec
 
+
+if "step" not in st.session_state:
+    st.session_state.step = ""
 
 # Helper functions
 # ----------------
@@ -480,11 +484,61 @@ def style_markers_page():
     else:
         st.write("No style marker files found")
 
-def home_page():
-    st.write("Hello!")
 
+def _run_stylometry():
+    st.write("Now running stylometry")
+    st.write("You can see the progress in the terminal")
+    if st.button("Go back to analysis overview"):
+        st.session_state.step = "analysis"
+    culler.culler()
+    with st.spinner():
+        stylo.run()
+
+
+def _run_node2vec():
+    st.write("Now running node2vec")
+    st.write("You can see the progress in the terminal")
+    if st.button("Go back to analysis overview"):
+        st.session_state.step = "analysis"
+    with st.spinner():
+        onpnode2vec.run()
+
+def _run_clustering():
+    st.write("Now running manuscript clustering")
+    st.write("You can see the progress in the terminal")
+    if st.button("Go back to analysis overview"):
+        st.session_state.step = "analysis"
+    with st.spinner():
+        msclustering.main()
+
+
+def home_page():
+    st.title("Digital Appendix to my PhD Dissertation")
+    st.write("Welcome to the webapp. This is a digital appendix to my dissertation.")
+    st.write("It has all the results and data that I used in my dissertation.")
+    st.write("You can navigate the app using the sidebar on the left.")
+    st.write("You can also run some or all of my analysis steps yourself using the button below. This will put the app in analysis mode.")
+    if st.button("Run analysis"):
+        st.session_state.step = "analysis"
+  
 
 def main():
+    """
+    Main function that serves as the entry point of the program.
+    It sets the page configuration, initializes the state, loads data,
+    creates an instance of myData class, defines the available choices,
+    and displays the selected choice.
+
+    Streamlit has far better ways of managing state and subpages now.
+    At the time of first writing this, many of those features were not yet implemented.
+    Due to time constraints, the code was not updated to use the new features.
+
+    Args:
+        None
+
+    Returns:
+        None
+    """
     st.set_page_config(layout="wide")
     _state_initializer()
     ON, LAT = data_loader()
@@ -507,3 +561,20 @@ def main():
 # -----------
 
 main()
+
+if st.session_state.step == "analysis":
+    if st.button("Take me back to the home page"):
+        st.session_state.step = ""
+    if st.button("Run stylometry"):
+        st.session_state.step = "stylometry"
+    if st.button("Run node2vec"):
+        st.session_state.step = "node2vec"
+    if st.button("Run manuscript network analysis"):
+        st.session_state.step = "clustering"
+
+if st.session_state.step == "stylometry":
+    _run_stylometry()
+if st.session_state.step == "node2vec":
+    _run_node2vec()
+if st.session_state.step == "clustering":
+    _run_clustering()
