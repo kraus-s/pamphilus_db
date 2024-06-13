@@ -117,7 +117,7 @@ def onp_n2v():
         model_select = st.selectbox(label="Select a model to display and query", options=all_models["File Name"].to_list())
         _show_model(all_models, model_select, name_resolution_dict)
     elif gallery_table == "Gallery":
-        stop_docs = st.radio("Show with or without stopdocs:", options=["y", "n"])
+        stop_docs = st.radio("Show with or without stopdocs (y = Diplomas were filtered from the dataset and are not part of the model):", options=["y", "n"])
         date_range = st.radio("Select date range", options=["1-1325", "1-1536", "1200-1325"])
         date_range = date_range.split("-")
         st.write(date_range)

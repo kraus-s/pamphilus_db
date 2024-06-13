@@ -52,7 +52,7 @@ def n2v_fast(we: dict, weights: bool = True, w_length: int = 100, context_size: 
     return n2m
 
 
-def get_data(stops: list[str], conn: sqlite3.Connection, stop_docs: str, postquem: int = 1, antequem: int = 1325) -> list[list[str]]:
+def get_data(stops: list[str], conn: sqlite3.Connection, stop_docs: str, post_quem: int = 1, ante_quem: int = 1325) -> list[list[str]]:
     """ Will retrieve data from the underlying sqlite database. It first selects all witness IDs from the
     table junctionMsxWitreal in the date range defined by the post and ante quem parameters. These witness IDs
     are then passed to the next query, which selects the found witnesses and all their associated lemmata from
@@ -60,7 +60,7 @@ def get_data(stops: list[str], conn: sqlite3.Connection, stop_docs: str, postque
     lemmata, resulting in a list of witnesses for each lemma. The same is done for the text works and manuscripts, resulting
     in lists of witnesses, that share a feature, i.e. lemma, text work, manuscript.
     """
-    df4 = pd.read_sql(f"SELECT a.witID, b.onpID FROM junctionMsxWitreal AS a, msInfo as b WHERE b.postquem >= {postquem} AND b.antequem <= {antequem} AND a.msID = b.onpID", conn)
+    df4 = pd.read_sql(f"SELECT a.witID, b.onpID FROM junctionMsxWitreal AS a, msInfo as b WHERE b.post_quem >= {post_quem} AND b.ante_quem <= {ante_quem} AND a.msID = b.onpID", conn)
     witlist = df4["witID"].to_list()
     if stop_docs == "y":
         exclude_df = pd.read_sql(f"SELECT witID from junctionWorkxWit WHERE workID IN {tuple(EXCLUDE_DIPLOMAS)}", conn)
@@ -113,11 +113,11 @@ def get_files(path: str = N2V_MODELS_PATH) -> list[str]:
 
 def main(date_range: tuple[int, int], stop_docs: str, test_run: bool = False):
     print(f"Starting with {date_range}")
-    postQuem, anteQuem = date_range
+    post_quem, ante_quem = date_range
     conn = create_connection(ONP_DATABASE_PATH)
     stps = get_on_stopwords(STOPWORD_PATH)
     stops = get_stop_onp(stps, conn)
-    data_list = get_data(stops, conn, postquem=postQuem, antequem=anteQuem, stop_docs=stop_docs)
+    data_list = get_data(stops, conn, post_quem=post_quem, ante_quem=ante_quem, stop_docs=stop_docs)
     print("Got ONP data, making edge list")
     edgg = gen_edgelist(data_list)
     print("Making weights")

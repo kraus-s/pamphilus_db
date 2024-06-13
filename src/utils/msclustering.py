@@ -5,7 +5,6 @@ import pandas as pd
 import sqlite3
 from rapidfuzz import fuzz
 import csv
-
 from utils.constants import ONP_DATABASE_PATH, EXCLUDE_LEGAL, HANDRIT_MS_DATA, MIMIR_DATABASE
 from utils.onp_res_dict import res_dct
 

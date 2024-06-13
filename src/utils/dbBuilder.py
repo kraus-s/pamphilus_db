@@ -13,6 +13,8 @@ from utils.util import read_tei
 # Constants
 ###########
 
+"""This is not needed anymore, as I dropped the whole idea of using neo4j for my research."""
+
 remoteDB = "philhist-sven-1.philhist.unibas.ch"
 localDB = "localhost"
 

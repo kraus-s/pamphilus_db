@@ -4,5 +4,6 @@ data/onp/onp_data.db
 utils/__pycache__/
 utils/__pycache__/latin_parser.cpython-39.pyc
 lev-mem.db
-*.db
 data/.DS_Store
+data/similarities/levenshtein/lev-on.db
+data/n2v/onp_data.db
