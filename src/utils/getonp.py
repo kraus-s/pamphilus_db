@@ -7,6 +7,9 @@ import pandas as pd
 from typing import List
 import time
 
+"""This script was used to retrieve data from the ONP."""
+
+
 goodBits = SoupStrainer(id="myList")
 wordStrainer = SoupStrainer(class_="list-group mb-3 onp-citlist onp-noborder")
 anotherListStrainer = SoupStrainer(class_="list-group")

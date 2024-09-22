@@ -12,8 +12,8 @@ I recommend using pipenv `pipenv install` to create a virtual environment for th
 If you used pipenv you can simply run `pipenv run setup` to prepare all the data.
 Otherwise you will need to run src/setup.py manually.
 Then start the webapp with the command `python -m streamlit run src/pamphalazyer.py` or 
-with `pipenv run run` if you used pipenv to set up a virtual envirnonment (remember to activate the shell first).
+with `pipenv run run` if you used pipenv to set up a virtual envirnonment.
 
 ## Running everything
 Run the webapp using `pipenv run run`. In the webapp, you can look through all the data.
-You can run all my analyses yourself using the webapp or by with the command `pipenv run analysis`.
+You can run all my analyses yourself using the webapp or with the command `pipenv run analysis`.

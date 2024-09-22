@@ -14,6 +14,8 @@ from collections import Counter
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 
+"""Stylometric analysis functions for the Latin and Old Norse corpora."""
+
 
 # Helper functions latin
 # ----------------------

@@ -3,7 +3,6 @@ import pandas as pd
 import utils.menota_parser as menota_parser
 import utils.latin_parser as latin_parser
 import utils.util as ut
-from utils import neo2st
 from utils.constants import *
 import pickle
 from pathlib import Path
@@ -24,10 +23,9 @@ from utils import stylo
 from utils import msclustering
 from utils import culler
 from utils import onpnode2vec
+import setup as warmup
 
 
-if "step" not in st.session_state:
-    st.session_state.step = ""
 
 # Helper functions
 # ----------------
@@ -88,6 +86,8 @@ def _create_stylo_network(stylo_df: pd.DataFrame, metric: str):
 
 
 def _state_initializer():
+    if "step" not in st.session_state:
+        st.session_state.step = ""
     if "quantifier_clicked" not in st.session_state:
         st.session_state.quantifier_clicked = False
     if "click_model_load" not in st.session_state:
@@ -96,7 +96,19 @@ def _state_initializer():
         st.session_state.model_quant_done = False
     if "display_gallery" not in st.session_state:
         st.session_state.display_gallery = False
+    if "setup_done" not in st.session_state:
+        st.session_state.setup_done = False
+    if "verse_filter" not in st.session_state:
+        st.session_state.verse_filter = False
+    if "word_filter" not in st.session_state:
+        st.session_state.word_filter = False
 
+
+def _check_setup():
+    if not st.session_state.setup_done:
+        warmup.download_onp_data()
+        warmup.download_levenshtein_data()
+        st.session_state.setup_done = True
 
 def _click_model_quantifier():
     st.session_state.quantifier_clicked = True
@@ -109,6 +121,11 @@ def _click_model_load():
 # -----------------
 
 def onp_n2v():
+    st.title("Node2Vec Similarities")
+    st.write("This page displays the results of the Node2Vec analysis.")
+    st.write("This is no longer a part of the dissertation itself, but is kept as an appendix.")
+    st.write("Node2Vec has never been used on Old Norse material or in any philological context before, as far as I was able to discern based on the literature.")
+    st.write("The results should therefore be considered highly experimental, as there is no other scholarship or any form of ground truth to compare these models to.")
     gallery_table = st.radio(label="Display gallery of clusterings or tabel of available models. Advanced: Show most frequent top 10 across all models for selected witness", options=["Gallery", "Table", "Advanced"])
     all_models = n2v.load_model_metadata()
     name_resolution_dict = n2v.create_witness_lookup()
@@ -212,18 +229,18 @@ def _get_cluster_docs(model_filename: str, names_dict: dict[str, str]) -> dict[s
     return res
 
 
-def para_display(data: myData): 
+def para_display(data: myData):
+    parallels_dict = {} 
     old_norse_pamphilus = data.old_norse
     texts_dict = {}
     texts_dict["DG 4-7"] = data.old_norse
     latin_dict = data.latin
+    latin_dict.pop("F", None)
     texts_dict.update(latin_dict)
     st.write("This displays the parallel text of the Pamphilus saga and the Latin witnesses. VB marks the verses in Beckers order. VOP denotes the verses in the order they appear in each manuscript.")
     transcription_level = st.selectbox("Select transcription level of Pamphilus saga", ["Diplomatic", "Normalized", "Facsimile", "Lemmatized"])
     selected_verse = st.text_input("Select Verse or Verserange")
     selected_text = st.multiselect(label="Select witnesses", options = texts_dict.keys(), default= texts_dict.keys())
-    search_word = st.text_input("Search for a word in the text")
-    search_language = st.selectbox("Select language to search in", ["Old Norse", "Latin"])
     number_of_columns = len(selected_text)
     cols = st.columns(number_of_columns)
     lookup_dict = {}
@@ -233,7 +250,6 @@ def para_display(data: myData):
         else:
             lookup_dict[k] = [x.verse_number_norm for x in texts_dict[k].verse_list]
     
-    parallels_dict = {}
     for a, aa in enumerate(cols):
         aa.write(f"{selected_text[a]}")
         current_manuscript = selected_text[a]
@@ -251,26 +267,8 @@ def para_display(data: myData):
                         str_to_write = f"{v.vno} " + " ".join([t.facsimile for t in v.tokens])
                     if transcription_level == "Lemmatized":
                         str_to_write = f"{v.vno} " + " ".join([t.lemma for t in v.tokens])
-                    if search_word != "" and search_language == "Old Norse":
-                        if search_word in str_to_write:
-                            aa.write(str_to_write)
-                    else:
-                        aa.write(str_to_write)
-            else:
-                for number, verse in current_text.verses_order_on_page.items():
-                    is_parallel = parallels_dict.get(verse.verse_number_norm, [])
-                    if current_manuscript in is_parallel:
-                        color = "green"
-                    else:
-                        color = "red"
-                    verse_string = " ".join([t.word for t in verse.tokens])
-                if search_word != "" and search_language == "Latin":
-                    if any([t.word == search_word for t in verse.tokens]):
-                        aa.write(f"VB: {verse.verse_number_norm} / VOP: {number} \n :{color}[{verse_string}]" )
-                else:
-                    aa.write(f"VB: {verse.verse_number_norm} / VOP: {number} \n :{color}[{verse_string}]" )
-
-
+                    aa.write(str_to_write)
+                
         if "-" in selected_verse:
             i, ii = selected_verse.split("-")
             verse_number_range = list(map(str, range(int(i), int(ii)+1)))
@@ -325,61 +323,62 @@ def check_verse_contained(verse_number: str, verse_number_range: List[str]) -> b
     return False
 
 
-
-def display_para():
-    st.write("NB! neo4j backend is not currently working with streamlit cloud.")
-    graph = GraphDatabase.driver(NEO4J_URL_LOCAL, auth=NEO4J_CREDENTIALS)
-    selected_verse = st.text_input("Select Verse or Verserange") 
-    txtWits = ['B1', 'P3', 'To', 'W1', 'DG4-7']
-    selected_text = st.multiselect(label="Select witnesses", options = txtWits, default=txtWits)
-    displayMode = st.radio("Select display mode", options=[1, 2])
-    if st.button("Run"):
-        if "-" in selected_verse:
-            i, ii = selected_verse.split("-")
-            verse_number_range = list(map(str, range(int(i), int(ii)+1)))
-            verse_number_range = [str(x) for x in verse_number_range]
-        if not selected_verse:
-            st.write("You gotta give me some text to work with")
-        if displayMode == 1:
-            number_of_columns = len(selected_text)
-            cols = st.columns(number_of_columns)
-            for a, aa in enumerate(cols):
-                current_text = selected_text[a]
-                aa.write(current_text)
-                if not selected_verse:
-                    aa.write("No Verse or Verserange selected")
-                if current_text == 'DG4-7':
-                    with graph.session() as session:
-                        tx = session.begin_transaction()
-                        results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.paraVerse IN {verse_number_range} AND a.inMS = '{current_text}' RETURN a.paraVerse AS vn, a.Normalized AS text")
-                        resD = results.data()
-                else:
-                    with graph.session() as session:
-                        tx = session.begin_transaction()
-                        results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.VerseNorm IN {verse_number_range} AND a.inMS = '{current_text}' RETURN a.VerseNorm AS vn, a.Normalized AS text")
-                        resD = results.data()
-                resX = {}
-                for res in resD:
-                    if res['vn'] in resX:
-                        resX[res['vn']] = f"{resX[res['vn']]} {res['text']}"
-                    else:
-                        resX[res['vn']] = res['text']
-                for k in resX:
-                    aa.write(f"{k} {resX[k]}")
-        elif displayMode == 2:
-            st.write("Nothing to see here yet.")
-            st.write(f"Getting Verses {verse_number_range} from MSs {selected_text}")
-            with graph.session() as session:
-                tx = session.begin_transaction()
-                results = tx.run(f"""MATCH (a)-[r]->(b) 
-                                    WHERE a.inMS IN {selected_text}
-                                    AND b.inMS IN {selected_text}
-                                    AND a.VerseNorm IN {verse_number_range} 
-                                    RETURN *""")
-                nodes = list(results.graph()._nodes.values())
-                rels = list(results.graph()._relationships.values())
-            graph_view = neo2st.get_view(nodes, rels)
-            components.html(graph_view, height = 900, width=900, scrolling=True)
+# The following code block was intended to demonstrate a neo4j backend as a useful tool for graph based philological research.
+# It proved to be out of scope for the project, but is kept here as a reference for future work.
+# def display_para():
+#     st.write("NB! neo4j backend is not currently working with streamlit cloud.")
+#     graph = GraphDatabase.driver(NEO4J_URL_LOCAL, auth=NEO4J_CREDENTIALS)
+#     selected_verse = st.text_input("Select Verse or Verserange") 
+#     txtWits = ['B1', 'P3', 'To', 'W1', 'DG4-7']
+#     selected_text = st.multiselect(label="Select witnesses", options = txtWits, default=txtWits)
+#     displayMode = st.radio("Select display mode", options=[1, 2])
+#     if st.button("Run"):
+#         if "-" in selected_verse:
+#             i, ii = selected_verse.split("-")
+#             verse_number_range = list(map(str, range(int(i), int(ii)+1)))
+#             verse_number_range = [str(x) for x in verse_number_range]
+#         if not selected_verse:
+#             st.write("You gotta give me some text to work with")
+#         if displayMode == 1:
+#             number_of_columns = len(selected_text)
+#             cols = st.columns(number_of_columns)
+#             for a, aa in enumerate(cols):
+#                 current_text = selected_text[a]
+#                 aa.write(current_text)
+#                 if not selected_verse:
+#                     aa.write("No Verse or Verserange selected")
+#                 if current_text == 'DG4-7':
+#                     with graph.session() as session:
+#                         tx = session.begin_transaction()
+#                         results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.paraVerse IN {verse_number_range} AND a.inMS = '{current_text}' RETURN a.paraVerse AS vn, a.Normalized AS text")
+#                         resD = results.data()
+#                 else:
+#                     with graph.session() as session:
+#                         tx = session.begin_transaction()
+#                         results = tx.run(f"MATCH (a:E33_Linguistic_Object) WHERE a.VerseNorm IN {verse_number_range} AND a.inMS = '{current_text}' RETURN a.VerseNorm AS vn, a.Normalized AS text")
+#                         resD = results.data()
+#                 resX = {}
+#                 for res in resD:
+#                     if res['vn'] in resX:
+#                         resX[res['vn']] = f"{resX[res['vn']]} {res['text']}"
+#                     else:
+#                         resX[res['vn']] = res['text']
+#                 for k in resX:
+#                     aa.write(f"{k} {resX[k]}")
+#         elif displayMode == 2:
+#             st.write("Nothing to see here yet.")
+#             st.write(f"Getting Verses {verse_number_range} from MSs {selected_text}")
+#             with graph.session() as session:
+#                 tx = session.begin_transaction()
+#                 results = tx.run(f"""MATCH (a)-[r]->(b) 
+#                                     WHERE a.inMS IN {selected_text}
+#                                     AND b.inMS IN {selected_text}
+#                                     AND a.VerseNorm IN {verse_number_range} 
+#                                     RETURN *""")
+#                 nodes = list(results.graph()._nodes.values())
+#                 rels = list(results.graph()._relationships.values())
+#             graph_view = neo2st.get_view(nodes, rels)
+#             components.html(graph_view, height = 900, width=900, scrolling=True)
             
 
 def vcooc():
@@ -541,6 +540,7 @@ def main():
     """
     st.set_page_config(layout="wide")
     _state_initializer()
+    _check_setup()
     ON, LAT = data_loader()
     current_data = myData(ON, LAT)
     choices = {"Home": home_page,
@@ -548,10 +548,12 @@ def main():
                 "Node2Vec similarities": onp_n2v,
                 "Stylometrics and Similarities": get_all_stylo,
                 "Levenshtein similarities (Latin)": display_leven,
-                "Markers for Old Norse style": style_markers_page}
+                "Analysis mode": "foo"}
     choice = st.sidebar.selectbox(label="Menu", options=choices.keys())
     if choice == 'Parallel text display':
         para_display(current_data)
+    elif choice == "Analysis mode":
+        st.session_state.step = "analysis"
     else:
         display = choices[choice]
         display()

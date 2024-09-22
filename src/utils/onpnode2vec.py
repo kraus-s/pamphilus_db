@@ -12,8 +12,7 @@ import os
 import glob
 import csv
 
-# Source: Keras article
-# Additional source: Stellargraph docs
+"""This is no longer part of the dissertation itself. It is kept as an appendix."""
 
 def create_connection(db_path: str) -> sqlite3.Connection:
     conn = sqlite3.connect(db_path)

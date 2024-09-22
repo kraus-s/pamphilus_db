@@ -6,6 +6,9 @@ import pandas as pd
 import pickle
 import os
 
+"""This script is used to analyze the style of the Old Norse texts in the Menota corpus. 
+It looks for specific style markers, like specific adverb suffixes etc. it is used in chapter 5.2"""
+
 def load_data() -> list[NorseDoc]:
     if not os.path.exists(MENOTA_COMPLETE_PICKLE):
         parsed_docs_list = import_menota_data(path= OLD_NORSE_CORPUS_FILES)

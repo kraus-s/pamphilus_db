@@ -6,6 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
 from utils.constants import *
 
+"""Word coocurrence. Interesting, but yielded no relevant results. It is kept as an appendix."""
 
 def on_stops() -> List:
     with open(ON_STOPS, encoding='UTF-8') as file:
