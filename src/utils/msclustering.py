@@ -49,10 +49,7 @@ def gen_edgelist(data_list: List[List[str]]) -> Generator[Tuple[str, str], None,
 
 
 def main():
-    unittlDF = pd.read_csv(HANDRIT_MS_DATA, names=['Shelfmark', 'Title'])
-
-    shlfmrks = unittlDF['Shelfmark'].unique().tolist()
-    ttls = unittlDF['Title'].unique().tolist()
+    unittlDF = pd.read_csv(HANDRIT_MS_DATA, names=['Shelfmark', 'Title']) # This list was created by Tarrin Wills
 
     conn = create_connection(ONP_DATABASE_PATH)
     conn_toole = create_connection(MIMIR_DATABASE)
@@ -80,8 +77,6 @@ def main():
     df1 = pd.read_sql(f"SELECT workID, witID FROM junctionWorkxWit WHERE witID IN {sel_list}", conn)
     df1 = df1.drop_duplicates().reset_index(drop=True)
     df1 = df1.groupby(["workID"])["witID"].apply(list).reset_index()
-    wit_id_lists = df1["witID"].to_list()
-    work_list = df1["workID"].to_list()
     exclude_list = ["?v95", '?v91', '?v261', '?v375', "?v271", "?v52", "?v479", "?v435", "?v286", "?v294", "?v291", "?v125", "?v162"]
     df1 = df1[~df1['workID'].isin(exclude_list)]
     wit_work_rel = df1.set_index('workID')['witID'].to_dict()

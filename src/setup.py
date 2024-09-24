@@ -67,7 +67,6 @@ if __name__ == "__main__":
     print("This script will download the ONP database and the Levenshtein database.")
     print("To run the analysis script, use the webapp or use 'pipenv run analysis'")
     input("Press Enter to continue...")
-    print("Downloading ONP data...")
     download_onp_data()
     download_levenshtein_data()
     print("App setup successfull")
