@@ -1,3 +1,6 @@
+[requires]
+python_version = "3.11"
+
 [packages]
 pandas = "*"
 streamlit = "*"

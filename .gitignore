@@ -1,5 +1,4 @@
 __pycache__/
-Pipfile.lock
 data/onp/onp_data.db
 utils/__pycache__/
 utils/__pycache__/latin_parser.cpython-39.pyc
