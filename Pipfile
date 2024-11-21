@@ -27,6 +27,7 @@ node2vec = "*"
 markdown = "*"
 scikit-learn = "*"
 rapidfuzz = "*"
+la-core-web-lg = {file = "https://huggingface.co/latincy/la_core_web_lg/resolve/main/la_core_web_lg-any-py3-none-any.whl"}
 
 
 [dev-packages]
