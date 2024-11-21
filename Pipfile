@@ -20,14 +20,13 @@ scipy = "*"
 st-annotated-text = "*"
 matplotlib = "*" 
 openpyxl = "*"
-spacy = "3.5.0"
+spacy = "3.7.5"
 gensim = "*" 
 streamlit-image-select = "*"
 node2vec = "*"
 markdown = "*"
 scikit-learn = "*"
 rapidfuzz = "*"
-la-core-web-lg = {file = "https://huggingface.co/latincy/la_core_web_lg/resolve/main/la_core_web_lg-any-py3-none-any.whl"}
 
 
 [dev-packages]
